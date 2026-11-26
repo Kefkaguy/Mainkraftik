@@ -1,0 +1,73 @@
+{
+  "at": "2026-11-21T05:57:01.729632+00:00",
+  "passed": true,
+  "ordinary_tests": 46,
+  "checks": [
+    {
+      "name": "oracle",
+      "command": [
+        "wsl",
+        "-d",
+        "Ubuntu",
+        "--",
+        "/home/erosimcity/.local/share/mainkraft-rust-validation/python-reference/bin/python",
+        "/mnt/c/Users/erosi/OneDrive/Desktop/allprojects/keftrade-intelligence/scripts/generate-rust-point-fixtures.py",
+        "--reference-platform",
+        "linux"
+      ],
+      "exit_code": 0
+    },
+    {
+      "name": "native",
+      "command": [
+        "wsl",
+        "-d",
+        "Ubuntu",
+        "--",
+        "bash",
+        "/mnt/c/Users/erosi/OneDrive/Desktop/allprojects/keftrade-intelligence/scripts/test-rust-linux.sh"
+      ],
+      "exit_code": 0
+    }
+  ],
+  "fixture_runtime": {
+    "fixtures": {
+      "point-feature-boundaries-linux.json": "07fb8082dd06ebacfb35f75cecf9e83c936e8de3ef295f61008e75663ba845ad",
+      "point-feature-boundaries.json": "b69a91308ef88d62ebfb23f7d50be40e7db2bf9c1ee71a587ffcca0546563779",
+      "point-features-linux.json": "e9e88c6035941e8e026720eecce85c28c0f32b3ad4d148fec54f544820b2d3f3",
+      "point-features.json": "f0094d887a8408156e4bdc8de1b8288f8a4fb355ee4f1f8ae50c75f5080a15d4"
+    },
+    "machine": "x86_64",
+    "method": "Unchanged original Python functions on Linux; existing Windows corpora are never rewritten; exact comparisons retained.",
+    "numpy_log1p_2": 1.0986122886681096,
+    "original_sources": {
+      "calendar.py": "ec1378bd94f08cb738c37739efd8b62708776c2ac3245ea6cbe19d201e0bb74f",
+      "experiments.py": "c2b8fddf02f1a961d85493b8ccdcb450e261b18239edf5feb7991c0d7f9b013b",
+      "financials.py": "dbf191e6af7e5d32e15e8eec42c0ca024594881a60a3c4078686f3c9383bf95d",
+      "forecasting.py": "811c1f62b0e5cd28727760a5943bd7204a1426d4a27ab1e7a58247e62d3eb04c",
+      "point_features.py": "6b7441b16327f27ac13cc87eb5b60c2f7089a383ec215f3178e2b6e05cf25ae6",
+      "research.py": "ae7e715d8ea577e1577e7db8a014cc0883a8fe64716fb1b776f996a67f1aae30",
+      "util.py": "5205f3da5128ca91814f2da6b14bb8d3f3908036615781384214b1047418c6c8"
+    },
+    "platform": "linux",
+    "python": "3.12.3",
+    "versions": {
+      "numpy": "2.5.4",
+      "pandas": "3.1.1",
+      "pandas-market-calendars": "5.6.0",
+      "scikit-learn": "1.9.1"
+    }
+  },
+  "full_linux_validation_complete": false,
+  "remaining": [
+    "isolated PostgreSQL suites on Linux",
+    "native ONNX runtime and original Python worker cross-validation on Linux",
+    "IR HTTP and evidence cross-reader orchestration on Linux",
+    "deployment environment compatibility and complete service validation"
+  ],
+  "deployment_allowed": false,
+  "outputs": {
+    "native.txt": "1af3174932f2d77d1e25b208b6392ca7b9bf38583b384417293b45d7172efb45",
+    "oracle.txt": "ffb13a7ede3556e217e84d14356a6bee563dd49f2caa71533de1c5e8290e97b8"
+  }
+}

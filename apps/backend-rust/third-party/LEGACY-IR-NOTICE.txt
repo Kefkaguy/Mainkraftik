@@ -1,0 +1,18 @@
+Legacy IR compatibility references:
+
+Python 3.14.2 urllib.robotparser
+Copyright (C) 2000 Bastian Kleineidam
+The reference permits use under the PSF license for Python 2.2 or GPLv2;
+this implementation uses the PSF option. Python license/history notices
+are retained in PYTHON-LICENSE.txt.
+
+Python 3.14.2 html and urllib.parse compatibility behavior is covered by
+the accompanying Python notices. BeautifulSoup 4.15.0 reference extraction
+and generated entity data retain BEAUTIFULSOUP-LICENSE.txt.
+
+html5gum 0.9.1 is used for tokenization, not browser DOM reconstruction.
+Its license is retained in HTML5GUM-LICENSE.txt. Raw source spans allow
+the legacy entity and newline conventions to be reproduced separately.
+
+Reference source and frozen data are used only for implementation parity;
+no external page, model, or research evaluation was used for selection.

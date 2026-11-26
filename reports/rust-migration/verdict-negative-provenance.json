@@ -1,0 +1,18 @@
+{
+  "initial_failed_oracle": {
+    "file": ".local/rust-migration/verdict-oracles/intelligence_test_rust_ffdedec7be98.json",
+    "sha256": "6f764aded303cec208ea2a0068ef80fae82cbf7a82748897320b03411bfce88c"
+  },
+  "normalized_passing_oracle": {
+    "file": ".local/rust-migration/verdict-oracles/intelligence_test_rust_28d30568e35a.json",
+    "sha256": "92199f30c0acad58e9e825ff466818948fc5afada18374cea619a367b9c068ee"
+  },
+  "initial_functional_outputs_unchanged": true,
+  "strengthened_fixture": "The old outcome in latest-correction now has the opposite sign; the later corrected outcome restores the known truth.",
+  "earlier_pointer_note": "verdict-initial-reference.json was captured after the mutable latest pointer advanced; use initial_failed_oracle here for the actual original failure reference.",
+  "files": {
+    ".local/rust-migration/verdict-oracles/intelligence_test_rust_ffdedec7be98.json": "6f764aded303cec208ea2a0068ef80fae82cbf7a82748897320b03411bfce88c",
+    ".local/rust-migration/verdict-oracles/intelligence_test_rust_28d30568e35a.json": "92199f30c0acad58e9e825ff466818948fc5afada18374cea619a367b9c068ee",
+    "reports/rust-migration/verdict-first-failures.json": "f6f42d0da568e64071db58c9e8282d2a6b69955bf96dfc47a4d6dabcaa2d0457"
+  }
+}

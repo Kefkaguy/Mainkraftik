@@ -1,0 +1,11 @@
+The frozen 10-pixel raster font atlas is derived from the Aileron Regular subset
+embedded in Pillow 12.3.0 ImageFont.load_default(). It is the existing application's
+default font, not a substitute typeface. The embedded font's copyright name field
+states: "No Rights Reserved." Its author name field identifies Sora Sagano.
+
+Original embedded font SHA-256:
+69853909b940023570964e29cffe30da95aea8de3627736b5cd15ab30143169f
+
+Pillow routines and rasterization-reference adaptations retain the accompanying
+PILLOW-LICENSE.txt notices. The atlas records the Pillow/FreeType versions and is
+regenerated only by the explicit local oracle script, never by a deployed service.

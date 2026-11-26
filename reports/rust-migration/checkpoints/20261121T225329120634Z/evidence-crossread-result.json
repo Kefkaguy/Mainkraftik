@@ -1,0 +1,153 @@
+{
+  "fixture_sha256": "a513edd01aaaffbbb5d9322cf2d7f45965f423614fc7b654b5119c58dc3a14bf",
+  "native_exit_code": 0,
+  "python_read_native_artifacts": [
+    {
+      "case": 0,
+      "family": "chart",
+      "id": "fce55b6076f172b159b964506497a9b9c87c6b05da5eb68487757bfd29de855e",
+      "python_read": true
+    },
+    {
+      "case": 1,
+      "family": "lab",
+      "id": "fce55b6076f172b159b964506497a9b9c87c6b05da5eb68487757bfd29de855e",
+      "python_read": true
+    },
+    {
+      "case": 2,
+      "family": "compressed",
+      "id": "fce55b6076f172b159b964506497a9b9c87c6b05da5eb68487757bfd29de855e",
+      "python_read": true
+    },
+    {
+      "case": 3,
+      "family": "chart",
+      "id": "87b07c7c20a93e969f7322b285b5d6b89bf1e6fd1c97c4f70e36891963c30331",
+      "python_read": true
+    },
+    {
+      "case": 4,
+      "family": "lab",
+      "id": "87b07c7c20a93e969f7322b285b5d6b89bf1e6fd1c97c4f70e36891963c30331",
+      "python_read": true
+    },
+    {
+      "case": 5,
+      "family": "compressed",
+      "id": "87b07c7c20a93e969f7322b285b5d6b89bf1e6fd1c97c4f70e36891963c30331",
+      "python_read": true
+    },
+    {
+      "case": 6,
+      "family": "chart",
+      "id": "2a990af0c1771b128c635b38793d4bd06914cb71803c54194c6c8e1c0d43ffae",
+      "python_read": true
+    },
+    {
+      "case": 7,
+      "family": "lab",
+      "id": "2a990af0c1771b128c635b38793d4bd06914cb71803c54194c6c8e1c0d43ffae",
+      "python_read": true
+    },
+    {
+      "case": 8,
+      "family": "compressed",
+      "id": "2a990af0c1771b128c635b38793d4bd06914cb71803c54194c6c8e1c0d43ffae",
+      "python_read": true
+    },
+    {
+      "case": 9,
+      "family": "chart",
+      "id": "914cb668870f3fdd4edbe06d03b9eeec63ec5308e1fd575a0c511a6a84cefd2b",
+      "python_read": true
+    },
+    {
+      "case": 10,
+      "family": "lab",
+      "id": "914cb668870f3fdd4edbe06d03b9eeec63ec5308e1fd575a0c511a6a84cefd2b",
+      "python_read": true
+    },
+    {
+      "case": 11,
+      "family": "compressed",
+      "id": "914cb668870f3fdd4edbe06d03b9eeec63ec5308e1fd575a0c511a6a84cefd2b",
+      "python_read": true
+    },
+    {
+      "case": 12,
+      "family": "chart",
+      "id": "6691d2990137d6820d69ebcd6ce8cef38974e74b75c7e3df81ed959df72487df",
+      "python_read": true
+    },
+    {
+      "case": 13,
+      "family": "lab",
+      "id": "6691d2990137d6820d69ebcd6ce8cef38974e74b75c7e3df81ed959df72487df",
+      "python_read": true
+    },
+    {
+      "case": 14,
+      "family": "compressed",
+      "id": "6691d2990137d6820d69ebcd6ce8cef38974e74b75c7e3df81ed959df72487df",
+      "python_read": true
+    },
+    {
+      "case": 15,
+      "family": "chart",
+      "id": "7bea69030f4bf34bbdaef1f20e8403d6732d133617932b240dcf9d6b04fabb1f",
+      "python_read": true
+    },
+    {
+      "case": 16,
+      "family": "lab",
+      "id": "7bea69030f4bf34bbdaef1f20e8403d6732d133617932b240dcf9d6b04fabb1f",
+      "python_read": true
+    },
+    {
+      "case": 17,
+      "family": "compressed",
+      "id": "7bea69030f4bf34bbdaef1f20e8403d6732d133617932b240dcf9d6b04fabb1f",
+      "python_read": true
+    },
+    {
+      "case": 18,
+      "family": "chart",
+      "id": "b54cf5530ede159c4d862bf9bf8bb73b63bf2f67590d76b49e842aed8044e223",
+      "python_read": true
+    },
+    {
+      "case": 19,
+      "family": "lab",
+      "id": "b54cf5530ede159c4d862bf9bf8bb73b63bf2f67590d76b49e842aed8044e223",
+      "python_read": true
+    },
+    {
+      "case": 20,
+      "family": "compressed",
+      "id": "b54cf5530ede159c4d862bf9bf8bb73b63bf2f67590d76b49e842aed8044e223",
+      "python_read": true
+    },
+    {
+      "case": 21,
+      "family": "chart",
+      "id": "8f58d80723edff059b0e0c117280b11c4d229e493910c6288e7a503722e692ea",
+      "python_read": true
+    },
+    {
+      "case": 22,
+      "family": "lab",
+      "id": "8f58d80723edff059b0e0c117280b11c4d229e493910c6288e7a503722e692ea",
+      "python_read": true
+    },
+    {
+      "case": 23,
+      "family": "compressed",
+      "id": "8f58d80723edff059b0e0c117280b11c4d229e493910c6288e7a503722e692ea",
+      "python_read": true
+    }
+  ],
+  "journal_prefix_and_duplicate_prevention": true,
+  "journal_trigger": true,
+  "directory_sync_supported_on_host": false
+}

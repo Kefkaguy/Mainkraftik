@@ -1,0 +1,2 @@
+{"platform": "windows", "seeds": 5, "cases": 95, "sha256": "83854a55aa622a72ad468af4dbde528d4f95490d9518a54ec0bade8be2eca46e", "output": "apps/backend-rust/tests/fixtures/python-set-parity.json", "market_data_used": false}
+

@@ -1,0 +1,51 @@
+{
+  "backend": {
+    "tests": 192,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "frontend_build": "PASSED",
+  "chart_report_id": "5f806ce8bb5650df01534ff82c1b6f7b8511217b5d17a5966a4b9300e0bed1e2",
+  "source_sha256": {
+    "apps\\api\\chart_intelligence\\api.py": "20d0112227962259ac62a5c5405b3443072478d34619fde9dabdf6e363505b9a",
+    "apps\\api\\chart_intelligence\\controller.py": "f1b4857eff23dcdd83ca61ec422860debadcf003097af1ce01ad526d391a3d0a",
+    "apps\\api\\chart_intelligence\\core.py": "c6ece3346513b155f3d65fc93e8957f932940e6e02abaf677beb5f46a9e9a862",
+    "apps\\api\\chart_intelligence\\store.py": "421a137897fc21a0ecc4bd284ede813e2d25a84a051c0332fb78abfd18d5f9a4",
+    "apps\\api\\chart_intelligence\\__init__.py": "3bdafa92fe6ef11b79fb39c08cce7d1fc22452077518e675344312ff2de3bae9",
+    "apps\\api\\paperpilot\\decision_trace.py": "c1d107df839638bc00e238abdc9b52c66d0af8c35f6805b2d63c8bcb3f76580b",
+    "apps\\api\\paperpilot\\risk.py": "7f1190e34f7e0a9009d7a405b059648c79e72fecf0a94fbc1eb697479b4b7aa1",
+    "apps\\api\\paperpilot\\strategy_execution.py": "78cf8e815741481ad84cc97aedc1d1f180d5e4dd4ccbef28b0cee73afa6d9584",
+    "apps\\api\\paperpilot\\engine.py": "5875190a0a2d6f74caef458bcb5b1d3fcbf320be1905587ab0546fb4f1dada4c",
+    "apps\\api\\paperpilot\\strategy_runtime.py": "1e4d9b6a29bad7a02421460ee8032c4da4341647de4e909b1eb0d2a687ccf88c",
+    "apps\\api\\paperpilot\\service.py": "a0aef6166b99057a0caca57c0cf9bef5e3d4d92ac17f28659ecefe7b234ae8ca",
+    "apps\\api\\paperpilot\\fill_replay.py": "99af10c2167cec8f7c6a268094b618226bdd337d2ade99ae5d89291ef08371c7",
+    "apps\\api\\intelligence\\main.py": "a363ce63d12b6df32cc1db038d546c3da4d5f0009059af2e2c5e893b36f1a7f2",
+    "apps\\api\\intelligence\\paper_bridge.py": "ae1239036fad0ed4708cb8a25d14b2568c6789fa97c4cd271752de350ae8f09d",
+    "apps\\web\\components\\AutonomyPanel.tsx": "4a1146765453ee2952de30659587423ababec80667e344d5f2fc143eb9cf7358",
+    "apps\\web\\components\\PaperDashboard.tsx": "39b32819fdcc99189a60fa1fd624608367437370351c27550e90700fb43d2c3f"
+  },
+  "artifact_sha256": {
+    "chart-evaluation.json": "54976e96da078a1e431175ab0a56a1405285306e79880b99455e101a8093a409",
+    "chart-run.txt": "6cc25bb905d929248d225a286415ea88009755654c128fde897bb51ea3c1f812",
+    "full-tests.txt": "6e375cb46a34fb825d0871268a2236711439cccf9d9e9e8d0d34743155cacc5d",
+    "full-tests.xml": "4dcc76c6e495c27b6550862ec674f59c89859f7e8cb210a3ebcecb673579c2e1",
+    "web-build.txt": "79492a105fcb4d7719dabbcd4f59f1b6b3d6a6041ed863e8a82a0c3b795c05a4"
+  },
+  "local_engineering_stages": {
+    "1": "PASSED",
+    "2": "PASSED",
+    "3": "PASSED",
+    "4": "PASSED",
+    "5": "PASSED",
+    "6": "PASSED"
+  },
+  "model_validation": "FAILED_TO_ESTABLISH_IMPROVEMENT",
+  "deployment_authorized": false,
+  "limitations": [
+    "No real broker orders submitted in verification",
+    "Historical executable-quote realism remains unverified",
+    "Existing external LEAN component report is preserved; full LEAN algorithm acceptance is not certified by these tests",
+    "Neural optimizer hit fixed budgets; independent prospective validation required"
+  ]
+}

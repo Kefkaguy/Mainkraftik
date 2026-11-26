@@ -1,0 +1,14 @@
+
+running 1 test
+PYTHON_ARGON2_SESSION_COOKIE_CSRF_LOGOUT=PASS
+EXISTING_PYTHON_SESSION=PASS
+FAILED_ATTEMPTS_PERSIST_GLOBAL_THROTTLE=PASS
+IDEMPOTENT_SCHEMA_PRESERVES_SESSION=PASS
+test authentication_preserves_python_password_sessions_csrf_and_throttle ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 13.33s
+
+
+   Compiling mainkraft v0.1.0 (/mnt/c/Users/erosi/OneDrive/Desktop/allprojects/keftrade-intelligence/apps/backend-rust)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 1.12s
+     Running tests/api_contract.rs (/home/erosimcity/.local/share/mainkraft-rust-validation/target/debug/deps/api_contract-59f4d19e50d7e1b7)

@@ -1,0 +1,32 @@
+{
+  "observed_at": "2026-11-18T06:28:31.318690+00:00",
+  "enrollment": "d709b24bcd5094e8df955e9fe32ba47761bef8233b7be55f8a19e2d0d1972931",
+  "predictions": 0,
+  "resolved_outcomes": 0,
+  "status": "INSUFFICIENT_EVIDENCE",
+  "latest_run": {
+    "errors": [],
+    "execution_authority": false,
+    "issuance_status": "NO_NEW_FORECAST_OR_OUTSIDE_WINDOW",
+    "issued": 0,
+    "monitored": [
+      "AMD",
+      "MSFT",
+      "GOOG",
+      "AMZN",
+      "TSM",
+      "META"
+    ],
+    "monitoring": {
+      "dates": 0,
+      "promotion_authority": false,
+      "required_dates": 40,
+      "status": "INSUFFICIENT_EVIDENCE"
+    },
+    "observed_at": "2026-11-18T06:19:28.168648+00:00",
+    "outcomes": 0,
+    "promotion_authority": false,
+    "report_id": "d709b24bcd5094e8df955e9fe32ba47761bef8233b7be55f8a19e2d0d1972931"
+  },
+  "note": "No backdated forecasts. A fresh collection outside issuance hours is not a prospective prediction."
+}

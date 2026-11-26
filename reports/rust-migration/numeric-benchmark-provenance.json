@@ -1,0 +1,8 @@
+{
+  "retained_binary": "C:\\Users\\erosi\\OneDrive\\Desktop\\allprojects\\keftrade-intelligence\\.local\\rust-migration\\binaries\\57d65459362670a707c7a4dfd5005984f7c5a1d1373d3fe27ef3221e91056270.exe",
+  "python": "3.14.2 (tags/v3.14.2:df79316, Dec  5 2025, 17:18:21) [MSC v.1944 64 bit (AMD64)]",
+  "numpy": "2.5.4",
+  "sklearn": "1.9.1",
+  "cpu": "Intel64 Family 6 Model 198 Stepping 2, GenuineIntel",
+  "scope": "Numeric component only; no end-to-end system speed claim"
+}

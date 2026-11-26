@@ -1,0 +1,982 @@
+    Updating crates.io index
+ Downloading crates ...
+  Downloaded ahash v0.8.12
+  Downloaded adler2 v2.0.1
+  Downloaded clap_lex v1.1.2
+  Downloaded block-buffer v0.10.4
+  Downloaded atoi v2.0.0
+  Downloaded atomic-waker v1.1.2
+  Downloaded colorchoice v1.0.5
+  Downloaded approx v0.5.1
+  Downloaded castaway v0.2.4
+  Downloaded compression-core v0.4.34
+  Downloaded cfg_aliases v0.2.2
+  Downloaded anstyle-query v1.1.5
+  Downloaded derive_builder_macro v0.20.2
+  Downloaded cpufeatures v0.3.1
+  Downloaded errno v0.3.15
+  Downloaded form_urlencoded v1.2.2
+  Downloaded lazy_static v1.5.1
+  Downloaded futures-task v0.3.34
+  Downloaded itoa v1.0.19
+  Downloaded percent-encoding v2.3.2
+  Downloaded argon2 v0.5.3
+  Downloaded find-msvc-tools v0.1.15
+  Downloaded futures-executor v0.3.34
+  Downloaded phf v0.12.1
+  Downloaded hex v0.4.3
+  Downloaded getrandom v0.2.17
+  Downloaded pem-rfc7468 v0.7.0
+  Downloaded potential_utf v0.1.6
+  Downloaded allocator-api2 v0.2.21
+  Downloaded pkg-config v0.3.34
+  Downloaded compact_str v0.9.1
+  Downloaded powerfmt v0.2.1
+  Downloaded is_terminal_polyfill v1.70.2
+  Downloaded proc-macro2 v1.0.107
+  Downloaded ppv-lite86 v0.2.21
+  Downloaded home v0.5.12
+  Downloaded http-body v1.1.0
+  Downloaded heck v0.5.0
+  Downloaded encoding_rs v0.8.44
+  Downloaded httpdate v1.0.3
+  Downloaded rayon-cond v0.4.0
+  Downloaded rawpointer v0.2.1
+  Downloaded rand_pcg v0.10.3
+  Downloaded rustc-hash v2.1.3
+  Downloaded signature v2.2.0
+  Downloaded sqlx-macros v0.8.6
+  Downloaded static_assertions v1.1.0
+  Downloaded stringprep v0.1.5
+  Downloaded tempfile v3.27.0
+  Downloaded tokio-macros v2.7.2
+  Downloaded tracing-core v0.1.36
+  Downloaded unicode-bidi v0.3.18
+  Downloaded tinystr v0.8.5
+  Downloaded thiserror-impl v2.0.21
+  Downloaded thiserror v2.0.21
+  Downloaded try-lock v0.2.5
+  Downloaded tracing-log v0.2.0
+  Downloaded tower-service v0.3.3
+  Downloaded hashlink v0.10.0
+  Downloaded unicode-ident v1.0.27
+  Downloaded unicode-properties v0.1.5
+  Downloaded nu-ansi-term v0.50.3
+  Downloaded rayon-core v1.13.0
+  Downloaded tracing-serde v0.2.0
+  Downloaded synstructure v0.14.0
+  Downloaded spki v0.7.3
+  Downloaded safe_arch v0.7.4
+  Downloaded once_cell v1.21.4
+  Downloaded untrusted v0.9.0
+  Downloaded whoami v1.6.1
+  Downloaded writeable v0.6.4
+  Downloaded utf8_iter v1.1.0
+  Downloaded icu_normalizer_data v2.4.0
+  Downloaded rustls v0.23.46
+  Downloaded regex-syntax v0.8.12
+  Downloaded rustix v1.1.6
+  Downloaded yoke-derive v0.8.4
+  Downloaded sqlx-sqlite v0.8.6
+  Downloaded zmij v1.0.23
+  Downloaded sqlx-postgres v0.8.6
+  Downloaded unicode_categories v0.1.1
+  Downloaded unicode-normalization v0.1.26
+  Downloaded time v0.3.55
+  Downloaded ndarray v0.17.2
+  Downloaded zerofrom v0.1.8
+  Downloaded zerovec-derive v0.11.7
+  Downloaded zeroize v1.9.2
+  Downloaded glam v0.24.2
+  Downloaded wide v0.7.33
+  Downloaded url v2.5.8
+  Downloaded vcpkg v0.2.15
+  Downloaded webpki-roots v1.0.12
+  Downloaded zerotrie v0.2.5
+  Downloaded zerovec v0.11.9
+  Downloaded glam v0.28.0
+  Downloaded zlib-rs v0.6.8
+  Downloaded nalgebra v0.34.2
+  Downloaded glam v0.27.0
+  Downloaded glam v0.25.0
+  Downloaded libz-ng-sys v1.1.33
+  Downloaded glam v0.29.3
+  Downloaded icu_normalizer v2.4.0
+  Downloaded uuid v1.29.3
+  Downloaded tokio v1.54.1
+  Downloaded onig_sys v69.9.3
+  Downloaded zerofrom-derive v0.1.8
+  Downloaded tracing v0.1.44
+  Downloaded spm_precompiled v0.1.4
+  Downloaded glam v0.23.0
+  Downloaded glam v0.22.0
+  Downloaded zerocopy v0.8.63
+  Downloaded glam v0.30.10
+  Downloaded glam v0.31.1
+  Downloaded glam v0.21.3
+  Downloaded glam v0.32.1
+  Downloaded syn v3.0.10
+  Downloaded syn v2.0.119
+  Downloaded tracing-subscriber v0.3.23
+  Downloaded libc v0.2.191
+  Downloaded tokenizers v0.23.2
+  Downloaded sqlx v0.8.6
+  Downloaded unicode-segmentation v1.13.3
+  Downloaded tower-http v0.6.11
+  Downloaded tokio-util v0.7.20
+  Downloaded reqwest v0.12.28
+  Downloaded libm v0.2.16
+  Downloaded icu_properties_data v2.4.0
+  Downloaded glam v0.20.5
+  Downloaded glam v0.18.0
+  Downloaded hyper v1.12.0
+  Downloaded hkdf v0.12.4
+  Downloaded glam v0.16.0
+  Downloaded unicode-normalization-alignments v0.1.12
+  Downloaded typenum v1.20.1
+  Downloaded tower v0.5.3
+  Downloaded sqlx-core v0.8.6
+  Downloaded itertools v0.14.0
+  Downloaded icu_properties v2.4.0
+  Downloaded html5gum v0.9.1
+  Downloaded hashbrown v0.17.1
+  Downloaded glam v0.19.0
+  Downloaded glam v0.17.3
+  Downloaded glam v0.15.2
+  Downloaded sqlx-mysql v0.8.6
+  Downloaded serde_json v1.0.154
+  Downloaded serde v1.0.229
+  Downloaded rustls-webpki v0.103.17
+  Downloaded ring v0.17.14
+  Downloaded ort v2.0.0-rc.12
+  Downloaded num-bigint-dig v0.8.6
+  Downloaded idna v1.1.0
+  Downloaded hyper-util v0.1.21
+  Downloaded yoke v0.8.4
+  Downloaded num-bigint v0.4.8
+  Downloaded nom v7.1.3
+  Downloaded mio v1.2.5
+  Downloaded memchr v2.8.3
+  Downloaded regex-automata v0.4.19
+  Downloaded minimal-lexical v0.2.1
+  Downloaded indexmap v2.14.2
+  Downloaded icu_collections v2.4.0
+  Downloaded http v1.5.0
+  Downloaded hashbrown v0.15.5
+  Downloaded miniz_oxide v0.9.1
+  Downloaded ort-sys v2.0.0-rc.12
+  Downloaded icu_locale_core v2.4.0
+  Downloaded onig v6.5.3
+  Downloaded num-traits v0.2.19
+  Downloaded matrixmultiply v0.3.11
+  Downloaded matchit v0.8.4
+  Downloaded log v0.4.35
+  Downloaded webpki-roots v0.26.11
+  Downloaded want v0.3.2
+  Downloaded version_check v0.9.5
+  Downloaded utf_types v1.0.0
+  Downloaded utf8parse v0.2.2
+  Downloaded regex v1.13.2
+  Downloaded rayon v1.12.0
+  Downloaded hmac v0.12.1
+  Downloaded getrandom v0.3.4
+  Downloaded parking_lot_core v0.9.12
+  Downloaded parking_lot v0.12.5
+  Downloaded litrs v1.0.1
+  Downloaded litemap v0.8.3
+  Downloaded iana-time-zone v0.1.65
+  Downloaded rsa v0.9.10
+  Downloaded rand_core v0.9.5
+  Downloaded quinn-proto v0.11.19
+  Downloaded icu_provider v2.4.0
+  Downloaded rand v0.10.4
+  Downloaded rand v0.9.5
+  Downloaded rand v0.8.8
+  Downloaded quinn v0.11.12
+  Downloaded publicsuffix v2.3.0
+  Downloaded httparse v1.10.1
+  Downloaded http-body-util v0.1.5
+  Downloaded lock_api v0.4.14
+  Downloaded tracing-attributes v0.1.31
+  Downloaded paste v1.0.15
+  Downloaded password-hash v0.5.0
+  Downloaded num-rational v0.4.2
+  Downloaded num-integer v0.1.47
+  Downloaded num-complex v0.4.6
+  Downloaded multiversion_no_op v1.0.0
+  Downloaded mime v0.3.18
+  Downloaded lru-slab v0.1.3
+  Downloaded libloading v0.9.1
+  Downloaded tokio-stream v0.1.19
+  Downloaded time-macros v0.2.32
+  Downloaded tokio-rustls v0.26.6
+  Downloaded tinyvec v1.13.3
+  Downloaded thread_local v1.1.10
+  Downloaded tower-layer v0.3.3
+  Downloaded time-core v0.1.9
+  Downloaded sync_wrapper v1.0.2
+  Downloaded subtle v2.6.1
+  Downloaded strsim v0.11.1
+  Downloaded ipnet v2.12.2
+  Downloaded hyper-rustls v0.27.10
+  Downloaded sqlx-macros-core v0.8.6
+  Downloaded stable_deref_trait v1.2.1
+  Downloaded spin v0.9.9
+  Downloaded socket2 v0.6.5
+  Downloaded smallvec v1.16.6
+  Downloaded slab v0.4.12
+  Downloaded siphasher v1.0.4
+  Downloaded simdutf8 v0.1.5
+  Downloaded simd-adler32 v0.3.10
+  Downloaded simba v0.9.1
+  Downloaded signal-hook-registry v1.4.8
+  Downloaded shlex v2.0.1
+  Downloaded sharded-slab v0.1.7
+  Downloaded sha2 v0.10.9
+  Downloaded sha1 v0.10.7
+  Downloaded serde_derive v1.0.229
+  Downloaded parking v2.2.1
+  Downloaded linux-raw-sys v0.12.1
+  Downloaded md-5 v0.10.6
+  Downloaded macro_rules_attribute v0.2.3
+  Downloaded serde_urlencoded v0.7.1
+  Downloaded serde_path_to_error v0.1.20
+  Downloaded serde_core v1.0.229
+  Downloaded scopeguard v1.2.0
+  Downloaded ryu v1.0.23
+  Downloaded rustversion v1.0.23
+  Downloaded rustls-pki-types v1.16.0
+  Downloaded num-conv v0.2.2
+  Downloaded nalgebra-macros v0.3.0
+  Downloaded monostate-impl v0.1.18
+  Downloaded monostate v0.1.18
+  Downloaded matchers v0.2.0
+  Downloaded macro_rules_attribute-proc_macro v0.2.3
+  Downloaded num-iter v0.1.46
+  Downloaded rand_core v0.10.1
+  Downloaded rand_core v0.6.4
+  Downloaded rand_chacha v0.9.0
+  Downloaded rand_chacha v0.3.1
+  Downloaded quote v1.0.47
+  Downloaded quinn-udp v0.5.16
+  Downloaded psl-types v2.0.11
+  Downloaded chrono-tz v0.10.4
+  Downloaded chrono v0.4.45
+  Downloaded idna_adapter v1.2.2
+  Downloaded futures-util v0.3.34
+  Downloaded esaxx-rs v0.1.10
+  Downloaded clap_builder v4.6.7
+  Downloaded aho-corasick v1.1.5
+  Downloaded glam v0.14.0
+  Downloaded cc v1.11.2
+  Downloaded bigdecimal v0.4.11
+  Downloaded axum v0.8.9
+  Downloaded async-compression v0.4.52
+  Downloaded pkcs1 v0.7.5
+  Downloaded futures-intrusive v0.5.0
+  Downloaded flume v0.11.1
+  Downloaded flate2 v1.1.11
+  Downloaded der v0.7.10
+  Downloaded daachorse v3.0.3
+  Downloaded base64 v0.23.1
+  Downloaded pkcs8 v0.10.2
+  Downloaded pin-project-lite v0.2.17
+  Downloaded phf_shared v0.12.1
+  Downloaded darling_core v0.20.11
+  Downloaded crossbeam-epoch v0.9.21
+  Downloaded bytes v1.12.2
+  Downloaded base64 v0.22.1
+  Downloaded ident_case v1.0.1
+  Downloaded getrandom v0.4.3
+  Downloaded futures-channel v0.3.34
+  Downloaded futures v0.3.34
+  Downloaded crc32fast v1.5.5
+  Downloaded bytemuck v1.25.2
+  Downloaded clap v4.6.8
+  Downloaded bitflags v2.13.2
+  Downloaded foldhash v0.2.0
+  Downloaded event-listener v5.4.2
+  Downloaded derive_builder_core v0.20.2
+  Downloaded derive_builder v0.20.2
+  Downloaded darling v0.20.11
+  Downloaded clap_derive v4.6.8
+  Downloaded either v1.19.0
+  Downloaded deranged v0.5.9
+  Downloaded crossbeam-utils v0.8.23
+  Downloaded cookie_store v0.22.1
+  Downloaded cookie v0.18.2
+  Downloaded const-oid v0.9.6
+  Downloaded pastey v0.2.3
+  Downloaded cmake v0.1.58
+  Downloaded blake2 v0.10.6
+  Downloaded base64ct v1.8.3
+  Downloaded base64 v0.13.1
+  Downloaded anyhow v1.0.104
+  Downloaded foldhash v0.1.5
+  Downloaded compression-codecs v0.4.47
+  Downloaded chacha20 v0.10.2
+  Downloaded anstream v1.0.0
+  Downloaded fastrand v2.5.0
+  Downloaded dotenvy v0.15.7
+  Downloaded displaydoc v0.2.7
+  Downloaded digest v0.10.7
+  Downloaded dary_heap v0.3.9
+  Downloaded crossbeam-queue v0.3.14
+  Downloaded crossbeam-deque v0.8.8
+  Downloaded crc-catalog v2.5.0
+  Downloaded core_detect v1.0.0
+  Downloaded anstyle v1.0.14
+  Downloaded axum-core v0.5.6
+  Downloaded autocfg v1.5.1
+  Downloaded anstyle-parse v1.0.0
+  Downloaded futures-io v0.3.34
+  Downloaded futures-core v0.3.34
+  Downloaded cfg-if v1.0.5
+  Downloaded byteorder v1.5.0
+  Downloaded async-trait v0.1.92
+  Downloaded generic-array v0.14.7
+  Downloaded futures-sink v0.3.34
+  Downloaded futures-macro v0.3.34
+  Downloaded fs2 v0.4.3
+  Downloaded fnv v1.0.7
+  Downloaded equivalent v1.0.3
+  Downloaded document-features v0.2.12
+  Downloaded darling_macro v0.20.11
+  Downloaded crc v3.4.0
+  Downloaded crypto-common v0.1.7
+  Downloaded cpufeatures v0.2.17
+  Downloaded libsqlite3-sys v0.30.1
+   Compiling proc-macro2 v1.0.107
+   Compiling unicode-ident v1.0.27
+   Compiling quote v1.0.47
+   Compiling libc v0.2.191
+   Compiling syn v3.0.10
+   Compiling serde_core v1.0.229
+   Compiling cfg-if v1.0.5
+   Compiling serde v1.0.229
+   Compiling find-msvc-tools v0.1.15
+   Compiling shlex v2.0.1
+   Compiling cc v1.11.2
+   Compiling serde_derive v1.0.229
+   Compiling syn v2.0.119
+   Compiling version_check v0.9.5
+   Compiling memchr v2.8.3
+   Compiling autocfg v1.5.1
+   Compiling synstructure v0.14.0
+   Compiling pin-project-lite v0.2.17
+   Compiling smallvec v1.16.6
+   Compiling zerofrom-derive v0.1.8
+   Compiling once_cell v1.21.4
+   Compiling futures-core v0.3.34
+   Compiling yoke-derive v0.8.4
+   Compiling zerofrom v0.1.8
+   Compiling stable_deref_trait v1.2.1
+   Compiling itoa v1.0.19
+   Compiling yoke v0.8.4
+   Compiling bytes v1.12.2
+   Compiling num-traits v0.2.19
+   Compiling zerovec-derive v0.11.7
+   Compiling displaydoc v0.2.7
+   Compiling zerovec v0.11.9
+   Compiling errno v0.3.15
+   Compiling signal-hook-registry v1.4.8
+   Compiling tokio-macros v2.7.2
+   Compiling socket2 v0.6.5
+   Compiling mio v1.2.5
+   Compiling subtle v2.6.1
+   Compiling log v0.4.35
+   Compiling futures-sink v0.3.34
+   Compiling tokio v1.54.1
+   Compiling tinystr v0.8.5
+   Compiling tracing-core v0.1.36
+   Compiling generic-array v0.14.7
+   Compiling getrandom v0.2.17
+   Compiling typenum v1.20.1
+   Compiling writeable v0.6.4
+   Compiling litemap v0.8.3
+   Compiling utf_types v1.0.0
+   Compiling utf8_iter v1.1.0
+   Compiling icu_locale_core v2.4.0
+   Compiling potential_utf v0.1.6
+   Compiling zerotrie v0.2.5
+   Compiling percent-encoding v2.3.2
+   Compiling icu_normalizer_data v2.4.0
+   Compiling icu_properties_data v2.4.0
+   Compiling icu_provider v2.4.0
+   Compiling icu_collections v2.4.0
+   Compiling futures-channel v0.3.34
+   Compiling tracing-attributes v0.1.31
+   Compiling futures-macro v0.3.34
+   Compiling futures-io v0.3.34
+   Compiling slab v0.4.12
+   Compiling equivalent v1.0.3
+   Compiling futures-task v0.3.34
+   Compiling crossbeam-utils v0.8.23
+   Compiling futures-util v0.3.34
+   Compiling tracing v0.1.44
+   Compiling ring v0.17.14
+   Compiling zmij v1.0.23
+   Compiling zeroize v1.9.2
+   Compiling rustls-pki-types v1.16.0
+   Compiling icu_properties v2.4.0
+   Compiling icu_normalizer v2.4.0
+   Compiling crypto-common v0.1.7
+   Compiling block-buffer v0.10.4
+   Compiling serde_json v1.0.154
+   Compiling zerocopy v0.8.63
+   Compiling hashbrown v0.17.1
+   Compiling digest v0.10.7
+   Compiling idna_adapter v1.2.2
+   Compiling indexmap v2.14.2
+   Compiling form_urlencoded v1.2.2
+   Compiling num-integer v0.1.47
+   Compiling untrusted v0.9.0
+   Compiling scopeguard v1.2.0
+   Compiling foldhash v0.2.0
+   Compiling pkg-config v0.3.34
+   Compiling idna v1.1.0
+   Compiling http v1.5.0
+   Compiling strsim v0.11.1
+   Compiling rustls v0.23.46
+   Compiling http-body v1.1.0
+   Compiling rustls-webpki v0.103.17
+   Compiling lock_api v0.4.14
+   Compiling either v1.19.0
+   Compiling rustversion v1.0.23
+   Compiling getrandom v0.4.3
+   Compiling parking_lot_core v0.9.12
+   Compiling bitflags v2.13.2
+   Compiling ppv-lite86 v0.2.21
+   Compiling url v2.5.8
+   Compiling webpki-roots v1.0.12
+   Compiling ident_case v1.0.1
+   Compiling crossbeam-epoch v0.9.21
+   Compiling thiserror v2.0.21
+   Compiling httparse v1.10.1
+   Compiling ryu v1.0.23
+   Compiling fnv v1.0.7
+   Compiling libm v0.2.16
+   Compiling tower-service v0.3.3
+   Compiling crc32fast v1.5.5
+   Compiling getrandom v0.3.4
+   Compiling darling_core v0.20.11
+   Compiling rand_core v0.6.4
+   Compiling bigdecimal v0.4.11
+   Compiling cmake v0.1.58
+   Compiling thiserror-impl v2.0.21
+   Compiling adler2 v2.0.1
+   Compiling foldhash v0.1.5
+   Compiling allocator-api2 v0.2.21
+   Compiling simd-adler32 v0.3.10
+   Compiling try-lock v0.2.5
+   Compiling iana-time-zone v0.1.65
+   Compiling crossbeam-deque v0.8.8
+   Compiling cpufeatures v0.2.17
+   Compiling chrono v0.4.45
+   Compiling want v0.3.2
+   Compiling miniz_oxide v0.9.1
+   Compiling hashbrown v0.15.5
+   Compiling libz-ng-sys v1.1.33
+   Compiling parking_lot v0.12.5
+   Compiling darling_macro v0.20.11
+   Compiling num-bigint v0.4.8
+   Compiling sync_wrapper v1.0.2
+   Compiling matrixmultiply v0.3.11
+   Compiling aho-corasick v1.1.5
+   Compiling atomic-waker v1.1.2
+   Compiling rayon-core v1.13.0
+   Compiling parking v2.2.1
+   Compiling base64 v0.22.1
+   Compiling tower-layer v0.3.3
+   Compiling httpdate v1.0.3
+   Compiling vcpkg v0.2.15
+   Compiling paste v1.0.15
+   Compiling time-core v0.1.9
+   Compiling num-conv v0.2.2
+   Compiling crc-catalog v2.5.0
+   Compiling regex-syntax v0.8.12
+   Compiling crc v3.4.0
+   Compiling time-macros v0.2.32
+   Compiling regex-automata v0.4.19
+   Compiling libsqlite3-sys v0.30.1
+   Compiling hyper v1.12.0
+   Compiling event-listener v5.4.2
+   Compiling flate2 v1.1.11
+   Compiling darling v0.20.11
+   Compiling futures-intrusive v0.5.0
+   Compiling hashlink v0.10.0
+   Compiling sha2 v0.10.9
+   Compiling uuid v1.29.3
+   Compiling serde_urlencoded v0.7.1
+   Compiling webpki-roots v0.26.11
+   Compiling http-body-util v0.1.5
+   Compiling onig_sys v69.9.3
+   Compiling crossbeam-queue v0.3.14
+   Compiling tokio-stream v0.1.19
+   Compiling num-complex v0.4.6
+   Compiling cookie v0.18.2
+   Compiling compression-core v0.4.34
+   Compiling tinyvec v1.13.3
+   Compiling powerfmt v0.2.1
+   Compiling bytemuck v1.25.2
+   Compiling deranged v0.5.9
+   Compiling rawpointer v0.2.1
+   Compiling base64 v0.23.1
+   Compiling utf8parse v0.2.2
+   Compiling ipnet v2.12.2
+   Compiling hyper-util v0.1.21
+   Compiling anstyle-parse v1.0.0
+   Compiling time v0.3.55
+   Compiling safe_arch v0.7.4
+   Compiling unicode-normalization v0.1.26
+   Compiling compression-codecs v0.4.47
+   Compiling sqlx-core v0.8.6
+   Compiling derive_builder_core v0.20.2
+   Compiling tower v0.5.3
+   Compiling rand_core v0.9.5
+   Compiling rand_chacha v0.3.1
+   Compiling spin v0.9.9
+   Compiling hmac v0.12.1
+   Compiling futures-executor v0.3.34
+   Compiling atoi v2.0.0
+   Compiling ahash v0.8.12
+   Compiling is_terminal_polyfill v1.70.2
+   Compiling litrs v1.0.1
+   Compiling unicode-bidi v0.3.18
+   Compiling ort-sys v2.0.0-rc.12
+   Compiling esaxx-rs v0.1.10
+   Compiling colorchoice v1.0.5
+   Compiling rustix v1.1.6
+   Compiling psl-types v2.0.11
+   Compiling anstyle-query v1.1.5
+   Compiling minimal-lexical v0.2.1
+   Compiling anstyle v1.0.14
+   Compiling unicode-properties v0.1.5
+   Compiling siphasher v1.0.4
+   Compiling stringprep v0.1.5
+   Compiling phf_shared v0.12.1
+   Compiling anstream v1.0.0
+   Compiling nom v7.1.3
+   Compiling publicsuffix v2.3.0
+   Compiling document-features v0.2.12
+   Compiling hkdf v0.12.4
+   Compiling rand v0.8.8
+   Compiling flume v0.11.1
+   Compiling rand_chacha v0.9.0
+   Compiling derive_builder_macro v0.20.2
+   Compiling rayon v1.12.0
+   Compiling async-compression v0.4.52
+   Compiling wide v0.7.33
+   Compiling encoding_rs v0.8.44
+   Compiling castaway v0.2.4
+   Compiling tokio-rustls v0.26.6
+   Compiling itertools v0.14.0
+   Compiling md-5 v0.10.6
+   Compiling tokio-util v0.7.20
+   Compiling approx v0.5.1
+   Compiling monostate-impl v0.1.18
+   Compiling mime v0.3.18
+   Compiling hex v0.4.3
+   Compiling whoami v1.6.1
+   Compiling clap_lex v1.1.2
+   Compiling byteorder v1.5.0
+   Compiling unicode-segmentation v1.13.3
+   Compiling heck v0.5.0
+   Compiling macro_rules_attribute-proc_macro v0.2.3
+   Compiling anyhow v1.0.104
+   Compiling home v0.5.12
+   Compiling dotenvy v0.15.7
+   Compiling base64ct v1.8.3
+   Compiling linux-raw-sys v0.12.1
+   Compiling lazy_static v1.5.1
+   Compiling base64 v0.13.1
+   Compiling chrono-tz v0.10.4
+   Compiling static_assertions v1.1.0
+   Compiling pastey v0.2.3
+   Compiling compact_str v0.9.1
+   Compiling macro_rules_attribute v0.2.3
+   Compiling spm_precompiled v0.1.4
+   Compiling sharded-slab v0.1.7
+   Compiling password-hash v0.5.0
+   Compiling sqlx-postgres v0.8.6
+   Compiling clap_derive v4.6.8
+   Compiling clap_builder v4.6.7
+   Compiling rayon-cond v0.4.0
+   Compiling axum-core v0.5.6
+   Compiling monostate v0.1.18
+   Compiling simba v0.9.1
+   Compiling tower-http v0.6.11
+   Compiling hyper-rustls v0.27.10
+   Compiling cookie_store v0.22.1
+   Compiling onig v6.5.3
+   Compiling derive_builder v0.20.2
+   Compiling sqlx-sqlite v0.8.6
+   Compiling rand v0.9.5
+   Compiling phf v0.12.1
+   Compiling mainkraft-png-codec v0.1.0 (/mnt/c/Users/erosi/OneDrive/Desktop/allprojects/keftrade-intelligence/apps/backend-rust/png-codec)
+   Compiling ndarray v0.17.2
+   Compiling matchers v0.2.0
+   Compiling regex v1.13.2
+   Compiling num-rational v0.4.2
+   Compiling blake2 v0.10.6
+   Compiling tracing-log v0.2.0
+   Compiling tracing-serde v0.2.0
+   Compiling serde_path_to_error v0.1.20
+   Compiling nalgebra-macros v0.3.0
+   Compiling unicode-normalization-alignments v0.1.12
+   Compiling dary_heap v0.3.9
+   Compiling thread_local v1.1.10
+   Compiling libloading v0.9.1
+   Compiling nu-ansi-term v0.50.3
+   Compiling matchit v0.8.4
+   Compiling fastrand v2.5.0
+   Compiling unicode_categories v0.1.1
+   Compiling multiversion_no_op v1.0.0
+   Compiling simdutf8 v0.1.5
+   Compiling core_detect v1.0.0
+   Compiling daachorse v3.0.3
+   Compiling tokenizers v0.23.2
+   Compiling tempfile v3.27.0
+   Compiling axum v0.8.9
+   Compiling tracing-subscriber v0.3.23
+   Compiling ort v2.0.0-rc.12
+   Compiling nalgebra v0.34.2
+   Compiling argon2 v0.5.3
+   Compiling sqlx v0.8.6
+   Compiling reqwest v0.12.28
+   Compiling clap v4.6.8
+   Compiling futures v0.3.34
+   Compiling async-trait v0.1.92
+   Compiling fs2 v0.4.3
+   Compiling html5gum v0.9.1
+   Compiling mainkraft v0.1.0 (/mnt/c/Users/erosi/OneDrive/Desktop/allprojects/keftrade-intelligence/apps/backend-rust)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 2m 05s
+     Running unittests src/lib.rs (/home/erosimcity/.local/share/mainkraft-rust-validation/target/debug/deps/mainkraft-ffb4ce6214cf54a7)
+
+running 18 tests
+test evidence::tests::interrupted_writer_child ... ignored, only invoked by the parent process-interruption test
+test canonical::tests::python_exponents_and_unicode ... ok
+test evidence::tests::uncommitted_journal_child ... ignored, only invoked by journal restart parent
+test api::validation_tests::control_wire_validation_matches_fastapi ... ok
+test broker::tests::incomplete_migration_cannot_submit_or_cancel ... ok
+test official_ir::tests::loopback_tls_http_cookies_compression_and_limits_match_python ... ignored, requires scripts/test-rust-ir-http.py loopback TLS oracle
+test sentiment_worker::tests::native_http_contract_and_cancellation_keep_single_inference_job ... ignored, requires scripts/test-rust-sentiment.py pinned artifacts/runtime
+test research_providers::tests::research_transport_rejects_non_provider_targets ... ok
+test sentiment_worker::tests::python_http_validation_contract ... ok
+test official_ir::tests::cancelled_callers_retain_two_parser_slots_until_blocking_work_finishes ... ok
+test sentiment_worker::tests::frozen_manifest_identity_and_external_paths_are_enforced ... ok
+test evidence::tests::compressed_output_limit_refuses_expansion_without_modifying_the_file ... ok
+test evidence::tests::concurrent_journal_issuers_keep_the_first_semantic_prediction ... ok
+test evidence::tests::simultaneous_record_creation_keeps_one_complete_identity_in_all_families ... ok
+test evidence::tests::sqlite_process_death_rolls_back_uncommitted_evidence_and_allows_restart ... ok
+test evidence::tests::cancelled_async_writers_keep_both_slots_until_blocking_commits_finish ... ok
+test evidence::tests::process_exit_at_each_atomic_boundary_preserves_old_or_complete_new_evidence ... ok
+test evidence::tests::concurrent_publication_never_exposes_partial_records_or_pointers_and_corruption_is_not_repaired ... ok
+
+test result: ok. 14 passed; 0 failed; 4 ignored; 0 measured; 0 filtered out; finished in 0.62s
+
+     Running unittests src/main.rs (/home/erosimcity/.local/share/mainkraft-rust-validation/target/debug/deps/mainkraft-f447d574b171675a)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/api_contract.rs (/home/erosimcity/.local/share/mainkraft-rust-validation/target/debug/deps/api_contract-554f4456875343fa)
+
+running 1 test
+test authentication_preserves_python_password_sessions_csrf_and_throttle ... ignored, requires isolated research DB from scripts/test-rust-postgres.py
+
+test result: ok. 0 passed; 0 failed; 1 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/chart_parity.rs (/home/erosimcity/.local/share/mainkraft-rust-validation/target/debug/deps/chart_parity-dfe4ffd1623cd38d)
+
+running 2 tests
+test original_chart_pixels_png_and_archived_manifest_identities_match ... ok
+test archived_detection_annotation_font_pixels_and_png_match_original_route ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 1.36s
+
+     Running tests/discovery_lifecycle.rs (/home/erosimcity/.local/share/mainkraft-rust-validation/target/debug/deps/discovery_lifecycle-1012d094db6fde14)
+
+running 1 test
+test acquired_news_matches_python_and_keeps_truncation_and_provenance_explicit ... ignored, requires scripts/test-rust-postgres.py isolated paper DB
+
+test result: ok. 0 passed; 0 failed; 1 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/engine_lifecycle.rs (/home/erosimcity/.local/share/mainkraft-rust-validation/target/debug/deps/engine_lifecycle-9e6e60c403119874)
+
+running 1 test
+test two_account_monitor_allocate_fill_exit_restart_and_prequential_learning ... ignored, requires scripts/test-rust-postgres.py isolated paper DB
+
+test result: ok. 0 passed; 0 failed; 1 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/evidence_storage.rs (/home/erosimcity/.local/share/mainkraft-rust-validation/target/debug/deps/evidence_storage-ffd1001f8e82f06b)
+
+running 2 tests
+test original_record_ids_bytes_reads_pointers_and_capacity_boundaries ... ok
+test original_append_only_journal_bytes_duplicates_rollback_and_busy_recovery ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 2.05s
+
+     Running tests/financial_parity.rs (/home/erosimcity/.local/share/mainkraft-rust-validation/target/debug/deps/financial_parity-a049f825fe907226)
+
+running 1 test
+test gaap_metrics_select_original_versions_periods_and_sources ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.11s
+
+     Running tests/forecast_statistics.rs (/home/erosimcity/.local/share/mainkraft-rust-validation/target/debug/deps/forecast_statistics-7a06f2b70942715a)
+
+running 1 test
+test original_baseline_and_decimal_outcome_arithmetic ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.01s
+
+     Running tests/forecasting_lifecycle.rs (/home/erosimcity/.local/share/mainkraft-rust-validation/target/debug/deps/forecasting_lifecycle-86e9a38d37a778b9)
+
+running 1 test
+test original_forecast_issuance_and_resolution_are_atomic_causal_and_restart_safe ... ignored, requires original Python isolated workflow oracle
+
+test result: ok. 0 passed; 0 failed; 1 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/information_lifecycle.rs (/home/erosimcity/.local/share/mainkraft-rust-validation/target/debug/deps/information_lifecycle-b8afb3031c8c17d1)
+
+running 1 test
+test private_news_filings_and_information_identities_match_python ... ignored, requires original Python information oracle in isolated DB schemas
+
+test result: ok. 0 passed; 0 failed; 1 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/information_metadata.rs (/home/erosimcity/.local/share/mainkraft-rust-validation/target/debug/deps/information_metadata-413c824d99f4fd80)
+
+running 1 test
+test original_private_news_metadata_and_unicode_flag_semantics ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.05s
+
+     Running tests/information_time.rs (/home/erosimcity/.local/share/mainkraft-rust-validation/target/debug/deps/information_time-1e7202a09b06ec2a)
+
+running 2 tests
+test overflowing_publication_metadata_keeps_original_uncaught_error ... ok
+test original_python_information_timestamp_acceptance_precision_and_errors ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.05s
+
+     Running tests/ingestion_lifecycle.rs (/home/erosimcity/.local/share/mainkraft-rust-validation/target/debug/deps/ingestion_lifecycle-17ce3f807c2fdb0e)
+
+running 1 test
+test original_ingestion_storage_transactions_and_restart_recovery ... ignored, requires isolated original Python ingestion oracle
+
+test result: ok. 0 passed; 0 failed; 1 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/ir_parity.rs (/home/erosimcity/.local/share/mainkraft-rust-validation/target/debug/deps/ir_parity-c4d3e0d5f9fa8f07)
+
+running 1 test
+test legacy_html_text_entities_attributes_and_robots_match_python ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.01s
+
+     Running tests/jobs_lifecycle.rs (/home/erosimcity/.local/share/mainkraft-rust-validation/target/debug/deps/jobs_lifecycle-31a004ede6890771)
+
+running 1 test
+test durable_jobs_preserve_completion_priority_ownership_recovery_and_scheduler_marks ... ignored, requires scripts/test-rust-postgres.py isolated research DB
+
+test result: ok. 0 passed; 0 failed; 1 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/legacy_progress.rs (/home/erosimcity/.local/share/mainkraft-rust-validation/target/debug/deps/legacy_progress-70d12c70cd54fb9c)
+
+running 1 test
+test existing_research_progress_does_not_promote_or_finalize ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.01s
+
+     Running tests/lifecycle.rs (/home/erosimcity/.local/share/mainkraft-rust-validation/target/debug/deps/lifecycle-afd4ea946fb2f8c0)
+
+running 1 test
+test full_durable_order_lifecycle_against_isolated_postgres ... ignored, requires scripts/test-rust-postgres.py and the isolated local PostgreSQL fixture
+
+test result: ok. 0 passed; 0 failed; 1 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/market_parity.rs (/home/erosimcity/.local/share/mainkraft-rust-validation/target/debug/deps/market_parity-ad1e4df74f9dc3d4)
+
+running 1 test
+test daily_ingestion_frozen_inference_quote_and_source_identity_match_python ... ignored, requires scripts/test-rust-postgres.py isolated paper DB
+
+test result: ok. 0 passed; 0 failed; 1 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/monitoring_parity.rs (/home/erosimcity/.local/share/mainkraft-rust-validation/target/debug/deps/monitoring_parity-e140e2108ff45e38)
+
+running 1 test
+test descriptive_risk_reliability_calibration_and_issuance_match_python ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.06s
+
+     Running tests/news_parity.rs (/home/erosimcity/.local/share/mainkraft-rust-validation/target/debug/deps/news_parity-614e1f50b3f4780f)
+
+running 2 tests
+test strict_schema_citations_and_duplicate_rejections_match_python ... ok
+test sourced_context_budget_and_input_order_match_python ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.14s
+
+     Running tests/official_ir_lifecycle.rs (/home/erosimcity/.local/share/mainkraft-rust-validation/target/debug/deps/official_ir_lifecycle-303d104a2be84d99)
+
+running 1 test
+test official_pages_and_enrichment_match_original_without_backdating_or_rewriting ... ignored, requires isolated Python official IR workflow oracle
+
+test result: ok. 0 passed; 0 failed; 1 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/point_features.rs (/home/erosimcity/.local/share/mainkraft-rust-validation/target/debug/deps/point_features-9fd3edc2c454f33f)
+
+running 1 test
+test original_causal_information_features_numeric_values_lineage_and_exact_snapshot_ids ... FAILED
+
+failures:
+
+---- original_causal_information_features_numeric_values_lineage_and_exact_snapshot_ids stdout ----
+
+thread 'original_causal_information_features_numeric_values_lineage_and_exact_snapshot_ids' (10967) panicked at tests/point_features.rs:87:5:
+11 causal feature discrepancies; first {"information":"base","observed":false,"expected_values":[1.0986122886681098,1.6094379124341003,1.8181818181818181,0.041666666666666664,0.30000000000000004,0.23076923076923078,0.03076923076923077,2.2,1.0,2.0,1.0,2.0,0.0,2.0],"actual_values":[1.0986122886681096,1.6094379124341003,1.8181818181818181,0.041666666666666664,0.30000000000000004,0.23076923076923078,0.03076923076923077,2.2,1.0,2.0,1.0,2.0,0.0,2.0],"expected_lineage":{"fact_ids":[1,2,3,4,99,6,7,8],"filing_ids":["e0","e1","e2"],"historical_news":"Current archive censored by version availability, not original-vintage completeness","ir_ids":["ir0","ir2"],"news_coverage":true,"news_ids":["n1","late-news-revision","n3","n4","n5","n6"],"news_lag_minutes":60},"actual_lineage":{"news_ids":["n1","late-news-revision","n3","n4","n5","n6"],"news_coverage":true,"fact_ids":[1,2,3,4,99,6,7,8],"filing_ids":["e0","e1","e2"],"ir_ids":["ir0","ir2"],"news_lag_minutes":60,"historical_news":"Current archive censored by version availability, not original-vintage completeness"}}
+note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+
+
+failures:
+    original_causal_information_features_numeric_values_lineage_and_exact_snapshot_ids
+
+test result: FAILED. 0 passed; 1 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.48s
+
+error: test failed, to rerun pass `-p mainkraft --test point_features`
+     Running tests/point_features_lifecycle.rs (/home/erosimcity/.local/share/mainkraft-rust-validation/target/debug/deps/point_features_lifecycle-1ddc03a1d1a15e72)
+
+running 1 test
+test causal_feature_reads_exact_identities_immutable_writes_and_transaction_recovery ... ignored, requires original Python causal-feature database oracle
+
+test result: ok. 0 passed; 0 failed; 1 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/policy_parity.rs (/home/erosimcity/.local/share/mainkraft-rust-validation/target/debug/deps/policy_parity-409c5390c787c67e)
+
+running 4 tests
+test portfolio_policy_including_seeded_exploration_matches_python ... ok
+test decimal_shares_and_close_before_reversal_match_python ... ok
+test causal_daily_features_match_numpy ... ok
+test exchange_targets_match_through_holidays_early_close_and_dst ... ok
+
+test result: ok. 4 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.06s
+
+     Running tests/prospective_lifecycle.rs (/home/erosimcity/.local/share/mainkraft-rust-validation/target/debug/deps/prospective_lifecycle-727fe1e20b95557e)
+
+running 1 test
+test existing_frozen_forecasts_are_causal_atomic_duplicate_safe_and_worker_recoverable ... ignored, requires original Python prospective/worker oracle in disposable schemas
+
+test result: ok. 0 passed; 0 failed; 1 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/python_parity.rs (/home/erosimcity/.local/share/mainkraft-rust-validation/target/debug/deps/python_parity-42501a569e8b1a41)
+
+running 4 tests
+test frozen_network_forward_does_not_substitute_a_model ... ok
+test residual_ridge_matches_numpy_solve ... ok
+test frozen_and_synthetic_numeric_models_match_python ... ok
+test historical_bundle_and_record_identities_match_python ... ok
+
+test result: ok. 4 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.06s
+
+     Running tests/ranking_lifecycle.rs (/home/erosimcity/.local/share/mainkraft-rust-validation/target/debug/deps/ranking_lifecycle-a7b108d44b3fe79c)
+
+running 1 test
+test shared_budget_survives_concurrency_failure_and_restart_without_retry ... ignored, requires scripts/test-rust-postgres.py isolated paper DB
+
+test result: ok. 0 passed; 0 failed; 1 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/ranking_parity.rs (/home/erosimcity/.local/share/mainkraft-rust-validation/target/debug/deps/ranking_parity-cd920b29b8082f7b)
+
+running 1 test
+test request_hash_prompt_order_and_response_validation_match_python ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/report_parity.rs (/home/erosimcity/.local/share/mainkraft-rust-validation/target/debug/deps/report_parity-47a0ae6288a521d9)
+
+running 1 test
+test original_immutable_research_and_sqlite_status_contracts_match_without_writes ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 1.17s
+
+     Running tests/research_api.rs (/home/erosimcity/.local/share/mainkraft-rust-validation/target/debug/deps/research_api-be5a3ef91b972160)
+
+running 1 test
+test existing_company_workspace_forecast_research_and_monitoring_contracts_match_python ... ignored, requires scripts/test-rust-postgres.py original seeded Python API oracle
+
+test result: ok. 0 passed; 0 failed; 1 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/research_dispatch.rs (/home/erosimcity/.local/share/mainkraft-rust-validation/target/debug/deps/research_dispatch-faeeb2071da6b04d)
+
+running 1 test
+test native_jobs_use_actual_services_match_python_and_recover_committed_refresh ... ignored, requires original Python durable dispatch oracle in disposable local schemas
+
+test result: ok. 0 passed; 0 failed; 1 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/research_lifecycle.rs (/home/erosimcity/.local/share/mainkraft-rust-validation/target/debug/deps/research_lifecycle-f5c9fc3f24972d79)
+
+running 1 test
+test full_premarket_research_freezes_only_timely_covered_selections_and_matches_python ... ignored, requires scripts/test-rust-postgres.py isolated paper DB
+
+test result: ok. 0 passed; 0 failed; 1 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/research_providers.rs (/home/erosimcity/.local/share/mainkraft-rust-validation/target/debug/deps/research_providers-6a75c6ae3b52cbbe)
+
+running 3 tests
+test research_requests_remain_bounded_and_cancelled_requests_release_capacity ... ok
+test research_provider_request_pagination_retry_and_no_substitution_match_python ... ok
+test research_decimal_validation_and_sec_filing_identities_match_python ... ok
+
+test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.06s
+
+     Running tests/rng_parity.rs (/home/erosimcity/.local/share/mainkraft-rust-validation/target/debug/deps/rng_parity-36e2176fb1bcde8c)
+
+running 1 test
+test pcg64_and_ziggurat_preserve_existing_exploration ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.01s
+
+     Running tests/sentiment_inference.rs (/home/erosimcity/.local/share/mainkraft-rust-validation/target/debug/deps/sentiment_inference-8dd2d78764319b8e)
+
+running 1 test
+test native_frozen_worker_matches_original_python_tokens_logits_and_scores ... ignored, requires scripts/test-rust-sentiment.py pinned frozen artifacts/runtime
+
+test result: ok. 0 passed; 0 failed; 1 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/sentiment_parity.rs (/home/erosimcity/.local/share/mainkraft-rust-validation/target/debug/deps/sentiment_parity-65516f81bc058848)
+
+running 1 test
+test sourced_text_hashes_and_sentiment_aggregation_match_python ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/write_api.rs (/home/erosimcity/.local/share/mainkraft-rust-validation/target/debug/deps/write_api-19fce94216d2ba62)
+
+running 1 test
+test watchlist_and_job_http_contracts_csrf_and_atomic_queue_admission ... ignored, requires scripts/test-rust-postgres.py isolated research DB
+
+test result: ok. 0 passed; 0 failed; 1 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/lib.rs (/home/erosimcity/.local/share/mainkraft-rust-validation/target/debug/deps/mainkraft_png_codec-5bf16806d808a697)
+
+running 2 tests
+test tests::invalid_buffers_never_reach_ffi ... ok
+test tests::repeated_compression_has_no_global_stream_state ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+   Doc-tests mainkraft
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+   Doc-tests mainkraft_png_codec
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+error: 1 target failed:
+    `-p mainkraft --test point_features`

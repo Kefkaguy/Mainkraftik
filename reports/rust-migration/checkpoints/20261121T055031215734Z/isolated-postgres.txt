@@ -1,0 +1,442 @@
+
+running 1 test
+UNKNOWN_PARTIAL_RESTART_DUPLICATE=PASS
+KNOWN_REJECTION=PASS
+ACCOUNT_ISOLATION=PASS
+IMMUTABLE_EVIDENCE=PASS
+DURABLE_CYCLE_AND_SHARED_PYTHON_LEASE=PASS
+DB_FAILURE_AFTER_FILL_RECOVERY=PASS
+PAUSE_BEFORE_INTENT=PASS
+DASHBOARD_STATUS_AND_SCHEMA_PRESERVATION=PASS
+test full_durable_order_lifecycle_against_isolated_postgres ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.69s
+
+
+   Compiling mainkraft v0.1.0 (C:\Users\erosi\OneDrive\Desktop\allprojects\keftrade-intelligence\apps\backend-rust)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 3.03s
+     Running tests\lifecycle.rs (apps\backend-rust\target\debug\deps\lifecycle-db336bf005c5f36c.exe)
+
+RUST_PYTHON_DASHBOARD_STATUS_PARITY=PASS
+
+running 1 test
+AUTOMATIC_TWO_ACCOUNT_BUY_FILL_AND_RESTART_DEDUP=PASS
+POSITION_MONITORING_CLOSE_BEFORE_SHORT_WITHOUT_FUTURE_LEARNING=PASS
+MATURED_ONLY_RESIDUAL_UPDATE_FIXED_CONTROL_UNCHANGED=PASS
+FORECAST_RETURN_NOT_EXECUTION_PNL=PASS
+OPERATOR_PAUSE_AND_CLOSED_MARKET=PASS
+BROKER_RESTRICTION_AND_ACCOUNT_FAILURE_ISOLATION=PASS
+test two_account_monitor_allocate_fill_exit_restart_and_prequential_learning ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 1.62s
+
+
+   Compiling mainkraft v0.1.0 (C:\Users\erosi\OneDrive\Desktop\allprojects\keftrade-intelligence\apps\backend-rust)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 2.91s
+     Running tests\engine_lifecycle.rs (apps\backend-rust\target\debug\deps\engine_lifecycle-55ebf0e68baef087.exe)
+
+
+running 1 test
+NATIVE_DATA_FEATURE_MODEL_QUOTE_SOURCE_PARITY_AND_CACHE=PASS
+NO_UNAVAILABLE_CURRENT_CANDLE_OR_STALE_QUOTE=PASS
+test daily_ingestion_frozen_inference_quote_and_source_identity_match_python ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.31s
+
+
+   Compiling mainkraft v0.1.0 (C:\Users\erosi\OneDrive\Desktop\allprojects\keftrade-intelligence\apps\backend-rust)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 2.39s
+     Running tests\market_parity.rs (apps\backend-rust\target\debug\deps\market_parity-101ac41495203749.exe)
+
+
+running 1 test
+SHARED_DAILY_MONTHLY_BUDGET_AND_RESTART=PASS
+FAILED_REQUEST_CONSUMES_RESERVATION_NO_RETRY=PASS
+IMMUTABLE_RESERVATIONS_NO_PROVIDER_ERROR_LEAK=PASS
+test shared_budget_survives_concurrency_failure_and_restart_without_retry ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.33s
+
+
+   Compiling mainkraft v0.1.0 (C:\Users\erosi\OneDrive\Desktop\allprojects\keftrade-intelligence\apps\backend-rust)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 3.39s
+     Running tests\ranking_lifecycle.rs (apps\backend-rust\target\debug\deps\ranking_lifecycle-30f3958392fb30ac.exe)
+
+
+running 1 test
+CATALOG_AND_ORIGINAL_PYTHON_NEWS_SOURCE_ID_PARITY=PASS
+FUTURE_INVALID_AND_OMITTED_SOURCE_FIELDS_EXCLUDED=PASS
+UPDATED_NEWS_INPUT_ORDER_REPLAY_IMMUTABILITY=PASS
+BOUNDED_PAGINATION_WITH_EXPLICIT_TRUNCATION=PASS
+test acquired_news_matches_python_and_keeps_truncation_and_provenance_explicit ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.26s
+
+
+   Compiling mainkraft v0.1.0 (C:\Users\erosi\OneDrive\Desktop\allprojects\keftrade-intelligence\apps\backend-rust)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 2.30s
+     Running tests\discovery_lifecycle.rs (apps\backend-rust\target\debug\deps\discovery_lifecycle-72b7a46074160ad4.exe)
+
+
+running 1 test
+FULL_PYTHON_RESEARCH_SOURCE_EVENT_SELECTION_ID_PARITY=PASS
+FROZEN_RESTART_NO_BACKDATING_PREVIEW_SEPARATION=PASS
+MISSED_CUTOFF_RETAINED_NOT_FROZEN=PASS
+BENCHMARK_FAILURE_ATOMIC_ROLLBACK_NO_ORDER_AUTHORITY=PASS
+RESEARCH_FAILURE_RETRY_SPACING_AND_CLOSED_CHANNEL_SHUTDOWN=PASS
+test full_premarket_research_freezes_only_timely_covered_selections_and_matches_python ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.57s
+
+
+   Compiling mainkraft v0.1.0 (C:\Users\erosi\OneDrive\Desktop\allprojects\keftrade-intelligence\apps\backend-rust)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 2.88s
+     Running tests\research_lifecycle.rs (apps\backend-rust\target\debug\deps\research_lifecycle-b29d5d490338da71.exe)
+
+
+running 1 test
+PYTHON_ARGON2_SESSION_COOKIE_CSRF_LOGOUT=PASS
+EXISTING_PYTHON_SESSION=PASS
+FAILED_ATTEMPTS_PERSIST_GLOBAL_THROTTLE=PASS
+IDEMPOTENT_SCHEMA_PRESERVES_SESSION=PASS
+test authentication_preserves_python_password_sessions_csrf_and_throttle ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 1.84s
+
+
+   Compiling mainkraft v0.1.0 (C:\Users\erosi\OneDrive\Desktop\allprojects\keftrade-intelligence\apps\backend-rust)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 2.87s
+     Running tests\api_contract.rs (apps\backend-rust\target\debug\deps\api_contract-54849b9c380d42b9.exe)
+
+
+running 1 test
+ORIGINAL_WATCHLIST_JOB_WRITE_HTTP_VALIDATION_AND_PAYLOAD_PARITY=PASS
+AUTH_CSRF_IMMUTABLE_WATCHLIST_AND_DURABLE_QUEUED_EVENTS=PASS
+TWELVE_CONCURRENT_CLIENT_SUBMISSIONS_FIVE_ACCEPTED_SEVEN_REJECTED=PASS
+test watchlist_and_job_http_contracts_csrf_and_atomic_queue_admission ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.68s
+
+
+   Compiling mainkraft v0.1.0 (C:\Users\erosi\OneDrive\Desktop\allprojects\keftrade-intelligence\apps\backend-rust)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 3.78s
+     Running tests\write_api.rs (apps\backend-rust\target\debug\deps\write_api-3a42310849b3f798.exe)
+
+
+running 1 test
+ORIGINAL_COMPLETION_FAILURE_EVENT_AND_PRIORITY_PARITY=PASS
+CANCELLED_CALLER_RETAINS_ACTIVE_WORKER_LEASE=PASS
+EXITED_WORKER_AND_POST_SIDE_EFFECT_DB_FAILURE_RECOVERY=PASS
+SCHEDULER_RESTART_DEDUP_AND_PENDING_REFRESH_BACKPRESSURE=PASS
+GRACEFUL_DRAIN_AND_CLOSED_SUPERVISOR_SHUTDOWN=PASS
+test durable_jobs_preserve_completion_priority_ownership_recovery_and_scheduler_marks ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 1.53s
+
+
+   Compiling mainkraft v0.1.0 (C:\Users\erosi\OneDrive\Desktop\allprojects\keftrade-intelligence\apps\backend-rust)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 3.12s
+     Running tests\jobs_lifecycle.rs (apps\backend-rust\target\debug\deps\jobs_lifecycle-644b9febc1103cb7.exe)
+
+Captured 19 original durable jobs and 11 persisted evidence families; actual workflows, fake HTTP only
+
+Research job 6b3f2ca2-3128-5fa4-a713-3546b49339f6 failed
+Traceback (most recent call last):
+  File "C:\Users\erosi\OneDrive\Desktop\allprojects\keftrade-intelligence\apps\api\intelligence\jobs.py", line 152, in run_once
+    result = dispatch(job["kind"], job["payload"])
+  File "C:\Users\erosi\OneDrive\Desktop\allprojects\keftrade-intelligence\apps\api\intelligence\jobs.py", line 56, in dispatch
+    raise ValueError("Refresh symbols must belong to the verified securities registry")
+ValueError: Refresh symbols must belong to the verified securities registry
+Research job c838abb9-20f8-5c70-9f60-0ac461d64f49 failed
+Traceback (most recent call last):
+  File "C:\Users\erosi\OneDrive\Desktop\allprojects\keftrade-intelligence\apps\api\intelligence\jobs.py", line 152, in run_once
+    result = dispatch(job["kind"], job["payload"])
+  File "C:\Users\erosi\OneDrive\Desktop\allprojects\keftrade-intelligence\apps\api\intelligence\jobs.py", line 56, in dispatch
+    raise ValueError("Refresh symbols must belong to the verified securities registry")
+ValueError: Refresh symbols must belong to the verified securities registry
+Research job fd644abc-535e-51c7-ab92-f79f95f595d8 failed
+Traceback (most recent call last):
+  File "C:\Users\erosi\OneDrive\Desktop\allprojects\keftrade-intelligence\apps\api\intelligence\jobs.py", line 152, in run_once
+    result = dispatch(job["kind"], job["payload"])
+  File "C:\Users\erosi\OneDrive\Desktop\allprojects\keftrade-intelligence\apps\api\intelligence\jobs.py", line 56, in dispatch
+    raise ValueError("Refresh symbols must belong to the verified securities registry")
+ValueError: Refresh symbols must belong to the verified securities registry
+Research job 77835a27-d0b4-585c-bccc-c2ba03a521cb failed
+Traceback (most recent call last):
+  File "C:\Users\erosi\OneDrive\Desktop\allprojects\keftrade-intelligence\apps\api\intelligence\jobs.py", line 152, in run_once
+    result = dispatch(job["kind"], job["payload"])
+  File "C:\Users\erosi\OneDrive\Desktop\allprojects\keftrade-intelligence\apps\api\intelligence\jobs.py", line 55, in dispatch
+    if not set(symbols) <= known or len(symbols) > 26:
+           ~~~^^^^^^^^^
+TypeError: cannot use 'list' as a set element (unhashable type: 'list')
+Research job b7c66afc-d925-517b-9a8a-e4deb1f694ff failed
+Traceback (most recent call last):
+  File "C:\Users\erosi\OneDrive\Desktop\allprojects\keftrade-intelligence\apps\api\intelligence\jobs.py", line 152, in run_once
+    result = dispatch(job["kind"], job["payload"])
+  File "C:\Users\erosi\OneDrive\Desktop\allprojects\keftrade-intelligence\apps\api\intelligence\jobs.py", line 56, in dispatch
+    raise ValueError("Refresh symbols must belong to the verified securities registry")
+ValueError: Refresh symbols must belong to the verified securities registry
+Research job 331dc524-d33d-5e00-8139-8d945cc9cd27 failed
+Traceback (most recent call last):
+  File "C:\Users\erosi\OneDrive\Desktop\allprojects\keftrade-intelligence\apps\api\intelligence\jobs.py", line 152, in run_once
+    result = dispatch(job["kind"], job["payload"])
+  File "C:\Users\erosi\OneDrive\Desktop\allprojects\keftrade-intelligence\apps\api\intelligence\jobs.py", line 55, in dispatch
+    if not set(symbols) <= known or len(symbols) > 26:
+           ~~~^^^^^^^^^
+TypeError: 'int' object is not iterable
+Research job 86fc466f-22eb-5583-bc25-b6ebcbc18569 failed
+Traceback (most recent call last):
+  File "C:\Users\erosi\OneDrive\Desktop\allprojects\keftrade-intelligence\apps\api\intelligence\jobs.py", line 152, in run_once
+    result = dispatch(job["kind"], job["payload"])
+  File "C:\Users\erosi\OneDrive\Desktop\allprojects\keftrade-intelligence\apps\api\intelligence\jobs.py", line 50, in dispatch
+    resource_check()
+    ~~~~~~~~~~~~~~^^
+  File "C:\Python314\Lib\unittest\mock.py", line 1175, in __call__
+    return self._mock_call(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\unittest\mock.py", line 1179, in _mock_call
+    return self._execute_mock_call(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\unittest\mock.py", line 1240, in _execute_mock_call
+    result = effect(*args, **kwargs)
+  File "C:\Users\erosi\OneDrive\Desktop\allprojects\keftrade-intelligence\scripts\prepare-rust-dispatch.py", line 58, in gate
+    if state.get('phase')=='resource-denied':raise providers.ProviderError('Fixture resource exhausted')
+                                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+intelligence.providers.ProviderError: Fixture resource exhausted
+Research job d61bc4f2-02d8-5b4b-a8b9-cadf5ea0846d failed
+Traceback (most recent call last):
+  File "C:\Users\erosi\OneDrive\Desktop\allprojects\keftrade-intelligence\apps\api\intelligence\jobs.py", line 152, in run_once
+    result = dispatch(job["kind"], job["payload"])
+  File "C:\Users\erosi\OneDrive\Desktop\allprojects\keftrade-intelligence\apps\api\intelligence\jobs.py", line 104, in dispatch
+    result = refresh_information()
+  File "C:\Users\erosi\OneDrive\Desktop\allprojects\keftrade-intelligence\apps\api\intelligence\information.py", line 390, in refresh_information
+    news = ingest_news(start=None if backfill else now() - timedelta(days=45))
+  File "C:\Users\erosi\OneDrive\Desktop\allprojects\keftrade-intelligence\apps\api\intelligence\information.py", line 127, in ingest_news
+    metadata = [news_metadata(row) for row in payload.get("news", [])]
+                ~~~~~~~~~~~~~^^^^^
+  File "C:\Users\erosi\OneDrive\Desktop\allprojects\keftrade-intelligence\apps\api\intelligence\information.py", line 52, in news_metadata
+    created, updated = stamp(row["created_at"]), stamp(row["updated_at"])
+                       ~~~~~^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\erosi\OneDrive\Desktop\allprojects\keftrade-intelligence\apps\api\intelligence\information.py", line 30, in stamp
+    return result.astimezone(UTC)
+           ~~~~~~~~~~~~~~~~~^^^^^
+OverflowError: date value out of range
+
+
+running 1 test
+NATIVE_ACTUAL_RESEARCH_DISPATCH_PYTHON_WORKER_PARITY_RESOURCE_GATES_AND_RESTART_RECOVERY=PASS
+test native_jobs_use_actual_services_match_python_and_recover_committed_refresh ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 2.48s
+
+
+   Compiling mainkraft v0.1.0 (C:\Users\erosi\OneDrive\Desktop\allprojects\keftrade-intelligence\apps\backend-rust)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 2.95s
+     Running tests\research_dispatch.rs (apps\backend-rust\target\debug\deps\research_dispatch-69abfe7af3ef124e.exe)
+
+Captured nine original ingestion operations, all persisted research tables, and five resource boundaries
+
+
+
+running 1 test
+ORIGINAL_INGESTION_RESULTS_AND_SIX_TABLE_FAMILIES=PASS
+EXACT_DECIMALS_IMMUTABLE_SOURCE_REPLAY_ROLLBACK_AND_RESTART=PASS
+RESOURCE_GATES_AND_CANCELLATION_OWNERSHIP=PASS
+POST_FETCH_AVAILABILITY_AND_CONCURRENT_SOURCE_IDENTITY=PASS
+test original_ingestion_storage_transactions_and_restart_recovery ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 1.25s
+
+
+   Compiling mainkraft v0.1.0 (C:\Users\erosi\OneDrive\Desktop\allprojects\keftrade-intelligence\apps\backend-rust)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 3.71s
+     Running tests\ingestion_lifecycle.rs (apps\backend-rust\target\debug\deps\ingestion_lifecycle-c9cf5afd4d595fff.exe)
+
+Captured twelve original issuance/resolution operations and five persisted evidence families
+
+
+
+running 1 test
+ORIGINAL_ISSUANCE_CUTOFF_BASELINE_MANIFEST_AND_RESOLUTION_PARITY=PASS
+DECIMAL_TINY_RETURNS_CORRECTION_HISTORY_REPLAY_CONCURRENCY_AND_ROLLBACK=PASS
+test original_forecast_issuance_and_resolution_are_atomic_causal_and_restart_safe ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 1.03s
+
+
+   Compiling mainkraft v0.1.0 (C:\Users\erosi\OneDrive\Desktop\allprojects\keftrade-intelligence\apps\backend-rust)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 2.90s
+     Running tests\forecasting_lifecycle.rs (apps\backend-rust\target\debug\deps\forecasting_lifecycle-60bfee47f9c9fdd3.exe)
+
+Captured 16 original news ingestion cases, filing replays, official metadata identities and four evidence families
+
+
+
+running 1 test
+PRIVATE_NEWS_REQUEST_STATUS_PAGINATION_HASH_AND_PERSISTENCE_PARITY=PASS
+FILING_REVISIONS_OFFICIAL_METADATA_IDENTITIES_PRIVACY_AND_ROLLBACK=PASS
+CANCELLED_PAGE_FETCH_CANNOT_CLAIM_COMPLETE_COVERAGE_AND_RESTART_DEDUPLICATES=PASS
+test private_news_filings_and_information_identities_match_python ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.66s
+
+
+   Compiling mainkraft v0.1.0 (C:\Users\erosi\OneDrive\Desktop\allprojects\keftrade-intelligence\apps\backend-rust)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 2.76s
+     Running tests\information_lifecycle.rs (apps\backend-rust\target\debug\deps\information_lifecycle-22174901aa3fa399.exe)
+
+Captured full original IR ingestion/publication enrichment, redirects, limits, robots and encoding cases
+
+
+
+running 1 test
+ORIGINAL_OFFICIAL_IR_HTTP_ROBOTS_LISTING_ARTICLE_AND_ENRICHMENT_PARITY=PASS
+IMMUTABLE_PUBLICATION_IDENTITIES_AVAILABILITY_SOURCE_HASHES_AND_PRIVACY=PASS
+INFORMATION_REFRESH_BACKFILL_MARKET_CONTEXT_AND_WHOLE_LISTING_ROLLBACK=PASS
+test official_pages_and_enrichment_match_original_without_backdating_or_rewriting ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.38s
+
+
+   Compiling mainkraft v0.1.0 (C:\Users\erosi\OneDrive\Desktop\allprojects\keftrade-intelligence\apps\backend-rust)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 2.66s
+     Running tests\official_ir_lifecycle.rs (apps\backend-rust\target\debug\deps\official_ir_lifecycle-80614888151253ff.exe)
+
+Captured 34 original research API responses against isolated seeded PostgreSQL
+
+C:\Users\erosi\OneDrive\Desktop\allprojects\keftrade-intelligence\.venv\Lib\site-packages\fastapi\testclient.py:1: StarletteDeprecationWarning: Using `httpx` with `starlette.testclient` is deprecated; install `httpx2` instead.
+  from starlette.testclient import TestClient as TestClient  # noqa
+
+ORIGINAL_RESEARCH_API_ORACLE_SHA256=68e055009006861af590c458a42c0485f9d7cdfd0fd0382357b964fe00d4ebec
+
+running 1 test
+TWELVE_RESEARCH_API_ROUTE_FAMILIES_ORIGINAL_PYTHON_HTTP_PARITY=PASS
+AUTHENTICATION_VALIDATION_HISTORICAL_LABELS_AND_LATEST_OUTCOMES=PASS
+AVAILABILITY_AND_OBSERVED_ACQUISITION_CUTS_REMAIN_DISTINCT=PASS
+{"responses_checked":34}
+test existing_company_workspace_forecast_research_and_monitoring_contracts_match_python ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.65s
+
+
+   Compiling mainkraft v0.1.0 (C:\Users\erosi\OneDrive\Desktop\allprojects\keftrade-intelligence\apps\backend-rust)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 2.67s
+     Running tests\research_api.rs (apps\backend-rust\target\debug\deps\research_api-665b5a7a7ce1e9c8.exe)
+
+{"cases": 24, "rows": 292, "unique_snapshots": 208, "exact_snapshot_ids": true}
+
+
+
+running 1 test
+24 original DB feature workflows; 292 exact rows; 208 immutable identities; late data/basis, repeat, 12 concurrent writers, rollback, cancellation and reconnect passed
+test causal_feature_reads_exact_identities_immutable_writes_and_transaction_recovery ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 1.30s
+
+
+   Compiling mainkraft v0.1.0 (C:\Users\erosi\OneDrive\Desktop\allprojects\keftrade-intelligence\apps\backend-rust)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 3.08s
+     Running tests\point_features_lifecycle.rs (apps\backend-rust\target\debug\deps\point_features_lifecycle-ddee56ad4abf98d5.exe)
+
+success captured
+repeat captured
+before-issuance captured
+before-entry captured
+entry-deadline captured
+not-enrolled captured
+not-started captured
+code-mismatch captured
+artifact-mismatch captured
+missing-origin captured
+late-origin captured
+future-correction captured
+no-paired-reference captured
+zero-origin-volume captured
+news-unavailable captured
+market-unavailable captured
+sec-unavailable captured
+all-available captured
+ir-missing captured
+context-gap captured
+missing-training-metadata captured
+database-failure captured
+worker-success captured
+worker-repeat captured
+worker-code-mismatch captured
+worker-metadata-failure captured
+worker-database-failure captured
+worker-resource-denied captured
+concurrent captured
+worker-terminal-recovery captured
+short-history captured
+zero-prior-volume captured
+missing-code-hash captured
+missing-feature-group captured
+{"scenarios": 34, "direct": 26, "actual_worker": 7, "runtime_python": false}
+
+Research job 0fd29f94-fd0c-5eae-ae23-b594272a3071 failed
+Traceback (most recent call last):
+  File "C:\Users\erosi\OneDrive\Desktop\allprojects\keftrade-intelligence\apps\api\intelligence\jobs.py", line 152, in run_once
+    result = dispatch(job["kind"], job["payload"])
+  File "C:\Users\erosi\OneDrive\Desktop\allprojects\keftrade-intelligence\apps\api\intelligence\jobs.py", line 50, in dispatch
+    resource_check()
+    ~~~~~~~~~~~~~~^^
+  File "C:\Python314\Lib\unittest\mock.py", line 1175, in __call__
+    return self._mock_call(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\unittest\mock.py", line 1179, in _mock_call
+    return self._execute_mock_call(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\unittest\mock.py", line 1240, in _execute_mock_call
+    result = effect(*args, **kwargs)
+  File "C:\Users\erosi\OneDrive\Desktop\allprojects\keftrade-intelligence\scripts\prepare-rust-prospective.py", line 125, in gate
+    if name=='worker-resource-denied':raise ValueError('Fixture resource exhausted')
+                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: Fixture resource exhausted
+
+
+running 1 test
+success evaluated
+repeat evaluated
+before-issuance evaluated
+before-entry evaluated
+entry-deadline evaluated
+not-enrolled evaluated
+not-started evaluated
+code-mismatch evaluated
+artifact-mismatch evaluated
+missing-origin evaluated
+late-origin evaluated
+future-correction evaluated
+no-paired-reference evaluated
+zero-origin-volume evaluated
+news-unavailable evaluated
+market-unavailable evaluated
+sec-unavailable evaluated
+all-available evaluated
+ir-missing evaluated
+context-gap evaluated
+missing-training-metadata evaluated
+database-failure evaluated
+worker-success evaluated
+worker-repeat evaluated
+worker-code-mismatch evaluated
+worker-metadata-failure evaluated
+worker-database-failure evaluated
+worker-resource-denied evaluated
+concurrent evaluated
+worker-terminal-recovery evaluated
+short-history evaluated
+zero-prior-volume evaluated
+missing-code-hash evaluated
+missing-feature-group evaluated
+34 unchanged original prospective/worker scenarios; immutable enrollment, linear/HGB inference, causal deadlines, eight concurrent callers, rollback, resource refusal and terminal-transaction restart recovery passed
+test existing_frozen_forecasts_are_causal_atomic_duplicate_safe_and_worker_recoverable ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 10.46s
+
+
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 0.41s
+     Running tests\prospective_lifecycle.rs (apps\backend-rust\target\debug\deps\prospective_lifecycle-6e42e5d83fa265a8.exe)
+
+

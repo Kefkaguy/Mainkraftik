@@ -1,0 +1,10 @@
+{
+  "purpose": "Original parser and caller discrepancies, preserved before their corrections. Raw adapter-only rendering differences are explicitly separated in baseline analysis.",
+  "files": {
+    "reports/rust-migration/information-time-first-failures.json": "dd3fd241fb8cb38276b0e361dbd15ee8f8e0b424d0268b8191a9dd4f64004b6e",
+    "reports/rust-migration/information-time-baseline-analysis.json": "92d10a954b93bfd695ee321a7e4f4871ac423938a6d6676daf8564476acbfbb7",
+    "reports/rust-migration/information-time-workflow-overflow-reference.json": "d9bd3ce0565678fa25f9dffc74ee03a6feb5cbb036d3aebc710d6be26011227d",
+    "reports/rust-migration/information-time-workflow-first-failure.txt": "891aaf7e95c8ad4d408b6329adb588f66f7b9af7505ae888b7dc12175156ec1c",
+    "reports/rust-migration/ir-time-workflow-first-failure.txt": "6b062e0b5f95afcc091f5adf6eaa53c2c465ecb3fd9a92ecc664d553f2d07000"
+  }
+}

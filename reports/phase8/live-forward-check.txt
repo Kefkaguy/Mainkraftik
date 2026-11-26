@@ -1,0 +1,1 @@
+{"bundle_id": "4e218ab85c54c820fc4b4b0960dfcf4bc7419c40a87a98d0bc3cb5c240decfa8", "observed_at": "2026-11-18T22:17:12.432128+00:00", "issued": 0, "resolved": 0, "errors": [], "issuance_status": "OUTSIDE_WINDOW_OR_ALREADY_RECORDED", "execution_authority": false, "promotion_authority": false}

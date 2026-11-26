@@ -1,0 +1,9 @@
+{
+  "application": "keftrade-intelligence",
+  "kind": "research",
+  "sha256": "1cae809d4da313f47abf600e8e569a2bb3cc9617cf04b9e049a32416a72dc3d0",
+  "bytes": 10477,
+  "created_at": "2026-11-21T22:28:41.561277+00:00",
+  "rows": 19
+}
+

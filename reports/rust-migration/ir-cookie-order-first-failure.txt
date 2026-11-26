@@ -1,0 +1,21 @@
+
+running 1 test
+test official_ir::tests::loopback_tls_http_cookies_compression_and_limits_match_python ... FAILED
+
+failures:
+
+failures:
+    official_ir::tests::loopback_tls_http_cookies_compression_and_limits_match_python
+
+test result: FAILED. 0 passed; 1 failed; 0 ignored; 0 measured; 5 filtered out; finished in 0.17s
+
+
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 0.71s
+     Running unittests src\lib.rs (apps\backend-rust\target\debug\deps\mainkraft-3555d0ebe2275faf.exe)
+
+thread 'official_ir::tests::loopback_tls_http_cookies_compression_and_limits_match_python' (13664) panicked at src\official_ir.rs:738:21:
+assertion `left == right` failed: "https://investor.axon.com/path/echo"
+  left: Object {"url": String("https://investor.axon.com/path/echo"), "status": Number(200), "sha256": String("8a27b790406dc51c2727f9174a015d5a4b1d9454873ab10cbf73bb4844c699c0"), "text": String("{\"cookie\":\"session=fixture; scoped=fixture\"}")}
+ right: Object {"url": String("https://investor.axon.com/path/echo"), "status": Number(200), "sha256": String("2386c1359bd26cbc97322cd5ac085fd7406af77b72cdd7e35d56854d5ff253bc"), "text": String("{\"cookie\":\"scoped=fixture; session=fixture\"}")}
+note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+error: test failed, to rerun pass `--lib`

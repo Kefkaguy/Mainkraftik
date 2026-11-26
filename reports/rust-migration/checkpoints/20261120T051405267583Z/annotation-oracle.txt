@@ -1,0 +1,3 @@
+Saved seven exact original annotated PNG/pixel oracles including all font glyphs and nine box validation cases
+Saved six C-float text-position threshold edge cases
+

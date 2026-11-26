@@ -1,0 +1,20 @@
+
+running 1 test
+test full_premarket_research_freezes_only_timely_covered_selections_and_matches_python ... FAILED
+
+failures:
+
+failures:
+    full_premarket_research_freezes_only_timely_covered_selections_and_matches_python
+
+test result: FAILED. 0 passed; 1 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.32s
+
+
+   Compiling mainkraft v0.1.0 (C:\Users\erosi\OneDrive\Desktop\allprojects\keftrade-intelligence\apps\backend-rust)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 2.17s
+     Running tests\research_lifecycle.rs (apps\backend-rust\target\debug\deps\research_lifecycle-20b1b4681e4f254b.exe)
+
+thread 'full_premarket_research_freezes_only_timely_covered_selections_and_matches_python' (14356) panicked at tests\research_lifecycle.rs:300:10:
+no orders: Database(PgDatabaseError { severity: Error, code: "42P01", message: "relation \"learning_order_intents\" does not exist", detail: None, hint: None, position: Some(Original(22)), where: None, schema: None, table: None, column: None, data_type: None, constraint: None, file: Some("parse_relation.c"), line: Some(1501), routine: Some("parserOpenTable") })
+note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+error: test failed, to rerun pass `--test research_lifecycle`

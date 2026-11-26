@@ -1,0 +1,24 @@
+
+running 1 test
+AUTOMATIC_TWO_ACCOUNT_BUY_FILL_AND_RESTART_DEDUP=PASS
+REVERSAL_DIAGNOSTICS={"a_account":{"account_blocked":false,"account_number":"TEST-control","buying_power":"1999.2000799920397","cash":"999.6000399960199","equity":"999.6000399960199","id":"control","regt_buying_power":"1999.2000799920397","status":"ACTIVE","trading_blocked":false},"a_calls":2,"a_positions":[],"b_calls":2,"records":[{"at":"2026-11-19T14:35:00+00:00","symbol":"AMD"},{"at":"2026-11-19T14:35:00+00:00","symbol":"AMD"}]}
+test two_account_monitor_allocate_fill_exit_restart_and_prequential_learning ... FAILED
+
+failures:
+
+failures:
+    two_account_monitor_allocate_fill_exit_restart_and_prequential_learning
+
+test result: FAILED. 0 passed; 1 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.62s
+
+
+   Compiling mainkraft v0.1.0 (C:\Users\erosi\OneDrive\Desktop\allprojects\keftrade-intelligence\apps\backend-rust)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 1.87s
+     Running tests\engine_lifecycle.rs (apps\backend-rust\target\debug\deps\engine_lifecycle-96c678bc68b501af.exe)
+
+thread 'two_account_monitor_allocate_fill_exit_restart_and_prequential_learning' (964) panicked at tests\engine_lifecycle.rs:294:5:
+assertion `left == right` failed
+  left: 2
+ right: 3
+note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+error: test failed, to rerun pass `--test engine_lifecycle`

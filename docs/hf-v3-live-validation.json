@@ -1,0 +1,696 @@
+{
+  "mode": "NONEXECUTABLE_V3_PREVIEW_NOT_LIVE_FORECAST",
+  "research_id": "083c7b0206303ec70c4aa3acf7ba8554d7fafcc6939166756273c864c61d3930",
+  "research_version": "news-research-pilot-v3-hf",
+  "news_articles": 1000,
+  "news_truncated": true,
+  "liquid_candidates": 40,
+  "unique_classified_articles": 75,
+  "text_labels": {
+    "positive": 26,
+    "neutral": 33,
+    "negative": 16
+  },
+  "avoided_candidates": [
+    "HD",
+    "LOW",
+    "TGT",
+    "TJX",
+    "WMT",
+    "META",
+    "MSTR"
+  ],
+  "hf_source_id": "4f00ada227973efdc57906840cadf2cae5fbab6a70405077b055b89d606c82b4",
+  "model": {
+    "use": "Personal experimental paper research only; no commercial rights claim for training data",
+    "sha256": {
+      "README.md": "e8f1300f384490f946a12534d8984f3230445c920a9dceaec907a5a05165ce2b",
+      "config.json": "001d0eb404b3b6bd4b51a625b425b4b80b1ba70ce1ce49a50b37278ac3a1127b",
+      "tokenizer.json": "1f325de61b2d8f48f2580c234ef57f927ffb952ea8617a9820559ec6b7b687e5",
+      "UPSTREAM-README.md": "d56790687bb34b32b3167bbc19ec379d8bc9b957123ce6432e43575c12f1ce26",
+      "LICENSE-APACHE-2.0.txt": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "onnx/model_quantized.onnx": "8fcf4873bf5e1679c77205ce621acecdd2cd8dd5baf18e930f10428008ed48ec"
+    },
+    "revision": "e6953e30167c7fc3d1ad62f3df31617dd712fbc1",
+    "max_tokens": 128,
+    "repository": "Xenova/distilroberta-finetuned-financial-news-sentiment-analysis",
+    "quantization": "8-bit ONNX; Xenova conversion",
+    "training_data": "Financial PhraseBank; CC BY-NC-SA dataset terms must be reviewed before commercial use",
+    "upstream_model": "mrm8488/distilroberta-finetuned-financial-news-sentiment-analysis",
+    "upstream_revision": "ae0eab9ad336d7d548e0efe394b07c04bcaf6e91",
+    "upstream_declared_license": "apache-2.0"
+  },
+  "groq_usage": {
+    "queue_time": 0.177236909,
+    "total_time": 2.8613486420000003,
+    "prompt_time": 0.137479715,
+    "total_tokens": 4708,
+    "prompt_tokens": 3411,
+    "completion_time": 2.723868927,
+    "completion_tokens": 1297,
+    "completion_tokens_details": {
+      "reasoning_tokens": 37
+    }
+  },
+  "models": [
+    {
+      "symbol": "NVDA",
+      "groq_stance": "bullish",
+      "text_assessment": {
+        "assessment": "review",
+        "source_ids": [
+          "63277688",
+          "63277592",
+          "63277576"
+        ],
+        "mean_text_sentiment": {
+          "neutral": 0.6683983200540146,
+          "negative": 0.00016038576723076403,
+          "positive": 0.33144127716635313
+        },
+        "not_return_probability": true,
+        "multiple_symbol_articles": 2
+      },
+      "horizons": {
+        "1": {
+          "expected_return": 0.004940890480545046,
+          "probability_positive": 0.46064948422247715
+        },
+        "5": {
+          "expected_return": -0.009456406617223658,
+          "probability_positive": 0.6444849023970481
+        }
+      },
+      "status": "diagnostic_only",
+      "v2_gates_on_v3_shortlist": false,
+      "v3_gates_on_v3_shortlist": false
+    },
+    {
+      "symbol": "GOOGL",
+      "groq_stance": "bullish",
+      "text_assessment": {
+        "assessment": "review",
+        "source_ids": [
+          "63277688",
+          "63277092",
+          "63276573"
+        ],
+        "mean_text_sentiment": {
+          "neutral": 0.06235597717265288,
+          "negative": 0.2740224348769213,
+          "positive": 0.6636215721567472
+        },
+        "not_return_probability": true,
+        "multiple_symbol_articles": 3
+      },
+      "horizons": {
+        "1": {
+          "expected_return": 0.0022011334266627846,
+          "probability_positive": 0.5137549247382746
+        },
+        "5": {
+          "expected_return": 0.009947490112884459,
+          "probability_positive": 0.5236205980019786
+        }
+      },
+      "status": "diagnostic_only",
+      "v2_gates_on_v3_shortlist": false,
+      "v3_gates_on_v3_shortlist": false
+    },
+    {
+      "symbol": "AMZN",
+      "groq_stance": "bullish",
+      "text_assessment": {
+        "assessment": "review",
+        "source_ids": [
+          "63277688",
+          "63277592",
+          "123055709"
+        ],
+        "mean_text_sentiment": {
+          "neutral": 0.33577082278983045,
+          "negative": 0.00022058393127129725,
+          "positive": 0.664008582955527
+        },
+        "not_return_probability": true,
+        "multiple_symbol_articles": 2
+      },
+      "horizons": {
+        "1": {
+          "expected_return": 0.0016872801394751304,
+          "probability_positive": 0.4883190996922591
+        },
+        "5": {
+          "expected_return": 0.003511473580164742,
+          "probability_positive": 0.4803036539248885
+        }
+      },
+      "status": "diagnostic_only",
+      "v2_gates_on_v3_shortlist": false,
+      "v3_gates_on_v3_shortlist": false
+    },
+    {
+      "symbol": "GOOG",
+      "groq_stance": "bullish",
+      "text_assessment": {
+        "assessment": "review",
+        "source_ids": [
+          "63277688",
+          "63277592",
+          "63276573"
+        ],
+        "mean_text_sentiment": {
+          "neutral": 0.3368611205369234,
+          "negative": 0.00026052339914410066,
+          "positive": 0.6628783199448662
+        },
+        "not_return_probability": true,
+        "multiple_symbol_articles": 3
+      },
+      "horizons": {
+        "1": {
+          "expected_return": 0.0022887499640247477,
+          "probability_positive": 0.5227395435771841
+        },
+        "5": {
+          "expected_return": 0.011518827750105742,
+          "probability_positive": 0.51423999876643
+        }
+      },
+      "status": "diagnostic_only",
+      "v2_gates_on_v3_shortlist": false,
+      "v3_gates_on_v3_shortlist": false
+    },
+    {
+      "symbol": "TSLA",
+      "groq_stance": "bullish",
+      "text_assessment": {
+        "assessment": "review",
+        "source_ids": [
+          "63277093",
+          "63276639",
+          "63276610"
+        ],
+        "mean_text_sentiment": {
+          "neutral": 0.33376097565633245,
+          "negative": 0.0006201345725761106,
+          "positive": 0.6656188705625633
+        },
+        "not_return_probability": true,
+        "multiple_symbol_articles": 3
+      },
+      "horizons": {
+        "1": {
+          "expected_return": -0.0001662059913469009,
+          "probability_positive": 0.5107429675631178
+        },
+        "5": {
+          "expected_return": -0.005718643967367523,
+          "probability_positive": 0.5029822334070222
+        }
+      },
+      "status": "diagnostic_only",
+      "v2_gates_on_v3_shortlist": false,
+      "v3_gates_on_v3_shortlist": false
+    },
+    {
+      "symbol": "AAPL",
+      "groq_stance": "mixed",
+      "text_assessment": {
+        "assessment": "review",
+        "source_ids": [
+          "123176561",
+          "63276957",
+          "63274084"
+        ],
+        "mean_text_sentiment": {
+          "neutral": 0.9996725718180338,
+          "negative": 0.00012199489234869058,
+          "positive": 0.00020541230090505755
+        },
+        "not_return_probability": true,
+        "multiple_symbol_articles": 2
+      },
+      "horizons": {
+        "1": {
+          "expected_return": 0.002030157450760606,
+          "probability_positive": 0.534357467541057
+        },
+        "5": {
+          "expected_return": -4.994406418542532e-05,
+          "probability_positive": 0.5686901239430372
+        }
+      },
+      "status": "diagnostic_only",
+      "v2_gates_on_v3_shortlist": false,
+      "v3_gates_on_v3_shortlist": false
+    },
+    {
+      "symbol": "CBRS",
+      "groq_stance": "mixed",
+      "text_assessment": {
+        "assessment": "review",
+        "source_ids": [
+          "63277335",
+          "63277092",
+          "123055726"
+        ],
+        "mean_text_sentiment": {
+          "neutral": 0.3920805720869491,
+          "negative": 0.27392057723288116,
+          "positive": 0.33399887355820584
+        },
+        "not_return_probability": true,
+        "multiple_symbol_articles": 1
+      },
+      "horizons": {},
+      "status": "excluded_insufficient_history"
+    },
+    {
+      "symbol": "TWST",
+      "groq_stance": "mixed",
+      "text_assessment": {
+        "assessment": "review",
+        "source_ids": [
+          "63277248",
+          "123055786",
+          "122620329"
+        ],
+        "mean_text_sentiment": {
+          "neutral": 0.33387490719906054,
+          "negative": 0.3324700479764336,
+          "positive": 0.33365501681449433
+        },
+        "not_return_probability": true,
+        "multiple_symbol_articles": 1
+      },
+      "horizons": {
+        "1": {
+          "expected_return": -0.017152661190305583,
+          "probability_positive": 0.5277482193284925
+        },
+        "5": {
+          "expected_return": -0.06604857005304367,
+          "probability_positive": 0.5762072907950543
+        }
+      },
+      "status": "diagnostic_only",
+      "v2_gates_on_v3_shortlist": false,
+      "v3_gates_on_v3_shortlist": false
+    },
+    {
+      "symbol": "HOOD",
+      "groq_stance": "mixed",
+      "text_assessment": {
+        "assessment": "review",
+        "source_ids": [
+          "63273423",
+          "63273860",
+          "63273824"
+        ],
+        "mean_text_sentiment": {
+          "neutral": 0.666874903293016,
+          "negative": 0.3326388133088282,
+          "positive": 0.0004862995180398381
+        },
+        "not_return_probability": true,
+        "multiple_symbol_articles": 2
+      },
+      "horizons": {
+        "1": {
+          "expected_return": 0.00456884359194383,
+          "probability_positive": 0.4841804366700711
+        },
+        "5": {
+          "expected_return": 0.005743960010252288,
+          "probability_positive": 0.47791549669531036
+        }
+      },
+      "status": "diagnostic_only",
+      "v2_gates_on_v3_shortlist": false,
+      "v3_gates_on_v3_shortlist": false
+    },
+    {
+      "symbol": "DAL",
+      "groq_stance": "mixed",
+      "text_assessment": {
+        "assessment": "review",
+        "source_ids": [
+          "63277550",
+          "63277092",
+          "63276778"
+        ],
+        "mean_text_sentiment": {
+          "neutral": 0.7191366304953893,
+          "negative": 0.2799401708568136,
+          "positive": 0.0009232192339065174
+        },
+        "not_return_probability": true,
+        "multiple_symbol_articles": 3
+      },
+      "horizons": {
+        "1": {
+          "expected_return": 0.0014939292919597487,
+          "probability_positive": 0.46638047642919883
+        },
+        "5": {
+          "expected_return": 0.009568710528565696,
+          "probability_positive": 0.608671751735968
+        }
+      },
+      "status": "diagnostic_only",
+      "v2_gates_on_v3_shortlist": false,
+      "v3_gates_on_v3_shortlist": false
+    },
+    {
+      "symbol": "LHX",
+      "groq_stance": "mixed",
+      "text_assessment": {
+        "assessment": "review",
+        "source_ids": [
+          "63277550",
+          "63276778",
+          "63275957"
+        ],
+        "mean_text_sentiment": {
+          "neutral": 0.9934903383255005,
+          "negative": 0.006303415216583137,
+          "positive": 0.00020625438871017346
+        },
+        "not_return_probability": true,
+        "multiple_symbol_articles": 2
+      },
+      "horizons": {
+        "1": {
+          "expected_return": 0.0009843466266898663,
+          "probability_positive": 0.46532750536456646
+        },
+        "5": {
+          "expected_return": -0.004480421746101268,
+          "probability_positive": 0.4785768416475266
+        }
+      },
+      "status": "diagnostic_only",
+      "v2_gates_on_v3_shortlist": false,
+      "v3_gates_on_v3_shortlist": false
+    },
+    {
+      "symbol": "BKNG",
+      "groq_stance": "mixed",
+      "text_assessment": {
+        "assessment": "review",
+        "source_ids": [
+          "63277550",
+          "123176564",
+          "123055784"
+        ],
+        "mean_text_sentiment": {
+          "neutral": 0.9972203175226847,
+          "negative": 0.002635887988920634,
+          "positive": 0.00014378591489124423
+        },
+        "not_return_probability": true,
+        "multiple_symbol_articles": 1
+      },
+      "horizons": {
+        "1": {
+          "expected_return": -0.00044507571738182307,
+          "probability_positive": 0.4738172217138978
+        },
+        "5": {
+          "expected_return": 0.006081119188995371,
+          "probability_positive": 0.4411777391416139
+        }
+      },
+      "status": "diagnostic_only",
+      "v2_gates_on_v3_shortlist": false,
+      "v3_gates_on_v3_shortlist": false
+    },
+    {
+      "symbol": "SPCX",
+      "groq_stance": "mixed",
+      "text_assessment": {
+        "assessment": "review",
+        "source_ids": [
+          "63277592",
+          "63277280",
+          "63277092"
+        ],
+        "mean_text_sentiment": {
+          "neutral": 0.3921835843066219,
+          "negative": 0.2739336290348244,
+          "positive": 0.33388280155850225
+        },
+        "not_return_probability": true,
+        "multiple_symbol_articles": 2
+      },
+      "horizons": {},
+      "status": "excluded_insufficient_history"
+    },
+    {
+      "symbol": "PANW",
+      "groq_stance": "bearish",
+      "text_assessment": {
+        "assessment": "review",
+        "source_ids": [
+          "63277661",
+          "63277522",
+          "63277064"
+        ],
+        "mean_text_sentiment": {
+          "neutral": 0.204194648618189,
+          "negative": 0.46046029127319343,
+          "positive": 0.33534505412292975
+        },
+        "not_return_probability": true,
+        "multiple_symbol_articles": 2
+      },
+      "horizons": {
+        "1": {
+          "expected_return": 0.00042756231627722623,
+          "probability_positive": 0.5042683449489628
+        },
+        "5": {
+          "expected_return": 0.006929961995961627,
+          "probability_positive": 0.5548184470471418
+        }
+      },
+      "status": "diagnostic_only",
+      "v2_gates_on_v3_shortlist": false,
+      "v3_gates_on_v3_shortlist": false
+    },
+    {
+      "symbol": "HD",
+      "groq_stance": "bearish",
+      "text_assessment": {
+        "assessment": "avoid",
+        "source_ids": [
+          "63277632",
+          "63277522",
+          "63277313"
+        ],
+        "mean_text_sentiment": {
+          "neutral": 0.20538331172429025,
+          "negative": 0.7908512155214945,
+          "positive": 0.003765485482290387
+        },
+        "not_return_probability": true,
+        "multiple_symbol_articles": 3
+      },
+      "horizons": {
+        "1": {
+          "expected_return": 0.0003383702262393214,
+          "probability_positive": 0.4786313947984578
+        },
+        "5": {
+          "expected_return": -0.0012848227881990717,
+          "probability_positive": 0.4464876307004543
+        }
+      },
+      "status": "diagnostic_only",
+      "v2_gates_on_v3_shortlist": false,
+      "v3_gates_on_v3_shortlist": false
+    },
+    {
+      "symbol": "LOW",
+      "groq_stance": "bearish",
+      "text_assessment": {
+        "assessment": "avoid",
+        "source_ids": [
+          "63277632",
+          "63277522",
+          "63276847"
+        ],
+        "mean_text_sentiment": {
+          "neutral": 0.20458641562921306,
+          "negative": 0.792320966720581,
+          "positive": 0.003092624906760951
+        },
+        "not_return_probability": true,
+        "multiple_symbol_articles": 3
+      },
+      "horizons": {
+        "1": {
+          "expected_return": -0.0005883513086399246,
+          "probability_positive": 0.48887293545429694
+        },
+        "5": {
+          "expected_return": -0.009126932904494145,
+          "probability_positive": 0.598872424100953
+        }
+      },
+      "status": "diagnostic_only",
+      "v2_gates_on_v3_shortlist": false,
+      "v3_gates_on_v3_shortlist": false
+    },
+    {
+      "symbol": "WMT",
+      "groq_stance": "bearish",
+      "text_assessment": {
+        "assessment": "avoid",
+        "source_ids": [
+          "63277632",
+          "63277313",
+          "63277248"
+        ],
+        "mean_text_sentiment": {
+          "neutral": 0.0024195793957915157,
+          "negative": 0.6634487392536054,
+          "positive": 0.3341317064284037
+        },
+        "not_return_probability": true,
+        "multiple_symbol_articles": 3
+      },
+      "horizons": {
+        "1": {
+          "expected_return": -0.0011216014927098083,
+          "probability_positive": 0.5164219451356085
+        },
+        "5": {
+          "expected_return": -0.00726195476552693,
+          "probability_positive": 0.5196144752001394
+        }
+      },
+      "status": "diagnostic_only",
+      "v2_gates_on_v3_shortlist": false,
+      "v3_gates_on_v3_shortlist": false
+    },
+    {
+      "symbol": "NBIS",
+      "groq_stance": "mixed",
+      "text_assessment": {
+        "assessment": "review",
+        "source_ids": [
+          "123299252",
+          "63277248",
+          "122944664"
+        ],
+        "mean_text_sentiment": {
+          "neutral": 0.03312578126982165,
+          "negative": 0.3361076151486486,
+          "positive": 0.6307666149223223
+        },
+        "not_return_probability": true,
+        "multiple_symbol_articles": 1
+      },
+      "horizons": {},
+      "status": "excluded_data_integrity",
+      "reason": "Missing exchange sessions; data is not interpolated"
+    },
+    {
+      "symbol": "YOU",
+      "groq_stance": "mixed",
+      "text_assessment": {
+        "assessment": "review",
+        "source_ids": [
+          "123321054",
+          "123321053",
+          "122971282"
+        ],
+        "mean_text_sentiment": {
+          "neutral": 0.9021355907122294,
+          "negative": 0.0028276742741581984,
+          "positive": 0.09503679453579632
+        },
+        "not_return_probability": true,
+        "multiple_symbol_articles": 0
+      },
+      "horizons": {
+        "1": {
+          "expected_return": -0.00010358094626046892,
+          "probability_positive": 0.4426960693255133
+        },
+        "5": {
+          "expected_return": -0.0021348903212379013,
+          "probability_positive": 0.5174836615035997
+        }
+      },
+      "status": "diagnostic_only",
+      "v2_gates_on_v3_shortlist": false,
+      "v3_gates_on_v3_shortlist": false
+    },
+    {
+      "symbol": "UAL",
+      "groq_stance": "mixed",
+      "text_assessment": {
+        "assessment": "review",
+        "source_ids": [
+          "63277550",
+          "63276778",
+          "122801821"
+        ],
+        "mean_text_sentiment": {
+          "neutral": 0.6607710806420073,
+          "negative": 0.3387621669098735,
+          "positive": 0.00046677518791208666
+        },
+        "not_return_probability": true,
+        "multiple_symbol_articles": 2
+      },
+      "horizons": {
+        "1": {
+          "expected_return": -0.0005150433715732748,
+          "probability_positive": 0.4693252438359344
+        },
+        "5": {
+          "expected_return": 0.012307566192702629,
+          "probability_positive": 0.5004643683015383
+        }
+      },
+      "status": "diagnostic_only",
+      "v2_gates_on_v3_shortlist": false,
+      "v3_gates_on_v3_shortlist": false
+    }
+  ],
+  "orders_created": 0,
+  "monday_selections_created": 0,
+  "peak_diagnostic_rss_kib": 230204,
+  "hf_enabled": true,
+  "research_duration_seconds": 33.590992,
+  "diagnostic_reuse_duration_seconds": 5.64,
+  "local_tests": {
+    "backend_passed": 107,
+    "warnings": 1,
+    "runtime_fixture_labels_correct": 3,
+    "max_batch_texts": 120,
+    "max_batch_seconds": 3.73,
+    "max_batch_memory_mib": 197
+  },
+  "deployment": {
+    "paper_enabled": true,
+    "hf_enabled": true,
+    "paper_image": "keftrade-intelligence-api:phase6-sentiment",
+    "worker_image": "keftrade-intelligence-sentiment:sentiment-v1",
+    "worker_health": "healthy",
+    "paper_health": "healthy",
+    "restarts": 0,
+    "oom_events": 0,
+    "worker_credentials_absent": true,
+    "worker_peak_memory_bytes": 213045248,
+    "free_bytes": 11143110656,
+    "paper_database_bytes": 44373695,
+    "frozen_msi_axon_hashes_unchanged": true,
+    "browser_ui_checked": false
+  },
+  "interpretation": "Text sentiment and runtime checks passed. No demonstrated return improvement or probability of profitable daily P/L. Preview created no orders; the first v3 scheduled session is 2026-11-16."
+}

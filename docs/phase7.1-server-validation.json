@@ -1,0 +1,57 @@
+{
+  "active_prompt": "balanced-news-context-v4.1",
+  "validation": "SERVER_REPLAY_NOT_NEW_PROVIDER_CALL",
+  "presented_candidates": 40,
+  "presented_articles": 73,
+  "characters": 11995,
+  "accepted_saved_picks": 13,
+  "rejected_saved_picks": 7,
+  "synthetic_invalid_pick_test": {
+    "accepted": 12,
+    "rejected": 3,
+    "passed": true
+  },
+  "cost_gate": {
+    "enabled": true,
+    "version": "iex-roundtrip-planning-cost-v1",
+    "spread_basis": "Observed IEX ask/bid minus one",
+    "slippage_allowance": 0.001,
+    "required_net_edge": 0.0005,
+    "limitation": "Planning allowances, not NBBO, actual fees or guaranteed fill costs"
+  },
+  "failed_challenger_enabled": false,
+  "model_metric_versions": [
+    "experimental-ridge-logistic-pilot-v1"
+  ],
+  "counts": {
+    "pilot_intents": 0,
+    "pilot_selections": 0,
+    "pilot_readiness": 0
+  },
+  "activation": {
+    "enabled": true,
+    "mode": "paper_only"
+  },
+  "full_backend_tests": {
+    "passed": 148,
+    "warnings": 1,
+    "warning": "Existing Starlette TestClient httpx deprecation"
+  },
+  "deployment": {
+    "paper_image": "keftrade-intelligence-api:phase7.1-research",
+    "health": "healthy",
+    "restarts": 0,
+    "oom": false,
+    "free_bytes": 11309477888,
+    "paper_execution_enabled": true,
+    "market_context_candidate_enabled": false,
+    "frozen_research_hashes_unchanged": true
+  },
+  "limitations": [
+    "Server validation replayed saved news and stock picks; it was not a fresh v4.1 Groq response.",
+    "Seven saved picks did not meet the new presented-citation rules; thirteen survived. Neither is a live selection or order.",
+    "The actual v4 provider preview failed unknown/duplicate-symbol validation and submitted no orders.",
+    "The third daily request was consumed. No cap bypass or new paid request was made; next scheduled research uses a fresh New York day budget.",
+    "No new statistical evidence of profitable paper execution."
+  ]
+}

@@ -1,0 +1,16 @@
+
+running 1 test
+AUTOMATIC_TWO_ACCOUNT_BUY_FILL_AND_RESTART_DEDUP=PASS
+POSITION_MONITORING_CLOSE_BEFORE_SHORT_WITHOUT_FUTURE_LEARNING=PASS
+MATURED_ONLY_RESIDUAL_UPDATE_FIXED_CONTROL_UNCHANGED=PASS
+FORECAST_RETURN_NOT_EXECUTION_PNL=PASS
+OPERATOR_PAUSE_AND_CLOSED_MARKET=PASS
+BROKER_RESTRICTION_AND_ACCOUNT_FAILURE_ISOLATION=PASS
+test two_account_monitor_allocate_fill_exit_restart_and_prequential_learning ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.47s
+
+
+   Compiling mainkraft v0.1.0 (/mnt/c/Users/erosi/OneDrive/Desktop/allprojects/keftrade-intelligence/apps/backend-rust)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 1.33s
+     Running tests/engine_lifecycle.rs (/home/erosimcity/.local/share/mainkraft-rust-validation/target/debug/deps/engine_lifecycle-68dfa9a821cf70f6)

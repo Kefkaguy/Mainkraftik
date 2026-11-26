@@ -1,0 +1,2 @@
+{"platform": "linux", "seeds": 5, "cases": 95, "sha256": "179b15b197a2f23665e33e52e93db87b8e05b5b08616f818aacaa14b85fe8866", "output": "/mnt/c/Users/erosi/OneDrive/Desktop/allprojects/keftrade-intelligence/apps/backend-rust/tests/fixtures/python-set-parity-linux.json", "market_data_used": false}
+

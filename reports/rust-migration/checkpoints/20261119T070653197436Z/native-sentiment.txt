@@ -1,0 +1,26 @@
+Saved original worker tokens, masks, logits and sentiment scores for four batch sizes
+Saved sixteen original sentiment HTTP validation cases and busy response
+
+running 1 test
+FROZEN_TOKEN_IDS_MASKS_AND_BATCH_PADDING_EXACT=PASS
+MAX_RAW_LOGIT_ERROR=0
+MAX_FLOAT32_SOFTMAX_PROBABILITY_ERROR=0.00000000005820766091346741
+SAME_MODEL_RUNTIME_MANIFEST_AND_TEXT_HASHES=PASS
+test native_frozen_worker_matches_original_python_tokens_logits_and_scores ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 2.34s
+
+
+running 1 test
+SENTIMENT_HTTP_VALIDATION_HEALTH_SCORE_AND_BUSY_PARITY=PASS
+CLIENT_CANCELLATION_CANNOT_OVERLAP_INFERENCE=PASS
+test sentiment_worker::tests::native_http_contract_and_cancellation_keep_single_inference_job ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 5 filtered out; finished in 1.57s
+
+
+   Compiling mainkraft v0.1.0 (C:\Users\erosi\OneDrive\Desktop\allprojects\keftrade-intelligence\apps\backend-rust)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 2.18s
+     Running tests\sentiment_inference.rs (apps\backend-rust\target\debug\deps\sentiment_inference-2033fde33dc3494a.exe)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 0.33s
+     Running unittests src\lib.rs (apps\backend-rust\target\debug\deps\mainkraft-0c661a39c22769ac.exe)

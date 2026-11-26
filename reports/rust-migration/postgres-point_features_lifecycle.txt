@@ -1,0 +1,11 @@
+
+running 1 test
+24 original DB feature workflows; 292 exact rows; 208 immutable identities; late data/basis, repeat, 12 concurrent writers, rollback, cancellation and reconnect passed
+test causal_feature_reads_exact_identities_immutable_writes_and_transaction_recovery ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 2.01s
+
+
+   Compiling mainkraft v0.1.0 (/mnt/c/Users/erosi/OneDrive/Desktop/allprojects/keftrade-intelligence/apps/backend-rust)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 1.17s
+     Running tests/point_features_lifecycle.rs (/home/erosimcity/.local/share/mainkraft-rust-validation/target/debug/deps/point_features_lifecycle-34d3926084a4e0e2)

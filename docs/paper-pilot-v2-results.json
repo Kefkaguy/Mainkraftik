@@ -1,0 +1,71 @@
+{
+  "version": "news-research-pilot-v2",
+  "deployed_at": "2026-11-14T06:11:55Z",
+  "backend_tests": {
+    "passed": 99,
+    "warnings": 1,
+    "warning": "Starlette TestClient httpx deprecation"
+  },
+  "production_builds": {
+    "api": "passed",
+    "web": "passed"
+  },
+  "browser_ui_checked": false,
+  "frozen_msi_axon_hashes_unchanged": true,
+  "preview": {
+    "research_id": "02ca8d7bcf62c61437ce5483f920f9b1e6325bc582683c1fae98596ab311d1ac",
+    "mode": "nonexecutable",
+    "news_articles": 1000,
+    "news_pagination_truncated": true,
+    "liquid_candidates": 40,
+    "symbols": [
+      "CSCO",
+      "AMAT",
+      "CRWD",
+      "NBIS",
+      "KO",
+      "LOW",
+      "COST",
+      "ARM",
+      "AVGO",
+      "MU"
+    ],
+    "history_available_all": true,
+    "duration_seconds": 23.4,
+    "process_peak_rss_kib": 148532,
+    "groq_tokens": 3905,
+    "orders_submitted": 0,
+    "daily_selections_created": 0
+  },
+  "activation": {
+    "enabled": true,
+    "mode": "paper_only",
+    "discovery_enabled": true,
+    "next_regular_open": "2026-11-16T09:30:00-05:00"
+  },
+  "limits": {
+    "estimated_probability_minimum": 0.7,
+    "entry_usd": 25,
+    "max_concurrent_positions": 20,
+    "stock_market_value_cap_usd": 100,
+    "total_exposure_usd": 600,
+    "daily_loss_usd": 12,
+    "groq_attempts_per_day": 3,
+    "groq_attempts_per_month": 60
+  },
+  "deployment": {
+    "projected_extra_bytes": 754089453,
+    "free_bytes_after_deployment": 11810185216,
+    "api_image": "keftrade-intelligence-api:phase5-research",
+    "web_image": "keftrade-intelligence-web:phase5-research",
+    "paper_observed_mib": 152.1
+  },
+  "limitations": [
+    "No new live v2 forecasts can be issued during a closed weekend; the first eligible issuance is Monday.",
+    "70% is an experimental numerical probability, not demonstrated accuracy.",
+    "The 1,000-article research cap truncated the preview response; coverage is not all news.",
+    "The source-driven shortlist returned ten picks, including mixed/bearish names that cannot pass the buy stance gate.",
+    "No independent predictive improvement has been demonstrated; frozen research criteria are unchanged.",
+    "Prospective v1/v2 evidence retains model version IDs; descriptive aggregate reports must not be treated as version-specific validation."
+  ]
+}

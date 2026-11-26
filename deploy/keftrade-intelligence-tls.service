@@ -1,0 +1,10 @@
+[Unit]
+Description=Renew the HTTPS certificate used by KefTrade Intelligence
+After=docker.service network-online.target
+Wants=network-online.target
+
+[Service]
+Type=oneshot
+ExecStart=/opt/keftrade-intelligence/releases/phase4/renew-tls.sh
+TimeoutStartSec=300
+NoNewPrivileges=true

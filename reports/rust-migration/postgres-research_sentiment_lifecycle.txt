@@ -1,0 +1,15 @@
+
+running 1 test
+REAL_NATIVE_SENTIMENT_SCORE_BYTES_EXACT=true
+FULL_PYTHON_RESEARCH_SOURCE_EVENT_SELECTION_ID_PARITY=PASS
+FROZEN_RESTART_NO_BACKDATING_PREVIEW_SEPARATION=PASS
+MISSED_CUTOFF_RETAINED_NOT_FROZEN=PASS
+BENCHMARK_FAILURE_ATOMIC_ROLLBACK_NO_ORDER_AUTHORITY=PASS
+RESEARCH_FAILURE_RETRY_SPACING_AND_CLOSED_CHANNEL_SHUTDOWN=PASS
+test real_frozen_sentiment_and_premarket_assembly_match_original ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 3.31s
+
+
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 0.26s
+     Running tests/research_sentiment_lifecycle.rs (/home/erosimcity/.local/share/mainkraft-rust-validation/target/debug/deps/research_sentiment_lifecycle-0ec373123f980eae)

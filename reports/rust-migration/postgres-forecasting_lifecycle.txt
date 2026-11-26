@@ -1,0 +1,12 @@
+
+running 1 test
+ORIGINAL_ISSUANCE_CUTOFF_BASELINE_MANIFEST_AND_RESOLUTION_PARITY=PASS
+DECIMAL_TINY_RETURNS_CORRECTION_HISTORY_REPLAY_CONCURRENCY_AND_ROLLBACK=PASS
+test original_forecast_issuance_and_resolution_are_atomic_causal_and_restart_safe ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 1.33s
+
+
+   Compiling mainkraft v0.1.0 (/mnt/c/Users/erosi/OneDrive/Desktop/allprojects/keftrade-intelligence/apps/backend-rust)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 1.23s
+     Running tests/forecasting_lifecycle.rs (/home/erosimcity/.local/share/mainkraft-rust-validation/target/debug/deps/forecasting_lifecycle-db5f8f3cd44111db)

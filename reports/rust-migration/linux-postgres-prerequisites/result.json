@@ -1,0 +1,58 @@
+{
+  "at": "2026-11-21T22:24:55.815604+00:00",
+  "binary": "/home/erosimcity/.local/share/mainkraft-rust-validation/postgres18/20261121T222452783902Z/runtime/usr/lib/postgresql/18/bin/postgres",
+  "runtime": "/home/erosimcity/.local/share/mainkraft-rust-validation/postgres18/20261121T222452783902Z/runtime",
+  "version": "postgres (PostgreSQL) 18.7 (Ubuntu 18.7-1.pgdg24.04+5)",
+  "packages": [
+    {
+      "Package": "postgresql-18",
+      "Version": "18.7-1.pgdg24.04+5",
+      "Architecture": "amd64",
+      "Filename": "pool/main/p/postgresql-18/postgresql-18_18.7-1.pgdg24.04+5_amd64.deb",
+      "Size": "7657644",
+      "SHA256": "2cb84cff0a725659c598993990a27227cea22ab69219efaad9600bb01ef54ed3"
+    },
+    {
+      "Package": "postgresql-client-18",
+      "Version": "18.7-1.pgdg24.04+5",
+      "Architecture": "amd64",
+      "Filename": "pool/main/p/postgresql-18/postgresql-client-18_18.7-1.pgdg24.04+5_amd64.deb",
+      "Size": "2118696",
+      "SHA256": "15d01aed36b9faf84765e113cc658e24aa5b8ec47ec7d012b49d0564f1993679"
+    },
+    {
+      "Package": "libpq5",
+      "Version": "19.0-2.pgdg24.04+1",
+      "Architecture": "amd64",
+      "Filename": "pool/main/p/postgresql-19/libpq5_19.0-2.pgdg24.04+1_amd64.deb",
+      "Size": "261612",
+      "SHA256": "d1fce6ced54ff6ced4f8f4ef04d2f5519007a26286731571cfc195406301f31f"
+    },
+    {
+      "Package": "liburing2",
+      "Version": "2.5-1build1",
+      "Architecture": "amd64",
+      "Filename": "pool/main/libu/liburing/liburing2_2.5-1build1_amd64.deb",
+      "Size": "21092",
+      "SHA256": "c2aef62accee92a06263c3ad4ef46132c13e409b54296c44792a20491830a7b0",
+      "metadata_source": "existing authenticated Ubuntu system APT cache"
+    }
+  ],
+  "signature_verified": true,
+  "official_key_fingerprint": "B97B0AFCAA1A47F044F244A07FCC7D46ACCC4CF8",
+  "service_installed": false,
+  "cluster_started": false,
+  "scope": "User-owned WSL test prerequisite only",
+  "outputs": {
+    "postgresql-18_18.7-1.pgdg24.04+5_amd64.deb": "2cb84cff0a725659c598993990a27227cea22ab69219efaad9600bb01ef54ed3",
+    "Packages.gz": "f85e92436e6d48fb29a41a3c960e8a45404e628caea1fca46ee1c7fc7fa33af0",
+    "postgres-ldd.txt": "0dc3dc671e61b71a84a8caf71a937a53d795e68eb48023ebb140a8e4c865d118",
+    "pgdg.gpg": "8ca1b2fb3a2533cc44b87ee146a03858f6e8ea31c1f165dfd38dc270c04ada0f",
+    "liburing2_2.5-1build1_amd64.deb": "c2aef62accee92a06263c3ad4ef46132c13e409b54296c44792a20491830a7b0",
+    "pgdg.asc": "0144068502a1eddd2a0280ede10ef607d1ec592ce819940991203941564e8e76",
+    "InRelease": "4c8c6826621950b24bea620ef9418baf58dbe2fff2e49a9df799df06b6cf0337",
+    "signature.txt": "91b361d12d7ad8de7ca9319bf1eedabf3f29f06440b88337c4949018f4bf2334",
+    "postgresql-client-18_18.7-1.pgdg24.04+5_amd64.deb": "15d01aed36b9faf84765e113cc658e24aa5b8ec47ec7d012b49d0564f1993679",
+    "libpq5_19.0-2.pgdg24.04+1_amd64.deb": "d1fce6ced54ff6ced4f8f4ef04d2f5519007a26286731571cfc195406301f31f"
+  }
+}

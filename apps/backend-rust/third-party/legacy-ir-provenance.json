@@ -1,0 +1,11 @@
+{
+  "python": "3.14.2 (tags/v3.14.2:df79316, Dec  5 2025, 17:18:21) [MSC v.1944 64 bit (AMD64)]",
+  "beautifulsoup": "4.15.0",
+  "html5gum": "0.9.1",
+  "source_sha256": {
+    "python/html/parser.py": "b4eb1cc172aef834b07443da91fc2bf5e5e4681f1f844f9ac0b716ea9d3000f9",
+    "python/urllib/parse.py": "b9cc111136d1cab940f54357637c2711d837ecc7084f8a1ca19531aec3bb90c6",
+    "python/urllib/robotparser.py": "1cdf0fd11e3c955879fc4154228747bc8d5fb706634fa41a43cb18c25326eeac",
+    "beautifulsoup/builder/_htmlparser.py": "4ab8d0bee2fc48a3ab5f28f33611355d3049a46b25a44d4b2bedc1d6f9bbfebd"
+  }
+}

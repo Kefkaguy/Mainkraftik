@@ -1,0 +1,14 @@
+
+running 2 tests
+test original_record_ids_bytes_reads_pointers_and_capacity_boundaries ... ok
+test original_append_only_journal_bytes_duplicates_rollback_and_busy_recovery ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 2.28s
+
+
+   Compiling mainkraft v0.1.0 (C:\Users\erosi\OneDrive\Desktop\allprojects\keftrade-intelligence\apps\backend-rust)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 3.04s
+     Running tests\evidence_storage.rs (apps\backend-rust\target\debug\deps\evidence_storage-0a871fb73d749cbb.exe)
+
+{"native_files_crossread_by_python": 24, "journal_compatible": true, "result": "C:\\Users\\erosi\\OneDrive\\Desktop\\allprojects\\keftrade-intelligence\\.local\\rust-migration\\evidence-crossread\\272870ab-17e1-4817-b855-3bd3b7412d49\\result.json"}
+

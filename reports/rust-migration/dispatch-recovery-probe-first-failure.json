@@ -1,0 +1,5 @@
+{
+  "purpose": "Initial test-only SPY request selector discrepancy; original expected count was kept and selector corrected to the actual symbol URL path.",
+  "file": "reports/rust-migration/dispatch-recovery-probe-first-failure.txt",
+  "sha256": "b3bab575e3011135a9d786f28f7386336813df5f833ea1fa94181ba97a7e4c01"
+}

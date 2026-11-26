@@ -1,0 +1,598 @@
+{
+  "source_report_id": "feb3eff13e1b04dd9727be18ca1f2d2c4156153947f74d48d60991b26f7883ee",
+  "attribution": {
+    "five_sessions": {
+      "historical_mean": {
+        "base": {
+          "cash": 600.0,
+          "realized_pnl": 0.0,
+          "unrealized_pnl": 0,
+          "net_pnl": 0.0,
+          "open_quantities": {}
+        },
+        "severe": {
+          "cash": 600.0,
+          "realized_pnl": 0.0,
+          "unrealized_pnl": 0,
+          "net_pnl": 0.0,
+          "open_quantities": {}
+        },
+        "stress": {
+          "cash": 600.0,
+          "realized_pnl": 0.0,
+          "unrealized_pnl": 0,
+          "net_pnl": 0.0,
+          "open_quantities": {}
+        }
+      },
+      "mainkraft_histboost": {
+        "base": {
+          "cash": 599.75232221495,
+          "realized_pnl": -0.2476777850467604,
+          "unrealized_pnl": 0,
+          "net_pnl": -0.24767778504997295,
+          "open_quantities": {}
+        },
+        "severe": {
+          "cash": 591.3218690897605,
+          "realized_pnl": -8.678130910236298,
+          "unrealized_pnl": 0,
+          "net_pnl": -8.678130910239474,
+          "open_quantities": {}
+        },
+        "stress": {
+          "cash": 597.6245686670354,
+          "realized_pnl": -2.3754313329610905,
+          "unrealized_pnl": 0,
+          "net_pnl": -2.375431332964581,
+          "open_quantities": {}
+        }
+      },
+      "mainkraft_linear": {
+        "base": {
+          "cash": 592.433980365658,
+          "realized_pnl": -7.5660196343374615,
+          "unrealized_pnl": 0,
+          "net_pnl": -7.566019634341956,
+          "open_quantities": {}
+        },
+        "severe": {
+          "cash": 580.7473119501395,
+          "realized_pnl": -19.252688049855717,
+          "unrealized_pnl": 0,
+          "net_pnl": -19.252688049860467,
+          "open_quantities": {}
+        },
+        "stress": {
+          "cash": 585.9224976071366,
+          "realized_pnl": -14.077502392858339,
+          "unrealized_pnl": 0,
+          "net_pnl": -14.07750239286338,
+          "open_quantities": {}
+        }
+      },
+      "sequence_adam400": {
+        "base": {
+          "cash": 598.7670170934607,
+          "realized_pnl": -1.2329829065367681,
+          "unrealized_pnl": 0,
+          "net_pnl": -1.2329829065392914,
+          "open_quantities": {}
+        },
+        "severe": {
+          "cash": 589.38881523169,
+          "realized_pnl": -10.61118476830807,
+          "unrealized_pnl": 0,
+          "net_pnl": -10.611184768309954,
+          "open_quantities": {}
+        },
+        "stress": {
+          "cash": 593.8515476049411,
+          "realized_pnl": -6.148452395057712,
+          "unrealized_pnl": 0,
+          "net_pnl": -6.148452395058939,
+          "open_quantities": {}
+        }
+      },
+      "zero_return": {
+        "base": {
+          "cash": 600.0,
+          "realized_pnl": 0.0,
+          "unrealized_pnl": 0,
+          "net_pnl": 0.0,
+          "open_quantities": {}
+        },
+        "severe": {
+          "cash": 600.0,
+          "realized_pnl": 0.0,
+          "unrealized_pnl": 0,
+          "net_pnl": 0.0,
+          "open_quantities": {}
+        },
+        "stress": {
+          "cash": 600.0,
+          "realized_pnl": 0.0,
+          "unrealized_pnl": 0,
+          "net_pnl": 0.0,
+          "open_quantities": {}
+        }
+      }
+    },
+    "one_day": {
+      "historical_mean": {
+        "base": {
+          "cash": 600.0,
+          "realized_pnl": 0.0,
+          "unrealized_pnl": 0,
+          "net_pnl": 0.0,
+          "open_quantities": {}
+        },
+        "severe": {
+          "cash": 600.0,
+          "realized_pnl": 0.0,
+          "unrealized_pnl": 0,
+          "net_pnl": 0.0,
+          "open_quantities": {}
+        },
+        "stress": {
+          "cash": 600.0,
+          "realized_pnl": 0.0,
+          "unrealized_pnl": 0,
+          "net_pnl": 0.0,
+          "open_quantities": {}
+        }
+      },
+      "mainkraft_histboost": {
+        "base": {
+          "cash": 600.0,
+          "realized_pnl": 0.0,
+          "unrealized_pnl": 0,
+          "net_pnl": 0.0,
+          "open_quantities": {}
+        },
+        "severe": {
+          "cash": 600.0,
+          "realized_pnl": 0.0,
+          "unrealized_pnl": 0,
+          "net_pnl": 0.0,
+          "open_quantities": {}
+        },
+        "stress": {
+          "cash": 600.0,
+          "realized_pnl": 0.0,
+          "unrealized_pnl": 0,
+          "net_pnl": 0.0,
+          "open_quantities": {}
+        }
+      },
+      "mainkraft_linear": {
+        "base": {
+          "cash": 600.0,
+          "realized_pnl": 0.0,
+          "unrealized_pnl": 0,
+          "net_pnl": 0.0,
+          "open_quantities": {}
+        },
+        "severe": {
+          "cash": 600.0,
+          "realized_pnl": 0.0,
+          "unrealized_pnl": 0,
+          "net_pnl": 0.0,
+          "open_quantities": {}
+        },
+        "stress": {
+          "cash": 600.0,
+          "realized_pnl": 0.0,
+          "unrealized_pnl": 0,
+          "net_pnl": 0.0,
+          "open_quantities": {}
+        }
+      },
+      "sequence_adam400": {
+        "base": {
+          "cash": 600.0,
+          "realized_pnl": 0.0,
+          "unrealized_pnl": 0,
+          "net_pnl": 0.0,
+          "open_quantities": {}
+        },
+        "severe": {
+          "cash": 600.0,
+          "realized_pnl": 0.0,
+          "unrealized_pnl": 0,
+          "net_pnl": 0.0,
+          "open_quantities": {}
+        },
+        "stress": {
+          "cash": 600.0,
+          "realized_pnl": 0.0,
+          "unrealized_pnl": 0,
+          "net_pnl": 0.0,
+          "open_quantities": {}
+        }
+      },
+      "zero_return": {
+        "base": {
+          "cash": 600.0,
+          "realized_pnl": 0.0,
+          "unrealized_pnl": 0,
+          "net_pnl": 0.0,
+          "open_quantities": {}
+        },
+        "severe": {
+          "cash": 600.0,
+          "realized_pnl": 0.0,
+          "unrealized_pnl": 0,
+          "net_pnl": 0.0,
+          "open_quantities": {}
+        },
+        "stress": {
+          "cash": 600.0,
+          "realized_pnl": 0.0,
+          "unrealized_pnl": 0,
+          "net_pnl": 0.0,
+          "open_quantities": {}
+        }
+      }
+    },
+    "one_hour": {
+      "historical_mean": {
+        "base": {
+          "cash": 600.0,
+          "realized_pnl": 0.0,
+          "unrealized_pnl": 0,
+          "net_pnl": 0.0,
+          "open_quantities": {}
+        },
+        "severe": {
+          "cash": 600.0,
+          "realized_pnl": 0.0,
+          "unrealized_pnl": 0,
+          "net_pnl": 0.0,
+          "open_quantities": {}
+        },
+        "stress": {
+          "cash": 600.0,
+          "realized_pnl": 0.0,
+          "unrealized_pnl": 0,
+          "net_pnl": 0.0,
+          "open_quantities": {}
+        }
+      },
+      "mainkraft_histboost": {
+        "base": {
+          "cash": 600.0,
+          "realized_pnl": 0.0,
+          "unrealized_pnl": 0,
+          "net_pnl": 0.0,
+          "open_quantities": {}
+        },
+        "severe": {
+          "cash": 600.0,
+          "realized_pnl": 0.0,
+          "unrealized_pnl": 0,
+          "net_pnl": 0.0,
+          "open_quantities": {}
+        },
+        "stress": {
+          "cash": 600.0,
+          "realized_pnl": 0.0,
+          "unrealized_pnl": 0,
+          "net_pnl": 0.0,
+          "open_quantities": {}
+        }
+      },
+      "mainkraft_linear": {
+        "base": {
+          "cash": 600.0,
+          "realized_pnl": 0.0,
+          "unrealized_pnl": 0,
+          "net_pnl": 0.0,
+          "open_quantities": {}
+        },
+        "severe": {
+          "cash": 600.0,
+          "realized_pnl": 0.0,
+          "unrealized_pnl": 0,
+          "net_pnl": 0.0,
+          "open_quantities": {}
+        },
+        "stress": {
+          "cash": 600.0,
+          "realized_pnl": 0.0,
+          "unrealized_pnl": 0,
+          "net_pnl": 0.0,
+          "open_quantities": {}
+        }
+      },
+      "sequence_adam400": {
+        "base": {
+          "cash": 599.0413534252823,
+          "realized_pnl": -0.9586465747168198,
+          "unrealized_pnl": 0,
+          "net_pnl": -0.9586465747177044,
+          "open_quantities": {}
+        },
+        "severe": {
+          "cash": 600.0,
+          "realized_pnl": 0.0,
+          "unrealized_pnl": 0,
+          "net_pnl": 0.0,
+          "open_quantities": {}
+        },
+        "stress": {
+          "cash": 599.6854427751787,
+          "realized_pnl": -0.3145572248211188,
+          "unrealized_pnl": 0,
+          "net_pnl": -0.3145572248213284,
+          "open_quantities": {}
+        }
+      },
+      "zero_return": {
+        "base": {
+          "cash": 600.0,
+          "realized_pnl": 0.0,
+          "unrealized_pnl": 0,
+          "net_pnl": 0.0,
+          "open_quantities": {}
+        },
+        "severe": {
+          "cash": 600.0,
+          "realized_pnl": 0.0,
+          "unrealized_pnl": 0,
+          "net_pnl": 0.0,
+          "open_quantities": {}
+        },
+        "stress": {
+          "cash": 600.0,
+          "realized_pnl": 0.0,
+          "unrealized_pnl": 0,
+          "net_pnl": 0.0,
+          "open_quantities": {}
+        }
+      }
+    },
+    "three_sessions": {
+      "historical_mean": {
+        "base": {
+          "cash": 600.0,
+          "realized_pnl": 0.0,
+          "unrealized_pnl": 0,
+          "net_pnl": 0.0,
+          "open_quantities": {}
+        },
+        "severe": {
+          "cash": 600.0,
+          "realized_pnl": 0.0,
+          "unrealized_pnl": 0,
+          "net_pnl": 0.0,
+          "open_quantities": {}
+        },
+        "stress": {
+          "cash": 600.0,
+          "realized_pnl": 0.0,
+          "unrealized_pnl": 0,
+          "net_pnl": 0.0,
+          "open_quantities": {}
+        }
+      },
+      "mainkraft_histboost": {
+        "base": {
+          "cash": 599.0758940492724,
+          "realized_pnl": -0.9241059507234555,
+          "unrealized_pnl": 0,
+          "net_pnl": -0.9241059507276077,
+          "open_quantities": {}
+        },
+        "severe": {
+          "cash": 586.0077425627833,
+          "realized_pnl": -13.99225743721326,
+          "unrealized_pnl": 0,
+          "net_pnl": -13.992257437216722,
+          "open_quantities": {}
+        },
+        "stress": {
+          "cash": 592.9031895794986,
+          "realized_pnl": -7.0968104204982865,
+          "unrealized_pnl": 0,
+          "net_pnl": -7.096810420501356,
+          "open_quantities": {}
+        }
+      },
+      "mainkraft_linear": {
+        "base": {
+          "cash": 594.5842055814799,
+          "realized_pnl": -5.415794418515144,
+          "unrealized_pnl": 0,
+          "net_pnl": -5.415794418520136,
+          "open_quantities": {}
+        },
+        "severe": {
+          "cash": 584.2894575307732,
+          "realized_pnl": -15.710542469222158,
+          "unrealized_pnl": 0,
+          "net_pnl": -15.710542469226766,
+          "open_quantities": {}
+        },
+        "stress": {
+          "cash": 591.0064915442906,
+          "realized_pnl": -8.99350845570524,
+          "unrealized_pnl": 0,
+          "net_pnl": -8.993508455709389,
+          "open_quantities": {}
+        }
+      },
+      "sequence_adam400": {
+        "base": {
+          "cash": 595.6235344851175,
+          "realized_pnl": -4.37646551487993,
+          "unrealized_pnl": 0,
+          "net_pnl": -4.376465514882511,
+          "open_quantities": {}
+        },
+        "severe": {
+          "cash": 586.9192351770588,
+          "realized_pnl": -13.0807648229389,
+          "unrealized_pnl": 0,
+          "net_pnl": -13.080764822941205,
+          "open_quantities": {}
+        },
+        "stress": {
+          "cash": 591.0279185079635,
+          "realized_pnl": -8.972081492034397,
+          "unrealized_pnl": 0,
+          "net_pnl": -8.972081492036523,
+          "open_quantities": {}
+        }
+      },
+      "zero_return": {
+        "base": {
+          "cash": 600.0,
+          "realized_pnl": 0.0,
+          "unrealized_pnl": 0,
+          "net_pnl": 0.0,
+          "open_quantities": {}
+        },
+        "severe": {
+          "cash": 600.0,
+          "realized_pnl": 0.0,
+          "unrealized_pnl": 0,
+          "net_pnl": 0.0,
+          "open_quantities": {}
+        },
+        "stress": {
+          "cash": 600.0,
+          "realized_pnl": 0.0,
+          "unrealized_pnl": 0,
+          "net_pnl": 0.0,
+          "open_quantities": {}
+        }
+      }
+    },
+    "two_sessions": {
+      "historical_mean": {
+        "base": {
+          "cash": 600.0,
+          "realized_pnl": 0.0,
+          "unrealized_pnl": 0,
+          "net_pnl": 0.0,
+          "open_quantities": {}
+        },
+        "severe": {
+          "cash": 600.0,
+          "realized_pnl": 0.0,
+          "unrealized_pnl": 0,
+          "net_pnl": 0.0,
+          "open_quantities": {}
+        },
+        "stress": {
+          "cash": 600.0,
+          "realized_pnl": 0.0,
+          "unrealized_pnl": 0,
+          "net_pnl": 0.0,
+          "open_quantities": {}
+        }
+      },
+      "mainkraft_histboost": {
+        "base": {
+          "cash": 598.7699771031836,
+          "realized_pnl": -1.2300228968132672,
+          "unrealized_pnl": 0,
+          "net_pnl": -1.230022896816422,
+          "open_quantities": {}
+        },
+        "severe": {
+          "cash": 588.9457841675162,
+          "realized_pnl": -11.054215832481324,
+          "unrealized_pnl": 0,
+          "net_pnl": -11.054215832483806,
+          "open_quantities": {}
+        },
+        "stress": {
+          "cash": 594.5660232833834,
+          "realized_pnl": -5.433976716613705,
+          "unrealized_pnl": 0,
+          "net_pnl": -5.433976716616598,
+          "open_quantities": {}
+        }
+      },
+      "mainkraft_linear": {
+        "base": {
+          "cash": 583.2744498700491,
+          "realized_pnl": -4.224300129946631,
+          "unrealized_pnl": 0.19846583598308598,
+          "net_pnl": -4.025834293967819,
+          "open_quantities": {
+            "META": 0.021709101506821572
+          }
+        },
+        "severe": {
+          "cash": 581.0965563699639,
+          "realized_pnl": -6.402193630033267,
+          "unrealized_pnl": 0.16047119508291452,
+          "net_pnl": -6.2417224349532034,
+          "open_quantities": {
+            "META": 0.021644152847601968
+          }
+        },
+        "stress": {
+          "cash": 579.992350383824,
+          "realized_pnl": -7.506399616171985,
+          "unrealized_pnl": 0.18578197576452737,
+          "net_pnl": -7.320617640411456,
+          "open_quantities": {
+            "META": 0.02168741950916593
+          }
+        }
+      },
+      "sequence_adam400": {
+        "base": {
+          "cash": 599.4991245720956,
+          "realized_pnl": -0.500875427904294,
+          "unrealized_pnl": 0,
+          "net_pnl": -0.5008754279043615,
+          "open_quantities": {}
+        },
+        "severe": {
+          "cash": 600.0,
+          "realized_pnl": 0.0,
+          "unrealized_pnl": 0,
+          "net_pnl": 0.0,
+          "open_quantities": {}
+        },
+        "stress": {
+          "cash": 599.45017026502,
+          "realized_pnl": -0.5498297349799799,
+          "unrealized_pnl": 0,
+          "net_pnl": -0.5498297349799941,
+          "open_quantities": {}
+        }
+      },
+      "zero_return": {
+        "base": {
+          "cash": 600.0,
+          "realized_pnl": 0.0,
+          "unrealized_pnl": 0,
+          "net_pnl": 0.0,
+          "open_quantities": {}
+        },
+        "severe": {
+          "cash": 600.0,
+          "realized_pnl": 0.0,
+          "unrealized_pnl": 0,
+          "net_pnl": 0.0,
+          "open_quantities": {}
+        },
+        "stress": {
+          "cash": 600.0,
+          "realized_pnl": 0.0,
+          "unrealized_pnl": 0,
+          "net_pnl": 0.0,
+          "open_quantities": {}
+        }
+      }
+    }
+  },
+  "note": "Separates partial realized sales from remaining unrealized inventory. Frozen net P/L, orders, candidates and selections are unchanged.",
+  "record_id": "d8b23e3d9e47fddf78f3d96ee284aae6773a6c546526bb858c10ed23a2504ba5"
+}

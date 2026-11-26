@@ -1,0 +1,21 @@
+{
+  "at": "2026-11-21T22:38:59.174539+00:00",
+  "linux_database_suites_passed": 17,
+  "linux_database_suites_failed": 1,
+  "failed_suite": "research_api",
+  "cause": "PNG compression differs; original Windows/Linux pixel and PNG filter data SHA256 match exactly; native archived hash verification correctly refuses the differing encoded image",
+  "source_changed": false,
+  "expected_results_changed": false,
+  "deployment_allowed": false,
+  "frozen_original_python_sources_unchanged": true,
+  "files": {
+    "chart-difference.json": "7356bd32991d79d2413ab91e8a080dd8c62e78ef6abc989454b8cb93db0d8bc8",
+    "original-linux-research-api-oracle.json": "f4844d5628a05722a8caff335803d7a3d81cf3e6e5de4a9d3de7b5832e55a5c8",
+    "chart-difference/native.txt": "ddd311ecef5772c77d58e933b2a0e4f908731e1e546825e9159f0dee54717f68",
+    "chart-difference/python-packages.txt": "12611cb3f26625793c0acd0dd5023a111e8e04f9aabcbd7a41bfc5a7c1ff27be",
+    "chart-difference/result.json": "f6726cd5c84a2d0db77a8aae0581eb78704c88361ec9837bb4f63db1bc7b8819",
+    "missing-pillow/native.txt": "0ff3ed1d43a92dc4a9cabdc76df99f1dd1f317735705a3b236db6c70cd8ad95d",
+    "missing-pillow/python-packages.txt": "6bcfc67c06bb5453fd1d345ded73a68dfe0cacbd8ff43edfe5267d59cee10daf",
+    "missing-pillow/result.json": "2b3301454d81bf60145b417e47a6d5b3e9a66293691217af8d9a8b093ce9a9af"
+  }
+}

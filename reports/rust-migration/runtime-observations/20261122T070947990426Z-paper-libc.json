@@ -1,0 +1,1 @@
+{"container": "keftrade-intelligence-paper-1", "image_id": "sha256:7e181a97f54ed07c165cdedeaf2f4eeb3865e99bb1ef4b79aebe759b77679322", "runtime": {"libc": ["glibc", "2.41"], "machine": "x86_64"}, "service_changes": false, "broker_requests": 0}

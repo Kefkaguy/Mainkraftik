@@ -1,0 +1,15 @@
+
+running 1 test
+ORIGINAL_COMPLETION_FAILURE_EVENT_AND_PRIORITY_PARITY=PASS
+CANCELLED_CALLER_RETAINS_ACTIVE_WORKER_LEASE=PASS
+EXITED_WORKER_AND_POST_SIDE_EFFECT_DB_FAILURE_RECOVERY=PASS
+SCHEDULER_RESTART_DEDUP_AND_PENDING_REFRESH_BACKPRESSURE=PASS
+GRACEFUL_DRAIN_AND_CLOSED_SUPERVISOR_SHUTDOWN=PASS
+test durable_jobs_preserve_completion_priority_ownership_recovery_and_scheduler_marks ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.48s
+
+
+   Compiling mainkraft v0.1.0 (/mnt/c/Users/erosi/OneDrive/Desktop/allprojects/keftrade-intelligence/apps/backend-rust)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 1.47s
+     Running tests/jobs_lifecycle.rs (/home/erosimcity/.local/share/mainkraft-rust-validation/target/debug/deps/jobs_lifecycle-a93109b77e638bb2)

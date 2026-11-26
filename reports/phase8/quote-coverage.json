@@ -1,0 +1,98 @@
+{
+  "observed_at": "2026-11-18T22:17:54.271414+00:00",
+  "observations": 12,
+  "fresh": 0,
+  "unusable": 12,
+  "fresh_median_spread_bps": null,
+  "fresh_p90_spread_bps": null,
+  "fresh_records": [],
+  "unusable_records": [
+    {
+      "symbol": "AMD",
+      "source_time": "2026-11-17T21:00:00.000837+00:00",
+      "acquired_at": "2026-11-18T06:19:28.802586+00:00",
+      "age_seconds": 33568.801749,
+      "spread_return": 0.10970260457111669,
+      "feed": "iex",
+      "reason": "STALE_OR_FUTURE_QUOTE"
+    },
+    {
+      "symbol": "MSFT",
+      "source_time": "2026-11-17T21:00:00.010677+00:00",
+      "acquired_at": "2026-11-18T06:19:29.393752+00:00",
+      "age_seconds": 33569.383075,
+      "spread_return": 0.11070203330265249,
+      "feed": "iex",
+      "reason": "STALE_OR_FUTURE_QUOTE"
+    },
+    {
+      "symbol": "GOOG",
+      "source_time": "2026-11-17T21:00:00.009064+00:00",
+      "acquired_at": "2026-11-18T06:19:30.211945+00:00",
+      "age_seconds": 33570.202881,
+      "spread_return": 0.10700483998049015,
+      "feed": "iex",
+      "reason": "STALE_OR_FUTURE_QUOTE"
+    },
+    {
+      "reason": "MALFORMED"
+    },
+    {
+      "symbol": "TSM",
+      "source_time": "2026-11-17T21:00:00.002868+00:00",
+      "acquired_at": "2026-11-18T06:19:31.696424+00:00",
+      "age_seconds": 33571.693556,
+      "spread_return": 0.3412053717654766,
+      "feed": "iex",
+      "reason": "STALE_OR_FUTURE_QUOTE"
+    },
+    {
+      "symbol": "META",
+      "source_time": "2026-11-17T21:00:00.001673+00:00",
+      "acquired_at": "2026-11-18T06:19:32.478936+00:00",
+      "age_seconds": 33572.477263,
+      "spread_return": 0.10561695532043958,
+      "feed": "iex",
+      "reason": "STALE_OR_FUTURE_QUOTE"
+    },
+    {
+      "symbol": "AMD",
+      "source_time": "2026-11-18T21:00:01.870930+00:00",
+      "acquired_at": "2026-11-18T22:16:57.106256+00:00",
+      "age_seconds": 4615.235326,
+      "spread_return": 0.10213861386138623,
+      "feed": "iex",
+      "reason": "STALE_OR_FUTURE_QUOTE"
+    },
+    {
+      "reason": "MALFORMED"
+    },
+    {
+      "symbol": "GOOG",
+      "source_time": "2026-11-18T21:00:00.006475+00:00",
+      "acquired_at": "2026-11-18T22:17:02.135691+00:00",
+      "age_seconds": 4622.129216,
+      "spread_return": 0.10747312232163009,
+      "feed": "iex",
+      "reason": "STALE_OR_FUTURE_QUOTE"
+    },
+    {
+      "reason": "MALFORMED"
+    },
+    {
+      "reason": "MALFORMED"
+    },
+    {
+      "symbol": "TSM",
+      "source_time": "2026-11-18T21:00:00.004184+00:00",
+      "acquired_at": "2026-11-18T22:17:07.173318+00:00",
+      "age_seconds": 4627.169134,
+      "spread_return": 0.33945756780402436,
+      "feed": "iex",
+      "reason": "STALE_OR_FUTURE_QUOTE"
+    }
+  ],
+  "measured_slippage": null,
+  "actual_fills": null,
+  "limitation": "IEX single-venue quote snapshots, not NBBO or guaranteed fills. Stale off-hours spreads cannot calibrate execution costs."
+}

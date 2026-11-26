@@ -1,0 +1,29 @@
+{
+  "asof": "2026-11-19T03:54:04.833773+00:00",
+  "status": "PAPER_EXPERIMENT_ENABLED_MARKET_CLOSED",
+  "accounts": [
+    {
+      "number": "PA3NSJAY7",
+      "equity": "14993.22",
+      "new_orders": 0,
+      "next_open": "2026-11-19T09:30:00-05:00"
+    },
+    {
+      "number": "PA3D4GIWG",
+      "equity": "1000000",
+      "new_orders": 0,
+      "next_open": "2026-11-19T09:30:00-05:00"
+    }
+  ],
+  "final_full_tests": 237,
+  "test_failures": 0,
+  "phase7_frozen_files_unchanged": 40,
+  "backup_restore": "PASSED_PRE_AND_POST_DEPLOY",
+  "restart_recovery": "PASSED",
+  "default_configuration": "PERSISTED_AND_VERIFIED",
+  "validated_profitability": false,
+  "neural_fine_tuning_completed": false,
+  "online_learning": "Prequential residual ridge, starts when genuinely prospective outcomes mature",
+  "real_money_execution": false,
+  "remaining_live_validation": "First open-market broker orders, fills, and matured forecast outcomes have not occurred yet"
+}

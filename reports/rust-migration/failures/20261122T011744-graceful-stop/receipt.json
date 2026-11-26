@@ -1,0 +1,9 @@
+{
+  "observed_failure": "Shutdown canceled an accepted order acknowledgement before durable observation",
+  "expected_behavior": "Keep active cycle ownership until acknowledgement is recorded; do not start subsequent account submissions",
+  "outputs": {
+    "engine-before.rs": "aa2af2f780f60df303ebf0ac80dfbc87344371be01ddbcb787ab04651bd4d391",
+    "test-before.rs": "daa7c4fc7eb9974e443c1baf0dfdd2b7ddcc5019813cd71003a3f78043a970ed",
+    "test-output.txt": "105554d1db468a901a1f190f13e53a7699b1433ffe225510b8ba00f64de60d16"
+  }
+}

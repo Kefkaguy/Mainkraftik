@@ -1,0 +1,84 @@
+{
+  "version": "phase8-horizons-v1",
+  "created_at": "2026-11-18T06:47:30.050750+00:00",
+  "source_archive": "2010f77d2f59c6ebc9fa40e4d4a102d37650aac0362152dfdbfb11624fc16780",
+  "phase7_boundary_sha256": "cd006b078b0c557ca494212339508b68fda2972564070e1cc9b668a5e3cca421",
+  "horizons": {
+    "one_hour": 0,
+    "one_day": 1,
+    "two_sessions": 2,
+    "three_sessions": 3,
+    "five_sessions": 5
+  },
+  "methods": [
+    "historical_mean",
+    "zero_return",
+    "mainkraft_linear",
+    "mainkraft_histboost",
+    "sequence_adam400"
+  ],
+  "candidate_count": 25,
+  "development_end": "2025-04-02",
+  "forbidden_selection_period": "2025-04-03 onward, including all Phase 7 audit and prior evaluation",
+  "partitions": {
+    "train_last_origin": "2024-04-11",
+    "calibration_first": "2024-04-22",
+    "calibration_last_origin": "2024-10-03",
+    "selection_first": "2024-10-14"
+  },
+  "purging": "All label ends precede the next partition decision; five-session boundary gaps; no labels beyond development_end",
+  "screen": {
+    "closed_trades": 30,
+    "lower_family_ci_net_pnl_vs_cash": 0,
+    "lower_family_ci_vs_risk_matched_passive": 0,
+    "open_positions": 0
+  },
+  "independent_confirmation": {
+    "first_eligible_prediction": "after this declaration and a separate frozen candidate enrollment",
+    "minimum_dates": 126,
+    "minimum_closed_trades": 100,
+    "complete_measured_quotes": true,
+    "no_repeated_peeking": true,
+    "positive_family_adjusted_net_and_benchmark_difference": true,
+    "stress_cost_survival": true
+  },
+  "costs": {
+    "base": {
+      "spread": 0.001,
+      "slippage": 0.0005,
+      "fee": 0.0001,
+      "reject": 0.05,
+      "partial": 0.1
+    },
+    "stress": {
+      "spread": 0.002,
+      "slippage": 0.001,
+      "fee": 0.0001,
+      "reject": 0.05,
+      "partial": 0.1
+    },
+    "severe": {
+      "spread": 0.004,
+      "slippage": 0.002,
+      "fee": 0.0001,
+      "reject": 0.05,
+      "partial": 0.1
+    }
+  },
+  "risk": {
+    "capital": 600,
+    "entry": 25,
+    "max_positions": 2,
+    "total_cap": 100,
+    "daily_loss": 12,
+    "stop": 0.02,
+    "target": 0.03
+  },
+  "selection": "Per horizon, highest family-adjusted daily P/L lower bound among screen survivors; otherwise no strategy nominated",
+  "uncertainty": "5000 circular 20-session block resamples; alpha=.05/25, including all no-trade days; descriptive screening only",
+  "historical_news": "Excluded: no contemporaneously acquired historical version coverage across this development window",
+  "cohort": "Existing six-stock survivor cohort; SPY/XLK daily context. Prior development exposure acknowledged.",
+  "execution_authority": false,
+  "promotion_authority": false,
+  "record_id": "b8c4b483e2f9f9d8555614abad57bdde84bec7b084c281993309bf26ee396fc5"
+}

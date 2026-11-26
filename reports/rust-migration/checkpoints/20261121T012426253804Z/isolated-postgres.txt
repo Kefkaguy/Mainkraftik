@@ -1,0 +1,8 @@
+
+Traceback (most recent call last):
+  File "C:\Users\erosi\OneDrive\Desktop\allprojects\keftrade-intelligence\scripts\test-rust-postgres.py", line 44, in <module>
+    with psycopg.connect(admin,autocommit=True,connect_timeout=5) as c:c.execute(sql.SQL('CREATE DATABASE {}').format(sql.Identifier(name)))
+         ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\erosi\OneDrive\Desktop\allprojects\keftrade-intelligence\.venv\Lib\site-packages\psycopg\connection.py", line 126, in connect
+    raise last_ex.with_traceback(None)
+psycopg.errors.ConnectionTimeout: connection timeout expired

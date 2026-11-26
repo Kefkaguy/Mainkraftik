@@ -1,0 +1,25 @@
+Captured twelve original news ingestion cases, filing replays, official metadata identities and four evidence families
+
+
+
+running 1 test
+test private_news_filings_and_information_identities_match_python ... FAILED
+
+failures:
+
+failures:
+    private_news_filings_and_information_identities_match_python
+
+test result: FAILED. 0 passed; 1 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.73s
+
+
+   Compiling mainkraft v0.1.0 (C:\Users\erosi\OneDrive\Desktop\allprojects\keftrade-intelligence\apps\backend-rust)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 14.23s
+     Running tests\information_lifecycle.rs (apps\backend-rust\target\debug\deps\information_lifecycle-39b65f98a9535a73.exe)
+
+thread 'private_news_filings_and_information_identities_match_python' (10068) panicked at tests\information_lifecycle.rs:159:24:
+"utc-overflow": expected uncaught reference error {"kind":"OverflowError","message":"date value out of range"}, got Ok(Object {"provider": String("alpaca_news"), "status": String("unavailable"), "articles_returned": Number(0), "pages": Number(0), "error": String("OverflowError: news ingestion incomplete")})
+note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+error: test failed, to rerun pass `--test information_lifecycle`
+
+

@@ -1,0 +1,18 @@
+
+running 1 test
+UNKNOWN_PARTIAL_RESTART_DUPLICATE=PASS
+KNOWN_REJECTION=PASS
+ACCOUNT_ISOLATION=PASS
+IMMUTABLE_EVIDENCE=PASS
+DURABLE_CYCLE_AND_SHARED_PYTHON_LEASE=PASS
+DB_FAILURE_AFTER_FILL_RECOVERY=PASS
+PAUSE_BEFORE_INTENT=PASS
+DASHBOARD_STATUS_AND_SCHEMA_PRESERVATION=PASS
+test full_durable_order_lifecycle_against_isolated_postgres ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.28s
+
+
+   Compiling mainkraft v0.1.0 (/mnt/c/Users/erosi/OneDrive/Desktop/allprojects/keftrade-intelligence/apps/backend-rust)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 1.06s
+     Running tests/lifecycle.rs (/home/erosimcity/.local/share/mainkraft-rust-validation/target/debug/deps/lifecycle-24fa6f25e71b1c43)

@@ -1,0 +1,81 @@
+{
+  "at": "2026-11-21T23:15:57.760673+00:00",
+  "passed": true,
+  "checkpoint": "reports/rust-migration/checkpoints/20261121T225329120634Z/manifest.json",
+  "checkpoint_sha256": "e8d9e14791e3264c12703d23b4cfec1f94b6e0597b1b3c4ac36a120525f566ff",
+  "source_files_and_zip_members": 217,
+  "output_files": 124,
+  "counts": {
+    "rust-tests": 54,
+    "isolated-postgres": 18,
+    "native-backup-crossread": 1,
+    "linux-core-native": 54,
+    "native-sentiment": 2,
+    "native-ir-http": 1,
+    "native-evidence": 2
+  },
+  "linux_database_checks": [
+    {
+      "name": "postgres",
+      "exit_code": 0,
+      "passed_tests": 18,
+      "required_tests": 18
+    },
+    {
+      "name": "backup",
+      "exit_code": 0,
+      "passed_tests": 1,
+      "required_tests": 1
+    }
+  ],
+  "linux_owned_cluster_started_and_stopped": true,
+  "frozen_windows_chart_corpora_unchanged": {
+    "apps/backend-rust/tests/fixtures/chart-parity.json": "5e593424a53f3e2bb93b09cb1cfdccac9e6b356d343b9369dd70691b3162341c",
+    "apps/backend-rust/tests/fixtures/annotation-parity.json": "9b25aabc62fe98a3da4b7cb7379ff9231a81cf251163278db4ace17959c7b568",
+    "apps/backend-rust/tests/fixtures/annotation-edge-parity.json": "9c84a0922f7bbebbd7eb15e6edf16bb411a9beec8cc465485a8536803572a368"
+  },
+  "preservation": {
+    "phase7": {
+      "files": 40,
+      "differences": []
+    },
+    "research": {
+      "files": 38,
+      "differences": []
+    },
+    "phase8_compressed": {
+      "files": 27,
+      "differences": []
+    },
+    "original_python": {
+      "files": 106,
+      "differences": []
+    }
+  },
+  "existing_records_verified": {
+    "phase7-records": 16,
+    "chart-records": 18,
+    "phase8-compressed-records": 27,
+    "lab-records": 7266
+  },
+  "classic_source_archive_sha256": "ff0ba4c292013dbc27530b3a81e1f9a813cd39de01ca5e0f8bf355702efa593e",
+  "deployed_runtime_fixture_receipt": {
+    "file": "reports/rust-migration/runtime-observations/20261121T231010491525Z-deployed-chart-fixtures.json",
+    "sha256": "e0e2dd6694ded0ebc10ec5d1ca7def355a4e17d70c807cbbbd710ba39796d61c",
+    "runtime": {
+      "python": "3.12.16 (main, Nov  5 2026, 07:58:20) [GCC 14.2.0]",
+      "pillow": "12.3.0",
+      "zlib": "1.3.1",
+      "zlib_ng": "2.3.3",
+      "freetype": "2.14.3"
+    },
+    "exact_fixture_png_matches": 18,
+    "fixture_png_count": 18,
+    "all_match_linux_classic13_corpus": true,
+    "source_vision_matches_local": true,
+    "source_main_matches_local": false,
+    "production_changes": false
+  },
+  "full_migration_complete": false,
+  "deployment_allowed": false
+}

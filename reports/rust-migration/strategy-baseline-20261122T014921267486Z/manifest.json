@@ -1,0 +1,17 @@
+{
+  "version": 1,
+  "at": "2026-11-22T01:49:21.276764+00:00",
+  "purpose": "Immutable existing-policy comparison for the separately authorized strategy phase",
+  "files": {
+    "allocation.rs": "6ceeb2ab094a960f68743e2a153d3064fd1893a7f4dc9ec66f3f2f669f170651",
+    "learning.rs": "c853eb03e39fcc5bc3b98cd8bd938601c3f8e89b72bdbd2ee1b95960f7ced403",
+    "market.rs": "06e0642efa161b96527a1743c19f9afa3101efd0887134ba84d6536d0def7b66",
+    "models.rs": "81f850ace5a7b9e17b80d5c00b833a9a06db768a8fe219696aa3d443afca2335",
+    "bundle.json": "c287fcc54b746686c2d30b3fe3c1d94bcd3bb00c037f762e3ae94fcbcf06429f"
+  },
+  "rebalance_seconds": 300,
+  "daily_to_hour_scale": 6.5,
+  "residual_ridge_alpha": 100,
+  "zero_score_positive_exponential_weight_preserved": true,
+  "new_strategy_activated": false
+}

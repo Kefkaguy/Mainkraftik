@@ -1,0 +1,395 @@
+{
+  "oracle_file": ".local/rust-migration/ir-http/380208c0-5927-4f2a-8669-39f8cc67d54e/oracle.json",
+  "oracle_sha256": "cfd58ae17d998ce6ae4ef1b33d928f7964cadf94b74373ff4ac3d737477f37b1",
+  "native_exit_code": 101,
+  "requests_match": false,
+  "python_requests": [
+    {
+      "path": "/start",
+      "host": "investor.axon.com",
+      "cookie": null,
+      "agent": "fixture-ir-test"
+    },
+    {
+      "path": "/echo",
+      "host": "investor.axon.com",
+      "cookie": "session=fixture",
+      "agent": "fixture-ir-test"
+    },
+    {
+      "path": "/echo",
+      "host": "investor.axon.com",
+      "cookie": "session=fixture",
+      "agent": "fixture-ir-test"
+    },
+    {
+      "path": "/echo",
+      "host": "investor.axon.com",
+      "cookie": null,
+      "agent": "fixture-ir-test"
+    },
+    {
+      "path": "/start",
+      "host": "investor.axon.com",
+      "cookie": null,
+      "agent": "fixture-ir-test"
+    },
+    {
+      "path": "/echo",
+      "host": "investor.axon.com",
+      "cookie": "session=fixture",
+      "agent": "fixture-ir-test"
+    },
+    {
+      "path": "/clear",
+      "host": "investor.axon.com",
+      "cookie": "session=fixture",
+      "agent": "fixture-ir-test"
+    },
+    {
+      "path": "/echo",
+      "host": "investor.axon.com",
+      "cookie": null,
+      "agent": "fixture-ir-test"
+    },
+    {
+      "path": "/path/start",
+      "host": "investor.axon.com",
+      "cookie": null,
+      "agent": "fixture-ir-test"
+    },
+    {
+      "path": "/path/echo",
+      "host": "investor.axon.com",
+      "cookie": "scoped=fixture",
+      "agent": "fixture-ir-test"
+    },
+    {
+      "path": "/echo",
+      "host": "investor.axon.com",
+      "cookie": null,
+      "agent": "fixture-ir-test"
+    },
+    {
+      "path": "/domain/start",
+      "host": "www.motorolasolutions.com",
+      "cookie": null,
+      "agent": "fixture-ir-test"
+    },
+    {
+      "path": "/echo",
+      "host": "newsroom.motorolasolutions.com",
+      "cookie": "shared=fixture",
+      "agent": "fixture-ir-test"
+    },
+    {
+      "path": "/gzip",
+      "host": "investor.axon.com",
+      "cookie": null,
+      "agent": "fixture-ir-test"
+    },
+    {
+      "path": "/deflate",
+      "host": "investor.axon.com",
+      "cookie": null,
+      "agent": "fixture-ir-test"
+    },
+    {
+      "path": "/chunked",
+      "host": "investor.axon.com",
+      "cookie": null,
+      "agent": "fixture-ir-test"
+    },
+    {
+      "path": "/missing",
+      "host": "investor.axon.com",
+      "cookie": null,
+      "agent": "fixture-ir-test"
+    },
+    {
+      "path": "/gzip-limit",
+      "host": "investor.axon.com",
+      "cookie": null,
+      "agent": "fixture-ir-test"
+    },
+    {
+      "path": "/oversize",
+      "host": "investor.axon.com",
+      "cookie": null,
+      "agent": "fixture-ir-test"
+    },
+    {
+      "path": "/gzip-oversize",
+      "host": "investor.axon.com",
+      "cookie": null,
+      "agent": "fixture-ir-test"
+    },
+    {
+      "path": "/redirect-external",
+      "host": "investor.axon.com",
+      "cookie": null,
+      "agent": "fixture-ir-test"
+    },
+    {
+      "path": "/loop",
+      "host": "investor.axon.com",
+      "cookie": null,
+      "agent": "fixture-ir-test"
+    },
+    {
+      "path": "/loop",
+      "host": "investor.axon.com",
+      "cookie": null,
+      "agent": "fixture-ir-test"
+    },
+    {
+      "path": "/loop",
+      "host": "investor.axon.com",
+      "cookie": null,
+      "agent": "fixture-ir-test"
+    },
+    {
+      "path": "/loop",
+      "host": "investor.axon.com",
+      "cookie": null,
+      "agent": "fixture-ir-test"
+    },
+    {
+      "path": "/start",
+      "host": "investor.axon.com",
+      "cookie": null,
+      "agent": "fixture-ir-test"
+    },
+    {
+      "path": "/echo",
+      "host": "investor.axon.com",
+      "cookie": "session=fixture",
+      "agent": "fixture-ir-test"
+    },
+    {
+      "path": "/path/start",
+      "host": "investor.axon.com",
+      "cookie": "session=fixture",
+      "agent": "fixture-ir-test"
+    },
+    {
+      "path": "/path/echo",
+      "host": "investor.axon.com",
+      "cookie": "scoped=fixture; session=fixture",
+      "agent": "fixture-ir-test"
+    },
+    {
+      "path": "/echo",
+      "host": "investor.axon.com",
+      "cookie": "session=fixture",
+      "agent": "fixture-ir-test"
+    },
+    {
+      "path": "/start",
+      "host": "investor.axon.com",
+      "cookie": null,
+      "agent": "fixture-ir-test"
+    },
+    {
+      "path": "/echo",
+      "host": "investor.axon.com",
+      "cookie": "session=fixture",
+      "agent": "fixture-ir-test"
+    },
+    {
+      "path": "/path/shadow",
+      "host": "investor.axon.com",
+      "cookie": "session=fixture",
+      "agent": "fixture-ir-test"
+    },
+    {
+      "path": "/path/echo",
+      "host": "investor.axon.com",
+      "cookie": "session=path; session=fixture",
+      "agent": "fixture-ir-test"
+    },
+    {
+      "path": "/echo",
+      "host": "investor.axon.com",
+      "cookie": "session=fixture",
+      "agent": "fixture-ir-test"
+    }
+  ],
+  "native_requests": [
+    {
+      "path": "/start",
+      "host": "investor.axon.com",
+      "cookie": null,
+      "agent": "fixture-ir-test"
+    },
+    {
+      "path": "/echo",
+      "host": "investor.axon.com",
+      "cookie": "session=fixture",
+      "agent": "fixture-ir-test"
+    },
+    {
+      "path": "/echo",
+      "host": "investor.axon.com",
+      "cookie": "session=fixture",
+      "agent": "fixture-ir-test"
+    },
+    {
+      "path": "/echo",
+      "host": "investor.axon.com",
+      "cookie": null,
+      "agent": "fixture-ir-test"
+    },
+    {
+      "path": "/start",
+      "host": "investor.axon.com",
+      "cookie": null,
+      "agent": "fixture-ir-test"
+    },
+    {
+      "path": "/echo",
+      "host": "investor.axon.com",
+      "cookie": "session=fixture",
+      "agent": "fixture-ir-test"
+    },
+    {
+      "path": "/clear",
+      "host": "investor.axon.com",
+      "cookie": "session=fixture",
+      "agent": "fixture-ir-test"
+    },
+    {
+      "path": "/echo",
+      "host": "investor.axon.com",
+      "cookie": null,
+      "agent": "fixture-ir-test"
+    },
+    {
+      "path": "/path/start",
+      "host": "investor.axon.com",
+      "cookie": null,
+      "agent": "fixture-ir-test"
+    },
+    {
+      "path": "/path/echo",
+      "host": "investor.axon.com",
+      "cookie": "scoped=fixture",
+      "agent": "fixture-ir-test"
+    },
+    {
+      "path": "/echo",
+      "host": "investor.axon.com",
+      "cookie": null,
+      "agent": "fixture-ir-test"
+    },
+    {
+      "path": "/domain/start",
+      "host": "www.motorolasolutions.com",
+      "cookie": null,
+      "agent": "fixture-ir-test"
+    },
+    {
+      "path": "/echo",
+      "host": "newsroom.motorolasolutions.com",
+      "cookie": "shared=fixture",
+      "agent": "fixture-ir-test"
+    },
+    {
+      "path": "/gzip",
+      "host": "investor.axon.com",
+      "cookie": null,
+      "agent": "fixture-ir-test"
+    },
+    {
+      "path": "/deflate",
+      "host": "investor.axon.com",
+      "cookie": null,
+      "agent": "fixture-ir-test"
+    },
+    {
+      "path": "/chunked",
+      "host": "investor.axon.com",
+      "cookie": null,
+      "agent": "fixture-ir-test"
+    },
+    {
+      "path": "/missing",
+      "host": "investor.axon.com",
+      "cookie": null,
+      "agent": "fixture-ir-test"
+    },
+    {
+      "path": "/gzip-limit",
+      "host": "investor.axon.com",
+      "cookie": null,
+      "agent": "fixture-ir-test"
+    },
+    {
+      "path": "/oversize",
+      "host": "investor.axon.com",
+      "cookie": null,
+      "agent": "fixture-ir-test"
+    },
+    {
+      "path": "/gzip-oversize",
+      "host": "investor.axon.com",
+      "cookie": null,
+      "agent": "fixture-ir-test"
+    },
+    {
+      "path": "/redirect-external",
+      "host": "investor.axon.com",
+      "cookie": null,
+      "agent": "fixture-ir-test"
+    },
+    {
+      "path": "/loop",
+      "host": "investor.axon.com",
+      "cookie": null,
+      "agent": "fixture-ir-test"
+    },
+    {
+      "path": "/loop",
+      "host": "investor.axon.com",
+      "cookie": null,
+      "agent": "fixture-ir-test"
+    },
+    {
+      "path": "/loop",
+      "host": "investor.axon.com",
+      "cookie": null,
+      "agent": "fixture-ir-test"
+    },
+    {
+      "path": "/loop",
+      "host": "investor.axon.com",
+      "cookie": null,
+      "agent": "fixture-ir-test"
+    },
+    {
+      "path": "/start",
+      "host": "investor.axon.com",
+      "cookie": null,
+      "agent": "fixture-ir-test"
+    },
+    {
+      "path": "/echo",
+      "host": "investor.axon.com",
+      "cookie": "session=fixture",
+      "agent": "fixture-ir-test"
+    },
+    {
+      "path": "/path/start",
+      "host": "investor.axon.com",
+      "cookie": "session=fixture",
+      "agent": "fixture-ir-test"
+    },
+    {
+      "path": "/path/echo",
+      "host": "investor.axon.com",
+      "cookie": "session=fixture; scoped=fixture",
+      "agent": "fixture-ir-test"
+    }
+  ],
+  "only_loopback": true
+}

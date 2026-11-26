@@ -1,0 +1,27 @@
+{
+  "official_source": "https://www.postgresql.org/download/linux/ubuntu/",
+  "system_packages_installed": false,
+  "system_service_installed": false,
+  "broker_requests": 0,
+  "source_directory": "/home/erosimcity/.local/share/mainkraft-rust-validation/postgres18/20261121T222452783902Z",
+  "initial_failures": [
+    "Initial repository index expected Packages.xz; signed metadata advertises Packages.gz",
+    "Extracted server required liburing.so.2, subsequently extracted locally from authenticated Ubuntu APT metadata",
+    "Initial Unix socket pathname exceeded 107 bytes; test cluster now uses TCP loopback exclusively"
+  ],
+  "files": {
+    "cluster.json": "42312237786bef6c9c4311b77ad635a122075e556307e05ad524e6b23e4fc4c2",
+    "initdb.txt": "a228a3e3fd8a8112f52a91d3ae83be089dd1276db2cff25d8411a32d035734c8",
+    "InRelease": "4c8c6826621950b24bea620ef9418baf58dbe2fff2e49a9df799df06b6cf0337",
+    "Packages.gz": "f85e92436e6d48fb29a41a3c960e8a45404e628caea1fca46ee1c7fc7fa33af0",
+    "pgdg.asc": "0144068502a1eddd2a0280ede10ef607d1ec592ce819940991203941564e8e76",
+    "pgdg.gpg": "8ca1b2fb3a2533cc44b87ee146a03858f6e8ea31c1f165dfd38dc270c04ada0f",
+    "postgres-ldd.txt": "0dc3dc671e61b71a84a8caf71a937a53d795e68eb48023ebb140a8e4c865d118",
+    "result.json": "96e2f7c93eb136c0200afbfa7e24597ad9e17b969df5de82abc0de3aa3cb7bc7",
+    "run-linux-postgres.py": "71f8dde49457953db1c2fd55caa5dd44f378ec58c595ea61b30f7d15dc79620c",
+    "setup-linux-postgres.py": "119126988a617ef2e5a872f3d5f786c9b191995ab0e0883e7e3d1a1fc56af7b2",
+    "signature.txt": "91b361d12d7ad8de7ca9319bf1eedabf3f29f06440b88337c4949018f4bf2334",
+    "start-linux-postgres.py": "0b0886d03e6ca97367e91eeadd0af382aee8614bb97244aa04cc3fdd2c5d881a",
+    "startup.txt": "072bdd374cf4acca521b5f507cda71baccaba16e1ebc37c9bcecf8f3f5f1fd02"
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "report_id": "d709b24bcd5094e8df955e9fe32ba47761bef8233b7be55f8a19e2d0d1972931",
+  "source_report_id": "56fb30dabc11e4d01186a51950d0a806e1ea4fbb1c0b5b566146aeb835762e3c",
+  "protocol": {
+    "seed": 20261118,
+    "minutes": 5,
+    "availability_delay_minutes": 15,
+    "horizon_bars": 6,
+    "stop": 0.02,
+    "target": 0.03,
+    "cost": 0.002,
+    "train_days": 60,
+    "calibration_days": 20,
+    "evaluation_days": 40
+  },
+  "not_before": "2026-11-18T06:18:00.295407+00:00",
+  "model_id": "9df1bad89d15955ce4c5bd9e3d04f5b8aa93f472da257e26357207604e0768c6",
+  "models": {
+    "sequence_mlp": {
+      "brier": 0.2506020428738393,
+      "calibration_bins": [
+        {
+          "actual": null,
+          "count": 0,
+          "forecast": null
+        },
+        {
+          "actual": null,
+          "count": 0,
+          "forecast": null
+        },
+        {
+          "actual": 0.5132340777502068,
+          "count": 2418,
+          "forecast": 0.48535606333493736
+        },
+        {
+          "actual": null,
+          "count": 0,
+          "forecast": null
+        },
+        {
+          "actual": null,
+          "count": 0,
+          "forecast": null
+        }
+      ],
+      "coverage": 0.91232423490488,
+      "dates": 203,
+      "direction_accuracy": 0.4867659222497932,
+      "downside_mae": 0.0019339497185830701,
+      "mae": 0.0024142551372714864,
+      "observations": 2418,
+      "positive_outcomes": 1241,
+      "target_brier": 0.0008271282061282051,
+      "target_first_outcomes": 2
+    }
+  },
+  "candidate_name": "historical_mean",
+  "candidate_status": "FORECAST_DIAGNOSTIC_ONLY_NO_VALIDATED_TRADING_EDGE",
+  "minimum_prospective_dates": 126,
+  "execution_authority": false,
+  "promotion_authority": false
+}

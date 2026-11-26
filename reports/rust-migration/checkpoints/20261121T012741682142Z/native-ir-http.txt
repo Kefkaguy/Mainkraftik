@@ -1,0 +1,14 @@
+
+running 1 test
+NATIVE_REAL_TLS_RESPONSE_BYTES_AND_PER_WORKFLOW_COOKIE_SESSIONS=PASS
+test official_ir::tests::loopback_tls_http_cookies_compression_and_limits_match_python ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 5 filtered out; finished in 0.21s
+
+
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 0.54s
+     Running unittests src\lib.rs (apps\backend-rust\target\debug\deps\mainkraft-19b53a6734c130fb.exe)
+
+LOOPBACK_TLS_HTTPX_NATIVE_COOKIES_REDIRECTS_COMPRESSION_CHUNKING_AND_DECODED_LIMITS=PASS
+{"groups": 13, "calls": 46, "requests": 54, "report": "C:\\Users\\erosi\\OneDrive\\Desktop\\allprojects\\keftrade-intelligence\\.local\\rust-migration\\ir-http\\5d8629ac-c162-4169-98c7-1cfc10a89967\\result.json"}
+

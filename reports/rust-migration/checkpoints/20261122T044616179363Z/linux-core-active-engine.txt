@@ -1,0 +1,2 @@
+{"original_market_and_learner": true, "matured_outcomes": 1, "broker_requests": 0, "model_retrained": false, "output": "/mnt/c/Users/erosi/OneDrive/Desktop/allprojects/keftrade-intelligence/apps/backend-rust/tests/fixtures/active-engine-parity-linux.json"}
+

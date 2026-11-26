@@ -1,0 +1,45 @@
+
+running 1 test
+success evaluated
+repeat evaluated
+before-issuance evaluated
+before-entry evaluated
+entry-deadline evaluated
+not-enrolled evaluated
+not-started evaluated
+code-mismatch evaluated
+artifact-mismatch evaluated
+missing-origin evaluated
+late-origin evaluated
+future-correction evaluated
+no-paired-reference evaluated
+zero-origin-volume evaluated
+news-unavailable evaluated
+market-unavailable evaluated
+sec-unavailable evaluated
+all-available evaluated
+ir-missing evaluated
+context-gap evaluated
+missing-training-metadata evaluated
+database-failure evaluated
+worker-success evaluated
+worker-repeat evaluated
+worker-code-mismatch evaluated
+worker-metadata-failure evaluated
+worker-database-failure evaluated
+worker-resource-denied evaluated
+concurrent evaluated
+worker-terminal-recovery evaluated
+short-history evaluated
+zero-prior-volume evaluated
+missing-code-hash evaluated
+missing-feature-group evaluated
+34 unchanged original prospective/worker scenarios; immutable enrollment, linear/HGB inference, causal deadlines, eight concurrent callers, rollback, resource refusal and terminal-transaction restart recovery passed
+test existing_frozen_forecasts_are_causal_atomic_duplicate_safe_and_worker_recoverable ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 7.58s
+
+
+   Compiling mainkraft v0.1.0 (/mnt/c/Users/erosi/OneDrive/Desktop/allprojects/keftrade-intelligence/apps/backend-rust)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 1.40s
+     Running tests/prospective_lifecycle.rs (/home/erosimcity/.local/share/mainkraft-rust-validation/target/debug/deps/prospective_lifecycle-782fe2a3b9877876)

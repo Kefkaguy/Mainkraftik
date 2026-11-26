@@ -1,0 +1,9 @@
+{
+  "initial_checksum_failures": 65,
+  "functional_output_mismatches": 0,
+  "cause": "Raw PostgreSQL JSON timestamp checksums depend on the connection TimeZone; replace only checksum timestamp representations with full-precision absolute epoch values. Original statistical expectations are unchanged.",
+  "files": {
+    "reports/rust-migration/verdict-first-failures.json": "f6f42d0da568e64071db58c9e8282d2a6b69955bf96dfc47a4d6dabcaa2d0457",
+    ".local/rust-migration/verdict-oracles/intelligence_test_rust_28d30568e35a.json": "92199f30c0acad58e9e825ff466818948fc5afada18374cea619a367b9c068ee"
+  }
+}

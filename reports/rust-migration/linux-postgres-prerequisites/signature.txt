@@ -1,0 +1,3 @@
+gpgv: Signature made Fri Nov 20 11:53:43 2026 PST
+gpgv:                using RSA key B97B0AFCAA1A47F044F244A07FCC7D46ACCC4CF8
+gpgv: Good signature from "PostgreSQL Debian Repository"

@@ -1,0 +1,22 @@
+
+running 1 test
+test official_pages_and_enrichment_match_original_without_backdating_or_rewriting ... FAILED
+
+failures:
+
+failures:
+    official_pages_and_enrichment_match_original_without_backdating_or_rewriting
+
+test result: FAILED. 0 passed; 1 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.23s
+
+
+   Compiling mainkraft v0.1.0 (C:\Users\erosi\OneDrive\Desktop\allprojects\keftrade-intelligence\apps\backend-rust)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 2.24s
+     Running tests\official_ir_lifecycle.rs (apps\backend-rust\target\debug\deps\official_ir_lifecycle-4a527a470202aefe.exe)
+
+thread 'official_pages_and_enrichment_match_original_without_backdating_or_rewriting' (29688) panicked at tests\official_ir_lifecycle.rs:125:13:
+assertion `left == right` failed: "get" null "cp1252"
+  left: Object {"url": String("https://investor.axon.com/encoding"), "status": Number(200), "text": String("Aâ‚¬\u{81}â€˜"), "sha256": String("e79da0c47df0fcd52c8a7305ec9ae5931d46f6f9d59e9322dd86c67ea9b777f3")}
+ right: Object {"sha256": String("e79da0c47df0fcd52c8a7305ec9ae5931d46f6f9d59e9322dd86c67ea9b777f3"), "status": Number(200), "text": String("Aâ‚¬ï¿½â€˜"), "url": String("https://investor.axon.com/encoding")}
+note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+error: test failed, to rerun pass `--test official_ir_lifecycle`

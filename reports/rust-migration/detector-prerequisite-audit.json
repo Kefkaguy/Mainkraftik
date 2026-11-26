@@ -1,0 +1,60 @@
+{
+  "scope": "Read-only local prerequisite audit; not a VPS or deployed-account observation.",
+  "models": [
+    {
+      "id": "chart-direction",
+      "repository": "foduucom/stockmarket-future-prediction",
+      "revision": "310919ed9d2d9cce9c1095cd50bb0a04de8c9e68",
+      "weight_file": "best.pt",
+      "license_cleared": false,
+      "license_review_reference": null,
+      "weight_sha256": null,
+      "runtime_verified": false
+    },
+    {
+      "id": "chart-patterns",
+      "repository": "foduucom/stockmarket-pattern-detection-yolov8",
+      "revision": "31bbb9abc9843dc3d9c08349507c178cde56be31",
+      "weight_file": "model.pt",
+      "license_cleared": false,
+      "license_review_reference": null,
+      "weight_sha256": null,
+      "runtime_verified": false
+    }
+  ],
+  "weights": [
+    {
+      "id": "chart-direction",
+      "local_declared_mount_candidates": [
+        {
+          "path": "deploy/reviewed-models/chart-direction/best.pt",
+          "present": false
+        },
+        {
+          "path": "reviewed-models/chart-direction/best.pt",
+          "present": false
+        }
+      ]
+    },
+    {
+      "id": "chart-patterns",
+      "local_declared_mount_candidates": [
+        {
+          "path": "deploy/reviewed-models/chart-patterns/model.pt",
+          "present": false
+        },
+        {
+          "path": "reviewed-models/chart-patterns/model.pt",
+          "present": false
+        }
+      ]
+    }
+  ],
+  "source_sha256": {
+    "apps/api/intelligence/vision_gateway.py": "8e353e89d05a03f9621c7a3d0da9bccad5c51d6a6c61c50a05112535d7655416",
+    "workers/vision_infer.py": "402a6a313ba22009ac30a96d31ec4b610696798aa53835dccd72e7722653c065",
+    "deploy/vision.compose.yml": "2097ff257be9b6821de0cf347ecc31e02011ce6601695165b76b444d3ab3d692"
+  },
+  "native_detector_runtime_validated": false,
+  "deployment_allowed": false
+}

@@ -1,0 +1,64 @@
+{
+  "id": "paper-market-context-shadow-v1",
+  "declared_at": "2026-11-16T00:47:25.765331+00:00",
+  "universe": [
+    "NVDA",
+    "GOOGL",
+    "AMZN",
+    "GOOG",
+    "TSLA",
+    "AAPL",
+    "CBRS",
+    "TWST",
+    "HOOD",
+    "DAL",
+    "LHX",
+    "BKNG",
+    "SPCX",
+    "PANW",
+    "HD",
+    "LOW",
+    "WMT",
+    "NBIS",
+    "YOU",
+    "UAL"
+  ],
+  "universe_source_id": "083c7b0206303ec70c4aa3acf7ba8554d7fafcc6939166756273c864c61d3930",
+  "snapshot_sha256": "0e2b97a3b1064c66d6983e42b891cdf46a2fa15f78723008180914662fd6b975",
+  "contexts": [
+    "QQQ",
+    "IWM",
+    "TLT"
+  ],
+  "features": [
+    "qqq_minus_spy_return_5",
+    "qqq_minus_spy_return_20",
+    "iwm_minus_spy_return_5",
+    "iwm_minus_spy_return_20",
+    "tlt_return_5",
+    "tlt_return_20"
+  ],
+  "heads": "ridge alpha=100; logistic C=0.1; fixed sigmoid calibration; no search",
+  "splits": [
+    0.6,
+    0.2,
+    0.2
+  ],
+  "purge_sessions": 5,
+  "minimum_evaluation_dates": 126,
+  "bootstrap_samples": 2000,
+  "block_sessions": 20,
+  "confidence": 0.9875,
+  "primary_comparisons": "Candidate vs matched-information historical-mean baseline: MAE and Brier for 1/5d, four comparisons",
+  "secondary": "Unchanged14-feature ridge/logit algorithm and training-only historicalmean; descriptive",
+  "evidence": "Exploratory, current-news-selected survivors and previously accessible revised history; not independent confirmation",
+  "promotion": "none; shadow only, regardless historical result",
+  "maximum_fits": 120,
+  "fee_sensitivity_roundtrip_bps": [
+    0,
+    10,
+    25,
+    50
+  ],
+  "selection_rule": "No threshold or parameter selection from evaluation; retain70% probability,15bp expectedreturn screens for descriptive coverage only"
+}

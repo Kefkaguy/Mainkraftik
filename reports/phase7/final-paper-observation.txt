@@ -1,0 +1,140 @@
+{
+  "observed_at": "2026-11-18T06:28:33.105161+00:00",
+  "evidence_type": "ALPACA_PAPER_APPLICATION_LEDGER",
+  "broker_history_independently_queried": false,
+  "data": {
+    "counts": {
+      "decisions": 35,
+      "signals": 0,
+      "intents": 0,
+      "order_versions": 0
+    },
+    "signals": [],
+    "intents": [],
+    "snapshot": {
+      "observed_at": "2026-11-18T06:27:24.926475+00:00",
+      "positions": [],
+      "realized_pnl": 0.0,
+      "unrealized_pnl": 0,
+      "cash_consistent": true,
+      "daily_pnl": 0.0
+    },
+    "recent_events": [
+      {
+        "created_at": "2026-11-18T01:45:19.040925+00:00",
+        "kind": "session_report_generated",
+        "reason": null
+      },
+      {
+        "created_at": "2026-11-17T23:34:18.418151+00:00",
+        "kind": "paper_enabled",
+        "reason": null
+      },
+      {
+        "created_at": "2026-11-17T23:33:41.940592+00:00",
+        "kind": "emergency_disabled",
+        "reason": null
+      },
+      {
+        "created_at": "2026-11-17T12:50:52.275417+00:00",
+        "kind": "daily_research_complete",
+        "reason": null
+      },
+      {
+        "created_at": "2026-11-17T12:30:38.972923+00:00",
+        "kind": "daily_research_failed",
+        "reason": "Research exceeded 20-stock cap"
+      },
+      {
+        "created_at": "2026-11-17T12:30:38.956154+00:00",
+        "kind": "research_model_validation_rejected",
+        "reason": null
+      },
+      {
+        "created_at": "2026-11-16T12:30:36.924145+00:00",
+        "kind": "daily_research_complete",
+        "reason": null
+      },
+      {
+        "created_at": "2026-11-16T01:19:29.738495+00:00",
+        "kind": "paper_enabled",
+        "reason": null
+      },
+      {
+        "created_at": "2026-11-16T01:19:29.330968+00:00",
+        "kind": "research_preview_failed",
+        "reason": "Unknown or duplicate research symbol from actual provider; entire preview was blocked by v4 validator"
+      },
+      {
+        "created_at": "2026-11-16T01:17:47.664988+00:00",
+        "kind": "emergency_disabled",
+        "reason": null
+      },
+      {
+        "created_at": "2026-11-16T01:02:40.66088+00:00",
+        "kind": "emergency_disabled",
+        "reason": null
+      },
+      {
+        "created_at": "2026-11-16T00:38:32.312627+00:00",
+        "kind": "paper_enabled",
+        "reason": null
+      },
+      {
+        "created_at": "2026-11-16T00:35:30.723439+00:00",
+        "kind": "daily_research_complete",
+        "reason": null
+      },
+      {
+        "created_at": "2026-11-16T00:33:11.198075+00:00",
+        "kind": "emergency_disabled",
+        "reason": null
+      },
+      {
+        "created_at": "2026-11-16T00:13:50.59135+00:00",
+        "kind": "daily_research_complete",
+        "reason": null
+      },
+      {
+        "created_at": "2026-11-14T06:11:55.336551+00:00",
+        "kind": "paper_enabled",
+        "reason": null
+      },
+      {
+        "created_at": "2026-11-14T06:11:20.527018+00:00",
+        "kind": "daily_research_complete",
+        "reason": null
+      },
+      {
+        "created_at": "2026-11-14T05:37:54.147269+00:00",
+        "kind": "emergency_disabled",
+        "reason": null
+      },
+      {
+        "created_at": "2026-11-14T05:11:43.714957+00:00",
+        "kind": "paper_enabled",
+        "reason": null
+      },
+      {
+        "created_at": "2026-11-14T01:45:07.268488+00:00",
+        "kind": "session_report_generated",
+        "reason": null
+      },
+      {
+        "created_at": "2026-11-13T08:55:18.417345+00:00",
+        "kind": "session_report_generated",
+        "reason": null
+      },
+      {
+        "created_at": "2026-11-13T08:40:24.381149+00:00",
+        "kind": "session_report_generated",
+        "reason": null
+      },
+      {
+        "created_at": "2026-11-13T08:07:35.510401+00:00",
+        "kind": "emergency_disabled",
+        "reason": null
+      }
+    ]
+  }
+}

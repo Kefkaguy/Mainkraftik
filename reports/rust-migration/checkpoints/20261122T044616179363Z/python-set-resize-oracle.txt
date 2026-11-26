@@ -1,0 +1,2 @@
+{"platform": "windows", "seeds": 5, "cases": 95, "sha256": "520a25e9d523441b75f56d62eb5e10670f27f20c91d83977c850afb30798b76f", "output": "apps/backend-rust/tests/fixtures/python-set-extended.json", "market_data_used": false}
+

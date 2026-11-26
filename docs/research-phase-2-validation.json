@@ -1,0 +1,46 @@
+{
+  "backend_lint": "passed",
+  "browser": {
+    "anonymous_research_and_monitor": 401,
+    "missing_csrf": 403,
+    "mobile_scroll_width": 390,
+    "mobile_width": 390,
+    "research_models_visible": 9,
+    "worker_fresh": true,
+    "authenticated_worker_replay": {
+      "status": "completed",
+      "error": null
+    },
+    "prediction_api_dates_and_cutoff_verified": true
+  },
+  "counts": {
+    "evaluation_reports": 5,
+    "forecast_outcomes": 0,
+    "forecasts": 0,
+    "research_experiments": 36,
+    "research_predictions": 7092
+  },
+  "diagnostic_improvement_gates_passed": 0,
+  "frozen_replay_reused_records": true,
+  "frozen_research_code_matches": true,
+  "local_full_backup_restored": true,
+  "minecraft_access": false,
+  "next_production_build": "passed",
+  "off_host_backup_verified": false,
+  "original_source_files_checked": 7,
+  "original_source_hashes_unchanged": true,
+  "promoted_models": 0,
+  "remaining": [
+    "Fresh prospective confirmation is not enrolled; no new validated model",
+    "Pooled cohort blocked on historical membership/delisting evidence",
+    "Fundamentals outside training pending availability audit",
+    "YOLO licensing/runtime clearance",
+    "Explicit VPS authorization plus measured resources/off-host restore"
+  ],
+  "runtime_failures": 0,
+  "tests": 59,
+  "typescript": "passed",
+  "verified_at": "2026-11-13T03:30:16.726543+00:00",
+  "vps_actions": false,
+  "database_bytes": 20829887
+}

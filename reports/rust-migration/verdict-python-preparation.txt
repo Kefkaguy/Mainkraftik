@@ -1,0 +1,45 @@
+not-enrolled captured
+empty captured
+short125 captured
+unresolved captured
+missing-baseline-truth captured
+unpaired captured
+ready-readonly captured
+passing captured
+failing captured
+no-edge captured
+integrity-failure captured
+integrity-tolerance captured
+first126-only captured
+latest-correction captured
+near-zero captured
+stored-verdict captured
+verdict-failure captured
+concurrent captured
+worker-fresh captured
+worker-stale captured
+worker-future captured
+worker-resource-denied captured
+worker-terminal-recovery captured
+{"scenarios": 23, "actual_workers": 5}
+
+Research job 3452ddbf-fb36-5dab-ac7f-4a8e62c9345f failed
+Traceback (most recent call last):
+  File "/mnt/c/Users/erosi/OneDrive/Desktop/allprojects/keftrade-intelligence/apps/api/intelligence/jobs.py", line 152, in run_once
+    result = dispatch(job["kind"], job["payload"])
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/c/Users/erosi/OneDrive/Desktop/allprojects/keftrade-intelligence/apps/api/intelligence/jobs.py", line 50, in dispatch
+    resource_check()
+  File "/usr/lib/python3.12/unittest/mock.py", line 1134, in __call__
+    return self._mock_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/unittest/mock.py", line 1138, in _mock_call
+    return self._execute_mock_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/unittest/mock.py", line 1199, in _execute_mock_call
+    result = effect(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/c/Users/erosi/OneDrive/Desktop/allprojects/keftrade-intelligence/scripts/prepare-rust-verdict.py", line 80, in gate
+    if name=='worker-resource-denied':raise ValueError('Fixture resource exhausted')
+                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: Fixture resource exhausted

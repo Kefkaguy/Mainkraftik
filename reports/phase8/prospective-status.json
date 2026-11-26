@@ -1,0 +1,64 @@
+{
+  "status": "RECORDED",
+  "predictions": 0,
+  "resolved": 0,
+  "horizons": {
+    "one_hour": {
+      "predictions": 0,
+      "resolved": 0,
+      "dates": 0,
+      "mae": null,
+      "brier": null,
+      "direction_accuracy": null,
+      "quote_priced_opportunities": 0,
+      "independently_validated": false,
+      "status": "INSUFFICIENT_CONFIRMATION"
+    },
+    "one_day": {
+      "predictions": 0,
+      "resolved": 0,
+      "dates": 0,
+      "mae": null,
+      "brier": null,
+      "direction_accuracy": null,
+      "quote_priced_opportunities": 0,
+      "independently_validated": false,
+      "status": "INSUFFICIENT_CONFIRMATION"
+    },
+    "two_sessions": {
+      "predictions": 0,
+      "resolved": 0,
+      "dates": 0,
+      "mae": null,
+      "brier": null,
+      "direction_accuracy": null,
+      "quote_priced_opportunities": 0,
+      "independently_validated": false,
+      "status": "INSUFFICIENT_CONFIRMATION"
+    },
+    "three_sessions": {
+      "predictions": 0,
+      "resolved": 0,
+      "dates": 0,
+      "mae": null,
+      "brier": null,
+      "direction_accuracy": null,
+      "quote_priced_opportunities": 0,
+      "independently_validated": false,
+      "status": "INSUFFICIENT_CONFIRMATION"
+    },
+    "five_sessions": {
+      "predictions": 0,
+      "resolved": 0,
+      "dates": 0,
+      "mae": null,
+      "brier": null,
+      "direction_accuracy": null,
+      "quote_priced_opportunities": 0,
+      "independently_validated": false,
+      "status": "INSUFFICIENT_CONFIRMATION"
+    }
+  },
+  "execution_authority": false,
+  "promotion_authority": false
+}

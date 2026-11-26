@@ -1,0 +1,2 @@
+{"passed": true, "tests_passed": 2, "directory": ".local/rust-migration/linux-sentiment/20261122T050206979288Z"}
+

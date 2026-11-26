@@ -1,0 +1,84 @@
+{
+  "at": "2026-11-22T05:07:10.253052+00:00",
+  "component_checkpoint_passed": true,
+  "full_migration_complete": false,
+  "deployment_allowed": false,
+  "scope": "Sentiment/discovery, active frozen-model/two-account engine, graceful service supervision, process-death and cross-language worker recovery; no strategy profitability finding",
+  "checkpoint": {
+    "manifest": "reports/rust-migration/checkpoints/20261122T044616179363Z/manifest.json",
+    "sha256": "23395e9c226723d2a0f8f2b9aea2aea073baf21b93c80057f4f7dac8056d4c56"
+  },
+  "handoff_checkpoint": {
+    "manifest": "reports/rust-migration/paper-handoff-checkpoints/20261122T045608773727Z/manifest.json",
+    "sha256": "46c08ae1b5abd8ac5af33aaeedc9467edb8652510e04edd8e91be9799cc5717d"
+  },
+  "counts": {
+    "rust-tests": 66,
+    "isolated-postgres": 24,
+    "native-backup-crossread": 1,
+    "native-sentiment": 2,
+    "native-ir-http": 1,
+    "native-evidence": 2,
+    "linux-core-native": 66
+  },
+  "linux_database_checks": [
+    {
+      "name": "postgres",
+      "exit_code": 0,
+      "passed_tests": 24,
+      "required_tests": 24
+    },
+    {
+      "name": "backup",
+      "exit_code": 0,
+      "passed_tests": 1,
+      "required_tests": 1
+    }
+  ],
+  "linux_native_sentiment_tests": 2,
+  "strict_clippy_platforms": [
+    "Windows",
+    "Linux"
+  ],
+  "preservation": {
+    "phase7": 40,
+    "research": 38,
+    "phase8_compressed": 27,
+    "original_python": 106
+  },
+  "supplemental_source_files": {
+    "scripts/test-rust-paper-handoff.py": "e4e6a6619f79d0c7635b391387629a67626c34ad86b387e5391300c844936dae",
+    "scripts/test-rust-linux-paper-handoff.py": "433a38aa69ec56b7218984ad9cdc079f23fa25825f19fd2f0897a6a80a35df2c",
+    "scripts/verify-rust-paper-handoff.py": "9415d4f34d29bade366b2fd3077a59863549f49759bf8ac7f00a36a8c6fd2fc4",
+    "scripts/verify-rust-deployed-references.py": "ce9d9d0caedaf3a7713d4aeec8d299b69f64f0da776bd870c629f373f47efff8",
+    "scripts/vps_access.py": "47b109e3be0d6892687decef3ff3a4be408c71a628d6e8d1bd1df4cdd1e72a3b"
+  },
+  "deployed_runtime_reference": {
+    "receipt": "reports/rust-migration/runtime-observations/20261122T050619842892Z-deployed-synthetic-reference/receipt.json",
+    "sha256": "8fc9783d171870c6b8dbc6469b1d58ecc9b2797f0c9f22739e4e328f55660797",
+    "passed": true,
+    "broker_requests": 0,
+    "service_changes": false
+  },
+  "strategy_baseline": {
+    "manifest": "reports/rust-migration/strategy-baseline-20261122T014921267486Z/manifest.json",
+    "sha256": "9b6a5e32cf1ebd8ad2089bc3629ec91dec1fd099c10ec6b0bf85b58850050c07",
+    "files": 5,
+    "unchanged": true
+  },
+  "strategy_phase_started": false,
+  "new_strategy_activated": false,
+  "new_accounts": 0,
+  "paper_policy_changed": false,
+  "broker_requests_during_work": 0,
+  "service_rollback_scope": "Worker/database handoff verified; full artifact/container rollback remains incomplete",
+  "outputs": {
+    "combined.json": "115a8ba7a021ac6d4df1514c7e152df2fff4eb9f0e3d03377e385bd011b52856",
+    "deployed_synthetic_reference.json": "6e2f18f594017fbe7e01b07efe832f68dff9b97c9fb6c3708a8b0d092352e99e",
+    "handoff.json": "dbef29b97fe53f570d595f9e1edb9d35bba49dfd4e69dbf41059bc5ae5f980e8",
+    "immutable_strategy_baseline.json": "99e02eaa3a8574aca81d15cf48570e3aeeaceeb4e8bbc01abd7b2e7246c54b10",
+    "supplemental-source.zip": "291803ee72f4c437a8e00ad45986b5ed034dab22fa867cb9b88c833951ef2b20",
+    "linux-clippy/clippy.txt": "f13fb62be92670067a607abedb42ba98dad0cf597a1cd3ff6c37b8721a0bb9a1",
+    "linux-clippy/result.json": "b6eadee23409dada23a5ac7b25f25559b6aa8573d8c473b0da35dbe4dceeca2d"
+  }
+}

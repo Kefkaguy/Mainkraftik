@@ -1,0 +1,64 @@
+--- python
+
++++ rust
+
+@@ -2,7 +2,7 @@
+
+   "accounts": [
+     {
+       "account_number": "TEST-A",
+-      "baseline_equity": 1000.0,
++      "baseline_equity": 1000,
+       "counts": {
+         "cycle": 1,
+         "order_rejected": 1,
+@@ -28,7 +28,7 @@
+
+             "time_in_force": "day",
+             "type": "market"
+           },
+-          "created_at": "2026-11-18T20:57:36.156864-08:00",
++          "created_at": "2026-11-19T04:57:36.156864+00:00",
+           "order_payload": {
+             "client_order_id": "mkx-554e788d30a13cd05066b9cac605a391610e73",
+             "filled_qty": "10.000000000",
+@@ -47,7 +47,7 @@
+
+             "time_in_force": "day",
+             "type": "market"
+           },
+-          "created_at": "2026-11-18T20:57:36.129944-08:00",
++          "created_at": "2026-11-19T04:57:36.129944+00:00",
+           "order_payload": null,
+           "state": "rejected",
+           "symbol": "AMD"
+@@ -61,7 +61,7 @@
+
+             "time_in_force": "day",
+             "type": "market"
+           },
+-          "created_at": "2026-11-18T20:57:36.002265-08:00",
++          "created_at": "2026-11-19T04:57:36.002265+00:00",
+           "order_payload": {
+             "filled_qty": "10",
+             "status": "filled"
+@@ -185,7 +185,7 @@
+
+     },
+     {
+       "account_number": "TEST-B",
+-      "baseline_equity": 1000000.0,
++      "baseline_equity": 1000000,
+       "counts": {},
+       "forecast_metrics": {
+         "directional_accuracy": null,
+@@ -203,7 +203,7 @@
+
+             "time_in_force": "day",
+             "type": "market"
+           },
+-          "created_at": "2026-11-18T20:57:36.134514-08:00",
++          "created_at": "2026-11-19T04:57:36.134514+00:00",
+           "order_payload": null,
+           "state": "submitting",
+           "symbol": "AMD"

@@ -1,0 +1,2 @@
+{"platform": "linux", "seeds": 5, "cases": 95, "sha256": "15042457381853bfe86502ba43d2553345c44865ae889796e2e68967af8f40ea", "output": "/mnt/c/Users/erosi/OneDrive/Desktop/allprojects/keftrade-intelligence/apps/backend-rust/tests/fixtures/python-set-extended-linux.json", "market_data_used": false}
+

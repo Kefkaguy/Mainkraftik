@@ -1,0 +1,56 @@
+{
+  "at": "2026-11-22T01:03:16.139748+00:00",
+  "score_differences": [
+    {
+      "id": "0",
+      "label": "negative",
+      "native": 6.911758828209713e-05,
+      "python": 6.911759555805475e-05,
+      "absolute_error": 7.275957614183426e-12
+    },
+    {
+      "id": "2",
+      "label": "negative",
+      "native": 6.911758828209713e-05,
+      "python": 6.911759555805475e-05,
+      "absolute_error": 7.275957614183426e-12
+    },
+    {
+      "id": "5",
+      "label": "negative",
+      "native": 6.911758828209713e-05,
+      "python": 6.911759555805475e-05,
+      "absolute_error": 7.275957614183426e-12
+    },
+    {
+      "id": "1",
+      "label": "negative",
+      "native": 7.476740574929863e-05,
+      "python": 7.476741302525625e-05,
+      "absolute_error": 7.275957614183426e-12
+    },
+    {
+      "id": "4",
+      "label": "negative",
+      "native": 7.623369310749695e-05,
+      "python": 7.623370038345456e-05,
+      "absolute_error": 7.275957614183426e-12
+    },
+    {
+      "id": "4",
+      "label": "positive",
+      "native": 4.2343286622781307e-05,
+      "python": 4.2343290260760114e-05,
+      "absolute_error": 3.637978807091713e-12
+    }
+  ],
+  "maximum_absolute_error": 7.275957614183426e-12,
+  "expected_outputs_modified": false,
+  "production_changes": false,
+  "outputs": {
+    "native-sentiment-source.rs": "3662bb4f1499efb7151f28d9eb9ded3da3b0c2d19c0def4d9b4056b88db83ec6",
+    "native-trace.json": "02ff459b9bedefbfe845ea8fb29ce95fe125b5f41ada8b657b36f942024f3902",
+    "original-fixture.json": "de6bd969bf1fcd6bf7592fc399108d85c48f468770e7c31e09dc8da3ffe2143e",
+    "test-output.txt": "7edc8f17b2f1b05f37aae9fdcf26c1ba3177a77787d15a96b088afce8101b1dd"
+  }
+}

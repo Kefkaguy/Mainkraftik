@@ -1,0 +1,27 @@
+{
+  "checked_at": "2026-11-22T00:46:08.402449+00:00",
+  "scope": "Local source hashes compared with a previously captured read-only Mainkraft PAPER source audit; no fresh VPS or broker request",
+  "source_audit": "reports/rust-migration/runtime-observations/20261121T231309863394Z-paper-source-audit.json",
+  "source_audit_sha256": "481b3ac278d1a81cc220be95913a025e377b34f19fcd7418753741e6c4510bc9",
+  "deployed_observation_at": "2026-11-21T23:13:09.863378+00:00",
+  "qualified_additional_dependencies": {
+    "paperpilot/discovery.py": "4de0f40ba05313139251b02bafb3f7a20417ce94c32a7d7230250919f13724df",
+    "paperpilot/data.py": "14a685c664dff23ed198de9ab03b9ed4865fca0e06de6d7dd46d9be03847cc4c",
+    "paperpilot/universe.py": "801161749f11673d5b66d38fa56c29b1e30be7dc1c67572e51f8e84afd461c80",
+    "paperpilot/sentiment.py": "4152800accf17a5f7498a16d1b6647b9bd47108f6c5504bb92a797aff27f7eea",
+    "paperpilot/broker.py": "195a8d603c0230006ea000f03bddbf6b35323956c736d2c4089dafba3589a521",
+    "intelligence/financials.py": "dbf191e6af7e5d32e15e8eec42c0ca024594881a60a3c4078686f3c9383bf95d"
+  },
+  "remaining_differences": [
+    "intelligence/paper_bridge.py",
+    "intelligence/main.py",
+    "paperpilot/risk.py",
+    "paperpilot/strategy_runtime.py",
+    "paperpilot/engine.py",
+    "paperpilot/strategy_execution.py"
+  ],
+  "fresh_model_artifact_check": false,
+  "production_changes": false,
+  "broker_requests": 0,
+  "deployment_allowed": false
+}

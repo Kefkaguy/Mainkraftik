@@ -1,0 +1,2 @@
+Captured nine original ingestion operations, all persisted research tables, and five resource boundaries
+

@@ -1,0 +1,129 @@
+{
+  "version": "candle-sequence-v1",
+  "protocol": {
+    "seed": 20261118,
+    "minutes": 5,
+    "availability_delay_minutes": 15,
+    "horizon_bars": 6,
+    "stop": 0.02,
+    "target": 0.03,
+    "cost": 0.002,
+    "train_days": 60,
+    "calibration_days": 20,
+    "evaluation_days": 40
+  },
+  "evidence_type": "HISTORICAL_SIMULATION",
+  "status": "EXPLORATORY",
+  "promotion_authority": false,
+  "execution_authority": false,
+  "optimization": {
+    "regressor_iterations": 150,
+    "classifier_iterations": 150,
+    "regressor_converged": false,
+    "classifier_converged": false
+  },
+  "split": [
+    {
+      "first": "2022-11-01",
+      "last": "2025-04-02",
+      "rows": 7235
+    },
+    {
+      "first": "2025-04-04",
+      "last": "2026-01-23",
+      "rows": 2406
+    },
+    {
+      "first": "2026-01-27",
+      "last": "2026-11-13",
+      "rows": 2436
+    }
+  ],
+  "models": {
+    "sequence_mlp": {
+      "observations": 2436,
+      "dates": 203,
+      "positive_outcomes": 1170,
+      "target_first_outcomes": 2,
+      "mae": 0.0031988367809487168,
+      "brier": 0.25146817110288167,
+      "target_brier": 0.0008212420330316746,
+      "coverage": 0.8772577996715928,
+      "downside_mae": 0.002079027034014245
+    },
+    "historical_mean": {
+      "observations": 2436,
+      "dates": 203,
+      "positive_outcomes": 1170,
+      "target_first_outcomes": 2,
+      "mae": 0.0027398914518716364,
+      "brier": 0.2500362124815128,
+      "target_brier": 0.0008208102090284575,
+      "coverage": 0.8899835796387521,
+      "downside_mae": 0.0019060063213019315
+    },
+    "zero_return": {
+      "observations": 2436,
+      "dates": 203,
+      "positive_outcomes": 1170,
+      "target_first_outcomes": 2,
+      "mae": 0.0027395381704087714,
+      "brier": 0.25,
+      "target_brier": 0.0008208102090284575,
+      "coverage": 0.8899835796387521,
+      "downside_mae": 0.0019060063213019315
+    },
+    "mainkraft_linear_refit": {
+      "observations": 2436,
+      "dates": 203,
+      "positive_outcomes": 1170,
+      "target_first_outcomes": 2,
+      "mae": 0.002751324172703162,
+      "brier": 0.25069099445761184,
+      "target_brier": 0.0008208102090284575,
+      "coverage": 0.8119868637110016,
+      "downside_mae": 0.0019060063213019315
+    }
+  },
+  "paired_comparisons": {
+    "historical_mean": {
+      "daily_mae_improvement": -0.00045894532907708046,
+      "interval_98_75": [
+        -0.0005801409156530697,
+        -0.00034232738324681137
+      ],
+      "method": "2000 circular 20-session paired block resamples; positive favors sequence model"
+    },
+    "mainkraft_linear_refit": {
+      "daily_mae_improvement": -0.0004475126082455551,
+      "interval_98_75": [
+        -0.0005638614747273747,
+        -0.0003266227018855772
+      ],
+      "method": "2000 circular 20-session paired block resamples; positive favors sequence model"
+    }
+  },
+  "comparison_scope": "Existing Mainkraft ridge/logistic implementation refit to the same 30-minute target using causal summaries; not the deployed day/swing artifact.",
+  "limitations": [
+    "Historical cohort and periods previously used by other studies; independent confirmation still required",
+    "Intervals are calibration residual ranges, not guaranteed coverage",
+    "Ambiguous target/stop bars count as stop first",
+    "No historical news or executable quotes; cost scenarios are hypothetical"
+  ],
+  "cost_scenarios": {
+    "0.0": {
+      "all_observations_mean_net_return": -0.00011876854782982004
+    },
+    "0.002": {
+      "all_observations_mean_net_return": -0.0021187685478298206
+    },
+    "0.005": {
+      "all_observations_mean_net_return": -0.005118768547829821
+    }
+  },
+  "model_id": "a8868b42dda244ffe6cef184a78b14786b241c1c2fd16c27586ae46e2fc2101b",
+  "dataset_id": "4ad14a51c7466847dc1da10b2ed17f1d19f781356061dae431774d15cace9853",
+  "declaration_id": "2c7efd4bc93df036f331d00637cfb2e66884bb108d607fa1cf4e5eb11147d3c0",
+  "rejections": 55,
+  "report_id": "5f806ce8bb5650df01534ff82c1b6f7b8511217b5d17a5966a4b9300e0bed1e2"
+}

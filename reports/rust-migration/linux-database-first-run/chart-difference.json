@@ -1,0 +1,23 @@
+{
+  "windows_pillow": "12.3.0",
+  "windows_zlib": "1.3.1.zlib-ng",
+  "windows_zlib_ng": "2.3.3",
+  "cases": {
+    "windows": {
+      "oracle": "reports\\rust-migration\\checkpoints\\20261121T221924459300Z\\original-research-api-oracle.json",
+      "oracle_sha256": "2382218dd89e8b5b7cdfd7bfc5fe19b749ec11011e6c0c340b263124cd20ce76",
+      "png_sha256": "9dbbca74b39a50f6f152cd007e7613172f1dfe66b24412c38c57e6ca144ceda0",
+      "pixel_sha256": "fe3e6f6a17f685f2c37340ce357f5f243f759518f299d06be2d50c66d5ad8c84",
+      "filtered_sha256": "550a22333080515afeefa1897c9034a3eba38adbdd196846319823c1ba9a4089",
+      "png_bytes": 3788
+    },
+    "linux": {
+      "oracle": ".local\\rust-migration\\research-api-oracles\\intelligence_test_rust_3a8317b9f882.json",
+      "oracle_sha256": "f4844d5628a05722a8caff335803d7a3d81cf3e6e5de4a9d3de7b5832e55a5c8",
+      "png_sha256": "0992d4efe0814cf063d3c8ef0827491d5ae550beabe66cd25f062266fdaac020",
+      "pixel_sha256": "fe3e6f6a17f685f2c37340ce357f5f243f759518f299d06be2d50c66d5ad8c84",
+      "filtered_sha256": "550a22333080515afeefa1897c9034a3eba38adbdd196846319823c1ba9a4089",
+      "png_bytes": 3787
+    }
+  }
+}

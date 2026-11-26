@@ -1,0 +1,324 @@
+{
+  "application": "keftrade-intelligence",
+  "format": 2,
+  "kind": "research",
+  "created_at": "2026-11-22T00:16:11.100038+00:00",
+  "postgres_major": 18,
+  "tables": [
+    {
+      "name": "dataset_manifests",
+      "rows": 0,
+      "sha256": "62a74fd0e2d1e3a59b88b5b71c06ca8d43662c6787430c516b8e0bc28bbbda02",
+      "bytes": 21
+    },
+    {
+      "name": "forecast_runs",
+      "rows": 0,
+      "sha256": "62a74fd0e2d1e3a59b88b5b71c06ca8d43662c6787430c516b8e0bc28bbbda02",
+      "bytes": 21
+    },
+    {
+      "name": "information_fetches",
+      "rows": 0,
+      "sha256": "62a74fd0e2d1e3a59b88b5b71c06ca8d43662c6787430c516b8e0bc28bbbda02",
+      "bytes": 21
+    },
+    {
+      "name": "ingest_runs",
+      "rows": 0,
+      "sha256": "62a74fd0e2d1e3a59b88b5b71c06ca8d43662c6787430c516b8e0bc28bbbda02",
+      "bytes": 21
+    },
+    {
+      "name": "jobs",
+      "rows": 0,
+      "sha256": "62a74fd0e2d1e3a59b88b5b71c06ca8d43662c6787430c516b8e0bc28bbbda02",
+      "bytes": 21
+    },
+    {
+      "name": "login_attempts",
+      "rows": 0,
+      "sha256": "62a74fd0e2d1e3a59b88b5b71c06ca8d43662c6787430c516b8e0bc28bbbda02",
+      "bytes": 21
+    },
+    {
+      "name": "model_versions",
+      "rows": 2,
+      "sha256": "171b61be80d05dfc9f5c719110d94531fd59de74bbcac56eb16a8fd82c2e5935",
+      "bytes": 520
+    },
+    {
+      "name": "research_audits",
+      "rows": 0,
+      "sha256": "62a74fd0e2d1e3a59b88b5b71c06ca8d43662c6787430c516b8e0bc28bbbda02",
+      "bytes": 21
+    },
+    {
+      "name": "research_candidates",
+      "rows": 0,
+      "sha256": "62a74fd0e2d1e3a59b88b5b71c06ca8d43662c6787430c516b8e0bc28bbbda02",
+      "bytes": 21
+    },
+    {
+      "name": "schema_migrations",
+      "rows": 6,
+      "sha256": "0699c0630a76e2a91c8b98c4b2eed0e96c755e3026d0f5111f4d3b88853f468a",
+      "bytes": 260
+    },
+    {
+      "name": "securities",
+      "rows": 5,
+      "sha256": "76228db4bed629781e0eb3c19754d61536d33f66de400751b111ba0fa9a5a1c4",
+      "bytes": 273
+    },
+    {
+      "name": "sessions",
+      "rows": 0,
+      "sha256": "62a74fd0e2d1e3a59b88b5b71c06ca8d43662c6787430c516b8e0bc28bbbda02",
+      "bytes": 21
+    },
+    {
+      "name": "source_documents",
+      "rows": 1,
+      "sha256": "17ca02bb6fd5b8b3f5ca50f89e47ef970339694a75b2d52cf957935d5a5d7c32",
+      "bytes": 217
+    },
+    {
+      "name": "training_universe_versions",
+      "rows": 1,
+      "sha256": "46356cb31de136dacd54ac29622becaa98f6a1e58257efc2023248718aff6b26",
+      "bytes": 248
+    },
+    {
+      "name": "tuning_plans",
+      "rows": 0,
+      "sha256": "62a74fd0e2d1e3a59b88b5b71c06ca8d43662c6787430c516b8e0bc28bbbda02",
+      "bytes": 21
+    },
+    {
+      "name": "vision_models",
+      "rows": 2,
+      "sha256": "88a307532895f548dcf77abb712f958845b2640ff8d8b167334ba92e55410132",
+      "bytes": 300
+    },
+    {
+      "name": "watchlist_versions",
+      "rows": 1,
+      "sha256": "c547a76134e3d9047425cf2abaf7796a6d3cd7d5a55c977c777bb8ad07a95640",
+      "bytes": 67
+    },
+    {
+      "name": "worker_status",
+      "rows": 0,
+      "sha256": "62a74fd0e2d1e3a59b88b5b71c06ca8d43662c6787430c516b8e0bc28bbbda02",
+      "bytes": 21
+    },
+    {
+      "name": "calculated_metrics",
+      "rows": 0,
+      "sha256": "62a74fd0e2d1e3a59b88b5b71c06ca8d43662c6787430c516b8e0bc28bbbda02",
+      "bytes": 21
+    },
+    {
+      "name": "candidate_results",
+      "rows": 0,
+      "sha256": "62a74fd0e2d1e3a59b88b5b71c06ca8d43662c6787430c516b8e0bc28bbbda02",
+      "bytes": 21
+    },
+    {
+      "name": "chart_detections",
+      "rows": 0,
+      "sha256": "62a74fd0e2d1e3a59b88b5b71c06ca8d43662c6787430c516b8e0bc28bbbda02",
+      "bytes": 21
+    },
+    {
+      "name": "corporate_actions",
+      "rows": 0,
+      "sha256": "62a74fd0e2d1e3a59b88b5b71c06ca8d43662c6787430c516b8e0bc28bbbda02",
+      "bytes": 21
+    },
+    {
+      "name": "daily_bars",
+      "rows": 1,
+      "sha256": "7be2e85379103306e3a0b72e46080cfb223513df36e7792abb5e15bc038bd73c",
+      "bytes": 278
+    },
+    {
+      "name": "evaluation_reports",
+      "rows": 0,
+      "sha256": "62a74fd0e2d1e3a59b88b5b71c06ca8d43662c6787430c516b8e0bc28bbbda02",
+      "bytes": 21
+    },
+    {
+      "name": "feature_snapshots",
+      "rows": 0,
+      "sha256": "62a74fd0e2d1e3a59b88b5b71c06ca8d43662c6787430c516b8e0bc28bbbda02",
+      "bytes": 21
+    },
+    {
+      "name": "filing_events",
+      "rows": 0,
+      "sha256": "62a74fd0e2d1e3a59b88b5b71c06ca8d43662c6787430c516b8e0bc28bbbda02",
+      "bytes": 21
+    },
+    {
+      "name": "financial_facts",
+      "rows": 0,
+      "sha256": "62a74fd0e2d1e3a59b88b5b71c06ca8d43662c6787430c516b8e0bc28bbbda02",
+      "bytes": 21
+    },
+    {
+      "name": "forecasts",
+      "rows": 0,
+      "sha256": "62a74fd0e2d1e3a59b88b5b71c06ca8d43662c6787430c516b8e0bc28bbbda02",
+      "bytes": 21
+    },
+    {
+      "name": "information_versions",
+      "rows": 0,
+      "sha256": "62a74fd0e2d1e3a59b88b5b71c06ca8d43662c6787430c516b8e0bc28bbbda02",
+      "bytes": 21
+    },
+    {
+      "name": "job_events",
+      "rows": 0,
+      "sha256": "62a74fd0e2d1e3a59b88b5b71c06ca8d43662c6787430c516b8e0bc28bbbda02",
+      "bytes": 21
+    },
+    {
+      "name": "research_plans",
+      "rows": 0,
+      "sha256": "62a74fd0e2d1e3a59b88b5b71c06ca8d43662c6787430c516b8e0bc28bbbda02",
+      "bytes": 21
+    },
+    {
+      "name": "scheduler_marks",
+      "rows": 0,
+      "sha256": "62a74fd0e2d1e3a59b88b5b71c06ca8d43662c6787430c516b8e0bc28bbbda02",
+      "bytes": 21
+    },
+    {
+      "name": "shadow_protocols",
+      "rows": 0,
+      "sha256": "62a74fd0e2d1e3a59b88b5b71c06ca8d43662c6787430c516b8e0bc28bbbda02",
+      "bytes": 21
+    },
+    {
+      "name": "tuning_events",
+      "rows": 0,
+      "sha256": "62a74fd0e2d1e3a59b88b5b71c06ca8d43662c6787430c516b8e0bc28bbbda02",
+      "bytes": 21
+    },
+    {
+      "name": "tuning_trials",
+      "rows": 0,
+      "sha256": "62a74fd0e2d1e3a59b88b5b71c06ca8d43662c6787430c516b8e0bc28bbbda02",
+      "bytes": 21
+    },
+    {
+      "name": "detection_outcomes",
+      "rows": 0,
+      "sha256": "62a74fd0e2d1e3a59b88b5b71c06ca8d43662c6787430c516b8e0bc28bbbda02",
+      "bytes": 21
+    },
+    {
+      "name": "evaluation_access_log",
+      "rows": 0,
+      "sha256": "62a74fd0e2d1e3a59b88b5b71c06ca8d43662c6787430c516b8e0bc28bbbda02",
+      "bytes": 21
+    },
+    {
+      "name": "forecast_outcomes",
+      "rows": 0,
+      "sha256": "62a74fd0e2d1e3a59b88b5b71c06ca8d43662c6787430c516b8e0bc28bbbda02",
+      "bytes": 21
+    },
+    {
+      "name": "research_experiments",
+      "rows": 0,
+      "sha256": "62a74fd0e2d1e3a59b88b5b71c06ca8d43662c6787430c516b8e0bc28bbbda02",
+      "bytes": 21
+    },
+    {
+      "name": "shadow_artifacts",
+      "rows": 0,
+      "sha256": "62a74fd0e2d1e3a59b88b5b71c06ca8d43662c6787430c516b8e0bc28bbbda02",
+      "bytes": 21
+    },
+    {
+      "name": "shadow_events",
+      "rows": 0,
+      "sha256": "62a74fd0e2d1e3a59b88b5b71c06ca8d43662c6787430c516b8e0bc28bbbda02",
+      "bytes": 21
+    },
+    {
+      "name": "shadow_verdicts",
+      "rows": 0,
+      "sha256": "62a74fd0e2d1e3a59b88b5b71c06ca8d43662c6787430c516b8e0bc28bbbda02",
+      "bytes": 21
+    },
+    {
+      "name": "research_predictions",
+      "rows": 0,
+      "sha256": "62a74fd0e2d1e3a59b88b5b71c06ca8d43662c6787430c516b8e0bc28bbbda02",
+      "bytes": 21
+    }
+  ],
+  "sequences": [
+    {
+      "table": "corporate_actions",
+      "column": "id",
+      "last_value": 7654,
+      "is_called": false
+    },
+    {
+      "table": "daily_bars",
+      "column": "id",
+      "last_value": 1,
+      "is_called": true
+    },
+    {
+      "table": "financial_facts",
+      "column": "id",
+      "last_value": 1,
+      "is_called": false
+    },
+    {
+      "table": "job_events",
+      "column": "id",
+      "last_value": 1,
+      "is_called": false
+    },
+    {
+      "table": "login_attempts",
+      "column": "id",
+      "last_value": 1,
+      "is_called": false
+    },
+    {
+      "table": "shadow_events",
+      "column": "id",
+      "last_value": 1,
+      "is_called": false
+    },
+    {
+      "table": "training_universe_versions",
+      "column": "id",
+      "last_value": 1,
+      "is_called": true
+    },
+    {
+      "table": "tuning_events",
+      "column": "id",
+      "last_value": 1,
+      "is_called": false
+    },
+    {
+      "table": "watchlist_versions",
+      "column": "id",
+      "last_value": 9876,
+      "is_called": true
+    }
+  ]
+}
+

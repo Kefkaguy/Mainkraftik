@@ -1,0 +1,43 @@
+.paperApp.mkLearning{width:100%;min-height:100vh;font-size:14px;line-height:1.6}
+.mkLearningShell{width:100%;max-width:1420px;margin:0 auto;padding:40px 32px 24px}
+.mkLearning .pPageHeading{align-items:flex-start;margin-bottom:28px;gap:24px}
+.mkLearning .pEyebrow{font-size:10px;letter-spacing:1.6px}
+.mkLearning .pPageHeading h1{font-size:32px;line-height:1.3;flex-wrap:wrap;gap:14px;margin:10px 0}
+.mkLearning .pPageHeading p{font-size:14px;max-width:70ch;color:var(--pMuted)}
+.mkLearning .pHeadingActions{padding-top:20px;gap:8px;flex-shrink:0}
+.mkLearning .pHeadingActions button{font-size:13px;min-height:40px;padding:9px 15px;border-radius:6px}
+.mkLearning .pBadge{font-size:10px;letter-spacing:.3px;white-space:nowrap;padding:5px 9px}
+.mkLearning .mkStatus{padding:22px 24px;margin-bottom:24px}
+.mkStatusHeading{display:flex;align-items:center;gap:12px}
+.mkStatusDot{width:9px;height:9px;flex-shrink:0;border-radius:50%;background:var(--pMuted)}
+.mkStatusDot.active{background:var(--pMint)}
+.mkLearning .mkStatus h3{font-size:16px;line-height:1.5;margin:0}
+.mkLearning .mkStatusHeading p{margin:3px 0 0;font-size:13px;color:var(--pMuted)}
+.paperApp.mkLearning summary{font-size:13px;cursor:pointer;line-height:1.6;outline-offset:4px}
+.mkLearning .mkPolicy{margin-top:16px;border-top:1px solid var(--pLine);padding-top:14px}
+.mkLearning .mkPolicy p{font-size:13px;color:var(--pMuted);margin:12px 0 0;max-width:110ch}
+.mkLearning .mkAccount{margin-top:24px}
+.mkLearning .mkAccount .pPanelTitle{padding:24px;border-bottom:1px solid var(--pLine);align-items:flex-start}
+.mkLearning .pPanelTitle h2{font-size:21px;line-height:1.4;letter-spacing:-.3px;margin:0}
+.mkLearning .pPanelTitle .mkAccountMeta{display:flex;gap:8px 20px;flex-wrap:wrap;font-size:12px;line-height:1.6;margin:9px 0 0}
+.mkLearning .pRiskGrid{grid-template-columns:repeat(4,minmax(0,1fr));gap:26px 24px;padding:26px 24px}
+.mkLearning .pRiskGrid>span{font-size:12px;line-height:1.5;min-width:0}
+.mkLearning .pRiskGrid strong{font-size:25px;line-height:1.4;margin-top:7px;letter-spacing:-.5px;overflow-wrap:anywhere}
+.mkLearning .pRiskGrid strong small{display:inline-block;margin-left:10px;font-size:13px;letter-spacing:0;font-weight:400}
+.mkLearning .pRiskGrid>span:nth-child(n+5) strong{font-size:20px;letter-spacing:-.2px}
+.mkAccountSection{border-top:1px solid var(--pLine);padding:22px 24px}
+.mkLearning .mkAccountSection h3{display:flex;gap:12px;align-items:baseline;flex-wrap:wrap;font-size:15px;margin:0 0 16px}
+.mkAccountSection h3>span{color:var(--pMuted);font-size:12px;font-weight:400}
+.mkLearning .pTableScroll{border:1px solid var(--pLine);border-radius:6px;overflow-x:auto}
+.mkLearning table{width:100%;min-width:540px}
+.mkLearning th{font-size:11px;letter-spacing:.2px;font-weight:500}
+.mkLearning td{font-size:13px;font-variant-numeric:tabular-nums}
+.mkLearning th,.mkLearning td{padding:13px 16px}
+.mkLearning tbody tr:last-child td{border-bottom:0}
+.mkLearning .mkEmpty{padding:16px 18px;border:1px dashed #344253;border-radius:6px;color:#9aacbf;font-size:13px;margin:0;background:#111b26}
+.mkLearning .mkEvidence{border-top:1px solid var(--pLine);padding:18px 24px}
+.mkLearning .mkEvidence p{color:var(--pMuted);font-size:13px;margin:16px 0}
+.mkLearning .mkEvidence pre{padding:16px;font-size:12px;line-height:1.7;white-space:pre-wrap;overflow-wrap:anywhere;overflow:auto;max-height:340px}
+.mkLearning .mkFooter{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;margin:26px 0 0;color:var(--pMuted);font-size:12px}
+@media(max-width:1050px){.mkLearning .pPageHeading{flex-direction:column;gap:0}.mkLearning .pHeadingActions{padding-top:12px}.mkLearning .pRiskGrid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:600px){.mkLearningShell{padding:24px 16px}.mkLearning .pPageHeading h1{font-size:27px}.mkLearning .pPageHeading p{font-size:13px}.mkLearning .pHeadingActions{width:100%;gap:8px}.mkLearning .pHeadingActions button{padding:9px 12px;font-size:12px}.mkLearning .mkStatus{padding:18px}.mkLearning .mkAccount .pPanelTitle{padding:20px 18px;flex-direction:column;gap:14px}.mkLearning .pPanelTitle h2{font-size:19px}.mkLearning .pRiskGrid{padding:22px 18px;gap:24px 16px}.mkLearning .pRiskGrid strong{font-size:22px}.mkLearning .pRiskGrid>span:nth-child(n+5) strong{font-size:18px}.mkLearning .pRiskGrid strong small{display:block;margin:4px 0 0;font-size:12px}.mkAccountSection{padding:20px 18px}.mkLearning .mkEvidence{padding:18px}.mkLearning .mkFooter{font-size:11px}}

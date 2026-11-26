@@ -1,0 +1,2 @@
+{"glyphs": 114, "kerning_pairs": 0, "font_sha256": "69853909b940023570964e29cffe30da95aea8de3627736b5cd15ab30143169f", "freetype": "2.14.3", "atlas_sha256": "e7db724a29c00f98ca5f91ae4e65b4876babc2f55636e5540a6501770564f743"}
+

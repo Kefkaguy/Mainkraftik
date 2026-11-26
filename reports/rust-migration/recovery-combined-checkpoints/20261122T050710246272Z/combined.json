@@ -1,0 +1,40 @@
+{
+  "passed": true,
+  "checkpoint": "reports/rust-migration/checkpoints/20261122T044616179363Z/manifest.json",
+  "checkpoint_sha256": "23395e9c226723d2a0f8f2b9aea2aea073baf21b93c80057f4f7dac8056d4c56",
+  "verifier_sha256": "ed28f813a967e1cd5d72930c46f3d29f4c49b7f6699f95ef1c82f8e70210f9c1",
+  "source_files_and_zip_members": 266,
+  "output_files": 155,
+  "counts": {
+    "rust-tests": 66,
+    "isolated-postgres": 24,
+    "native-backup-crossread": 1,
+    "native-sentiment": 2,
+    "native-ir-http": 1,
+    "native-evidence": 2,
+    "linux-core-native": 66
+  },
+  "linux_database_checks": [
+    {
+      "name": "postgres",
+      "exit_code": 0,
+      "passed_tests": 24,
+      "required_tests": 24
+    },
+    {
+      "name": "backup",
+      "exit_code": 0,
+      "passed_tests": 1,
+      "required_tests": 1
+    }
+  ],
+  "linux_native_sentiment_tests": 2,
+  "preservation": {
+    "phase7": 40,
+    "research": 38,
+    "phase8_compressed": 27,
+    "original_python": 106
+  },
+  "full_migration_complete": false,
+  "deployment_allowed": false
+}

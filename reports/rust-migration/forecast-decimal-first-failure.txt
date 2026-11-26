@@ -1,0 +1,20 @@
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 0.32s
+     Running tests\forecast_statistics.rs (apps\backend-rust\target\debug\deps\forecast_statistics-0497cb8a35459cd5.exe)
+
+running 1 test
+
+thread 'original_baseline_and_decimal_outcome_arithmetic' (19228) panicked at tests\forecast_statistics.rs:46:9:
+assertion `left == right` failed: {"close":"3.234842210298205292303769647E+35","open":"9844332.828851268994464873969","return":3.2859943548614027e+28}
+  left: 5033488670284979028
+ right: 5033488670284979029
+note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+test original_baseline_and_decimal_outcome_arithmetic ... FAILED
+
+failures:
+
+failures:
+    original_baseline_and_decimal_outcome_arithmetic
+
+test result: FAILED. 0 passed; 1 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.01s
+
+error: test failed, to rerun pass `--test forecast_statistics`

@@ -1,0 +1,7075 @@
+{
+  "version": 2,
+  "modules": [
+    {
+      "path": "apps/api/chart_intelligence/__init__.py",
+      "sha256": "3bdafa92fe6ef11b79fb39c08cce7d1fc22452077518e675344312ff2de3bae9",
+      "lines": 1,
+      "test": false,
+      "imports": [],
+      "definitions": [],
+      "rust_target": "research::__init__",
+      "status": "PENDING"
+    },
+    {
+      "path": "apps/api/chart_intelligence/api.py",
+      "sha256": "4f4abd18c84e200200b9095d697078916bb73eab1b2b9dabeed5415cf4c9ce0b",
+      "lines": 62,
+      "test": false,
+      "imports": [
+        "chart_intelligence",
+        "chart_intelligence.controller",
+        "fastapi",
+        "intelligence.config",
+        "intelligence.security"
+      ],
+      "definitions": [
+        {
+          "name": "phase7_status",
+          "line": 14,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "research_status",
+          "line": 43,
+          "kind": "FunctionDef"
+        }
+      ],
+      "rust_target": "research::api",
+      "status": "PENDING"
+    },
+    {
+      "path": "apps/api/chart_intelligence/controller.py",
+      "sha256": "aca4a036754d339980cc9128a69a06b000fe5b1a88419eb673b38fcced5e07e0",
+      "lines": 441,
+      "test": false,
+      "imports": [
+        "chart_intelligence",
+        "chart_intelligence.core",
+        "chart_intelligence.phase7_execution",
+        "datetime",
+        "httpx",
+        "intelligence.calendar",
+        "intelligence.config",
+        "json",
+        "numpy",
+        "pathlib",
+        "sqlite3"
+      ],
+      "definitions": [
+        {
+          "name": "connection",
+          "line": 21,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "append",
+          "line": 37,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "collect",
+          "line": 44,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "drift",
+          "line": 122,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "entry_opportunity",
+          "line": 164,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "resolve_opportunity",
+          "line": 192,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "tick",
+          "line": 241,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "status",
+          "line": 418,
+          "kind": "FunctionDef"
+        }
+      ],
+      "rust_target": "research::controller",
+      "status": "PENDING"
+    },
+    {
+      "path": "apps/api/chart_intelligence/core.py",
+      "sha256": "35958a99d485621a1abe7615b50daf4b5b5447936b6b62928cc46561e323abd2",
+      "lines": 405,
+      "test": false,
+      "imports": [
+        "chart_intelligence.phase7",
+        "dataclasses",
+        "datetime",
+        "hashlib",
+        "intelligence.calendar",
+        "intelligence.portable_models",
+        "json",
+        "numpy",
+        "sklearn.linear_model",
+        "sklearn.neural_network",
+        "threadpoolctl"
+      ],
+      "definitions": [
+        {
+          "name": "Protocol",
+          "line": 25,
+          "kind": "ClassDef"
+        },
+        {
+          "name": "identity",
+          "line": 38,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "parse_bars",
+          "line": 44,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "sequence",
+          "line": 58,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "label",
+          "line": 109,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "dataset",
+          "line": 144,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "partitions",
+          "line": 172,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "network",
+          "line": 188,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "forward",
+          "line": 192,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "infer",
+          "line": 201,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "metrics",
+          "line": 231,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "evaluate",
+          "line": 259,
+          "kind": "FunctionDef"
+        }
+      ],
+      "rust_target": "research::core",
+      "status": "PENDING"
+    },
+    {
+      "path": "apps/api/chart_intelligence/horizon_forward.py",
+      "sha256": "998dad6d05aa55cf26855540e0139aecd2cc397d1e90598e53a7e07720bcdd3f",
+      "lines": 354,
+      "test": false,
+      "imports": [
+        "chart_intelligence",
+        "chart_intelligence.controller",
+        "chart_intelligence.core",
+        "chart_intelligence.phase8",
+        "datetime",
+        "httpx",
+        "intelligence.calendar",
+        "intelligence.config",
+        "intelligence.providers",
+        "intelligence.util",
+        "json",
+        "pathlib"
+      ],
+      "definitions": [
+        {
+          "name": "fresh_inputs",
+          "line": 23,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "targets",
+          "line": 98,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "tick",
+          "line": 111,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "quote_outcome",
+          "line": 258,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "summary",
+          "line": 304,
+          "kind": "FunctionDef"
+        }
+      ],
+      "rust_target": "research::horizon_forward",
+      "status": "PENDING"
+    },
+    {
+      "path": "apps/api/chart_intelligence/phase7.py",
+      "sha256": "87cf629ff4239a6742ba0d6185f32c18e8e5a4c1379b1dc054f4ebbd497466a5",
+      "lines": 213,
+      "test": false,
+      "imports": [
+        "chart_intelligence.core",
+        "intelligence.portable_models",
+        "numpy",
+        "sklearn.exceptions",
+        "sklearn.linear_model",
+        "sklearn.neural_network",
+        "threadpoolctl",
+        "warnings"
+      ],
+      "definitions": [
+        {
+          "name": "split_development",
+          "line": 34,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "linear_head",
+          "line": 46,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "sigmoid",
+          "line": 54,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "train",
+          "line": 58,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "raw_predict",
+          "line": 152,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "predict",
+          "line": 178,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "forecast_metrics",
+          "line": 197,
+          "kind": "FunctionDef"
+        }
+      ],
+      "rust_target": "research::phase7",
+      "status": "PENDING"
+    },
+    {
+      "path": "apps/api/chart_intelligence/phase7_accounting.py",
+      "sha256": "966ffa24ccdd20247db5002afd4386ad1882870d13bb8165f4ccc8375a3eccb9",
+      "lines": 56,
+      "test": false,
+      "imports": [
+        "datetime"
+      ],
+      "definitions": [
+        {
+          "name": "portfolio_envelope",
+          "line": 10,
+          "kind": "FunctionDef"
+        }
+      ],
+      "rust_target": "research::phase7_accounting",
+      "status": "PENDING"
+    },
+    {
+      "path": "apps/api/chart_intelligence/phase7_execution.py",
+      "sha256": "f7e37652a32482fde0a4836933972cae638b3413a6604e5e99b9c16dc28a9500",
+      "lines": 275,
+      "test": false,
+      "imports": [
+        "collections",
+        "dataclasses",
+        "datetime",
+        "hashlib",
+        "numpy"
+      ],
+      "definitions": [
+        {
+          "name": "Execution",
+          "line": 12,
+          "kind": "ClassDef"
+        },
+        {
+          "name": "bootstrap_daily",
+          "line": 34,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "quote_at",
+          "line": 44,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "replay",
+          "line": 58,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "round_trip",
+          "line": 30,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "settle",
+          "line": 93,
+          "kind": "FunctionDef"
+        }
+      ],
+      "rust_target": "research::phase7_execution",
+      "status": "PENDING"
+    },
+    {
+      "path": "apps/api/chart_intelligence/phase8.py",
+      "sha256": "702c052ac9f141e1d1e88bc6b4a53b7ec2059607e754fc1e8d8f0201f92b7975",
+      "lines": 201,
+      "test": false,
+      "imports": [
+        "chart_intelligence.core",
+        "chart_intelligence.phase7",
+        "datetime",
+        "intelligence.calendar",
+        "numpy"
+      ],
+      "definitions": [
+        {
+          "name": "feature",
+          "line": 18,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "build",
+          "line": 65,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "partition",
+          "line": 165,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "train",
+          "line": 180,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "predict",
+          "line": 198,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "ret",
+          "line": 42,
+          "kind": "FunctionDef"
+        }
+      ],
+      "rust_target": "research::phase8",
+      "status": "PENDING"
+    },
+    {
+      "path": "apps/api/chart_intelligence/phase8_accounting.py",
+      "sha256": "ffbc881d3c64a6b124d45a8a47e5fbf5281f9b7f9b17c44d3eaca29bb13de0b5",
+      "lines": 38,
+      "test": false,
+      "imports": [],
+      "definitions": [
+        {
+          "name": "split_pnl",
+          "line": 4,
+          "kind": "FunctionDef"
+        }
+      ],
+      "rust_target": "research::phase8_accounting",
+      "status": "PENDING"
+    },
+    {
+      "path": "apps/api/chart_intelligence/phase8_evidence.py",
+      "sha256": "d98f993c80fc84ffc4ac4455a5a70d3504c293ff54dba8bd4e30ec16a83c1e47",
+      "lines": 76,
+      "test": false,
+      "imports": [
+        "chart_intelligence.core",
+        "gzip",
+        "hashlib",
+        "intelligence.config",
+        "json",
+        "pathlib",
+        "sqlite3"
+      ],
+      "definitions": [
+        {
+          "name": "sha",
+          "line": 13,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "snapshot",
+          "line": 21,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "verify",
+          "line": 43,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "put_compressed",
+          "line": 54,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "read_compressed",
+          "line": 70,
+          "kind": "FunctionDef"
+        }
+      ],
+      "rust_target": "research::phase8_evidence",
+      "status": "PENDING"
+    },
+    {
+      "path": "apps/api/chart_intelligence/phase8_execution.py",
+      "sha256": "6e04eef0ffa66a06864ef583c22822f75ac0e38a03a6ad893d4caf236b07ce33",
+      "lines": 276,
+      "test": false,
+      "imports": [
+        "chart_intelligence.phase8_accounting",
+        "collections",
+        "dataclasses",
+        "datetime",
+        "hashlib",
+        "intelligence.calendar",
+        "numpy"
+      ],
+      "definitions": [
+        {
+          "name": "Costs",
+          "line": 14,
+          "kind": "ClassDef"
+        },
+        {
+          "name": "draw",
+          "line": 26,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "interval",
+          "line": 30,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "replay",
+          "line": 41,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "round_trip",
+          "line": 22,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "equity",
+          "line": 68,
+          "kind": "FunctionDef"
+        }
+      ],
+      "rust_target": "research::phase8_execution",
+      "status": "PENDING"
+    },
+    {
+      "path": "apps/api/chart_intelligence/store.py",
+      "sha256": "421a137897fc21a0ecc4bd284ede813e2d25a84a051c0332fb78abfd18d5f9a4",
+      "lines": 52,
+      "test": false,
+      "imports": [
+        "chart_intelligence.core",
+        "intelligence.config",
+        "json",
+        "os",
+        "pathlib"
+      ],
+      "definitions": [
+        {
+          "name": "put",
+          "line": 13,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "read",
+          "line": 30,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "publish",
+          "line": 39,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "latest",
+          "line": 47,
+          "kind": "FunctionDef"
+        }
+      ],
+      "rust_target": "research::store",
+      "status": "PENDING"
+    },
+    {
+      "path": "apps/api/intelligence/__init__.py",
+      "sha256": "c9dc850aca4829edea9c0ddc00fb3041f6fe3c88376b5ff698127571fd6cad06",
+      "lines": 1,
+      "test": false,
+      "imports": [],
+      "definitions": [],
+      "rust_target": "research::__init__",
+      "status": "PENDING"
+    },
+    {
+      "path": "apps/api/intelligence/backup.py",
+      "sha256": "5499e53e71eedd18dd118bbe09506d2da2a89e3bb924f2677f70b0cbde9af1eb",
+      "lines": 195,
+      "test": false,
+      "imports": [
+        "datetime",
+        "hashlib",
+        "intelligence.config",
+        "intelligence.db",
+        "json",
+        "pathlib",
+        "psycopg",
+        "secrets",
+        "urllib.parse",
+        "zipfile"
+      ],
+      "definitions": [
+        {
+          "name": "make_backup",
+          "line": 21,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "restore_test",
+          "line": 61,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "create_and_verify",
+          "line": 183,
+          "kind": "FunctionDef"
+        }
+      ],
+      "rust_target": "research::backup",
+      "status": "PENDING"
+    },
+    {
+      "path": "apps/api/intelligence/calendar.py",
+      "sha256": "ec1378bd94f08cb738c37739efd8b62708776c2ac3245ea6cbe19d201e0bb74f",
+      "lines": 48,
+      "test": false,
+      "imports": [
+        "datetime",
+        "functools",
+        "pandas_market_calendars",
+        "zoneinfo"
+      ],
+      "definitions": [
+        {
+          "name": "schedule",
+          "line": 16,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "future_sessions",
+          "line": 24,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "cutoff_for",
+          "line": 28,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "issuance_for",
+          "line": 32,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "issuance_window",
+          "line": 36,
+          "kind": "FunctionDef"
+        }
+      ],
+      "rust_target": "calendar",
+      "status": "PENDING"
+    },
+    {
+      "path": "apps/api/intelligence/cli.py",
+      "sha256": "cac8679a7e09be20be6a24a9d28fc958e32c3a3b9d4f593ad19b27fc2a5436e0",
+      "lines": 122,
+      "test": false,
+      "imports": [
+        "argparse",
+        "getpass",
+        "intelligence.db",
+        "intelligence.information",
+        "intelligence.ir_metadata",
+        "intelligence.jobs",
+        "intelligence.main",
+        "intelligence.prospective",
+        "intelligence.providers",
+        "intelligence.security",
+        "intelligence.storage",
+        "intelligence.util",
+        "json",
+        "re"
+      ],
+      "definitions": [
+        {
+          "name": "main",
+          "line": 12,
+          "kind": "FunctionDef"
+        }
+      ],
+      "rust_target": "research::cli",
+      "status": "PENDING"
+    },
+    {
+      "path": "apps/api/intelligence/config.py",
+      "sha256": "098df75e9fde31e1539cbeb515b37500381d597c001a650949c5872cc7ffe2d1",
+      "lines": 40,
+      "test": false,
+      "imports": [
+        "os",
+        "pathlib",
+        "pydantic_settings",
+        "typing"
+      ],
+      "definitions": [
+        {
+          "name": "Settings",
+          "line": 9,
+          "kind": "ClassDef"
+        },
+        {
+          "name": "storage",
+          "line": 27,
+          "kind": "FunctionDef"
+        }
+      ],
+      "rust_target": "config",
+      "status": "PENDING"
+    },
+    {
+      "path": "apps/api/intelligence/db.py",
+      "sha256": "cc76a79b1e8eba6c4ec5838726669b66b7e7d707ee9043793ea8d00d7629f9f9",
+      "lines": 29,
+      "test": false,
+      "imports": [
+        "contextlib",
+        "intelligence.config",
+        "psycopg",
+        "psycopg.rows",
+        "urllib.parse"
+      ],
+      "definitions": [
+        {
+          "name": "connection",
+          "line": 10,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "migrate",
+          "line": 20,
+          "kind": "FunctionDef"
+        }
+      ],
+      "rust_target": "db",
+      "status": "PENDING"
+    },
+    {
+      "path": "apps/api/intelligence/experiments.py",
+      "sha256": "c2b8fddf02f1a961d85493b8ccdcb450e261b18239edf5feb7991c0d7f9b013b",
+      "lines": 435,
+      "test": false,
+      "imports": [
+        "datetime",
+        "hashlib",
+        "intelligence.db",
+        "intelligence.research",
+        "intelligence.research_models",
+        "intelligence.storage",
+        "intelligence.util",
+        "logging",
+        "numpy",
+        "pathlib",
+        "sklearn",
+        "time"
+      ],
+      "definitions": [
+        {
+          "name": "code_hash",
+          "line": 34,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "enriched_panel",
+          "line": 51,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "partition_dates",
+          "line": 71,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "labeled_partitions",
+          "line": 85,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "_protected_boundary",
+          "line": 108,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "declare_plan",
+          "line": 121,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "frozen_streams",
+          "line": 173,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "evaluate_candidate",
+          "line": 187,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "run_suite",
+          "line": 264,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "audit_original",
+          "line": 356,
+          "kind": "FunctionDef"
+        }
+      ],
+      "rust_target": "research::experiments",
+      "status": "PENDING"
+    },
+    {
+      "path": "apps/api/intelligence/financials.py",
+      "sha256": "dbf191e6af7e5d32e15e8eec42c0ca024594881a60a3c4078686f3c9383bf95d",
+      "lines": 255,
+      "test": false,
+      "imports": [
+        "datetime",
+        "intelligence.providers",
+        "intelligence.util"
+      ],
+      "definitions": [
+        {
+          "name": "normalize_facts",
+          "line": 27,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "period_kind",
+          "line": 70,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "select_versions",
+          "line": 84,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "compatible",
+          "line": 101,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "calculate_metrics",
+          "line": 109,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "_reference",
+          "line": 220,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "_metric",
+          "line": 237,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "_missing",
+          "line": 254,
+          "kind": "FunctionDef"
+        }
+      ],
+      "rust_target": "financials",
+      "status": "PENDING"
+    },
+    {
+      "path": "apps/api/intelligence/forecasting.py",
+      "sha256": "811c1f62b0e5cd28727760a5943bd7204a1426d4a27ab1e7a58247e62d3eb04c",
+      "lines": 188,
+      "test": false,
+      "imports": [
+        "datetime",
+        "intelligence.calendar",
+        "intelligence.db",
+        "intelligence.storage",
+        "intelligence.util",
+        "numpy",
+        "uuid"
+      ],
+      "definitions": [
+        {
+          "name": "continuity",
+          "line": 15,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "historical_samples",
+          "line": 30,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "baseline",
+          "line": 41,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "issue_forecasts",
+          "line": 55,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "resolve_outcomes",
+          "line": 143,
+          "kind": "FunctionDef"
+        }
+      ],
+      "rust_target": "research::forecasting",
+      "status": "PENDING"
+    },
+    {
+      "path": "apps/api/intelligence/information.py",
+      "sha256": "5f4693d0649c2fd0c599840892ccdb3c266f68d2324ed3b00055485109de481c",
+      "lines": 399,
+      "test": false,
+      "imports": [
+        "bs4",
+        "datetime",
+        "hashlib",
+        "httpx",
+        "intelligence.calendar",
+        "intelligence.config",
+        "intelligence.db",
+        "intelligence.ingestion",
+        "intelligence.providers",
+        "intelligence.storage",
+        "intelligence.util",
+        "re",
+        "time",
+        "urllib.parse",
+        "urllib.robotparser",
+        "uuid"
+      ],
+      "definitions": [
+        {
+          "name": "stamp",
+          "line": 26,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "tags",
+          "line": 33,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "news_metadata",
+          "line": 51,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "persist_information",
+          "line": 73,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "ingest_news",
+          "line": 104,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "ingest_filings",
+          "line": 184,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "ir_get",
+          "line": 244,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "ingest_ir",
+          "line": 264,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "refresh_information",
+          "line": 389,
+          "kind": "FunctionDef"
+        }
+      ],
+      "rust_target": "research::information",
+      "status": "PENDING"
+    },
+    {
+      "path": "apps/api/intelligence/ingestion.py",
+      "sha256": "b99627be2ae0a309e8a6d542bd32fe80badf8ab5dbcf78610412aa3c34c31f2e",
+      "lines": 140,
+      "test": false,
+      "imports": [
+        "datetime",
+        "intelligence.calendar",
+        "intelligence.config",
+        "intelligence.db",
+        "intelligence.financials",
+        "intelligence.providers",
+        "intelligence.storage",
+        "intelligence.util",
+        "shutil",
+        "uuid"
+      ],
+      "definitions": [
+        {
+          "name": "resource_check",
+          "line": 14,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "ingest_prices",
+          "line": 26,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "ingest_financials",
+          "line": 79,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "ingest_all",
+          "line": 112,
+          "kind": "FunctionDef"
+        }
+      ],
+      "rust_target": "research::ingestion",
+      "status": "PENDING"
+    },
+    {
+      "path": "apps/api/intelligence/ir_metadata.py",
+      "sha256": "6a0c81e0b37a0596d3d484117eebbece841c35c86d6f96726e0efbc3115fc99b",
+      "lines": 90,
+      "test": false,
+      "imports": [
+        "bs4",
+        "httpx",
+        "intelligence.config",
+        "intelligence.db",
+        "intelligence.information",
+        "intelligence.storage",
+        "intelligence.util",
+        "time",
+        "urllib.parse",
+        "urllib.robotparser"
+      ],
+      "definitions": [
+        {
+          "name": "publication_metadata",
+          "line": 21,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "enrich_ir_publications",
+          "line": 34,
+          "kind": "FunctionDef"
+        }
+      ],
+      "rust_target": "research::ir_metadata",
+      "status": "PENDING"
+    },
+    {
+      "path": "apps/api/intelligence/jobs.py",
+      "sha256": "b690ba78ee564c6ef699892a24012ea0ab6dec66916ba683b2b0292514a1ae6a",
+      "lines": 239,
+      "test": false,
+      "imports": [
+        "datetime",
+        "intelligence.calendar",
+        "intelligence.db",
+        "intelligence.experiments",
+        "intelligence.forecasting",
+        "intelligence.information",
+        "intelligence.ingestion",
+        "intelligence.ir_metadata",
+        "intelligence.monitoring",
+        "intelligence.prospective",
+        "intelligence.research",
+        "intelligence.storage",
+        "intelligence.tuning",
+        "intelligence.util",
+        "intelligence.vision",
+        "intelligence.vision_gateway",
+        "logging",
+        "time",
+        "uuid"
+      ],
+      "definitions": [
+        {
+          "name": "enqueue",
+          "line": 29,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "dispatch",
+          "line": 49,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "run_once",
+          "line": 122,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "schedule_jobs",
+          "line": 186,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "worker",
+          "line": 222,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "insert",
+          "line": 34,
+          "kind": "FunctionDef"
+        }
+      ],
+      "rust_target": "jobs",
+      "status": "PENDING"
+    },
+    {
+      "path": "apps/api/intelligence/lab_api.py",
+      "sha256": "bf9586fafa8ca37098f25bee618eaafe098b8b4534c42c93833842a30a8a2963",
+      "lines": 25,
+      "test": false,
+      "imports": [
+        "fastapi",
+        "intelligence.security",
+        "paperpilot.lab_registry"
+      ],
+      "definitions": [
+        {
+          "name": "results",
+          "line": 12,
+          "kind": "FunctionDef"
+        }
+      ],
+      "rust_target": "research::lab_api",
+      "status": "PENDING"
+    },
+    {
+      "path": "apps/api/intelligence/main.py",
+      "sha256": "a363ce63d12b6df32cc1db038d546c3da4d5f0009059af2e2c5e893b36f1a7f2",
+      "lines": 449,
+      "test": false,
+      "imports": [
+        "PIL",
+        "chart_intelligence.api",
+        "contextlib",
+        "datetime",
+        "fastapi",
+        "fastapi.responses",
+        "intelligence.calendar",
+        "intelligence.config",
+        "intelligence.db",
+        "intelligence.financials",
+        "intelligence.forecasting",
+        "intelligence.jobs",
+        "intelligence.lab_api",
+        "intelligence.monitoring",
+        "intelligence.paper_bridge",
+        "intelligence.phase3_status",
+        "intelligence.security",
+        "intelligence.storage",
+        "intelligence.util",
+        "intelligence.vision",
+        "intelligence.vision_gateway",
+        "io",
+        "logging",
+        "pydantic",
+        "re",
+        "uuid"
+      ],
+      "definitions": [
+        {
+          "name": "lifespan",
+          "line": 26,
+          "kind": "AsyncFunctionDef"
+        },
+        {
+          "name": "headers",
+          "line": 51,
+          "kind": "AsyncFunctionDef"
+        },
+        {
+          "name": "unhandled",
+          "line": 60,
+          "kind": "AsyncFunctionDef"
+        },
+        {
+          "name": "health",
+          "line": 71,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "Login",
+          "line": 77,
+          "kind": "ClassDef"
+        },
+        {
+          "name": "sign_in",
+          "line": 83,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "auth_session",
+          "line": 101,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "logout",
+          "line": 106,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "valid_symbol",
+          "line": 113,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "workspace",
+          "line": 120,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "WatchlistUpdate",
+          "line": 168,
+          "kind": "ClassDef"
+        },
+        {
+          "name": "update_watchlist",
+          "line": 173,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "company",
+          "line": 190,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "forecasts",
+          "line": 256,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "detection_chart",
+          "line": 264,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "performance",
+          "line": 298,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "research_ledger",
+          "line": 312,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "experiment_predictions",
+          "line": 327,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "monitoring",
+          "line": 355,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "phase3",
+          "line": 362,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "phase3_predictions",
+          "line": 371,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "chart_input",
+          "line": 382,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "NewJob",
+          "line": 394,
+          "kind": "ClassDef"
+        },
+        {
+          "name": "new_job",
+          "line": 401,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "job",
+          "line": 444,
+          "kind": "FunctionDef"
+        }
+      ],
+      "rust_target": "api::research",
+      "status": "PENDING"
+    },
+    {
+      "path": "apps/api/intelligence/monitoring.py",
+      "sha256": "d046e4c44323de0fa34caeaee7273e9649da2a004f6e9c715e5069bf372f15da",
+      "lines": 100,
+      "test": false,
+      "imports": [
+        "datetime",
+        "intelligence.calendar",
+        "intelligence.db",
+        "intelligence.forecasting",
+        "intelligence.research_models",
+        "intelligence.storage",
+        "intelligence.util",
+        "numpy"
+      ],
+      "definitions": [
+        {
+          "name": "risk_summary",
+          "line": 15,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "reliability",
+          "line": 35,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "monitor",
+          "line": 61,
+          "kind": "FunctionDef"
+        }
+      ],
+      "rust_target": "research::monitoring",
+      "status": "PENDING"
+    },
+    {
+      "path": "apps/api/intelligence/paper_bridge.py",
+      "sha256": "ae1239036fad0ed4708cb8a25d14b2568c6789fa97c4cd271752de350ae8f09d",
+      "lines": 102,
+      "test": false,
+      "imports": [
+        "datetime",
+        "fastapi",
+        "fastapi.responses",
+        "httpx",
+        "intelligence.config",
+        "intelligence.security",
+        "pydantic"
+      ],
+      "definitions": [
+        {
+          "name": "target",
+          "line": 16,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "headers",
+          "line": 22,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "status",
+          "line": 27,
+          "kind": "AsyncFunctionDef"
+        },
+        {
+          "name": "daily_report",
+          "line": 40,
+          "kind": "AsyncFunctionDef"
+        },
+        {
+          "name": "Control",
+          "line": 53,
+          "kind": "ClassDef"
+        },
+        {
+          "name": "decision_traces",
+          "line": 58,
+          "kind": "AsyncFunctionDef"
+        },
+        {
+          "name": "control",
+          "line": 69,
+          "kind": "AsyncFunctionDef"
+        },
+        {
+          "name": "events",
+          "line": 85,
+          "kind": "AsyncFunctionDef"
+        },
+        {
+          "name": "messages",
+          "line": 86,
+          "kind": "AsyncFunctionDef"
+        }
+      ],
+      "rust_target": "research::paper_bridge",
+      "status": "PENDING"
+    },
+    {
+      "path": "apps/api/intelligence/phase3_status.py",
+      "sha256": "cb067e9748d5e4d09e43b4688ffea807c9f7aaae23212a08931a0cb31b2b0b85",
+      "lines": 63,
+      "test": false,
+      "imports": [
+        "intelligence.db",
+        "intelligence.prospective",
+        "intelligence.storage"
+      ],
+      "definitions": [
+        {
+          "name": "phase3_status",
+          "line": 8,
+          "kind": "FunctionDef"
+        }
+      ],
+      "rust_target": "research::phase3_status",
+      "status": "PENDING"
+    },
+    {
+      "path": "apps/api/intelligence/point_features.py",
+      "sha256": "6b7441b16327f27ac13cc87eb5b60c2f7089a383ec215f3178e2b6e05cf25ae6",
+      "lines": 312,
+      "test": false,
+      "imports": [
+        "datetime",
+        "intelligence.calendar",
+        "intelligence.experiments",
+        "intelligence.financials",
+        "intelligence.forecasting",
+        "intelligence.research_models",
+        "intelligence.storage",
+        "intelligence.util",
+        "numpy"
+      ],
+      "definitions": [
+        {
+          "name": "information_at",
+          "line": 51,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "financial_values",
+          "line": 66,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "information_values",
+          "line": 173,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "build_features",
+          "line": 228,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "load_context",
+          "line": 274,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "persist_panel",
+          "line": 286,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "latest",
+          "line": 72,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "prior",
+          "line": 75,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "margin",
+          "line": 95,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "ret",
+          "line": 242,
+          "kind": "FunctionDef"
+        }
+      ],
+      "rust_target": "research::point_features",
+      "status": "PENDING"
+    },
+    {
+      "path": "apps/api/intelligence/portable_models.py",
+      "sha256": "8acca977b7df07a7185ac8e828aec4187a396b009f5e3fd1343d09122da12b9c",
+      "lines": 183,
+      "test": false,
+      "imports": [
+        "numpy",
+        "sklearn",
+        "sklearn.ensemble",
+        "sklearn.linear_model",
+        "threadpoolctl"
+      ],
+      "definitions": [
+        {
+          "name": "matrix",
+          "line": 11,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "export_trees",
+          "line": 23,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "tree_predict",
+          "line": 51,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "sigmoid",
+          "line": 65,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "raw_predict",
+          "line": 69,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "predict",
+          "line": 81,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "fit",
+          "line": 97,
+          "kind": "FunctionDef"
+        }
+      ],
+      "rust_target": "models",
+      "status": "PENDING"
+    },
+    {
+      "path": "apps/api/intelligence/prospective.py",
+      "sha256": "6c9c678763aee000ee1d07e63c2a74e506f850abe32eedfc63f1aa51fefa277a",
+      "lines": 376,
+      "test": false,
+      "imports": [
+        "intelligence.calendar",
+        "intelligence.db",
+        "intelligence.point_features",
+        "intelligence.portable_models",
+        "intelligence.research",
+        "intelligence.storage",
+        "intelligence.tuning",
+        "intelligence.util",
+        "numpy",
+        "uuid"
+      ],
+      "definitions": [
+        {
+          "name": "nominate",
+          "line": 19,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "issue_shadow",
+          "line": 145,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "progress_and_verdict",
+          "line": 294,
+          "kind": "FunctionDef"
+        }
+      ],
+      "rust_target": "research::prospective",
+      "status": "PENDING"
+    },
+    {
+      "path": "apps/api/intelligence/providers.py",
+      "sha256": "0b9cf003562c091e654668cf25f8aac05ec9b24e0a8d6fb6c98460a796b8e128",
+      "lines": 201,
+      "test": false,
+      "imports": [
+        "datetime",
+        "decimal",
+        "httpx",
+        "intelligence.calendar",
+        "intelligence.config",
+        "intelligence.util",
+        "time"
+      ],
+      "definitions": [
+        {
+          "name": "ProviderError",
+          "line": 20,
+          "kind": "ClassDef"
+        },
+        {
+          "name": "get_json",
+          "line": 24,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "fetch_bars",
+          "line": 45,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "normalize_bars",
+          "line": 80,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "fetch_actions",
+          "line": 125,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "fetch_sec",
+          "line": 150,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "lookup_company",
+          "line": 163,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "_borrow",
+          "line": 178,
+          "kind": "ClassDef"
+        },
+        {
+          "name": "filing_availability",
+          "line": 189,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "__init__",
+          "line": 179,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "__enter__",
+          "line": 182,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "__exit__",
+          "line": 185,
+          "kind": "FunctionDef"
+        }
+      ],
+      "rust_target": "market,news,financials",
+      "status": "PENDING"
+    },
+    {
+      "path": "apps/api/intelligence/research.py",
+      "sha256": "ae7e715d8ea577e1577e7db8a014cc0883a8fe64716fb1b776f996a67f1aae30",
+      "lines": 374,
+      "test": false,
+      "imports": [
+        "collections",
+        "hashlib",
+        "intelligence.db",
+        "intelligence.forecasting",
+        "intelligence.storage",
+        "numpy",
+        "pathlib",
+        "uuid"
+      ],
+      "definitions": [
+        {
+          "name": "build_panel",
+          "line": 40,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "fit_heads",
+          "line": 91,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "predict_heads",
+          "line": 114,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "scores",
+          "line": 119,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "paired_block_interval",
+          "line": 144,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "evaluate",
+          "line": 171,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "run_evaluation",
+          "line": 309,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "r",
+          "line": 55,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "sr",
+          "line": 58,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "x",
+          "line": 208,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "y",
+          "line": 211,
+          "kind": "FunctionDef"
+        }
+      ],
+      "rust_target": "research::research",
+      "status": "PENDING"
+    },
+    {
+      "path": "apps/api/intelligence/research_models.py",
+      "sha256": "cf70a6ad8f45d4d2367d3f623793fcd47ef3eb4e684591d5981ee986b0122376",
+      "lines": 267,
+      "test": false,
+      "imports": [
+        "intelligence.research",
+        "numpy",
+        "sklearn",
+        "sklearn.ensemble",
+        "sklearn.linear_model",
+        "threadpoolctl"
+      ],
+      "definitions": [
+        {
+          "name": "metrics",
+          "line": 65,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "_arrays",
+          "line": 105,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "fit_predict",
+          "line": 109,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "logit",
+          "line": 232,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "bucket_predict",
+          "line": 166,
+          "kind": "FunctionDef"
+        }
+      ],
+      "rust_target": "research::research_models",
+      "status": "PENDING"
+    },
+    {
+      "path": "apps/api/intelligence/security.py",
+      "sha256": "ec6594fb97a846032581290a7a93dadd91a795ff1c060df09f06fba20dc097aa",
+      "lines": 74,
+      "test": false,
+      "imports": [
+        "argon2",
+        "argon2.exceptions",
+        "datetime",
+        "fastapi",
+        "hashlib",
+        "intelligence.config",
+        "intelligence.db",
+        "intelligence.util",
+        "secrets"
+      ],
+      "definitions": [
+        {
+          "name": "hash_token",
+          "line": 18,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "origin_check",
+          "line": 22,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "require_session",
+          "line": 27,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "login",
+          "line": 45,
+          "kind": "FunctionDef"
+        }
+      ],
+      "rust_target": "auth",
+      "status": "PENDING"
+    },
+    {
+      "path": "apps/api/intelligence/storage.py",
+      "sha256": "92c1538db56d2cade3395f01d29af7eb7a087cb599aacd501e5802fcf5fcacd8",
+      "lines": 83,
+      "test": false,
+      "imports": [
+        "intelligence.config",
+        "intelligence.util",
+        "psycopg.types.json",
+        "uuid"
+      ],
+      "definitions": [
+        {
+          "name": "jsonb",
+          "line": 9,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "store_document",
+          "line": 13,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "bars_at",
+          "line": 32,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "save_manifest",
+          "line": 53,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "watchlist",
+          "line": 72,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "forecast_history",
+          "line": 76,
+          "kind": "FunctionDef"
+        }
+      ],
+      "rust_target": "storage",
+      "status": "PENDING"
+    },
+    {
+      "path": "apps/api/intelligence/tuning.py",
+      "sha256": "badbc8a8662294abf64d8e8b9f3dddf48e378bf4df282f7e5cdb7ca72d96550c",
+      "lines": 439,
+      "test": false,
+      "imports": [
+        "datetime",
+        "hashlib",
+        "intelligence.db",
+        "intelligence.point_features",
+        "intelligence.portable_models",
+        "intelligence.research",
+        "intelligence.research_models",
+        "intelligence.storage",
+        "intelligence.util",
+        "logging",
+        "numpy",
+        "optuna",
+        "optuna.distributions",
+        "pathlib",
+        "sklearn"
+      ],
+      "definitions": [
+        {
+          "name": "implementation_hash",
+          "line": 26,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "boundaries",
+          "line": 42,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "split",
+          "line": 50,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "declare",
+          "line": 59,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "decode_rows",
+          "line": 158,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "study_parameters",
+          "line": 169,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "loss",
+          "line": 175,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "report_result",
+          "line": 186,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "run_tuning",
+          "line": 245,
+          "kind": "FunctionDef"
+        }
+      ],
+      "rust_target": "research::tuning",
+      "status": "PENDING"
+    },
+    {
+      "path": "apps/api/intelligence/util.py",
+      "sha256": "5205f3da5128ca91814f2da6b14bb8d3f3908036615781384214b1047418c6c8",
+      "lines": 27,
+      "test": false,
+      "imports": [
+        "datetime",
+        "decimal",
+        "hashlib",
+        "json",
+        "uuid"
+      ],
+      "definitions": [
+        {
+          "name": "now",
+          "line": 8,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "json_default",
+          "line": 12,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "canonical",
+          "line": 22,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "digest",
+          "line": 26,
+          "kind": "FunctionDef"
+        }
+      ],
+      "rust_target": "research::util",
+      "status": "PENDING"
+    },
+    {
+      "path": "apps/api/intelligence/vision.py",
+      "sha256": "cc94c5f0a6959d2fcde55e5fd0117ab0737d70ba3becf77a4c6787b6561dfa80",
+      "lines": 147,
+      "test": false,
+      "imports": [
+        "PIL",
+        "datetime",
+        "hashlib",
+        "intelligence.calendar",
+        "intelligence.db",
+        "intelligence.forecasting",
+        "intelligence.storage",
+        "intelligence.util",
+        "io",
+        "uuid"
+      ],
+      "definitions": [
+        {
+          "name": "model_status",
+          "line": 19,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "render_chart",
+          "line": 43,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "prepare_job",
+          "line": 80,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "resolve_detection_outcomes",
+          "line": 110,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "y",
+          "line": 56,
+          "kind": "FunctionDef"
+        }
+      ],
+      "rust_target": "vision",
+      "status": "PENDING"
+    },
+    {
+      "path": "apps/api/intelligence/vision_gateway.py",
+      "sha256": "8e353e89d05a03f9621c7a3d0da9bccad5c51d6a6c61c50a05112535d7655416",
+      "lines": 84,
+      "test": false,
+      "imports": [
+        "intelligence.config",
+        "intelligence.db",
+        "intelligence.ingestion",
+        "intelligence.storage",
+        "intelligence.util",
+        "intelligence.vision",
+        "json",
+        "math",
+        "time",
+        "uuid"
+      ],
+      "definitions": [
+        {
+          "name": "validate_boxes",
+          "line": 14,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "submit_and_collect",
+          "line": 29,
+          "kind": "FunctionDef"
+        }
+      ],
+      "rust_target": "vision",
+      "status": "PENDING"
+    },
+    {
+      "path": "apps/api/opsbackup.py",
+      "sha256": "cfcd0ecfcd590213c885551c80590295ec647e8faede458bea29bcdbb6ce5e31",
+      "lines": 204,
+      "test": false,
+      "imports": [
+        "argparse",
+        "contextlib",
+        "datetime",
+        "hashlib",
+        "intelligence.config",
+        "intelligence.db",
+        "json",
+        "paperpilot.config",
+        "paperpilot.db",
+        "paperpilot.experiment",
+        "pathlib",
+        "psycopg",
+        "secrets",
+        "urllib.parse",
+        "zipfile"
+      ],
+      "definitions": [
+        {
+          "name": "database",
+          "line": 18,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "table_names",
+          "line": 41,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "table_order",
+          "line": 45,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "export",
+          "line": 63,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "restore_empty",
+          "line": 101,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "verify_local",
+          "line": 170,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "main",
+          "line": 185,
+          "kind": "FunctionDef"
+        }
+      ],
+      "rust_target": "research::opsbackup",
+      "status": "PENDING"
+    },
+    {
+      "path": "apps/api/paperpilot/__init__.py",
+      "sha256": "406d6262593a7261bac3cea08cd0e5cb0df72c580c19f04ede51e87787ab7854",
+      "lines": 1,
+      "test": false,
+      "imports": [],
+      "definitions": [],
+      "rust_target": "research::__init__",
+      "status": "PENDING"
+    },
+    {
+      "path": "apps/api/paperpilot/broker.py",
+      "sha256": "195a8d603c0230006ea000f03bddbf6b35323956c736d2c4089dafba3589a521",
+      "lines": 183,
+      "test": false,
+      "imports": [
+        "decimal",
+        "httpx",
+        "paperpilot.config",
+        "paperpilot.risk",
+        "re"
+      ],
+      "definitions": [
+        {
+          "name": "BrokerUnavailable",
+          "line": 12,
+          "kind": "ClassDef"
+        },
+        {
+          "name": "PaperBroker",
+          "line": 16,
+          "kind": "ClassDef"
+        },
+        {
+          "name": "verify_account",
+          "line": 163,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "__init__",
+          "line": 17,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "request",
+          "line": 20,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "account",
+          "line": 139,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "clock",
+          "line": 142,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "positions",
+          "line": 145,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "orders",
+          "line": 148,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "by_client",
+          "line": 151,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "submit",
+          "line": 154,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "cancel",
+          "line": 157,
+          "kind": "FunctionDef"
+        }
+      ],
+      "rust_target": "broker",
+      "status": "PENDING"
+    },
+    {
+      "path": "apps/api/paperpilot/challenger.py",
+      "sha256": "b9a901c5f449ee4f5b10c6acf56f696530114e3bf5a465f82330eb0bce06382a",
+      "lines": 48,
+      "test": false,
+      "imports": [
+        "contextlib",
+        "fastapi",
+        "paperpilot.strategy",
+        "pydantic",
+        "typing"
+      ],
+      "definitions": [
+        {
+          "name": "ScoreRequest",
+          "line": 12,
+          "kind": "ClassDef"
+        },
+        {
+          "name": "lifespan",
+          "line": 21,
+          "kind": "AsyncFunctionDef"
+        },
+        {
+          "name": "health",
+          "line": 30,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "score",
+          "line": 35,
+          "kind": "FunctionDef"
+        }
+      ],
+      "rust_target": "research::challenger",
+      "status": "PENDING"
+    },
+    {
+      "path": "apps/api/paperpilot/comparison.py",
+      "sha256": "5a226c9633e73e5ce17a9521cfe011d2eddbcdc9045e0f3cfc09ee6f688cb069",
+      "lines": 159,
+      "test": false,
+      "imports": [
+        "datetime",
+        "intelligence.calendar",
+        "intelligence.util",
+        "numpy",
+        "paperpilot.db"
+      ],
+      "definitions": [
+        {
+          "name": "interval",
+          "line": 18,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "compare_latest",
+          "line": 26,
+          "kind": "FunctionDef"
+        }
+      ],
+      "rust_target": "research::comparison",
+      "status": "PENDING"
+    },
+    {
+      "path": "apps/api/paperpilot/config.py",
+      "sha256": "a6c040de0fb0b892a1a1c60d1c22487274b3ebd532f1ea13a9dd8759c87590d2",
+      "lines": 81,
+      "test": false,
+      "imports": [
+        "datetime",
+        "paperpilot.db",
+        "paperpilot.universe",
+        "pathlib",
+        "pydantic",
+        "pydantic_settings",
+        "typing"
+      ],
+      "definitions": [
+        {
+          "name": "PaperSettings",
+          "line": 13,
+          "kind": "ClassDef"
+        },
+        {
+          "name": "current_symbols",
+          "line": 55,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "managed_symbols",
+          "line": 63,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "quote_symbols",
+          "line": 73,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "read_trial_notional",
+          "line": 22,
+          "kind": "FunctionDef"
+        }
+      ],
+      "rust_target": "config",
+      "status": "PENDING"
+    },
+    {
+      "path": "apps/api/paperpilot/daily_report.py",
+      "sha256": "c6f8ba0a8c7801e5cce5698579f73c65827b8f2616c0d31876f9a7e5cebe61b5",
+      "lines": 263,
+      "test": false,
+      "imports": [
+        "collections",
+        "datetime",
+        "intelligence.calendar",
+        "intelligence.util",
+        "paperpilot.comparison",
+        "paperpilot.db",
+        "paperpilot.engine",
+        "paperpilot.risk",
+        "paperpilot.strategy"
+      ],
+      "definitions": [
+        {
+          "name": "session_report",
+          "line": 14,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "archive_final",
+          "line": 257,
+          "kind": "FunctionDef"
+        }
+      ],
+      "rust_target": "reporting",
+      "status": "PENDING"
+    },
+    {
+      "path": "apps/api/paperpilot/data.py",
+      "sha256": "14a685c664dff23ed198de9ab03b9ed4865fca0e06de6d7dd46d9be03847cc4c",
+      "lines": 192,
+      "test": false,
+      "imports": [
+        "datetime",
+        "httpx",
+        "intelligence.calendar",
+        "intelligence.financials",
+        "intelligence.providers",
+        "intelligence.util",
+        "paperpilot.config",
+        "paperpilot.db"
+      ],
+      "definitions": [
+        {
+          "name": "store",
+          "line": 15,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "latest_sources",
+          "line": 25,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "refresh_prices",
+          "line": 37,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "refresh_company_information",
+          "line": 82,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "save_quote",
+          "line": 151,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "poll_quotes",
+          "line": 168,
+          "kind": "FunctionDef"
+        }
+      ],
+      "rust_target": "market,storage",
+      "status": "PENDING"
+    },
+    {
+      "path": "apps/api/paperpilot/db.py",
+      "sha256": "0eaa1d60a75caeb92a5b95a8c47279891c60b51b353b24aefe61a6a4c5f675d6",
+      "lines": 34,
+      "test": false,
+      "imports": [
+        "contextlib",
+        "intelligence.util",
+        "paperpilot.config",
+        "pathlib",
+        "psycopg",
+        "psycopg.rows",
+        "psycopg.types.json",
+        "urllib.parse"
+      ],
+      "definitions": [
+        {
+          "name": "jb",
+          "line": 13,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "connect",
+          "line": 18,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "migrate",
+          "line": 26,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "event",
+          "line": 32,
+          "kind": "FunctionDef"
+        }
+      ],
+      "rust_target": "db",
+      "status": "PENDING"
+    },
+    {
+      "path": "apps/api/paperpilot/decision_trace.py",
+      "sha256": "c1d107df839638bc00e238abdc9b52c66d0af8c35f6805b2d63c8bcb3f76580b",
+      "lines": 123,
+      "test": false,
+      "imports": [
+        "dataclasses",
+        "paperpilot.strategy"
+      ],
+      "definitions": [
+        {
+          "name": "DecisionTrace",
+          "line": 9,
+          "kind": "ClassDef"
+        },
+        {
+          "name": "signal_trace",
+          "line": 29,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "legacy_signal_trace",
+          "line": 75,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "expect",
+          "line": 13,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "blocked",
+          "line": 18,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "failure",
+          "line": 22,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "payload",
+          "line": 25,
+          "kind": "FunctionDef"
+        }
+      ],
+      "rust_target": "trace",
+      "status": "PENDING"
+    },
+    {
+      "path": "apps/api/paperpilot/discovery.py",
+      "sha256": "4de0f40ba05313139251b02bafb3f7a20417ce94c32a7d7230250919f13724df",
+      "lines": 522,
+      "test": false,
+      "imports": [
+        "collections",
+        "copy",
+        "datetime",
+        "httpx",
+        "intelligence.calendar",
+        "intelligence.providers",
+        "intelligence.util",
+        "json",
+        "paperpilot.broker",
+        "paperpilot.config",
+        "paperpilot.data",
+        "paperpilot.db",
+        "paperpilot.sentiment",
+        "paperpilot.universe",
+        "pydantic",
+        "re",
+        "typing"
+      ],
+      "definitions": [
+        {
+          "name": "Pick",
+          "line": 27,
+          "kind": "ClassDef"
+        },
+        {
+          "name": "Ranking",
+          "line": 35,
+          "kind": "ClassDef"
+        },
+        {
+          "name": "validate_picks",
+          "line": 40,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "ResearchOutputRejected",
+          "line": 61,
+          "kind": "ClassDef"
+        },
+        {
+          "name": "filter_research_output",
+          "line": 67,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "_model_provenance",
+          "line": 111,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "_record_model_validation",
+          "line": 138,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "reserve_call",
+          "line": 152,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "research_context",
+          "line": 178,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "rank",
+          "line": 282,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "research",
+          "line": 355,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "__init__",
+          "line": 62,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "render",
+          "line": 205,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "largest_limit",
+          "line": 247,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "clip",
+          "line": 206,
+          "kind": "FunctionDef"
+        }
+      ],
+      "rust_target": "news",
+      "status": "PENDING"
+    },
+    {
+      "path": "apps/api/paperpilot/engine.py",
+      "sha256": "5875190a0a2d6f74caef458bcb5b1d3fcbf320be1905587ab0546fb4f1dada4c",
+      "lines": 978,
+      "test": false,
+      "imports": [
+        "asyncio",
+        "datetime",
+        "decimal",
+        "intelligence.calendar",
+        "intelligence.experiments",
+        "intelligence.portable_models",
+        "intelligence.util",
+        "numpy",
+        "paperpilot.broker",
+        "paperpilot.config",
+        "paperpilot.data",
+        "paperpilot.db",
+        "paperpilot.decision_trace",
+        "paperpilot.discovery",
+        "paperpilot.market_shadow",
+        "paperpilot.outcomes",
+        "paperpilot.risk",
+        "paperpilot.simulation_rules",
+        "paperpilot.strategy",
+        "paperpilot.strategy_execution",
+        "paperpilot.strategy_runtime",
+        "paperpilot.universe",
+        "shutil"
+      ],
+      "definitions": [
+        {
+          "name": "hydrate",
+          "line": 31,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "verified_session_close",
+          "line": 41,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "create_signals",
+          "line": 52,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "latest_orders",
+          "line": 233,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "ledger",
+          "line": 242,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "record_order",
+          "line": 300,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "submit_intent",
+          "line": 329,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "_submit_intent",
+          "line": 340,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "disable",
+          "line": 448,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "Engine",
+          "line": 481,
+          "kind": "ClassDef"
+        },
+        {
+          "name": "__init__",
+          "line": 482,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "tick",
+          "line": 495,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "_tick",
+          "line": 506,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "strategy_intents",
+          "line": 885,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "strategy_entries",
+          "line": 891,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "connection",
+          "line": 954,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "run",
+          "line": 970,
+          "kind": "AsyncFunctionDef"
+        }
+      ],
+      "rust_target": "legacy_paper",
+      "status": "PENDING"
+    },
+    {
+      "path": "apps/api/paperpilot/experiment.py",
+      "sha256": "836eced768d9bcab3507833f85454ebefb4d22ec573efda84cffc218d862d1ac",
+      "lines": 430,
+      "test": false,
+      "imports": [
+        "asyncio",
+        "datetime",
+        "decimal",
+        "httpx",
+        "intelligence.calendar",
+        "intelligence.providers",
+        "intelligence.util",
+        "json",
+        "logging",
+        "math",
+        "numpy",
+        "paperpilot.config",
+        "paperpilot.db",
+        "paperpilot.discovery",
+        "paperpilot.intraday",
+        "paperpilot.strategy",
+        "paperpilot.universe",
+        "pathlib",
+        "re"
+      ],
+      "definitions": [
+        {
+          "name": "migrate",
+          "line": 44,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "record",
+          "line": 48,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "accounts",
+          "line": 57,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "Broker",
+          "line": 67,
+          "kind": "ClassDef"
+        },
+        {
+          "name": "OrderRejected",
+          "line": 110,
+          "kind": "ClassDef"
+        },
+        {
+          "name": "allocate",
+          "line": 114,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "quantity_change",
+          "line": 142,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "target_time",
+          "line": 159,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "Market",
+          "line": 171,
+          "kind": "ClassDef"
+        },
+        {
+          "name": "Engine",
+          "line": 226,
+          "kind": "ClassDef"
+        },
+        {
+          "name": "status",
+          "line": 384,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "control",
+          "line": 404,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "research_loop",
+          "line": 414,
+          "kind": "AsyncFunctionDef"
+        },
+        {
+          "name": "__init__",
+          "line": 68,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "request",
+          "line": 71,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "account",
+          "line": 93,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "positions",
+          "line": 99,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "orders",
+          "line": 100,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "by_client",
+          "line": 101,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "submit",
+          "line": 103,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "__init__",
+          "line": 172,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "universe",
+          "line": 174,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "daily_inputs",
+          "line": 183,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "quote",
+          "line": 190,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "observations",
+          "line": 201,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "__init__",
+          "line": 227,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "reconcile",
+          "line": 231,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "resolve_and_learn",
+          "line": 245,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "submit",
+          "line": 277,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "tick",
+          "line": 298,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "_tick",
+          "line": 305,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "run",
+          "line": 376,
+          "kind": "AsyncFunctionDef"
+        }
+      ],
+      "rust_target": "engine,allocation,learning,db,broker,market",
+      "status": "PENDING"
+    },
+    {
+      "path": "apps/api/paperpilot/fill_replay.py",
+      "sha256": "99af10c2167cec8f7c6a268094b618226bdd337d2ade99ae5d89291ef08371c7",
+      "lines": 32,
+      "test": false,
+      "imports": [
+        "decimal"
+      ],
+      "definitions": [
+        {
+          "name": "reconcile",
+          "line": 5,
+          "kind": "FunctionDef"
+        }
+      ],
+      "rust_target": "research::fill_replay",
+      "status": "PENDING"
+    },
+    {
+      "path": "apps/api/paperpilot/intraday.py",
+      "sha256": "da324db7c81c764daee57f3ed35bfe98eb087a211bcb6286e3750935353d15af",
+      "lines": 152,
+      "test": false,
+      "imports": [
+        "datetime",
+        "gzip",
+        "httpx",
+        "intelligence.calendar",
+        "intelligence.config",
+        "intelligence.providers",
+        "intelligence.util",
+        "math",
+        "re"
+      ],
+      "definitions": [
+        {
+          "name": "fetch_intraday",
+          "line": 22,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "save_snapshot",
+          "line": 96,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "index_bars",
+          "line": 108,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "simulate",
+          "line": 112,
+          "kind": "FunctionDef"
+        }
+      ],
+      "rust_target": "research::intraday",
+      "status": "PENDING"
+    },
+    {
+      "path": "apps/api/paperpilot/lab_registry.py",
+      "sha256": "2c7291b8b51e887d87eb6afe388adf7d3b3da7ead5e49e2fe55cd1d8e5554173",
+      "lines": 52,
+      "test": false,
+      "imports": [
+        "intelligence.config",
+        "intelligence.util",
+        "json",
+        "os"
+      ],
+      "definitions": [
+        {
+          "name": "put",
+          "line": 12,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "read",
+          "line": 30,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "publish",
+          "line": 39,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "latest",
+          "line": 47,
+          "kind": "FunctionDef"
+        }
+      ],
+      "rust_target": "research::lab_registry",
+      "status": "PENDING"
+    },
+    {
+      "path": "apps/api/paperpilot/market_context.py",
+      "sha256": "54a968b639f32f92b916950581b3f8de626c5f26750739809a5efac3f7362d61",
+      "lines": 192,
+      "test": false,
+      "imports": [
+        "intelligence.calendar",
+        "intelligence.experiments",
+        "intelligence.forecasting",
+        "intelligence.portable_models",
+        "intelligence.research_models",
+        "math"
+      ],
+      "definitions": [
+        {
+          "name": "align_inputs",
+          "line": 33,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "panel",
+          "line": 59,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "labeled_rows",
+          "line": 89,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "shared_boundaries",
+          "line": 107,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "split_rows",
+          "line": 133,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "fit_candidate",
+          "line": 158,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "predict_candidate",
+          "line": 184,
+          "kind": "FunctionDef"
+        }
+      ],
+      "rust_target": "research::market_context",
+      "status": "PENDING"
+    },
+    {
+      "path": "apps/api/paperpilot/market_shadow.py",
+      "sha256": "996339c8fc93b181f219f91d5fd5009f44e1157dddcb55a7efc04723f10499e8",
+      "lines": 67,
+      "test": false,
+      "imports": [
+        "datetime",
+        "numpy",
+        "paperpilot.market_context"
+      ],
+      "definitions": [
+        {
+          "name": "issue",
+          "line": 16,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "hydrate",
+          "line": 19,
+          "kind": "FunctionDef"
+        }
+      ],
+      "rust_target": "research::market_shadow",
+      "status": "PENDING"
+    },
+    {
+      "path": "apps/api/paperpilot/outcomes.py",
+      "sha256": "57efe8ae6048fab4d20402fb3ea735e2570983e75453290f3791a6575172abfe",
+      "lines": 211,
+      "test": false,
+      "imports": [
+        "collections",
+        "datetime",
+        "intelligence.calendar",
+        "intelligence.providers",
+        "intelligence.util",
+        "math",
+        "paperpilot.config",
+        "paperpilot.data",
+        "paperpilot.db"
+      ],
+      "definitions": [
+        {
+          "name": "resolve",
+          "line": 15,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "_resolve_decision",
+          "line": 83,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "_metric_rows",
+          "line": 126,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "_metric_reports",
+          "line": 138,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "metrics",
+          "line": 188,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "metric_views",
+          "line": 193,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "metrics_by_model",
+          "line": 210,
+          "kind": "FunctionDef"
+        }
+      ],
+      "rust_target": "reporting",
+      "status": "PENDING"
+    },
+    {
+      "path": "apps/api/paperpilot/reporting.py",
+      "sha256": "bb4495ed92bc20ac3cbd201301fc384af9456e17d58506147cb9c81989263ed0",
+      "lines": 286,
+      "test": false,
+      "imports": [
+        "argparse",
+        "datetime",
+        "intelligence.calendar",
+        "intelligence.util",
+        "math",
+        "numpy",
+        "paperpilot.db",
+        "paperpilot.engine"
+      ],
+      "definitions": [
+        {
+          "name": "quality",
+          "line": 15,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "exposure_integral",
+          "line": 94,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "closed_cycles",
+          "line": 112,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "create_report",
+          "line": 125,
+          "kind": "FunctionDef"
+        }
+      ],
+      "rust_target": "reporting",
+      "status": "PENDING"
+    },
+    {
+      "path": "apps/api/paperpilot/risk.py",
+      "sha256": "7f1190e34f7e0a9009d7a405b059648c79e72fecf0a94fbc1eb697479b4b7aa1",
+      "lines": 364,
+      "test": false,
+      "imports": [
+        "datetime",
+        "decimal",
+        "intelligence.calendar",
+        "intelligence.util",
+        "math",
+        "paperpilot.config",
+        "paperpilot.db",
+        "paperpilot.strategy"
+      ],
+      "definitions": [
+        {
+          "name": "swing_trial_notional",
+          "line": 18,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "scaled_intent",
+          "line": 22,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "scaled_position_cap",
+          "line": 31,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "scaled_buy_authorized",
+          "line": 35,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "execution_cost_evidence",
+          "line": 75,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "client_id",
+          "line": 96,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "entry_permission",
+          "line": 104,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "_blocked",
+          "line": 145,
+          "kind": "FunctionDef"
+        }
+      ],
+      "rust_target": "research::risk",
+      "status": "PENDING"
+    },
+    {
+      "path": "apps/api/paperpilot/scan_models.py",
+      "sha256": "9ffdbe2ddd4997b5d386879c04671b4be1d40ae5fa0803f26290de2809b4be5b",
+      "lines": 97,
+      "test": false,
+      "imports": [
+        "numpy",
+        "sklearn.linear_model",
+        "threadpoolctl"
+      ],
+      "definitions": [
+        {
+          "name": "logistic",
+          "line": 12,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "_head",
+          "line": 16,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "fit_fold",
+          "line": 25,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "score_fold",
+          "line": 74,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "choose_rank",
+          "line": 90,
+          "kind": "FunctionDef"
+        }
+      ],
+      "rust_target": "models::scan",
+      "status": "PENDING"
+    },
+    {
+      "path": "apps/api/paperpilot/sentiment.py",
+      "sha256": "4152800accf17a5f7498a16d1b6647b9bd47108f6c5504bb92a797aff27f7eea",
+      "lines": 88,
+      "test": false,
+      "imports": [
+        "hashlib",
+        "httpx",
+        "intelligence.util",
+        "math",
+        "paperpilot.config",
+        "paperpilot.data"
+      ],
+      "definitions": [
+        {
+          "name": "assess",
+          "line": 16,
+          "kind": "FunctionDef"
+        }
+      ],
+      "rust_target": "sentiment",
+      "status": "PENDING"
+    },
+    {
+      "path": "apps/api/paperpilot/service.py",
+      "sha256": "6c86e8c3ebf84b9dc31b3a76553f18440ddc820a00012dbf3866f15c964be521",
+      "lines": 445,
+      "test": false,
+      "imports": [
+        "asyncio",
+        "contextlib",
+        "datetime",
+        "fastapi",
+        "fastapi.responses",
+        "intelligence.calendar",
+        "intelligence.util",
+        "json",
+        "paperpilot",
+        "paperpilot.broker",
+        "paperpilot.comparison",
+        "paperpilot.config",
+        "paperpilot.daily_report",
+        "paperpilot.data",
+        "paperpilot.db",
+        "paperpilot.discovery",
+        "paperpilot.engine",
+        "paperpilot.outcomes",
+        "paperpilot.strategy_runtime",
+        "paperpilot.universe",
+        "pydantic",
+        "secrets",
+        "websockets.asyncio.client"
+      ],
+      "definitions": [
+        {
+          "name": "trace_records",
+          "line": 26,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "authorization",
+          "line": 34,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "stream",
+          "line": 41,
+          "kind": "AsyncFunctionDef"
+        },
+        {
+          "name": "session_evidence",
+          "line": 143,
+          "kind": "AsyncFunctionDef"
+        },
+        {
+          "name": "lifespan",
+          "line": 170,
+          "kind": "AsyncFunctionDef"
+        },
+        {
+          "name": "health",
+          "line": 197,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "daily_report",
+          "line": 202,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "decision_traces",
+          "line": 213,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "status",
+          "line": 218,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "Control",
+          "line": 398,
+          "kind": "ClassDef"
+        },
+        {
+          "name": "control",
+          "line": 403,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "events",
+          "line": 434,
+          "kind": "AsyncFunctionDef"
+        },
+        {
+          "name": "messages",
+          "line": 435,
+          "kind": "AsyncFunctionDef"
+        }
+      ],
+      "rust_target": "api::paper",
+      "status": "PENDING"
+    },
+    {
+      "path": "apps/api/paperpilot/simulation_rules.py",
+      "sha256": "42754e5b3167336bbd2c211d3014d45f55590cc573190b938ffb475eb57a2b1e",
+      "lines": 31,
+      "test": false,
+      "imports": [],
+      "definitions": [
+        {
+          "name": "daily_change",
+          "line": 6,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "position_exit",
+          "line": 10,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "can_enter",
+          "line": 14,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "bar_trigger",
+          "line": 24,
+          "kind": "FunctionDef"
+        }
+      ],
+      "rust_target": "research::simulation_rules",
+      "status": "PENDING"
+    },
+    {
+      "path": "apps/api/paperpilot/strategy.py",
+      "sha256": "5b0dff6b416e12d2b189a8737253226be7bd3c51df06672b587d40707d10cb71",
+      "lines": 125,
+      "test": false,
+      "imports": [
+        "datetime",
+        "intelligence.calendar",
+        "intelligence.portable_models",
+        "intelligence.util",
+        "json",
+        "math",
+        "numpy",
+        "paperpilot.intraday",
+        "pathlib"
+      ],
+      "definitions": [
+        {
+          "name": "features",
+          "line": 26,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "forecast",
+          "line": 65,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "planning_return",
+          "line": 78,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "swing_trial_active",
+          "line": 86,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "entry_reasons",
+          "line": 93,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "decision_cutoff",
+          "line": 110,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "verified_bundle",
+          "line": 114,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "bundle",
+          "line": 123,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "values",
+          "line": 30,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "returns",
+          "line": 44,
+          "kind": "FunctionDef"
+        }
+      ],
+      "rust_target": "features,models,calendar",
+      "status": "PENDING"
+    },
+    {
+      "path": "apps/api/paperpilot/strategy_execution.py",
+      "sha256": "78cf8e815741481ad84cc97aedc1d1f180d5e4dd4ccbef28b0cee73afa6d9584",
+      "lines": 115,
+      "test": false,
+      "imports": [
+        "datetime",
+        "decimal",
+        "intelligence.calendar",
+        "paperpilot.risk",
+        "paperpilot.strategy"
+      ],
+      "definitions": [
+        {
+          "name": "owned_signals",
+          "line": 11,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "planned_exit",
+          "line": 20,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "can_retry_exit",
+          "line": 27,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "ranked_entries",
+          "line": 37,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "strategy_entry",
+          "line": 50,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "sort_key",
+          "line": 38,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "_blocked",
+          "line": 61,
+          "kind": "FunctionDef"
+        }
+      ],
+      "rust_target": "legacy_paper",
+      "status": "PENDING"
+    },
+    {
+      "path": "apps/api/paperpilot/strategy_lab.py",
+      "sha256": "5a80a4bde33a791073cfc956f6ddce27625907b7d58a73dbf94b4e10a0500ddd",
+      "lines": 265,
+      "test": false,
+      "imports": [
+        "dataclasses",
+        "datetime",
+        "numpy",
+        "paperpilot.simulation_rules",
+        "re"
+      ],
+      "definitions": [
+        {
+          "name": "Configuration",
+          "line": 16,
+          "kind": "ClassDef"
+        },
+        {
+          "name": "configurations",
+          "line": 27,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "event_category",
+          "line": 37,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "rule_score",
+          "line": 46,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "summarize",
+          "line": 67,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "replay",
+          "line": 108,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "key",
+          "line": 23,
+          "kind": "FunctionDef"
+        }
+      ],
+      "rust_target": "research::strategy_lab",
+      "status": "PENDING"
+    },
+    {
+      "path": "apps/api/paperpilot/strategy_runtime.py",
+      "sha256": "1e4d9b6a29bad7a02421460ee8032c4da4341647de4e909b1eb0d2a687ccf88c",
+      "lines": 355,
+      "test": false,
+      "imports": [
+        "datetime",
+        "httpx",
+        "intelligence.calendar",
+        "intelligence.util",
+        "paperpilot.config",
+        "paperpilot.data",
+        "paperpilot.db",
+        "paperpilot.decision_trace",
+        "paperpilot.intraday",
+        "paperpilot.strategy",
+        "paperpilot.universe"
+      ],
+      "definitions": [
+        {
+          "name": "issue_signals",
+          "line": 28,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "resolve_strategies",
+          "line": 214,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "freeze_shadow",
+          "line": 280,
+          "kind": "FunctionDef"
+        }
+      ],
+      "rust_target": "research::strategy_runtime",
+      "status": "PENDING"
+    },
+    {
+      "path": "apps/api/paperpilot/universe.py",
+      "sha256": "801161749f11673d5b66d38fa56c29b1e30be7dc1c67572e51f8e84afd461c80",
+      "lines": 21,
+      "test": false,
+      "imports": [
+        "intelligence.calendar",
+        "intelligence.util",
+        "paperpilot.db"
+      ],
+      "definitions": [
+        {
+          "name": "selection",
+          "line": 8,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "selected_symbols",
+          "line": 14,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "display_research",
+          "line": 19,
+          "kind": "FunctionDef"
+        }
+      ],
+      "rust_target": "news,db",
+      "status": "PENDING"
+    },
+    {
+      "path": "apps/api/tests/conftest.py",
+      "sha256": "417a98facedc2ba62456eef17a4adc2a4c64ba27b4c744cfa70eb158d29cb574",
+      "lines": 45,
+      "test": true,
+      "imports": [
+        "intelligence.config",
+        "intelligence.db",
+        "psycopg",
+        "pytest",
+        "secrets",
+        "urllib.parse"
+      ],
+      "definitions": [
+        {
+          "name": "test_database",
+          "line": 13,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "db",
+          "line": 36,
+          "kind": "FunctionDef"
+        }
+      ],
+      "rust_target": "Rust integration/parity tests",
+      "status": "PENDING"
+    },
+    {
+      "path": "apps/api/tests/test_autonomy_api.py",
+      "sha256": "73873ff82de29e4ae636f0d4d0ec6b3b37fedda2985adec0d3bffc5b2f5442d4",
+      "lines": 36,
+      "test": true,
+      "imports": [
+        "chart_intelligence",
+        "chart_intelligence.api",
+        "fastapi",
+        "fastapi.testclient",
+        "intelligence.security",
+        "paperpilot",
+        "test_paperpilot"
+      ],
+      "definitions": [
+        {
+          "name": "test_research_api_auth_and_no_execution_routes",
+          "line": 10,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "test_trace_api_requires_private_token",
+          "line": 29,
+          "kind": "FunctionDef"
+        }
+      ],
+      "rust_target": "Rust integration/parity tests",
+      "status": "PENDING"
+    },
+    {
+      "path": "apps/api/tests/test_autonomy_lifecycle.py",
+      "sha256": "3bd66a7406a719442108cf83fef314153e4ae85b1f9f7817b96d2b2903c33e7d",
+      "lines": 310,
+      "test": true,
+      "imports": [
+        "datetime",
+        "decimal",
+        "httpx",
+        "intelligence.calendar",
+        "paperpilot",
+        "paperpilot.db",
+        "paperpilot.decision_trace",
+        "paperpilot.fill_replay",
+        "psycopg",
+        "pytest",
+        "test_paperpilot",
+        "types"
+      ],
+      "definitions": [
+        {
+          "name": "exchange",
+          "line": 21,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "test_engine_restarts_and_reconciles_replay",
+          "line": 184,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "test_partial_unknown_restart_and_partial_exit",
+          "line": 211,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "test_structured_gate_status_and_policy_equivalence",
+          "line": 245,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "test_engine_blocks_risk_and_never_submits",
+          "line": 266,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "test_signal_trace_is_immutable_and_risk_short_circuit_is_visible",
+          "line": 297,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "Exchange",
+          "line": 85,
+          "kind": "ClassDef"
+        },
+        {
+          "name": "tick",
+          "line": 168,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "account",
+          "line": 86,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "positions",
+          "line": 95,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "orders",
+          "line": 112,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "clock",
+          "line": 115,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "request",
+          "line": 118,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "by_client",
+          "line": 136,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "cancel",
+          "line": 139,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "submit",
+          "line": 142,
+          "kind": "FunctionDef"
+        }
+      ],
+      "rust_target": "Rust integration/parity tests",
+      "status": "PENDING"
+    },
+    {
+      "path": "apps/api/tests/test_calendar_and_predictions.py",
+      "sha256": "c0538fd9c03310cda63812a7c50876880f59e394446f146ce554b7bd2b90871b",
+      "lines": 117,
+      "test": true,
+      "imports": [
+        "datetime",
+        "intelligence.calendar",
+        "intelligence.forecasting",
+        "intelligence.providers",
+        "intelligence.research",
+        "numpy",
+        "pytest"
+      ],
+      "definitions": [
+        {
+          "name": "make_bars",
+          "line": 12,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "test_holiday_and_early_close",
+          "line": 37,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "test_dst_cutoff",
+          "line": 42,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "test_no_early_or_retroactive_issuance",
+          "line": 47,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "test_exact_open_to_close_targets",
+          "line": 55,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "test_baseline_reference_and_minimum",
+          "line": 61,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "test_mixed_sources_refused",
+          "line": 70,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "test_missing_and_duplicate_dates_refused",
+          "line": 76,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "test_future_changes_do_not_affect_features",
+          "line": 82,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "test_numpy_heads_fit_simple_relation",
+          "line": 91,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "test_block_interval_groups_same_date_stocks",
+          "line": 101,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "test_normalizer_rejects_bad_values_and_duplicates",
+          "line": 110,
+          "kind": "FunctionDef"
+        }
+      ],
+      "rust_target": "Rust integration/parity tests",
+      "status": "PENDING"
+    },
+    {
+      "path": "apps/api/tests/test_chart_controller.py",
+      "sha256": "1c2cfdcbe0b2b1dd57871f4bd9f929adb90a1dd8dfa2ace9bdbb91fe80361cbb",
+      "lines": 105,
+      "test": true,
+      "imports": [
+        "chart_intelligence",
+        "chart_intelligence.controller",
+        "chart_intelligence.core",
+        "datetime",
+        "pytest",
+        "test_chart_intelligence"
+      ],
+      "definitions": [
+        {
+          "name": "test_controller_issues_once_resolves_and_survives_restart",
+          "line": 11,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "test_drift_requires_dates_and_records_declining_accuracy",
+          "line": 44,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "test_missing_data_records_failure_without_fake_prediction",
+          "line": 54,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "test_drift_runs_bounded_offline_refit_without_promoting",
+          "line": 67,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "collector",
+          "line": 19,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "unavailable",
+          "line": 60,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "unavailable",
+          "line": 97,
+          "kind": "FunctionDef"
+        }
+      ],
+      "rust_target": "Rust integration/parity tests",
+      "status": "PENDING"
+    },
+    {
+      "path": "apps/api/tests/test_chart_intelligence.py",
+      "sha256": "b1eef04d8c69fa512cdcdd1ea0ad88d853547c2e613c6d917261c639a3f43e70",
+      "lines": 100,
+      "test": true,
+      "imports": [
+        "chart_intelligence",
+        "chart_intelligence.core",
+        "datetime",
+        "intelligence.calendar",
+        "numpy",
+        "pytest"
+      ],
+      "definitions": [
+        {
+          "name": "candles",
+          "line": 11,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "test_features_are_causal_across_all_timeframes",
+          "line": 19,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "test_path_labels_handle_ambiguity_and_unresolved_horizon",
+          "line": 33,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "synthetic_rows",
+          "line": 44,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "test_chronology_export_and_unseen_evaluation",
+          "line": 70,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "test_store_is_immutable_and_verifies_hashes",
+          "line": 93,
+          "kind": "FunctionDef"
+        }
+      ],
+      "rust_target": "Rust integration/parity tests",
+      "status": "PENDING"
+    },
+    {
+      "path": "apps/api/tests/test_cutoff_sources.py",
+      "sha256": "62c79188250c39d054afa343a8624732930334d214297eb8cc5d510f1132bd93",
+      "lines": 55,
+      "test": true,
+      "imports": [
+        "datetime",
+        "paperpilot",
+        "paperpilot.config",
+        "paperpilot.data",
+        "paperpilot.db",
+        "pytest",
+        "test_paperpilot"
+      ],
+      "definitions": [
+        {
+          "name": "insert",
+          "line": 15,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "test_later_acquisition_does_not_hide_cutoff_safe_version",
+          "line": 23,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "test_future_only_source_is_unavailable_and_exact_cutoff_is_eligible",
+          "line": 34,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "test_forecast_source_query_explicitly_uses_issuance_cutoff",
+          "line": 43,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "source_query",
+          "line": 49,
+          "kind": "FunctionDef"
+        }
+      ],
+      "rust_target": "Rust integration/parity tests",
+      "status": "PENDING"
+    },
+    {
+      "path": "apps/api/tests/test_daily_research.py",
+      "sha256": "d90411b2efbd75e453b749feb9752c5050fd160e9f367029d33a64fbf58e3985",
+      "lines": 142,
+      "test": true,
+      "imports": [
+        "datetime",
+        "httpx",
+        "json",
+        "paperpilot",
+        "paperpilot.broker",
+        "paperpilot.config",
+        "paperpilot.db",
+        "paperpilot.discovery",
+        "paperpilot.risk",
+        "pytest",
+        "test_paperpilot"
+      ],
+      "definitions": [
+        {
+          "name": "freeze",
+          "line": 18,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "test_news_output_cannot_invent_symbols_sources_or_probability",
+          "line": 28,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "test_selection_membership_is_frozen_and_limited",
+          "line": 40,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "test_daily_groq_budget_survives_a_restart",
+          "line": 49,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "test_llm_response_is_research_only_and_has_no_order_tools",
+          "line": 56,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "test_discovery_requires_70_percent_and_bullish_news",
+          "line": 96,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "test_broker_rejects_unselected_stock_before_network",
+          "line": 117,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "handler",
+          "line": 61,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "handler",
+          "line": 126,
+          "kind": "FunctionDef"
+        }
+      ],
+      "rust_target": "Rust integration/parity tests",
+      "status": "PENDING"
+    },
+    {
+      "path": "apps/api/tests/test_execution_costs.py",
+      "sha256": "35bc74cde18e57c206f2f790aadbaafaabf34a37ce2530ba20fe8511c0b9a197",
+      "lines": 33,
+      "test": true,
+      "imports": [
+        "paperpilot.config",
+        "paperpilot.risk",
+        "pytest",
+        "test_paperpilot"
+      ],
+      "definitions": [
+        {
+          "name": "test_high_direction_probability_does_not_cover_negative_net_edge",
+          "line": 8,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "test_nonfinite_forecasts_cannot_authorize_entry",
+          "line": 21,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "test_wider_spread_can_erase_a_previous_cost_margin",
+          "line": 27,
+          "kind": "FunctionDef"
+        }
+      ],
+      "rust_target": "Rust integration/parity tests",
+      "status": "PENDING"
+    },
+    {
+      "path": "apps/api/tests/test_financials.py",
+      "sha256": "f6e60dde949a9541c7e774fdfea2b1919be840c87a11b98cca845a4a1763d89e",
+      "lines": 125,
+      "test": true,
+      "imports": [
+        "datetime",
+        "intelligence.financials"
+      ],
+      "definitions": [
+        {
+          "name": "fact",
+          "line": 6,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "test_restatement_is_withheld_before_its_filing",
+          "line": 30,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "test_matching_periods_and_source_inputs",
+          "line": 37,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "test_quarter_and_ytd_never_mixed",
+          "line": 50,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "test_instant_debt_requires_noncurrent_component",
+          "line": 61,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "test_currency_and_non_gaap_are_not_substituted",
+          "line": 66,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "test_filed_date_without_exact_acceptance_is_conservative",
+          "line": 91,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "test_observed_only_withholds_late_acquisition",
+          "line": 117,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "test_superseded_ambiguous_debt_fact_is_retained_but_not_used",
+          "line": 123,
+          "kind": "FunctionDef"
+        }
+      ],
+      "rust_target": "Rust integration/parity tests",
+      "status": "PENDING"
+    },
+    {
+      "path": "apps/api/tests/test_horizon_forward.py",
+      "sha256": "96f376dd76711d55771b20413059bf93fb697de8b8b9ecffa177ccb511bd2036",
+      "lines": 121,
+      "test": true,
+      "imports": [
+        "chart_intelligence",
+        "chart_intelligence.controller",
+        "chart_intelligence.horizon_forward",
+        "chart_intelligence.phase8",
+        "datetime",
+        "intelligence.calendar",
+        "json",
+        "pytest",
+        "types"
+      ],
+      "definitions": [
+        {
+          "name": "fixture",
+          "line": 15,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "test_hourly_forecast_precedes_target_and_survives_restart",
+          "line": 81,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "test_long_horizons_resolve_exact_intraday_endpoints",
+          "line": 93,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "test_stale_late_and_missing_observations_never_fabricate_results",
+          "line": 105,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "collect",
+          "line": 39,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "predict",
+          "line": 51,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "run",
+          "line": 64,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "rows",
+          "line": 69,
+          "kind": "FunctionDef"
+        }
+      ],
+      "rust_target": "Rust integration/parity tests",
+      "status": "PENDING"
+    },
+    {
+      "path": "apps/api/tests/test_mainkraft.py",
+      "sha256": "81062f728dcb93fec60393c7cd93f2865be145597bfc74c777a1b1867494fe14",
+      "lines": 524,
+      "test": true,
+      "imports": [
+        "datetime",
+        "decimal",
+        "fastapi.testclient",
+        "httpx",
+        "intelligence.calendar",
+        "intelligence.util",
+        "json",
+        "paperpilot",
+        "paperpilot.broker",
+        "paperpilot.config",
+        "paperpilot.daily_report",
+        "paperpilot.db",
+        "paperpilot.intraday",
+        "paperpilot.service",
+        "paperpilot.strategy",
+        "paperpilot.strategy_execution",
+        "psycopg",
+        "pydantic",
+        "pytest",
+        "test_paperpilot",
+        "unittest.mock"
+      ],
+      "definitions": [
+        {
+          "name": "test_simulation_early_close_and_adverse_overnight_gap",
+          "line": 18,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "test_market_features_never_use_session_or_future_inputs",
+          "line": 39,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "test_swing_deadline_uses_sessions_and_day_retries_exit",
+          "line": 54,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "test_partial_exit_restarts_with_a_distinct_intent",
+          "line": 62,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "test_report_is_provisional_until_close_reconciliation",
+          "line": 100,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "test_daily_report_requires_the_private_token",
+          "line": 119,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "test_freeze_to_paper_intent_and_virtual_outcome",
+          "line": 130,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "test_expectancy_trial_keeps_quote_and_return_checks",
+          "line": 374,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "test_trial_durable_cap_blocks_second_attempt",
+          "line": 419,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "test_scaled_broker_order_requires_exact_frozen_intent_and_flat_inventory",
+          "line": 444,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "test_scaled_notional_parses_environment_and_rejects_other_sizes",
+          "line": 515,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "account",
+          "line": 243,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "positions",
+          "line": 253,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "request",
+          "line": 272,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "fill",
+          "line": 290,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "set_quote",
+          "line": 319,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "check",
+          "line": 403,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "handler",
+          "line": 472,
+          "kind": "FunctionDef"
+        }
+      ],
+      "rust_target": "Rust integration/parity tests",
+      "status": "PENDING"
+    },
+    {
+      "path": "apps/api/tests/test_market_context.py",
+      "sha256": "fbbbffa26a2efcd92f97a074c2bea6929eae18771940db619a15d5857c0bf364",
+      "lines": 128,
+      "test": true,
+      "imports": [
+        "copy",
+        "intelligence.calendar",
+        "intelligence.experiments",
+        "numpy",
+        "paperpilot",
+        "pytest",
+        "test_calendar_and_predictions"
+      ],
+      "definitions": [
+        {
+          "name": "streams",
+          "line": 13,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "test_context_changes_cannot_change_earlier_features",
+          "line": 25,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "test_features_match_same_session_returns",
+          "line": 39,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "test_policy_mixing_or_missing_context_is_not_filled",
+          "line": 51,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "test_common_start_trim_preserves_original_and_aligned_label_indexes",
+          "line": 66,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "test_shared_partitions_purge_exchange_sessions_and_contain_labels",
+          "line": 81,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "test_candidate_fit_cannot_read_evaluation_labels",
+          "line": 102,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "test_labels_do_not_use_future_open_as_features",
+          "line": 120,
+          "kind": "FunctionDef"
+        }
+      ],
+      "rust_target": "Rust integration/parity tests",
+      "status": "PENDING"
+    },
+    {
+      "path": "apps/api/tests/test_model_version_metrics.py",
+      "sha256": "23e90018ff530418b94938105a52c8ffc4bef05e0d7b96317047c64b846f62b8",
+      "lines": 114,
+      "test": true,
+      "imports": [
+        "datetime",
+        "paperpilot.config",
+        "paperpilot.db",
+        "paperpilot.outcomes",
+        "paperpilot.service",
+        "pytest",
+        "test_paperpilot"
+      ],
+      "definitions": [
+        {
+          "name": "seed_versions",
+          "line": 16,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "test_model_views_do_not_pool_shared_dates_and_outcomes",
+          "line": 53,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "test_exact_model_filter_and_missing_version_are_explicit",
+          "line": 78,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "test_empty_legacy_array_remains_available",
+          "line": 89,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "test_status_exposes_labeled_legacy_and_separate_model_views",
+          "line": 98,
+          "kind": "FunctionDef"
+        }
+      ],
+      "rust_target": "Rust integration/parity tests",
+      "status": "PENDING"
+    },
+    {
+      "path": "apps/api/tests/test_operational_gates.py",
+      "sha256": "49fe484b6d4c1feff76948cde35d52b4eda540e961b48410f08824569be11c9c",
+      "lines": 60,
+      "test": true,
+      "imports": [
+        "importlib.util",
+        "intelligence.backup",
+        "intelligence.config",
+        "intelligence.db",
+        "intelligence.research",
+        "intelligence.storage",
+        "intelligence.util",
+        "intelligence.vision_gateway",
+        "numpy",
+        "pytest"
+      ],
+      "definitions": [
+        {
+          "name": "test_data_directory_cannot_escape_new_project",
+          "line": 11,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "test_legacy_database_target_is_rejected_before_connect",
+          "line": 17,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "test_preflight_accounts_for_installation_and_temporary_space",
+          "line": 24,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "test_calibration_bins_do_not_double_count_boundaries",
+          "line": 34,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "test_worker_output_cannot_escape_image_coordinates",
+          "line": 42,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "test_backup_restore_preserves_all_tables_and_immutable_guards",
+          "line": 50,
+          "kind": "FunctionDef"
+        }
+      ],
+      "rust_target": "Rust integration/parity tests",
+      "status": "PENDING"
+    },
+    {
+      "path": "apps/api/tests/test_paper_learning.py",
+      "sha256": "fec44413ee6ede490f0f38a128eceeb131136facd10e4715e3a4db77956c83e2",
+      "lines": 178,
+      "test": true,
+      "imports": [
+        "datetime",
+        "httpx",
+        "numpy",
+        "opsbackup",
+        "paperpilot",
+        "paperpilot.db",
+        "psycopg",
+        "pytest",
+        "test_paperpilot",
+        "unittest.mock"
+      ],
+      "definitions": [
+        {
+          "name": "db",
+          "line": 18,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "observation",
+          "line": 23,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "fake_broker",
+          "line": 29,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "engine",
+          "line": 39,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "test_allocation_uses_broker_capacity_without_old_caps",
+          "line": 45,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "test_sign_reversal_closes_before_short_and_short_uses_whole_shares",
+          "line": 54,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "test_broker_identity_routes_and_known_rejection",
+          "line": 61,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "test_restart_does_not_duplicate_cycle_or_order",
+          "line": 78,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "test_unknown_ack_partial_fill_restart_and_final_fill",
+          "line": 87,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "test_rejected_order_does_not_block_future_cycles",
+          "line": 100,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "test_future_labels_never_train_and_static_model_never_updates",
+          "line": 107,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "test_missing_outcomes_are_explicit_and_do_not_train",
+          "line": 123,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "test_pause_market_closed_open_reservations_and_stale_data_prevent_orders",
+          "line": 129,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "test_target_carries_across_close_and_holiday",
+          "line": 139,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "test_failed_account_does_not_stop_other_account",
+          "line": 144,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "test_blocked_broker_account_records_reason_without_intent",
+          "line": 153,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "test_quote_freshness_and_invalid_prices_are_not_relaxed",
+          "line": 162,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "test_experiment_evidence_survives_verified_backup_restore",
+          "line": 171,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "handler",
+          "line": 63,
+          "kind": "FunctionDef"
+        }
+      ],
+      "rust_target": "Rust integration/parity tests",
+      "status": "PENDING"
+    },
+    {
+      "path": "apps/api/tests/test_paper_reporting.py",
+      "sha256": "fca5a3197b1b9bd84630a613f4cc6fb6311ae36b2ee6146e5b5185f62e5dc4fa",
+      "lines": 86,
+      "test": true,
+      "imports": [
+        "datetime",
+        "paperpilot.reporting",
+        "pytest"
+      ],
+      "definitions": [
+        {
+          "name": "test_exposure_excludes_missing_time_and_cash_flow_breaks",
+          "line": 8,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "test_round_trips_include_partial_exits_and_break_even",
+          "line": 28,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "test_calibration_and_empty_evidence_are_explicit",
+          "line": 37,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "test_uncertainty_requires_126_dates_and_never_promotes_a_model",
+          "line": 61,
+          "kind": "FunctionDef"
+        }
+      ],
+      "rust_target": "Rust integration/parity tests",
+      "status": "PENDING"
+    },
+    {
+      "path": "apps/api/tests/test_paperpilot.py",
+      "sha256": "38a88c144b9c97425c0a8c0ee4a7968853010c68e60e7f3fef45f0060d405b23",
+      "lines": 387,
+      "test": true,
+      "imports": [
+        "datetime",
+        "decimal",
+        "fastapi.testclient",
+        "httpx",
+        "paperpilot",
+        "paperpilot.broker",
+        "paperpilot.config",
+        "paperpilot.db",
+        "paperpilot.risk",
+        "paperpilot.service",
+        "psycopg",
+        "pytest",
+        "secrets",
+        "urllib.parse",
+        "uuid"
+      ],
+      "definitions": [
+        {
+          "name": "paperdb",
+          "line": 20,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "configured",
+          "line": 34,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "test_live_endpoint_and_bulk_cancel_are_rejected_before_network",
+          "line": 42,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "test_order_policy_rejects_unsafe_shapes",
+          "line": 74,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "test_account_ids_and_cash_isolation",
+          "line": 89,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "test_every_broker_mutation_rechecks_actual_account_identity",
+          "line": 101,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "test_final_cash_read_prevents_borrowing_when_an_earlier_buy_fills",
+          "line": 127,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "test_final_sell_gate_cannot_exceed_available_long_inventory",
+          "line": 164,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "risk_inputs",
+          "line": 198,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "test_risk_cash_reservations_staleness_and_no_averaging",
+          "line": 220,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "test_broker_calendar_missing_or_mismatched_cannot_authorize_execution",
+          "line": 239,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "test_lost_acknowledgement_does_not_resubmit_after_restart",
+          "line": 252,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "test_partial_fills_rejections_and_fill_ledger",
+          "line": 274,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "test_rejected_intent_and_immutable_evidence",
+          "line": 312,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "test_emergency_stop_cancels_only_owned_orders_and_leaves_positions",
+          "line": 336,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "test_pilot_service_requires_private_bridge_token",
+          "line": 360,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "test_missing_precutoff_readiness_records_six_skips_without_backdating",
+          "line": 374,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "handler",
+          "line": 46,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "handler",
+          "line": 105,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "handler",
+          "line": 131,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "handler",
+          "line": 168,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "Broker",
+          "line": 257,
+          "kind": "ClassDef"
+        },
+        {
+          "name": "Broker",
+          "line": 345,
+          "kind": "ClassDef"
+        },
+        {
+          "name": "submit",
+          "line": 260,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "by_client",
+          "line": 348,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "cancel",
+          "line": 351,
+          "kind": "FunctionDef"
+        }
+      ],
+      "rust_target": "Rust integration/parity tests",
+      "status": "PENDING"
+    },
+    {
+      "path": "apps/api/tests/test_persistence_and_auth.py",
+      "sha256": "164bb4db0d5c8246fedd1fcf2419b878a2123f0c4757144672f3880f4907ef80",
+      "lines": 206,
+      "test": true,
+      "imports": [
+        "datetime",
+        "fastapi.testclient",
+        "intelligence",
+        "intelligence.calendar",
+        "intelligence.config",
+        "intelligence.db",
+        "intelligence.main",
+        "intelligence.security",
+        "intelligence.storage",
+        "intelligence.util",
+        "psycopg",
+        "pytest",
+        "test_calendar_and_predictions",
+        "uuid"
+      ],
+      "definitions": [
+        {
+          "name": "seed_prices",
+          "line": 19,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "test_prospective_vertical_slice_and_idempotency",
+          "line": 46,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "test_late_acquisition_cannot_enter_forecast",
+          "line": 86,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "test_evidence_is_append_only",
+          "line": 102,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "test_migration_rerun_preserves_evidence",
+          "line": 113,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "test_authentication_csrf_logout_and_proxies",
+          "line": 123,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "test_login_attempts_are_persisted_and_throttled",
+          "line": 164,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "test_watchlist_cannot_change_training_cohort",
+          "line": 186,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "test_interrupted_job_is_recovered_once",
+          "line": 196,
+          "kind": "FunctionDef"
+        }
+      ],
+      "rust_target": "Rust integration/parity tests",
+      "status": "PENDING"
+    },
+    {
+      "path": "apps/api/tests/test_phase3.py",
+      "sha256": "971dc13f0914e681b4501dfb97eb4e39ca5bb6ad9ea11a6c9f42960d88d377d9",
+      "lines": 289,
+      "test": true,
+      "imports": [
+        "copy",
+        "datetime",
+        "fastapi.testclient",
+        "httpx",
+        "intelligence",
+        "intelligence.calendar",
+        "intelligence.db",
+        "intelligence.information",
+        "intelligence.ir_metadata",
+        "intelligence.main",
+        "intelligence.point_features",
+        "intelligence.portable_models",
+        "intelligence.storage",
+        "intelligence.util",
+        "json",
+        "numpy",
+        "pytest",
+        "test_persistence_and_auth",
+        "uuid"
+      ],
+      "definitions": [
+        {
+          "name": "article",
+          "line": 19,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "test_news_dedup_revisions_and_actual_acquisition_gates",
+          "line": 34,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "test_news_pagination_failure_is_not_complete_coverage",
+          "line": 52,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "test_missing_news_coverage_is_missing_not_zero",
+          "line": 63,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "rows",
+          "line": 69,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "test_portable_heads_test_labels_and_future_extremes_cannot_change_artifact",
+          "line": 88,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "test_tuning_inner_boundaries_contain_labels",
+          "line": 107,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "test_frozen_shadow_records_precede_outcomes_and_do_not_replace_reference",
+          "line": 117,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "test_future_filing_events_cannot_enter_features",
+          "line": 170,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "test_phase3_endpoints_are_private",
+          "line": 183,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "test_official_publication_property_and_name_are_preserved",
+          "line": 193,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "test_confirmation_requires_126_complete_dates_and_freezes_one_verdict",
+          "line": 204,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "handler",
+          "line": 53,
+          "kind": "FunctionDef"
+        }
+      ],
+      "rust_target": "Rust integration/parity tests",
+      "status": "PENDING"
+    },
+    {
+      "path": "apps/api/tests/test_phase7.py",
+      "sha256": "a3250a2cbf44f5ab1f23ef78d41e3a512e1a395b3092f67dbe109faba792436f",
+      "lines": 230,
+      "test": true,
+      "imports": [
+        "chart_intelligence",
+        "chart_intelligence.controller",
+        "chart_intelligence.core",
+        "chart_intelligence.phase7",
+        "chart_intelligence.phase7_accounting",
+        "chart_intelligence.phase7_execution",
+        "copy",
+        "datetime",
+        "httpx",
+        "pytest",
+        "test_chart_intelligence"
+      ],
+      "definitions": [
+        {
+          "name": "test_exposed_evaluation_is_rejected_before_fitting",
+          "line": 12,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "test_bounded_model_exports_finite_probabilities_without_label_inputs",
+          "line": 20,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "opportunities",
+          "line": 35,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "test_missing_quotes_never_fabricate_fills",
+          "line": 56,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "test_synthetic_costs_reduce_returns_and_keep_rejections_partials_and_risk",
+          "line": 64,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "test_no_entry_uses_outcome_or_unavailable_quote_to_pass_signal_gate",
+          "line": 80,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "test_portfolio_caps_and_daily_loss_prevent_more_entries",
+          "line": 100,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "test_hypothetical_entry_needs_post_prediction_and_exit_quotes",
+          "line": 122,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "test_controller_records_completion_time_and_blocks_backdating",
+          "line": 158,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "test_delayed_sip_request_stays_outside_subscription_window",
+          "line": 197,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "test_portfolio_envelope_reconciles_cash_and_separates_mark_drawdown",
+          "line": 223,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "q",
+          "line": 128,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "collect",
+          "line": 179,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "handler",
+          "line": 205,
+          "kind": "FunctionDef"
+        }
+      ],
+      "rust_target": "Rust integration/parity tests",
+      "status": "PENDING"
+    },
+    {
+      "path": "apps/api/tests/test_phase8.py",
+      "sha256": "ff75d91e9674f21a21774235593fa036c65ca9afeaeb2cb1aa986941a80b64b1",
+      "lines": 162,
+      "test": true,
+      "imports": [
+        "chart_intelligence.phase8",
+        "chart_intelligence.phase8_accounting",
+        "chart_intelligence.phase8_evidence",
+        "chart_intelligence.phase8_execution",
+        "datetime",
+        "intelligence.calendar",
+        "json",
+        "numpy",
+        "pytest"
+      ],
+      "definitions": [
+        {
+          "name": "synthetic_rows",
+          "line": 13,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "test_partitions_purge_labels_and_refuse_exposed_audit",
+          "line": 42,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "test_bounded_new_horizon_models_ignore_outcomes_at_inference",
+          "line": 52,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "test_daily_features_exclude_uncompleted_origin_and_future",
+          "line": 65,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "opportunity",
+          "line": 85,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "test_multihorizon_replay_reconciles_marks_and_no_quote_fills",
+          "line": 101,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "test_missing_bars_never_fill_and_capital_is_shared",
+          "line": 115,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "test_compressed_evidence_and_phase7_boundary",
+          "line": 125,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "test_partial_fill_pnl_separates_realized_and_open_inventory",
+          "line": 145,
+          "kind": "FunctionDef"
+        }
+      ],
+      "rust_target": "Rust integration/parity tests",
+      "status": "PENDING"
+    },
+    {
+      "path": "apps/api/tests/test_premarket_readiness.py",
+      "sha256": "f1a2ff5e3ecc725bfa940aa107aae17821ca1231a27831cc3c0b5544e12be8c6",
+      "lines": 106,
+      "test": true,
+      "imports": [
+        "datetime",
+        "opsbackup",
+        "paperpilot",
+        "paperpilot.config",
+        "paperpilot.db",
+        "psycopg",
+        "pytest",
+        "test_paperpilot",
+        "urllib.parse"
+      ],
+      "definitions": [
+        {
+          "name": "observe",
+          "line": 19,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "issue",
+          "line": 24,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "test_postcutoff_status_cannot_erase_genuine_precutoff_readiness",
+          "line": 45,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "test_latest_precutoff_failure_cannot_be_hidden_by_earlier_or_later_success",
+          "line": 63,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "test_stale_or_first_postcutoff_verification_is_not_backdated",
+          "line": 77,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "test_readiness_evidence_is_immutable",
+          "line": 84,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "test_readiness_survives_binary_backup_and_fresh_restore",
+          "line": 91,
+          "kind": "FunctionDef"
+        }
+      ],
+      "rust_target": "Rust integration/parity tests",
+      "status": "PENDING"
+    },
+    {
+      "path": "apps/api/tests/test_provider_failures.py",
+      "sha256": "d176e195f7478ecdaad23143b44d067c75bf6f54a71350eda27c52aae4b2e1d3",
+      "lines": 42,
+      "test": true,
+      "imports": [
+        "datetime",
+        "httpx",
+        "intelligence.config",
+        "intelligence.providers",
+        "pytest"
+      ],
+      "definitions": [
+        {
+          "name": "test_provider_host_allowlist_blocks_trading_and_unknown_hosts",
+          "line": 10,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "test_denied_sip_access_does_not_fall_back_to_iex",
+          "line": 18,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "test_repeated_pagination_token_refuses_partial_history",
+          "line": 34,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "handler",
+          "line": 24,
+          "kind": "FunctionDef"
+        }
+      ],
+      "rust_target": "Rust integration/parity tests",
+      "status": "PENDING"
+    },
+    {
+      "path": "apps/api/tests/test_research_context.py",
+      "sha256": "22be110b662fa955fb640fc1e340c1c455bc0b5745afd3f286e9edfa99f54c8a",
+      "lines": 141,
+      "test": true,
+      "imports": [
+        "datetime",
+        "httpx",
+        "json",
+        "paperpilot",
+        "paperpilot.config",
+        "pytest"
+      ],
+      "definitions": [
+        {
+          "name": "inputs",
+          "line": 11,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "test_all_forty_candidates_and_three_sources_survive_the_prompt_budget",
+          "line": 34,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "test_shared_news_is_presented_once_and_every_citation_remains_attached",
+          "line": 52,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "test_unicode_and_escaped_input_is_bounded_without_omitting_a_stock",
+          "line": 63,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "test_input_overflow_fails_instead_of_silently_deleting_candidates",
+          "line": 75,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "response",
+          "line": 82,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "test_ranking_can_choose_last_candidate_and_records_exact_presented_context",
+          "line": 92,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "test_ranking_rejects_real_but_unpresented_stock_citations",
+          "line": 120,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "handler",
+          "line": 99,
+          "kind": "FunctionDef"
+        }
+      ],
+      "rust_target": "Rust integration/parity tests",
+      "status": "PENDING"
+    },
+    {
+      "path": "apps/api/tests/test_research_engine.py",
+      "sha256": "19db38f44cd1999cefc02a95c8beaaa938015ee2de088b66cf04552aabc66fe5",
+      "lines": 245,
+      "test": true,
+      "imports": [
+        "copy",
+        "datetime",
+        "fastapi.testclient",
+        "intelligence",
+        "intelligence.calendar",
+        "intelligence.db",
+        "intelligence.main",
+        "intelligence.research",
+        "intelligence.research_models",
+        "intelligence.storage",
+        "intelligence.util",
+        "numpy",
+        "psycopg",
+        "pytest",
+        "sklearn.linear_model",
+        "test_calendar_and_predictions",
+        "test_persistence_and_auth",
+        "uuid"
+      ],
+      "definitions": [
+        {
+          "name": "test_original_numpy_heads_reconcile_established_library",
+          "line": 20,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "test_metrics_known_values_and_invalid_scores",
+          "line": 33,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "test_enriched_features_never_read_future_open_or_prices",
+          "line": 44,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "test_stock_and_benchmark_adjustment_snapshots_cannot_mix",
+          "line": 54,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "groups",
+          "line": 63,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "test_shared_temporal_boundaries_purge_and_contain_labels",
+          "line": 70,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "test_candidates_are_deterministic_and_test_labels_cannot_change_fit",
+          "line": 84,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "test_development_success_cannot_become_validation_pass",
+          "line": 98,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "seed_development",
+          "line": 106,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "test_frozen_plan_seals_exposed_dates_and_rejects_code_change",
+          "line": 142,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "test_scheduler_real_dispatch_issues_once_and_late_refresh_never_backfills",
+          "line": 164,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "test_scheduler_half_day_and_holiday_retry_slots",
+          "line": 195,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "test_failed_job_and_unserializable_result_do_not_poison_next_job",
+          "line": 210,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "test_provider_partial_and_missed_cutoff_are_explicit_job_states",
+          "line": 227,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "test_research_and_monitor_routes_require_authentication",
+          "line": 238,
+          "kind": "FunctionDef"
+        }
+      ],
+      "rust_target": "Rust integration/parity tests",
+      "status": "PENDING"
+    },
+    {
+      "path": "apps/api/tests/test_research_output_filter.py",
+      "sha256": "2d88da0faa020ae0882f49f1a4e839c2d82a3001eb03843276cd6599715b3e96",
+      "lines": 107,
+      "test": true,
+      "imports": [
+        "datetime",
+        "httpx",
+        "json",
+        "paperpilot",
+        "paperpilot.config",
+        "pytest"
+      ],
+      "definitions": [
+        {
+          "name": "pick",
+          "line": 18,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "test_unknown_and_bad_citations_do_not_discard_unrelated_valid_picks",
+          "line": 22,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "test_conflicting_duplicates_discard_every_occurrence_of_that_symbol",
+          "line": 30,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "test_all_invalid_output_fails_but_explicit_empty_shortlist_is_valid",
+          "line": 39,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "test_cap_and_strict_schema_are_not_relaxed_to_salvage_output",
+          "line": 46,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "run_rank",
+          "line": 55,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "test_dynamic_enum_uses_only_presented_candidates_and_never_mutates_model_schema",
+          "line": 80,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "test_rejected_model_output_is_audited_before_all_invalid_failure",
+          "line": 96,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "handler",
+          "line": 60,
+          "kind": "FunctionDef"
+        }
+      ],
+      "rust_target": "Rust integration/parity tests",
+      "status": "PENDING"
+    },
+    {
+      "path": "apps/api/tests/test_scan_models.py",
+      "sha256": "1cce11703ed78124b1e9683a7144dc2acf249a33e570504553e84575f4aab0f4",
+      "lines": 42,
+      "test": true,
+      "imports": [
+        "numpy",
+        "paperpilot.scan_models",
+        "pytest"
+      ],
+      "definitions": [
+        {
+          "name": "test_news_can_change_rank_without_changing_technical_eligibility",
+          "line": 9,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "test_monthly_artifact_scores_the_six_requested_outcomes",
+          "line": 19,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "rows",
+          "line": 22,
+          "kind": "FunctionDef"
+        }
+      ],
+      "rust_target": "Rust integration/parity tests",
+      "status": "PENDING"
+    },
+    {
+      "path": "apps/api/tests/test_sentiment.py",
+      "sha256": "bc07fa35108be4fb4d26330d1d701c9baf56ac58f7e82230aa4f87fa177359cf",
+      "lines": 85,
+      "test": true,
+      "imports": [
+        "hashlib",
+        "httpx",
+        "json",
+        "paperpilot",
+        "paperpilot.config",
+        "paperpilot.risk",
+        "pytest",
+        "test_paperpilot"
+      ],
+      "definitions": [
+        {
+          "name": "response_body",
+          "line": 13,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "test_sentiment_preserves_source_identity_and_cannot_assign_win_probability",
+          "line": 30,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "test_malformed_or_unpinned_sentiment_never_reaches_research",
+          "line": 50,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "test_local_model_is_only_a_veto_and_cannot_lower_numerical_threshold",
+          "line": 72,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "handler",
+          "line": 51,
+          "kind": "FunctionDef"
+        }
+      ],
+      "rust_target": "Rust integration/parity tests",
+      "status": "PENDING"
+    },
+    {
+      "path": "apps/api/tests/test_strategy_lab.py",
+      "sha256": "98cffd635ca5979fd3c90400561c93e5a6504a58c243f63acf98678d72dc46b7",
+      "lines": 125,
+      "test": true,
+      "imports": [
+        "datetime",
+        "fastapi",
+        "fastapi.testclient",
+        "intelligence.calendar",
+        "intelligence.lab_api",
+        "paperpilot",
+        "paperpilot.engine",
+        "paperpilot.simulation_rules",
+        "paperpilot.strategy_lab",
+        "pytest"
+      ],
+      "definitions": [
+        {
+          "name": "test_registry_rejects_modified_records",
+          "line": 11,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "test_shared_risk_and_ambiguous_bar",
+          "line": 21,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "test_boundaries_and_source_events",
+          "line": 31,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "test_research_api_requires_authentication",
+          "line": 38,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "test_missing_observations_never_create_a_fill",
+          "line": 49,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "test_two_positions_and_daily_loss_latch_survive_price_recovery",
+          "line": 58,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "test_embargo_matures_positions_without_new_entries",
+          "line": 74,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "test_partial_fills_and_restart_ledger",
+          "line": 84,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "test_early_close_delays_exit_to_next_bar_and_blocks_same_day_reentry",
+          "line": 95,
+          "kind": "FunctionDef"
+        }
+      ],
+      "rust_target": "Rust integration/parity tests",
+      "status": "PENDING"
+    },
+    {
+      "path": "apps/api/tests/test_vision_and_boundaries.py",
+      "sha256": "200698476bb3455b1050261cccee3197c1a180103d2b1e269ba16b1f0e72fb29",
+      "lines": 49,
+      "test": true,
+      "imports": [
+        "ast",
+        "datetime",
+        "intelligence.vision",
+        "pathlib",
+        "pytest",
+        "test_calendar_and_predictions"
+      ],
+      "definitions": [
+        {
+          "name": "test_license_and_runtime_gates",
+          "line": 11,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "test_render_is_reproducible_and_cutoff_safe",
+          "line": 20,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "test_render_refuses_missing_history",
+          "line": 32,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "test_no_execution_imports_or_endpoint_configuration",
+          "line": 37,
+          "kind": "FunctionDef"
+        }
+      ],
+      "rust_target": "Rust integration/parity tests",
+      "status": "PENDING"
+    },
+    {
+      "path": "workers/sentiment/app.py",
+      "sha256": "f10627f150fefa94dab814dac3ceac6b1aef72237484cfaa389a4b3b0f0405fd",
+      "lines": 99,
+      "test": false,
+      "imports": [
+        "fastapi",
+        "hashlib",
+        "json",
+        "numpy",
+        "onnxruntime",
+        "pathlib",
+        "pydantic",
+        "threading",
+        "tokenizers"
+      ],
+      "definitions": [
+        {
+          "name": "Item",
+          "line": 40,
+          "kind": "ClassDef"
+        },
+        {
+          "name": "Batch",
+          "line": 46,
+          "kind": "ClassDef"
+        },
+        {
+          "name": "health",
+          "line": 52,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "score",
+          "line": 61,
+          "kind": "FunctionDef"
+        }
+      ],
+      "rust_target": "sentiment or jobs",
+      "status": "PENDING"
+    },
+    {
+      "path": "workers/vision_infer.py",
+      "sha256": "402a6a313ba22009ac30a96d31ec4b610696798aa53835dccd72e7722653c065",
+      "lines": 93,
+      "test": false,
+      "imports": [
+        "hashlib",
+        "json",
+        "os",
+        "pathlib",
+        "time",
+        "torch",
+        "ultralytics"
+      ],
+      "definitions": [
+        {
+          "name": "infer",
+          "line": 14,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "main",
+          "line": 69,
+          "kind": "FunctionDef"
+        }
+      ],
+      "rust_target": "sentiment or jobs",
+      "status": "PENDING"
+    },
+    {
+      "path": "scripts/audit-autonomy-evidence.py",
+      "sha256": "b2659c9630973c732b161ffd8d4f6d6b844dc1f333e1161e56b2acad834eb2dc",
+      "lines": 106,
+      "test": false,
+      "imports": [
+        "chart_intelligence",
+        "chart_intelligence.core",
+        "hashlib",
+        "json",
+        "pathlib",
+        "sys",
+        "xml.etree.ElementTree"
+      ],
+      "definitions": [
+        {
+          "name": "main",
+          "line": 18,
+          "kind": "FunctionDef"
+        }
+      ],
+      "rust_target": "migration/research/operations CLI (original retained as evidence)",
+      "status": "PENDING"
+    },
+    {
+      "path": "scripts/audit-mainkraft-simulator.py",
+      "sha256": "f5e6024ec34ddfd4ced8c7bd4a31f71580bbbbda04ff60bae2b67757d3130489",
+      "lines": 71,
+      "test": false,
+      "imports": [
+        "hashlib",
+        "json",
+        "paperpilot",
+        "paperpilot.simulation_rules",
+        "pathlib",
+        "subprocess",
+        "sys"
+      ],
+      "definitions": [
+        {
+          "name": "main",
+          "line": 16,
+          "kind": "FunctionDef"
+        }
+      ],
+      "rust_target": "migration/research/operations CLI (original retained as evidence)",
+      "status": "PENDING"
+    },
+    {
+      "path": "scripts/audit-phase7-evidence.py",
+      "sha256": "d9b29aed526418417ca6497faf6f2e10c04a9eb07979a1e836e865bbb041dd17",
+      "lines": 94,
+      "test": false,
+      "imports": [
+        "chart_intelligence",
+        "chart_intelligence.phase7",
+        "datetime",
+        "hashlib",
+        "json",
+        "numpy",
+        "pathlib",
+        "sys",
+        "xml.etree.ElementTree"
+      ],
+      "definitions": [
+        {
+          "name": "main",
+          "line": 18,
+          "kind": "FunctionDef"
+        }
+      ],
+      "rust_target": "migration/research/operations CLI (original retained as evidence)",
+      "status": "PENDING"
+    },
+    {
+      "path": "scripts/audit-phase8-evidence.py",
+      "sha256": "86b81bf82aedddcd4ce2b49bcc089a4167f33ef7fb877edc5c40e92622a32913",
+      "lines": 110,
+      "test": false,
+      "imports": [
+        "chart_intelligence",
+        "chart_intelligence.phase8",
+        "chart_intelligence.phase8_evidence",
+        "datetime",
+        "json",
+        "numpy",
+        "pathlib",
+        "sys",
+        "xml.etree.ElementTree"
+      ],
+      "definitions": [
+        {
+          "name": "main",
+          "line": 18,
+          "kind": "FunctionDef"
+        }
+      ],
+      "rust_target": "migration/research/operations CLI (original retained as evidence)",
+      "status": "PENDING"
+    },
+    {
+      "path": "scripts/audit-rust-migration.py",
+      "sha256": "8881cc806b0d9080069ed560df89be51b3e6cc6ef052cf90ccdfa856fe84c402",
+      "lines": 82,
+      "test": false,
+      "imports": [
+        "ast",
+        "hashlib",
+        "json",
+        "pathlib"
+      ],
+      "definitions": [
+        {
+          "name": "target",
+          "line": 27,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "main",
+          "line": 36,
+          "kind": "FunctionDef"
+        }
+      ],
+      "rust_target": "migration/research/operations CLI (original retained as evidence)",
+      "status": "PENDING"
+    },
+    {
+      "path": "scripts/backup-vps.py",
+      "sha256": "a588e6f92ef63f7afb4f1a1dc962e4080f871d56f65869c93bebd12cd088d0ca",
+      "lines": 54,
+      "test": false,
+      "imports": [
+        "datetime",
+        "json",
+        "opsbackup",
+        "pathlib",
+        "sys",
+        "vps_access"
+      ],
+      "definitions": [
+        {
+          "name": "command",
+          "line": 14,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "main",
+          "line": 22,
+          "kind": "FunctionDef"
+        }
+      ],
+      "rust_target": "migration/research/operations CLI (original retained as evidence)",
+      "status": "PENDING"
+    },
+    {
+      "path": "scripts/backup.py",
+      "sha256": "495e31af4d92fe8c9ef0a4a26117e5abf6c89c531610722affb9aaa3b406b101",
+      "lines": 26,
+      "test": false,
+      "imports": [
+        "argparse",
+        "intelligence.backup",
+        "json",
+        "pathlib",
+        "sys"
+      ],
+      "definitions": [
+        {
+          "name": "main",
+          "line": 13,
+          "kind": "FunctionDef"
+        }
+      ],
+      "rust_target": "migration/research/operations CLI (original retained as evidence)",
+      "status": "PENDING"
+    },
+    {
+      "path": "scripts/bootstrap.py",
+      "sha256": "835a419076a0c8b89f5104e81a6c78e191a80974f7941400b99b163d79782aa6",
+      "lines": 43,
+      "test": false,
+      "imports": [
+        "argon2",
+        "argparse",
+        "pathlib",
+        "secrets"
+      ],
+      "definitions": [
+        {
+          "name": "main",
+          "line": 10,
+          "kind": "FunctionDef"
+        }
+      ],
+      "rust_target": "migration/research/operations CLI (original retained as evidence)",
+      "status": "PENDING"
+    },
+    {
+      "path": "scripts/deploy-paper-learning.py",
+      "sha256": "c09ef8ec48a55b2acc4c09e96294fc3789b456789e8d6fbf83f9b1bfdd2f0493",
+      "lines": 142,
+      "test": false,
+      "imports": [
+        "base64",
+        "hashlib",
+        "io",
+        "json",
+        "pathlib",
+        "shlex",
+        "tarfile",
+        "time",
+        "vps_access",
+        "xml.etree.ElementTree"
+      ],
+      "definitions": [
+        {
+          "name": "command",
+          "line": 24,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "private",
+          "line": 31,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "main",
+          "line": 45,
+          "kind": "FunctionDef"
+        }
+      ],
+      "rust_target": "migration/research/operations CLI (original retained as evidence)",
+      "status": "PENDING"
+    },
+    {
+      "path": "scripts/deploy-paper-web-layout.py",
+      "sha256": "6ee66348a02138f75b2075467048509e917fa0a7dd85083cbcdf0abae17a1daf",
+      "lines": 69,
+      "test": false,
+      "imports": [
+        "hashlib",
+        "io",
+        "json",
+        "pathlib",
+        "shlex",
+        "tarfile",
+        "vps_access"
+      ],
+      "definitions": [
+        {
+          "name": "command",
+          "line": 15,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "main",
+          "line": 22,
+          "kind": "FunctionDef"
+        }
+      ],
+      "rust_target": "migration/research/operations CLI (original retained as evidence)",
+      "status": "PENDING"
+    },
+    {
+      "path": "scripts/diagnose-paper-decisions.py",
+      "sha256": "5b981b95f220233e1bb4eae7c7a24dbebe6723ffd316448ad6f4ce689baeb3ff",
+      "lines": 75,
+      "test": false,
+      "imports": [
+        "collections",
+        "csv",
+        "datetime",
+        "hashlib",
+        "json",
+        "pathlib",
+        "vps_access"
+      ],
+      "definitions": [
+        {
+          "name": "reconstruct",
+          "line": 27,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "main",
+          "line": 48,
+          "kind": "FunctionDef"
+        }
+      ],
+      "rust_target": "migration/research/operations CLI (original retained as evidence)",
+      "status": "PENDING"
+    },
+    {
+      "path": "scripts/enroll-phase7-prospective.py",
+      "sha256": "8f202aa9f3a93e211b280b544875993c83dbb8b09862372e9f29c105b8cfe7ba",
+      "lines": 56,
+      "test": false,
+      "imports": [
+        "chart_intelligence",
+        "chart_intelligence.core",
+        "datetime",
+        "json",
+        "pathlib",
+        "sys"
+      ],
+      "definitions": [
+        {
+          "name": "main",
+          "line": 17,
+          "kind": "FunctionDef"
+        }
+      ],
+      "rust_target": "migration/research/operations CLI (original retained as evidence)",
+      "status": "PENDING"
+    },
+    {
+      "path": "scripts/evaluate-mainkraft-walk-forward.py",
+      "sha256": "8a457e7631fa1f39dd14c095593a3f34d9a68aa0bb4c87fa8e4d911f7cd39f44",
+      "lines": 782,
+      "test": false,
+      "imports": [
+        "collections",
+        "datetime",
+        "gzip",
+        "hashlib",
+        "httpx",
+        "intelligence.calendar",
+        "intelligence.config",
+        "intelligence.providers",
+        "intelligence.util",
+        "json",
+        "numpy",
+        "paperpilot",
+        "paperpilot.intraday",
+        "paperpilot.scan_models",
+        "pathlib",
+        "subprocess",
+        "sys"
+      ],
+      "definitions": [
+        {
+          "name": "snapshot",
+          "line": 63,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "daily_table",
+          "line": 72,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "intraday_table",
+          "line": 82,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "feature_inputs",
+          "line": 102,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "complete_path",
+          "line": 143,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "simulate_session",
+          "line": 153,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "label",
+          "line": 201,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "build_panel",
+          "line": 246,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "news_table",
+          "line": 262,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "predictions",
+          "line": 396,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "forecast_quality",
+          "line": 440,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "OpeningQuotes",
+          "line": 487,
+          "kind": "ClassDef"
+        },
+        {
+          "name": "portfolio",
+          "line": 546,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "compare",
+          "line": 670,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "write_summary",
+          "line": 714,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "__init__",
+          "line": 488,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "spread",
+          "line": 499,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "finish",
+          "line": 536,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "interval",
+          "line": 677,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "change",
+          "line": 680,
+          "kind": "FunctionDef"
+        }
+      ],
+      "rust_target": "migration/research/operations CLI (original retained as evidence)",
+      "status": "PENDING"
+    },
+    {
+      "path": "scripts/evaluate-market-context.py",
+      "sha256": "5900cada7ed8f24d37ae4f2197726ed25b3542addc9bd1860e9a1e9c6e854d54",
+      "lines": 267,
+      "test": false,
+      "imports": [
+        "datetime",
+        "gzip",
+        "hashlib",
+        "intelligence.research",
+        "intelligence.util",
+        "json",
+        "numpy",
+        "paperpilot.engine",
+        "paperpilot.market_context",
+        "pathlib",
+        "sys"
+      ],
+      "definitions": [
+        {
+          "name": "summary",
+          "line": 27,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "main",
+          "line": 44,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "error",
+          "line": 172,
+          "kind": "FunctionDef"
+        }
+      ],
+      "rust_target": "migration/research/operations CLI (original retained as evidence)",
+      "status": "PENDING"
+    },
+    {
+      "path": "scripts/export_phase3.py",
+      "sha256": "45c581aeb0ca066630610e30394bf7d4881d7d941fb820dc2d4632c2cf1d59c1",
+      "lines": 196,
+      "test": false,
+      "imports": [
+        "intelligence.db",
+        "intelligence.phase3_status",
+        "intelligence.research_models",
+        "intelligence.util",
+        "pathlib",
+        "sys"
+      ],
+      "definitions": [
+        {
+          "name": "export",
+          "line": 9,
+          "kind": "FunctionDef"
+        }
+      ],
+      "rust_target": "migration/research/operations CLI (original retained as evidence)",
+      "status": "PENDING"
+    },
+    {
+      "path": "scripts/export_research.py",
+      "sha256": "c84bf4787f3134c79fee172c55407e2574f32bcc65cfadefec81de7f8d550dbd",
+      "lines": 109,
+      "test": false,
+      "imports": [
+        "intelligence.db",
+        "intelligence.util",
+        "json",
+        "pathlib",
+        "sys"
+      ],
+      "definitions": [
+        {
+          "name": "export",
+          "line": 14,
+          "kind": "FunctionDef"
+        }
+      ],
+      "rust_target": "migration/research/operations CLI (original retained as evidence)",
+      "status": "PENDING"
+    },
+    {
+      "path": "scripts/fetch-mainkraft-daily.py",
+      "sha256": "65bf420abd550e476a92bf75e4b1850dc7feb552aca1a71cffff43fb74b55002",
+      "lines": 26,
+      "test": false,
+      "imports": [
+        "datetime",
+        "intelligence.calendar",
+        "intelligence.config",
+        "intelligence.providers",
+        "intelligence.util",
+        "paperpilot.config",
+        "paperpilot.intraday",
+        "pathlib",
+        "sys"
+      ],
+      "definitions": [],
+      "rust_target": "migration/research/operations CLI (original retained as evidence)",
+      "status": "PENDING"
+    },
+    {
+      "path": "scripts/fetch-mainkraft-history.py",
+      "sha256": "8ed8738e1a1a95a686a91fb19609878737dfa7c1200a055097b0b298b8ba16eb",
+      "lines": 25,
+      "test": false,
+      "imports": [
+        "datetime",
+        "intelligence.calendar",
+        "intelligence.util",
+        "paperpilot.config",
+        "paperpilot.intraday",
+        "pathlib",
+        "sys"
+      ],
+      "definitions": [],
+      "rust_target": "migration/research/operations CLI (original retained as evidence)",
+      "status": "PENDING"
+    },
+    {
+      "path": "scripts/fetch-mainkraft-walk-forward.py",
+      "sha256": "a4ecb90516ae8cfabfee781b6638589dec6abad826bc7b770bf2ddf3d36c8c5b",
+      "lines": 253,
+      "test": false,
+      "imports": [
+        "concurrent.futures",
+        "datetime",
+        "httpx",
+        "intelligence.calendar",
+        "intelligence.config",
+        "intelligence.providers",
+        "intelligence.util",
+        "json",
+        "paperpilot",
+        "paperpilot.intraday",
+        "pathlib",
+        "sys",
+        "threading",
+        "time"
+      ],
+      "definitions": [
+        {
+          "name": "request",
+          "line": 94,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "write_record",
+          "line": 115,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "intraday_job",
+          "line": 123,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "daily_job",
+          "line": 140,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "news_job",
+          "line": 163,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "main",
+          "line": 218,
+          "kind": "FunctionDef"
+        }
+      ],
+      "rust_target": "migration/research/operations CLI (original retained as evidence)",
+      "status": "PENDING"
+    },
+    {
+      "path": "scripts/freeze-phase8-boundary.py",
+      "sha256": "2b4acbdbea7fba0a3154c03c25b668368173f6300e91b666d41fa2d22de0addb",
+      "lines": 29,
+      "test": false,
+      "imports": [
+        "chart_intelligence.phase8_evidence",
+        "datetime",
+        "json",
+        "pathlib",
+        "sys"
+      ],
+      "definitions": [],
+      "rust_target": "migration/research/operations CLI (original retained as evidence)",
+      "status": "PENDING"
+    },
+    {
+      "path": "scripts/monitor-chart-research.py",
+      "sha256": "cd07de565cff7a16e9330256b28db037950064df904bc1c9955e6fbdd577eb13",
+      "lines": 37,
+      "test": false,
+      "imports": [
+        "argparse",
+        "chart_intelligence",
+        "chart_intelligence.controller",
+        "pathlib",
+        "sys",
+        "time"
+      ],
+      "definitions": [
+        {
+          "name": "main",
+          "line": 14,
+          "kind": "FunctionDef"
+        }
+      ],
+      "rust_target": "migration/research/operations CLI (original retained as evidence)",
+      "status": "PENDING"
+    },
+    {
+      "path": "scripts/observe-phase7-paper.py",
+      "sha256": "9bf92c308c01f184f00f1f0146c0ad6a90543a858f3fe27ab0308dc5fdce797c",
+      "lines": 41,
+      "test": false,
+      "imports": [
+        "datetime",
+        "json",
+        "pathlib",
+        "vps_access"
+      ],
+      "definitions": [
+        {
+          "name": "main",
+          "line": 17,
+          "kind": "FunctionDef"
+        }
+      ],
+      "rust_target": "migration/research/operations CLI (original retained as evidence)",
+      "status": "PENDING"
+    },
+    {
+      "path": "scripts/persist-paper-learning-defaults.py",
+      "sha256": "3e41b10cd361b1d37582b82f3293d1d745cdab305e37f0c17bb63f1113beec29",
+      "lines": 59,
+      "test": false,
+      "imports": [
+        "json",
+        "pathlib",
+        "shlex",
+        "vps_access"
+      ],
+      "definitions": [],
+      "rust_target": "migration/research/operations CLI (original retained as evidence)",
+      "status": "PENDING"
+    },
+    {
+      "path": "scripts/phase8-quote-audit.py",
+      "sha256": "6dd243738fe3f4bdf263dac64d3498485f675d559a723b4c3551989de5653fac",
+      "lines": 73,
+      "test": false,
+      "imports": [
+        "chart_intelligence.phase8_evidence",
+        "datetime",
+        "json",
+        "numpy",
+        "pathlib",
+        "sqlite3",
+        "sys"
+      ],
+      "definitions": [],
+      "rust_target": "migration/research/operations CLI (original retained as evidence)",
+      "status": "PENDING"
+    },
+    {
+      "path": "scripts/preflight.py",
+      "sha256": "5a1126eef0dd525d93e6fc904afa887fb5492b9857e9d640c246a8f00098a513",
+      "lines": 75,
+      "test": false,
+      "imports": [
+        "argparse",
+        "json",
+        "pathlib",
+        "shutil"
+      ],
+      "definitions": [
+        {
+          "name": "check_budget",
+          "line": 9,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "protected",
+          "line": 23,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "main",
+          "line": 31,
+          "kind": "FunctionDef"
+        }
+      ],
+      "rust_target": "migration/research/operations CLI (original retained as evidence)",
+      "status": "PENDING"
+    },
+    {
+      "path": "scripts/report-mainkraft-strategy-lab.py",
+      "sha256": "46c3e4658fc2e09a5dfa86a38b245c3145a1fb19bba209a39aaf982cf8ac6975",
+      "lines": 118,
+      "test": false,
+      "imports": [
+        "paperpilot.lab_registry",
+        "pathlib",
+        "sys"
+      ],
+      "definitions": [
+        {
+          "name": "main",
+          "line": 10,
+          "kind": "FunctionDef"
+        }
+      ],
+      "rust_target": "migration/research/operations CLI (original retained as evidence)",
+      "status": "PENDING"
+    },
+    {
+      "path": "scripts/report-phase7.py",
+      "sha256": "758065b122b59b6f6a46304170dee00948dc1d9ae1c41a9fa2a16f7026f223d4",
+      "lines": 92,
+      "test": false,
+      "imports": [
+        "chart_intelligence",
+        "chart_intelligence.controller",
+        "chart_intelligence.phase7_accounting",
+        "datetime",
+        "json",
+        "pathlib",
+        "sys"
+      ],
+      "definitions": [
+        {
+          "name": "main",
+          "line": 15,
+          "kind": "FunctionDef"
+        }
+      ],
+      "rust_target": "migration/research/operations CLI (original retained as evidence)",
+      "status": "PENDING"
+    },
+    {
+      "path": "scripts/report-phase8.py",
+      "sha256": "b55ac04c97da064f6a379a97d246c4bb60f9ca2e6e082f32c19ccf45303b158c",
+      "lines": 207,
+      "test": false,
+      "imports": [
+        "chart_intelligence",
+        "chart_intelligence.core",
+        "chart_intelligence.horizon_forward",
+        "chart_intelligence.phase8_accounting",
+        "chart_intelligence.phase8_evidence",
+        "datetime",
+        "gzip",
+        "intelligence.util",
+        "json",
+        "pathlib",
+        "sys"
+      ],
+      "definitions": [
+        {
+          "name": "main",
+          "line": 19,
+          "kind": "FunctionDef"
+        }
+      ],
+      "rust_target": "migration/research/operations CLI (original retained as evidence)",
+      "status": "PENDING"
+    },
+    {
+      "path": "scripts/run-chart-research.py",
+      "sha256": "1ac61568c6d6df5f4c77e90dce2e25f72678455b312f8dcffef01979b65c2088",
+      "lines": 88,
+      "test": false,
+      "imports": [
+        "argparse",
+        "chart_intelligence",
+        "chart_intelligence.core",
+        "gzip",
+        "intelligence.util",
+        "json",
+        "pathlib",
+        "sys"
+      ],
+      "definitions": [
+        {
+          "name": "main",
+          "line": 16,
+          "kind": "FunctionDef"
+        }
+      ],
+      "rust_target": "migration/research/operations CLI (original retained as evidence)",
+      "status": "PENDING"
+    },
+    {
+      "path": "scripts/run-mainkraft-strategy-lab.py",
+      "sha256": "17dc038c47a7c0974e62950b4340d3e2eabf29921901575443a5da2f264ec051",
+      "lines": 370,
+      "test": false,
+      "imports": [
+        "dataclasses",
+        "datetime",
+        "gzip",
+        "hashlib",
+        "importlib.util",
+        "intelligence.calendar",
+        "intelligence.util",
+        "json",
+        "numpy",
+        "paperpilot",
+        "paperpilot.simulation_rules",
+        "paperpilot.strategy_lab",
+        "pathlib",
+        "sys",
+        "time"
+      ],
+      "definitions": [
+        {
+          "name": "interval",
+          "line": 35,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "main",
+          "line": 47,
+          "kind": "FunctionDef"
+        }
+      ],
+      "rust_target": "migration/research/operations CLI (original retained as evidence)",
+      "status": "PENDING"
+    },
+    {
+      "path": "scripts/run-phase7-research.py",
+      "sha256": "cc91dee16299e84223c1d38f126ed016d2d172a5688ca6bee59a92d122f61437",
+      "lines": 273,
+      "test": false,
+      "imports": [
+        "chart_intelligence",
+        "chart_intelligence.core",
+        "chart_intelligence.phase7",
+        "chart_intelligence.phase7_execution",
+        "datetime",
+        "gzip",
+        "intelligence.util",
+        "json",
+        "pathlib",
+        "sys"
+      ],
+      "definitions": [
+        {
+          "name": "main",
+          "line": 29,
+          "kind": "FunctionDef"
+        }
+      ],
+      "rust_target": "migration/research/operations CLI (original retained as evidence)",
+      "status": "PENDING"
+    },
+    {
+      "path": "scripts/run-phase8-research.py",
+      "sha256": "91d003f62555ca7b05d2f6c9216e4edfe4761ae4c83ecf73483129c0d8a74da1",
+      "lines": 297,
+      "test": false,
+      "imports": [
+        "chart_intelligence",
+        "chart_intelligence.core",
+        "chart_intelligence.phase7",
+        "chart_intelligence.phase8",
+        "chart_intelligence.phase8_evidence",
+        "chart_intelligence.phase8_execution",
+        "datetime",
+        "gzip",
+        "intelligence.util",
+        "json",
+        "pathlib",
+        "sys"
+      ],
+      "definitions": [
+        {
+          "name": "main",
+          "line": 32,
+          "kind": "FunctionDef"
+        }
+      ],
+      "rust_target": "migration/research/operations CLI (original retained as evidence)",
+      "status": "PENDING"
+    },
+    {
+      "path": "scripts/train-mainkraft.py",
+      "sha256": "bf14e6c612be1b920dab5b73be2c03719f2f5ee56633a151557b4380934f743d",
+      "lines": 236,
+      "test": false,
+      "imports": [
+        "datetime",
+        "gzip",
+        "intelligence.calendar",
+        "intelligence.portable_models",
+        "intelligence.util",
+        "json",
+        "numpy",
+        "optuna",
+        "paperpilot.config",
+        "paperpilot.intraday",
+        "paperpilot.strategy",
+        "pathlib",
+        "sys",
+        "threadpoolctl"
+      ],
+      "definitions": [
+        {
+          "name": "load_evidence",
+          "line": 26,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "save",
+          "line": 38,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "interval",
+          "line": 45,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "summarize",
+          "line": 56,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "by_date",
+          "line": 71,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "params",
+          "line": 78,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "research",
+          "line": 89,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "main",
+          "line": 207,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "label",
+          "line": 99,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "objective",
+          "line": 136,
+          "kind": "FunctionDef"
+        }
+      ],
+      "rust_target": "migration/research/operations CLI (original retained as evidence)",
+      "status": "PENDING"
+    },
+    {
+      "path": "scripts/vps_access.py",
+      "sha256": "47b109e3be0d6892687decef3ff3a4be408c71a628d6e8d1bd1df4cdd1e72a3b",
+      "lines": 37,
+      "test": false,
+      "imports": [
+        "getpass",
+        "json",
+        "os",
+        "paramiko",
+        "pathlib",
+        "sys"
+      ],
+      "definitions": [
+        {
+          "name": "connect",
+          "line": 14,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "run",
+          "line": 27,
+          "kind": "FunctionDef"
+        }
+      ],
+      "rust_target": "migration/research/operations CLI (original retained as evidence)",
+      "status": "PENDING"
+    },
+    {
+      "path": "scripts/watch-phase8.py",
+      "sha256": "7cf55646fd1f316d4582c5582930a35548ff6a0d8d02fe609ef5a04fe3c32600",
+      "lines": 103,
+      "test": false,
+      "imports": [
+        "argparse",
+        "chart_intelligence",
+        "chart_intelligence.core",
+        "chart_intelligence.horizon_forward",
+        "chart_intelligence.phase8_evidence",
+        "datetime",
+        "httpx",
+        "json",
+        "pathlib",
+        "shutil",
+        "sqlite3",
+        "sys",
+        "time"
+      ],
+      "definitions": [
+        {
+          "name": "enroll",
+          "line": 21,
+          "kind": "FunctionDef"
+        },
+        {
+          "name": "main",
+          "line": 58,
+          "kind": "FunctionDef"
+        }
+      ],
+      "rust_target": "migration/research/operations CLI (original retained as evidence)",
+      "status": "PENDING"
+    }
+  ],
+  "routes": [
+    {
+      "module": "apps/api/chart_intelligence/api.py",
+      "method": "GET",
+      "path": "/v1/chart-intelligence/phase7",
+      "handler": "phase7_status",
+      "line": 14
+    },
+    {
+      "module": "apps/api/chart_intelligence/api.py",
+      "method": "GET",
+      "path": "/v1/chart-intelligence/status",
+      "handler": "research_status",
+      "line": 43
+    },
+    {
+      "module": "apps/api/intelligence/lab_api.py",
+      "method": "GET",
+      "path": "/v1/research-lab/results",
+      "handler": "results",
+      "line": 12
+    },
+    {
+      "module": "apps/api/intelligence/main.py",
+      "method": "GET",
+      "path": "/health",
+      "handler": "health",
+      "line": 71
+    },
+    {
+      "module": "apps/api/intelligence/main.py",
+      "method": "POST",
+      "path": "/v1/auth/login",
+      "handler": "sign_in",
+      "line": 83
+    },
+    {
+      "module": "apps/api/intelligence/main.py",
+      "method": "GET",
+      "path": "/v1/auth/session",
+      "handler": "auth_session",
+      "line": 101
+    },
+    {
+      "module": "apps/api/intelligence/main.py",
+      "method": "POST",
+      "path": "/v1/auth/logout",
+      "handler": "logout",
+      "line": 106
+    },
+    {
+      "module": "apps/api/intelligence/main.py",
+      "method": "GET",
+      "path": "/v1/workspace",
+      "handler": "workspace",
+      "line": 120
+    },
+    {
+      "module": "apps/api/intelligence/main.py",
+      "method": "PUT",
+      "path": "/v1/watchlist",
+      "handler": "update_watchlist",
+      "line": 173
+    },
+    {
+      "module": "apps/api/intelligence/main.py",
+      "method": "GET",
+      "path": "/v1/companies/{symbol}",
+      "handler": "company",
+      "line": 190
+    },
+    {
+      "module": "apps/api/intelligence/main.py",
+      "method": "GET",
+      "path": "/v1/forecasts",
+      "handler": "forecasts",
+      "line": 256
+    },
+    {
+      "module": "apps/api/intelligence/main.py",
+      "method": "GET",
+      "path": "/v1/detections/{detection_id}/chart",
+      "handler": "detection_chart",
+      "line": 264
+    },
+    {
+      "module": "apps/api/intelligence/main.py",
+      "method": "GET",
+      "path": "/v1/models/performance",
+      "handler": "performance",
+      "line": 298
+    },
+    {
+      "module": "apps/api/intelligence/main.py",
+      "method": "GET",
+      "path": "/v1/research",
+      "handler": "research_ledger",
+      "line": 312
+    },
+    {
+      "module": "apps/api/intelligence/main.py",
+      "method": "GET",
+      "path": "/v1/research/experiments/{experiment_id}/predictions",
+      "handler": "experiment_predictions",
+      "line": 327
+    },
+    {
+      "module": "apps/api/intelligence/main.py",
+      "method": "GET",
+      "path": "/v1/monitor",
+      "handler": "monitoring",
+      "line": 355
+    },
+    {
+      "module": "apps/api/intelligence/main.py",
+      "method": "GET",
+      "path": "/v1/phase3",
+      "handler": "phase3",
+      "line": 362
+    },
+    {
+      "module": "apps/api/intelligence/main.py",
+      "method": "GET",
+      "path": "/v1/phase3/predictions/{result_id}",
+      "handler": "phase3_predictions",
+      "line": 371
+    },
+    {
+      "module": "apps/api/intelligence/main.py",
+      "method": "GET",
+      "path": "/v1/companies/{symbol}/chart",
+      "handler": "chart_input",
+      "line": 382
+    },
+    {
+      "module": "apps/api/intelligence/main.py",
+      "method": "POST",
+      "path": "/v1/jobs",
+      "handler": "new_job",
+      "line": 401
+    },
+    {
+      "module": "apps/api/intelligence/main.py",
+      "method": "GET",
+      "path": "/v1/jobs/{job_id}",
+      "handler": "job",
+      "line": 444
+    },
+    {
+      "module": "apps/api/intelligence/paper_bridge.py",
+      "method": "GET",
+      "path": "/v1/paper/status",
+      "handler": "status",
+      "line": 27
+    },
+    {
+      "module": "apps/api/intelligence/paper_bridge.py",
+      "method": "GET",
+      "path": "/v1/paper/daily-report",
+      "handler": "daily_report",
+      "line": 40
+    },
+    {
+      "module": "apps/api/intelligence/paper_bridge.py",
+      "method": "GET",
+      "path": "/v1/paper/decision-traces",
+      "handler": "decision_traces",
+      "line": 58
+    },
+    {
+      "module": "apps/api/intelligence/paper_bridge.py",
+      "method": "POST",
+      "path": "/v1/paper/control",
+      "handler": "control",
+      "line": 69
+    },
+    {
+      "module": "apps/api/intelligence/paper_bridge.py",
+      "method": "GET",
+      "path": "/v1/paper/events",
+      "handler": "events",
+      "line": 85
+    },
+    {
+      "module": "apps/api/paperpilot/challenger.py",
+      "method": "GET",
+      "path": "/health",
+      "handler": "health",
+      "line": 30
+    },
+    {
+      "module": "apps/api/paperpilot/challenger.py",
+      "method": "POST",
+      "path": "/score",
+      "handler": "score",
+      "line": 35
+    },
+    {
+      "module": "apps/api/paperpilot/service.py",
+      "method": "GET",
+      "path": "/health",
+      "handler": "health",
+      "line": 197
+    },
+    {
+      "module": "apps/api/paperpilot/service.py",
+      "method": "GET",
+      "path": "/daily-report",
+      "handler": "daily_report",
+      "line": 202
+    },
+    {
+      "module": "apps/api/paperpilot/service.py",
+      "method": "GET",
+      "path": "/decision-traces",
+      "handler": "decision_traces",
+      "line": 213
+    },
+    {
+      "module": "apps/api/paperpilot/service.py",
+      "method": "GET",
+      "path": "/status",
+      "handler": "status",
+      "line": 218
+    },
+    {
+      "module": "apps/api/paperpilot/service.py",
+      "method": "POST",
+      "path": "/control",
+      "handler": "control",
+      "line": 403
+    },
+    {
+      "module": "apps/api/paperpilot/service.py",
+      "method": "GET",
+      "path": "/events",
+      "handler": "events",
+      "line": 434
+    },
+    {
+      "module": "workers/sentiment/app.py",
+      "method": "GET",
+      "path": "/health",
+      "handler": "health",
+      "line": 52
+    },
+    {
+      "module": "workers/sentiment/app.py",
+      "method": "POST",
+      "path": "/score",
+      "handler": "score",
+      "line": 61
+    }
+  ],
+  "schemas": {
+    "database/migrations/001_foundation.sql": "14d5cfbf4713a485c7fa311575ae8287f827dfb1eb4062c217d7aac66542e086",
+    "database/migrations/002_scheduler.sql": "9320060ecb393f86ed9c937c75dfde9394cbdefb15ba0be6ad0d0623db908a76",
+    "database/migrations/003_evaluation_identity.sql": "7e29ac1dca88795c503dc387f9b40dd4b2a12d2eda5eb9311083c96d60c79149",
+    "database/migrations/004_research_ledger.sql": "81715832a939650ad1abe2f1a695fc5f8b6dfb83258eb109b2785299dfa0e8eb",
+    "database/migrations/005_price_snapshot_semantics.sql": "9fef1d5a6ff0bc5f5dd20a3ef69623645236b3692c9bd79e81001bd14b725484",
+    "database/migrations/006_phase3.sql": "e80b76f49083eb684898440897befbbcf2ac3faefdb54907f4979c0660ca8401",
+    "apps/api/paperpilot/schema.sql": "2fa76566cac47706eaa2f18c49ec4332b8162bd2256b8efa767c3c9ad7e08f66"
+  },
+  "total_python_lines": 23461,
+  "migration_complete": false
+}

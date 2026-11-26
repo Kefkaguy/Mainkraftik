@@ -1,0 +1,4035 @@
+{
+  "boundaries": {
+    "calibration_end_exclusive": "2025-11-10",
+    "calibration_start": "2024-11-18",
+    "evaluation_end_inclusive": "2026-11-13",
+    "evaluation_start": "2025-11-17",
+    "exchange_sessions": 1246,
+    "purge_sessions": 5,
+    "shared_dates": 1246,
+    "train_end_exclusive": "2024-11-11",
+    "training_start": "2021-11-29"
+  },
+  "comparisons": [
+    {
+      "baseline": "mean_available",
+      "exploratory_comparison_result": "failed",
+      "horizon": 1,
+      "interval": {
+        "block_sessions": 20,
+        "confidence": 0.9875,
+        "distinct_dates": 249,
+        "lower": -0.00051637091251879,
+        "mean_improvement": -0.0003584384059866347,
+        "samples": 2000,
+        "upper": -0.0001240964296346842
+      },
+      "loss": "mae",
+      "primary": true,
+      "validated": false
+    },
+    {
+      "baseline": "mean_available",
+      "exploratory_comparison_result": "inconclusive",
+      "horizon": 1,
+      "interval": {
+        "block_sessions": 20,
+        "confidence": 0.9875,
+        "distinct_dates": 249,
+        "lower": -0.0019121442213967117,
+        "mean_improvement": -0.0004808019936384079,
+        "samples": 2000,
+        "upper": 0.00137255270777631
+      },
+      "loss": "brier",
+      "primary": true,
+      "validated": false
+    },
+    {
+      "baseline": "technical14",
+      "exploratory_comparison_result": "inconclusive",
+      "horizon": 1,
+      "interval": {
+        "block_sessions": 20,
+        "confidence": 0.9875,
+        "distinct_dates": 249,
+        "lower": -0.0001498881321726922,
+        "mean_improvement": -6.708423584668816e-05,
+        "samples": 2000,
+        "upper": 4.334221993058226e-05
+      },
+      "loss": "mae",
+      "primary": false,
+      "validated": false
+    },
+    {
+      "baseline": "technical14",
+      "exploratory_comparison_result": "inconclusive",
+      "horizon": 1,
+      "interval": {
+        "block_sessions": 20,
+        "confidence": 0.9875,
+        "distinct_dates": 249,
+        "lower": -0.0003954870769737449,
+        "mean_improvement": 0.00020631628057955648,
+        "samples": 2000,
+        "upper": 0.000842013960851441
+      },
+      "loss": "brier",
+      "primary": false,
+      "validated": false
+    },
+    {
+      "baseline": "mean_available",
+      "exploratory_comparison_result": "failed",
+      "horizon": 5,
+      "interval": {
+        "block_sessions": 20,
+        "confidence": 0.9875,
+        "distinct_dates": 245,
+        "lower": -0.004630321626644776,
+        "mean_improvement": -0.0029926811253319805,
+        "samples": 2000,
+        "upper": -0.0015645959807007277
+      },
+      "loss": "mae",
+      "primary": true,
+      "validated": false
+    },
+    {
+      "baseline": "mean_available",
+      "exploratory_comparison_result": "inconclusive",
+      "horizon": 5,
+      "interval": {
+        "block_sessions": 20,
+        "confidence": 0.9875,
+        "distinct_dates": 245,
+        "lower": -0.007742977006958131,
+        "mean_improvement": -0.0019099522700433483,
+        "samples": 2000,
+        "upper": 0.00496443580532401
+      },
+      "loss": "brier",
+      "primary": true,
+      "validated": false
+    },
+    {
+      "baseline": "technical14",
+      "exploratory_comparison_result": "inconclusive",
+      "horizon": 5,
+      "interval": {
+        "block_sessions": 20,
+        "confidence": 0.9875,
+        "distinct_dates": 245,
+        "lower": -0.0009080353439235468,
+        "mean_improvement": -0.0003280168097936704,
+        "samples": 2000,
+        "upper": 0.00039515263435168795
+      },
+      "loss": "mae",
+      "primary": false,
+      "validated": false
+    },
+    {
+      "baseline": "technical14",
+      "exploratory_comparison_result": "inconclusive",
+      "horizon": 5,
+      "interval": {
+        "block_sessions": 20,
+        "confidence": 0.9875,
+        "distinct_dates": 245,
+        "lower": -0.005090197096232896,
+        "mean_improvement": -0.0012816589477582553,
+        "samples": 2000,
+        "upper": 0.001639191303561115
+      },
+      "loss": "brier",
+      "primary": false,
+      "validated": false
+    }
+  ],
+  "completed_at": "2026-11-16T00:52:17.998163+00:00",
+  "context_snapshot_sha256": "3f94af3e3b33abda0afee63a9ac4e4b52816f73204e988b3a481dde3e4f97e89",
+  "exclusions": [
+    {
+      "reason": "No mature price history",
+      "symbol": "CBRS"
+    },
+    {
+      "reason": "No mature price history",
+      "symbol": "SPCX"
+    },
+    {
+      "reason": "stock: Missing exchange sessions; data is not interpolated",
+      "symbol": "NBIS"
+    }
+  ],
+  "execution_authority": "none",
+  "experiment_hash": "ca42732f0508168303d8dc3e269dc8b079c60dddc1a4a040873d8bf84c2a549e",
+  "fee_sensitivity": [
+    {
+      "horizon": 1,
+      "limitation": "Price-only descriptive target returns; no historical news replay, fills, stop/take-profit, costs or execution backtest",
+      "mean_target_return_minus_cost": null,
+      "model": "technical14",
+      "planning_cost_bps": 0,
+      "qualifying_rows": 0
+    },
+    {
+      "horizon": 1,
+      "limitation": "Price-only descriptive target returns; no historical news replay, fills, stop/take-profit, costs or execution backtest",
+      "mean_target_return_minus_cost": null,
+      "model": "technical14",
+      "planning_cost_bps": 10,
+      "qualifying_rows": 0
+    },
+    {
+      "horizon": 1,
+      "limitation": "Price-only descriptive target returns; no historical news replay, fills, stop/take-profit, costs or execution backtest",
+      "mean_target_return_minus_cost": null,
+      "model": "technical14",
+      "planning_cost_bps": 25,
+      "qualifying_rows": 0
+    },
+    {
+      "horizon": 1,
+      "limitation": "Price-only descriptive target returns; no historical news replay, fills, stop/take-profit, costs or execution backtest",
+      "mean_target_return_minus_cost": null,
+      "model": "technical14",
+      "planning_cost_bps": 50,
+      "qualifying_rows": 0
+    },
+    {
+      "horizon": 1,
+      "limitation": "Price-only descriptive target returns; no historical news replay, fills, stop/take-profit, costs or execution backtest",
+      "mean_target_return_minus_cost": null,
+      "model": "market20",
+      "planning_cost_bps": 0,
+      "qualifying_rows": 0
+    },
+    {
+      "horizon": 1,
+      "limitation": "Price-only descriptive target returns; no historical news replay, fills, stop/take-profit, costs or execution backtest",
+      "mean_target_return_minus_cost": null,
+      "model": "market20",
+      "planning_cost_bps": 10,
+      "qualifying_rows": 0
+    },
+    {
+      "horizon": 1,
+      "limitation": "Price-only descriptive target returns; no historical news replay, fills, stop/take-profit, costs or execution backtest",
+      "mean_target_return_minus_cost": null,
+      "model": "market20",
+      "planning_cost_bps": 25,
+      "qualifying_rows": 0
+    },
+    {
+      "horizon": 1,
+      "limitation": "Price-only descriptive target returns; no historical news replay, fills, stop/take-profit, costs or execution backtest",
+      "mean_target_return_minus_cost": null,
+      "model": "market20",
+      "planning_cost_bps": 50,
+      "qualifying_rows": 0
+    },
+    {
+      "horizon": 5,
+      "limitation": "Price-only descriptive target returns; no historical news replay, fills, stop/take-profit, costs or execution backtest",
+      "mean_target_return_minus_cost": null,
+      "model": "technical14",
+      "planning_cost_bps": 0,
+      "qualifying_rows": 0
+    },
+    {
+      "horizon": 5,
+      "limitation": "Price-only descriptive target returns; no historical news replay, fills, stop/take-profit, costs or execution backtest",
+      "mean_target_return_minus_cost": null,
+      "model": "technical14",
+      "planning_cost_bps": 10,
+      "qualifying_rows": 0
+    },
+    {
+      "horizon": 5,
+      "limitation": "Price-only descriptive target returns; no historical news replay, fills, stop/take-profit, costs or execution backtest",
+      "mean_target_return_minus_cost": null,
+      "model": "technical14",
+      "planning_cost_bps": 25,
+      "qualifying_rows": 0
+    },
+    {
+      "horizon": 5,
+      "limitation": "Price-only descriptive target returns; no historical news replay, fills, stop/take-profit, costs or execution backtest",
+      "mean_target_return_minus_cost": null,
+      "model": "technical14",
+      "planning_cost_bps": 50,
+      "qualifying_rows": 0
+    },
+    {
+      "horizon": 5,
+      "limitation": "Price-only descriptive target returns; no historical news replay, fills, stop/take-profit, costs or execution backtest",
+      "mean_target_return_minus_cost": -0.0014448316179602294,
+      "model": "market20",
+      "planning_cost_bps": 0,
+      "qualifying_rows": 10
+    },
+    {
+      "horizon": 5,
+      "limitation": "Price-only descriptive target returns; no historical news replay, fills, stop/take-profit, costs or execution backtest",
+      "mean_target_return_minus_cost": -0.0024448316179602305,
+      "model": "market20",
+      "planning_cost_bps": 10,
+      "qualifying_rows": 10
+    },
+    {
+      "horizon": 5,
+      "limitation": "Price-only descriptive target returns; no historical news replay, fills, stop/take-profit, costs or execution backtest",
+      "mean_target_return_minus_cost": -0.00394483161796023,
+      "model": "market20",
+      "planning_cost_bps": 25,
+      "qualifying_rows": 10
+    },
+    {
+      "horizon": 5,
+      "limitation": "Price-only descriptive target returns; no historical news replay, fills, stop/take-profit, costs or execution backtest",
+      "mean_target_return_minus_cost": -0.006444831617960228,
+      "model": "market20",
+      "planning_cost_bps": 50,
+      "qualifying_rows": 10
+    }
+  ],
+  "fits": 68,
+  "metrics": [
+    {
+      "brier": 0.2508021231456635,
+      "by_stock": {
+        "AAPL": {
+          "brier": 0.2486031994237731,
+          "calibration": [
+            {
+              "count": 249,
+              "lower": 0.5,
+              "observed": 0.5381526104417671,
+              "predicted": 0.545822102425876
+            }
+          ],
+          "distinct_dates": 249,
+          "interval_coverage": 0.8032128514056225,
+          "log_loss": 0.6903516368107628,
+          "mae": 0.010213769899514957,
+          "observations": 249
+        },
+        "AMZN": {
+          "brier": 0.25,
+          "calibration": [
+            {
+              "count": 249,
+              "lower": 0.5,
+              "observed": 0.4939759036144578,
+              "predicted": 0.5
+            }
+          ],
+          "distinct_dates": 249,
+          "interval_coverage": 0.8714859437751004,
+          "log_loss": 0.6931471805599454,
+          "mae": 0.011991583615603842,
+          "observations": 249
+        },
+        "BKNG": {
+          "brier": 0.2522786053434099,
+          "calibration": [
+            {
+              "count": 249,
+              "lower": 0.5,
+              "observed": 0.4738955823293173,
+              "predicted": 0.5283018867924528
+            }
+          ],
+          "distinct_dates": 249,
+          "interval_coverage": 0.7550200803212851,
+          "log_loss": 0.6977101253657428,
+          "mae": 0.01571223542239167,
+          "observations": 249
+        },
+        "DAL": {
+          "brier": 0.25264119810662794,
+          "calibration": [
+            {
+              "count": 249,
+              "lower": 0.5,
+              "observed": 0.4538152610441767,
+              "predicted": 0.522911051212938
+            }
+          ],
+          "distinct_dates": 249,
+          "interval_coverage": 0.7550200803212851,
+          "log_loss": 0.6984336465263233,
+          "mae": 0.0159059253463622,
+          "observations": 249
+        },
+        "GOOG": {
+          "brier": 0.24984856711667322,
+          "calibration": [
+            {
+              "count": 249,
+              "lower": 0.5,
+              "observed": 0.5220883534136547,
+              "predicted": 0.5404312668463612
+            }
+          ],
+          "distinct_dates": 249,
+          "interval_coverage": 0.8192771084337349,
+          "log_loss": 0.6928472337433141,
+          "mae": 0.012210442721017917,
+          "observations": 249
+        },
+        "GOOGL": {
+          "brier": 0.2502427594584351,
+          "calibration": [
+            {
+              "count": 249,
+              "lower": 0.5,
+              "observed": 0.5140562248995983,
+              "predicted": 0.5350404312668463
+            }
+          ],
+          "distinct_dates": 249,
+          "interval_coverage": 0.8072289156626506,
+          "log_loss": 0.6936355146984852,
+          "mae": 0.012323949154714,
+          "observations": 249
+        },
+        "HD": {
+          "brier": 0.2509759980630596,
+          "calibration": [
+            {
+              "count": 249,
+              "lower": 0.5,
+              "observed": 0.4779116465863454,
+              "predicted": 0.5161725067385444
+            }
+          ],
+          "distinct_dates": 249,
+          "interval_coverage": 0.7670682730923695,
+          "log_loss": 0.6950999491273279,
+          "mae": 0.011438969459040757,
+          "observations": 249
+        },
+        "HOOD": {
+          "brier": 0.2506365360162688,
+          "calibration": [
+            {
+              "count": 249,
+              "lower": 0.5,
+              "observed": 0.4859437751004016,
+              "predicted": 0.5148247978436657
+            }
+          ],
+          "distinct_dates": 249,
+          "interval_coverage": 0.7590361445783133,
+          "log_loss": 0.6944206902878002,
+          "mae": 0.02647783671411304,
+          "observations": 249
+        },
+        "LHX": {
+          "brier": 0.2506137189614015,
+          "calibration": [
+            {
+              "count": 249,
+              "lower": 0.5,
+              "observed": 0.4578313253012048,
+              "predicted": 0.5067385444743934
+            }
+          ],
+          "distinct_dates": 249,
+          "interval_coverage": 0.6827309236947792,
+          "log_loss": 0.6943746955543988,
+          "mae": 0.011947388348740366,
+          "observations": 249
+        },
+        "LOW": {
+          "brier": 0.2519925751786215,
+          "calibration": [
+            {
+              "count": 249,
+              "lower": 0.5,
+              "observed": 0.4738955823293173,
+              "predicted": 0.5256064690026953
+            }
+          ],
+          "distinct_dates": 249,
+          "interval_coverage": 0.7349397590361446,
+          "log_loss": 0.6971363948945034,
+          "mae": 0.012065615155055706,
+          "observations": 249
+        },
+        "NVDA": {
+          "brier": 0.252273149091159,
+          "calibration": [
+            {
+              "count": 249,
+              "lower": 0.5,
+              "observed": 0.46184738955823296,
+              "predicted": 0.522911051212938
+            }
+          ],
+          "distinct_dates": 249,
+          "interval_coverage": 0.9236947791164659,
+          "log_loss": 0.6976970326589378,
+          "mae": 0.015617049471484094,
+          "observations": 249
+        },
+        "PANW": {
+          "brier": 0.2502365956440608,
+          "calibration": [
+            {
+              "count": 249,
+              "lower": 0.5,
+              "observed": 0.5020080321285141,
+              "predicted": 0.5175202156334233
+            }
+          ],
+          "distinct_dates": 249,
+          "interval_coverage": 0.6546184738955824,
+          "log_loss": 0.6936206914117472,
+          "mae": 0.02178857341641098,
+          "observations": 249
+        },
+        "TSLA": {
+          "brier": 0.24997475389165735,
+          "calibration": [
+            {
+              "count": 249,
+              "lower": 0.5,
+              "observed": 0.5100401606425703,
+              "predicted": 0.5013477088948787
+            }
+          ],
+          "distinct_dates": 249,
+          "interval_coverage": 0.9357429718875502,
+          "log_loss": 0.6930966882253783,
+          "mae": 0.017495398212732514,
+          "observations": 249
+        },
+        "TWST": {
+          "brier": 0.2515966321676882,
+          "calibration": [
+            {
+              "count": 249,
+              "lower": 0.4,
+              "observed": 0.5140562248995983,
+              "predicted": 0.47169811320754723
+            }
+          ],
+          "distinct_dates": 249,
+          "interval_coverage": 0.7911646586345381,
+          "log_loss": 0.6963447195186707,
+          "mae": 0.036914396092148215,
+          "observations": 249
+        },
+        "UAL": {
+          "brier": 0.2512357973680965,
+          "calibration": [
+            {
+              "count": 249,
+              "lower": 0.5,
+              "observed": 0.46987951807228917,
+              "predicted": 0.5161725067385444
+            }
+          ],
+          "distinct_dates": 249,
+          "interval_coverage": 0.7630522088353414,
+          "log_loss": 0.6956197290525676,
+          "mae": 0.019215434317327383,
+          "observations": 249
+        },
+        "WMT": {
+          "brier": 0.2496736971498143,
+          "calibration": [
+            {
+              "count": 249,
+              "lower": 0.5,
+              "observed": 0.5180722891566265,
+              "predicted": 0.5175202156334233
+            }
+          ],
+          "distinct_dates": 249,
+          "interval_coverage": 0.5863453815261044,
+          "log_loss": 0.6924944333203893,
+          "mae": 0.011304844977716739,
+          "observations": 249
+        },
+        "YOU": {
+          "brier": 0.25081231049553304,
+          "calibration": [
+            {
+              "count": 249,
+              "lower": 0.5,
+              "observed": 0.4538152610441767,
+              "predicted": 0.5080862533692724
+            }
+          ],
+          "distinct_dates": 249,
+          "interval_coverage": 0.8634538152610441,
+          "log_loss": 0.6947719489149947,
+          "mae": 0.02169570898710008,
+          "observations": 249
+        }
+      },
+      "by_year": {
+        "2025": {
+          "brier": 0.25000516289612806,
+          "calibration": [
+            {
+              "count": 31,
+              "lower": 0.4,
+              "observed": 0.45161290322580644,
+              "predicted": 0.47169811320754695
+            },
+            {
+              "count": 496,
+              "lower": 0.5,
+              "observed": 0.4959677419354839,
+              "predicted": 0.519962938005391
+            }
+          ],
+          "distinct_dates": 31,
+          "interval_coverage": 0.8330170777988615,
+          "log_loss": 0.693159171553196,
+          "mae": 0.013997088006293033,
+          "observations": 527
+        },
+        "2026": {
+          "brier": 0.25091545235545987,
+          "calibration": [
+            {
+              "count": 218,
+              "lower": 0.4,
+              "observed": 0.5229357798165137,
+              "predicted": 0.4716981132075472
+            },
+            {
+              "count": 3488,
+              "lower": 0.5,
+              "observed": 0.4868119266055046,
+              "predicted": 0.5199629380053908
+            }
+          ],
+          "distinct_dates": 218,
+          "interval_coverage": 0.7733405288720993,
+          "log_loss": 0.6949797333914239,
+          "mae": 0.017112519111505856,
+          "observations": 3706
+        }
+      },
+      "calibration": [
+        {
+          "count": 249,
+          "lower": 0.4,
+          "observed": 0.5140562248995983,
+          "predicted": 0.47169811320754723
+        },
+        {
+          "count": 3984,
+          "lower": 0.5,
+          "observed": 0.4879518072289157,
+          "predicted": 0.5199629380053908
+        }
+      ],
+      "distinct_dates": 249,
+      "horizon": 1,
+      "interval_coverage": 0.7807701393810537,
+      "log_loss": 0.6947530770983111,
+      "mae": 0.016724654194792615,
+      "model": "mean_train",
+      "observations": 4233
+    },
+    {
+      "brier": 0.2507625375253171,
+      "by_stock": {
+        "AAPL": {
+          "brier": 0.2485741673952371,
+          "calibration": [
+            {
+              "count": 249,
+              "lower": 0.5,
+              "observed": 0.5381526104417671,
+              "predicted": 0.5436105476673428
+            }
+          ],
+          "distinct_dates": 249,
+          "interval_coverage": 0.8032128514056225,
+          "log_loss": 0.6902931031914328,
+          "mae": 0.0102153625231726,
+          "observations": 249
+        },
+        "AMZN": {
+          "brier": 0.2500868112915106,
+          "calibration": [
+            {
+              "count": 249,
+              "lower": 0.5,
+              "observed": 0.4939759036144578,
+              "predicted": 0.5050709939148073
+            }
+          ],
+          "distinct_dates": 249,
+          "interval_coverage": 0.8433734939759037,
+          "log_loss": 0.6933208099780216,
+          "mae": 0.011992525707383104,
+          "observations": 249
+        },
+        "BKNG": {
+          "brier": 0.2519666279136765,
+          "calibration": [
+            {
+              "count": 249,
+              "lower": 0.5,
+              "observed": 0.4738955823293173,
+              "predicted": 0.5253549695740364
+            }
+          ],
+          "distinct_dates": 249,
+          "interval_coverage": 0.7228915662650602,
+          "log_loss": 0.6970843652378532,
+          "mae": 0.015694908376615534,
+          "observations": 249
+        },
+        "DAL": {
+          "brier": 0.2511549516326232,
+          "calibration": [
+            {
+              "count": 249,
+              "lower": 0.5,
+              "observed": 0.4538152610441767,
+              "predicted": 0.511156186612576
+            }
+          ],
+          "distinct_dates": 249,
+          "interval_coverage": 0.7751004016064257,
+          "log_loss": 0.6954574879241362,
+          "mae": 0.01586370999921756,
+          "observations": 249
+        },
+        "GOOG": {
+          "brier": 0.2500667350185274,
+          "calibration": [
+            {
+              "count": 249,
+              "lower": 0.5,
+              "observed": 0.5220883534136547,
+              "predicted": 0.5456389452332658
+            }
+          ],
+          "distinct_dates": 249,
+          "interval_coverage": 0.8192771084337349,
+          "log_loss": 0.6932868466571929,
+          "mae": 0.012212579737192288,
+          "observations": 249
+        },
+        "GOOGL": {
+          "brier": 0.2504525464571153,
+          "calibration": [
+            {
+              "count": 249,
+              "lower": 0.5,
+              "observed": 0.5140562248995983,
+              "predicted": 0.539553752535497
+            }
+          ],
+          "distinct_dates": 249,
+          "interval_coverage": 0.8112449799196787,
+          "log_loss": 0.6940574485836251,
+          "mae": 0.012322525818262453,
+          "observations": 249
+        },
+        "HD": {
+          "brier": 0.25042426204536317,
+          "calibration": [
+            {
+              "count": 249,
+              "lower": 0.5,
+              "observed": 0.4779116465863454,
+              "predicted": 0.5081135902636918
+            }
+          ],
+          "distinct_dates": 249,
+          "interval_coverage": 0.7630522088353414,
+          "log_loss": 0.6939957849200182,
+          "mae": 0.011429466771695967,
+          "observations": 249
+        },
+        "HOOD": {
+          "brier": 0.2511998960462151,
+          "calibration": [
+            {
+              "count": 249,
+              "lower": 0.5,
+              "observed": 0.4859437751004016,
+              "predicted": 0.5233265720081136
+            }
+          ],
+          "distinct_dates": 249,
+          "interval_coverage": 0.7751004016064257,
+          "log_loss": 0.6955491114484408,
+          "mae": 0.026508707974672648,
+          "observations": 249
+        },
+        "LHX": {
+          "brier": 0.25075010904390493,
+          "calibration": [
+            {
+              "count": 249,
+              "lower": 0.5,
+              "observed": 0.4578313253012048,
+              "predicted": 0.5081135902636918
+            }
+          ],
+          "distinct_dates": 249,
+          "interval_coverage": 0.6827309236947792,
+          "log_loss": 0.6946475361277968,
+          "mae": 0.011954201657143854,
+          "observations": 249
+        },
+        "LOW": {
+          "brier": 0.25137737690885903,
+          "calibration": [
+            {
+              "count": 249,
+              "lower": 0.5,
+              "observed": 0.4738955823293173,
+              "predicted": 0.5192697768762677
+            }
+          ],
+          "distinct_dates": 249,
+          "interval_coverage": 0.7349397590361446,
+          "log_loss": 0.6959034835314831,
+          "mae": 0.0120462294650044,
+          "observations": 249
+        },
+        "NVDA": {
+          "brier": 0.2529733042906499,
+          "calibration": [
+            {
+              "count": 249,
+              "lower": 0.5,
+              "observed": 0.46184738955823296,
+              "predicted": 0.5283975659229209
+            }
+          ],
+          "distinct_dates": 249,
+          "interval_coverage": 0.9036144578313253,
+          "log_loss": 0.6991010648422221,
+          "mae": 0.015596476057294573,
+          "observations": 249
+        },
+        "PANW": {
+          "brier": 0.25058943276531354,
+          "calibration": [
+            {
+              "count": 249,
+              "lower": 0.5,
+              "observed": 0.5020080321285141,
+              "predicted": 0.5263691683569982
+            }
+          ],
+          "distinct_dates": 249,
+          "interval_coverage": 0.6506024096385542,
+          "log_loss": 0.6943277869452885,
+          "mae": 0.021789768287786015,
+          "observations": 249
+        },
+        "TSLA": {
+          "brier": 0.25,
+          "calibration": [
+            {
+              "count": 249,
+              "lower": 0.5,
+              "observed": 0.5100401606425703,
+              "predicted": 0.5
+            }
+          ],
+          "distinct_dates": 249,
+          "interval_coverage": 0.927710843373494,
+          "log_loss": 0.6931471805599454,
+          "mae": 0.017491006880403632,
+          "observations": 249
+        },
+        "TWST": {
+          "brier": 0.2509816719159924,
+          "calibration": [
+            {
+              "count": 249,
+              "lower": 0.4,
+              "observed": 0.5140562248995983,
+              "predicted": 0.4797160243407709
+            }
+          ],
+          "distinct_dates": 249,
+          "interval_coverage": 0.7831325301204819,
+          "log_loss": 0.6951118285278141,
+          "mae": 0.03690734017524338,
+          "observations": 249
+        },
+        "UAL": {
+          "brier": 0.25124086238349375,
+          "calibration": [
+            {
+              "count": 249,
+              "lower": 0.5,
+              "observed": 0.46987951807228917,
+              "predicted": 0.5162271805273834
+            }
+          ],
+          "distinct_dates": 249,
+          "interval_coverage": 0.8072289156626506,
+          "log_loss": 0.6956298697284501,
+          "mae": 0.01919334190991166,
+          "observations": 249
+        },
+        "WMT": {
+          "brier": 0.24985209239626288,
+          "calibration": [
+            {
+              "count": 249,
+              "lower": 0.5,
+              "observed": 0.5180722891566265,
+              "predicted": 0.5314401622718051
+            }
+          ],
+          "distinct_dates": 249,
+          "interval_coverage": 0.6104417670682731,
+          "log_loss": 0.6928522814812575,
+          "mae": 0.01130585047737883,
+          "observations": 249
+        },
+        "YOU": {
+          "brier": 0.2512722904256452,
+          "calibration": [
+            {
+              "count": 249,
+              "lower": 0.5,
+              "observed": 0.4538152610441767,
+              "predicted": 0.5121703853955374
+            }
+          ],
+          "distinct_dates": 249,
+          "interval_coverage": 0.8232931726907631,
+          "log_loss": 0.6956922933877794,
+          "mae": 0.02172517727926146,
+          "observations": 249
+        }
+      },
+      "by_year": {
+        "2025": {
+          "brier": 0.2505006233154834,
+          "calibration": [
+            {
+              "count": 31,
+              "lower": 0.4,
+              "observed": 0.45161290322580644,
+              "predicted": 0.4797160243407708
+            },
+            {
+              "count": 496,
+              "lower": 0.5,
+              "observed": 0.4959677419354839,
+              "predicted": 0.521488336713996
+            }
+          ],
+          "distinct_dates": 31,
+          "interval_coverage": 0.8292220113851992,
+          "log_loss": 0.6941520340679469,
+          "mae": 0.014023610471049169,
+          "observations": 527
+        },
+        "2026": {
+          "brier": 0.250799782206532,
+          "calibration": [
+            {
+              "count": 218,
+              "lower": 0.4,
+              "observed": 0.5229357798165137,
+              "predicted": 0.4797160243407709
+            },
+            {
+              "count": 3488,
+              "lower": 0.5,
+              "observed": 0.4868119266055046,
+              "predicted": 0.5214883367139959
+            }
+          ],
+          "distinct_dates": 218,
+          "interval_coverage": 0.7714516999460335,
+          "log_loss": 0.6947482435324633,
+          "mae": 0.017104048266883283,
+          "observations": 3706
+        }
+      },
+      "calibration": [
+        {
+          "count": 249,
+          "lower": 0.4,
+          "observed": 0.5140562248995983,
+          "predicted": 0.4797160243407709
+        },
+        {
+          "count": 3984,
+          "lower": 0.5,
+          "observed": 0.4879518072289157,
+          "predicted": 0.5214883367139959
+        }
+      ],
+      "distinct_dates": 249,
+      "horizon": 1,
+      "interval_coverage": 0.7786439877155682,
+      "log_loss": 0.6946740166513387,
+      "mae": 0.016720539946919997,
+      "model": "mean_available",
+      "observations": 4233
+    },
+    {
+      "brier": 0.25144965579953504,
+      "by_stock": {
+        "AAPL": {
+          "brier": 0.24858237921604187,
+          "calibration": [
+            {
+              "count": 249,
+              "lower": 0.5,
+              "observed": 0.5381526104417671,
+              "predicted": 0.5376563043630318
+            }
+          ],
+          "distinct_dates": 249,
+          "interval_coverage": 0.7429718875502008,
+          "log_loss": 0.6903095220771978,
+          "mae": 0.010321756180141164,
+          "observations": 249
+        },
+        "AMZN": {
+          "brier": 0.2507276621781971,
+          "calibration": [
+            {
+              "count": 2,
+              "lower": 0.4,
+              "observed": 0.5,
+              "predicted": 0.4854027146685197
+            },
+            {
+              "count": 247,
+              "lower": 0.5,
+              "observed": 0.4939271255060729,
+              "predicted": 0.5259950658829111
+            }
+          ],
+          "distinct_dates": 249,
+          "interval_coverage": 0.7911646586345381,
+          "log_loss": 0.6946036870498251,
+          "mae": 0.012008904406318775,
+          "observations": 249
+        },
+        "BKNG": {
+          "brier": 0.2514043131773755,
+          "calibration": [
+            {
+              "count": 249,
+              "lower": 0.5,
+              "observed": 0.4738955823293173,
+              "predicted": 0.5226289441031174
+            }
+          ],
+          "distinct_dates": 249,
+          "interval_coverage": 0.8473895582329317,
+          "log_loss": 0.6959599987931699,
+          "mae": 0.015687997700114916,
+          "observations": 249
+        },
+        "DAL": {
+          "brier": 0.24814240770056994,
+          "calibration": [
+            {
+              "count": 237,
+              "lower": 0.4,
+              "observed": 0.45147679324894513,
+              "predicted": 0.47294142751080803
+            },
+            {
+              "count": 12,
+              "lower": 0.5,
+              "observed": 0.5,
+              "predicted": 0.5152637875327549
+            }
+          ],
+          "distinct_dates": 249,
+          "interval_coverage": 0.751004016064257,
+          "log_loss": 0.689428828839754,
+          "mae": 0.016446944982596204,
+          "observations": 249
+        },
+        "GOOG": {
+          "brier": 0.252530224284057,
+          "calibration": [
+            {
+              "count": 1,
+              "lower": 0.3,
+              "observed": 0.0,
+              "predicted": 0.38368921729798244
+            },
+            {
+              "count": 2,
+              "lower": 0.4,
+              "observed": 0.5,
+              "predicted": 0.4993703457255333
+            },
+            {
+              "count": 219,
+              "lower": 0.5,
+              "observed": 0.5251141552511416,
+              "predicted": 0.5645159413584137
+            },
+            {
+              "count": 27,
+              "lower": 0.6,
+              "observed": 0.5185185185185185,
+              "predicted": 0.6086626851459542
+            }
+          ],
+          "distinct_dates": 249,
+          "interval_coverage": 0.7630522088353414,
+          "log_loss": 0.6983254706838266,
+          "mae": 0.012306522129844611,
+          "observations": 249
+        },
+        "GOOGL": {
+          "brier": 0.25339840391026647,
+          "calibration": [
+            {
+              "count": 1,
+              "lower": 0.2,
+              "observed": 0.0,
+              "predicted": 0.2586235417694004
+            },
+            {
+              "count": 8,
+              "lower": 0.4,
+              "observed": 0.625,
+              "predicted": 0.4857099367056803
+            },
+            {
+              "count": 214,
+              "lower": 0.5,
+              "observed": 0.5046728971962616,
+              "predicted": 0.5642481459286065
+            },
+            {
+              "count": 26,
+              "lower": 0.6,
+              "observed": 0.5769230769230769,
+              "predicted": 0.6105651631998694
+            }
+          ],
+          "distinct_dates": 249,
+          "interval_coverage": 0.751004016064257,
+          "log_loss": 0.699952253790174,
+          "mae": 0.012437311197971292,
+          "observations": 249
+        },
+        "HD": {
+          "brier": 0.2488622827558998,
+          "calibration": [
+            {
+              "count": 248,
+              "lower": 0.4,
+              "observed": 0.4798387096774194,
+              "predicted": 0.47832563494318453
+            },
+            {
+              "count": 1,
+              "lower": 0.5,
+              "observed": 0.0,
+              "predicted": 0.5037304697043977
+            }
+          ],
+          "distinct_dates": 249,
+          "interval_coverage": 0.8232931726907631,
+          "log_loss": 0.6908684500298302,
+          "mae": 0.011986538766062477,
+          "observations": 249
+        },
+        "HOOD": {
+          "brier": 0.25424113778718377,
+          "calibration": [
+            {
+              "count": 37,
+              "lower": 0.4,
+              "observed": 0.4864864864864865,
+              "predicted": 0.4835797682721674
+            },
+            {
+              "count": 211,
+              "lower": 0.5,
+              "observed": 0.4834123222748815,
+              "predicted": 0.539104833597894
+            },
+            {
+              "count": 1,
+              "lower": 0.6,
+              "observed": 1.0,
+              "predicted": 0.6093686693794381
+            }
+          ],
+          "distinct_dates": 249,
+          "interval_coverage": 0.7791164658634538,
+          "log_loss": 0.7016795371423801,
+          "mae": 0.027006601886388995,
+          "observations": 249
+        },
+        "LHX": {
+          "brier": 0.25122339521116616,
+          "calibration": [
+            {
+              "count": 40,
+              "lower": 0.4,
+              "observed": 0.525,
+              "predicted": 0.495993762913195
+            },
+            {
+              "count": 209,
+              "lower": 0.5,
+              "observed": 0.4449760765550239,
+              "predicted": 0.5117209911509104
+            }
+          ],
+          "distinct_dates": 249,
+          "interval_coverage": 0.8032128514056225,
+          "log_loss": 0.6955949848764896,
+          "mae": 0.012162449599378124,
+          "observations": 249
+        },
+        "LOW": {
+          "brier": 0.24762911767205598,
+          "calibration": [
+            {
+              "count": 177,
+              "lower": 0.4,
+              "observed": 0.4293785310734463,
+              "predicted": 0.48006171704731276
+            },
+            {
+              "count": 72,
+              "lower": 0.5,
+              "observed": 0.5833333333333334,
+              "predicted": 0.5167614693360092
+            }
+          ],
+          "distinct_dates": 249,
+          "interval_coverage": 0.7630522088353414,
+          "log_loss": 0.6884018352634727,
+          "mae": 0.012703296984975566,
+          "observations": 249
+        },
+        "NVDA": {
+          "brier": 0.2557585297192134,
+          "calibration": [
+            {
+              "count": 249,
+              "lower": 0.5,
+              "observed": 0.46184738955823296,
+              "predicted": 0.5463904980691797
+            }
+          ],
+          "distinct_dates": 249,
+          "interval_coverage": 0.7590361445783133,
+          "log_loss": 0.7047047602517321,
+          "mae": 0.015679456080543882,
+          "observations": 249
+        },
+        "PANW": {
+          "brier": 0.2515029493950355,
+          "calibration": [
+            {
+              "count": 249,
+              "lower": 0.5,
+              "observed": 0.5020080321285141,
+              "predicted": 0.5561653443136052
+            }
+          ],
+          "distinct_dates": 249,
+          "interval_coverage": 0.714859437751004,
+          "log_loss": 0.6961598408242758,
+          "mae": 0.022674450991139614,
+          "observations": 249
+        },
+        "TSLA": {
+          "brier": 0.25106256808107164,
+          "calibration": [
+            {
+              "count": 170,
+              "lower": 0.4,
+              "observed": 0.5176470588235295,
+              "predicted": 0.4803449770402676
+            },
+            {
+              "count": 79,
+              "lower": 0.5,
+              "observed": 0.4936708860759494,
+              "predicted": 0.5117924404005691
+            }
+          ],
+          "distinct_dates": 249,
+          "interval_coverage": 0.8072289156626506,
+          "log_loss": 0.6952815765474375,
+          "mae": 0.01763393278751908,
+          "observations": 249
+        },
+        "TWST": {
+          "brier": 0.24981643977456913,
+          "calibration": [
+            {
+              "count": 249,
+              "lower": 0.5,
+              "observed": 0.5140562248995983,
+              "predicted": 0.5050619370592891
+            }
+          ],
+          "distinct_dates": 249,
+          "interval_coverage": 0.7911646586345381,
+          "log_loss": 0.6927800185445264,
+          "mae": 0.03758272156944977,
+          "observations": 249
+        },
+        "UAL": {
+          "brier": 0.25245356414448256,
+          "calibration": [
+            {
+              "count": 29,
+              "lower": 0.4,
+              "observed": 0.4482758620689655,
+              "predicted": 0.48881055011362184
+            },
+            {
+              "count": 220,
+              "lower": 0.5,
+              "observed": 0.4727272727272727,
+              "predicted": 0.5235806438894485
+            }
+          ],
+          "distinct_dates": 249,
+          "interval_coverage": 0.8714859437751004,
+          "log_loss": 0.6980625984782387,
+          "mae": 0.019506324382270946,
+          "observations": 249
+        },
+        "WMT": {
+          "brier": 0.25442213546701803,
+          "calibration": [
+            {
+              "count": 194,
+              "lower": 0.5,
+              "observed": 0.5154639175257731,
+              "predicted": 0.580743159440623
+            },
+            {
+              "count": 55,
+              "lower": 0.6,
+              "observed": 0.5272727272727272,
+              "predicted": 0.6101182072124991
+            }
+          ],
+          "distinct_dates": 249,
+          "interval_coverage": 0.7429718875502008,
+          "log_loss": 0.7022116140590478,
+          "mae": 0.011413049053287846,
+          "observations": 249
+        },
+        "YOU": {
+          "brier": 0.2528866381178914,
+          "calibration": [
+            {
+              "count": 249,
+              "lower": 0.5,
+              "observed": 0.4538152610441767,
+              "predicted": 0.5246621962320163
+            }
+          ],
+          "distinct_dates": 249,
+          "interval_coverage": 0.7951807228915663,
+          "log_loss": 0.6989256410140636,
+          "mae": 0.021643941292015804,
+          "observations": 249
+        }
+      },
+      "by_year": {
+        "2025": {
+          "brier": 0.253270659211184,
+          "calibration": [
+            {
+              "count": 104,
+              "lower": 0.4,
+              "observed": 0.5673076923076923,
+              "predicted": 0.4798281034582044
+            },
+            {
+              "count": 386,
+              "lower": 0.5,
+              "observed": 0.47150259067357514,
+              "predicted": 0.5353124180507971
+            },
+            {
+              "count": 37,
+              "lower": 0.6,
+              "observed": 0.5135135135135135,
+              "predicted": 0.6099661135552047
+            }
+          ],
+          "distinct_dates": 31,
+          "interval_coverage": 0.8273244781783681,
+          "log_loss": 0.6997458603745247,
+          "mae": 0.014149790391029524,
+          "observations": 527
+        },
+        "2026": {
+          "brier": 0.25119070577310787,
+          "calibration": [
+            {
+              "count": 1,
+              "lower": 0.2,
+              "observed": 0.0,
+              "predicted": 0.2586235417694004
+            },
+            {
+              "count": 1,
+              "lower": 0.3,
+              "observed": 0.0,
+              "predicted": 0.38368921729798244
+            },
+            {
+              "count": 846,
+              "lower": 0.4,
+              "observed": 0.46099290780141844,
+              "predicted": 0.47896247819251114
+            },
+            {
+              "count": 2786,
+              "lower": 0.5,
+              "observed": 0.49605168700646085,
+              "predicted": 0.5367893285116281
+            },
+            {
+              "count": 72,
+              "lower": 0.6,
+              "observed": 0.5555555555555556,
+              "predicted": 0.6098015362036344
+            }
+          ],
+          "distinct_dates": 218,
+          "interval_coverage": 0.7757690232056125,
+          "log_loss": 0.695551358750869,
+          "mae": 0.01741889051846794,
+          "observations": 3706
+        }
+      },
+      "calibration": [
+        {
+          "count": 1,
+          "lower": 0.2,
+          "observed": 0.0,
+          "predicted": 0.2586235417694004
+        },
+        {
+          "count": 1,
+          "lower": 0.3,
+          "observed": 0.0,
+          "predicted": 0.38368921729798244
+        },
+        {
+          "count": 950,
+          "lower": 0.4,
+          "observed": 0.4726315789473684,
+          "predicted": 0.47905724137949235
+        },
+        {
+          "count": 3172,
+          "lower": 0.5,
+          "observed": 0.4930643127364439,
+          "predicted": 0.5366096035942635
+        },
+        {
+          "count": 109,
+          "lower": 0.6,
+          "observed": 0.5412844036697247,
+          "predicted": 0.6098574019101307
+        }
+      ],
+      "distinct_dates": 249,
+      "horizon": 1,
+      "interval_coverage": 0.7821875738247106,
+      "log_loss": 0.6960735657803201,
+      "mae": 0.017011894117059945,
+      "model": "technical14",
+      "observations": 4233
+    },
+    {
+      "brier": 0.2512433395189555,
+      "by_stock": {
+        "AAPL": {
+          "brier": 0.24857989828784513,
+          "calibration": [
+            {
+              "count": 249,
+              "lower": 0.5,
+              "observed": 0.5381526104417671,
+              "predicted": 0.5376541900308629
+            }
+          ],
+          "distinct_dates": 249,
+          "interval_coverage": 0.7469879518072289,
+          "log_loss": 0.6903045789175831,
+          "mae": 0.010422834905793413,
+          "observations": 249
+        },
+        "AMZN": {
+          "brier": 0.2507460286328631,
+          "calibration": [
+            {
+              "count": 249,
+              "lower": 0.5,
+              "observed": 0.4939759036144578,
+              "predicted": 0.520942196077849
+            }
+          ],
+          "distinct_dates": 249,
+          "interval_coverage": 0.7831325301204819,
+          "log_loss": 0.6946436643043948,
+          "mae": 0.012071427726470978,
+          "observations": 249
+        },
+        "BKNG": {
+          "brier": 0.2512207108079686,
+          "calibration": [
+            {
+              "count": 249,
+              "lower": 0.5,
+              "observed": 0.4738955823293173,
+              "predicted": 0.5189998573181842
+            }
+          ],
+          "distinct_dates": 249,
+          "interval_coverage": 0.8393574297188755,
+          "log_loss": 0.6955902245844252,
+          "mae": 0.015816114916114815,
+          "observations": 249
+        },
+        "DAL": {
+          "brier": 0.2482175420162216,
+          "calibration": [
+            {
+              "count": 247,
+              "lower": 0.4,
+              "observed": 0.4534412955465587,
+              "predicted": 0.4753828150652457
+            },
+            {
+              "count": 2,
+              "lower": 0.5,
+              "observed": 0.5,
+              "predicted": 0.5014644961130899
+            }
+          ],
+          "distinct_dates": 249,
+          "interval_coverage": 0.751004016064257,
+          "log_loss": 0.6895785038563301,
+          "mae": 0.016354381022816365,
+          "observations": 249
+        },
+        "GOOG": {
+          "brier": 0.2525185719122147,
+          "calibration": [
+            {
+              "count": 1,
+              "lower": 0.2,
+              "observed": 0.0,
+              "predicted": 0.2747440084487136
+            },
+            {
+              "count": 10,
+              "lower": 0.4,
+              "observed": 0.5,
+              "predicted": 0.4834668637664451
+            },
+            {
+              "count": 188,
+              "lower": 0.5,
+              "observed": 0.5212765957446809,
+              "predicted": 0.5578427515792465
+            },
+            {
+              "count": 50,
+              "lower": 0.6,
+              "observed": 0.54,
+              "predicted": 0.6195557174087315
+            }
+          ],
+          "distinct_dates": 249,
+          "interval_coverage": 0.7590361445783133,
+          "log_loss": 0.6982247769032759,
+          "mae": 0.012235109849897728,
+          "observations": 249
+        },
+        "GOOGL": {
+          "brier": 0.2517071882700374,
+          "calibration": [
+            {
+              "count": 1,
+              "lower": 0.1,
+              "observed": 0.0,
+              "predicted": 0.197171486895549
+            },
+            {
+              "count": 17,
+              "lower": 0.4,
+              "observed": 0.5882352941176471,
+              "predicted": 0.4710193373216891
+            },
+            {
+              "count": 184,
+              "lower": 0.5,
+              "observed": 0.5,
+              "predicted": 0.5572701838593924
+            },
+            {
+              "count": 47,
+              "lower": 0.6,
+              "observed": 0.5531914893617021,
+              "predicted": 0.6180448266234697
+            }
+          ],
+          "distinct_dates": 249,
+          "interval_coverage": 0.7429718875502008,
+          "log_loss": 0.6964163799068734,
+          "mae": 0.012360059956315485,
+          "observations": 249
+        },
+        "HD": {
+          "brier": 0.2483002181101909,
+          "calibration": [
+            {
+              "count": 242,
+              "lower": 0.4,
+              "observed": 0.47107438016528924,
+              "predicted": 0.47833980886732586
+            },
+            {
+              "count": 7,
+              "lower": 0.5,
+              "observed": 0.7142857142857143,
+              "predicted": 0.5049507423657513
+            }
+          ],
+          "distinct_dates": 249,
+          "interval_coverage": 0.8112449799196787,
+          "log_loss": 0.689741296632097,
+          "mae": 0.012160305327232248,
+          "observations": 249
+        },
+        "HOOD": {
+          "brier": 0.2529665610046172,
+          "calibration": [
+            {
+              "count": 54,
+              "lower": 0.4,
+              "observed": 0.5,
+              "predicted": 0.4817316777793018
+            },
+            {
+              "count": 183,
+              "lower": 0.5,
+              "observed": 0.4808743169398907,
+              "predicted": 0.5362905663412465
+            },
+            {
+              "count": 12,
+              "lower": 0.6,
+              "observed": 0.5,
+              "predicted": 0.6149898195532536
+            }
+          ],
+          "distinct_dates": 249,
+          "interval_coverage": 0.7831325301204819,
+          "log_loss": 0.6991774196992762,
+          "mae": 0.027000974191491514,
+          "observations": 249
+        },
+        "LHX": {
+          "brier": 0.25119782329915724,
+          "calibration": [
+            {
+              "count": 249,
+              "lower": 0.5,
+              "observed": 0.4578313253012048,
+              "predicted": 0.5123902089457476
+            }
+          ],
+          "distinct_dates": 249,
+          "interval_coverage": 0.7911646586345381,
+          "log_loss": 0.6955433492220728,
+          "mae": 0.012277633597709005,
+          "observations": 249
+        },
+        "LOW": {
+          "brier": 0.2474530682350897,
+          "calibration": [
+            {
+              "count": 157,
+              "lower": 0.4,
+              "observed": 0.43312101910828027,
+              "predicted": 0.47974734678878905
+            },
+            {
+              "count": 92,
+              "lower": 0.5,
+              "observed": 0.5434782608695652,
+              "predicted": 0.5155459271079416
+            }
+          ],
+          "distinct_dates": 249,
+          "interval_coverage": 0.7791164658634538,
+          "log_loss": 0.6880464173769212,
+          "mae": 0.012749614422347596,
+          "observations": 249
+        },
+        "NVDA": {
+          "brier": 0.2554213456748845,
+          "calibration": [
+            {
+              "count": 249,
+              "lower": 0.5,
+              "observed": 0.46184738955823296,
+              "predicted": 0.5464208257847629
+            }
+          ],
+          "distinct_dates": 249,
+          "interval_coverage": 0.7871485943775101,
+          "log_loss": 0.7040248221141713,
+          "mae": 0.01557954042544474,
+          "observations": 249
+        },
+        "PANW": {
+          "brier": 0.2518401193800578,
+          "calibration": [
+            {
+              "count": 249,
+              "lower": 0.5,
+              "observed": 0.5020080321285141,
+              "predicted": 0.556523959497024
+            }
+          ],
+          "distinct_dates": 249,
+          "interval_coverage": 0.7429718875502008,
+          "log_loss": 0.696844855734212,
+          "mae": 0.02261932273683868,
+          "observations": 249
+        },
+        "TSLA": {
+          "brier": 0.2526575969938286,
+          "calibration": [
+            {
+              "count": 173,
+              "lower": 0.4,
+              "observed": 0.49710982658959535,
+              "predicted": 0.4717732433982032
+            },
+            {
+              "count": 76,
+              "lower": 0.5,
+              "observed": 0.5394736842105263,
+              "predicted": 0.5154515737178077
+            }
+          ],
+          "distinct_dates": 249,
+          "interval_coverage": 0.7951807228915663,
+          "log_loss": 0.698508167879535,
+          "mae": 0.01818504380873829,
+          "observations": 249
+        },
+        "TWST": {
+          "brier": 0.2510093541840806,
+          "calibration": [
+            {
+              "count": 147,
+              "lower": 0.4,
+              "observed": 0.5102040816326531,
+              "predicted": 0.48547466777739146
+            },
+            {
+              "count": 102,
+              "lower": 0.5,
+              "observed": 0.5196078431372549,
+              "predicted": 0.5101468387885556
+            }
+          ],
+          "distinct_dates": 249,
+          "interval_coverage": 0.7670682730923695,
+          "log_loss": 0.695174024530086,
+          "mae": 0.03779691584673018,
+          "observations": 249
+        },
+        "UAL": {
+          "brier": 0.2513297703003358,
+          "calibration": [
+            {
+              "count": 249,
+              "lower": 0.5,
+              "observed": 0.46987951807228917,
+              "predicted": 0.5172897279293412
+            }
+          ],
+          "distinct_dates": 249,
+          "interval_coverage": 0.8634538152610441,
+          "log_loss": 0.6958079275907312,
+          "mae": 0.01954191421927952,
+          "observations": 249
+        },
+        "WMT": {
+          "brier": 0.2537613107105155,
+          "calibration": [
+            {
+              "count": 242,
+              "lower": 0.5,
+              "observed": 0.5165289256198347,
+              "predicted": 0.5795222805453545
+            },
+            {
+              "count": 7,
+              "lower": 0.6,
+              "observed": 0.5714285714285714,
+              "predicted": 0.6032460328978537
+            }
+          ],
+          "distinct_dates": 249,
+          "interval_coverage": 0.7429718875502008,
+          "log_loss": 0.7008104534825336,
+          "mae": 0.011444057070621056,
+          "observations": 249
+        },
+        "YOU": {
+          "brier": 0.2522096640023346,
+          "calibration": [
+            {
+              "count": 21,
+              "lower": 0.4,
+              "observed": 0.6190476190476191,
+              "predicted": 0.49043586482250695
+            },
+            {
+              "count": 228,
+              "lower": 0.5,
+              "observed": 0.43859649122807015,
+              "predicted": 0.5223899429406975
+            }
+          ],
+          "distinct_dates": 249,
+          "interval_coverage": 0.7630522088353414,
+          "log_loss": 0.6975685714045267,
+          "mae": 0.021727381975571152,
+          "observations": 249
+        }
+      },
+      "by_year": {
+        "2025": {
+          "brier": 0.2536636702595706,
+          "calibration": [
+            {
+              "count": 128,
+              "lower": 0.4,
+              "observed": 0.5390625,
+              "predicted": 0.4794471555976394
+            },
+            {
+              "count": 359,
+              "lower": 0.5,
+              "observed": 0.467966573816156,
+              "predicted": 0.5335830725230161
+            },
+            {
+              "count": 40,
+              "lower": 0.6,
+              "observed": 0.575,
+              "predicted": 0.6204576149563141
+            }
+          ],
+          "distinct_dates": 31,
+          "interval_coverage": 0.8216318785578748,
+          "log_loss": 0.7005316766490847,
+          "mae": 0.014275236989100442,
+          "observations": 527
+        },
+        "2026": {
+          "brier": 0.2508991640466662,
+          "calibration": [
+            {
+              "count": 1,
+              "lower": 0.1,
+              "observed": 0.0,
+              "predicted": 0.197171486895549
+            },
+            {
+              "count": 1,
+              "lower": 0.2,
+              "observed": 0.0,
+              "predicted": 0.2747440084487136
+            },
+            {
+              "count": 940,
+              "lower": 0.4,
+              "observed": 0.46914893617021275,
+              "predicted": 0.47794159042660045
+            },
+            {
+              "count": 2688,
+              "lower": 0.5,
+              "observed": 0.49516369047619047,
+              "predicted": 0.5358513495856506
+            },
+            {
+              "count": 76,
+              "lower": 0.6,
+              "observed": 0.5263157894736842,
+              "predicted": 0.615923528794883
+            }
+          ],
+          "distinct_dates": 218,
+          "interval_coverage": 0.7733405288720993,
+          "log_loss": 0.6949528223169332,
+          "mae": 0.01747767551931944,
+          "observations": 3706
+        }
+      },
+      "calibration": [
+        {
+          "count": 1,
+          "lower": 0.1,
+          "observed": 0.0,
+          "predicted": 0.197171486895549
+        },
+        {
+          "count": 1,
+          "lower": 0.2,
+          "observed": 0.0,
+          "predicted": 0.2747440084487136
+        },
+        {
+          "count": 1068,
+          "lower": 0.4,
+          "observed": 0.47752808988764045,
+          "predicted": 0.4781220326942905
+        },
+        {
+          "count": 3047,
+          "lower": 0.5,
+          "observed": 0.49195930423367246,
+          "predicted": 0.5355840993508342
+        },
+        {
+          "count": 116,
+          "lower": 0.6,
+          "observed": 0.5431034482758621,
+          "predicted": 0.6174870067815832
+        }
+      ],
+      "distinct_dates": 249,
+      "horizon": 1,
+      "interval_coverage": 0.7793527049373966,
+      "log_loss": 0.6956473784787675,
+      "mae": 0.017078978352906633,
+      "model": "market20",
+      "observations": 4233
+    },
+    {
+      "brier": 0.25154355390124317,
+      "by_stock": {
+        "AAPL": {
+          "brier": 0.24523465288063043,
+          "calibration": [
+            {
+              "count": 245,
+              "lower": 0.5,
+              "observed": 0.5836734693877551,
+              "predicted": 0.5363881401617252
+            }
+          ],
+          "distinct_dates": 245,
+          "interval_coverage": 0.8326530612244898,
+          "log_loss": 0.68360195415611,
+          "mae": 0.026805528348996376,
+          "observations": 245
+        },
+        "AMZN": {
+          "brier": 0.2509165147012881,
+          "calibration": [
+            {
+              "count": 245,
+              "lower": 0.5,
+              "observed": 0.49795918367346936,
+              "predicted": 0.5283018867924527
+            }
+          ],
+          "distinct_dates": 245,
+          "interval_coverage": 0.8448979591836735,
+          "log_loss": 0.6949830290616584,
+          "mae": 0.033905230818079106,
+          "observations": 245
+        },
+        "BKNG": {
+          "brier": 0.26147047131928086,
+          "calibration": [
+            {
+              "count": 245,
+              "lower": 0.5,
+              "observed": 0.4816326530612245,
+              "predicted": 0.5902964959568733
+            }
+          ],
+          "distinct_dates": 245,
+          "interval_coverage": 0.7183673469387755,
+          "log_loss": 0.7164335309101936,
+          "mae": 0.04280881583992917,
+          "observations": 245
+        },
+        "DAL": {
+          "brier": 0.2474052581923782,
+          "calibration": [
+            {
+              "count": 245,
+              "lower": 0.5,
+              "observed": 0.5510204081632653,
+              "predicted": 0.5539083557951481
+            }
+          ],
+          "distinct_dates": 245,
+          "interval_coverage": 0.7551020408163265,
+          "log_loss": 0.6879488135817946,
+          "mae": 0.0417860848222896,
+          "observations": 245
+        },
+        "GOOG": {
+          "brier": 0.2508785276812245,
+          "calibration": [
+            {
+              "count": 245,
+              "lower": 0.5,
+              "observed": 0.5061224489795918,
+              "predicted": 0.5363881401617252
+            }
+          ],
+          "distinct_dates": 245,
+          "interval_coverage": 0.7877551020408163,
+          "log_loss": 0.6949096954226804,
+          "mae": 0.03456831831617669,
+          "observations": 245
+        },
+        "GOOGL": {
+          "brier": 0.2501220566546305,
+          "calibration": [
+            {
+              "count": 245,
+              "lower": 0.5,
+              "observed": 0.5142857142857142,
+              "predicted": 0.532345013477089
+            }
+          ],
+          "distinct_dates": 245,
+          "interval_coverage": 0.7918367346938775,
+          "log_loss": 0.6933930995297577,
+          "mae": 0.035316434298459765,
+          "observations": 245
+        },
+        "HD": {
+          "brier": 0.2526943798930344,
+          "calibration": [
+            {
+              "count": 245,
+              "lower": 0.5,
+              "observed": 0.46938775510204084,
+              "predicted": 0.5296495956873314
+            }
+          ],
+          "distinct_dates": 245,
+          "interval_coverage": 0.726530612244898,
+          "log_loss": 0.6985433033662352,
+          "mae": 0.029835510812927554,
+          "observations": 245
+        },
+        "HOOD": {
+          "brier": 0.25462990159701165,
+          "calibration": [
+            {
+              "count": 245,
+              "lower": 0.5,
+              "observed": 0.44081632653061226,
+              "predicted": 0.5309973045822104
+            }
+          ],
+          "distinct_dates": 245,
+          "interval_coverage": 0.7877551020408163,
+          "log_loss": 0.7024201087458302,
+          "mae": 0.06981809593823787,
+          "observations": 245
+        },
+        "LHX": {
+          "brier": 0.2512366020506763,
+          "calibration": [
+            {
+              "count": 245,
+              "lower": 0.5,
+              "observed": 0.47346938775510206,
+              "predicted": 0.5175202156334232
+            }
+          ],
+          "distinct_dates": 245,
+          "interval_coverage": 0.6693877551020408,
+          "log_loss": 0.6956215233883329,
+          "mae": 0.03197986928625057,
+          "observations": 245
+        },
+        "LOW": {
+          "brier": 0.25230646599279494,
+          "calibration": [
+            {
+              "count": 245,
+              "lower": 0.5,
+              "observed": 0.4530612244897959,
+              "predicted": 0.5202156334231807
+            }
+          ],
+          "distinct_dates": 245,
+          "interval_coverage": 0.746938775510204,
+          "log_loss": 0.6977628515560814,
+          "mae": 0.03142426201277314,
+          "observations": 245
+        },
+        "NVDA": {
+          "brier": 0.25618752510412696,
+          "calibration": [
+            {
+              "count": 245,
+              "lower": 0.5,
+              "observed": 0.49387755102040815,
+              "predicted": 0.5727762803234502
+            }
+          ],
+          "distinct_dates": 245,
+          "interval_coverage": 0.9306122448979591,
+          "log_loss": 0.7056487966341671,
+          "mae": 0.04169077458084126,
+          "observations": 245
+        },
+        "PANW": {
+          "brier": 0.24549682559287256,
+          "calibration": [
+            {
+              "count": 245,
+              "lower": 0.5,
+              "observed": 0.5836734693877551,
+              "predicted": 0.5336927223719677
+            }
+          ],
+          "distinct_dates": 245,
+          "interval_coverage": 0.6163265306122448,
+          "log_loss": 0.6841288869825696,
+          "mae": 0.0623471511021932,
+          "observations": 245
+        },
+        "TSLA": {
+          "brier": 0.25151117762875874,
+          "calibration": [
+            {
+              "count": 245,
+              "lower": 0.4,
+              "observed": 0.5306122448979592,
+              "predicted": 0.48113207547169795
+            }
+          ],
+          "distinct_dates": 245,
+          "interval_coverage": 0.9428571428571428,
+          "log_loss": 0.6961711408226936,
+          "mae": 0.0447962533317246,
+          "observations": 245
+        },
+        "TWST": {
+          "brier": 0.2611244365518165,
+          "calibration": [
+            {
+              "count": 245,
+              "lower": 0.4,
+              "observed": 0.6122448979591837,
+              "predicted": 0.4582210242587603
+            }
+          ],
+          "distinct_dates": 245,
+          "interval_coverage": 0.7755102040816326,
+          "log_loss": 0.7154521367986538,
+          "mae": 0.09106865074302764,
+          "observations": 245
+        },
+        "UAL": {
+          "brier": 0.25028443559695146,
+          "calibration": [
+            {
+              "count": 245,
+              "lower": 0.5,
+              "observed": 0.5142857142857142,
+              "predicted": 0.5363881401617252
+            }
+          ],
+          "distinct_dates": 245,
+          "interval_coverage": 0.7877551020408163,
+          "log_loss": 0.6937194068683046,
+          "mae": 0.05016527211451576,
+          "observations": 245
+        },
+        "WMT": {
+          "brier": 0.2449869588276749,
+          "calibration": [
+            {
+              "count": 245,
+              "lower": 0.5,
+              "observed": 0.5714285714285714,
+              "predicted": 0.5808625336927223
+            }
+          ],
+          "distinct_dates": 245,
+          "interval_coverage": 0.6244897959183674,
+          "log_loss": 0.6830905150312815,
+          "mae": 0.028160586584776277,
+          "observations": 245
+        },
+        "YOU": {
+          "brier": 0.24975422605598205,
+          "calibration": [
+            {
+              "count": 245,
+              "lower": 0.5,
+              "observed": 0.5469387755102041,
+              "predicted": 0.5026954177897576
+            }
+          ],
+          "distinct_dates": 245,
+          "interval_coverage": 0.8653061224489796,
+          "log_loss": 0.6926556279805648,
+          "mae": 0.05974357166021879,
+          "observations": 245
+        }
+      },
+      "by_year": {
+        "2025": {
+          "brier": 0.24345807294771055,
+          "calibration": [
+            {
+              "count": 62,
+              "lower": 0.4,
+              "observed": 0.6774193548387096,
+              "predicted": 0.46967654986522905
+            },
+            {
+              "count": 465,
+              "lower": 0.5,
+              "observed": 0.6043010752688172,
+              "predicted": 0.5401617250673855
+            }
+          ],
+          "distinct_dates": 31,
+          "interval_coverage": 0.857685009487666,
+          "log_loss": 0.6799712998320666,
+          "mae": 0.03536465678029183,
+          "observations": 527
+        },
+        "2026": {
+          "brier": 0.252714815160867,
+          "calibration": [
+            {
+              "count": 428,
+              "lower": 0.4,
+              "observed": 0.5560747663551402,
+              "predicted": 0.46967654986522916
+            },
+            {
+              "count": 3210,
+              "lower": 0.5,
+              "observed": 0.4987538940809969,
+              "predicted": 0.5401617250673855
+            }
+          ],
+          "distinct_dates": 214,
+          "interval_coverage": 0.7649807586586036,
+          "log_loss": 0.6986239164633161,
+          "mae": 0.04580451524919831,
+          "observations": 3638
+        }
+      },
+      "calibration": [
+        {
+          "count": 490,
+          "lower": 0.4,
+          "observed": 0.5714285714285714,
+          "predicted": 0.4696765498652291
+        },
+        {
+          "count": 3675,
+          "lower": 0.5,
+          "observed": 0.5121088435374149,
+          "predicted": 0.5401617250673855
+        }
+      ],
+      "distinct_dates": 245,
+      "horizon": 5,
+      "interval_coverage": 0.7767106842737095,
+      "log_loss": 0.6962637894609945,
+      "mae": 0.0444835535653775,
+      "model": "mean_train",
+      "observations": 4165
+    },
+    {
+      "brier": 0.251251920770036,
+      "by_stock": {
+        "AAPL": {
+          "brier": 0.24444537554827472,
+          "calibration": [
+            {
+              "count": 245,
+              "lower": 0.5,
+              "observed": 0.5836734693877551,
+              "predicted": 0.545638945233266
+            }
+          ],
+          "distinct_dates": 245,
+          "interval_coverage": 0.8489795918367347,
+          "log_loss": 0.6820127472170695,
+          "mae": 0.02676511734423601,
+          "observations": 245
+        },
+        "AMZN": {
+          "brier": 0.25118575233128854,
+          "calibration": [
+            {
+              "count": 245,
+              "lower": 0.5,
+              "observed": 0.49795918367346936,
+              "predicted": 0.5324543610547667
+            }
+          ],
+          "distinct_dates": 245,
+          "interval_coverage": 0.8244897959183674,
+          "log_loss": 0.6955235083791014,
+          "mae": 0.03393593873266583,
+          "observations": 245
+        },
+        "BKNG": {
+          "brier": 0.2561000507078399,
+          "calibration": [
+            {
+              "count": 245,
+              "lower": 0.5,
+              "observed": 0.4816326530612245,
+              "predicted": 0.5618661257606491
+            }
+          ],
+          "distinct_dates": 245,
+          "interval_coverage": 0.673469387755102,
+          "log_loss": 0.7054298944263845,
+          "mae": 0.042650501427059985,
+          "observations": 245
+        },
+        "DAL": {
+          "brier": 0.24752840214213967,
+          "calibration": [
+            {
+              "count": 245,
+              "lower": 0.5,
+              "observed": 0.5510204081632653,
+              "predicted": 0.539553752535497
+            }
+          ],
+          "distinct_dates": 245,
+          "interval_coverage": 0.7673469387755102,
+          "log_loss": 0.6881969144162261,
+          "mae": 0.0418270259341293,
+          "observations": 245
+        },
+        "GOOG": {
+          "brier": 0.2517737919816454,
+          "calibration": [
+            {
+              "count": 245,
+              "lower": 0.5,
+              "observed": 0.5061224489795918,
+              "predicted": 0.5486815415821502
+            }
+          ],
+          "distinct_dates": 245,
+          "interval_coverage": 0.7918367346938775,
+          "log_loss": 0.6967135843206812,
+          "mae": 0.03458502931262303,
+          "observations": 245
+        },
+        "GOOGL": {
+          "brier": 0.2508435688747067,
+          "calibration": [
+            {
+              "count": 245,
+              "lower": 0.5,
+              "observed": 0.5142857142857142,
+              "predicted": 0.5466531440162274
+            }
+          ],
+          "distinct_dates": 245,
+          "interval_coverage": 0.7918367346938775,
+          "log_loss": 0.6948456007514179,
+          "mae": 0.0353635132451111,
+          "observations": 245
+        },
+        "HD": {
+          "brier": 0.2516533157293133,
+          "calibration": [
+            {
+              "count": 245,
+              "lower": 0.5,
+              "observed": 0.46938775510204084,
+              "predicted": 0.520283975659229
+            }
+          ],
+          "distinct_dates": 245,
+          "interval_coverage": 0.7020408163265306,
+          "log_loss": 0.696455853792065,
+          "mae": 0.029796607879425466,
+          "observations": 245
+        },
+        "HOOD": {
+          "brier": 0.2592518800903589,
+          "calibration": [
+            {
+              "count": 245,
+              "lower": 0.5,
+              "observed": 0.44081632653061226,
+              "predicted": 0.5537525354969572
+            }
+          ],
+          "distinct_dates": 245,
+          "interval_coverage": 0.8122448979591836,
+          "log_loss": 0.7117339588171833,
+          "mae": 0.07099117641523851,
+          "observations": 245
+        },
+        "LHX": {
+          "brier": 0.25188402422590356,
+          "calibration": [
+            {
+              "count": 245,
+              "lower": 0.5,
+              "observed": 0.47346938775510206,
+              "predicted": 0.524340770791075
+            }
+          ],
+          "distinct_dates": 245,
+          "interval_coverage": 0.6653061224489796,
+          "log_loss": 0.6969186787963179,
+          "mae": 0.03202119963862878,
+          "observations": 245
+        },
+        "LOW": {
+          "brier": 0.2516595922834406,
+          "calibration": [
+            {
+              "count": 245,
+              "lower": 0.5,
+              "observed": 0.4530612244897959,
+              "predicted": 0.5152129817444218
+            }
+          ],
+          "distinct_dates": 245,
+          "interval_coverage": 0.7510204081632653,
+          "log_loss": 0.696467461398282,
+          "mae": 0.03131734798209008,
+          "observations": 245
+        },
+        "NVDA": {
+          "brier": 0.2562264088680867,
+          "calibration": [
+            {
+              "count": 245,
+              "lower": 0.5,
+              "observed": 0.49387755102040815,
+              "predicted": 0.5730223123732251
+            }
+          ],
+          "distinct_dates": 245,
+          "interval_coverage": 0.9306122448979591,
+          "log_loss": 0.7057282531931063,
+          "mae": 0.04149308374768133,
+          "observations": 245
+        },
+        "PANW": {
+          "brier": 0.24452355328366224,
+          "calibration": [
+            {
+              "count": 245,
+              "lower": 0.5,
+              "observed": 0.5836734693877551,
+              "predicted": 0.5446247464503042
+            }
+          ],
+          "distinct_dates": 245,
+          "interval_coverage": 0.5836734693877551,
+          "log_loss": 0.6821703869925229,
+          "mae": 0.062422897301287486,
+          "observations": 245
+        },
+        "TSLA": {
+          "brier": 0.25098105269945986,
+          "calibration": [
+            {
+              "count": 245,
+              "lower": 0.4,
+              "observed": 0.5306122448979592,
+              "predicted": 0.4868154158215009
+            }
+          ],
+          "distinct_dates": 245,
+          "interval_coverage": 0.9387755102040817,
+          "log_loss": 0.6951097812340219,
+          "mae": 0.04479597697813569,
+          "observations": 245
+        },
+        "TWST": {
+          "brier": 0.2583389584413187,
+          "calibration": [
+            {
+              "count": 245,
+              "lower": 0.4,
+              "observed": 0.6122448979591837,
+              "predicted": 0.4675456389452331
+            }
+          ],
+          "distinct_dates": 245,
+          "interval_coverage": 0.7551020408163265,
+          "log_loss": 0.7098500631916088,
+          "mae": 0.09118206127168076,
+          "observations": 245
+        },
+        "UAL": {
+          "brier": 0.25016389993081933,
+          "calibration": [
+            {
+              "count": 245,
+              "lower": 0.5,
+              "observed": 0.5142857142857142,
+              "predicted": 0.5334685598377282
+            }
+          ],
+          "distinct_dates": 245,
+          "interval_coverage": 0.7918367346938775,
+          "log_loss": 0.6934771503028593,
+          "mae": 0.050073682899645644,
+          "observations": 245
+        },
+        "WMT": {
+          "brier": 0.24508741035758222,
+          "calibration": [
+            {
+              "count": 245,
+              "lower": 0.5,
+              "observed": 0.5714285714285714,
+              "predicted": 0.5851926977687628
+            }
+          ],
+          "distinct_dates": 245,
+          "interval_coverage": 0.6612244897959184,
+          "log_loss": 0.6832971354368065,
+          "mae": 0.028151780310874557,
+          "observations": 245
+        },
+        "YOU": {
+          "brier": 0.24963561559477263,
+          "calibration": [
+            {
+              "count": 245,
+              "lower": 0.5,
+              "observed": 0.5469387755102041,
+              "predicted": 0.5040567951318459
+            }
+          ],
+          "distinct_dates": 245,
+          "interval_coverage": 0.8489795918367347,
+          "log_loss": 0.6924183961183131,
+          "mae": 0.05968562314293087,
+          "observations": 245
+        }
+      },
+      "by_year": {
+        "2025": {
+          "brier": 0.24454729820256374,
+          "calibration": [
+            {
+              "count": 62,
+              "lower": 0.4,
+              "observed": 0.6774193548387096,
+              "predicted": 0.47718052738336697
+            },
+            {
+              "count": 465,
+              "lower": 0.5,
+              "observed": 0.6043010752688172,
+              "predicted": 0.5419202163624071
+            }
+          ],
+          "distinct_dates": 31,
+          "interval_coverage": 0.8538899430740038,
+          "log_loss": 0.6821952230980084,
+          "mae": 0.035485257029767396,
+          "observations": 527
+        },
+        "2026": {
+          "brier": 0.2522231511419596,
+          "calibration": [
+            {
+              "count": 428,
+              "lower": 0.4,
+              "observed": 0.5560747663551402,
+              "predicted": 0.477180527383367
+            },
+            {
+              "count": 3210,
+              "lower": 0.5,
+              "observed": 0.4987538940809969,
+              "predicted": 0.541920216362407
+            }
+          ],
+          "distinct_dates": 214,
+          "interval_coverage": 0.7611324903793293,
+          "log_loss": 0.697619217366526,
+          "mae": 0.04584349027442454,
+          "observations": 3638
+        }
+      },
+      "calibration": [
+        {
+          "count": 490,
+          "lower": 0.4,
+          "observed": 0.5714285714285714,
+          "predicted": 0.47718052738336697
+        },
+        {
+          "count": 3675,
+          "lower": 0.5,
+          "observed": 0.5121088435374149,
+          "predicted": 0.5419202163624071
+        }
+      ],
+      "distinct_dates": 245,
+      "horizon": 5,
+      "interval_coverage": 0.7728691476590637,
+      "log_loss": 0.6956676099284687,
+      "mae": 0.04453285668020261,
+      "model": "mean_available",
+      "observations": 4165
+    },
+    {
+      "brier": 0.25188021409232114,
+      "by_stock": {
+        "AAPL": {
+          "brier": 0.24402168931794074,
+          "calibration": [
+            {
+              "count": 225,
+              "lower": 0.5,
+              "observed": 0.56,
+              "predicted": 0.5571441669025694
+            },
+            {
+              "count": 20,
+              "lower": 0.6,
+              "observed": 0.85,
+              "predicted": 0.607067345342341
+            }
+          ],
+          "distinct_dates": 245,
+          "interval_coverage": 0.8448979591836735,
+          "log_loss": 0.681076367680876,
+          "mae": 0.028038478237981477,
+          "observations": 245
+        },
+        "AMZN": {
+          "brier": 0.25982527502752384,
+          "calibration": [
+            {
+              "count": 1,
+              "lower": 0.2,
+              "observed": 1.0,
+              "predicted": 0.29941168265067286
+            },
+            {
+              "count": 34,
+              "lower": 0.3,
+              "observed": 0.5588235294117647,
+              "predicted": 0.36968733788455144
+            },
+            {
+              "count": 97,
+              "lower": 0.4,
+              "observed": 0.4845360824742268,
+              "predicted": 0.4467449295445385
+            },
+            {
+              "count": 73,
+              "lower": 0.5,
+              "observed": 0.4657534246575342,
+              "predicted": 0.5517261859507459
+            },
+            {
+              "count": 38,
+              "lower": 0.6,
+              "observed": 0.5,
+              "predicted": 0.6404455331857556
+            },
+            {
+              "count": 2,
+              "lower": 0.7,
+              "observed": 1.0,
+              "predicted": 0.7093612731611579
+            }
+          ],
+          "distinct_dates": 245,
+          "interval_coverage": 0.8244897959183674,
+          "log_loss": 0.7133400155254507,
+          "mae": 0.03472154484285717,
+          "observations": 245
+        },
+        "BKNG": {
+          "brier": 0.2578997318671045,
+          "calibration": [
+            {
+              "count": 16,
+              "lower": 0.2,
+              "observed": 0.375,
+              "predicted": 0.27647434116189684
+            },
+            {
+              "count": 59,
+              "lower": 0.3,
+              "observed": 0.5254237288135594,
+              "predicted": 0.35070661247710844
+            },
+            {
+              "count": 81,
+              "lower": 0.4,
+              "observed": 0.4074074074074074,
+              "predicted": 0.4407101060010556
+            },
+            {
+              "count": 67,
+              "lower": 0.5,
+              "observed": 0.5970149253731343,
+              "predicted": 0.5448713401521098
+            },
+            {
+              "count": 22,
+              "lower": 0.6,
+              "observed": 0.36363636363636365,
+              "predicted": 0.632311119262982
+            }
+          ],
+          "distinct_dates": 245,
+          "interval_coverage": 0.8040816326530612,
+          "log_loss": 0.7104776709582288,
+          "mae": 0.04479916771258573,
+          "observations": 245
+        },
+        "DAL": {
+          "brier": 0.25080760067601454,
+          "calibration": [
+            {
+              "count": 174,
+              "lower": 0.4,
+              "observed": 0.5402298850574713,
+              "predicted": 0.4745306799181251
+            },
+            {
+              "count": 71,
+              "lower": 0.5,
+              "observed": 0.5774647887323944,
+              "predicted": 0.5158252627266785
+            }
+          ],
+          "distinct_dates": 245,
+          "interval_coverage": 0.7061224489795919,
+          "log_loss": 0.6947732670692153,
+          "mae": 0.0429388588282747,
+          "observations": 245
+        },
+        "GOOG": {
+          "brier": 0.2535811887416002,
+          "calibration": [
+            {
+              "count": 236,
+              "lower": 0.5,
+              "observed": 0.4872881355932203,
+              "predicted": 0.5700614546387697
+            },
+            {
+              "count": 9,
+              "lower": 0.6,
+              "observed": 1.0,
+              "predicted": 0.6051433710544348
+            }
+          ],
+          "distinct_dates": 245,
+          "interval_coverage": 0.710204081632653,
+          "log_loss": 0.7003484226615093,
+          "mae": 0.036983543407227176,
+          "observations": 245
+        },
+        "GOOGL": {
+          "brier": 0.2543072995091974,
+          "calibration": [
+            {
+              "count": 241,
+              "lower": 0.5,
+              "observed": 0.5062240663900415,
+              "predicted": 0.5830106073756647
+            },
+            {
+              "count": 4,
+              "lower": 0.6,
+              "observed": 1.0,
+              "predicted": 0.6004531957258049
+            }
+          ],
+          "distinct_dates": 245,
+          "interval_coverage": 0.7142857142857143,
+          "log_loss": 0.7018919070417767,
+          "mae": 0.03766223137818997,
+          "observations": 245
+        },
+        "HD": {
+          "brier": 0.24622546433745343,
+          "calibration": [
+            {
+              "count": 7,
+              "lower": 0.3,
+              "observed": 0.7142857142857143,
+              "predicted": 0.39320789564207714
+            },
+            {
+              "count": 170,
+              "lower": 0.4,
+              "observed": 0.4176470588235294,
+              "predicted": 0.45709069260224033
+            },
+            {
+              "count": 63,
+              "lower": 0.5,
+              "observed": 0.5873015873015873,
+              "predicted": 0.5386514546324653
+            },
+            {
+              "count": 5,
+              "lower": 0.6,
+              "observed": 0.4,
+              "predicted": 0.6454617635795936
+            }
+          ],
+          "distinct_dates": 245,
+          "interval_coverage": 0.8122448979591836,
+          "log_loss": 0.6856967608956726,
+          "mae": 0.03129420683984322,
+          "observations": 245
+        },
+        "HOOD": {
+          "brier": 0.27897079284186943,
+          "calibration": [
+            {
+              "count": 20,
+              "lower": 0.5,
+              "observed": 0.3,
+              "predicted": 0.5925650614054881
+            },
+            {
+              "count": 225,
+              "lower": 0.6,
+              "observed": 0.4533333333333333,
+              "predicted": 0.6356347645416318
+            }
+          ],
+          "distinct_dates": 245,
+          "interval_coverage": 0.763265306122449,
+          "log_loss": 0.7527222399038156,
+          "mae": 0.07460711000711716,
+          "observations": 245
+        },
+        "LHX": {
+          "brier": 0.2545483557387331,
+          "calibration": [
+            {
+              "count": 245,
+              "lower": 0.5,
+              "observed": 0.47346938775510206,
+              "predicted": 0.5452426082867843
+            }
+          ],
+          "distinct_dates": 245,
+          "interval_coverage": 0.7673469387755102,
+          "log_loss": 0.7022757713174448,
+          "mae": 0.033659016812443,
+          "observations": 245
+        },
+        "LOW": {
+          "brier": 0.2402849573160411,
+          "calibration": [
+            {
+              "count": 3,
+              "lower": 0.3,
+              "observed": 0.6666666666666666,
+              "predicted": 0.383959207763415
+            },
+            {
+              "count": 129,
+              "lower": 0.4,
+              "observed": 0.35658914728682173,
+              "predicted": 0.4544474910426265
+            },
+            {
+              "count": 108,
+              "lower": 0.5,
+              "observed": 0.5555555555555556,
+              "predicted": 0.5348819499711601
+            },
+            {
+              "count": 5,
+              "lower": 0.6,
+              "observed": 0.6,
+              "predicted": 0.6296040175858
+            }
+          ],
+          "distinct_dates": 245,
+          "interval_coverage": 0.763265306122449,
+          "log_loss": 0.673703824456418,
+          "mae": 0.03516410558922342,
+          "observations": 245
+        },
+        "NVDA": {
+          "brier": 0.2492994498633086,
+          "calibration": [
+            {
+              "count": 1,
+              "lower": 0.3,
+              "observed": 0.0,
+              "predicted": 0.33139057707845915
+            },
+            {
+              "count": 37,
+              "lower": 0.4,
+              "observed": 0.5675675675675675,
+              "predicted": 0.47227074284402937
+            },
+            {
+              "count": 170,
+              "lower": 0.5,
+              "observed": 0.43529411764705883,
+              "predicted": 0.5458117679575225
+            },
+            {
+              "count": 37,
+              "lower": 0.6,
+              "observed": 0.7027027027027027,
+              "predicted": 0.6406153791828342
+            }
+          ],
+          "distinct_dates": 245,
+          "interval_coverage": 0.7551020408163265,
+          "log_loss": 0.69170382619586,
+          "mae": 0.04551209452712956,
+          "observations": 245
+        },
+        "PANW": {
+          "brier": 0.23953208544237736,
+          "calibration": [
+            {
+              "count": 10,
+              "lower": 0.4,
+              "observed": 0.5,
+              "predicted": 0.4891449014583678
+            },
+            {
+              "count": 136,
+              "lower": 0.5,
+              "observed": 0.5441176470588235,
+              "predicted": 0.547975662899258
+            },
+            {
+              "count": 58,
+              "lower": 0.6,
+              "observed": 0.6379310344827587,
+              "predicted": 0.6429687136423015
+            },
+            {
+              "count": 41,
+              "lower": 0.7,
+              "observed": 0.6585365853658537,
+              "predicted": 0.7361937423324763
+            }
+          ],
+          "distinct_dates": 245,
+          "interval_coverage": 0.5714285714285714,
+          "log_loss": 0.6725225558592036,
+          "mae": 0.0781600302024286,
+          "observations": 245
+        },
+        "TSLA": {
+          "brier": 0.2517371421469417,
+          "calibration": [
+            {
+              "count": 117,
+              "lower": 0.4,
+              "observed": 0.5384615384615384,
+              "predicted": 0.48151066707949036
+            },
+            {
+              "count": 128,
+              "lower": 0.5,
+              "observed": 0.5234375,
+              "predicted": 0.518363604228651
+            }
+          ],
+          "distinct_dates": 245,
+          "interval_coverage": 0.763265306122449,
+          "log_loss": 0.6966300843372636,
+          "mae": 0.04588434787996187,
+          "observations": 245
+        },
+        "TWST": {
+          "brier": 0.25106775441760565,
+          "calibration": [
+            {
+              "count": 6,
+              "lower": 0.3,
+              "observed": 0.8333333333333334,
+              "predicted": 0.38804854235824765
+            },
+            {
+              "count": 73,
+              "lower": 0.4,
+              "observed": 0.589041095890411,
+              "predicted": 0.46405411424602805
+            },
+            {
+              "count": 131,
+              "lower": 0.5,
+              "observed": 0.6412213740458015,
+              "predicted": 0.5472476321146139
+            },
+            {
+              "count": 35,
+              "lower": 0.6,
+              "observed": 0.5142857142857142,
+              "predicted": 0.6251509593174545
+            }
+          ],
+          "distinct_dates": 245,
+          "interval_coverage": 0.7591836734693878,
+          "log_loss": 0.6954714172145843,
+          "mae": 0.09204729578126988,
+          "observations": 245
+        },
+        "UAL": {
+          "brier": 0.2511744263517556,
+          "calibration": [
+            {
+              "count": 23,
+              "lower": 0.4,
+              "observed": 0.30434782608695654,
+              "predicted": 0.4862731319615573
+            },
+            {
+              "count": 222,
+              "lower": 0.5,
+              "observed": 0.536036036036036,
+              "predicted": 0.5380021390550952
+            }
+          ],
+          "distinct_dates": 245,
+          "interval_coverage": 0.8081632653061225,
+          "log_loss": 0.6955347451794222,
+          "mae": 0.05321126717065036,
+          "observations": 245
+        },
+        "WMT": {
+          "brier": 0.24343562046566408,
+          "calibration": [
+            {
+              "count": 85,
+              "lower": 0.5,
+              "observed": 0.49411764705882355,
+              "predicted": 0.587743167533406
+            },
+            {
+              "count": 160,
+              "lower": 0.6,
+              "observed": 0.6125,
+              "predicted": 0.6185278825269263
+            }
+          ],
+          "distinct_dates": 245,
+          "interval_coverage": 0.8122448979591836,
+          "log_loss": 0.679829172118317,
+          "mae": 0.0278534850183011,
+          "observations": 245
+        },
+        "YOU": {
+          "brier": 0.2552448055083285,
+          "calibration": [
+            {
+              "count": 15,
+              "lower": 0.3,
+              "observed": 0.6,
+              "predicted": 0.38261779691973263
+            },
+            {
+              "count": 81,
+              "lower": 0.4,
+              "observed": 0.5925925925925926,
+              "predicted": 0.47075361074928473
+            },
+            {
+              "count": 136,
+              "lower": 0.5,
+              "observed": 0.49264705882352944,
+              "predicted": 0.5332779639255395
+            },
+            {
+              "count": 13,
+              "lower": 0.6,
+              "observed": 0.7692307692307693,
+              "predicted": 0.6286196426017844
+            }
+          ],
+          "distinct_dates": 245,
+          "interval_coverage": 0.8612244897959184,
+          "log_loss": 0.7036528104125709,
+          "mae": 0.059821072692111295,
+          "observations": 245
+        }
+      },
+      "by_year": {
+        "2025": {
+          "brier": 0.25176256047080514,
+          "calibration": [
+            {
+              "count": 11,
+              "lower": 0.3,
+              "observed": 0.9090909090909091,
+              "predicted": 0.39076515757059216
+            },
+            {
+              "count": 122,
+              "lower": 0.4,
+              "observed": 0.639344262295082,
+              "predicted": 0.46619825759065153
+            },
+            {
+              "count": 334,
+              "lower": 0.5,
+              "observed": 0.592814371257485,
+              "predicted": 0.5522493205980998
+            },
+            {
+              "count": 60,
+              "lower": 0.6,
+              "observed": 0.6166666666666667,
+              "predicted": 0.6293705818754965
+            }
+          ],
+          "distinct_dates": 31,
+          "interval_coverage": 0.8273244781783681,
+          "log_loss": 0.6967728188117966,
+          "mae": 0.03595833639158303,
+          "observations": 527
+        },
+        "2026": {
+          "brier": 0.25189725737394264,
+          "calibration": [
+            {
+              "count": 17,
+              "lower": 0.2,
+              "observed": 0.4117647058823529,
+              "predicted": 0.27782359654358957
+            },
+            {
+              "count": 114,
+              "lower": 0.3,
+              "observed": 0.5350877192982456,
+              "predicted": 0.36198179446277495
+            },
+            {
+              "count": 870,
+              "lower": 0.4,
+              "observed": 0.45977011494252873,
+              "predicted": 0.46315696679581697
+            },
+            {
+              "count": 2023,
+              "lower": 0.5,
+              "observed": 0.5071675729115176,
+              "predicted": 0.5505503513201649
+            },
+            {
+              "count": 571,
+              "lower": 0.6,
+              "observed": 0.553415061295972,
+              "predicted": 0.6302625139833787
+            },
+            {
+              "count": 43,
+              "lower": 0.7,
+              "observed": 0.6744186046511628,
+              "predicted": 0.7349457205105544
+            }
+          ],
+          "distinct_dates": 214,
+          "interval_coverage": 0.7583837273227048,
+          "log_loss": 0.6972114307033953,
+          "mae": 0.04882562717671707,
+          "observations": 3638
+        }
+      },
+      "calibration": [
+        {
+          "count": 17,
+          "lower": 0.2,
+          "observed": 0.4117647058823529,
+          "predicted": 0.27782359654358957
+        },
+        {
+          "count": 125,
+          "lower": 0.3,
+          "observed": 0.568,
+          "predicted": 0.3645147304162629
+        },
+        {
+          "count": 992,
+          "lower": 0.4,
+          "observed": 0.48185483870967744,
+          "predicted": 0.46353099651050433
+        },
+        {
+          "count": 2357,
+          "lower": 0.5,
+          "observed": 0.5193042002545609,
+          "predicted": 0.550791104709571
+        },
+        {
+          "count": 631,
+          "lower": 0.6,
+          "observed": 0.5594294770206022,
+          "predicted": 0.6301777026894437
+        },
+        {
+          "count": 43,
+          "lower": 0.7,
+          "observed": 0.6744186046511628,
+          "predicted": 0.7349457205105544
+        }
+      ],
+      "distinct_dates": 245,
+      "horizon": 5,
+      "interval_coverage": 0.7671068427370948,
+      "log_loss": 0.6971559328722136,
+      "mae": 0.04719752099574093,
+      "model": "technical14",
+      "observations": 4165
+    },
+    {
+      "brier": 0.25316187304007937,
+      "by_stock": {
+        "AAPL": {
+          "brier": 0.2500682066529221,
+          "calibration": [
+            {
+              "count": 6,
+              "lower": 0.3,
+              "observed": 0.5,
+              "predicted": 0.3552488755970975
+            },
+            {
+              "count": 30,
+              "lower": 0.4,
+              "observed": 0.6,
+              "predicted": 0.45763148385461316
+            },
+            {
+              "count": 83,
+              "lower": 0.5,
+              "observed": 0.6024096385542169,
+              "predicted": 0.5629789181157588
+            },
+            {
+              "count": 118,
+              "lower": 0.6,
+              "observed": 0.5932203389830508,
+              "predicted": 0.6410931454186947
+            },
+            {
+              "count": 8,
+              "lower": 0.7,
+              "observed": 0.25,
+              "predicted": 0.7149936235743637
+            }
+          ],
+          "distinct_dates": 245,
+          "interval_coverage": 0.8204081632653061,
+          "log_loss": 0.6939600396629421,
+          "mae": 0.028060710778474846,
+          "observations": 245
+        },
+        "AMZN": {
+          "brier": 0.25874192139790403,
+          "calibration": [
+            {
+              "count": 2,
+              "lower": 0.2,
+              "observed": 0.5,
+              "predicted": 0.288187678392817
+            },
+            {
+              "count": 33,
+              "lower": 0.3,
+              "observed": 0.5151515151515151,
+              "predicted": 0.36854985788900485
+            },
+            {
+              "count": 92,
+              "lower": 0.4,
+              "observed": 0.45652173913043476,
+              "predicted": 0.45301509436363263
+            },
+            {
+              "count": 62,
+              "lower": 0.5,
+              "observed": 0.5645161290322581,
+              "predicted": 0.5544000484471793
+            },
+            {
+              "count": 48,
+              "lower": 0.6,
+              "observed": 0.4583333333333333,
+              "predicted": 0.6362062548998207
+            },
+            {
+              "count": 8,
+              "lower": 0.7,
+              "observed": 0.625,
+              "predicted": 0.716565207587735
+            }
+          ],
+          "distinct_dates": 245,
+          "interval_coverage": 0.8530612244897959,
+          "log_loss": 0.7115687679542496,
+          "mae": 0.03492720961629838,
+          "observations": 245
+        },
+        "BKNG": {
+          "brier": 0.2539453147506073,
+          "calibration": [
+            {
+              "count": 10,
+              "lower": 0.2,
+              "observed": 0.6,
+              "predicted": 0.2825940894892459
+            },
+            {
+              "count": 50,
+              "lower": 0.3,
+              "observed": 0.42,
+              "predicted": 0.3575290669068781
+            },
+            {
+              "count": 105,
+              "lower": 0.4,
+              "observed": 0.4666666666666667,
+              "predicted": 0.4529977582113039
+            },
+            {
+              "count": 66,
+              "lower": 0.5,
+              "observed": 0.5606060606060606,
+              "predicted": 0.5416768733517333
+            },
+            {
+              "count": 14,
+              "lower": 0.6,
+              "observed": 0.35714285714285715,
+              "predicted": 0.6274911961731703
+            }
+          ],
+          "distinct_dates": 245,
+          "interval_coverage": 0.8081632653061225,
+          "log_loss": 0.7021262411948995,
+          "mae": 0.04474052592388638,
+          "observations": 245
+        },
+        "DAL": {
+          "brier": 0.24854638192713668,
+          "calibration": [
+            {
+              "count": 170,
+              "lower": 0.4,
+              "observed": 0.5058823529411764,
+              "predicted": 0.47407381713265323
+            },
+            {
+              "count": 75,
+              "lower": 0.5,
+              "observed": 0.6533333333333333,
+              "predicted": 0.514327196421895
+            }
+          ],
+          "distinct_dates": 245,
+          "interval_coverage": 0.710204081632653,
+          "log_loss": 0.6902258924899549,
+          "mae": 0.042049692266562314,
+          "observations": 245
+        },
+        "GOOG": {
+          "brier": 0.2537862262821115,
+          "calibration": [
+            {
+              "count": 228,
+              "lower": 0.5,
+              "observed": 0.4824561403508772,
+              "predicted": 0.5703845661671015
+            },
+            {
+              "count": 17,
+              "lower": 0.6,
+              "observed": 0.8235294117647058,
+              "predicted": 0.6059972692146278
+            }
+          ],
+          "distinct_dates": 245,
+          "interval_coverage": 0.7020408163265306,
+          "log_loss": 0.7007619825808791,
+          "mae": 0.03791027308004575,
+          "observations": 245
+        },
+        "GOOGL": {
+          "brier": 0.2538080215512359,
+          "calibration": [
+            {
+              "count": 227,
+              "lower": 0.5,
+              "observed": 0.4889867841409692,
+              "predicted": 0.5790470783925077
+            },
+            {
+              "count": 18,
+              "lower": 0.6,
+              "observed": 0.8333333333333334,
+              "predicted": 0.6042601781361568
+            }
+          ],
+          "distinct_dates": 245,
+          "interval_coverage": 0.7061224489795919,
+          "log_loss": 0.7008559204058418,
+          "mae": 0.03867110644963787,
+          "observations": 245
+        },
+        "HD": {
+          "brier": 0.2422587009063295,
+          "calibration": [
+            {
+              "count": 22,
+              "lower": 0.3,
+              "observed": 0.36363636363636365,
+              "predicted": 0.37444590970966324
+            },
+            {
+              "count": 119,
+              "lower": 0.4,
+              "observed": 0.3865546218487395,
+              "predicted": 0.4526375576985301
+            },
+            {
+              "count": 86,
+              "lower": 0.5,
+              "observed": 0.627906976744186,
+              "predicted": 0.5468549443107066
+            },
+            {
+              "count": 16,
+              "lower": 0.6,
+              "observed": 0.375,
+              "predicted": 0.6402408473458383
+            },
+            {
+              "count": 2,
+              "lower": 0.7,
+              "observed": 0.5,
+              "predicted": 0.7115855934321871
+            }
+          ],
+          "distinct_dates": 245,
+          "interval_coverage": 0.8081632653061225,
+          "log_loss": 0.6779461688223376,
+          "mae": 0.03279261466031097,
+          "observations": 245
+        },
+        "HOOD": {
+          "brier": 0.2811522510696824,
+          "calibration": [
+            {
+              "count": 24,
+              "lower": 0.5,
+              "observed": 0.25,
+              "predicted": 0.5894507611804437
+            },
+            {
+              "count": 220,
+              "lower": 0.6,
+              "observed": 0.4590909090909091,
+              "predicted": 0.6419010035727214
+            },
+            {
+              "count": 1,
+              "lower": 0.7,
+              "observed": 1.0,
+              "predicted": 0.7012158555429487
+            }
+          ],
+          "distinct_dates": 245,
+          "interval_coverage": 0.8,
+          "log_loss": 0.757455103511217,
+          "mae": 0.07483394058807227,
+          "observations": 245
+        },
+        "LHX": {
+          "brier": 0.2555341266457758,
+          "calibration": [
+            {
+              "count": 25,
+              "lower": 0.4,
+              "observed": 0.48,
+              "predicted": 0.48116311163126213
+            },
+            {
+              "count": 207,
+              "lower": 0.5,
+              "observed": 0.4782608695652174,
+              "predicted": 0.5420770417149167
+            },
+            {
+              "count": 13,
+              "lower": 0.6,
+              "observed": 0.38461538461538464,
+              "predicted": 0.6276552975942573
+            }
+          ],
+          "distinct_dates": 245,
+          "interval_coverage": 0.746938775510204,
+          "log_loss": 0.7042904601818832,
+          "mae": 0.03421087018499401,
+          "observations": 245
+        },
+        "LOW": {
+          "brier": 0.2395365334538581,
+          "calibration": [
+            {
+              "count": 4,
+              "lower": 0.3,
+              "observed": 0.5,
+              "predicted": 0.3787029392115922
+            },
+            {
+              "count": 113,
+              "lower": 0.4,
+              "observed": 0.2920353982300885,
+              "predicted": 0.4540613650684316
+            },
+            {
+              "count": 110,
+              "lower": 0.5,
+              "observed": 0.6272727272727273,
+              "predicted": 0.5460585657556608
+            },
+            {
+              "count": 17,
+              "lower": 0.6,
+              "observed": 0.4117647058823529,
+              "predicted": 0.626064535697861
+            },
+            {
+              "count": 1,
+              "lower": 0.7,
+              "observed": 0.0,
+              "predicted": 0.7144344505962646
+            }
+          ],
+          "distinct_dates": 245,
+          "interval_coverage": 0.7755102040816326,
+          "log_loss": 0.672384360297418,
+          "mae": 0.03596811283590542,
+          "observations": 245
+        },
+        "NVDA": {
+          "brier": 0.25356970435250153,
+          "calibration": [
+            {
+              "count": 1,
+              "lower": 0.2,
+              "observed": 0.0,
+              "predicted": 0.20251890309061607
+            },
+            {
+              "count": 7,
+              "lower": 0.3,
+              "observed": 0.2857142857142857,
+              "predicted": 0.36108034717643905
+            },
+            {
+              "count": 69,
+              "lower": 0.4,
+              "observed": 0.5362318840579711,
+              "predicted": 0.4680468242466724
+            },
+            {
+              "count": 107,
+              "lower": 0.5,
+              "observed": 0.45794392523364486,
+              "predicted": 0.5459735684257383
+            },
+            {
+              "count": 48,
+              "lower": 0.6,
+              "observed": 0.5,
+              "predicted": 0.6411472791926386
+            },
+            {
+              "count": 13,
+              "lower": 0.7,
+              "observed": 0.6923076923076923,
+              "predicted": 0.723572895742677
+            }
+          ],
+          "distinct_dates": 245,
+          "interval_coverage": 0.8081632653061225,
+          "log_loss": 0.7003822470155606,
+          "mae": 0.04594759940723682,
+          "observations": 245
+        },
+        "PANW": {
+          "brier": 0.26438065391001386,
+          "calibration": [
+            {
+              "count": 7,
+              "lower": 0.3,
+              "observed": 0.42857142857142855,
+              "predicted": 0.37849648918194406
+            },
+            {
+              "count": 49,
+              "lower": 0.4,
+              "observed": 0.7346938775510204,
+              "predicted": 0.46307213526424823
+            },
+            {
+              "count": 85,
+              "lower": 0.5,
+              "observed": 0.5058823529411764,
+              "predicted": 0.5452698189113393
+            },
+            {
+              "count": 31,
+              "lower": 0.6,
+              "observed": 0.5483870967741935,
+              "predicted": 0.6432404459550475
+            },
+            {
+              "count": 19,
+              "lower": 0.7,
+              "observed": 0.42105263157894735,
+              "predicted": 0.7457151518779118
+            },
+            {
+              "count": 43,
+              "lower": 0.8,
+              "observed": 0.7441860465116279,
+              "predicted": 0.8486899275724531
+            },
+            {
+              "count": 11,
+              "lower": 0.9,
+              "observed": 0.36363636363636365,
+              "predicted": 0.9085847798505902
+            }
+          ],
+          "distinct_dates": 245,
+          "interval_coverage": 0.5918367346938775,
+          "log_loss": 0.7412706986627459,
+          "mae": 0.07597723832099246,
+          "observations": 245
+        },
+        "TSLA": {
+          "brier": 0.24989912151888558,
+          "calibration": [
+            {
+              "count": 113,
+              "lower": 0.4,
+              "observed": 0.5398230088495575,
+              "predicted": 0.47661781439098727
+            },
+            {
+              "count": 131,
+              "lower": 0.5,
+              "observed": 0.5190839694656488,
+              "predicted": 0.5276026160064383
+            },
+            {
+              "count": 1,
+              "lower": 0.6,
+              "observed": 1.0,
+              "predicted": 0.6078353511746437
+            }
+          ],
+          "distinct_dates": 245,
+          "interval_coverage": 0.7795918367346939,
+          "log_loss": 0.6929373691229734,
+          "mae": 0.04661494576563596,
+          "observations": 245
+        },
+        "TWST": {
+          "brier": 0.25582298524504066,
+          "calibration": [
+            {
+              "count": 17,
+              "lower": 0.3,
+              "observed": 0.5294117647058824,
+              "predicted": 0.3581189291074447
+            },
+            {
+              "count": 69,
+              "lower": 0.4,
+              "observed": 0.6666666666666666,
+              "predicted": 0.4634458844769915
+            },
+            {
+              "count": 120,
+              "lower": 0.5,
+              "observed": 0.65,
+              "predicted": 0.5452658235804466
+            },
+            {
+              "count": 39,
+              "lower": 0.6,
+              "observed": 0.4358974358974359,
+              "predicted": 0.6312856499455527
+            }
+          ],
+          "distinct_dates": 245,
+          "interval_coverage": 0.7755102040816326,
+          "log_loss": 0.7054521212465052,
+          "mae": 0.09323965268743441,
+          "observations": 245
+        },
+        "UAL": {
+          "brier": 0.24947232142722328,
+          "calibration": [
+            {
+              "count": 26,
+              "lower": 0.4,
+              "observed": 0.2692307692307692,
+              "predicted": 0.49046928616219276
+            },
+            {
+              "count": 219,
+              "lower": 0.5,
+              "observed": 0.54337899543379,
+              "predicted": 0.5364001683721542
+            }
+          ],
+          "distinct_dates": 245,
+          "interval_coverage": 0.7877551020408163,
+          "log_loss": 0.6921082235143368,
+          "mae": 0.05241453331079804,
+          "observations": 245
+        },
+        "WMT": {
+          "brier": 0.2439816059482226,
+          "calibration": [
+            {
+              "count": 87,
+              "lower": 0.5,
+              "observed": 0.5057471264367817,
+              "predicted": 0.588456651077531
+            },
+            {
+              "count": 158,
+              "lower": 0.6,
+              "observed": 0.6075949367088608,
+              "predicted": 0.6149676851220034
+            }
+          ],
+          "distinct_dates": 245,
+          "interval_coverage": 0.8122448979591836,
+          "log_loss": 0.6809955877277513,
+          "mae": 0.02788813959471254,
+          "observations": 245
+        },
+        "YOU": {
+          "brier": 0.24924776464189904,
+          "calibration": [
+            {
+              "count": 245,
+              "lower": 0.5,
+              "observed": 0.5469387755102041,
+              "predicted": 0.508049295569232
+            }
+          ],
+          "distinct_dates": 245,
+          "interval_coverage": 0.8285714285714286,
+          "log_loss": 0.6916425589346028,
+          "mae": 0.06168697722308965,
+          "observations": 245
+        }
+      },
+      "by_year": {
+        "2025": {
+          "brier": 0.2521835708897425,
+          "calibration": [
+            {
+              "count": 13,
+              "lower": 0.3,
+              "observed": 0.6923076923076923,
+              "predicted": 0.36307080154921717
+            },
+            {
+              "count": 85,
+              "lower": 0.4,
+              "observed": 0.7058823529411765,
+              "predicted": 0.4727248339428171
+            },
+            {
+              "count": 339,
+              "lower": 0.5,
+              "observed": 0.5988200589970502,
+              "predicted": 0.5461873591325279
+            },
+            {
+              "count": 87,
+              "lower": 0.6,
+              "observed": 0.5632183908045977,
+              "predicted": 0.6326756974486729
+            },
+            {
+              "count": 3,
+              "lower": 0.7,
+              "observed": 0.6666666666666666,
+              "predicted": 0.712376154177414
+            }
+          ],
+          "distinct_dates": 31,
+          "interval_coverage": 0.825426944971537,
+          "log_loss": 0.6978669207387664,
+          "mae": 0.03631700481837496,
+          "observations": 527
+        },
+        "2026": {
+          "brier": 0.253303589706717,
+          "calibration": [
+            {
+              "count": 13,
+              "lower": 0.2,
+              "observed": 0.5384615384615384,
+              "predicted": 0.2772950119052853
+            },
+            {
+              "count": 133,
+              "lower": 0.3,
+              "observed": 0.42105263157894735,
+              "predicted": 0.36441994668359423
+            },
+            {
+              "count": 895,
+              "lower": 0.4,
+              "observed": 0.46145251396648046,
+              "predicted": 0.46274576898615644
+            },
+            {
+              "count": 1823,
+              "lower": 0.5,
+              "observed": 0.5222161272627537,
+              "predicted": 0.5472661787985993
+            },
+            {
+              "count": 671,
+              "lower": 0.6,
+              "observed": 0.5230998509687034,
+              "predicted": 0.6326090949916374
+            },
+            {
+              "count": 49,
+              "lower": 0.7,
+              "observed": 0.4897959183673469,
+              "predicted": 0.7291673308184339
+            },
+            {
+              "count": 43,
+              "lower": 0.8,
+              "observed": 0.7441860465116279,
+              "predicted": 0.8486899275724531
+            },
+            {
+              "count": 11,
+              "lower": 0.9,
+              "observed": 0.36363636363636365,
+              "predicted": 0.9085847798505902
+            }
+          ],
+          "distinct_dates": 214,
+          "interval_coverage": 0.7636063771302913,
+          "log_loss": 0.7014110087645861,
+          "mae": 0.049149203799001645,
+          "observations": 3638
+        }
+      },
+      "calibration": [
+        {
+          "count": 13,
+          "lower": 0.2,
+          "observed": 0.5384615384615384,
+          "predicted": 0.2772950119052853
+        },
+        {
+          "count": 146,
+          "lower": 0.3,
+          "observed": 0.4452054794520548,
+          "predicted": 0.36429981732231403
+        },
+        {
+          "count": 980,
+          "lower": 0.4,
+          "observed": 0.4826530612244898,
+          "predicted": 0.4636113001303567
+        },
+        {
+          "count": 2162,
+          "lower": 0.5,
+          "observed": 0.53422756706753,
+          "predicted": 0.5470970206733458
+        },
+        {
+          "count": 758,
+          "lower": 0.6,
+          "observed": 0.5277044854881267,
+          "predicted": 0.6326167393369699
+        },
+        {
+          "count": 52,
+          "lower": 0.7,
+          "observed": 0.5,
+          "predicted": 0.7281986090891445
+        },
+        {
+          "count": 43,
+          "lower": 0.8,
+          "observed": 0.7441860465116279,
+          "predicted": 0.8486899275724531
+        },
+        {
+          "count": 11,
+          "lower": 0.9,
+          "observed": 0.36363636363636365,
+          "predicted": 0.9085847798505902
+        }
+      ],
+      "distinct_dates": 245,
+      "horizon": 5,
+      "interval_coverage": 0.7714285714285715,
+      "log_loss": 0.7009625731368293,
+      "mae": 0.0475255378055346,
+      "model": "market20",
+      "observations": 4165
+    }
+  ],
+  "plan": {
+    "block_sessions": 20,
+    "bootstrap_samples": 2000,
+    "confidence": 0.9875,
+    "contexts": [
+      "QQQ",
+      "IWM",
+      "TLT"
+    ],
+    "declared_at": "2026-11-16T00:47:25.765331+00:00",
+    "evidence": "Exploratory, current-news-selected survivors and previously accessible revised history; not independent confirmation",
+    "features": [
+      "qqq_minus_spy_return_5",
+      "qqq_minus_spy_return_20",
+      "iwm_minus_spy_return_5",
+      "iwm_minus_spy_return_20",
+      "tlt_return_5",
+      "tlt_return_20"
+    ],
+    "fee_sensitivity_roundtrip_bps": [
+      0,
+      10,
+      25,
+      50
+    ],
+    "heads": "ridge alpha=100; logistic C=0.1; fixed sigmoid calibration; no search",
+    "id": "paper-market-context-shadow-v1",
+    "maximum_fits": 120,
+    "minimum_evaluation_dates": 126,
+    "primary_comparisons": "Candidate vs matched-information historical-mean baseline: MAE and Brier for 1/5d, four comparisons",
+    "promotion": "none; shadow only, regardless historical result",
+    "purge_sessions": 5,
+    "secondary": "Unchanged14-feature ridge/logit algorithm and training-only historicalmean; descriptive",
+    "selection_rule": "No threshold or parameter selection from evaluation; retain70% probability,15bp expectedreturn screens for descriptive coverage only",
+    "snapshot_sha256": "0e2b97a3b1064c66d6983e42b891cdf46a2fa15f78723008180914662fd6b975",
+    "splits": [
+      0.6,
+      0.2,
+      0.2
+    ],
+    "universe": [
+      "NVDA",
+      "GOOGL",
+      "AMZN",
+      "GOOG",
+      "TSLA",
+      "AAPL",
+      "CBRS",
+      "TWST",
+      "HOOD",
+      "DAL",
+      "LHX",
+      "BKNG",
+      "SPCX",
+      "PANW",
+      "HD",
+      "LOW",
+      "WMT",
+      "NBIS",
+      "YOU",
+      "UAL"
+    ],
+    "universe_source_id": "083c7b0206303ec70c4aa3acf7ba8554d7fafcc6939166756273c864c61d3930"
+  },
+  "started_at": "2026-11-16T00:52:15.848225+00:00",
+  "uncertainty_limitation": "Shared-date20-session blocks,selected current survivors,overlapping5d labels; not independent confirmation",
+  "validated": false,
+  "execution_note": {
+    "first_attempt": "Reporting type error after68 fixedfits; no loss figures printed",
+    "replay": "Same unchanged inputs,features,parameters; no additional search",
+    "actual_fit_calls_including_replay": 136,
+    "unique_configured_fits": 68,
+    "planned_compute_allowance": 120,
+    "deviation": "Deterministic reporting-repair replay exceeded computational fit allowance; does not change acceptance criteria; candidate remains rejected and disabled"
+  }
+}

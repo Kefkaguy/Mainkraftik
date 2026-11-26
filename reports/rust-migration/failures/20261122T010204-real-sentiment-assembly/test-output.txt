@@ -1,0 +1,23 @@
+
+running 1 test
+REAL_NATIVE_SENTIMENT_SCORE_BYTES_EXACT=false
+test real_frozen_sentiment_and_premarket_assembly_match_original ... FAILED
+
+failures:
+
+failures:
+    real_frozen_sentiment_and_premarket_assembly_match_original
+
+test result: FAILED. 0 passed; 1 failed; 0 ignored; 0 measured; 0 filtered out; finished in 2.43s
+
+
+   Compiling mainkraft v0.1.0 (C:\Users\erosi\OneDrive\Desktop\allprojects\keftrade-intelligence\apps\backend-rust)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 23.26s
+     Running tests\research_sentiment_lifecycle.rs (apps\backend-rust\target\debug\deps\research_sentiment_lifecycle-f5404c8e8d59e4b4.exe)
+
+thread 'real_frozen_sentiment_and_premarket_assembly_match_original' (39544) panicked at tests\research_sentiment_lifecycle.rs:220:5:
+assertion `left == right` failed
+  left: Object {"status": String("frozen"), "research_id": String("1221f867ef78ad7b5b7d3c737a12b685cf05df7ab8af152a1fbb5340d936520f"), "picks": Array [Object {"symbol": String("AAA"), "source_ids": Array [String("0")], "stance": String("bullish"), "rationale": String("AAA sourced headline")}, Object {"symbol": String("BBB"), "source_ids": Array [String("1")], "stance": String("mixed"), "rationale": String("BBB sourced headline")}]}
+ right: Object {"picks": Array [Object {"rationale": String("AAA sourced headline"), "source_ids": Array [String("0")], "stance": String("bullish"), "symbol": String("AAA")}, Object {"rationale": String("BBB sourced headline"), "source_ids": Array [String("1")], "stance": String("mixed"), "symbol": String("BBB")}], "research_id": String("6ad23dd5e465d9e71a2118069b88549a2088711d218ce204a87e1e3e6494c51a"), "status": String("frozen")}
+note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+error: test failed, to rerun pass `--test research_sentiment_lifecycle`

@@ -1,0 +1,35 @@
+{
+  "source_repository": "C:\\Users\\erosi\\OneDrive\\Desktop\\allprojects\\keftrade",
+  "source_commit": "39c35c04166ee804f1447b5aa58afd7200e0b4b7",
+  "adaptation": "Selected normalization, calendar, causal-feature and chart concepts adapted without importing the legacy app or its database. New source has independent tests and configurations. Existing user changes were not edited.",
+  "sources": [
+    {
+      "path": "apps/api/app/providers/alpaca.py",
+      "sha256": "697d94d635dbaeca5f5597a6588bf5c6f822320627ba2b4180459cd2477e7f96"
+    },
+    {
+      "path": "apps/api/app/providers/yfinance_provider.py",
+      "sha256": "ec5b0b33fbb04389fa70d1c9cbed884ecd3a4baf36ae5e04895d2af452d65d70"
+    },
+    {
+      "path": "apps/api/app/services/features.py",
+      "sha256": "2bba27420b2e16b30eb5336756e1bbffccbf81f87fa1b014caa12a8aff71638c"
+    },
+    {
+      "path": "apps/api/app/services/labs/intraday/session.py",
+      "sha256": "2d307ec8afafa810fcab6ade5326fb203d3df3ea9c58590578d4c8f85e3a2214"
+    },
+    {
+      "path": "apps/api/app/services/research_splits.py",
+      "sha256": "984818ea82daaea5c788e0f4ddc14eed2c0d1fcb53fa203121d810df67e048f6"
+    },
+    {
+      "path": "apps/api/app/services/intraday_universe.py",
+      "sha256": "f239e68844db843198aa10a6d6ef1e84e4b0f770e652c1580d71decca9513b98"
+    },
+    {
+      "path": "apps/web/components/CandleChart.tsx",
+      "sha256": "fe33e03b494615fb2604c5b3f410650f7af4d585c5a4777024171e3dbc474cf1"
+    }
+  ]
+}

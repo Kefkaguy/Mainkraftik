@@ -1,0 +1,200 @@
+name: keftrade-intelligence
+x-app: &app
+  image: keftrade-intelligence-api:${INTELLIGENCE_API_IMAGE_TAG:-${INTELLIGENCE_IMAGE_TAG:-local}}
+  build:
+    context: ..
+    dockerfile: apps/api/Dockerfile
+  env_file: [/etc/keftrade-intelligence/market-data.env, /etc/keftrade-intelligence/research.env]
+  environment:
+    INTELLIGENCE_DATABASE_URL: postgresql://intelligence:${INTELLIGENCE_DB_PASSWORD:?Set a new independent database password}@postgres:5432/intelligence
+    INTELLIGENCE_ENVIRONMENT: production
+    INTELLIGENCE_MIN_FREE_GB: 10
+    INTELLIGENCE_ORIGIN: https://keftrade.duckdns.org
+    INTELLIGENCE_DATA_DIR: /app/.local/data
+    INTELLIGENCE_VISION_MAX_BYTES: 67108864
+  networks: [private, egress]
+  volumes: [intelligence-artifacts:/app/.local/data]
+  read_only: true
+  tmpfs: [/tmp:size=64m]
+  security_opt: [no-new-privileges:true]
+  cap_drop: [ALL]
+  logging:
+    driver: json-file
+    options: {max-size: 5m, max-file: '2'}
+services:
+  postgres:
+    image: postgres:18-alpine
+    command: [postgres, -c, max_wal_size=128MB, -c, min_wal_size=32MB]
+    environment:
+      POSTGRES_DB: intelligence
+      POSTGRES_USER: intelligence
+      POSTGRES_PASSWORD: ${INTELLIGENCE_DB_PASSWORD:?Set a new independent database password}
+    volumes: [intelligence-database:/var/lib/postgresql]
+    networks: [private]
+    mem_limit: 384m
+    cpus: 0.5
+    restart: unless-stopped
+    healthcheck:
+      test: [CMD-SHELL, 'pg_isready -U intelligence -d intelligence']
+      interval: 10s
+      timeout: 3s
+      retries: 10
+    logging:
+      driver: json-file
+      options: {max-size: 5m, max-file: '2'}
+  migrate:
+    <<: *app
+    command: [python, -m, intelligence.cli, migrate]
+    mem_limit: 256m
+    cpus: 0.5
+    depends_on:
+      postgres: {condition: service_healthy}
+  api:
+    <<: *app
+    networks: [private, egress, pilot-bridge]
+    mem_limit: 512m
+    cpus: 1
+    restart: unless-stopped
+    depends_on:
+      migrate: {condition: service_completed_successfully}
+    healthcheck:
+      test: [CMD, python, -c, "import urllib.request; urllib.request.urlopen('http://127.0.0.1:8100/health',timeout=3)"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+  worker:
+    <<: *app
+    command: [python, -m, intelligence.cli, worker]
+    mem_limit: 768m
+    cpus: 1
+    restart: unless-stopped
+    depends_on:
+      migrate: {condition: service_completed_successfully}
+  paper-postgres:
+    image: postgres:18-alpine
+    command: [postgres, -c, max_wal_size=128MB, -c, min_wal_size=32MB]
+    environment:
+      POSTGRES_DB: intelligence_paper
+      POSTGRES_USER: paperpilot
+      POSTGRES_PASSWORD: ${INTELLIGENCE_PAPER_DB_PASSWORD:?Set an independent pilot database password}
+    volumes: [paper-database:/var/lib/postgresql]
+    networks: [paper-private]
+    mem_limit: 256m
+    cpus: 0.5
+    restart: unless-stopped
+    healthcheck:
+      test: [CMD-SHELL, 'pg_isready -U paperpilot -d intelligence_paper']
+      interval: 10s
+      timeout: 3s
+      retries: 10
+    logging:
+      driver: json-file
+      options: {max-size: 5m, max-file: '2'}
+  paper:
+    image: keftrade-intelligence-api:${INTELLIGENCE_PAPER_IMAGE_TAG:-${INTELLIGENCE_API_IMAGE_TAG:-${INTELLIGENCE_IMAGE_TAG:-local}}}
+    command: [uvicorn, 'paperpilot.service:app', --host, 0.0.0.0, --port, '8200', --no-proxy-headers]
+    env_file: [/etc/keftrade-intelligence/market-data.env, /etc/keftrade-intelligence/paper.env]
+    environment:
+      INTELLIGENCE_PAPER_DATABASE_URL: postgresql://paperpilot:${INTELLIGENCE_PAPER_DB_PASSWORD:?Set an independent pilot database password}@paper-postgres:5432/intelligence_paper
+      OPENBLAS_NUM_THREADS: '1'
+      OMP_NUM_THREADS: '1'
+    networks: [paper-private, pilot-bridge, egress, sentiment-private, challenger-private]
+    volumes:
+      - ${INTELLIGENCE_MAINKRAFT_MODEL_DIR:-/opt/keftrade-intelligence/models/mainkraft}:/models/mainkraft:ro
+    mem_limit: 512m
+    cpus: 1
+    restart: unless-stopped
+    read_only: true
+    tmpfs: [/tmp:size=64m]
+    security_opt: [no-new-privileges:true]
+    cap_drop: [ALL]
+    depends_on:
+      paper-postgres: {condition: service_healthy}
+    healthcheck:
+      test: [CMD, python, -c, "import urllib.request; urllib.request.urlopen('http://127.0.0.1:8200/health',timeout=3)"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+    logging:
+      driver: json-file
+      options: {max-size: 5m, max-file: '2'}
+  web:
+    image: keftrade-intelligence-web:${INTELLIGENCE_WEB_IMAGE_TAG:-${INTELLIGENCE_IMAGE_TAG:-local}}
+    build:
+      context: ..
+      dockerfile: apps/web/Dockerfile
+    environment:
+      INTELLIGENCE_INTERNAL_API_URL: http://api:8100
+    networks:
+      private: {}
+      ingress: {aliases: [intelligence-web]}
+    mem_limit: 384m
+    cpus: 0.5
+    restart: unless-stopped
+    read_only: true
+    tmpfs: [/tmp:size=32m]
+    security_opt: [no-new-privileges:true]
+    cap_drop: [ALL]
+    depends_on:
+      api: {condition: service_healthy}
+    logging:
+      driver: json-file
+      options: {max-size: 5m, max-file: '2'}
+  sentiment:
+    image: keftrade-intelligence-sentiment:${INTELLIGENCE_SENTIMENT_IMAGE_TAG:-local}
+    build:
+      context: ..
+      dockerfile: workers/sentiment/Dockerfile
+    networks: [sentiment-private]
+    volumes: [/opt/keftrade-intelligence/models/distilroberta-financial-q8:/models:ro]
+    mem_limit: 384m
+    cpus: 1
+    restart: unless-stopped
+    read_only: true
+    tmpfs: [/tmp:size=16m]
+    security_opt: [no-new-privileges:true]
+    cap_drop: [ALL]
+    healthcheck:
+      test: [CMD, python, -c, "import urllib.request; urllib.request.urlopen('http://127.0.0.1:8300/health',timeout=3)"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+    logging:
+      driver: json-file
+      options: {max-size: 5m, max-file: '2'}
+  challenger:
+    image: keftrade-intelligence-api:${INTELLIGENCE_PAPER_IMAGE_TAG:-${INTELLIGENCE_API_IMAGE_TAG:-${INTELLIGENCE_IMAGE_TAG:-local}}}
+    command: [uvicorn, 'paperpilot.challenger:app', --host, 0.0.0.0, --port, '8400', --no-proxy-headers]
+    environment:
+      OPENBLAS_NUM_THREADS: '1'
+      OMP_NUM_THREADS: '1'
+    networks: [challenger-private]
+    volumes:
+      - ${INTELLIGENCE_MAINKRAFT_MODEL_DIR:-/opt/keftrade-intelligence/models/mainkraft}:/models/mainkraft:ro
+    mem_limit: 256m
+    cpus: 0.5
+    restart: unless-stopped
+    read_only: true
+    tmpfs: [/tmp:size=16m]
+    security_opt: [no-new-privileges:true]
+    cap_drop: [ALL]
+    healthcheck:
+      test: [CMD, python, -c, "import urllib.request; urllib.request.urlopen('http://127.0.0.1:8400/health',timeout=3)"]
+      interval: 15s
+      timeout: 5s
+      retries: 3
+    logging:
+      driver: json-file
+      options: {max-size: 5m, max-file: '2'}
+networks:
+  challenger-private: {internal: true}
+  sentiment-private: {internal: true}
+  private: {internal: true}
+  paper-private: {internal: true}
+  pilot-bridge: {internal: true}
+  egress: {}
+  ingress: {name: intelligence-ingress}
+volumes:
+  intelligence-database: {}
+  intelligence-artifacts: {}
+  paper-database: {}

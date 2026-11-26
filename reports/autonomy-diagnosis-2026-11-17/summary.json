@@ -1,0 +1,18 @@
+{
+  "captured_at": "2026-11-18T05:34:17.098010+00:00",
+  "evidence_sha256": "18f53bab5611eb7f0ab6f05abeec86b4daf42dbb84a80bb3b0afcc832174e186",
+  "decisions": 35,
+  "actions": {
+    "SKIP": 7,
+    "HOLD": 28
+  },
+  "overlapping_rejections": {
+    "readiness_not_verified_before_cutoff": 6,
+    "prediction_confidence_insufficient": 34,
+    "gross_expected_return_insufficient": 21,
+    "volatility_risk_limit": 3,
+    "news_not_bullish": 3,
+    "missing_data: Missing exchange sessions; data is not interpolated": 1
+  },
+  "method": "Reconstructed legacy signal conjunction; not a replay of downstream execution gates"
+}

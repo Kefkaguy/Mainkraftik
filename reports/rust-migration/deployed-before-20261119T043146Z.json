@@ -1,0 +1,1322 @@
+{
+  "at": "2026-11-19T04:31:54.254868+00:00",
+  "mode": "READ_ONLY_SNAPSHOT_NO_RUST_BROKER_PROCESS",
+  "bundle_sha256": "c287fcc54b746686c2d30b3fe3c1d94bcd3bb00c037f762e3ae94fcbcf06429f",
+  "bundle_path": ".local\\rust-migration\\bundle-c287fcc54b746686c2d30b3fe3c1d94bcd3bb00c037f762e3ae94fcbcf06429f.json",
+  "bundle_id": "6d48d8866dfc674413b6e9af54f5c535b8622f2229f6faaed57cda8fb59755c2",
+  "paper_schema_sha256": "c2815d5f11b4e3f48e7e22005724ecdf996e9ef0c78fa106f3481e9032548bad",
+  "containers": "keftrade-intelligence-web-1 keftrade-intelligence-web:paper-learning-webfix-v2 Up 9 minutes\nkeftrade-intelligence-paper-1 keftrade-intelligence-api:paper-learning-v1 Up 41 minutes (healthy)\nkeftrade-intelligence-api-1 keftrade-intelligence-api:mainkraft-v1 Up 29 hours (healthy)\nkeftrade-intelligence-challenger-1 keftrade-intelligence-api:mainkraft-v1 Up 23 hours (healthy)\nkeftrade-intelligence-sentiment-1 keftrade-intelligence-sentiment:sentiment-v1 Up 3 days (healthy)\nkeftrade-intelligence-worker-1 keftrade-intelligence-api:phase5-research Up 4 days\nkeftrade-intelligence-paper-postgres-1 postgres:18-alpine Up 5 days (healthy)\nkeftrade-intelligence-postgres-1 postgres:18-alpine Up 5 days (healthy)\n",
+  "resource_observation_not_comparative_benchmark": "keftrade-intelligence-paper-1 0.17% 142.8MiB / 512MiB\nkeftrade-intelligence-api-1 29.36% 120.3MiB / 512MiB\nkeftrade-intelligence-worker-1 3.69% 284.4MiB / 768MiB\nkeftrade-intelligence-sentiment-1 0.18% 271.2MiB / 384MiB\n",
+  "paper_status": {
+    "experimental": true,
+    "paper_only": true,
+    "policy_version": "paper-learning-v1",
+    "enabled": true,
+    "accounts": [
+      {
+        "label": "Original account \u00b7 fixed model",
+        "account_number": "PA3NSJAY7",
+        "baseline_equity": 14993.22,
+        "snapshot": {
+          "at": "2026-11-19T04:29:16.986016+00:00",
+          "policy": "control",
+          "account": {
+            "cash": "14200.01",
+            "equity": "14993.22",
+            "status": "ACTIVE",
+            "multiplier": "4",
+            "buying_power": "59021.04",
+            "account_number": "PA3NSJAY7",
+            "daytrade_count": null,
+            "account_blocked": false,
+            "trading_blocked": false,
+            "shorting_enabled": true,
+            "regt_buying_power": "29193.23",
+            "pattern_day_trader": null,
+            "daytrading_buying_power": null
+          },
+          "enabled": true,
+          "next_open": "2026-11-19T09:30:00-05:00",
+          "positions": [
+            {
+              "qty": "17.37597741",
+              "side": "long",
+              "symbol": "UBS",
+              "asset_id": "136c5a67-9124-4e3c-9e6c-06381181cd5e",
+              "exchange": "NYSE",
+              "cost_basis": "799.99",
+              "asset_class": "us_equity",
+              "change_today": "0",
+              "market_value": "793.213369",
+              "current_price": "45.65",
+              "lastday_price": "45.65",
+              "qty_available": "17.37597741",
+              "unrealized_pl": "-6.776631",
+              "avg_entry_price": "46.04",
+              "unrealized_plpc": "-0.00847",
+              "asset_marginable": true,
+              "unrealized_intraday_pl": "0",
+              "unrealized_intraday_plpc": "0"
+            }
+          ],
+          "market_open": false,
+          "open_orders": []
+        },
+        "counts": {
+          "snapshot": 16
+        },
+        "recent": [
+          {
+            "kind": "snapshot",
+            "payload": {
+              "at": "2026-11-19T04:29:16.986016+00:00",
+              "policy": "control",
+              "account": {
+                "cash": "14200.01",
+                "equity": "14993.22",
+                "status": "ACTIVE",
+                "multiplier": "4",
+                "buying_power": "59021.04",
+                "account_number": "PA3NSJAY7",
+                "daytrade_count": null,
+                "account_blocked": false,
+                "trading_blocked": false,
+                "shorting_enabled": true,
+                "regt_buying_power": "29193.23",
+                "pattern_day_trader": null,
+                "daytrading_buying_power": null
+              },
+              "enabled": true,
+              "next_open": "2026-11-19T09:30:00-05:00",
+              "positions": [
+                {
+                  "qty": "17.37597741",
+                  "side": "long",
+                  "symbol": "UBS",
+                  "asset_id": "136c5a67-9124-4e3c-9e6c-06381181cd5e",
+                  "exchange": "NYSE",
+                  "cost_basis": "799.99",
+                  "asset_class": "us_equity",
+                  "change_today": "0",
+                  "market_value": "793.213369",
+                  "current_price": "45.65",
+                  "lastday_price": "45.65",
+                  "qty_available": "17.37597741",
+                  "unrealized_pl": "-6.776631",
+                  "avg_entry_price": "46.04",
+                  "unrealized_plpc": "-0.00847",
+                  "asset_marginable": true,
+                  "unrealized_intraday_pl": "0",
+                  "unrealized_intraday_plpc": "0"
+                }
+              ],
+              "market_open": false,
+              "open_orders": []
+            }
+          },
+          {
+            "kind": "snapshot",
+            "payload": {
+              "at": "2026-11-19T04:26:04.858711+00:00",
+              "policy": "control",
+              "account": {
+                "cash": "14200.01",
+                "equity": "14993.22",
+                "status": "ACTIVE",
+                "multiplier": "4",
+                "buying_power": "59021.04",
+                "account_number": "PA3NSJAY7",
+                "daytrade_count": null,
+                "account_blocked": false,
+                "trading_blocked": false,
+                "shorting_enabled": true,
+                "regt_buying_power": "29193.23",
+                "pattern_day_trader": null,
+                "daytrading_buying_power": null
+              },
+              "enabled": true,
+              "next_open": "2026-11-19T09:30:00-05:00",
+              "positions": [
+                {
+                  "qty": "17.37597741",
+                  "side": "long",
+                  "symbol": "UBS",
+                  "asset_id": "136c5a67-9124-4e3c-9e6c-06381181cd5e",
+                  "exchange": "NYSE",
+                  "cost_basis": "799.99",
+                  "asset_class": "us_equity",
+                  "change_today": "0",
+                  "market_value": "793.213369",
+                  "current_price": "45.65",
+                  "lastday_price": "45.65",
+                  "qty_available": "17.37597741",
+                  "unrealized_pl": "-6.776631",
+                  "avg_entry_price": "46.04",
+                  "unrealized_plpc": "-0.00847",
+                  "asset_marginable": true,
+                  "unrealized_intraday_pl": "0",
+                  "unrealized_intraday_plpc": "0"
+                }
+              ],
+              "market_open": false,
+              "open_orders": []
+            }
+          },
+          {
+            "kind": "snapshot",
+            "payload": {
+              "at": "2026-11-19T04:22:52.953650+00:00",
+              "policy": "control",
+              "account": {
+                "cash": "14200.01",
+                "equity": "14993.22",
+                "status": "ACTIVE",
+                "multiplier": "4",
+                "buying_power": "59021.04",
+                "account_number": "PA3NSJAY7",
+                "daytrade_count": null,
+                "account_blocked": false,
+                "trading_blocked": false,
+                "shorting_enabled": true,
+                "regt_buying_power": "29193.23",
+                "pattern_day_trader": null,
+                "daytrading_buying_power": null
+              },
+              "enabled": true,
+              "next_open": "2026-11-19T09:30:00-05:00",
+              "positions": [
+                {
+                  "qty": "17.37597741",
+                  "side": "long",
+                  "symbol": "UBS",
+                  "asset_id": "136c5a67-9124-4e3c-9e6c-06381181cd5e",
+                  "exchange": "NYSE",
+                  "cost_basis": "799.99",
+                  "asset_class": "us_equity",
+                  "change_today": "0",
+                  "market_value": "793.213369",
+                  "current_price": "45.65",
+                  "lastday_price": "45.65",
+                  "qty_available": "17.37597741",
+                  "unrealized_pl": "-6.776631",
+                  "avg_entry_price": "46.04",
+                  "unrealized_plpc": "-0.00847",
+                  "asset_marginable": true,
+                  "unrealized_intraday_pl": "0",
+                  "unrealized_intraday_plpc": "0"
+                }
+              ],
+              "market_open": false,
+              "open_orders": []
+            }
+          },
+          {
+            "kind": "snapshot",
+            "payload": {
+              "at": "2026-11-19T04:19:40.972725+00:00",
+              "policy": "control",
+              "account": {
+                "cash": "14200.01",
+                "equity": "14993.22",
+                "status": "ACTIVE",
+                "multiplier": "4",
+                "buying_power": "59021.04",
+                "account_number": "PA3NSJAY7",
+                "daytrade_count": null,
+                "account_blocked": false,
+                "trading_blocked": false,
+                "shorting_enabled": true,
+                "regt_buying_power": "29193.23",
+                "pattern_day_trader": null,
+                "daytrading_buying_power": null
+              },
+              "enabled": true,
+              "next_open": "2026-11-19T09:30:00-05:00",
+              "positions": [
+                {
+                  "qty": "17.37597741",
+                  "side": "long",
+                  "symbol": "UBS",
+                  "asset_id": "136c5a67-9124-4e3c-9e6c-06381181cd5e",
+                  "exchange": "NYSE",
+                  "cost_basis": "799.99",
+                  "asset_class": "us_equity",
+                  "change_today": "0",
+                  "market_value": "793.213369",
+                  "current_price": "45.65",
+                  "lastday_price": "45.65",
+                  "qty_available": "17.37597741",
+                  "unrealized_pl": "-6.776631",
+                  "avg_entry_price": "46.04",
+                  "unrealized_plpc": "-0.00847",
+                  "asset_marginable": true,
+                  "unrealized_intraday_pl": "0",
+                  "unrealized_intraday_plpc": "0"
+                }
+              ],
+              "market_open": false,
+              "open_orders": []
+            }
+          },
+          {
+            "kind": "snapshot",
+            "payload": {
+              "at": "2026-11-19T04:16:28.915188+00:00",
+              "policy": "control",
+              "account": {
+                "cash": "14200.01",
+                "equity": "14993.22",
+                "status": "ACTIVE",
+                "multiplier": "4",
+                "buying_power": "59021.04",
+                "account_number": "PA3NSJAY7",
+                "daytrade_count": null,
+                "account_blocked": false,
+                "trading_blocked": false,
+                "shorting_enabled": true,
+                "regt_buying_power": "29193.23",
+                "pattern_day_trader": null,
+                "daytrading_buying_power": null
+              },
+              "enabled": true,
+              "next_open": "2026-11-19T09:30:00-05:00",
+              "positions": [
+                {
+                  "qty": "17.37597741",
+                  "side": "long",
+                  "symbol": "UBS",
+                  "asset_id": "136c5a67-9124-4e3c-9e6c-06381181cd5e",
+                  "exchange": "NYSE",
+                  "cost_basis": "799.99",
+                  "asset_class": "us_equity",
+                  "change_today": "0",
+                  "market_value": "793.213369",
+                  "current_price": "45.65",
+                  "lastday_price": "45.65",
+                  "qty_available": "17.37597741",
+                  "unrealized_pl": "-6.776631",
+                  "avg_entry_price": "46.04",
+                  "unrealized_plpc": "-0.00847",
+                  "asset_marginable": true,
+                  "unrealized_intraday_pl": "0",
+                  "unrealized_intraday_plpc": "0"
+                }
+              ],
+              "market_open": false,
+              "open_orders": []
+            }
+          },
+          {
+            "kind": "snapshot",
+            "payload": {
+              "at": "2026-11-19T04:13:16.929226+00:00",
+              "policy": "control",
+              "account": {
+                "cash": "14200.01",
+                "equity": "14993.22",
+                "status": "ACTIVE",
+                "multiplier": "4",
+                "buying_power": "59021.04",
+                "account_number": "PA3NSJAY7",
+                "daytrade_count": null,
+                "account_blocked": false,
+                "trading_blocked": false,
+                "shorting_enabled": true,
+                "regt_buying_power": "29193.23",
+                "pattern_day_trader": null,
+                "daytrading_buying_power": null
+              },
+              "enabled": true,
+              "next_open": "2026-11-19T09:30:00-05:00",
+              "positions": [
+                {
+                  "qty": "17.37597741",
+                  "side": "long",
+                  "symbol": "UBS",
+                  "asset_id": "136c5a67-9124-4e3c-9e6c-06381181cd5e",
+                  "exchange": "NYSE",
+                  "cost_basis": "799.99",
+                  "asset_class": "us_equity",
+                  "change_today": "0",
+                  "market_value": "793.213369",
+                  "current_price": "45.65",
+                  "lastday_price": "45.65",
+                  "qty_available": "17.37597741",
+                  "unrealized_pl": "-6.776631",
+                  "avg_entry_price": "46.04",
+                  "unrealized_plpc": "-0.00847",
+                  "asset_marginable": true,
+                  "unrealized_intraday_pl": "0",
+                  "unrealized_intraday_plpc": "0"
+                }
+              ],
+              "market_open": false,
+              "open_orders": []
+            }
+          },
+          {
+            "kind": "snapshot",
+            "payload": {
+              "at": "2026-11-19T04:10:04.755866+00:00",
+              "policy": "control",
+              "account": {
+                "cash": "14200.01",
+                "equity": "14993.22",
+                "status": "ACTIVE",
+                "multiplier": "4",
+                "buying_power": "59021.04",
+                "account_number": "PA3NSJAY7",
+                "daytrade_count": null,
+                "account_blocked": false,
+                "trading_blocked": false,
+                "shorting_enabled": true,
+                "regt_buying_power": "29193.23",
+                "pattern_day_trader": null,
+                "daytrading_buying_power": null
+              },
+              "enabled": true,
+              "next_open": "2026-11-19T09:30:00-05:00",
+              "positions": [
+                {
+                  "qty": "17.37597741",
+                  "side": "long",
+                  "symbol": "UBS",
+                  "asset_id": "136c5a67-9124-4e3c-9e6c-06381181cd5e",
+                  "exchange": "NYSE",
+                  "cost_basis": "799.99",
+                  "asset_class": "us_equity",
+                  "change_today": "0",
+                  "market_value": "793.213369",
+                  "current_price": "45.65",
+                  "lastday_price": "45.65",
+                  "qty_available": "17.37597741",
+                  "unrealized_pl": "-6.776631",
+                  "avg_entry_price": "46.04",
+                  "unrealized_plpc": "-0.00847",
+                  "asset_marginable": true,
+                  "unrealized_intraday_pl": "0",
+                  "unrealized_intraday_plpc": "0"
+                }
+              ],
+              "market_open": false,
+              "open_orders": []
+            }
+          },
+          {
+            "kind": "snapshot",
+            "payload": {
+              "at": "2026-11-19T04:06:52.903182+00:00",
+              "policy": "control",
+              "account": {
+                "cash": "14200.01",
+                "equity": "14993.22",
+                "status": "ACTIVE",
+                "multiplier": "4",
+                "buying_power": "59021.04",
+                "account_number": "PA3NSJAY7",
+                "daytrade_count": null,
+                "account_blocked": false,
+                "trading_blocked": false,
+                "shorting_enabled": true,
+                "regt_buying_power": "29193.23",
+                "pattern_day_trader": null,
+                "daytrading_buying_power": null
+              },
+              "enabled": true,
+              "next_open": "2026-11-19T09:30:00-05:00",
+              "positions": [
+                {
+                  "qty": "17.37597741",
+                  "side": "long",
+                  "symbol": "UBS",
+                  "asset_id": "136c5a67-9124-4e3c-9e6c-06381181cd5e",
+                  "exchange": "NYSE",
+                  "cost_basis": "799.99",
+                  "asset_class": "us_equity",
+                  "change_today": "0",
+                  "market_value": "793.213369",
+                  "current_price": "45.65",
+                  "lastday_price": "45.65",
+                  "qty_available": "17.37597741",
+                  "unrealized_pl": "-6.776631",
+                  "avg_entry_price": "46.04",
+                  "unrealized_plpc": "-0.00847",
+                  "asset_marginable": true,
+                  "unrealized_intraday_pl": "0",
+                  "unrealized_intraday_plpc": "0"
+                }
+              ],
+              "market_open": false,
+              "open_orders": []
+            }
+          },
+          {
+            "kind": "snapshot",
+            "payload": {
+              "at": "2026-11-19T04:03:40.784474+00:00",
+              "policy": "control",
+              "account": {
+                "cash": "14200.01",
+                "equity": "14993.22",
+                "status": "ACTIVE",
+                "multiplier": "4",
+                "buying_power": "59021.04",
+                "account_number": "PA3NSJAY7",
+                "daytrade_count": null,
+                "account_blocked": false,
+                "trading_blocked": false,
+                "shorting_enabled": true,
+                "regt_buying_power": "29193.23",
+                "pattern_day_trader": null,
+                "daytrading_buying_power": null
+              },
+              "enabled": true,
+              "next_open": "2026-11-19T09:30:00-05:00",
+              "positions": [
+                {
+                  "qty": "17.37597741",
+                  "side": "long",
+                  "symbol": "UBS",
+                  "asset_id": "136c5a67-9124-4e3c-9e6c-06381181cd5e",
+                  "exchange": "NYSE",
+                  "cost_basis": "799.99",
+                  "asset_class": "us_equity",
+                  "change_today": "0",
+                  "market_value": "793.213369",
+                  "current_price": "45.65",
+                  "lastday_price": "45.65",
+                  "qty_available": "17.37597741",
+                  "unrealized_pl": "-6.776631",
+                  "avg_entry_price": "46.04",
+                  "unrealized_plpc": "-0.00847",
+                  "asset_marginable": true,
+                  "unrealized_intraday_pl": "0",
+                  "unrealized_intraday_plpc": "0"
+                }
+              ],
+              "market_open": false,
+              "open_orders": []
+            }
+          },
+          {
+            "kind": "snapshot",
+            "payload": {
+              "at": "2026-11-19T04:00:28.676227+00:00",
+              "policy": "control",
+              "account": {
+                "cash": "14200.01",
+                "equity": "14993.22",
+                "status": "ACTIVE",
+                "multiplier": "4",
+                "buying_power": "59021.04",
+                "account_number": "PA3NSJAY7",
+                "daytrade_count": null,
+                "account_blocked": false,
+                "trading_blocked": false,
+                "shorting_enabled": true,
+                "regt_buying_power": "29193.23",
+                "pattern_day_trader": null,
+                "daytrading_buying_power": null
+              },
+              "enabled": true,
+              "next_open": "2026-11-19T09:30:00-05:00",
+              "positions": [
+                {
+                  "qty": "17.37597741",
+                  "side": "long",
+                  "symbol": "UBS",
+                  "asset_id": "136c5a67-9124-4e3c-9e6c-06381181cd5e",
+                  "exchange": "NYSE",
+                  "cost_basis": "799.99",
+                  "asset_class": "us_equity",
+                  "change_today": "0",
+                  "market_value": "793.213369",
+                  "current_price": "45.65",
+                  "lastday_price": "45.65",
+                  "qty_available": "17.37597741",
+                  "unrealized_pl": "-6.776631",
+                  "avg_entry_price": "46.04",
+                  "unrealized_plpc": "-0.00847",
+                  "asset_marginable": true,
+                  "unrealized_intraday_pl": "0",
+                  "unrealized_intraday_plpc": "0"
+                }
+              ],
+              "market_open": false,
+              "open_orders": []
+            }
+          },
+          {
+            "kind": "snapshot",
+            "payload": {
+              "at": "2026-11-19T03:57:16.772456+00:00",
+              "policy": "control",
+              "account": {
+                "cash": "14200.01",
+                "equity": "14993.22",
+                "status": "ACTIVE",
+                "multiplier": "4",
+                "buying_power": "59021.04",
+                "account_number": "PA3NSJAY7",
+                "daytrade_count": null,
+                "account_blocked": false,
+                "trading_blocked": false,
+                "shorting_enabled": true,
+                "regt_buying_power": "29193.23",
+                "pattern_day_trader": null,
+                "daytrading_buying_power": null
+              },
+              "enabled": true,
+              "next_open": "2026-11-19T09:30:00-05:00",
+              "positions": [
+                {
+                  "qty": "17.37597741",
+                  "side": "long",
+                  "symbol": "UBS",
+                  "asset_id": "136c5a67-9124-4e3c-9e6c-06381181cd5e",
+                  "exchange": "NYSE",
+                  "cost_basis": "799.99",
+                  "asset_class": "us_equity",
+                  "change_today": "0",
+                  "market_value": "793.213369",
+                  "current_price": "45.65",
+                  "lastday_price": "45.65",
+                  "qty_available": "17.37597741",
+                  "unrealized_pl": "-6.776631",
+                  "avg_entry_price": "46.04",
+                  "unrealized_plpc": "-0.00847",
+                  "asset_marginable": true,
+                  "unrealized_intraday_pl": "0",
+                  "unrealized_intraday_plpc": "0"
+                }
+              ],
+              "market_open": false,
+              "open_orders": []
+            }
+          },
+          {
+            "kind": "snapshot",
+            "payload": {
+              "at": "2026-11-19T03:54:04.805847+00:00",
+              "policy": "control",
+              "account": {
+                "cash": "14200.01",
+                "equity": "14993.22",
+                "status": "ACTIVE",
+                "multiplier": "4",
+                "buying_power": "59021.04",
+                "account_number": "PA3NSJAY7",
+                "daytrade_count": null,
+                "account_blocked": false,
+                "trading_blocked": false,
+                "shorting_enabled": true,
+                "regt_buying_power": "29193.23",
+                "pattern_day_trader": null,
+                "daytrading_buying_power": null
+              },
+              "enabled": true,
+              "next_open": "2026-11-19T09:30:00-05:00",
+              "positions": [
+                {
+                  "qty": "17.37597741",
+                  "side": "long",
+                  "symbol": "UBS",
+                  "asset_id": "136c5a67-9124-4e3c-9e6c-06381181cd5e",
+                  "exchange": "NYSE",
+                  "cost_basis": "799.99",
+                  "asset_class": "us_equity",
+                  "change_today": "0",
+                  "market_value": "793.213369",
+                  "current_price": "45.65",
+                  "lastday_price": "45.65",
+                  "qty_available": "17.37597741",
+                  "unrealized_pl": "-6.776631",
+                  "avg_entry_price": "46.04",
+                  "unrealized_plpc": "-0.00847",
+                  "asset_marginable": true,
+                  "unrealized_intraday_pl": "0",
+                  "unrealized_intraday_plpc": "0"
+                }
+              ],
+              "market_open": false,
+              "open_orders": []
+            }
+          },
+          {
+            "kind": "snapshot",
+            "payload": {
+              "at": "2026-11-19T03:50:52.217049+00:00",
+              "policy": "control",
+              "account": {
+                "cash": "14200.01",
+                "equity": "14993.22",
+                "status": "ACTIVE",
+                "multiplier": "4",
+                "buying_power": "59021.04",
+                "account_number": "PA3NSJAY7",
+                "daytrade_count": null,
+                "account_blocked": false,
+                "trading_blocked": false,
+                "shorting_enabled": true,
+                "regt_buying_power": "29193.23",
+                "pattern_day_trader": null,
+                "daytrading_buying_power": null
+              },
+              "enabled": true,
+              "next_open": "2026-11-19T09:30:00-05:00",
+              "positions": [
+                {
+                  "qty": "17.37597741",
+                  "side": "long",
+                  "symbol": "UBS",
+                  "asset_id": "136c5a67-9124-4e3c-9e6c-06381181cd5e",
+                  "exchange": "NYSE",
+                  "cost_basis": "799.99",
+                  "asset_class": "us_equity",
+                  "change_today": "0",
+                  "market_value": "793.213369",
+                  "current_price": "45.65",
+                  "lastday_price": "45.65",
+                  "qty_available": "17.37597741",
+                  "unrealized_pl": "-6.776631",
+                  "avg_entry_price": "46.04",
+                  "unrealized_plpc": "-0.00847",
+                  "asset_marginable": true,
+                  "unrealized_intraday_pl": "0",
+                  "unrealized_intraday_plpc": "0"
+                }
+              ],
+              "market_open": false,
+              "open_orders": []
+            }
+          },
+          {
+            "kind": "snapshot",
+            "payload": {
+              "at": "2026-11-19T03:49:04.387574+00:00",
+              "policy": "control",
+              "account": {
+                "cash": "14200.01",
+                "equity": "14993.22",
+                "status": "ACTIVE",
+                "multiplier": "4",
+                "buying_power": "59021.04",
+                "account_number": "PA3NSJAY7",
+                "daytrade_count": null,
+                "account_blocked": false,
+                "trading_blocked": false,
+                "shorting_enabled": true,
+                "regt_buying_power": "29193.23",
+                "pattern_day_trader": null,
+                "daytrading_buying_power": null
+              },
+              "enabled": true,
+              "next_open": "2026-11-19T09:30:00-05:00",
+              "positions": [
+                {
+                  "qty": "17.37597741",
+                  "side": "long",
+                  "symbol": "UBS",
+                  "asset_id": "136c5a67-9124-4e3c-9e6c-06381181cd5e",
+                  "exchange": "NYSE",
+                  "cost_basis": "799.99",
+                  "asset_class": "us_equity",
+                  "change_today": "0",
+                  "market_value": "793.213369",
+                  "current_price": "45.65",
+                  "lastday_price": "45.65",
+                  "qty_available": "17.37597741",
+                  "unrealized_pl": "-6.776631",
+                  "avg_entry_price": "46.04",
+                  "unrealized_plpc": "-0.00847",
+                  "asset_marginable": true,
+                  "unrealized_intraday_pl": "0",
+                  "unrealized_intraday_plpc": "0"
+                }
+              ],
+              "market_open": false,
+              "open_orders": []
+            }
+          },
+          {
+            "kind": "snapshot",
+            "payload": {
+              "at": "2026-11-19T03:45:52.528450+00:00",
+              "policy": "control",
+              "account": {
+                "cash": "14200.01",
+                "equity": "14993.22",
+                "status": "ACTIVE",
+                "multiplier": "4",
+                "buying_power": "59021.04",
+                "account_number": "PA3NSJAY7",
+                "daytrade_count": null,
+                "account_blocked": false,
+                "trading_blocked": false,
+                "shorting_enabled": true,
+                "regt_buying_power": "29193.23",
+                "pattern_day_trader": null,
+                "daytrading_buying_power": null
+              },
+              "enabled": true,
+              "next_open": "2026-11-19T09:30:00-05:00",
+              "positions": [
+                {
+                  "qty": "17.37597741",
+                  "side": "long",
+                  "symbol": "UBS",
+                  "asset_id": "136c5a67-9124-4e3c-9e6c-06381181cd5e",
+                  "exchange": "NYSE",
+                  "cost_basis": "799.99",
+                  "asset_class": "us_equity",
+                  "change_today": "0",
+                  "market_value": "793.213369",
+                  "current_price": "45.65",
+                  "lastday_price": "45.65",
+                  "qty_available": "17.37597741",
+                  "unrealized_pl": "-6.776631",
+                  "avg_entry_price": "46.04",
+                  "unrealized_plpc": "-0.00847",
+                  "asset_marginable": true,
+                  "unrealized_intraday_pl": "0",
+                  "unrealized_intraday_plpc": "0"
+                }
+              ],
+              "market_open": false,
+              "open_orders": []
+            }
+          },
+          {
+            "kind": "snapshot",
+            "payload": {
+              "at": "2026-11-19T03:45:20.387190+00:00",
+              "policy": "control",
+              "account": {
+                "cash": "14200.01",
+                "equity": "14993.22",
+                "status": "ACTIVE",
+                "multiplier": "4",
+                "buying_power": "59021.04",
+                "account_number": "PA3NSJAY7",
+                "daytrade_count": null,
+                "account_blocked": false,
+                "trading_blocked": false,
+                "shorting_enabled": true,
+                "regt_buying_power": "29193.23",
+                "pattern_day_trader": null,
+                "daytrading_buying_power": null
+              },
+              "enabled": false,
+              "next_open": "2026-11-19T09:30:00-05:00",
+              "positions": [
+                {
+                  "qty": "17.37597741",
+                  "side": "long",
+                  "symbol": "UBS",
+                  "asset_id": "136c5a67-9124-4e3c-9e6c-06381181cd5e",
+                  "exchange": "NYSE",
+                  "cost_basis": "799.99",
+                  "asset_class": "us_equity",
+                  "change_today": "0",
+                  "market_value": "793.213369",
+                  "current_price": "45.65",
+                  "lastday_price": "45.65",
+                  "qty_available": "17.37597741",
+                  "unrealized_pl": "-6.776631",
+                  "avg_entry_price": "46.04",
+                  "unrealized_plpc": "-0.00847",
+                  "asset_marginable": true,
+                  "unrealized_intraday_pl": "0",
+                  "unrealized_intraday_plpc": "0"
+                }
+              ],
+              "market_open": false,
+              "open_orders": []
+            }
+          }
+        ],
+        "orders": [],
+        "forecast_metrics": {
+          "n": 0,
+          "mae": null,
+          "directional_accuracy": null
+        }
+      },
+      {
+        "label": "Second account \u00b7 online learning",
+        "account_number": "PA3D4GIWG",
+        "baseline_equity": 1000000,
+        "snapshot": {
+          "at": "2026-11-19T04:29:17.481382+00:00",
+          "policy": "adaptive",
+          "account": {
+            "cash": "1000000",
+            "equity": "1000000",
+            "status": "ACTIVE",
+            "multiplier": "2",
+            "buying_power": "2000000",
+            "account_number": "PA3D4GIWG",
+            "daytrade_count": null,
+            "account_blocked": false,
+            "trading_blocked": false,
+            "shorting_enabled": true,
+            "regt_buying_power": "2000000",
+            "pattern_day_trader": null,
+            "daytrading_buying_power": null
+          },
+          "enabled": true,
+          "next_open": "2026-11-19T09:30:00-05:00",
+          "positions": [],
+          "market_open": false,
+          "open_orders": []
+        },
+        "counts": {
+          "snapshot": 16
+        },
+        "recent": [
+          {
+            "kind": "snapshot",
+            "payload": {
+              "at": "2026-11-19T04:29:17.481382+00:00",
+              "policy": "adaptive",
+              "account": {
+                "cash": "1000000",
+                "equity": "1000000",
+                "status": "ACTIVE",
+                "multiplier": "2",
+                "buying_power": "2000000",
+                "account_number": "PA3D4GIWG",
+                "daytrade_count": null,
+                "account_blocked": false,
+                "trading_blocked": false,
+                "shorting_enabled": true,
+                "regt_buying_power": "2000000",
+                "pattern_day_trader": null,
+                "daytrading_buying_power": null
+              },
+              "enabled": true,
+              "next_open": "2026-11-19T09:30:00-05:00",
+              "positions": [],
+              "market_open": false,
+              "open_orders": []
+            }
+          },
+          {
+            "kind": "snapshot",
+            "payload": {
+              "at": "2026-11-19T04:26:05.373258+00:00",
+              "policy": "adaptive",
+              "account": {
+                "cash": "1000000",
+                "equity": "1000000",
+                "status": "ACTIVE",
+                "multiplier": "2",
+                "buying_power": "2000000",
+                "account_number": "PA3D4GIWG",
+                "daytrade_count": null,
+                "account_blocked": false,
+                "trading_blocked": false,
+                "shorting_enabled": true,
+                "regt_buying_power": "2000000",
+                "pattern_day_trader": null,
+                "daytrading_buying_power": null
+              },
+              "enabled": true,
+              "next_open": "2026-11-19T09:30:00-05:00",
+              "positions": [],
+              "market_open": false,
+              "open_orders": []
+            }
+          },
+          {
+            "kind": "snapshot",
+            "payload": {
+              "at": "2026-11-19T04:22:53.463703+00:00",
+              "policy": "adaptive",
+              "account": {
+                "cash": "1000000",
+                "equity": "1000000",
+                "status": "ACTIVE",
+                "multiplier": "2",
+                "buying_power": "2000000",
+                "account_number": "PA3D4GIWG",
+                "daytrade_count": null,
+                "account_blocked": false,
+                "trading_blocked": false,
+                "shorting_enabled": true,
+                "regt_buying_power": "2000000",
+                "pattern_day_trader": null,
+                "daytrading_buying_power": null
+              },
+              "enabled": true,
+              "next_open": "2026-11-19T09:30:00-05:00",
+              "positions": [],
+              "market_open": false,
+              "open_orders": []
+            }
+          },
+          {
+            "kind": "snapshot",
+            "payload": {
+              "at": "2026-11-19T04:19:41.463428+00:00",
+              "policy": "adaptive",
+              "account": {
+                "cash": "1000000",
+                "equity": "1000000",
+                "status": "ACTIVE",
+                "multiplier": "2",
+                "buying_power": "2000000",
+                "account_number": "PA3D4GIWG",
+                "daytrade_count": null,
+                "account_blocked": false,
+                "trading_blocked": false,
+                "shorting_enabled": true,
+                "regt_buying_power": "2000000",
+                "pattern_day_trader": null,
+                "daytrading_buying_power": null
+              },
+              "enabled": true,
+              "next_open": "2026-11-19T09:30:00-05:00",
+              "positions": [],
+              "market_open": false,
+              "open_orders": []
+            }
+          },
+          {
+            "kind": "snapshot",
+            "payload": {
+              "at": "2026-11-19T04:16:29.400244+00:00",
+              "policy": "adaptive",
+              "account": {
+                "cash": "1000000",
+                "equity": "1000000",
+                "status": "ACTIVE",
+                "multiplier": "2",
+                "buying_power": "2000000",
+                "account_number": "PA3D4GIWG",
+                "daytrade_count": null,
+                "account_blocked": false,
+                "trading_blocked": false,
+                "shorting_enabled": true,
+                "regt_buying_power": "2000000",
+                "pattern_day_trader": null,
+                "daytrading_buying_power": null
+              },
+              "enabled": true,
+              "next_open": "2026-11-19T09:30:00-05:00",
+              "positions": [],
+              "market_open": false,
+              "open_orders": []
+            }
+          },
+          {
+            "kind": "snapshot",
+            "payload": {
+              "at": "2026-11-19T04:13:17.426777+00:00",
+              "policy": "adaptive",
+              "account": {
+                "cash": "1000000",
+                "equity": "1000000",
+                "status": "ACTIVE",
+                "multiplier": "2",
+                "buying_power": "2000000",
+                "account_number": "PA3D4GIWG",
+                "daytrade_count": null,
+                "account_blocked": false,
+                "trading_blocked": false,
+                "shorting_enabled": true,
+                "regt_buying_power": "2000000",
+                "pattern_day_trader": null,
+                "daytrading_buying_power": null
+              },
+              "enabled": true,
+              "next_open": "2026-11-19T09:30:00-05:00",
+              "positions": [],
+              "market_open": false,
+              "open_orders": []
+            }
+          },
+          {
+            "kind": "snapshot",
+            "payload": {
+              "at": "2026-11-19T04:10:05.251706+00:00",
+              "policy": "adaptive",
+              "account": {
+                "cash": "1000000",
+                "equity": "1000000",
+                "status": "ACTIVE",
+                "multiplier": "2",
+                "buying_power": "2000000",
+                "account_number": "PA3D4GIWG",
+                "daytrade_count": null,
+                "account_blocked": false,
+                "trading_blocked": false,
+                "shorting_enabled": true,
+                "regt_buying_power": "2000000",
+                "pattern_day_trader": null,
+                "daytrading_buying_power": null
+              },
+              "enabled": true,
+              "next_open": "2026-11-19T09:30:00-05:00",
+              "positions": [],
+              "market_open": false,
+              "open_orders": []
+            }
+          },
+          {
+            "kind": "snapshot",
+            "payload": {
+              "at": "2026-11-19T04:06:53.416701+00:00",
+              "policy": "adaptive",
+              "account": {
+                "cash": "1000000",
+                "equity": "1000000",
+                "status": "ACTIVE",
+                "multiplier": "2",
+                "buying_power": "2000000",
+                "account_number": "PA3D4GIWG",
+                "daytrade_count": null,
+                "account_blocked": false,
+                "trading_blocked": false,
+                "shorting_enabled": true,
+                "regt_buying_power": "2000000",
+                "pattern_day_trader": null,
+                "daytrading_buying_power": null
+              },
+              "enabled": true,
+              "next_open": "2026-11-19T09:30:00-05:00",
+              "positions": [],
+              "market_open": false,
+              "open_orders": []
+            }
+          },
+          {
+            "kind": "snapshot",
+            "payload": {
+              "at": "2026-11-19T04:03:41.296572+00:00",
+              "policy": "adaptive",
+              "account": {
+                "cash": "1000000",
+                "equity": "1000000",
+                "status": "ACTIVE",
+                "multiplier": "2",
+                "buying_power": "2000000",
+                "account_number": "PA3D4GIWG",
+                "daytrade_count": null,
+                "account_blocked": false,
+                "trading_blocked": false,
+                "shorting_enabled": true,
+                "regt_buying_power": "2000000",
+                "pattern_day_trader": null,
+                "daytrading_buying_power": null
+              },
+              "enabled": true,
+              "next_open": "2026-11-19T09:30:00-05:00",
+              "positions": [],
+              "market_open": false,
+              "open_orders": []
+            }
+          },
+          {
+            "kind": "snapshot",
+            "payload": {
+              "at": "2026-11-19T04:00:29.157624+00:00",
+              "policy": "adaptive",
+              "account": {
+                "cash": "1000000",
+                "equity": "1000000",
+                "status": "ACTIVE",
+                "multiplier": "2",
+                "buying_power": "2000000",
+                "account_number": "PA3D4GIWG",
+                "daytrade_count": null,
+                "account_blocked": false,
+                "trading_blocked": false,
+                "shorting_enabled": true,
+                "regt_buying_power": "2000000",
+                "pattern_day_trader": null,
+                "daytrading_buying_power": null
+              },
+              "enabled": true,
+              "next_open": "2026-11-19T09:30:00-05:00",
+              "positions": [],
+              "market_open": false,
+              "open_orders": []
+            }
+          },
+          {
+            "kind": "snapshot",
+            "payload": {
+              "at": "2026-11-19T03:57:17.280367+00:00",
+              "policy": "adaptive",
+              "account": {
+                "cash": "1000000",
+                "equity": "1000000",
+                "status": "ACTIVE",
+                "multiplier": "2",
+                "buying_power": "2000000",
+                "account_number": "PA3D4GIWG",
+                "daytrade_count": null,
+                "account_blocked": false,
+                "trading_blocked": false,
+                "shorting_enabled": true,
+                "regt_buying_power": "2000000",
+                "pattern_day_trader": null,
+                "daytrading_buying_power": null
+              },
+              "enabled": true,
+              "next_open": "2026-11-19T09:30:00-05:00",
+              "positions": [],
+              "market_open": false,
+              "open_orders": []
+            }
+          },
+          {
+            "kind": "snapshot",
+            "payload": {
+              "at": "2026-11-19T03:54:05.308623+00:00",
+              "policy": "adaptive",
+              "account": {
+                "cash": "1000000",
+                "equity": "1000000",
+                "status": "ACTIVE",
+                "multiplier": "2",
+                "buying_power": "2000000",
+                "account_number": "PA3D4GIWG",
+                "daytrade_count": null,
+                "account_blocked": false,
+                "trading_blocked": false,
+                "shorting_enabled": true,
+                "regt_buying_power": "2000000",
+                "pattern_day_trader": null,
+                "daytrading_buying_power": null
+              },
+              "enabled": true,
+              "next_open": "2026-11-19T09:30:00-05:00",
+              "positions": [],
+              "market_open": false,
+              "open_orders": []
+            }
+          },
+          {
+            "kind": "snapshot",
+            "payload": {
+              "at": "2026-11-19T03:50:53.058639+00:00",
+              "policy": "adaptive",
+              "account": {
+                "cash": "1000000",
+                "equity": "1000000",
+                "status": "ACTIVE",
+                "multiplier": "2",
+                "buying_power": "2000000",
+                "account_number": "PA3D4GIWG",
+                "daytrade_count": null,
+                "account_blocked": false,
+                "trading_blocked": false,
+                "shorting_enabled": true,
+                "regt_buying_power": "2000000",
+                "pattern_day_trader": null,
+                "daytrading_buying_power": null
+              },
+              "enabled": true,
+              "next_open": "2026-11-19T09:30:00-05:00",
+              "positions": [],
+              "market_open": false,
+              "open_orders": []
+            }
+          },
+          {
+            "kind": "snapshot",
+            "payload": {
+              "at": "2026-11-19T03:49:04.901814+00:00",
+              "policy": "adaptive",
+              "account": {
+                "cash": "1000000",
+                "equity": "1000000",
+                "status": "ACTIVE",
+                "multiplier": "2",
+                "buying_power": "2000000",
+                "account_number": "PA3D4GIWG",
+                "daytrade_count": null,
+                "account_blocked": false,
+                "trading_blocked": false,
+                "shorting_enabled": true,
+                "regt_buying_power": "2000000",
+                "pattern_day_trader": null,
+                "daytrading_buying_power": null
+              },
+              "enabled": true,
+              "next_open": "2026-11-19T09:30:00-05:00",
+              "positions": [],
+              "market_open": false,
+              "open_orders": []
+            }
+          },
+          {
+            "kind": "snapshot",
+            "payload": {
+              "at": "2026-11-19T03:45:53.088196+00:00",
+              "policy": "adaptive",
+              "account": {
+                "cash": "1000000",
+                "equity": "1000000",
+                "status": "ACTIVE",
+                "multiplier": "2",
+                "buying_power": "2000000",
+                "account_number": "PA3D4GIWG",
+                "daytrade_count": null,
+                "account_blocked": false,
+                "trading_blocked": false,
+                "shorting_enabled": true,
+                "regt_buying_power": "2000000",
+                "pattern_day_trader": null,
+                "daytrading_buying_power": null
+              },
+              "enabled": true,
+              "next_open": "2026-11-19T09:30:00-05:00",
+              "positions": [],
+              "market_open": false,
+              "open_orders": []
+            }
+          },
+          {
+            "kind": "snapshot",
+            "payload": {
+              "at": "2026-11-19T03:45:21.048274+00:00",
+              "policy": "adaptive",
+              "account": {
+                "cash": "1000000",
+                "equity": "1000000",
+                "status": "ACTIVE",
+                "multiplier": "2",
+                "buying_power": "2000000",
+                "account_number": "PA3D4GIWG",
+                "daytrade_count": null,
+                "account_blocked": false,
+                "trading_blocked": false,
+                "shorting_enabled": true,
+                "regt_buying_power": "2000000",
+                "pattern_day_trader": null,
+                "daytrading_buying_power": null
+              },
+              "enabled": false,
+              "next_open": "2026-11-19T09:30:00-05:00",
+              "positions": [],
+              "market_open": false,
+              "open_orders": []
+            }
+          }
+        ],
+        "orders": [],
+        "forecast_metrics": {
+          "n": 0,
+          "mae": null,
+          "directional_accuracy": null
+        }
+      }
+    ],
+    "limits": "Broker buying power and asset permissions; no app capital/count/confidence/daily-loss limits",
+    "learning": "Original account: fixed prior. Second: reproducible exploration and online residual learning from matured, pre-recorded forecasts.",
+    "profitability": "Unvalidated experiment. Paper fills do not establish a live trading advantage."
+  }
+}

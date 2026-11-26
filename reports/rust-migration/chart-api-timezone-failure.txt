@@ -1,0 +1,22 @@
+
+running 1 test
+test existing_company_workspace_forecast_research_and_monitoring_contracts_match_python ... FAILED
+
+failures:
+
+failures:
+    existing_company_workspace_forecast_research_and_monitoring_contracts_match_python
+
+test result: FAILED. 0 passed; 1 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.77s
+
+
+   Compiling mainkraft v0.1.0 (C:\Users\erosi\OneDrive\Desktop\allprojects\keftrade-intelligence\apps\backend-rust)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 2.49s
+     Running tests\research_api.rs (apps\backend-rust\target\debug\deps\research_api-2771b51d8e157aaa.exe)
+
+thread 'existing_company_workspace_forecast_research_and_monitoring_contracts_match_python' (11660) panicked at tests\research_api.rs:179:5:
+/v1/detections/de31faa7-a606-5ac6-b357-33897c41eeac/chart: status 409 Conflict != 200
+/v1/detections/de31faa7-a606-5ac6-b357-33897c41eeac/chart: PNG SHA 75866576f5ef65c4f54e6407e5e3988965bc81be06ddfc19d2a0ef98eefddc96 != 30d5967b0bb173d0d2328d116ec191584f0df85feea431ffac9dd7df2c51d841 (body prefix {"detail":"Archived chart renderer or input identity mismatch"})
+image identity 9dbbca74b39a50f6f152cd007e7613172f1dfe66b24412c38c57e6ca144ceda0 == "9dbbca74b39a50f6f152cd007e7613172f1dfe66b24412c38c57e6ca144ceda0" ; input identity c70111d4ce4f3c03908e6464be7f3230d304050a9f91bdc11531c259f11e526f == "f64c6bcfd71e5a062930e1e59641a2469b0795ce3f32e18fe13aec46a4eaaee9"
+note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+error: test failed, to rerun pass `--test research_api`

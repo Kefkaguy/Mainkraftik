@@ -1,0 +1,64 @@
+{
+  "cases": [
+    {
+      "html": "<h1>&#x1fffffe;</h1><meta property='og:title' content='&#x1fffffe;'>",
+      "actual": [
+        {
+          "name": "h1",
+          "attrs": {},
+          "text": "\ufffd",
+          "raw_text": "\ufffd"
+        },
+        {
+          "name": "meta",
+          "attrs": {
+            "content": "",
+            "property": "og:title"
+          },
+          "text": "",
+          "raw_text": ""
+        }
+      ],
+      "expected": [
+        {
+          "name": "h1",
+          "attrs": {},
+          "text": "\ufffd",
+          "raw_text": "\ufffd"
+        },
+        {
+          "name": "meta",
+          "attrs": {
+            "property": "og:title",
+            "content": "\ufffd"
+          },
+          "text": "",
+          "raw_text": ""
+        }
+      ],
+      "matches": false
+    },
+    {
+      "html": "<h1>before<script><!--<script>x</script>after</h1>",
+      "actual": [
+        {
+          "name": "h1",
+          "attrs": {},
+          "text": "before",
+          "raw_text": "before"
+        }
+      ],
+      "expected": [
+        {
+          "name": "h1",
+          "attrs": {},
+          "text": "before after",
+          "raw_text": "beforeafter"
+        }
+      ],
+      "matches": false
+    }
+  ],
+  "source_sha256": "6bcbb791e053556bbfcd31c3fcbb3e60eee1456f3281ae5a54c8c1e00ad0daab",
+  "probe_sha256": "f65fba2e0ddcb8c220410ee2a7c11e7c44db9dc797ff6855299b651ffc65fab2"
+}

@@ -1,0 +1,11 @@
+{
+  "at": "2026-11-21T05:09:57.861743+00:00",
+  "original_failure_count": 2,
+  "fixed": "Preserve integer 365 missing/clamped-news-age sentinel in canonical payloads. No expected values changed.",
+  "files": {
+    "reports/rust-migration/point-feature-first-failures.json": "3a375531cf3a4a5ce8bedd7f1ee7837789441845530722ac7689d466c80100ff",
+    "apps/backend-rust/tests/fixtures/point-features.json": "f0094d887a8408156e4bdc8de1b8288f8a4fb355ee4f1f8ae50c75f5080a15d4",
+    "apps/backend-rust/tests/fixtures/point-feature-boundaries.json": "b69a91308ef88d62ebfb23f7d50be40e7db2bf9c1ee71a587ffcca0546563779"
+  },
+  "deployment_allowed": false
+}

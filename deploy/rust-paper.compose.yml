@@ -1,0 +1,20 @@
+# Apply LAST after the existing compose.yml and compose.paper-learning.yml.
+# Replaces only paper. No database, account, policy, credential or unrelated role changes.
+services:
+  paper:
+    image: ${MAINKRAFT_RUST_IMAGE:?Pin the validated native image}
+    entrypoint: [/usr/local/bin/mainkraft]
+    command:
+      - paper-service
+      - --cutover-receipt
+      - /run/mainkraft-cutover/receipt.json
+      - --receipt-sha256
+      - ${MAINKRAFT_CUTOVER_RECEIPT_SHA256:?Pin the explicitly approved receipt hash}
+    stop_grace_period: 130s
+    volumes:
+      - ${MAINKRAFT_CUTOVER_DIRECTORY:?Use the reviewed cutover directory}:/run/mainkraft-cutover:ro
+    healthcheck:
+      test: [CMD, /usr/local/bin/mainkraft, check-paper-health]
+      interval: 30s
+      timeout: 5s
+      retries: 3

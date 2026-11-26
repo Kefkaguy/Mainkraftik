@@ -1,0 +1,905 @@
+{
+  "local_only": true,
+  "broker_requests": 0,
+  "run": "a9ad38ef335b",
+  "created_at": "2026-11-22T04:54:43.426857+00:00",
+  "passed": true,
+  "cross_readers": [
+    {
+      "kind": "research",
+      "python_reads_native": true,
+      "native_reads_python": true,
+      "tables": 43,
+      "source_sha256": "3e4e497e20b2ec908b2b08c123f243b4dad506e43d678a45f1cd1dc6036ea9bf",
+      "python_receipt": {
+        "application": "keftrade-intelligence",
+        "kind": "research",
+        "restore_verified": true,
+        "restored_database": "intelligence_restore_a9ad38ef335b_18",
+        "row_counts": {
+          "dataset_manifests": 0,
+          "forecast_runs": 0,
+          "information_fetches": 0,
+          "ingest_runs": 0,
+          "jobs": 0,
+          "login_attempts": 0,
+          "model_versions": 2,
+          "research_audits": 0,
+          "research_candidates": 0,
+          "schema_migrations": 6,
+          "securities": 5,
+          "sessions": 0,
+          "source_documents": 1,
+          "training_universe_versions": 1,
+          "tuning_plans": 0,
+          "vision_models": 2,
+          "watchlist_versions": 1,
+          "worker_status": 0,
+          "calculated_metrics": 0,
+          "candidate_results": 0,
+          "chart_detections": 0,
+          "corporate_actions": 0,
+          "daily_bars": 1,
+          "evaluation_reports": 0,
+          "feature_snapshots": 0,
+          "filing_events": 0,
+          "financial_facts": 0,
+          "forecasts": 0,
+          "information_versions": 0,
+          "job_events": 0,
+          "research_plans": 0,
+          "scheduler_marks": 0,
+          "shadow_protocols": 0,
+          "tuning_events": 0,
+          "tuning_trials": 0,
+          "detection_outcomes": 0,
+          "evaluation_access_log": 0,
+          "forecast_outcomes": 0,
+          "research_experiments": 0,
+          "shadow_artifacts": 0,
+          "shadow_events": 0,
+          "shadow_verdicts": 0,
+          "research_predictions": 0
+        },
+        "sha256": "2819aa3e0d7d5db418fe520f6c29499ed14983efff4e5651525e4f3c587e9a9f",
+        "bytes": 10477
+      }
+    },
+    {
+      "kind": "paper",
+      "python_reads_native": true,
+      "native_reads_python": true,
+      "tables": 27,
+      "source_sha256": "65e63511dafbda702529e9ad1337b81b450c171f58c28a792e43854ba60f15c7",
+      "python_receipt": {
+        "application": "keftrade-intelligence",
+        "kind": "paper",
+        "restore_verified": true,
+        "restored_database": "intelligence_paper_test_a9ad38ef335b_19",
+        "row_counts": {
+          "learning_accounts": 2,
+          "learning_controls": 1,
+          "learning_intents": 3,
+          "learning_records": 2,
+          "pilot_asset_versions": 0,
+          "pilot_benchmarks": 0,
+          "pilot_connection": 0,
+          "pilot_daily_reports": 0,
+          "pilot_decisions": 0,
+          "pilot_events": 1,
+          "pilot_groq_calls": 0,
+          "pilot_quotes": 0,
+          "pilot_readiness": 0,
+          "pilot_research_runs": 0,
+          "pilot_settings": 1,
+          "pilot_snapshots": 0,
+          "pilot_sources": 0,
+          "pilot_strategy_sessions": 0,
+          "pilot_strategy_verdicts": 0,
+          "pilot_forecast_outcomes": 0,
+          "pilot_selections": 0,
+          "pilot_shadow_sessions": 0,
+          "pilot_strategy_signals": 0,
+          "pilot_intents": 0,
+          "pilot_strategy_outcomes": 0,
+          "pilot_virtual_outcomes": 0,
+          "pilot_order_versions": 0
+        },
+        "sha256": "39f18bc5a7016d8281ed112a8e0fc4177b77f0f0f8246564981652868eb0ae2b",
+        "bytes": 6617
+      }
+    }
+  ],
+  "native": {
+    "verified": [
+      {
+        "application": "keftrade-intelligence",
+        "kind": "research",
+        "restore_verified": true,
+        "restored_database": "intelligence_restore_52deed6eb5ea4cd7b938927cb2ce20d4",
+        "row_counts": {
+          "calculated_metrics": 0,
+          "candidate_results": 0,
+          "chart_detections": 0,
+          "corporate_actions": 0,
+          "daily_bars": 1,
+          "dataset_manifests": 0,
+          "detection_outcomes": 0,
+          "evaluation_access_log": 0,
+          "evaluation_reports": 0,
+          "feature_snapshots": 0,
+          "filing_events": 0,
+          "financial_facts": 0,
+          "forecast_outcomes": 0,
+          "forecast_runs": 0,
+          "forecasts": 0,
+          "information_fetches": 0,
+          "information_versions": 0,
+          "ingest_runs": 0,
+          "job_events": 0,
+          "jobs": 0,
+          "login_attempts": 0,
+          "model_versions": 2,
+          "research_audits": 0,
+          "research_candidates": 0,
+          "research_experiments": 0,
+          "research_plans": 0,
+          "research_predictions": 0,
+          "scheduler_marks": 0,
+          "schema_migrations": 6,
+          "securities": 5,
+          "sessions": 0,
+          "shadow_artifacts": 0,
+          "shadow_events": 0,
+          "shadow_protocols": 0,
+          "shadow_verdicts": 0,
+          "source_documents": 1,
+          "training_universe_versions": 1,
+          "tuning_events": 0,
+          "tuning_plans": 0,
+          "tuning_trials": 0,
+          "vision_models": 2,
+          "watchlist_versions": 1,
+          "worker_status": 0
+        },
+        "sha256": "2819aa3e0d7d5db418fe520f6c29499ed14983efff4e5651525e4f3c587e9a9f",
+        "bytes": 10477,
+        "sequence_repairs": []
+      },
+      {
+        "application": "keftrade-intelligence",
+        "kind": "paper",
+        "restore_verified": true,
+        "restored_database": "intelligence_paper_test_bak_08ca4df6fc79441094d71129a25e3487",
+        "row_counts": {
+          "learning_accounts": 2,
+          "learning_controls": 1,
+          "learning_intents": 3,
+          "learning_records": 2,
+          "pilot_asset_versions": 0,
+          "pilot_benchmarks": 0,
+          "pilot_connection": 0,
+          "pilot_daily_reports": 0,
+          "pilot_decisions": 0,
+          "pilot_events": 1,
+          "pilot_forecast_outcomes": 0,
+          "pilot_groq_calls": 0,
+          "pilot_intents": 0,
+          "pilot_order_versions": 0,
+          "pilot_quotes": 0,
+          "pilot_readiness": 0,
+          "pilot_research_runs": 0,
+          "pilot_selections": 0,
+          "pilot_settings": 1,
+          "pilot_shadow_sessions": 0,
+          "pilot_snapshots": 0,
+          "pilot_sources": 0,
+          "pilot_strategy_outcomes": 0,
+          "pilot_strategy_sessions": 0,
+          "pilot_strategy_signals": 0,
+          "pilot_strategy_verdicts": 0,
+          "pilot_virtual_outcomes": 0
+        },
+        "sha256": "39f18bc5a7016d8281ed112a8e0fc4177b77f0f0f8246564981652868eb0ae2b",
+        "bytes": 6617,
+        "sequence_repairs": []
+      }
+    ],
+    "receipts": [
+      {
+        "kind": "research",
+        "export": {
+          "application": "keftrade-intelligence",
+          "kind": "research",
+          "sha256": "2819aa3e0d7d5db418fe520f6c29499ed14983efff4e5651525e4f3c587e9a9f",
+          "bytes": 10477,
+          "created_at": "2026-11-22T04:54:57.014115+00:00",
+          "rows": 19
+        },
+        "restore": {
+          "application": "keftrade-intelligence",
+          "kind": "research",
+          "restore_verified": true,
+          "restored_database": "intelligence_restore_a9ad38ef335b_13",
+          "row_counts": {
+            "calculated_metrics": 0,
+            "candidate_results": 0,
+            "chart_detections": 0,
+            "corporate_actions": 0,
+            "daily_bars": 1,
+            "dataset_manifests": 0,
+            "detection_outcomes": 0,
+            "evaluation_access_log": 0,
+            "evaluation_reports": 0,
+            "feature_snapshots": 0,
+            "filing_events": 0,
+            "financial_facts": 0,
+            "forecast_outcomes": 0,
+            "forecast_runs": 0,
+            "forecasts": 0,
+            "information_fetches": 0,
+            "information_versions": 0,
+            "ingest_runs": 0,
+            "job_events": 0,
+            "jobs": 0,
+            "login_attempts": 0,
+            "model_versions": 2,
+            "research_audits": 0,
+            "research_candidates": 0,
+            "research_experiments": 0,
+            "research_plans": 0,
+            "research_predictions": 0,
+            "scheduler_marks": 0,
+            "schema_migrations": 6,
+            "securities": 5,
+            "sessions": 0,
+            "shadow_artifacts": 0,
+            "shadow_events": 0,
+            "shadow_protocols": 0,
+            "shadow_verdicts": 0,
+            "source_documents": 1,
+            "training_universe_versions": 1,
+            "tuning_events": 0,
+            "tuning_plans": 0,
+            "tuning_trials": 0,
+            "vision_models": 2,
+            "watchlist_versions": 1,
+            "worker_status": 0
+          },
+          "sha256": "4fe5f7fb65b610a43e28bf0ded5b55752dc4a1042f24aa78bcc09fa8e104bc14",
+          "bytes": 8121,
+          "sequence_repairs": []
+        }
+      },
+      {
+        "kind": "paper",
+        "export": {
+          "application": "keftrade-intelligence",
+          "kind": "paper",
+          "sha256": "39f18bc5a7016d8281ed112a8e0fc4177b77f0f0f8246564981652868eb0ae2b",
+          "bytes": 6617,
+          "created_at": "2026-11-22T04:54:58.688607+00:00",
+          "rows": 10
+        },
+        "restore": {
+          "application": "keftrade-intelligence",
+          "kind": "paper",
+          "restore_verified": true,
+          "restored_database": "intelligence_paper_test_a9ad38ef335b_14",
+          "row_counts": {
+            "learning_accounts": 2,
+            "learning_controls": 1,
+            "learning_intents": 3,
+            "learning_records": 2,
+            "pilot_asset_versions": 0,
+            "pilot_benchmarks": 0,
+            "pilot_connection": 0,
+            "pilot_daily_reports": 0,
+            "pilot_decisions": 0,
+            "pilot_events": 1,
+            "pilot_forecast_outcomes": 0,
+            "pilot_groq_calls": 0,
+            "pilot_intents": 0,
+            "pilot_order_versions": 0,
+            "pilot_quotes": 0,
+            "pilot_readiness": 0,
+            "pilot_research_runs": 0,
+            "pilot_selections": 0,
+            "pilot_settings": 1,
+            "pilot_shadow_sessions": 0,
+            "pilot_snapshots": 0,
+            "pilot_sources": 0,
+            "pilot_strategy_outcomes": 0,
+            "pilot_strategy_sessions": 0,
+            "pilot_strategy_signals": 0,
+            "pilot_strategy_verdicts": 0,
+            "pilot_virtual_outcomes": 0
+          },
+          "sha256": "843684496b8416b52a2d0eb62fa19d839335a0593c7c0c0d2f3d02b3e723bd58",
+          "bytes": 5014,
+          "sequence_repairs": []
+        }
+      }
+    ],
+    "failures": [
+      {
+        "case": "wrong-kind",
+        "rejected": true,
+        "target_tables": 0
+      },
+      {
+        "case": "wrong-major",
+        "rejected": true,
+        "target_tables": 0
+      },
+      {
+        "case": "wrong-count",
+        "rejected": true,
+        "target_tables": 0
+      },
+      {
+        "case": "bad-copy",
+        "rejected": true,
+        "target_tables": 0
+      },
+      {
+        "case": "missing-member",
+        "rejected": true,
+        "target_tables": 0
+      },
+      {
+        "case": "extra-member",
+        "rejected": true,
+        "target_tables": 0
+      },
+      {
+        "case": "wrong-hash",
+        "rejected": true,
+        "target_tables": 0
+      },
+      {
+        "case": "schema-mismatch",
+        "rejected": true,
+        "target_tables": 0
+      },
+      {
+        "case": "wrong-crc",
+        "rejected": true,
+        "target_tables": 0
+      },
+      {
+        "case": "duplicate-member",
+        "rejected": true,
+        "target_tables": 0
+      },
+      {
+        "case": "wrong-migrations",
+        "rejected": true,
+        "target_tables": 0
+      }
+    ],
+    "overwrite_prevented": true,
+    "concurrent_publication": true,
+    "request_cancellation_retains_worker": true,
+    "sequence_continuity": true,
+    "immutable_records_preserved": true,
+    "failed_verifier_database_cleaned": true,
+    "resource_boundary": true,
+    "broker_requests": 0
+  },
+  "cli": [
+    {
+      "action": "inspect",
+      "result": {
+        "application": "keftrade-intelligence",
+        "format": 2,
+        "kind": "research",
+        "created_at": "2026-11-22T04:54:57.014115+00:00",
+        "postgres_major": 18,
+        "tables": [
+          {
+            "name": "dataset_manifests",
+            "rows": 0,
+            "sha256": "62a74fd0e2d1e3a59b88b5b71c06ca8d43662c6787430c516b8e0bc28bbbda02",
+            "bytes": 21
+          },
+          {
+            "name": "forecast_runs",
+            "rows": 0,
+            "sha256": "62a74fd0e2d1e3a59b88b5b71c06ca8d43662c6787430c516b8e0bc28bbbda02",
+            "bytes": 21
+          },
+          {
+            "name": "information_fetches",
+            "rows": 0,
+            "sha256": "62a74fd0e2d1e3a59b88b5b71c06ca8d43662c6787430c516b8e0bc28bbbda02",
+            "bytes": 21
+          },
+          {
+            "name": "ingest_runs",
+            "rows": 0,
+            "sha256": "62a74fd0e2d1e3a59b88b5b71c06ca8d43662c6787430c516b8e0bc28bbbda02",
+            "bytes": 21
+          },
+          {
+            "name": "jobs",
+            "rows": 0,
+            "sha256": "62a74fd0e2d1e3a59b88b5b71c06ca8d43662c6787430c516b8e0bc28bbbda02",
+            "bytes": 21
+          },
+          {
+            "name": "login_attempts",
+            "rows": 0,
+            "sha256": "62a74fd0e2d1e3a59b88b5b71c06ca8d43662c6787430c516b8e0bc28bbbda02",
+            "bytes": 21
+          },
+          {
+            "name": "model_versions",
+            "rows": 2,
+            "sha256": "69cde5ae02de95011428c290143c048c845f9c2cb198143e987d19eae2f3b184",
+            "bytes": 520
+          },
+          {
+            "name": "research_audits",
+            "rows": 0,
+            "sha256": "62a74fd0e2d1e3a59b88b5b71c06ca8d43662c6787430c516b8e0bc28bbbda02",
+            "bytes": 21
+          },
+          {
+            "name": "research_candidates",
+            "rows": 0,
+            "sha256": "62a74fd0e2d1e3a59b88b5b71c06ca8d43662c6787430c516b8e0bc28bbbda02",
+            "bytes": 21
+          },
+          {
+            "name": "schema_migrations",
+            "rows": 6,
+            "sha256": "2946c887f9ef8d5995164a751933b2d762a7277693e95d29cb9bcf168a8653ec",
+            "bytes": 260
+          },
+          {
+            "name": "securities",
+            "rows": 5,
+            "sha256": "76228db4bed629781e0eb3c19754d61536d33f66de400751b111ba0fa9a5a1c4",
+            "bytes": 273
+          },
+          {
+            "name": "sessions",
+            "rows": 0,
+            "sha256": "62a74fd0e2d1e3a59b88b5b71c06ca8d43662c6787430c516b8e0bc28bbbda02",
+            "bytes": 21
+          },
+          {
+            "name": "source_documents",
+            "rows": 1,
+            "sha256": "17ca02bb6fd5b8b3f5ca50f89e47ef970339694a75b2d52cf957935d5a5d7c32",
+            "bytes": 217
+          },
+          {
+            "name": "training_universe_versions",
+            "rows": 1,
+            "sha256": "0f591bfe7a9f1177e4748b1714b8d2ebb926703db4e036f728acf33761d12ff2",
+            "bytes": 248
+          },
+          {
+            "name": "tuning_plans",
+            "rows": 0,
+            "sha256": "62a74fd0e2d1e3a59b88b5b71c06ca8d43662c6787430c516b8e0bc28bbbda02",
+            "bytes": 21
+          },
+          {
+            "name": "vision_models",
+            "rows": 2,
+            "sha256": "88a307532895f548dcf77abb712f958845b2640ff8d8b167334ba92e55410132",
+            "bytes": 300
+          },
+          {
+            "name": "watchlist_versions",
+            "rows": 1,
+            "sha256": "d750d22f3fe21278b2e129264c34bc19e14eaac9b996d8ed5e5ba705a7e3a406",
+            "bytes": 67
+          },
+          {
+            "name": "worker_status",
+            "rows": 0,
+            "sha256": "62a74fd0e2d1e3a59b88b5b71c06ca8d43662c6787430c516b8e0bc28bbbda02",
+            "bytes": 21
+          },
+          {
+            "name": "calculated_metrics",
+            "rows": 0,
+            "sha256": "62a74fd0e2d1e3a59b88b5b71c06ca8d43662c6787430c516b8e0bc28bbbda02",
+            "bytes": 21
+          },
+          {
+            "name": "candidate_results",
+            "rows": 0,
+            "sha256": "62a74fd0e2d1e3a59b88b5b71c06ca8d43662c6787430c516b8e0bc28bbbda02",
+            "bytes": 21
+          },
+          {
+            "name": "chart_detections",
+            "rows": 0,
+            "sha256": "62a74fd0e2d1e3a59b88b5b71c06ca8d43662c6787430c516b8e0bc28bbbda02",
+            "bytes": 21
+          },
+          {
+            "name": "corporate_actions",
+            "rows": 0,
+            "sha256": "62a74fd0e2d1e3a59b88b5b71c06ca8d43662c6787430c516b8e0bc28bbbda02",
+            "bytes": 21
+          },
+          {
+            "name": "daily_bars",
+            "rows": 1,
+            "sha256": "7be2e85379103306e3a0b72e46080cfb223513df36e7792abb5e15bc038bd73c",
+            "bytes": 278
+          },
+          {
+            "name": "evaluation_reports",
+            "rows": 0,
+            "sha256": "62a74fd0e2d1e3a59b88b5b71c06ca8d43662c6787430c516b8e0bc28bbbda02",
+            "bytes": 21
+          },
+          {
+            "name": "feature_snapshots",
+            "rows": 0,
+            "sha256": "62a74fd0e2d1e3a59b88b5b71c06ca8d43662c6787430c516b8e0bc28bbbda02",
+            "bytes": 21
+          },
+          {
+            "name": "filing_events",
+            "rows": 0,
+            "sha256": "62a74fd0e2d1e3a59b88b5b71c06ca8d43662c6787430c516b8e0bc28bbbda02",
+            "bytes": 21
+          },
+          {
+            "name": "financial_facts",
+            "rows": 0,
+            "sha256": "62a74fd0e2d1e3a59b88b5b71c06ca8d43662c6787430c516b8e0bc28bbbda02",
+            "bytes": 21
+          },
+          {
+            "name": "forecasts",
+            "rows": 0,
+            "sha256": "62a74fd0e2d1e3a59b88b5b71c06ca8d43662c6787430c516b8e0bc28bbbda02",
+            "bytes": 21
+          },
+          {
+            "name": "information_versions",
+            "rows": 0,
+            "sha256": "62a74fd0e2d1e3a59b88b5b71c06ca8d43662c6787430c516b8e0bc28bbbda02",
+            "bytes": 21
+          },
+          {
+            "name": "job_events",
+            "rows": 0,
+            "sha256": "62a74fd0e2d1e3a59b88b5b71c06ca8d43662c6787430c516b8e0bc28bbbda02",
+            "bytes": 21
+          },
+          {
+            "name": "research_plans",
+            "rows": 0,
+            "sha256": "62a74fd0e2d1e3a59b88b5b71c06ca8d43662c6787430c516b8e0bc28bbbda02",
+            "bytes": 21
+          },
+          {
+            "name": "scheduler_marks",
+            "rows": 0,
+            "sha256": "62a74fd0e2d1e3a59b88b5b71c06ca8d43662c6787430c516b8e0bc28bbbda02",
+            "bytes": 21
+          },
+          {
+            "name": "shadow_protocols",
+            "rows": 0,
+            "sha256": "62a74fd0e2d1e3a59b88b5b71c06ca8d43662c6787430c516b8e0bc28bbbda02",
+            "bytes": 21
+          },
+          {
+            "name": "tuning_events",
+            "rows": 0,
+            "sha256": "62a74fd0e2d1e3a59b88b5b71c06ca8d43662c6787430c516b8e0bc28bbbda02",
+            "bytes": 21
+          },
+          {
+            "name": "tuning_trials",
+            "rows": 0,
+            "sha256": "62a74fd0e2d1e3a59b88b5b71c06ca8d43662c6787430c516b8e0bc28bbbda02",
+            "bytes": 21
+          },
+          {
+            "name": "detection_outcomes",
+            "rows": 0,
+            "sha256": "62a74fd0e2d1e3a59b88b5b71c06ca8d43662c6787430c516b8e0bc28bbbda02",
+            "bytes": 21
+          },
+          {
+            "name": "evaluation_access_log",
+            "rows": 0,
+            "sha256": "62a74fd0e2d1e3a59b88b5b71c06ca8d43662c6787430c516b8e0bc28bbbda02",
+            "bytes": 21
+          },
+          {
+            "name": "forecast_outcomes",
+            "rows": 0,
+            "sha256": "62a74fd0e2d1e3a59b88b5b71c06ca8d43662c6787430c516b8e0bc28bbbda02",
+            "bytes": 21
+          },
+          {
+            "name": "research_experiments",
+            "rows": 0,
+            "sha256": "62a74fd0e2d1e3a59b88b5b71c06ca8d43662c6787430c516b8e0bc28bbbda02",
+            "bytes": 21
+          },
+          {
+            "name": "shadow_artifacts",
+            "rows": 0,
+            "sha256": "62a74fd0e2d1e3a59b88b5b71c06ca8d43662c6787430c516b8e0bc28bbbda02",
+            "bytes": 21
+          },
+          {
+            "name": "shadow_events",
+            "rows": 0,
+            "sha256": "62a74fd0e2d1e3a59b88b5b71c06ca8d43662c6787430c516b8e0bc28bbbda02",
+            "bytes": 21
+          },
+          {
+            "name": "shadow_verdicts",
+            "rows": 0,
+            "sha256": "62a74fd0e2d1e3a59b88b5b71c06ca8d43662c6787430c516b8e0bc28bbbda02",
+            "bytes": 21
+          },
+          {
+            "name": "research_predictions",
+            "rows": 0,
+            "sha256": "62a74fd0e2d1e3a59b88b5b71c06ca8d43662c6787430c516b8e0bc28bbbda02",
+            "bytes": 21
+          }
+        ],
+        "sequences": [
+          {
+            "table": "corporate_actions",
+            "column": "id",
+            "last_value": 7654,
+            "is_called": false
+          },
+          {
+            "table": "daily_bars",
+            "column": "id",
+            "last_value": 1,
+            "is_called": true
+          },
+          {
+            "table": "financial_facts",
+            "column": "id",
+            "last_value": 1,
+            "is_called": false
+          },
+          {
+            "table": "job_events",
+            "column": "id",
+            "last_value": 1,
+            "is_called": false
+          },
+          {
+            "table": "login_attempts",
+            "column": "id",
+            "last_value": 1,
+            "is_called": false
+          },
+          {
+            "table": "shadow_events",
+            "column": "id",
+            "last_value": 1,
+            "is_called": false
+          },
+          {
+            "table": "training_universe_versions",
+            "column": "id",
+            "last_value": 1,
+            "is_called": true
+          },
+          {
+            "table": "tuning_events",
+            "column": "id",
+            "last_value": 1,
+            "is_called": false
+          },
+          {
+            "table": "watchlist_versions",
+            "column": "id",
+            "last_value": 9876,
+            "is_called": true
+          }
+        ]
+      }
+    },
+    {
+      "action": "export",
+      "result": {
+        "application": "keftrade-intelligence",
+        "kind": "research",
+        "sha256": "92063830503456ae722bc0b9e93caf67aa6b751cc108287584f094a1b741c868",
+        "bytes": 10476,
+        "created_at": "2026-11-22T04:55:27.922245+00:00",
+        "rows": 19
+      }
+    },
+    {
+      "action": "restore-new",
+      "result": {
+        "application": "keftrade-intelligence",
+        "kind": "research",
+        "restore_verified": true,
+        "restored_database": "intelligence_restore_a9ad38ef335b_20",
+        "row_counts": {
+          "calculated_metrics": 0,
+          "candidate_results": 0,
+          "chart_detections": 0,
+          "corporate_actions": 0,
+          "daily_bars": 1,
+          "dataset_manifests": 0,
+          "detection_outcomes": 0,
+          "evaluation_access_log": 0,
+          "evaluation_reports": 0,
+          "feature_snapshots": 0,
+          "filing_events": 0,
+          "financial_facts": 0,
+          "forecast_outcomes": 0,
+          "forecast_runs": 0,
+          "forecasts": 0,
+          "information_fetches": 0,
+          "information_versions": 0,
+          "ingest_runs": 0,
+          "job_events": 0,
+          "jobs": 0,
+          "login_attempts": 0,
+          "model_versions": 2,
+          "research_audits": 0,
+          "research_candidates": 0,
+          "research_experiments": 0,
+          "research_plans": 0,
+          "research_predictions": 0,
+          "scheduler_marks": 0,
+          "schema_migrations": 6,
+          "securities": 5,
+          "sessions": 0,
+          "shadow_artifacts": 0,
+          "shadow_events": 0,
+          "shadow_protocols": 0,
+          "shadow_verdicts": 0,
+          "source_documents": 1,
+          "training_universe_versions": 1,
+          "tuning_events": 0,
+          "tuning_plans": 0,
+          "tuning_trials": 0,
+          "vision_models": 2,
+          "watchlist_versions": 1,
+          "worker_status": 0
+        },
+        "sha256": "2819aa3e0d7d5db418fe520f6c29499ed14983efff4e5651525e4f3c587e9a9f",
+        "bytes": 10477,
+        "sequence_repairs": []
+      }
+    },
+    {
+      "action": "verify-local",
+      "result": {
+        "application": "keftrade-intelligence",
+        "kind": "research",
+        "restore_verified": true,
+        "restored_database": "intelligence_restore_8a803e55212b4998ad5ff0c47c3fc9a2",
+        "row_counts": {
+          "calculated_metrics": 0,
+          "candidate_results": 0,
+          "chart_detections": 0,
+          "corporate_actions": 0,
+          "daily_bars": 1,
+          "dataset_manifests": 0,
+          "detection_outcomes": 0,
+          "evaluation_access_log": 0,
+          "evaluation_reports": 0,
+          "feature_snapshots": 0,
+          "filing_events": 0,
+          "financial_facts": 0,
+          "forecast_outcomes": 0,
+          "forecast_runs": 0,
+          "forecasts": 0,
+          "information_fetches": 0,
+          "information_versions": 0,
+          "ingest_runs": 0,
+          "job_events": 0,
+          "jobs": 0,
+          "login_attempts": 0,
+          "model_versions": 2,
+          "research_audits": 0,
+          "research_candidates": 0,
+          "research_experiments": 0,
+          "research_plans": 0,
+          "research_predictions": 0,
+          "scheduler_marks": 0,
+          "schema_migrations": 6,
+          "securities": 5,
+          "sessions": 0,
+          "shadow_artifacts": 0,
+          "shadow_events": 0,
+          "shadow_protocols": 0,
+          "shadow_verdicts": 0,
+          "source_documents": 1,
+          "training_universe_versions": 1,
+          "tuning_events": 0,
+          "tuning_plans": 0,
+          "tuning_trials": 0,
+          "vision_models": 2,
+          "watchlist_versions": 1,
+          "worker_status": 0
+        },
+        "sha256": "2819aa3e0d7d5db418fe520f6c29499ed14983efff4e5651525e4f3c587e9a9f",
+        "bytes": 10477,
+        "sequence_repairs": []
+      }
+    }
+  ],
+  "negative_cases": [
+    {
+      "name": "wrong-kind",
+      "archive": "wrong-kind.zip",
+      "target": "intelligence_restore_a9ad38ef335b_2"
+    },
+    {
+      "name": "wrong-major",
+      "archive": "wrong-major.zip",
+      "target": "intelligence_restore_a9ad38ef335b_3"
+    },
+    {
+      "name": "wrong-count",
+      "archive": "wrong-count.zip",
+      "target": "intelligence_restore_a9ad38ef335b_4"
+    },
+    {
+      "name": "bad-copy",
+      "archive": "bad-copy.zip",
+      "target": "intelligence_restore_a9ad38ef335b_5"
+    },
+    {
+      "name": "missing-member",
+      "archive": "missing-member.zip",
+      "target": "intelligence_restore_a9ad38ef335b_6"
+    },
+    {
+      "name": "extra-member",
+      "archive": "extra-member.zip",
+      "target": "intelligence_restore_a9ad38ef335b_7"
+    },
+    {
+      "name": "wrong-hash",
+      "archive": "wrong-hash.zip",
+      "target": "intelligence_restore_a9ad38ef335b_8"
+    },
+    {
+      "name": "schema-mismatch",
+      "archive": "schema-mismatch.zip",
+      "target": "intelligence_restore_a9ad38ef335b_9"
+    },
+    {
+      "name": "wrong-crc",
+      "archive": "wrong-crc.zip",
+      "target": "intelligence_restore_a9ad38ef335b_10"
+    },
+    {
+      "name": "duplicate-member",
+      "archive": "duplicate-member.zip",
+      "target": "intelligence_restore_a9ad38ef335b_11"
+    },
+    {
+      "name": "wrong-migrations",
+      "archive": "wrong-migrations.zip",
+      "target": "intelligence_restore_a9ad38ef335b_12"
+    }
+  ],
+  "legacy_v1": true,
+  "failed_restore_targets_empty": true,
+  "source_rows_unchanged": true,
+  "consistent_snapshot_across_concurrent_commit": true,
+  "owned_databases_removed": 22
+}

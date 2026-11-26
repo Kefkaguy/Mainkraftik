@@ -1,0 +1,30 @@
+{
+  "at": "2026-11-21T22:38:20.074286+00:00",
+  "passed": true,
+  "exit_code": 0,
+  "cluster": {
+    "at": "2026-11-21T22:26:08.492300+00:00",
+    "version": "18.7 (Ubuntu 18.7-1.pgdg24.04+5)",
+    "data": "/home/erosimcity/.local/share/mainkraft-rust-validation/postgres18/20261121T222452783902Z/data",
+    "bin": "/home/erosimcity/.local/share/mainkraft-rust-validation/postgres18/20261121T222452783902Z/runtime/usr/lib/postgresql/18/bin",
+    "runtime": "/home/erosimcity/.local/share/mainkraft-rust-validation/postgres18/20261121T222452783902Z/runtime",
+    "port": 5543,
+    "listen_addresses": [
+      "127.0.0.1"
+    ],
+    "system_service_installed": false,
+    "scope": "User-owned WSL validation cluster only; no application worker or broker",
+    "pg_ctl_process_owned": true
+  },
+  "python": "3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]",
+  "command": [
+    "/home/erosimcity/.local/share/mainkraft-rust-validation/python-reference/bin/python",
+    "scripts/test-rust-backup.py"
+  ],
+  "full_linux_validation_complete": false,
+  "deployment_allowed": false,
+  "outputs": {
+    "native.txt": "4eb62d2fca0d0dacfb612b03965aa81a585be0ea7687985ab1bab1348434053d",
+    "python-packages.txt": "12611cb3f26625793c0acd0dd5023a111e8e04f9aabcbd7a41bfc5a7c1ff27be"
+  }
+}

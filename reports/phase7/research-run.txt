@@ -1,0 +1,16 @@
+Declared 43dbc4f25fb07836d573e0ad0ed98e1a4a6a87fc065efa8ae3730094bda34b18
+Development historical_mean 0 0
+Development zero_return 0 0
+Development mainkraft_linear 0 0
+Development mainkraft_histboost 0 0
+Development sequence_ridge 0 0
+Development sequence_original150 0 0
+Development sequence_adam400 0 0
+Development sequence_lbfgs250 0 0
+{
+  "report_id": "56fb30dabc11e4d01186a51950d0a806e1ea4fbb1c0b5b566146aeb835762e3c",
+  "winner": "historical_mean",
+  "model_id": "708c2678633a3ff5afa7a2b0cde193edf405051d5887f1fc9cefb28b6b98fba8",
+  "forecasts_id": "81f3f93e2b1522d4b2a310a8bac1a9f20600c8f22422531f987f971ec75479cd",
+  "search_id": "0368263aca6a289112d3de7a5a1a814b32d15f028b360defff4a0434b165a255"
+}

@@ -1,0 +1,14 @@
+
+running 1 test
+TWELVE_RESEARCH_API_ROUTE_FAMILIES_ORIGINAL_PYTHON_HTTP_PARITY=PASS
+AUTHENTICATION_VALIDATION_HISTORICAL_LABELS_AND_LATEST_OUTCOMES=PASS
+AVAILABILITY_AND_OBSERVED_ACQUISITION_CUTS_REMAIN_DISTINCT=PASS
+{"responses_checked":34}
+test existing_company_workspace_forecast_research_and_monitoring_contracts_match_python ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.99s
+
+
+   Compiling mainkraft v0.1.0 (/mnt/c/Users/erosi/OneDrive/Desktop/allprojects/keftrade-intelligence/apps/backend-rust)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 1.70s
+     Running tests/research_api.rs (/home/erosimcity/.local/share/mainkraft-rust-validation/target/debug/deps/research_api-09cb1e4f1462a2de)

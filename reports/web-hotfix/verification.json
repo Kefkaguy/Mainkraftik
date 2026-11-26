@@ -1,0 +1,13 @@
+{
+  "website_status": 200,
+  "icon_status": 200,
+  "icon": "/intelligence/icon.svg?3c0e8d2c5fd493b5",
+  "production_browser_fixture": {
+    "delayed_status_ms": 1500,
+    "dashboard_rendered": true,
+    "unsupported_requests": 0,
+    "console_errors": 0
+  },
+  "share_modal_in_served_page": false,
+  "containers": "keftrade-intelligence-web-1 keftrade-intelligence-web:paper-learning-webfix-v1 Up 43 seconds\nkeftrade-intelligence-paper-1 keftrade-intelligence-api:paper-learning-v1 Up 23 minutes (healthy)\n"
+}

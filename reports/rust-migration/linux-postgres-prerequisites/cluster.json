@@ -1,0 +1,14 @@
+{
+  "at": "2026-11-21T22:26:08.492300+00:00",
+  "version": "18.7 (Ubuntu 18.7-1.pgdg24.04+5)",
+  "data": "/home/erosimcity/.local/share/mainkraft-rust-validation/postgres18/20261121T222452783902Z/data",
+  "bin": "/home/erosimcity/.local/share/mainkraft-rust-validation/postgres18/20261121T222452783902Z/runtime/usr/lib/postgresql/18/bin",
+  "runtime": "/home/erosimcity/.local/share/mainkraft-rust-validation/postgres18/20261121T222452783902Z/runtime",
+  "port": 5543,
+  "listen_addresses": [
+    "127.0.0.1"
+  ],
+  "system_service_installed": false,
+  "scope": "User-owned WSL validation cluster only; no application worker or broker",
+  "pg_ctl_process_owned": true
+}

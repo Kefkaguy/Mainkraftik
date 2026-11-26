@@ -1,0 +1,2 @@
+{"inputs": 22092, "sha256": "ad9bb62246c8ecc6512399828a52b66fa0d1578d1dfbc014084f9c2bb112351c", "output": "/mnt/c/Users/erosi/OneDrive/Desktop/allprojects/keftrade-intelligence/apps/backend-rust/tests/fixtures/numpy-exp-parity-linux.json", "market_data_used": false}
+

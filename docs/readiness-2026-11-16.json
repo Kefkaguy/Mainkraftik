@@ -1,0 +1,73 @@
+{
+  "checked_on_pacific": "2026-11-15",
+  "target_session": "2026-11-16",
+  "mode": "nonexecutable_readiness_diagnostic",
+  "production_enabled": true,
+  "broker_verified": true,
+  "paper_cash": 15000,
+  "positions": 0,
+  "open_orders": 0,
+  "container_restarts": 0,
+  "out_of_memory_events": 0,
+  "free_bytes_before_diagnostic": 11525505024,
+  "paper_database_bytes_before_diagnostic": 39827135,
+  "fresh_research": {
+    "research_id": "6efa6ca050c8a21d489eb1abffad73d0403c53bb8dd05124f90e876abb2924c5",
+    "articles": 1000,
+    "news_scan_truncated": true,
+    "liquid_candidates": 40,
+    "shortlisted": 20,
+    "model_eligible": 19,
+    "excluded_insufficient_history": [
+      "CRWV"
+    ],
+    "duration_seconds": 32.57,
+    "groq_tokens": 4592
+  },
+  "one_day_estimated_probabilities": {
+    "NVDA": 0.4606494842,
+    "AMD": 0.4968575082,
+    "GOOG": 0.5227395436,
+    "AMZN": 0.4883190997,
+    "GOOGL": 0.5137549247,
+    "TSLA": 0.5107429676,
+    "PANW": 0.5042683449,
+    "TWST": 0.5277482193,
+    "MSFT": 0.4703473345,
+    "META": 0.486048754,
+    "DAL": 0.4663804764,
+    "LHX": 0.4653275054,
+    "WELL": 0.5217383469,
+    "DELL": 0.5414675386,
+    "TTWO": 0.4627471388,
+    "NVO": 0.4972619783,
+    "AAPL": 0.5343574675,
+    "HOOD": 0.4841804367,
+    "MSTR": 0.4382172024
+  },
+  "qualifying_buys": 0,
+  "orders_submitted_by_check": 0,
+  "profit_probability": null,
+  "profit_probability_reason": "No executed strategy trades or independent evidence supporting a probability of positive daily net P/L. One-day stock-direction estimates differ from realized exit-based portfolio P/L.",
+  "schedules_pacific": {
+    "research_start": "04:30",
+    "freeze_by": "06:00",
+    "forecast_window": "06:15-06:25",
+    "entry_window": "06:35-07:00",
+    "planned_normal_close_exit": "12:45"
+  },
+  "limits_unchanged": {
+    "minimum_estimated_probability": 0.7,
+    "entry_notional": 25,
+    "max_positions": 20,
+    "max_total_exposure": 600,
+    "daily_loss_trigger": 12
+  },
+  "limitations": [
+    "Monday selection and issuance have not occurred.",
+    "Real regular-session order acknowledgement and fills cannot be verified on Sunday without submitting orders.",
+    "Provider outages, gaps and slippage remain possible; loss triggers do not guarantee exact maximum loss.",
+    "News capped at 1000 articles; the entire market is not exhaustively researched.",
+    "Trading stays paper-only; gains are simulated."
+  ]
+}

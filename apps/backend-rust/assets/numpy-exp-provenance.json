@@ -1,0 +1,14 @@
+{
+  "numpy/_core/src/umath/loops_exponent_log.dispatch.c.src": {
+    "url": "https://raw.githubusercontent.com/numpy/numpy/v2.5.4/numpy/_core/src/umath/loops_exponent_log.dispatch.c.src",
+    "sha256": "01320349e7e80c9bfd8e0e4fd0f24599b95da0bcf94f991e9989b97b2e7e7059"
+  },
+  "numpy/_core/src/umath/npy_simd_data.h": {
+    "url": "https://raw.githubusercontent.com/numpy/numpy/v2.5.4/numpy/_core/src/umath/npy_simd_data.h",
+    "sha256": "befa536863dadeddec0dff116dea5412e685000e2842a9a9907e8aee35bfea7c"
+  },
+  "LICENSE.txt": {
+    "url": "https://raw.githubusercontent.com/numpy/numpy/v2.5.4/LICENSE.txt",
+    "sha256": "1be1df33863f97a7bc1c4d67980bd6c69c9a6fef0a5ee76e6ad6cb91e56e8491"
+  }
+}

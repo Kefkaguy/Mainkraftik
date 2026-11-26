@@ -1,0 +1,7 @@
+{
+  "purpose": "Unmodified first observed native cookie-path ordering failure against original Python; expectations were not reordered.",
+  "files": {
+    "reports/rust-migration/ir-cookie-order-first-failure.json": "66a3938615a6e09d1f412f2c8e9d2e39991943d97858d5308392027c813e0e56",
+    "reports/rust-migration/ir-cookie-order-first-failure.txt": "d94b099f2bf7b78b471c2a336e17e29b9bbf16159dac3d77e825cad0531a1978"
+  }
+}

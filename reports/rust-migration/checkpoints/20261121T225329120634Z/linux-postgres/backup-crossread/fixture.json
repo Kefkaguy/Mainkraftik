@@ -1,0 +1,69 @@
+{
+  "directory": "/mnt/c/Users/erosi/OneDrive/Desktop/allprojects/keftrade-intelligence/.local/rust-migration/backup-runs/5e8dd5283964",
+  "sources": {
+    "research": "intelligence_restore_5e8dd5283964_0",
+    "paper": "intelligence_paper_test_5e8dd5283964_1"
+  },
+  "targets": {
+    "research": "intelligence_restore_5e8dd5283964_13",
+    "paper": "intelligence_paper_test_5e8dd5283964_14"
+  },
+  "legacy_target": "intelligence_restore_5e8dd5283964_15",
+  "failures": [
+    {
+      "name": "wrong-kind",
+      "archive": "wrong-kind.zip",
+      "target": "intelligence_restore_5e8dd5283964_2"
+    },
+    {
+      "name": "wrong-major",
+      "archive": "wrong-major.zip",
+      "target": "intelligence_restore_5e8dd5283964_3"
+    },
+    {
+      "name": "wrong-count",
+      "archive": "wrong-count.zip",
+      "target": "intelligence_restore_5e8dd5283964_4"
+    },
+    {
+      "name": "bad-copy",
+      "archive": "bad-copy.zip",
+      "target": "intelligence_restore_5e8dd5283964_5"
+    },
+    {
+      "name": "missing-member",
+      "archive": "missing-member.zip",
+      "target": "intelligence_restore_5e8dd5283964_6"
+    },
+    {
+      "name": "extra-member",
+      "archive": "extra-member.zip",
+      "target": "intelligence_restore_5e8dd5283964_7"
+    },
+    {
+      "name": "wrong-hash",
+      "archive": "wrong-hash.zip",
+      "target": "intelligence_restore_5e8dd5283964_8"
+    },
+    {
+      "name": "schema-mismatch",
+      "archive": "schema-mismatch.zip",
+      "target": "intelligence_restore_5e8dd5283964_9"
+    },
+    {
+      "name": "wrong-crc",
+      "archive": "wrong-crc.zip",
+      "target": "intelligence_restore_5e8dd5283964_10"
+    },
+    {
+      "name": "duplicate-member",
+      "archive": "duplicate-member.zip",
+      "target": "intelligence_restore_5e8dd5283964_11"
+    },
+    {
+      "name": "wrong-migrations",
+      "archive": "wrong-migrations.zip",
+      "target": "intelligence_restore_5e8dd5283964_12"
+    }
+  ]
+}

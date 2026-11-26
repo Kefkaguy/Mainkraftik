@@ -1,0 +1,41 @@
+{
+  "at": "2026-11-21T23:15:16.835175+00:00",
+  "active_experiment_enabled": true,
+  "active_experiment_source_files": {
+    "paperpilot/experiment.py": "836eced768d9bcab3507833f85454ebefb4d22ec573efda84cffc218d862d1ac",
+    "paperpilot/config.py": "a6c040de0fb0b892a1a1c60d1c22487274b3ebd532f1ea13a9dd8759c87590d2",
+    "paperpilot/service.py": "6c86e8c3ebf84b9dc31b3a76553f18440ddc820a00012dbf3866f15c964be521",
+    "paperpilot/strategy.py": "5b0dff6b416e12d2b189a8737253226be7bd3c51df06672b587d40707d10cb71",
+    "paperpilot/intraday.py": "da324db7c81c764daee57f3ed35bfe98eb087a211bcb6286e3750935353d15af",
+    "paperpilot/db.py": "0eaa1d60a75caeb92a5b95a8c47279891c60b51b353b24aefe61a6a4c5f675d6",
+    "intelligence/calendar.py": "ec1378bd94f08cb738c37739efd8b62708776c2ac3245ea6cbe19d201e0bb74f",
+    "intelligence/providers.py": "0b9cf003562c091e654668cf25f8aac05ec9b24e0a8d6fb6c98460a796b8e128",
+    "intelligence/util.py": "5205f3da5128ca91814f2da6b14bb8d3f3908036615781384214b1047418c6c8",
+    "intelligence/portable_models.py": "8acca977b7df07a7185ac8e828aec4187a396b009f5e3fd1343d09122da12b9c"
+  },
+  "paper_source_audit": "reports/rust-migration/runtime-observations/20261121T231309863394Z-paper-source-audit.json",
+  "deployed_chart_fixtures": {
+    "file": "reports/rust-migration/runtime-observations/20261121T231010491525Z-deployed-chart-fixtures.json",
+    "sha256": "e0e2dd6694ded0ebc10ec5d1ca7def355a4e17d70c807cbbbd710ba39796d61c",
+    "runtime": {
+      "python": "3.12.16 (main, Nov  5 2026, 07:58:20) [GCC 14.2.0]",
+      "pillow": "12.3.0",
+      "zlib": "1.3.1",
+      "zlib_ng": "2.3.3",
+      "freetype": "2.14.3"
+    },
+    "exact_fixture_png_matches": 18,
+    "fixture_png_count": 18,
+    "all_match_linux_classic13_corpus": true,
+    "source_vision_matches_local": true,
+    "source_main_matches_local": false,
+    "production_changes": false
+  },
+  "api_main_difference": "All function/class ASTs match; local-only top-level imports and router registration for chart_intelligence.api and intelligence.lab_api. Current API image does not include those optional research modules.",
+  "legacy_paper_source_differences": "Preserved in scoped source audits; active paper experiment follows its separate code path. These differences are not grounds to change deployed policy.",
+  "model_artifacts_freshly_checked_on_vps": false,
+  "services_restarted": false,
+  "configuration_changed": false,
+  "broker_requests": 0,
+  "deployment_allowed": false
+}

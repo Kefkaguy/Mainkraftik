@@ -1,0 +1,220 @@
+{
+  "at": "2026-11-21T23:11:38.520685+00:00",
+  "scope": "Read-only Python source hash comparison of existing Mainkraft API container packages only",
+  "files_checked": 51,
+  "deployed_files": {
+    "intelligence/backup.py": "5499e53e71eedd18dd118bbe09506d2da2a89e3bb924f2677f70b0cbde9af1eb",
+    "intelligence/information.py": "5f4693d0649c2fd0c599840892ccdb3c266f68d2324ed3b00055485109de481c",
+    "intelligence/__init__.py": "c9dc850aca4829edea9c0ddc00fb3041f6fe3c88376b5ff698127571fd6cad06",
+    "intelligence/phase3_status.py": "cb067e9748d5e4d09e43b4688ffea807c9f7aaae23212a08931a0cb31b2b0b85",
+    "intelligence/config.py": "098df75e9fde31e1539cbeb515b37500381d597c001a650949c5872cc7ffe2d1",
+    "intelligence/monitoring.py": "d046e4c44323de0fa34caeaee7273e9649da2a004f6e9c715e5069bf372f15da",
+    "intelligence/financials.py": "dbf191e6af7e5d32e15e8eec42c0ca024594881a60a3c4078686f3c9383bf95d",
+    "intelligence/vision_gateway.py": "8e353e89d05a03f9621c7a3d0da9bccad5c51d6a6c61c50a05112535d7655416",
+    "intelligence/cli.py": "cac8679a7e09be20be6a24a9d28fc958e32c3a3b9d4f593ad19b27fc2a5436e0",
+    "intelligence/ir_metadata.py": "6a0c81e0b37a0596d3d484117eebbece841c35c86d6f96726e0efbc3115fc99b",
+    "intelligence/calendar.py": "ec1378bd94f08cb738c37739efd8b62708776c2ac3245ea6cbe19d201e0bb74f",
+    "intelligence/vision.py": "cc94c5f0a6959d2fcde55e5fd0117ab0737d70ba3becf77a4c6787b6561dfa80",
+    "intelligence/security.py": "ec6594fb97a846032581290a7a93dadd91a795ff1c060df09f06fba20dc097aa",
+    "intelligence/research.py": "ae7e715d8ea577e1577e7db8a014cc0883a8fe64716fb1b776f996a67f1aae30",
+    "intelligence/experiments.py": "c2b8fddf02f1a961d85493b8ccdcb450e261b18239edf5feb7991c0d7f9b013b",
+    "intelligence/ingestion.py": "b99627be2ae0a309e8a6d542bd32fe80badf8ab5dbcf78610412aa3c34c31f2e",
+    "intelligence/portable_models.py": "8acca977b7df07a7185ac8e828aec4187a396b009f5e3fd1343d09122da12b9c",
+    "intelligence/paper_bridge.py": "4cba333898dcb53676d819a453b3c2947d9b8c2a95422a748619bf03f771c16b",
+    "intelligence/util.py": "5205f3da5128ca91814f2da6b14bb8d3f3908036615781384214b1047418c6c8",
+    "intelligence/point_features.py": "6b7441b16327f27ac13cc87eb5b60c2f7089a383ec215f3178e2b6e05cf25ae6",
+    "intelligence/prospective.py": "6c9c678763aee000ee1d07e63c2a74e506f850abe32eedfc63f1aa51fefa277a",
+    "intelligence/providers.py": "0b9cf003562c091e654668cf25f8aac05ec9b24e0a8d6fb6c98460a796b8e128",
+    "intelligence/storage.py": "92c1538db56d2cade3395f01d29af7eb7a087cb599aacd501e5802fcf5fcacd8",
+    "intelligence/jobs.py": "b690ba78ee564c6ef699892a24012ea0ab6dec66916ba683b2b0292514a1ae6a",
+    "intelligence/tuning.py": "badbc8a8662294abf64d8e8b9f3dddf48e378bf4df282f7e5cdb7ca72d96550c",
+    "intelligence/research_models.py": "cf70a6ad8f45d4d2367d3f623793fcd47ef3eb4e684591d5981ee986b0122376",
+    "intelligence/forecasting.py": "811c1f62b0e5cd28727760a5943bd7204a1426d4a27ab1e7a58247e62d3eb04c",
+    "intelligence/main.py": "2caafae0e1004184c111ebf29e03e6957df58764dd1d72f5cc7f3ee386619ec3",
+    "intelligence/db.py": "cc76a79b1e8eba6c4ec5838726669b66b7e7d707ee9043793ea8d00d7629f9f9",
+    "paperpilot/service.py": "cda8cc493049ca58341b9dd9a63f46aebf283fce216ada3ed0cb33afb0598325",
+    "paperpilot/market_context.py": "54a968b639f32f92b916950581b3f8de626c5f26750739809a5efac3f7362d61",
+    "paperpilot/intraday.py": "da324db7c81c764daee57f3ed35bfe98eb087a211bcb6286e3750935353d15af",
+    "paperpilot/reporting.py": "bb4495ed92bc20ac3cbd201301fc384af9456e17d58506147cb9c81989263ed0",
+    "paperpilot/risk.py": "136f437e611afb537e1389e44988ab568a04ae78667d39a5c8dd35dcd53a46f5",
+    "paperpilot/__init__.py": "406d6262593a7261bac3cea08cd0e5cb0df72c580c19f04ede51e87787ab7854",
+    "paperpilot/config.py": "75cad90808a2484c64002c175b43c03ed73b495ad2c03634d93f7ddd4d809307",
+    "paperpilot/discovery.py": "4de0f40ba05313139251b02bafb3f7a20417ce94c32a7d7230250919f13724df",
+    "paperpilot/broker.py": "a62514c38f52d207a103271f1e3a11fe41ed077d22046007d36a1c708d631366",
+    "paperpilot/daily_report.py": "48f31ee1b5ee53f046ea241cfa93fe6d482481afb0e0dd3180d6396f049e9449",
+    "paperpilot/sentiment.py": "4152800accf17a5f7498a16d1b6647b9bd47108f6c5504bb92a797aff27f7eea",
+    "paperpilot/strategy_runtime.py": "d076b58205fd5d536a0fc81c2270b3c19236c9b1a346918763d3a9d2835251c7",
+    "paperpilot/engine.py": "20dd57ade1499b5812918549d3b6756d9428685258a3e01b44c65c5ab259282e",
+    "paperpilot/challenger.py": "b9a901c5f449ee4f5b10c6acf56f696530114e3bf5a465f82330eb0bce06382a",
+    "paperpilot/market_shadow.py": "996339c8fc93b181f219f91d5fd5009f44e1157dddcb55a7efc04723f10499e8",
+    "paperpilot/comparison.py": "5a226c9633e73e5ce17a9521cfe011d2eddbcdc9045e0f3cfc09ee6f688cb069",
+    "paperpilot/strategy_execution.py": "fbffbccdef7dba115f22590e51e45ddb45146dc82248a74b7f64d52067e3075e",
+    "paperpilot/data.py": "14a685c664dff23ed198de9ab03b9ed4865fca0e06de6d7dd46d9be03847cc4c",
+    "paperpilot/universe.py": "801161749f11673d5b66d38fa56c29b1e30be7dc1c67572e51f8e84afd461c80",
+    "paperpilot/strategy.py": "88253f6c8beda8aa68cf1f633fdcf7af69bb232b01b02354bfa98635f05a880f",
+    "paperpilot/outcomes.py": "57efe8ae6048fab4d20402fb3ea735e2570983e75453290f3791a6575172abfe",
+    "paperpilot/db.py": "0eaa1d60a75caeb92a5b95a8c47279891c60b51b353b24aefe61a6a4c5f675d6"
+  },
+  "differences": [
+    {
+      "path": "intelligence/paper_bridge.py",
+      "deployed_sha256": "4cba333898dcb53676d819a453b3c2947d9b8c2a95422a748619bf03f771c16b",
+      "local_sha256": "ae1239036fad0ed4708cb8a25d14b2568c6789fa97c4cd271752de350ae8f09d",
+      "private_source": ".local/rust-migration/deployed-source/20261121T231138424974Z/intelligence/paper_bridge.py",
+      "functions_added": [],
+      "functions_removed": [
+        "decision_traces"
+      ],
+      "functions_changed": []
+    },
+    {
+      "path": "intelligence/main.py",
+      "deployed_sha256": "2caafae0e1004184c111ebf29e03e6957df58764dd1d72f5cc7f3ee386619ec3",
+      "local_sha256": "a363ce63d12b6df32cc1db038d546c3da4d5f0009059af2e2c5e893b36f1a7f2",
+      "private_source": ".local/rust-migration/deployed-source/20261121T231138424974Z/intelligence/main.py",
+      "functions_added": [],
+      "functions_removed": [],
+      "functions_changed": []
+    },
+    {
+      "path": "paperpilot/service.py",
+      "deployed_sha256": "cda8cc493049ca58341b9dd9a63f46aebf283fce216ada3ed0cb33afb0598325",
+      "local_sha256": "6c86e8c3ebf84b9dc31b3a76553f18440ddc820a00012dbf3866f15c964be521",
+      "private_source": ".local/rust-migration/deployed-source/20261121T231138424974Z/paperpilot/service.py",
+      "functions_added": [],
+      "functions_removed": [
+        "decision_traces",
+        "trace_records"
+      ],
+      "functions_changed": [
+        "control",
+        "lifespan",
+        "status"
+      ]
+    },
+    {
+      "path": "paperpilot/risk.py",
+      "deployed_sha256": "136f437e611afb537e1389e44988ab568a04ae78667d39a5c8dd35dcd53a46f5",
+      "local_sha256": "7f1190e34f7e0a9009d7a405b059648c79e72fecf0a94fbc1eb697479b4b7aa1",
+      "private_source": ".local/rust-migration/deployed-source/20261121T231138424974Z/paperpilot/risk.py",
+      "functions_added": [],
+      "functions_removed": [
+        "scaled_buy_authorized",
+        "scaled_intent",
+        "scaled_position_cap",
+        "swing_trial_notional"
+      ],
+      "functions_changed": [
+        "entry_permission"
+      ]
+    },
+    {
+      "path": "paperpilot/config.py",
+      "deployed_sha256": "75cad90808a2484c64002c175b43c03ed73b495ad2c03634d93f7ddd4d809307",
+      "local_sha256": "a6c040de0fb0b892a1a1c60d1c22487274b3ebd532f1ea13a9dd8759c87590d2",
+      "private_source": ".local/rust-migration/deployed-source/20261121T231138424974Z/paperpilot/config.py",
+      "functions_added": [],
+      "functions_removed": [],
+      "functions_changed": [
+        "PaperSettings"
+      ]
+    },
+    {
+      "path": "paperpilot/broker.py",
+      "deployed_sha256": "a62514c38f52d207a103271f1e3a11fe41ed077d22046007d36a1c708d631366",
+      "local_sha256": "195a8d603c0230006ea000f03bddbf6b35323956c736d2c4089dafba3589a521",
+      "private_source": ".local/rust-migration/deployed-source/20261121T231138424974Z/paperpilot/broker.py",
+      "functions_added": [],
+      "functions_removed": [],
+      "functions_changed": [
+        "PaperBroker"
+      ]
+    },
+    {
+      "path": "paperpilot/daily_report.py",
+      "deployed_sha256": "48f31ee1b5ee53f046ea241cfa93fe6d482481afb0e0dd3180d6396f049e9449",
+      "local_sha256": "c6f8ba0a8c7801e5cce5698579f73c65827b8f2616c0d31876f9a7e5cebe61b5",
+      "private_source": ".local/rust-migration/deployed-source/20261121T231138424974Z/paperpilot/daily_report.py",
+      "functions_added": [],
+      "functions_removed": [],
+      "functions_changed": [
+        "session_report"
+      ]
+    },
+    {
+      "path": "paperpilot/strategy_runtime.py",
+      "deployed_sha256": "d076b58205fd5d536a0fc81c2270b3c19236c9b1a346918763d3a9d2835251c7",
+      "local_sha256": "1e4d9b6a29bad7a02421460ee8032c4da4341647de4e909b1eb0d2a687ccf88c",
+      "private_source": ".local/rust-migration/deployed-source/20261121T231138424974Z/paperpilot/strategy_runtime.py",
+      "functions_added": [],
+      "functions_removed": [],
+      "functions_changed": [
+        "freeze_shadow",
+        "issue_signals"
+      ]
+    },
+    {
+      "path": "paperpilot/engine.py",
+      "deployed_sha256": "20dd57ade1499b5812918549d3b6756d9428685258a3e01b44c65c5ab259282e",
+      "local_sha256": "5875190a0a2d6f74caef458bcb5b1d3fcbf320be1905587ab0546fb4f1dada4c",
+      "private_source": ".local/rust-migration/deployed-source/20261121T231138424974Z/paperpilot/engine.py",
+      "functions_added": [],
+      "functions_removed": [],
+      "functions_changed": [
+        "Engine",
+        "_submit_intent",
+        "create_signals"
+      ]
+    },
+    {
+      "path": "paperpilot/strategy_execution.py",
+      "deployed_sha256": "fbffbccdef7dba115f22590e51e45ddb45146dc82248a74b7f64d52067e3075e",
+      "local_sha256": "78cf8e815741481ad84cc97aedc1d1f180d5e4dd4ccbef28b0cee73afa6d9584",
+      "private_source": ".local/rust-migration/deployed-source/20261121T231138424974Z/paperpilot/strategy_execution.py",
+      "functions_added": [],
+      "functions_removed": [],
+      "functions_changed": [
+        "ranked_entries",
+        "strategy_entry"
+      ]
+    },
+    {
+      "path": "paperpilot/strategy.py",
+      "deployed_sha256": "88253f6c8beda8aa68cf1f633fdcf7af69bb232b01b02354bfa98635f05a880f",
+      "local_sha256": "5b0dff6b416e12d2b189a8737253226be7bd3c51df06672b587d40707d10cb71",
+      "private_source": ".local/rust-migration/deployed-source/20261121T231138424974Z/paperpilot/strategy.py",
+      "functions_added": [],
+      "functions_removed": [
+        "swing_trial_active"
+      ],
+      "functions_changed": [
+        "entry_reasons"
+      ]
+    }
+  ],
+  "missing": [
+    "intelligence/lab_api.py",
+    "paperpilot/decision_trace.py",
+    "paperpilot/experiment.py",
+    "paperpilot/fill_replay.py",
+    "paperpilot/lab_registry.py",
+    "paperpilot/scan_models.py",
+    "paperpilot/simulation_rules.py",
+    "paperpilot/strategy_lab.py",
+    "chart_intelligence/api.py",
+    "chart_intelligence/controller.py",
+    "chart_intelligence/core.py",
+    "chart_intelligence/horizon_forward.py",
+    "chart_intelligence/phase7.py",
+    "chart_intelligence/phase7_accounting.py",
+    "chart_intelligence/phase7_execution.py",
+    "chart_intelligence/phase8.py",
+    "chart_intelligence/phase8_accounting.py",
+    "chart_intelligence/phase8_evidence.py",
+    "chart_intelligence/phase8_execution.py",
+    "chart_intelligence/store.py",
+    "chart_intelligence/__init__.py"
+  ],
+  "production_changes": false,
+  "broker_requests": 0
+}

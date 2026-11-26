@@ -1,0 +1,12 @@
+
+running 1 test
+NATIVE_DATA_FEATURE_MODEL_QUOTE_SOURCE_PARITY_AND_CACHE=PASS
+NO_UNAVAILABLE_CURRENT_CANDLE_OR_STALE_QUOTE=PASS
+test daily_ingestion_frozen_inference_quote_and_source_identity_match_python ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.20s
+
+
+   Compiling mainkraft v0.1.0 (/mnt/c/Users/erosi/OneDrive/Desktop/allprojects/keftrade-intelligence/apps/backend-rust)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 1.02s
+     Running tests/market_parity.rs (/home/erosimcity/.local/share/mainkraft-rust-validation/target/debug/deps/market_parity-79b6e837bfe1c0ce)

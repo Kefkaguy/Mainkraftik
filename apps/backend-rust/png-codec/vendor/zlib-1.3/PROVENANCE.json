@@ -1,0 +1,21 @@
+{
+  "url": "https://zlib.net/fossils/zlib-1.3.tar.gz",
+  "release": "https://github.com/madler/zlib/releases/tag/v1.3",
+  "archive_sha256": "ff0ba4c292013dbc27530b3a81e1f9a813cd39de01ca5e0f8bf355702efa593e",
+  "files": {
+    "adler32.c": "9cd1443a24ff2a3053961695bd432035c58347386a420d3388232376ebabe211",
+    "crc32.c": "8fd16f0a7714d51c89c2eb37eb98ec15e8a4dc57ba343e7b7398b19144039fda",
+    "crc32.h": "9a2223575183ac2ee8a247f20bf3ac066e8bd0140369556bdbdffc777435749e",
+    "deflate.c": "45a600ccf05e0fc45398295daae9852a355f6f738723df8c1b0702a429f9915b",
+    "deflate.h": "9bb51bbb95c4b6ff2c8c1a4425d44d880699b8a481a84d60a3047cd96d174904",
+    "trees.c": "27f69f26e124549b3c0bd6d56d86614cac71113a79c3c06716390e12d235ad96",
+    "trees.h": "bb0a9d3ca88ee00c81adb7c636e73b97085f6ef1b52d6d58edbe2b6dc3adeb4d",
+    "zutil.c": "8ced40d8c88588811edd2bdb35b7439983d5e1f8e9e32b8a3b244731f3c317b7",
+    "zutil.h": "4944ba7e9a7387ca28092a17afcc5ed9921e253bbd4d898a3f2bc9792e453a61",
+    "zlib.h": "6f1c7ebe0ac0f0794852b770c20efae041a451f833c91f60f837b599ea81679e",
+    "zconf.h": "8f1ea03be4e70354187aafec635ad7c72af33fe8be44f6a82c0c8dfa3aac9108",
+    "LICENSE": "845efc77857d485d91fb3e0b884aaa929368c717ae8186b66fe1ed2495753243",
+    "README": "b9b5cb6c619ae9553f87336c8bb0760662d55db66b21b08a62b360a72e6a0abe"
+  },
+  "scope": "Bounded deflate-only PNG compatibility; no inflate/gzip reader or external input decompressor compiled"
+}

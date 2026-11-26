@@ -1,0 +1,22 @@
+
+running 1 test
+test native_jobs_use_actual_services_match_python_and_recover_committed_refresh ... FAILED
+
+failures:
+
+failures:
+    native_jobs_use_actual_services_match_python_and_recover_committed_refresh
+
+test result: FAILED. 0 passed; 1 failed; 0 ignored; 0 measured; 0 filtered out; finished in 2.28s
+
+
+   Compiling mainkraft v0.1.0 (C:\Users\erosi\OneDrive\Desktop\allprojects\keftrade-intelligence\apps\backend-rust)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 2.92s
+     Running tests\research_dispatch.rs (apps\backend-rust\target\debug\deps\research_dispatch-cb4b0869856dcbf5.exe)
+
+thread 'native_jobs_use_actual_services_match_python_and_recover_committed_refresh' (20236) panicked at tests\research_dispatch.rs:347:5:
+assertion `left == right` failed
+  left: 0
+ right: 1
+note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+error: test failed, to rerun pass `--test research_dispatch`

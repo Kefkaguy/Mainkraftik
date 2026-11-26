@@ -1,0 +1,3 @@
+{"cases": 1788, "accepted": 999, "fixture": "apps/backend-rust/tests/fixtures/information-time.json"}
+{"boundary_cases": 5237, "accepted": 511, "nonprinting_ranges": 737}
+

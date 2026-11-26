@@ -1,0 +1,3615 @@
+{
+  "report_id": "56fb30dabc11e4d01186a51950d0a806e1ea4fbb1c0b5b566146aeb835762e3c",
+  "winner": "historical_mean",
+  "model_id": "708c2678633a3ff5afa7a2b0cde193edf405051d5887f1fc9cefb28b6b98fba8",
+  "forecasts_id": "81f3f93e2b1522d4b2a310a8bac1a9f20600c8f22422531f987f971ec75479cd",
+  "search_id": "0368263aca6a289112d3de7a5a1a814b32d15f028b360defff4a0434b165a255",
+  "version": "phase7-bounded-v1",
+  "status": "NO_INDEPENDENTLY_VALIDATED_STRATEGY",
+  "execution_authority": false,
+  "promotion_authority": false,
+  "created_at": "2026-11-18T06:13:03.783545+00:00",
+  "declaration_id": "43dbc4f25fb07836d573e0ad0ed98e1a4a6a87fc065efa8ae3730094bda34b18",
+  "dataset_id": "f7b3d68898f7c123f34cda2f08b63e6fab50eb7b4ebb0cd4e4a764b1fe1e1292",
+  "frozen_selection_id": "54b7377392ee4b0db42a861c2de07d37eecaef007325a9addb61bc0c697248ad",
+  "winner_model_id": "708c2678633a3ff5afa7a2b0cde193edf405051d5887f1fc9cefb28b6b98fba8",
+  "eligible_development_strategies": [],
+  "split": [
+    {
+      "first": "2022-11-01",
+      "last": "2024-04-11",
+      "observations": 4325
+    },
+    {
+      "first": "2024-04-15",
+      "last": "2024-10-03",
+      "observations": 1434
+    },
+    {
+      "first": "2024-10-07",
+      "last": "2025-04-02",
+      "observations": 1452
+    },
+    {
+      "first": "2025-04-03",
+      "last": "2026-01-23",
+      "observations": 2418
+    }
+  ],
+  "audit_classification": "One-time out-of-fit audit on an old calibration period; not independent final confirmation",
+  "development": {
+    "historical_mean": {
+      "prediction": {
+        "observations": 1452,
+        "dates": 122,
+        "positive_outcomes": 732,
+        "target_first_outcomes": 1,
+        "mae": 0.002564138261562807,
+        "brier": 0.25033546915100935,
+        "target_brier": 0.0006887038577493113,
+        "coverage": 0.8911845730027548,
+        "downside_mae": 0.0017437115989533158,
+        "direction_accuracy": 0.49586776859504134,
+        "calibration_bins": [
+          {
+            "count": 0,
+            "forecast": null,
+            "actual": null
+          },
+          {
+            "count": 0,
+            "forecast": null,
+            "actual": null
+          },
+          {
+            "count": 1452,
+            "forecast": 0.48535606333493736,
+            "actual": 0.5041322314049587
+          },
+          {
+            "count": 0,
+            "forecast": null,
+            "actual": null
+          },
+          {
+            "count": 0,
+            "forecast": null,
+            "actual": null
+          }
+        ]
+      },
+      "optimization": {
+        "warnings": [],
+        "train_mae": 0.002484261446056979,
+        "calibration_mae": 0.0026351989127142077
+      },
+      "strategy": {
+        "mode": "ASSUMPTION_ONLY",
+        "execution": {
+          "capital": 600,
+          "notional": 25,
+          "total_cap": 100,
+          "daily_loss": 12,
+          "max_positions": 2,
+          "stop": 0.02,
+          "target": 0.03,
+          "spread": 0.001,
+          "slippage_per_leg": 0.0005,
+          "fee_per_leg": 0.0001,
+          "participation": 0.001,
+          "reject_fraction": 0.05,
+          "partial_fraction": 0.1,
+          "probability_floor": 0.55,
+          "net_margin": 0.0005
+        },
+        "holding_bars": 6,
+        "trade_count": 0,
+        "net_pnl": 0,
+        "net_return": 0.0,
+        "daily_mean_net_pnl_ci_98_75": [
+          0.0,
+          0.0
+        ],
+        "realized_exit_max_drawdown": 0.0,
+        "max_single_trade_adverse_mark": 0.0,
+        "daily_sharpe": null,
+        "rejections": {
+          "PREDICTION_CONFIDENCE": 1452
+        },
+        "regime_pnl": {
+          "HIGH_VOL_DOWN": 0,
+          "HIGH_VOL_UP": 0,
+          "LOW_VOL_DOWN": 0,
+          "LOW_VOL_UP": 0
+        },
+        "quote_coverage_complete": false,
+        "limitation": "Synthetic spread/slippage/fee/fill scenarios; not measured executable costs. Drawdown is realized exits plus separately reported adverse marks."
+      }
+    },
+    "zero_return": {
+      "prediction": {
+        "observations": 1452,
+        "dates": 122,
+        "positive_outcomes": 732,
+        "target_first_outcomes": 1,
+        "mae": 0.0025641753514076796,
+        "brier": 0.25033547619401375,
+        "target_brier": 0.0006887038577493113,
+        "coverage": 0.8911845730027548,
+        "downside_mae": 0.0017437115989533158,
+        "direction_accuracy": 0.49586776859504134,
+        "calibration_bins": [
+          {
+            "count": 0,
+            "forecast": null,
+            "actual": null
+          },
+          {
+            "count": 0,
+            "forecast": null,
+            "actual": null
+          },
+          {
+            "count": 1452,
+            "forecast": 0.48535587578419304,
+            "actual": 0.5041322314049587
+          },
+          {
+            "count": 0,
+            "forecast": null,
+            "actual": null
+          },
+          {
+            "count": 0,
+            "forecast": null,
+            "actual": null
+          }
+        ]
+      },
+      "optimization": {
+        "warnings": [],
+        "train_mae": 0.002484548810912218,
+        "calibration_mae": 0.0026341253954111276
+      },
+      "strategy": {
+        "mode": "ASSUMPTION_ONLY",
+        "execution": {
+          "capital": 600,
+          "notional": 25,
+          "total_cap": 100,
+          "daily_loss": 12,
+          "max_positions": 2,
+          "stop": 0.02,
+          "target": 0.03,
+          "spread": 0.001,
+          "slippage_per_leg": 0.0005,
+          "fee_per_leg": 0.0001,
+          "participation": 0.001,
+          "reject_fraction": 0.05,
+          "partial_fraction": 0.1,
+          "probability_floor": 0.55,
+          "net_margin": 0.0005
+        },
+        "holding_bars": 6,
+        "trade_count": 0,
+        "net_pnl": 0,
+        "net_return": 0.0,
+        "daily_mean_net_pnl_ci_98_75": [
+          0.0,
+          0.0
+        ],
+        "realized_exit_max_drawdown": 0.0,
+        "max_single_trade_adverse_mark": 0.0,
+        "daily_sharpe": null,
+        "rejections": {
+          "PREDICTION_CONFIDENCE": 1452
+        },
+        "regime_pnl": {
+          "HIGH_VOL_DOWN": 0,
+          "HIGH_VOL_UP": 0,
+          "LOW_VOL_DOWN": 0,
+          "LOW_VOL_UP": 0
+        },
+        "quote_coverage_complete": false,
+        "limitation": "Synthetic spread/slippage/fee/fill scenarios; not measured executable costs. Drawdown is realized exits plus separately reported adverse marks."
+      }
+    },
+    "mainkraft_linear": {
+      "prediction": {
+        "observations": 1452,
+        "dates": 122,
+        "positive_outcomes": 732,
+        "target_first_outcomes": 1,
+        "mae": 0.002588620288725664,
+        "brier": 0.25033447057087693,
+        "target_brier": 0.0006887038577493113,
+        "coverage": 0.8891184573002755,
+        "downside_mae": 0.0017437115989533158,
+        "direction_accuracy": 0.49586776859504134,
+        "calibration_bins": [
+          {
+            "count": 0,
+            "forecast": null,
+            "actual": null
+          },
+          {
+            "count": 0,
+            "forecast": null,
+            "actual": null
+          },
+          {
+            "count": 1452,
+            "forecast": 0.48537044588717804,
+            "actual": 0.5041322314049587
+          },
+          {
+            "count": 0,
+            "forecast": null,
+            "actual": null
+          },
+          {
+            "count": 0,
+            "forecast": null,
+            "actual": null
+          }
+        ]
+      },
+      "optimization": {
+        "warnings": [],
+        "train_mae": 0.002483062369678706,
+        "calibration_mae": 0.002658745809145781
+      },
+      "strategy": {
+        "mode": "ASSUMPTION_ONLY",
+        "execution": {
+          "capital": 600,
+          "notional": 25,
+          "total_cap": 100,
+          "daily_loss": 12,
+          "max_positions": 2,
+          "stop": 0.02,
+          "target": 0.03,
+          "spread": 0.001,
+          "slippage_per_leg": 0.0005,
+          "fee_per_leg": 0.0001,
+          "participation": 0.001,
+          "reject_fraction": 0.05,
+          "partial_fraction": 0.1,
+          "probability_floor": 0.55,
+          "net_margin": 0.0005
+        },
+        "holding_bars": 6,
+        "trade_count": 0,
+        "net_pnl": 0,
+        "net_return": 0.0,
+        "daily_mean_net_pnl_ci_98_75": [
+          0.0,
+          0.0
+        ],
+        "realized_exit_max_drawdown": 0.0,
+        "max_single_trade_adverse_mark": 0.0,
+        "daily_sharpe": null,
+        "rejections": {
+          "PREDICTION_CONFIDENCE": 1452
+        },
+        "regime_pnl": {
+          "HIGH_VOL_DOWN": 0,
+          "HIGH_VOL_UP": 0,
+          "LOW_VOL_DOWN": 0,
+          "LOW_VOL_UP": 0
+        },
+        "quote_coverage_complete": false,
+        "limitation": "Synthetic spread/slippage/fee/fill scenarios; not measured executable costs. Drawdown is realized exits plus separately reported adverse marks."
+      }
+    },
+    "mainkraft_histboost": {
+      "prediction": {
+        "observations": 1452,
+        "dates": 122,
+        "positive_outcomes": 732,
+        "target_first_outcomes": 1,
+        "mae": 0.002614587629350855,
+        "brier": 0.2500687723322002,
+        "target_brier": 0.0006887038577493113,
+        "coverage": 0.8960055096418733,
+        "downside_mae": 0.0017437115989533158,
+        "direction_accuracy": 0.5020661157024794,
+        "calibration_bins": [
+          {
+            "count": 0,
+            "forecast": null,
+            "actual": null
+          },
+          {
+            "count": 0,
+            "forecast": null,
+            "actual": null
+          },
+          {
+            "count": 1452,
+            "forecast": 0.48591929127292555,
+            "actual": 0.5041322314049587
+          },
+          {
+            "count": 0,
+            "forecast": null,
+            "actual": null
+          },
+          {
+            "count": 0,
+            "forecast": null,
+            "actual": null
+          }
+        ]
+      },
+      "optimization": {
+        "warnings": [],
+        "train_mae": 0.0024096880509316236,
+        "calibration_mae": 0.002675150074067859
+      },
+      "strategy": {
+        "mode": "ASSUMPTION_ONLY",
+        "execution": {
+          "capital": 600,
+          "notional": 25,
+          "total_cap": 100,
+          "daily_loss": 12,
+          "max_positions": 2,
+          "stop": 0.02,
+          "target": 0.03,
+          "spread": 0.001,
+          "slippage_per_leg": 0.0005,
+          "fee_per_leg": 0.0001,
+          "participation": 0.001,
+          "reject_fraction": 0.05,
+          "partial_fraction": 0.1,
+          "probability_floor": 0.55,
+          "net_margin": 0.0005
+        },
+        "holding_bars": 6,
+        "trade_count": 0,
+        "net_pnl": 0,
+        "net_return": 0.0,
+        "daily_mean_net_pnl_ci_98_75": [
+          0.0,
+          0.0
+        ],
+        "realized_exit_max_drawdown": 0.0,
+        "max_single_trade_adverse_mark": 0.0,
+        "daily_sharpe": null,
+        "rejections": {
+          "PREDICTION_CONFIDENCE": 1452
+        },
+        "regime_pnl": {
+          "HIGH_VOL_DOWN": 0,
+          "HIGH_VOL_UP": 0,
+          "LOW_VOL_DOWN": 0,
+          "LOW_VOL_UP": 0
+        },
+        "quote_coverage_complete": false,
+        "limitation": "Synthetic spread/slippage/fee/fill scenarios; not measured executable costs. Drawdown is realized exits plus separately reported adverse marks."
+      }
+    },
+    "sequence_ridge": {
+      "prediction": {
+        "observations": 1452,
+        "dates": 122,
+        "positive_outcomes": 732,
+        "target_first_outcomes": 1,
+        "mae": 0.0025861357478046032,
+        "brier": 0.2508439225767944,
+        "target_brier": 0.0006887038577493113,
+        "coverage": 0.8918732782369146,
+        "downside_mae": 0.0016962038151324486,
+        "direction_accuracy": 0.5,
+        "calibration_bins": [
+          {
+            "count": 0,
+            "forecast": null,
+            "actual": null
+          },
+          {
+            "count": 3,
+            "forecast": 0.385814206224056,
+            "actual": 1.0
+          },
+          {
+            "count": 1448,
+            "forecast": 0.48938717976204815,
+            "actual": 0.5034530386740331
+          },
+          {
+            "count": 1,
+            "forecast": 0.6106817718190738,
+            "actual": 0.0
+          },
+          {
+            "count": 0,
+            "forecast": null,
+            "actual": null
+          }
+        ]
+      },
+      "optimization": {
+        "warnings": [],
+        "train_mae": 0.0024580601553431717,
+        "calibration_mae": 0.0027004759662959945
+      },
+      "strategy": {
+        "mode": "ASSUMPTION_ONLY",
+        "execution": {
+          "capital": 600,
+          "notional": 25,
+          "total_cap": 100,
+          "daily_loss": 12,
+          "max_positions": 2,
+          "stop": 0.02,
+          "target": 0.03,
+          "spread": 0.001,
+          "slippage_per_leg": 0.0005,
+          "fee_per_leg": 0.0001,
+          "participation": 0.001,
+          "reject_fraction": 0.05,
+          "partial_fraction": 0.1,
+          "probability_floor": 0.55,
+          "net_margin": 0.0005
+        },
+        "holding_bars": 6,
+        "trade_count": 0,
+        "net_pnl": 0,
+        "net_return": 0.0,
+        "daily_mean_net_pnl_ci_98_75": [
+          0.0,
+          0.0
+        ],
+        "realized_exit_max_drawdown": 0.0,
+        "max_single_trade_adverse_mark": 0.0,
+        "daily_sharpe": null,
+        "rejections": {
+          "PREDICTION_CONFIDENCE": 1432,
+          "EXPECTED_RETURN_AFTER_ASSUMED_COSTS": 20
+        },
+        "regime_pnl": {
+          "HIGH_VOL_DOWN": 0,
+          "HIGH_VOL_UP": 0,
+          "LOW_VOL_DOWN": 0,
+          "LOW_VOL_UP": 0
+        },
+        "quote_coverage_complete": false,
+        "limitation": "Synthetic spread/slippage/fee/fill scenarios; not measured executable costs. Drawdown is realized exits plus separately reported adverse marks."
+      }
+    },
+    "sequence_original150": {
+      "prediction": {
+        "observations": 1452,
+        "dates": 122,
+        "positive_outcomes": 732,
+        "target_first_outcomes": 1,
+        "mae": 0.002914380109100081,
+        "brier": 0.2508439225767944,
+        "target_brier": 0.0006887038577493113,
+        "coverage": 0.9159779614325069,
+        "downside_mae": 0.001885118001125926,
+        "direction_accuracy": 0.5,
+        "calibration_bins": [
+          {
+            "count": 0,
+            "forecast": null,
+            "actual": null
+          },
+          {
+            "count": 3,
+            "forecast": 0.385814206224056,
+            "actual": 1.0
+          },
+          {
+            "count": 1448,
+            "forecast": 0.48938717976204815,
+            "actual": 0.5034530386740331
+          },
+          {
+            "count": 1,
+            "forecast": 0.6106817718190738,
+            "actual": 0.0
+          },
+          {
+            "count": 0,
+            "forecast": null,
+            "actual": null
+          }
+        ]
+      },
+      "optimization": {
+        "iterations": 150,
+        "budget": 150,
+        "budget_exhausted": true,
+        "loss_tail": [
+          0.24847257198979622,
+          0.24852081627676406,
+          0.2502713467361807,
+          0.2520459793762937,
+          0.2531015106586247,
+          0.25233644338190175,
+          0.2521180168907594,
+          0.24835743562880158,
+          0.2469566851473353,
+          0.24435020518047026
+        ],
+        "training_loss": 0.24435020518047026,
+        "warnings": [
+          "Stochastic Optimizer: Maximum iterations (150) reached and the optimization hasn't converged yet."
+        ],
+        "train_mae": 0.0019596648524500843,
+        "calibration_mae": 0.0031083278156901744
+      },
+      "strategy": {
+        "mode": "ASSUMPTION_ONLY",
+        "execution": {
+          "capital": 600,
+          "notional": 25,
+          "total_cap": 100,
+          "daily_loss": 12,
+          "max_positions": 2,
+          "stop": 0.02,
+          "target": 0.03,
+          "spread": 0.001,
+          "slippage_per_leg": 0.0005,
+          "fee_per_leg": 0.0001,
+          "participation": 0.001,
+          "reject_fraction": 0.05,
+          "partial_fraction": 0.1,
+          "probability_floor": 0.55,
+          "net_margin": 0.0005
+        },
+        "holding_bars": 6,
+        "trade_count": 0,
+        "net_pnl": 0,
+        "net_return": 0.0,
+        "daily_mean_net_pnl_ci_98_75": [
+          0.0,
+          0.0
+        ],
+        "realized_exit_max_drawdown": 0.0,
+        "max_single_trade_adverse_mark": 0.0,
+        "daily_sharpe": null,
+        "rejections": {
+          "PREDICTION_CONFIDENCE": 1432,
+          "EXPECTED_RETURN_AFTER_ASSUMED_COSTS": 20
+        },
+        "regime_pnl": {
+          "HIGH_VOL_DOWN": 0,
+          "HIGH_VOL_UP": 0,
+          "LOW_VOL_DOWN": 0,
+          "LOW_VOL_UP": 0
+        },
+        "quote_coverage_complete": false,
+        "limitation": "Synthetic spread/slippage/fee/fill scenarios; not measured executable costs. Drawdown is realized exits plus separately reported adverse marks."
+      }
+    },
+    "sequence_adam400": {
+      "prediction": {
+        "observations": 1452,
+        "dates": 122,
+        "positive_outcomes": 732,
+        "target_first_outcomes": 1,
+        "mae": 0.0025874978834304224,
+        "brier": 0.2508439225767944,
+        "target_brier": 0.0006887038577493113,
+        "coverage": 0.8863636363636364,
+        "downside_mae": 0.0016989459968845253,
+        "direction_accuracy": 0.5,
+        "calibration_bins": [
+          {
+            "count": 0,
+            "forecast": null,
+            "actual": null
+          },
+          {
+            "count": 3,
+            "forecast": 0.385814206224056,
+            "actual": 1.0
+          },
+          {
+            "count": 1448,
+            "forecast": 0.48938717976204815,
+            "actual": 0.5034530386740331
+          },
+          {
+            "count": 1,
+            "forecast": 0.6106817718190738,
+            "actual": 0.0
+          },
+          {
+            "count": 0,
+            "forecast": null,
+            "actual": null
+          }
+        ]
+      },
+      "optimization": {
+        "iterations": 199,
+        "budget": 400,
+        "budget_exhausted": false,
+        "loss_tail": [
+          0.49394304756804613,
+          0.4938951568329139,
+          0.49391989783401663,
+          0.4941373581215885,
+          0.49402961642827403,
+          0.4942472425938151,
+          0.49446473335724406,
+          0.4946063042783283,
+          0.49418082212242326,
+          0.4939564945127538
+        ],
+        "training_loss": 0.4939564945127538,
+        "warnings": [],
+        "train_mae": 0.0024372064338752833,
+        "calibration_mae": 0.0026520553956632473
+      },
+      "strategy": {
+        "mode": "ASSUMPTION_ONLY",
+        "execution": {
+          "capital": 600,
+          "notional": 25,
+          "total_cap": 100,
+          "daily_loss": 12,
+          "max_positions": 2,
+          "stop": 0.02,
+          "target": 0.03,
+          "spread": 0.001,
+          "slippage_per_leg": 0.0005,
+          "fee_per_leg": 0.0001,
+          "participation": 0.001,
+          "reject_fraction": 0.05,
+          "partial_fraction": 0.1,
+          "probability_floor": 0.55,
+          "net_margin": 0.0005
+        },
+        "holding_bars": 6,
+        "trade_count": 0,
+        "net_pnl": 0,
+        "net_return": 0.0,
+        "daily_mean_net_pnl_ci_98_75": [
+          0.0,
+          0.0
+        ],
+        "realized_exit_max_drawdown": 0.0,
+        "max_single_trade_adverse_mark": 0.0,
+        "daily_sharpe": null,
+        "rejections": {
+          "PREDICTION_CONFIDENCE": 1432,
+          "EXPECTED_RETURN_AFTER_ASSUMED_COSTS": 20
+        },
+        "regime_pnl": {
+          "HIGH_VOL_DOWN": 0,
+          "HIGH_VOL_UP": 0,
+          "LOW_VOL_DOWN": 0,
+          "LOW_VOL_UP": 0
+        },
+        "quote_coverage_complete": false,
+        "limitation": "Synthetic spread/slippage/fee/fill scenarios; not measured executable costs. Drawdown is realized exits plus separately reported adverse marks."
+      }
+    },
+    "sequence_lbfgs250": {
+      "prediction": {
+        "observations": 1452,
+        "dates": 122,
+        "positive_outcomes": 732,
+        "target_first_outcomes": 1,
+        "mae": 0.0028844212884891517,
+        "brier": 0.2508439225767944,
+        "target_brier": 0.0006887038577493113,
+        "coverage": 0.8953168044077136,
+        "downside_mae": 0.0018839555655587347,
+        "direction_accuracy": 0.5,
+        "calibration_bins": [
+          {
+            "count": 0,
+            "forecast": null,
+            "actual": null
+          },
+          {
+            "count": 3,
+            "forecast": 0.385814206224056,
+            "actual": 1.0
+          },
+          {
+            "count": 1448,
+            "forecast": 0.48938717976204815,
+            "actual": 0.5034530386740331
+          },
+          {
+            "count": 1,
+            "forecast": 0.6106817718190738,
+            "actual": 0.0
+          },
+          {
+            "count": 0,
+            "forecast": null,
+            "actual": null
+          }
+        ]
+      },
+      "optimization": {
+        "iterations": 250,
+        "budget": 250,
+        "budget_exhausted": true,
+        "loss_tail": [],
+        "training_loss": 0.359250058399347,
+        "warnings": [
+          "lbfgs failed to converge after 250 iteration(s) (status=1):\nSTOP: TOTAL NO. OF ITERATIONS REACHED LIMIT\n\nIncrease the number of iterations to improve the convergence (max_iter=250).\nYou might also want to scale the data as shown in:\n    https://scikit-learn.org/stable/modules/preprocessing.html"
+        ],
+        "train_mae": 0.002198894429466435,
+        "calibration_mae": 0.002978548037969038
+      },
+      "strategy": {
+        "mode": "ASSUMPTION_ONLY",
+        "execution": {
+          "capital": 600,
+          "notional": 25,
+          "total_cap": 100,
+          "daily_loss": 12,
+          "max_positions": 2,
+          "stop": 0.02,
+          "target": 0.03,
+          "spread": 0.001,
+          "slippage_per_leg": 0.0005,
+          "fee_per_leg": 0.0001,
+          "participation": 0.001,
+          "reject_fraction": 0.05,
+          "partial_fraction": 0.1,
+          "probability_floor": 0.55,
+          "net_margin": 0.0005
+        },
+        "holding_bars": 6,
+        "trade_count": 0,
+        "net_pnl": 0,
+        "net_return": 0.0,
+        "daily_mean_net_pnl_ci_98_75": [
+          0.0,
+          0.0
+        ],
+        "realized_exit_max_drawdown": 0.0,
+        "max_single_trade_adverse_mark": 0.0,
+        "daily_sharpe": null,
+        "rejections": {
+          "EXPECTED_RETURN_AFTER_ASSUMED_COSTS": 20,
+          "PREDICTION_CONFIDENCE": 1432
+        },
+        "regime_pnl": {
+          "HIGH_VOL_DOWN": 0,
+          "HIGH_VOL_UP": 0,
+          "LOW_VOL_DOWN": 0,
+          "LOW_VOL_UP": 0
+        },
+        "quote_coverage_complete": false,
+        "limitation": "Synthetic spread/slippage/fee/fill scenarios; not measured executable costs. Drawdown is realized exits plus separately reported adverse marks."
+      }
+    }
+  },
+  "audit": {
+    "historical_mean": {
+      "prediction": {
+        "observations": 2418,
+        "dates": 203,
+        "positive_outcomes": 1241,
+        "target_first_outcomes": 2,
+        "mae": 0.0024142551372714864,
+        "brier": 0.2506020428738393,
+        "target_brier": 0.0008271282061282051,
+        "coverage": 0.91232423490488,
+        "downside_mae": 0.0019339497185830701,
+        "direction_accuracy": 0.4867659222497932,
+        "calibration_bins": [
+          {
+            "count": 0,
+            "forecast": null,
+            "actual": null
+          },
+          {
+            "count": 0,
+            "forecast": null,
+            "actual": null
+          },
+          {
+            "count": 2418,
+            "forecast": 0.48535606333493736,
+            "actual": 0.5132340777502068
+          },
+          {
+            "count": 0,
+            "forecast": null,
+            "actual": null
+          },
+          {
+            "count": 0,
+            "forecast": null,
+            "actual": null
+          }
+        ]
+      },
+      "scenarios": {
+        "base_15min": {
+          "mode": "ASSUMPTION_ONLY",
+          "execution": {
+            "capital": 600,
+            "notional": 25,
+            "total_cap": 100,
+            "daily_loss": 12,
+            "max_positions": 2,
+            "stop": 0.02,
+            "target": 0.03,
+            "spread": 0.001,
+            "slippage_per_leg": 0.0005,
+            "fee_per_leg": 0.0001,
+            "participation": 0.001,
+            "reject_fraction": 0.05,
+            "partial_fraction": 0.1,
+            "probability_floor": 0.55,
+            "net_margin": 0.0005
+          },
+          "holding_bars": 3,
+          "trade_count": 0,
+          "net_pnl": 0,
+          "net_return": 0.0,
+          "daily_mean_net_pnl_ci_98_75": [
+            0.0,
+            0.0
+          ],
+          "realized_exit_max_drawdown": 0.0,
+          "max_single_trade_adverse_mark": 0.0,
+          "daily_sharpe": null,
+          "rejections": {
+            "PREDICTION_CONFIDENCE": 2418
+          },
+          "regime_pnl": {
+            "HIGH_VOL_DOWN": 0,
+            "HIGH_VOL_UP": 0,
+            "LOW_VOL_DOWN": 0,
+            "LOW_VOL_UP": 0
+          },
+          "quote_coverage_complete": false,
+          "limitation": "Synthetic spread/slippage/fee/fill scenarios; not measured executable costs. Drawdown is realized exits plus separately reported adverse marks."
+        },
+        "base_30min": {
+          "mode": "ASSUMPTION_ONLY",
+          "execution": {
+            "capital": 600,
+            "notional": 25,
+            "total_cap": 100,
+            "daily_loss": 12,
+            "max_positions": 2,
+            "stop": 0.02,
+            "target": 0.03,
+            "spread": 0.001,
+            "slippage_per_leg": 0.0005,
+            "fee_per_leg": 0.0001,
+            "participation": 0.001,
+            "reject_fraction": 0.05,
+            "partial_fraction": 0.1,
+            "probability_floor": 0.55,
+            "net_margin": 0.0005
+          },
+          "holding_bars": 6,
+          "trade_count": 0,
+          "net_pnl": 0,
+          "net_return": 0.0,
+          "daily_mean_net_pnl_ci_98_75": [
+            0.0,
+            0.0
+          ],
+          "realized_exit_max_drawdown": 0.0,
+          "max_single_trade_adverse_mark": 0.0,
+          "daily_sharpe": null,
+          "rejections": {
+            "PREDICTION_CONFIDENCE": 2418
+          },
+          "regime_pnl": {
+            "HIGH_VOL_DOWN": 0,
+            "HIGH_VOL_UP": 0,
+            "LOW_VOL_DOWN": 0,
+            "LOW_VOL_UP": 0
+          },
+          "quote_coverage_complete": false,
+          "limitation": "Synthetic spread/slippage/fee/fill scenarios; not measured executable costs. Drawdown is realized exits plus separately reported adverse marks."
+        },
+        "stress_15min": {
+          "mode": "ASSUMPTION_ONLY",
+          "execution": {
+            "capital": 600,
+            "notional": 25,
+            "total_cap": 100,
+            "daily_loss": 12,
+            "max_positions": 2,
+            "stop": 0.02,
+            "target": 0.03,
+            "spread": 0.002,
+            "slippage_per_leg": 0.001,
+            "fee_per_leg": 0.0001,
+            "participation": 0.001,
+            "reject_fraction": 0.05,
+            "partial_fraction": 0.1,
+            "probability_floor": 0.55,
+            "net_margin": 0.0005
+          },
+          "holding_bars": 3,
+          "trade_count": 0,
+          "net_pnl": 0,
+          "net_return": 0.0,
+          "daily_mean_net_pnl_ci_98_75": [
+            0.0,
+            0.0
+          ],
+          "realized_exit_max_drawdown": 0.0,
+          "max_single_trade_adverse_mark": 0.0,
+          "daily_sharpe": null,
+          "rejections": {
+            "PREDICTION_CONFIDENCE": 2418
+          },
+          "regime_pnl": {
+            "HIGH_VOL_DOWN": 0,
+            "HIGH_VOL_UP": 0,
+            "LOW_VOL_DOWN": 0,
+            "LOW_VOL_UP": 0
+          },
+          "quote_coverage_complete": false,
+          "limitation": "Synthetic spread/slippage/fee/fill scenarios; not measured executable costs. Drawdown is realized exits plus separately reported adverse marks."
+        },
+        "stress_30min": {
+          "mode": "ASSUMPTION_ONLY",
+          "execution": {
+            "capital": 600,
+            "notional": 25,
+            "total_cap": 100,
+            "daily_loss": 12,
+            "max_positions": 2,
+            "stop": 0.02,
+            "target": 0.03,
+            "spread": 0.002,
+            "slippage_per_leg": 0.001,
+            "fee_per_leg": 0.0001,
+            "participation": 0.001,
+            "reject_fraction": 0.05,
+            "partial_fraction": 0.1,
+            "probability_floor": 0.55,
+            "net_margin": 0.0005
+          },
+          "holding_bars": 6,
+          "trade_count": 0,
+          "net_pnl": 0,
+          "net_return": 0.0,
+          "daily_mean_net_pnl_ci_98_75": [
+            0.0,
+            0.0
+          ],
+          "realized_exit_max_drawdown": 0.0,
+          "max_single_trade_adverse_mark": 0.0,
+          "daily_sharpe": null,
+          "rejections": {
+            "PREDICTION_CONFIDENCE": 2418
+          },
+          "regime_pnl": {
+            "HIGH_VOL_DOWN": 0,
+            "HIGH_VOL_UP": 0,
+            "LOW_VOL_DOWN": 0,
+            "LOW_VOL_UP": 0
+          },
+          "quote_coverage_complete": false,
+          "limitation": "Synthetic spread/slippage/fee/fill scenarios; not measured executable costs. Drawdown is realized exits plus separately reported adverse marks."
+        },
+        "severe_15min": {
+          "mode": "ASSUMPTION_ONLY",
+          "execution": {
+            "capital": 600,
+            "notional": 25,
+            "total_cap": 100,
+            "daily_loss": 12,
+            "max_positions": 2,
+            "stop": 0.02,
+            "target": 0.03,
+            "spread": 0.004,
+            "slippage_per_leg": 0.002,
+            "fee_per_leg": 0.0001,
+            "participation": 0.001,
+            "reject_fraction": 0.05,
+            "partial_fraction": 0.1,
+            "probability_floor": 0.55,
+            "net_margin": 0.0005
+          },
+          "holding_bars": 3,
+          "trade_count": 0,
+          "net_pnl": 0,
+          "net_return": 0.0,
+          "daily_mean_net_pnl_ci_98_75": [
+            0.0,
+            0.0
+          ],
+          "realized_exit_max_drawdown": 0.0,
+          "max_single_trade_adverse_mark": 0.0,
+          "daily_sharpe": null,
+          "rejections": {
+            "PREDICTION_CONFIDENCE": 2418
+          },
+          "regime_pnl": {
+            "HIGH_VOL_DOWN": 0,
+            "HIGH_VOL_UP": 0,
+            "LOW_VOL_DOWN": 0,
+            "LOW_VOL_UP": 0
+          },
+          "quote_coverage_complete": false,
+          "limitation": "Synthetic spread/slippage/fee/fill scenarios; not measured executable costs. Drawdown is realized exits plus separately reported adverse marks."
+        },
+        "severe_30min": {
+          "mode": "ASSUMPTION_ONLY",
+          "execution": {
+            "capital": 600,
+            "notional": 25,
+            "total_cap": 100,
+            "daily_loss": 12,
+            "max_positions": 2,
+            "stop": 0.02,
+            "target": 0.03,
+            "spread": 0.004,
+            "slippage_per_leg": 0.002,
+            "fee_per_leg": 0.0001,
+            "participation": 0.001,
+            "reject_fraction": 0.05,
+            "partial_fraction": 0.1,
+            "probability_floor": 0.55,
+            "net_margin": 0.0005
+          },
+          "holding_bars": 6,
+          "trade_count": 0,
+          "net_pnl": 0,
+          "net_return": 0.0,
+          "daily_mean_net_pnl_ci_98_75": [
+            0.0,
+            0.0
+          ],
+          "realized_exit_max_drawdown": 0.0,
+          "max_single_trade_adverse_mark": 0.0,
+          "daily_sharpe": null,
+          "rejections": {
+            "PREDICTION_CONFIDENCE": 2418
+          },
+          "regime_pnl": {
+            "HIGH_VOL_DOWN": 0,
+            "HIGH_VOL_UP": 0,
+            "LOW_VOL_DOWN": 0,
+            "LOW_VOL_UP": 0
+          },
+          "quote_coverage_complete": false,
+          "limitation": "Synthetic spread/slippage/fee/fill scenarios; not measured executable costs. Drawdown is realized exits plus separately reported adverse marks."
+        }
+      },
+      "strict_quote_audit": {
+        "mode": "STRICT_QUOTES",
+        "execution": {
+          "capital": 600,
+          "notional": 25,
+          "total_cap": 100,
+          "daily_loss": 12,
+          "max_positions": 2,
+          "stop": 0.02,
+          "target": 0.03,
+          "spread": 0.001,
+          "slippage_per_leg": 0.0005,
+          "fee_per_leg": 0.0001,
+          "participation": 0.001,
+          "reject_fraction": 0.05,
+          "partial_fraction": 0.1,
+          "probability_floor": 0.55,
+          "net_margin": 0.0005
+        },
+        "holding_bars": 6,
+        "trade_count": 0,
+        "net_pnl": 0,
+        "net_return": 0.0,
+        "daily_mean_net_pnl_ci_98_75": [
+          0.0,
+          0.0
+        ],
+        "realized_exit_max_drawdown": 0.0,
+        "max_single_trade_adverse_mark": 0.0,
+        "daily_sharpe": null,
+        "rejections": {
+          "PREDICTION_CONFIDENCE": 2418
+        },
+        "regime_pnl": {
+          "HIGH_VOL_DOWN": 0,
+          "HIGH_VOL_UP": 0,
+          "LOW_VOL_DOWN": 0,
+          "LOW_VOL_UP": 0
+        },
+        "quote_coverage_complete": true,
+        "limitation": "Exit-quote screening uses future quote availability; unresolved real exposures need a tick ledger. Strict mode is a coverage audit, not executable P/L."
+      },
+      "model_id": "708c2678633a3ff5afa7a2b0cde193edf405051d5887f1fc9cefb28b6b98fba8"
+    },
+    "zero_return": {
+      "prediction": {
+        "observations": 2418,
+        "dates": 203,
+        "positive_outcomes": 1241,
+        "target_first_outcomes": 2,
+        "mae": 0.002415123746200339,
+        "brier": 0.2506020533309593,
+        "target_brier": 0.0008271282061282051,
+        "coverage": 0.913564929693962,
+        "downside_mae": 0.0019339497185830701,
+        "direction_accuracy": 0.4867659222497932,
+        "calibration_bins": [
+          {
+            "count": 0,
+            "forecast": null,
+            "actual": null
+          },
+          {
+            "count": 0,
+            "forecast": null,
+            "actual": null
+          },
+          {
+            "count": 2418,
+            "forecast": 0.48535587578419304,
+            "actual": 0.5132340777502068
+          },
+          {
+            "count": 0,
+            "forecast": null,
+            "actual": null
+          },
+          {
+            "count": 0,
+            "forecast": null,
+            "actual": null
+          }
+        ]
+      },
+      "scenarios": {
+        "base_15min": {
+          "mode": "ASSUMPTION_ONLY",
+          "execution": {
+            "capital": 600,
+            "notional": 25,
+            "total_cap": 100,
+            "daily_loss": 12,
+            "max_positions": 2,
+            "stop": 0.02,
+            "target": 0.03,
+            "spread": 0.001,
+            "slippage_per_leg": 0.0005,
+            "fee_per_leg": 0.0001,
+            "participation": 0.001,
+            "reject_fraction": 0.05,
+            "partial_fraction": 0.1,
+            "probability_floor": 0.55,
+            "net_margin": 0.0005
+          },
+          "holding_bars": 3,
+          "trade_count": 0,
+          "net_pnl": 0,
+          "net_return": 0.0,
+          "daily_mean_net_pnl_ci_98_75": [
+            0.0,
+            0.0
+          ],
+          "realized_exit_max_drawdown": 0.0,
+          "max_single_trade_adverse_mark": 0.0,
+          "daily_sharpe": null,
+          "rejections": {
+            "PREDICTION_CONFIDENCE": 2418
+          },
+          "regime_pnl": {
+            "HIGH_VOL_DOWN": 0,
+            "HIGH_VOL_UP": 0,
+            "LOW_VOL_DOWN": 0,
+            "LOW_VOL_UP": 0
+          },
+          "quote_coverage_complete": false,
+          "limitation": "Synthetic spread/slippage/fee/fill scenarios; not measured executable costs. Drawdown is realized exits plus separately reported adverse marks."
+        },
+        "base_30min": {
+          "mode": "ASSUMPTION_ONLY",
+          "execution": {
+            "capital": 600,
+            "notional": 25,
+            "total_cap": 100,
+            "daily_loss": 12,
+            "max_positions": 2,
+            "stop": 0.02,
+            "target": 0.03,
+            "spread": 0.001,
+            "slippage_per_leg": 0.0005,
+            "fee_per_leg": 0.0001,
+            "participation": 0.001,
+            "reject_fraction": 0.05,
+            "partial_fraction": 0.1,
+            "probability_floor": 0.55,
+            "net_margin": 0.0005
+          },
+          "holding_bars": 6,
+          "trade_count": 0,
+          "net_pnl": 0,
+          "net_return": 0.0,
+          "daily_mean_net_pnl_ci_98_75": [
+            0.0,
+            0.0
+          ],
+          "realized_exit_max_drawdown": 0.0,
+          "max_single_trade_adverse_mark": 0.0,
+          "daily_sharpe": null,
+          "rejections": {
+            "PREDICTION_CONFIDENCE": 2418
+          },
+          "regime_pnl": {
+            "HIGH_VOL_DOWN": 0,
+            "HIGH_VOL_UP": 0,
+            "LOW_VOL_DOWN": 0,
+            "LOW_VOL_UP": 0
+          },
+          "quote_coverage_complete": false,
+          "limitation": "Synthetic spread/slippage/fee/fill scenarios; not measured executable costs. Drawdown is realized exits plus separately reported adverse marks."
+        },
+        "stress_15min": {
+          "mode": "ASSUMPTION_ONLY",
+          "execution": {
+            "capital": 600,
+            "notional": 25,
+            "total_cap": 100,
+            "daily_loss": 12,
+            "max_positions": 2,
+            "stop": 0.02,
+            "target": 0.03,
+            "spread": 0.002,
+            "slippage_per_leg": 0.001,
+            "fee_per_leg": 0.0001,
+            "participation": 0.001,
+            "reject_fraction": 0.05,
+            "partial_fraction": 0.1,
+            "probability_floor": 0.55,
+            "net_margin": 0.0005
+          },
+          "holding_bars": 3,
+          "trade_count": 0,
+          "net_pnl": 0,
+          "net_return": 0.0,
+          "daily_mean_net_pnl_ci_98_75": [
+            0.0,
+            0.0
+          ],
+          "realized_exit_max_drawdown": 0.0,
+          "max_single_trade_adverse_mark": 0.0,
+          "daily_sharpe": null,
+          "rejections": {
+            "PREDICTION_CONFIDENCE": 2418
+          },
+          "regime_pnl": {
+            "HIGH_VOL_DOWN": 0,
+            "HIGH_VOL_UP": 0,
+            "LOW_VOL_DOWN": 0,
+            "LOW_VOL_UP": 0
+          },
+          "quote_coverage_complete": false,
+          "limitation": "Synthetic spread/slippage/fee/fill scenarios; not measured executable costs. Drawdown is realized exits plus separately reported adverse marks."
+        },
+        "stress_30min": {
+          "mode": "ASSUMPTION_ONLY",
+          "execution": {
+            "capital": 600,
+            "notional": 25,
+            "total_cap": 100,
+            "daily_loss": 12,
+            "max_positions": 2,
+            "stop": 0.02,
+            "target": 0.03,
+            "spread": 0.002,
+            "slippage_per_leg": 0.001,
+            "fee_per_leg": 0.0001,
+            "participation": 0.001,
+            "reject_fraction": 0.05,
+            "partial_fraction": 0.1,
+            "probability_floor": 0.55,
+            "net_margin": 0.0005
+          },
+          "holding_bars": 6,
+          "trade_count": 0,
+          "net_pnl": 0,
+          "net_return": 0.0,
+          "daily_mean_net_pnl_ci_98_75": [
+            0.0,
+            0.0
+          ],
+          "realized_exit_max_drawdown": 0.0,
+          "max_single_trade_adverse_mark": 0.0,
+          "daily_sharpe": null,
+          "rejections": {
+            "PREDICTION_CONFIDENCE": 2418
+          },
+          "regime_pnl": {
+            "HIGH_VOL_DOWN": 0,
+            "HIGH_VOL_UP": 0,
+            "LOW_VOL_DOWN": 0,
+            "LOW_VOL_UP": 0
+          },
+          "quote_coverage_complete": false,
+          "limitation": "Synthetic spread/slippage/fee/fill scenarios; not measured executable costs. Drawdown is realized exits plus separately reported adverse marks."
+        },
+        "severe_15min": {
+          "mode": "ASSUMPTION_ONLY",
+          "execution": {
+            "capital": 600,
+            "notional": 25,
+            "total_cap": 100,
+            "daily_loss": 12,
+            "max_positions": 2,
+            "stop": 0.02,
+            "target": 0.03,
+            "spread": 0.004,
+            "slippage_per_leg": 0.002,
+            "fee_per_leg": 0.0001,
+            "participation": 0.001,
+            "reject_fraction": 0.05,
+            "partial_fraction": 0.1,
+            "probability_floor": 0.55,
+            "net_margin": 0.0005
+          },
+          "holding_bars": 3,
+          "trade_count": 0,
+          "net_pnl": 0,
+          "net_return": 0.0,
+          "daily_mean_net_pnl_ci_98_75": [
+            0.0,
+            0.0
+          ],
+          "realized_exit_max_drawdown": 0.0,
+          "max_single_trade_adverse_mark": 0.0,
+          "daily_sharpe": null,
+          "rejections": {
+            "PREDICTION_CONFIDENCE": 2418
+          },
+          "regime_pnl": {
+            "HIGH_VOL_DOWN": 0,
+            "HIGH_VOL_UP": 0,
+            "LOW_VOL_DOWN": 0,
+            "LOW_VOL_UP": 0
+          },
+          "quote_coverage_complete": false,
+          "limitation": "Synthetic spread/slippage/fee/fill scenarios; not measured executable costs. Drawdown is realized exits plus separately reported adverse marks."
+        },
+        "severe_30min": {
+          "mode": "ASSUMPTION_ONLY",
+          "execution": {
+            "capital": 600,
+            "notional": 25,
+            "total_cap": 100,
+            "daily_loss": 12,
+            "max_positions": 2,
+            "stop": 0.02,
+            "target": 0.03,
+            "spread": 0.004,
+            "slippage_per_leg": 0.002,
+            "fee_per_leg": 0.0001,
+            "participation": 0.001,
+            "reject_fraction": 0.05,
+            "partial_fraction": 0.1,
+            "probability_floor": 0.55,
+            "net_margin": 0.0005
+          },
+          "holding_bars": 6,
+          "trade_count": 0,
+          "net_pnl": 0,
+          "net_return": 0.0,
+          "daily_mean_net_pnl_ci_98_75": [
+            0.0,
+            0.0
+          ],
+          "realized_exit_max_drawdown": 0.0,
+          "max_single_trade_adverse_mark": 0.0,
+          "daily_sharpe": null,
+          "rejections": {
+            "PREDICTION_CONFIDENCE": 2418
+          },
+          "regime_pnl": {
+            "HIGH_VOL_DOWN": 0,
+            "HIGH_VOL_UP": 0,
+            "LOW_VOL_DOWN": 0,
+            "LOW_VOL_UP": 0
+          },
+          "quote_coverage_complete": false,
+          "limitation": "Synthetic spread/slippage/fee/fill scenarios; not measured executable costs. Drawdown is realized exits plus separately reported adverse marks."
+        }
+      },
+      "strict_quote_audit": {
+        "mode": "STRICT_QUOTES",
+        "execution": {
+          "capital": 600,
+          "notional": 25,
+          "total_cap": 100,
+          "daily_loss": 12,
+          "max_positions": 2,
+          "stop": 0.02,
+          "target": 0.03,
+          "spread": 0.001,
+          "slippage_per_leg": 0.0005,
+          "fee_per_leg": 0.0001,
+          "participation": 0.001,
+          "reject_fraction": 0.05,
+          "partial_fraction": 0.1,
+          "probability_floor": 0.55,
+          "net_margin": 0.0005
+        },
+        "holding_bars": 6,
+        "trade_count": 0,
+        "net_pnl": 0,
+        "net_return": 0.0,
+        "daily_mean_net_pnl_ci_98_75": [
+          0.0,
+          0.0
+        ],
+        "realized_exit_max_drawdown": 0.0,
+        "max_single_trade_adverse_mark": 0.0,
+        "daily_sharpe": null,
+        "rejections": {
+          "PREDICTION_CONFIDENCE": 2418
+        },
+        "regime_pnl": {
+          "HIGH_VOL_DOWN": 0,
+          "HIGH_VOL_UP": 0,
+          "LOW_VOL_DOWN": 0,
+          "LOW_VOL_UP": 0
+        },
+        "quote_coverage_complete": true,
+        "limitation": "Exit-quote screening uses future quote availability; unresolved real exposures need a tick ledger. Strict mode is a coverage audit, not executable P/L."
+      },
+      "model_id": "eabf7566ec38746bf142b330e68ba6cc2f6c755696d0e934aa70441c00b1db49"
+    },
+    "mainkraft_linear": {
+      "prediction": {
+        "observations": 2418,
+        "dates": 203,
+        "positive_outcomes": 1241,
+        "target_first_outcomes": 2,
+        "mae": 0.002465680866361543,
+        "brier": 0.2506036818522319,
+        "target_brier": 0.0008271282061282051,
+        "coverage": 0.9098428453267163,
+        "downside_mae": 0.0019339497185830701,
+        "direction_accuracy": 0.4867659222497932,
+        "calibration_bins": [
+          {
+            "count": 0,
+            "forecast": null,
+            "actual": null
+          },
+          {
+            "count": 0,
+            "forecast": null,
+            "actual": null
+          },
+          {
+            "count": 2418,
+            "forecast": 0.48532736212749383,
+            "actual": 0.5132340777502068
+          },
+          {
+            "count": 0,
+            "forecast": null,
+            "actual": null
+          },
+          {
+            "count": 0,
+            "forecast": null,
+            "actual": null
+          }
+        ]
+      },
+      "scenarios": {
+        "base_15min": {
+          "mode": "ASSUMPTION_ONLY",
+          "execution": {
+            "capital": 600,
+            "notional": 25,
+            "total_cap": 100,
+            "daily_loss": 12,
+            "max_positions": 2,
+            "stop": 0.02,
+            "target": 0.03,
+            "spread": 0.001,
+            "slippage_per_leg": 0.0005,
+            "fee_per_leg": 0.0001,
+            "participation": 0.001,
+            "reject_fraction": 0.05,
+            "partial_fraction": 0.1,
+            "probability_floor": 0.55,
+            "net_margin": 0.0005
+          },
+          "holding_bars": 3,
+          "trade_count": 0,
+          "net_pnl": 0,
+          "net_return": 0.0,
+          "daily_mean_net_pnl_ci_98_75": [
+            0.0,
+            0.0
+          ],
+          "realized_exit_max_drawdown": 0.0,
+          "max_single_trade_adverse_mark": 0.0,
+          "daily_sharpe": null,
+          "rejections": {
+            "PREDICTION_CONFIDENCE": 2418
+          },
+          "regime_pnl": {
+            "HIGH_VOL_DOWN": 0,
+            "HIGH_VOL_UP": 0,
+            "LOW_VOL_DOWN": 0,
+            "LOW_VOL_UP": 0
+          },
+          "quote_coverage_complete": false,
+          "limitation": "Synthetic spread/slippage/fee/fill scenarios; not measured executable costs. Drawdown is realized exits plus separately reported adverse marks."
+        },
+        "base_30min": {
+          "mode": "ASSUMPTION_ONLY",
+          "execution": {
+            "capital": 600,
+            "notional": 25,
+            "total_cap": 100,
+            "daily_loss": 12,
+            "max_positions": 2,
+            "stop": 0.02,
+            "target": 0.03,
+            "spread": 0.001,
+            "slippage_per_leg": 0.0005,
+            "fee_per_leg": 0.0001,
+            "participation": 0.001,
+            "reject_fraction": 0.05,
+            "partial_fraction": 0.1,
+            "probability_floor": 0.55,
+            "net_margin": 0.0005
+          },
+          "holding_bars": 6,
+          "trade_count": 0,
+          "net_pnl": 0,
+          "net_return": 0.0,
+          "daily_mean_net_pnl_ci_98_75": [
+            0.0,
+            0.0
+          ],
+          "realized_exit_max_drawdown": 0.0,
+          "max_single_trade_adverse_mark": 0.0,
+          "daily_sharpe": null,
+          "rejections": {
+            "PREDICTION_CONFIDENCE": 2418
+          },
+          "regime_pnl": {
+            "HIGH_VOL_DOWN": 0,
+            "HIGH_VOL_UP": 0,
+            "LOW_VOL_DOWN": 0,
+            "LOW_VOL_UP": 0
+          },
+          "quote_coverage_complete": false,
+          "limitation": "Synthetic spread/slippage/fee/fill scenarios; not measured executable costs. Drawdown is realized exits plus separately reported adverse marks."
+        },
+        "stress_15min": {
+          "mode": "ASSUMPTION_ONLY",
+          "execution": {
+            "capital": 600,
+            "notional": 25,
+            "total_cap": 100,
+            "daily_loss": 12,
+            "max_positions": 2,
+            "stop": 0.02,
+            "target": 0.03,
+            "spread": 0.002,
+            "slippage_per_leg": 0.001,
+            "fee_per_leg": 0.0001,
+            "participation": 0.001,
+            "reject_fraction": 0.05,
+            "partial_fraction": 0.1,
+            "probability_floor": 0.55,
+            "net_margin": 0.0005
+          },
+          "holding_bars": 3,
+          "trade_count": 0,
+          "net_pnl": 0,
+          "net_return": 0.0,
+          "daily_mean_net_pnl_ci_98_75": [
+            0.0,
+            0.0
+          ],
+          "realized_exit_max_drawdown": 0.0,
+          "max_single_trade_adverse_mark": 0.0,
+          "daily_sharpe": null,
+          "rejections": {
+            "PREDICTION_CONFIDENCE": 2418
+          },
+          "regime_pnl": {
+            "HIGH_VOL_DOWN": 0,
+            "HIGH_VOL_UP": 0,
+            "LOW_VOL_DOWN": 0,
+            "LOW_VOL_UP": 0
+          },
+          "quote_coverage_complete": false,
+          "limitation": "Synthetic spread/slippage/fee/fill scenarios; not measured executable costs. Drawdown is realized exits plus separately reported adverse marks."
+        },
+        "stress_30min": {
+          "mode": "ASSUMPTION_ONLY",
+          "execution": {
+            "capital": 600,
+            "notional": 25,
+            "total_cap": 100,
+            "daily_loss": 12,
+            "max_positions": 2,
+            "stop": 0.02,
+            "target": 0.03,
+            "spread": 0.002,
+            "slippage_per_leg": 0.001,
+            "fee_per_leg": 0.0001,
+            "participation": 0.001,
+            "reject_fraction": 0.05,
+            "partial_fraction": 0.1,
+            "probability_floor": 0.55,
+            "net_margin": 0.0005
+          },
+          "holding_bars": 6,
+          "trade_count": 0,
+          "net_pnl": 0,
+          "net_return": 0.0,
+          "daily_mean_net_pnl_ci_98_75": [
+            0.0,
+            0.0
+          ],
+          "realized_exit_max_drawdown": 0.0,
+          "max_single_trade_adverse_mark": 0.0,
+          "daily_sharpe": null,
+          "rejections": {
+            "PREDICTION_CONFIDENCE": 2418
+          },
+          "regime_pnl": {
+            "HIGH_VOL_DOWN": 0,
+            "HIGH_VOL_UP": 0,
+            "LOW_VOL_DOWN": 0,
+            "LOW_VOL_UP": 0
+          },
+          "quote_coverage_complete": false,
+          "limitation": "Synthetic spread/slippage/fee/fill scenarios; not measured executable costs. Drawdown is realized exits plus separately reported adverse marks."
+        },
+        "severe_15min": {
+          "mode": "ASSUMPTION_ONLY",
+          "execution": {
+            "capital": 600,
+            "notional": 25,
+            "total_cap": 100,
+            "daily_loss": 12,
+            "max_positions": 2,
+            "stop": 0.02,
+            "target": 0.03,
+            "spread": 0.004,
+            "slippage_per_leg": 0.002,
+            "fee_per_leg": 0.0001,
+            "participation": 0.001,
+            "reject_fraction": 0.05,
+            "partial_fraction": 0.1,
+            "probability_floor": 0.55,
+            "net_margin": 0.0005
+          },
+          "holding_bars": 3,
+          "trade_count": 0,
+          "net_pnl": 0,
+          "net_return": 0.0,
+          "daily_mean_net_pnl_ci_98_75": [
+            0.0,
+            0.0
+          ],
+          "realized_exit_max_drawdown": 0.0,
+          "max_single_trade_adverse_mark": 0.0,
+          "daily_sharpe": null,
+          "rejections": {
+            "PREDICTION_CONFIDENCE": 2418
+          },
+          "regime_pnl": {
+            "HIGH_VOL_DOWN": 0,
+            "HIGH_VOL_UP": 0,
+            "LOW_VOL_DOWN": 0,
+            "LOW_VOL_UP": 0
+          },
+          "quote_coverage_complete": false,
+          "limitation": "Synthetic spread/slippage/fee/fill scenarios; not measured executable costs. Drawdown is realized exits plus separately reported adverse marks."
+        },
+        "severe_30min": {
+          "mode": "ASSUMPTION_ONLY",
+          "execution": {
+            "capital": 600,
+            "notional": 25,
+            "total_cap": 100,
+            "daily_loss": 12,
+            "max_positions": 2,
+            "stop": 0.02,
+            "target": 0.03,
+            "spread": 0.004,
+            "slippage_per_leg": 0.002,
+            "fee_per_leg": 0.0001,
+            "participation": 0.001,
+            "reject_fraction": 0.05,
+            "partial_fraction": 0.1,
+            "probability_floor": 0.55,
+            "net_margin": 0.0005
+          },
+          "holding_bars": 6,
+          "trade_count": 0,
+          "net_pnl": 0,
+          "net_return": 0.0,
+          "daily_mean_net_pnl_ci_98_75": [
+            0.0,
+            0.0
+          ],
+          "realized_exit_max_drawdown": 0.0,
+          "max_single_trade_adverse_mark": 0.0,
+          "daily_sharpe": null,
+          "rejections": {
+            "PREDICTION_CONFIDENCE": 2418
+          },
+          "regime_pnl": {
+            "HIGH_VOL_DOWN": 0,
+            "HIGH_VOL_UP": 0,
+            "LOW_VOL_DOWN": 0,
+            "LOW_VOL_UP": 0
+          },
+          "quote_coverage_complete": false,
+          "limitation": "Synthetic spread/slippage/fee/fill scenarios; not measured executable costs. Drawdown is realized exits plus separately reported adverse marks."
+        }
+      },
+      "strict_quote_audit": {
+        "mode": "STRICT_QUOTES",
+        "execution": {
+          "capital": 600,
+          "notional": 25,
+          "total_cap": 100,
+          "daily_loss": 12,
+          "max_positions": 2,
+          "stop": 0.02,
+          "target": 0.03,
+          "spread": 0.001,
+          "slippage_per_leg": 0.0005,
+          "fee_per_leg": 0.0001,
+          "participation": 0.001,
+          "reject_fraction": 0.05,
+          "partial_fraction": 0.1,
+          "probability_floor": 0.55,
+          "net_margin": 0.0005
+        },
+        "holding_bars": 6,
+        "trade_count": 0,
+        "net_pnl": 0,
+        "net_return": 0.0,
+        "daily_mean_net_pnl_ci_98_75": [
+          0.0,
+          0.0
+        ],
+        "realized_exit_max_drawdown": 0.0,
+        "max_single_trade_adverse_mark": 0.0,
+        "daily_sharpe": null,
+        "rejections": {
+          "PREDICTION_CONFIDENCE": 2418
+        },
+        "regime_pnl": {
+          "HIGH_VOL_DOWN": 0,
+          "HIGH_VOL_UP": 0,
+          "LOW_VOL_DOWN": 0,
+          "LOW_VOL_UP": 0
+        },
+        "quote_coverage_complete": true,
+        "limitation": "Exit-quote screening uses future quote availability; unresolved real exposures need a tick ledger. Strict mode is a coverage audit, not executable P/L."
+      },
+      "model_id": "bbf687e30e9d321c77f3fb778d5ee998034af3d22e4f5c703b4745e86a6baf9e"
+    },
+    "mainkraft_histboost": {
+      "prediction": {
+        "observations": 2418,
+        "dates": 203,
+        "positive_outcomes": 1241,
+        "target_first_outcomes": 2,
+        "mae": 0.0024813272259993084,
+        "brier": 0.25061251581082017,
+        "target_brier": 0.0008271282061282051,
+        "coverage": 0.9086021505376344,
+        "downside_mae": 0.0019339497185830701,
+        "direction_accuracy": 0.48304383788254757,
+        "calibration_bins": [
+          {
+            "count": 0,
+            "forecast": null,
+            "actual": null
+          },
+          {
+            "count": 0,
+            "forecast": null,
+            "actual": null
+          },
+          {
+            "count": 2418,
+            "forecast": 0.4853777946541462,
+            "actual": 0.5132340777502068
+          },
+          {
+            "count": 0,
+            "forecast": null,
+            "actual": null
+          },
+          {
+            "count": 0,
+            "forecast": null,
+            "actual": null
+          }
+        ]
+      },
+      "scenarios": {
+        "base_15min": {
+          "mode": "ASSUMPTION_ONLY",
+          "execution": {
+            "capital": 600,
+            "notional": 25,
+            "total_cap": 100,
+            "daily_loss": 12,
+            "max_positions": 2,
+            "stop": 0.02,
+            "target": 0.03,
+            "spread": 0.001,
+            "slippage_per_leg": 0.0005,
+            "fee_per_leg": 0.0001,
+            "participation": 0.001,
+            "reject_fraction": 0.05,
+            "partial_fraction": 0.1,
+            "probability_floor": 0.55,
+            "net_margin": 0.0005
+          },
+          "holding_bars": 3,
+          "trade_count": 0,
+          "net_pnl": 0,
+          "net_return": 0.0,
+          "daily_mean_net_pnl_ci_98_75": [
+            0.0,
+            0.0
+          ],
+          "realized_exit_max_drawdown": 0.0,
+          "max_single_trade_adverse_mark": 0.0,
+          "daily_sharpe": null,
+          "rejections": {
+            "PREDICTION_CONFIDENCE": 2418
+          },
+          "regime_pnl": {
+            "HIGH_VOL_DOWN": 0,
+            "HIGH_VOL_UP": 0,
+            "LOW_VOL_DOWN": 0,
+            "LOW_VOL_UP": 0
+          },
+          "quote_coverage_complete": false,
+          "limitation": "Synthetic spread/slippage/fee/fill scenarios; not measured executable costs. Drawdown is realized exits plus separately reported adverse marks."
+        },
+        "base_30min": {
+          "mode": "ASSUMPTION_ONLY",
+          "execution": {
+            "capital": 600,
+            "notional": 25,
+            "total_cap": 100,
+            "daily_loss": 12,
+            "max_positions": 2,
+            "stop": 0.02,
+            "target": 0.03,
+            "spread": 0.001,
+            "slippage_per_leg": 0.0005,
+            "fee_per_leg": 0.0001,
+            "participation": 0.001,
+            "reject_fraction": 0.05,
+            "partial_fraction": 0.1,
+            "probability_floor": 0.55,
+            "net_margin": 0.0005
+          },
+          "holding_bars": 6,
+          "trade_count": 0,
+          "net_pnl": 0,
+          "net_return": 0.0,
+          "daily_mean_net_pnl_ci_98_75": [
+            0.0,
+            0.0
+          ],
+          "realized_exit_max_drawdown": 0.0,
+          "max_single_trade_adverse_mark": 0.0,
+          "daily_sharpe": null,
+          "rejections": {
+            "PREDICTION_CONFIDENCE": 2418
+          },
+          "regime_pnl": {
+            "HIGH_VOL_DOWN": 0,
+            "HIGH_VOL_UP": 0,
+            "LOW_VOL_DOWN": 0,
+            "LOW_VOL_UP": 0
+          },
+          "quote_coverage_complete": false,
+          "limitation": "Synthetic spread/slippage/fee/fill scenarios; not measured executable costs. Drawdown is realized exits plus separately reported adverse marks."
+        },
+        "stress_15min": {
+          "mode": "ASSUMPTION_ONLY",
+          "execution": {
+            "capital": 600,
+            "notional": 25,
+            "total_cap": 100,
+            "daily_loss": 12,
+            "max_positions": 2,
+            "stop": 0.02,
+            "target": 0.03,
+            "spread": 0.002,
+            "slippage_per_leg": 0.001,
+            "fee_per_leg": 0.0001,
+            "participation": 0.001,
+            "reject_fraction": 0.05,
+            "partial_fraction": 0.1,
+            "probability_floor": 0.55,
+            "net_margin": 0.0005
+          },
+          "holding_bars": 3,
+          "trade_count": 0,
+          "net_pnl": 0,
+          "net_return": 0.0,
+          "daily_mean_net_pnl_ci_98_75": [
+            0.0,
+            0.0
+          ],
+          "realized_exit_max_drawdown": 0.0,
+          "max_single_trade_adverse_mark": 0.0,
+          "daily_sharpe": null,
+          "rejections": {
+            "PREDICTION_CONFIDENCE": 2418
+          },
+          "regime_pnl": {
+            "HIGH_VOL_DOWN": 0,
+            "HIGH_VOL_UP": 0,
+            "LOW_VOL_DOWN": 0,
+            "LOW_VOL_UP": 0
+          },
+          "quote_coverage_complete": false,
+          "limitation": "Synthetic spread/slippage/fee/fill scenarios; not measured executable costs. Drawdown is realized exits plus separately reported adverse marks."
+        },
+        "stress_30min": {
+          "mode": "ASSUMPTION_ONLY",
+          "execution": {
+            "capital": 600,
+            "notional": 25,
+            "total_cap": 100,
+            "daily_loss": 12,
+            "max_positions": 2,
+            "stop": 0.02,
+            "target": 0.03,
+            "spread": 0.002,
+            "slippage_per_leg": 0.001,
+            "fee_per_leg": 0.0001,
+            "participation": 0.001,
+            "reject_fraction": 0.05,
+            "partial_fraction": 0.1,
+            "probability_floor": 0.55,
+            "net_margin": 0.0005
+          },
+          "holding_bars": 6,
+          "trade_count": 0,
+          "net_pnl": 0,
+          "net_return": 0.0,
+          "daily_mean_net_pnl_ci_98_75": [
+            0.0,
+            0.0
+          ],
+          "realized_exit_max_drawdown": 0.0,
+          "max_single_trade_adverse_mark": 0.0,
+          "daily_sharpe": null,
+          "rejections": {
+            "PREDICTION_CONFIDENCE": 2418
+          },
+          "regime_pnl": {
+            "HIGH_VOL_DOWN": 0,
+            "HIGH_VOL_UP": 0,
+            "LOW_VOL_DOWN": 0,
+            "LOW_VOL_UP": 0
+          },
+          "quote_coverage_complete": false,
+          "limitation": "Synthetic spread/slippage/fee/fill scenarios; not measured executable costs. Drawdown is realized exits plus separately reported adverse marks."
+        },
+        "severe_15min": {
+          "mode": "ASSUMPTION_ONLY",
+          "execution": {
+            "capital": 600,
+            "notional": 25,
+            "total_cap": 100,
+            "daily_loss": 12,
+            "max_positions": 2,
+            "stop": 0.02,
+            "target": 0.03,
+            "spread": 0.004,
+            "slippage_per_leg": 0.002,
+            "fee_per_leg": 0.0001,
+            "participation": 0.001,
+            "reject_fraction": 0.05,
+            "partial_fraction": 0.1,
+            "probability_floor": 0.55,
+            "net_margin": 0.0005
+          },
+          "holding_bars": 3,
+          "trade_count": 0,
+          "net_pnl": 0,
+          "net_return": 0.0,
+          "daily_mean_net_pnl_ci_98_75": [
+            0.0,
+            0.0
+          ],
+          "realized_exit_max_drawdown": 0.0,
+          "max_single_trade_adverse_mark": 0.0,
+          "daily_sharpe": null,
+          "rejections": {
+            "PREDICTION_CONFIDENCE": 2418
+          },
+          "regime_pnl": {
+            "HIGH_VOL_DOWN": 0,
+            "HIGH_VOL_UP": 0,
+            "LOW_VOL_DOWN": 0,
+            "LOW_VOL_UP": 0
+          },
+          "quote_coverage_complete": false,
+          "limitation": "Synthetic spread/slippage/fee/fill scenarios; not measured executable costs. Drawdown is realized exits plus separately reported adverse marks."
+        },
+        "severe_30min": {
+          "mode": "ASSUMPTION_ONLY",
+          "execution": {
+            "capital": 600,
+            "notional": 25,
+            "total_cap": 100,
+            "daily_loss": 12,
+            "max_positions": 2,
+            "stop": 0.02,
+            "target": 0.03,
+            "spread": 0.004,
+            "slippage_per_leg": 0.002,
+            "fee_per_leg": 0.0001,
+            "participation": 0.001,
+            "reject_fraction": 0.05,
+            "partial_fraction": 0.1,
+            "probability_floor": 0.55,
+            "net_margin": 0.0005
+          },
+          "holding_bars": 6,
+          "trade_count": 0,
+          "net_pnl": 0,
+          "net_return": 0.0,
+          "daily_mean_net_pnl_ci_98_75": [
+            0.0,
+            0.0
+          ],
+          "realized_exit_max_drawdown": 0.0,
+          "max_single_trade_adverse_mark": 0.0,
+          "daily_sharpe": null,
+          "rejections": {
+            "PREDICTION_CONFIDENCE": 2418
+          },
+          "regime_pnl": {
+            "HIGH_VOL_DOWN": 0,
+            "HIGH_VOL_UP": 0,
+            "LOW_VOL_DOWN": 0,
+            "LOW_VOL_UP": 0
+          },
+          "quote_coverage_complete": false,
+          "limitation": "Synthetic spread/slippage/fee/fill scenarios; not measured executable costs. Drawdown is realized exits plus separately reported adverse marks."
+        }
+      },
+      "strict_quote_audit": {
+        "mode": "STRICT_QUOTES",
+        "execution": {
+          "capital": 600,
+          "notional": 25,
+          "total_cap": 100,
+          "daily_loss": 12,
+          "max_positions": 2,
+          "stop": 0.02,
+          "target": 0.03,
+          "spread": 0.001,
+          "slippage_per_leg": 0.0005,
+          "fee_per_leg": 0.0001,
+          "participation": 0.001,
+          "reject_fraction": 0.05,
+          "partial_fraction": 0.1,
+          "probability_floor": 0.55,
+          "net_margin": 0.0005
+        },
+        "holding_bars": 6,
+        "trade_count": 0,
+        "net_pnl": 0,
+        "net_return": 0.0,
+        "daily_mean_net_pnl_ci_98_75": [
+          0.0,
+          0.0
+        ],
+        "realized_exit_max_drawdown": 0.0,
+        "max_single_trade_adverse_mark": 0.0,
+        "daily_sharpe": null,
+        "rejections": {
+          "PREDICTION_CONFIDENCE": 2418
+        },
+        "regime_pnl": {
+          "HIGH_VOL_DOWN": 0,
+          "HIGH_VOL_UP": 0,
+          "LOW_VOL_DOWN": 0,
+          "LOW_VOL_UP": 0
+        },
+        "quote_coverage_complete": true,
+        "limitation": "Exit-quote screening uses future quote availability; unresolved real exposures need a tick ledger. Strict mode is a coverage audit, not executable P/L."
+      },
+      "model_id": "41252229bfca4435a2b6f308c5db5de7e1f4a53991dd04017e0abcf3c75edfe5"
+    },
+    "sequence_ridge": {
+      "prediction": {
+        "observations": 2418,
+        "dates": 203,
+        "positive_outcomes": 1241,
+        "target_first_outcomes": 2,
+        "mae": 0.0025001191425016284,
+        "brier": 0.25154382773215567,
+        "target_brier": 0.0008271282061282051,
+        "coverage": 0.9160463192721258,
+        "downside_mae": 0.0017355076167878429,
+        "direction_accuracy": 0.47932175351530193,
+        "calibration_bins": [
+          {
+            "count": 0,
+            "forecast": null,
+            "actual": null
+          },
+          {
+            "count": 27,
+            "forecast": 0.36857400808682156,
+            "actual": 0.3333333333333333
+          },
+          {
+            "count": 2387,
+            "forecast": 0.4880410125543481,
+            "actual": 0.5148722245496439
+          },
+          {
+            "count": 4,
+            "forecast": 0.6609242721939784,
+            "actual": 0.75
+          },
+          {
+            "count": 0,
+            "forecast": null,
+            "actual": null
+          }
+        ]
+      },
+      "scenarios": {
+        "base_15min": {
+          "mode": "ASSUMPTION_ONLY",
+          "execution": {
+            "capital": 600,
+            "notional": 25,
+            "total_cap": 100,
+            "daily_loss": 12,
+            "max_positions": 2,
+            "stop": 0.02,
+            "target": 0.03,
+            "spread": 0.001,
+            "slippage_per_leg": 0.0005,
+            "fee_per_leg": 0.0001,
+            "participation": 0.001,
+            "reject_fraction": 0.05,
+            "partial_fraction": 0.1,
+            "probability_floor": 0.55,
+            "net_margin": 0.0005
+          },
+          "holding_bars": 3,
+          "trade_count": 0,
+          "net_pnl": 0,
+          "net_return": 0.0,
+          "daily_mean_net_pnl_ci_98_75": [
+            0.0,
+            0.0
+          ],
+          "realized_exit_max_drawdown": 0.0,
+          "max_single_trade_adverse_mark": 0.0,
+          "daily_sharpe": null,
+          "rejections": {
+            "PREDICTION_CONFIDENCE": 2369,
+            "EXPECTED_RETURN_AFTER_ASSUMED_COSTS": 49
+          },
+          "regime_pnl": {
+            "HIGH_VOL_DOWN": 0,
+            "HIGH_VOL_UP": 0,
+            "LOW_VOL_DOWN": 0,
+            "LOW_VOL_UP": 0
+          },
+          "quote_coverage_complete": false,
+          "limitation": "Synthetic spread/slippage/fee/fill scenarios; not measured executable costs. Drawdown is realized exits plus separately reported adverse marks."
+        },
+        "base_30min": {
+          "mode": "ASSUMPTION_ONLY",
+          "execution": {
+            "capital": 600,
+            "notional": 25,
+            "total_cap": 100,
+            "daily_loss": 12,
+            "max_positions": 2,
+            "stop": 0.02,
+            "target": 0.03,
+            "spread": 0.001,
+            "slippage_per_leg": 0.0005,
+            "fee_per_leg": 0.0001,
+            "participation": 0.001,
+            "reject_fraction": 0.05,
+            "partial_fraction": 0.1,
+            "probability_floor": 0.55,
+            "net_margin": 0.0005
+          },
+          "holding_bars": 6,
+          "trade_count": 0,
+          "net_pnl": 0,
+          "net_return": 0.0,
+          "daily_mean_net_pnl_ci_98_75": [
+            0.0,
+            0.0
+          ],
+          "realized_exit_max_drawdown": 0.0,
+          "max_single_trade_adverse_mark": 0.0,
+          "daily_sharpe": null,
+          "rejections": {
+            "PREDICTION_CONFIDENCE": 2369,
+            "EXPECTED_RETURN_AFTER_ASSUMED_COSTS": 49
+          },
+          "regime_pnl": {
+            "HIGH_VOL_DOWN": 0,
+            "HIGH_VOL_UP": 0,
+            "LOW_VOL_DOWN": 0,
+            "LOW_VOL_UP": 0
+          },
+          "quote_coverage_complete": false,
+          "limitation": "Synthetic spread/slippage/fee/fill scenarios; not measured executable costs. Drawdown is realized exits plus separately reported adverse marks."
+        },
+        "stress_15min": {
+          "mode": "ASSUMPTION_ONLY",
+          "execution": {
+            "capital": 600,
+            "notional": 25,
+            "total_cap": 100,
+            "daily_loss": 12,
+            "max_positions": 2,
+            "stop": 0.02,
+            "target": 0.03,
+            "spread": 0.002,
+            "slippage_per_leg": 0.001,
+            "fee_per_leg": 0.0001,
+            "participation": 0.001,
+            "reject_fraction": 0.05,
+            "partial_fraction": 0.1,
+            "probability_floor": 0.55,
+            "net_margin": 0.0005
+          },
+          "holding_bars": 3,
+          "trade_count": 0,
+          "net_pnl": 0,
+          "net_return": 0.0,
+          "daily_mean_net_pnl_ci_98_75": [
+            0.0,
+            0.0
+          ],
+          "realized_exit_max_drawdown": 0.0,
+          "max_single_trade_adverse_mark": 0.0,
+          "daily_sharpe": null,
+          "rejections": {
+            "PREDICTION_CONFIDENCE": 2369,
+            "EXPECTED_RETURN_AFTER_ASSUMED_COSTS": 49
+          },
+          "regime_pnl": {
+            "HIGH_VOL_DOWN": 0,
+            "HIGH_VOL_UP": 0,
+            "LOW_VOL_DOWN": 0,
+            "LOW_VOL_UP": 0
+          },
+          "quote_coverage_complete": false,
+          "limitation": "Synthetic spread/slippage/fee/fill scenarios; not measured executable costs. Drawdown is realized exits plus separately reported adverse marks."
+        },
+        "stress_30min": {
+          "mode": "ASSUMPTION_ONLY",
+          "execution": {
+            "capital": 600,
+            "notional": 25,
+            "total_cap": 100,
+            "daily_loss": 12,
+            "max_positions": 2,
+            "stop": 0.02,
+            "target": 0.03,
+            "spread": 0.002,
+            "slippage_per_leg": 0.001,
+            "fee_per_leg": 0.0001,
+            "participation": 0.001,
+            "reject_fraction": 0.05,
+            "partial_fraction": 0.1,
+            "probability_floor": 0.55,
+            "net_margin": 0.0005
+          },
+          "holding_bars": 6,
+          "trade_count": 0,
+          "net_pnl": 0,
+          "net_return": 0.0,
+          "daily_mean_net_pnl_ci_98_75": [
+            0.0,
+            0.0
+          ],
+          "realized_exit_max_drawdown": 0.0,
+          "max_single_trade_adverse_mark": 0.0,
+          "daily_sharpe": null,
+          "rejections": {
+            "PREDICTION_CONFIDENCE": 2369,
+            "EXPECTED_RETURN_AFTER_ASSUMED_COSTS": 49
+          },
+          "regime_pnl": {
+            "HIGH_VOL_DOWN": 0,
+            "HIGH_VOL_UP": 0,
+            "LOW_VOL_DOWN": 0,
+            "LOW_VOL_UP": 0
+          },
+          "quote_coverage_complete": false,
+          "limitation": "Synthetic spread/slippage/fee/fill scenarios; not measured executable costs. Drawdown is realized exits plus separately reported adverse marks."
+        },
+        "severe_15min": {
+          "mode": "ASSUMPTION_ONLY",
+          "execution": {
+            "capital": 600,
+            "notional": 25,
+            "total_cap": 100,
+            "daily_loss": 12,
+            "max_positions": 2,
+            "stop": 0.02,
+            "target": 0.03,
+            "spread": 0.004,
+            "slippage_per_leg": 0.002,
+            "fee_per_leg": 0.0001,
+            "participation": 0.001,
+            "reject_fraction": 0.05,
+            "partial_fraction": 0.1,
+            "probability_floor": 0.55,
+            "net_margin": 0.0005
+          },
+          "holding_bars": 3,
+          "trade_count": 0,
+          "net_pnl": 0,
+          "net_return": 0.0,
+          "daily_mean_net_pnl_ci_98_75": [
+            0.0,
+            0.0
+          ],
+          "realized_exit_max_drawdown": 0.0,
+          "max_single_trade_adverse_mark": 0.0,
+          "daily_sharpe": null,
+          "rejections": {
+            "PREDICTION_CONFIDENCE": 2369,
+            "EXPECTED_RETURN_AFTER_ASSUMED_COSTS": 49
+          },
+          "regime_pnl": {
+            "HIGH_VOL_DOWN": 0,
+            "HIGH_VOL_UP": 0,
+            "LOW_VOL_DOWN": 0,
+            "LOW_VOL_UP": 0
+          },
+          "quote_coverage_complete": false,
+          "limitation": "Synthetic spread/slippage/fee/fill scenarios; not measured executable costs. Drawdown is realized exits plus separately reported adverse marks."
+        },
+        "severe_30min": {
+          "mode": "ASSUMPTION_ONLY",
+          "execution": {
+            "capital": 600,
+            "notional": 25,
+            "total_cap": 100,
+            "daily_loss": 12,
+            "max_positions": 2,
+            "stop": 0.02,
+            "target": 0.03,
+            "spread": 0.004,
+            "slippage_per_leg": 0.002,
+            "fee_per_leg": 0.0001,
+            "participation": 0.001,
+            "reject_fraction": 0.05,
+            "partial_fraction": 0.1,
+            "probability_floor": 0.55,
+            "net_margin": 0.0005
+          },
+          "holding_bars": 6,
+          "trade_count": 0,
+          "net_pnl": 0,
+          "net_return": 0.0,
+          "daily_mean_net_pnl_ci_98_75": [
+            0.0,
+            0.0
+          ],
+          "realized_exit_max_drawdown": 0.0,
+          "max_single_trade_adverse_mark": 0.0,
+          "daily_sharpe": null,
+          "rejections": {
+            "PREDICTION_CONFIDENCE": 2369,
+            "EXPECTED_RETURN_AFTER_ASSUMED_COSTS": 49
+          },
+          "regime_pnl": {
+            "HIGH_VOL_DOWN": 0,
+            "HIGH_VOL_UP": 0,
+            "LOW_VOL_DOWN": 0,
+            "LOW_VOL_UP": 0
+          },
+          "quote_coverage_complete": false,
+          "limitation": "Synthetic spread/slippage/fee/fill scenarios; not measured executable costs. Drawdown is realized exits plus separately reported adverse marks."
+        }
+      },
+      "strict_quote_audit": {
+        "mode": "STRICT_QUOTES",
+        "execution": {
+          "capital": 600,
+          "notional": 25,
+          "total_cap": 100,
+          "daily_loss": 12,
+          "max_positions": 2,
+          "stop": 0.02,
+          "target": 0.03,
+          "spread": 0.001,
+          "slippage_per_leg": 0.0005,
+          "fee_per_leg": 0.0001,
+          "participation": 0.001,
+          "reject_fraction": 0.05,
+          "partial_fraction": 0.1,
+          "probability_floor": 0.55,
+          "net_margin": 0.0005
+        },
+        "holding_bars": 6,
+        "trade_count": 0,
+        "net_pnl": 0,
+        "net_return": 0.0,
+        "daily_mean_net_pnl_ci_98_75": [
+          0.0,
+          0.0
+        ],
+        "realized_exit_max_drawdown": 0.0,
+        "max_single_trade_adverse_mark": 0.0,
+        "daily_sharpe": null,
+        "rejections": {
+          "PREDICTION_CONFIDENCE": 2369,
+          "EXPECTED_RETURN_AFTER_ASSUMED_COSTS": 49
+        },
+        "regime_pnl": {
+          "HIGH_VOL_DOWN": 0,
+          "HIGH_VOL_UP": 0,
+          "LOW_VOL_DOWN": 0,
+          "LOW_VOL_UP": 0
+        },
+        "quote_coverage_complete": true,
+        "limitation": "Exit-quote screening uses future quote availability; unresolved real exposures need a tick ledger. Strict mode is a coverage audit, not executable P/L."
+      },
+      "model_id": "037d43ec6f14eb4f83c3482a4d3609d529ee4a03b03c832250ada72158ac1bcd"
+    },
+    "sequence_original150": {
+      "prediction": {
+        "observations": 2418,
+        "dates": 203,
+        "positive_outcomes": 1241,
+        "target_first_outcomes": 2,
+        "mae": 0.0030270091070775263,
+        "brier": 0.25154382773215567,
+        "target_brier": 0.0008271282061282051,
+        "coverage": 0.902812241521919,
+        "downside_mae": 0.0019864665891230118,
+        "direction_accuracy": 0.47932175351530193,
+        "calibration_bins": [
+          {
+            "count": 0,
+            "forecast": null,
+            "actual": null
+          },
+          {
+            "count": 27,
+            "forecast": 0.36857400808682156,
+            "actual": 0.3333333333333333
+          },
+          {
+            "count": 2387,
+            "forecast": 0.4880410125543481,
+            "actual": 0.5148722245496439
+          },
+          {
+            "count": 4,
+            "forecast": 0.6609242721939784,
+            "actual": 0.75
+          },
+          {
+            "count": 0,
+            "forecast": null,
+            "actual": null
+          }
+        ]
+      },
+      "scenarios": {
+        "base_15min": {
+          "mode": "ASSUMPTION_ONLY",
+          "execution": {
+            "capital": 600,
+            "notional": 25,
+            "total_cap": 100,
+            "daily_loss": 12,
+            "max_positions": 2,
+            "stop": 0.02,
+            "target": 0.03,
+            "spread": 0.001,
+            "slippage_per_leg": 0.0005,
+            "fee_per_leg": 0.0001,
+            "participation": 0.001,
+            "reject_fraction": 0.05,
+            "partial_fraction": 0.1,
+            "probability_floor": 0.55,
+            "net_margin": 0.0005
+          },
+          "holding_bars": 3,
+          "trade_count": 6,
+          "net_pnl": -0.49262482548897424,
+          "net_return": -0.0008210413758149571,
+          "daily_mean_net_pnl_ci_98_75": [
+            -0.007346304796541007,
+            0.0009649488024047843
+          ],
+          "realized_exit_max_drawdown": 0.6410681643087628,
+          "max_single_trade_adverse_mark": 0.3773382991218821,
+          "daily_sharpe": -1.2614943514697492,
+          "rejections": {
+            "PREDICTION_CONFIDENCE": 2369,
+            "EXPECTED_RETURN_AFTER_ASSUMED_COSTS": 42,
+            "SIMULATED_ORDER_REJECTION": 1
+          },
+          "regime_pnl": {
+            "HIGH_VOL_DOWN": -0.198586456552389,
+            "HIGH_VOL_UP": -0.35933323789929245,
+            "LOW_VOL_DOWN": 0,
+            "LOW_VOL_UP": 0.06529486896273813
+          },
+          "quote_coverage_complete": false,
+          "limitation": "Synthetic spread/slippage/fee/fill scenarios; not measured executable costs. Drawdown is realized exits plus separately reported adverse marks."
+        },
+        "base_30min": {
+          "mode": "ASSUMPTION_ONLY",
+          "execution": {
+            "capital": 600,
+            "notional": 25,
+            "total_cap": 100,
+            "daily_loss": 12,
+            "max_positions": 2,
+            "stop": 0.02,
+            "target": 0.03,
+            "spread": 0.001,
+            "slippage_per_leg": 0.0005,
+            "fee_per_leg": 0.0001,
+            "participation": 0.001,
+            "reject_fraction": 0.05,
+            "partial_fraction": 0.1,
+            "probability_floor": 0.55,
+            "net_margin": 0.0005
+          },
+          "holding_bars": 6,
+          "trade_count": 6,
+          "net_pnl": -0.9307473588110042,
+          "net_return": -0.001551245598018336,
+          "daily_mean_net_pnl_ci_98_75": [
+            -0.013151580640345523,
+            0.00018260988576464468
+          ],
+          "realized_exit_max_drawdown": 0.9307473588110042,
+          "max_single_trade_adverse_mark": 0.3773382991218821,
+          "daily_sharpe": -2.0466799081060887,
+          "rejections": {
+            "PREDICTION_CONFIDENCE": 2369,
+            "EXPECTED_RETURN_AFTER_ASSUMED_COSTS": 42,
+            "SIMULATED_ORDER_REJECTION": 1
+          },
+          "regime_pnl": {
+            "HIGH_VOL_DOWN": -0.25077065874529775,
+            "HIGH_VOL_UP": -0.6985116034707888,
+            "LOW_VOL_DOWN": 0,
+            "LOW_VOL_UP": 0.018534903405066843
+          },
+          "quote_coverage_complete": false,
+          "limitation": "Synthetic spread/slippage/fee/fill scenarios; not measured executable costs. Drawdown is realized exits plus separately reported adverse marks."
+        },
+        "stress_15min": {
+          "mode": "ASSUMPTION_ONLY",
+          "execution": {
+            "capital": 600,
+            "notional": 25,
+            "total_cap": 100,
+            "daily_loss": 12,
+            "max_positions": 2,
+            "stop": 0.02,
+            "target": 0.03,
+            "spread": 0.002,
+            "slippage_per_leg": 0.001,
+            "fee_per_leg": 0.0001,
+            "participation": 0.001,
+            "reject_fraction": 0.05,
+            "partial_fraction": 0.1,
+            "probability_floor": 0.55,
+            "net_margin": 0.0005
+          },
+          "holding_bars": 3,
+          "trade_count": 4,
+          "net_pnl": -0.5121782814700282,
+          "net_return": -0.000853630469116684,
+          "daily_mean_net_pnl_ci_98_75": [
+            -0.008909392735247849,
+            0.0002247687520219797
+          ],
+          "realized_exit_max_drawdown": 0.5273876336901822,
+          "max_single_trade_adverse_mark": 0.2521622408993507,
+          "daily_sharpe": -1.8002351161798382,
+          "rejections": {
+            "PREDICTION_CONFIDENCE": 2369,
+            "EXPECTED_RETURN_AFTER_ASSUMED_COSTS": 44,
+            "SIMULATED_ORDER_REJECTION": 1
+          },
+          "regime_pnl": {
+            "HIGH_VOL_DOWN": -0.24814473774765403,
+            "HIGH_VOL_UP": -0.27924289594247714,
+            "LOW_VOL_DOWN": 0,
+            "LOW_VOL_UP": 0.015209352220179577
+          },
+          "quote_coverage_complete": false,
+          "limitation": "Synthetic spread/slippage/fee/fill scenarios; not measured executable costs. Drawdown is realized exits plus separately reported adverse marks."
+        },
+        "stress_30min": {
+          "mode": "ASSUMPTION_ONLY",
+          "execution": {
+            "capital": 600,
+            "notional": 25,
+            "total_cap": 100,
+            "daily_loss": 12,
+            "max_positions": 2,
+            "stop": 0.02,
+            "target": 0.03,
+            "spread": 0.002,
+            "slippage_per_leg": 0.001,
+            "fee_per_leg": 0.0001,
+            "participation": 0.001,
+            "reject_fraction": 0.05,
+            "partial_fraction": 0.1,
+            "probability_floor": 0.55,
+            "net_margin": 0.0005
+          },
+          "holding_bars": 6,
+          "trade_count": 4,
+          "net_pnl": -0.579459918011139,
+          "net_return": -0.0009657665300185636,
+          "daily_mean_net_pnl_ci_98_75": [
+            -0.009319144083901242,
+            0.0
+          ],
+          "realized_exit_max_drawdown": 0.579459918011139,
+          "max_single_trade_adverse_mark": 0.2521622408993507,
+          "daily_sharpe": -1.7530471221994892,
+          "rejections": {
+            "PREDICTION_CONFIDENCE": 2369,
+            "EXPECTED_RETURN_AFTER_ASSUMED_COSTS": 44,
+            "SIMULATED_ORDER_REJECTION": 1
+          },
+          "regime_pnl": {
+            "HIGH_VOL_DOWN": -0.3002246757742838,
+            "HIGH_VOL_UP": -0.24777805542724185,
+            "LOW_VOL_DOWN": 0,
+            "LOW_VOL_UP": -0.03145718680954121
+          },
+          "quote_coverage_complete": false,
+          "limitation": "Synthetic spread/slippage/fee/fill scenarios; not measured executable costs. Drawdown is realized exits plus separately reported adverse marks."
+        },
+        "severe_15min": {
+          "mode": "ASSUMPTION_ONLY",
+          "execution": {
+            "capital": 600,
+            "notional": 25,
+            "total_cap": 100,
+            "daily_loss": 12,
+            "max_positions": 2,
+            "stop": 0.02,
+            "target": 0.03,
+            "spread": 0.004,
+            "slippage_per_leg": 0.002,
+            "fee_per_leg": 0.0001,
+            "participation": 0.001,
+            "reject_fraction": 0.05,
+            "partial_fraction": 0.1,
+            "probability_floor": 0.55,
+            "net_margin": 0.0005
+          },
+          "holding_bars": 3,
+          "trade_count": 0,
+          "net_pnl": 0,
+          "net_return": 0.0,
+          "daily_mean_net_pnl_ci_98_75": [
+            0.0,
+            0.0
+          ],
+          "realized_exit_max_drawdown": 0.0,
+          "max_single_trade_adverse_mark": 0.0,
+          "daily_sharpe": null,
+          "rejections": {
+            "PREDICTION_CONFIDENCE": 2369,
+            "EXPECTED_RETURN_AFTER_ASSUMED_COSTS": 49
+          },
+          "regime_pnl": {
+            "HIGH_VOL_DOWN": 0,
+            "HIGH_VOL_UP": 0,
+            "LOW_VOL_DOWN": 0,
+            "LOW_VOL_UP": 0
+          },
+          "quote_coverage_complete": false,
+          "limitation": "Synthetic spread/slippage/fee/fill scenarios; not measured executable costs. Drawdown is realized exits plus separately reported adverse marks."
+        },
+        "severe_30min": {
+          "mode": "ASSUMPTION_ONLY",
+          "execution": {
+            "capital": 600,
+            "notional": 25,
+            "total_cap": 100,
+            "daily_loss": 12,
+            "max_positions": 2,
+            "stop": 0.02,
+            "target": 0.03,
+            "spread": 0.004,
+            "slippage_per_leg": 0.002,
+            "fee_per_leg": 0.0001,
+            "participation": 0.001,
+            "reject_fraction": 0.05,
+            "partial_fraction": 0.1,
+            "probability_floor": 0.55,
+            "net_margin": 0.0005
+          },
+          "holding_bars": 6,
+          "trade_count": 0,
+          "net_pnl": 0,
+          "net_return": 0.0,
+          "daily_mean_net_pnl_ci_98_75": [
+            0.0,
+            0.0
+          ],
+          "realized_exit_max_drawdown": 0.0,
+          "max_single_trade_adverse_mark": 0.0,
+          "daily_sharpe": null,
+          "rejections": {
+            "PREDICTION_CONFIDENCE": 2369,
+            "EXPECTED_RETURN_AFTER_ASSUMED_COSTS": 49
+          },
+          "regime_pnl": {
+            "HIGH_VOL_DOWN": 0,
+            "HIGH_VOL_UP": 0,
+            "LOW_VOL_DOWN": 0,
+            "LOW_VOL_UP": 0
+          },
+          "quote_coverage_complete": false,
+          "limitation": "Synthetic spread/slippage/fee/fill scenarios; not measured executable costs. Drawdown is realized exits plus separately reported adverse marks."
+        }
+      },
+      "strict_quote_audit": {
+        "mode": "STRICT_QUOTES",
+        "execution": {
+          "capital": 600,
+          "notional": 25,
+          "total_cap": 100,
+          "daily_loss": 12,
+          "max_positions": 2,
+          "stop": 0.02,
+          "target": 0.03,
+          "spread": 0.001,
+          "slippage_per_leg": 0.0005,
+          "fee_per_leg": 0.0001,
+          "participation": 0.001,
+          "reject_fraction": 0.05,
+          "partial_fraction": 0.1,
+          "probability_floor": 0.55,
+          "net_margin": 0.0005
+        },
+        "holding_bars": 6,
+        "trade_count": 0,
+        "net_pnl": 0,
+        "net_return": 0.0,
+        "daily_mean_net_pnl_ci_98_75": [
+          0.0,
+          0.0
+        ],
+        "realized_exit_max_drawdown": 0.0,
+        "max_single_trade_adverse_mark": 0.0,
+        "daily_sharpe": null,
+        "rejections": {
+          "PREDICTION_CONFIDENCE": 2369,
+          "EXECUTABLE_ENTRY_QUOTE_UNAVAILABLE": 7,
+          "EXPECTED_RETURN_AFTER_ASSUMED_COSTS": 42
+        },
+        "regime_pnl": {
+          "HIGH_VOL_DOWN": 0,
+          "HIGH_VOL_UP": 0,
+          "LOW_VOL_DOWN": 0,
+          "LOW_VOL_UP": 0
+        },
+        "quote_coverage_complete": false,
+        "limitation": "Exit-quote screening uses future quote availability; unresolved real exposures need a tick ledger. Strict mode is a coverage audit, not executable P/L."
+      },
+      "model_id": "2334a0a09d1b7e7ad64055f64f02ef5f31aff31879b40474af0f3593bafd4dc4"
+    },
+    "sequence_adam400": {
+      "prediction": {
+        "observations": 2418,
+        "dates": 203,
+        "positive_outcomes": 1241,
+        "target_first_outcomes": 2,
+        "mae": 0.0024922088172102124,
+        "brier": 0.25154382773215567,
+        "target_brier": 0.0008271282061282051,
+        "coverage": 0.9069478908188585,
+        "downside_mae": 0.0017603559582152902,
+        "direction_accuracy": 0.47932175351530193,
+        "calibration_bins": [
+          {
+            "count": 0,
+            "forecast": null,
+            "actual": null
+          },
+          {
+            "count": 27,
+            "forecast": 0.36857400808682156,
+            "actual": 0.3333333333333333
+          },
+          {
+            "count": 2387,
+            "forecast": 0.4880410125543481,
+            "actual": 0.5148722245496439
+          },
+          {
+            "count": 4,
+            "forecast": 0.6609242721939784,
+            "actual": 0.75
+          },
+          {
+            "count": 0,
+            "forecast": null,
+            "actual": null
+          }
+        ]
+      },
+      "scenarios": {
+        "base_15min": {
+          "mode": "ASSUMPTION_ONLY",
+          "execution": {
+            "capital": 600,
+            "notional": 25,
+            "total_cap": 100,
+            "daily_loss": 12,
+            "max_positions": 2,
+            "stop": 0.02,
+            "target": 0.03,
+            "spread": 0.001,
+            "slippage_per_leg": 0.0005,
+            "fee_per_leg": 0.0001,
+            "participation": 0.001,
+            "reject_fraction": 0.05,
+            "partial_fraction": 0.1,
+            "probability_floor": 0.55,
+            "net_margin": 0.0005
+          },
+          "holding_bars": 3,
+          "trade_count": 0,
+          "net_pnl": 0,
+          "net_return": 0.0,
+          "daily_mean_net_pnl_ci_98_75": [
+            0.0,
+            0.0
+          ],
+          "realized_exit_max_drawdown": 0.0,
+          "max_single_trade_adverse_mark": 0.0,
+          "daily_sharpe": null,
+          "rejections": {
+            "PREDICTION_CONFIDENCE": 2369,
+            "EXPECTED_RETURN_AFTER_ASSUMED_COSTS": 49
+          },
+          "regime_pnl": {
+            "HIGH_VOL_DOWN": 0,
+            "HIGH_VOL_UP": 0,
+            "LOW_VOL_DOWN": 0,
+            "LOW_VOL_UP": 0
+          },
+          "quote_coverage_complete": false,
+          "limitation": "Synthetic spread/slippage/fee/fill scenarios; not measured executable costs. Drawdown is realized exits plus separately reported adverse marks."
+        },
+        "base_30min": {
+          "mode": "ASSUMPTION_ONLY",
+          "execution": {
+            "capital": 600,
+            "notional": 25,
+            "total_cap": 100,
+            "daily_loss": 12,
+            "max_positions": 2,
+            "stop": 0.02,
+            "target": 0.03,
+            "spread": 0.001,
+            "slippage_per_leg": 0.0005,
+            "fee_per_leg": 0.0001,
+            "participation": 0.001,
+            "reject_fraction": 0.05,
+            "partial_fraction": 0.1,
+            "probability_floor": 0.55,
+            "net_margin": 0.0005
+          },
+          "holding_bars": 6,
+          "trade_count": 0,
+          "net_pnl": 0,
+          "net_return": 0.0,
+          "daily_mean_net_pnl_ci_98_75": [
+            0.0,
+            0.0
+          ],
+          "realized_exit_max_drawdown": 0.0,
+          "max_single_trade_adverse_mark": 0.0,
+          "daily_sharpe": null,
+          "rejections": {
+            "PREDICTION_CONFIDENCE": 2369,
+            "EXPECTED_RETURN_AFTER_ASSUMED_COSTS": 49
+          },
+          "regime_pnl": {
+            "HIGH_VOL_DOWN": 0,
+            "HIGH_VOL_UP": 0,
+            "LOW_VOL_DOWN": 0,
+            "LOW_VOL_UP": 0
+          },
+          "quote_coverage_complete": false,
+          "limitation": "Synthetic spread/slippage/fee/fill scenarios; not measured executable costs. Drawdown is realized exits plus separately reported adverse marks."
+        },
+        "stress_15min": {
+          "mode": "ASSUMPTION_ONLY",
+          "execution": {
+            "capital": 600,
+            "notional": 25,
+            "total_cap": 100,
+            "daily_loss": 12,
+            "max_positions": 2,
+            "stop": 0.02,
+            "target": 0.03,
+            "spread": 0.002,
+            "slippage_per_leg": 0.001,
+            "fee_per_leg": 0.0001,
+            "participation": 0.001,
+            "reject_fraction": 0.05,
+            "partial_fraction": 0.1,
+            "probability_floor": 0.55,
+            "net_margin": 0.0005
+          },
+          "holding_bars": 3,
+          "trade_count": 0,
+          "net_pnl": 0,
+          "net_return": 0.0,
+          "daily_mean_net_pnl_ci_98_75": [
+            0.0,
+            0.0
+          ],
+          "realized_exit_max_drawdown": 0.0,
+          "max_single_trade_adverse_mark": 0.0,
+          "daily_sharpe": null,
+          "rejections": {
+            "PREDICTION_CONFIDENCE": 2369,
+            "EXPECTED_RETURN_AFTER_ASSUMED_COSTS": 49
+          },
+          "regime_pnl": {
+            "HIGH_VOL_DOWN": 0,
+            "HIGH_VOL_UP": 0,
+            "LOW_VOL_DOWN": 0,
+            "LOW_VOL_UP": 0
+          },
+          "quote_coverage_complete": false,
+          "limitation": "Synthetic spread/slippage/fee/fill scenarios; not measured executable costs. Drawdown is realized exits plus separately reported adverse marks."
+        },
+        "stress_30min": {
+          "mode": "ASSUMPTION_ONLY",
+          "execution": {
+            "capital": 600,
+            "notional": 25,
+            "total_cap": 100,
+            "daily_loss": 12,
+            "max_positions": 2,
+            "stop": 0.02,
+            "target": 0.03,
+            "spread": 0.002,
+            "slippage_per_leg": 0.001,
+            "fee_per_leg": 0.0001,
+            "participation": 0.001,
+            "reject_fraction": 0.05,
+            "partial_fraction": 0.1,
+            "probability_floor": 0.55,
+            "net_margin": 0.0005
+          },
+          "holding_bars": 6,
+          "trade_count": 0,
+          "net_pnl": 0,
+          "net_return": 0.0,
+          "daily_mean_net_pnl_ci_98_75": [
+            0.0,
+            0.0
+          ],
+          "realized_exit_max_drawdown": 0.0,
+          "max_single_trade_adverse_mark": 0.0,
+          "daily_sharpe": null,
+          "rejections": {
+            "PREDICTION_CONFIDENCE": 2369,
+            "EXPECTED_RETURN_AFTER_ASSUMED_COSTS": 49
+          },
+          "regime_pnl": {
+            "HIGH_VOL_DOWN": 0,
+            "HIGH_VOL_UP": 0,
+            "LOW_VOL_DOWN": 0,
+            "LOW_VOL_UP": 0
+          },
+          "quote_coverage_complete": false,
+          "limitation": "Synthetic spread/slippage/fee/fill scenarios; not measured executable costs. Drawdown is realized exits plus separately reported adverse marks."
+        },
+        "severe_15min": {
+          "mode": "ASSUMPTION_ONLY",
+          "execution": {
+            "capital": 600,
+            "notional": 25,
+            "total_cap": 100,
+            "daily_loss": 12,
+            "max_positions": 2,
+            "stop": 0.02,
+            "target": 0.03,
+            "spread": 0.004,
+            "slippage_per_leg": 0.002,
+            "fee_per_leg": 0.0001,
+            "participation": 0.001,
+            "reject_fraction": 0.05,
+            "partial_fraction": 0.1,
+            "probability_floor": 0.55,
+            "net_margin": 0.0005
+          },
+          "holding_bars": 3,
+          "trade_count": 0,
+          "net_pnl": 0,
+          "net_return": 0.0,
+          "daily_mean_net_pnl_ci_98_75": [
+            0.0,
+            0.0
+          ],
+          "realized_exit_max_drawdown": 0.0,
+          "max_single_trade_adverse_mark": 0.0,
+          "daily_sharpe": null,
+          "rejections": {
+            "PREDICTION_CONFIDENCE": 2369,
+            "EXPECTED_RETURN_AFTER_ASSUMED_COSTS": 49
+          },
+          "regime_pnl": {
+            "HIGH_VOL_DOWN": 0,
+            "HIGH_VOL_UP": 0,
+            "LOW_VOL_DOWN": 0,
+            "LOW_VOL_UP": 0
+          },
+          "quote_coverage_complete": false,
+          "limitation": "Synthetic spread/slippage/fee/fill scenarios; not measured executable costs. Drawdown is realized exits plus separately reported adverse marks."
+        },
+        "severe_30min": {
+          "mode": "ASSUMPTION_ONLY",
+          "execution": {
+            "capital": 600,
+            "notional": 25,
+            "total_cap": 100,
+            "daily_loss": 12,
+            "max_positions": 2,
+            "stop": 0.02,
+            "target": 0.03,
+            "spread": 0.004,
+            "slippage_per_leg": 0.002,
+            "fee_per_leg": 0.0001,
+            "participation": 0.001,
+            "reject_fraction": 0.05,
+            "partial_fraction": 0.1,
+            "probability_floor": 0.55,
+            "net_margin": 0.0005
+          },
+          "holding_bars": 6,
+          "trade_count": 0,
+          "net_pnl": 0,
+          "net_return": 0.0,
+          "daily_mean_net_pnl_ci_98_75": [
+            0.0,
+            0.0
+          ],
+          "realized_exit_max_drawdown": 0.0,
+          "max_single_trade_adverse_mark": 0.0,
+          "daily_sharpe": null,
+          "rejections": {
+            "PREDICTION_CONFIDENCE": 2369,
+            "EXPECTED_RETURN_AFTER_ASSUMED_COSTS": 49
+          },
+          "regime_pnl": {
+            "HIGH_VOL_DOWN": 0,
+            "HIGH_VOL_UP": 0,
+            "LOW_VOL_DOWN": 0,
+            "LOW_VOL_UP": 0
+          },
+          "quote_coverage_complete": false,
+          "limitation": "Synthetic spread/slippage/fee/fill scenarios; not measured executable costs. Drawdown is realized exits plus separately reported adverse marks."
+        }
+      },
+      "strict_quote_audit": {
+        "mode": "STRICT_QUOTES",
+        "execution": {
+          "capital": 600,
+          "notional": 25,
+          "total_cap": 100,
+          "daily_loss": 12,
+          "max_positions": 2,
+          "stop": 0.02,
+          "target": 0.03,
+          "spread": 0.001,
+          "slippage_per_leg": 0.0005,
+          "fee_per_leg": 0.0001,
+          "participation": 0.001,
+          "reject_fraction": 0.05,
+          "partial_fraction": 0.1,
+          "probability_floor": 0.55,
+          "net_margin": 0.0005
+        },
+        "holding_bars": 6,
+        "trade_count": 0,
+        "net_pnl": 0,
+        "net_return": 0.0,
+        "daily_mean_net_pnl_ci_98_75": [
+          0.0,
+          0.0
+        ],
+        "realized_exit_max_drawdown": 0.0,
+        "max_single_trade_adverse_mark": 0.0,
+        "daily_sharpe": null,
+        "rejections": {
+          "PREDICTION_CONFIDENCE": 2369,
+          "EXPECTED_RETURN_AFTER_ASSUMED_COSTS": 49
+        },
+        "regime_pnl": {
+          "HIGH_VOL_DOWN": 0,
+          "HIGH_VOL_UP": 0,
+          "LOW_VOL_DOWN": 0,
+          "LOW_VOL_UP": 0
+        },
+        "quote_coverage_complete": true,
+        "limitation": "Exit-quote screening uses future quote availability; unresolved real exposures need a tick ledger. Strict mode is a coverage audit, not executable P/L."
+      },
+      "model_id": "dcf1079366f83603ef1e9e9ec01d9506f8cc40430611982c686a82d5f40431a8"
+    },
+    "sequence_lbfgs250": {
+      "prediction": {
+        "observations": 2418,
+        "dates": 203,
+        "positive_outcomes": 1241,
+        "target_first_outcomes": 2,
+        "mae": 0.002890155493452767,
+        "brier": 0.25154382773215567,
+        "target_brier": 0.0008271282061282051,
+        "coverage": 0.9044665012406948,
+        "downside_mae": 0.0019115331450370902,
+        "direction_accuracy": 0.47932175351530193,
+        "calibration_bins": [
+          {
+            "count": 0,
+            "forecast": null,
+            "actual": null
+          },
+          {
+            "count": 27,
+            "forecast": 0.36857400808682156,
+            "actual": 0.3333333333333333
+          },
+          {
+            "count": 2387,
+            "forecast": 0.4880410125543481,
+            "actual": 0.5148722245496439
+          },
+          {
+            "count": 4,
+            "forecast": 0.6609242721939784,
+            "actual": 0.75
+          },
+          {
+            "count": 0,
+            "forecast": null,
+            "actual": null
+          }
+        ]
+      },
+      "scenarios": {
+        "base_15min": {
+          "mode": "ASSUMPTION_ONLY",
+          "execution": {
+            "capital": 600,
+            "notional": 25,
+            "total_cap": 100,
+            "daily_loss": 12,
+            "max_positions": 2,
+            "stop": 0.02,
+            "target": 0.03,
+            "spread": 0.001,
+            "slippage_per_leg": 0.0005,
+            "fee_per_leg": 0.0001,
+            "participation": 0.001,
+            "reject_fraction": 0.05,
+            "partial_fraction": 0.1,
+            "probability_floor": 0.55,
+            "net_margin": 0.0005
+          },
+          "holding_bars": 3,
+          "trade_count": 1,
+          "net_pnl": -0.1120130049062027,
+          "net_return": -0.00018668834151036595,
+          "daily_mean_net_pnl_ci_98_75": [
+            -0.0022071528060335507,
+            0.0
+          ],
+          "realized_exit_max_drawdown": 0.1120130049062027,
+          "max_single_trade_adverse_mark": 0.15007798423005148,
+          "daily_sharpe": -1.1169264758591986,
+          "rejections": {
+            "PREDICTION_CONFIDENCE": 2369,
+            "EXPECTED_RETURN_AFTER_ASSUMED_COSTS": 46,
+            "SIMULATED_ORDER_REJECTION": 2
+          },
+          "regime_pnl": {
+            "HIGH_VOL_DOWN": 0,
+            "HIGH_VOL_UP": -0.1120130049061528,
+            "LOW_VOL_DOWN": 0,
+            "LOW_VOL_UP": 0
+          },
+          "quote_coverage_complete": false,
+          "limitation": "Synthetic spread/slippage/fee/fill scenarios; not measured executable costs. Drawdown is realized exits plus separately reported adverse marks."
+        },
+        "base_30min": {
+          "mode": "ASSUMPTION_ONLY",
+          "execution": {
+            "capital": 600,
+            "notional": 25,
+            "total_cap": 100,
+            "daily_loss": 12,
+            "max_positions": 2,
+            "stop": 0.02,
+            "target": 0.03,
+            "spread": 0.001,
+            "slippage_per_leg": 0.0005,
+            "fee_per_leg": 0.0001,
+            "participation": 0.001,
+            "reject_fraction": 0.05,
+            "partial_fraction": 0.1,
+            "probability_floor": 0.55,
+            "net_margin": 0.0005
+          },
+          "holding_bars": 6,
+          "trade_count": 1,
+          "net_pnl": -0.1621934546334387,
+          "net_return": -0.00027032242438906895,
+          "daily_mean_net_pnl_ci_98_75": [
+            -0.0031959301405603685,
+            0.0
+          ],
+          "realized_exit_max_drawdown": 0.1621934546334387,
+          "max_single_trade_adverse_mark": 0.15007798423005148,
+          "daily_sharpe": -1.1169264758591984,
+          "rejections": {
+            "PREDICTION_CONFIDENCE": 2369,
+            "EXPECTED_RETURN_AFTER_ASSUMED_COSTS": 46,
+            "SIMULATED_ORDER_REJECTION": 2
+          },
+          "regime_pnl": {
+            "HIGH_VOL_DOWN": 0,
+            "HIGH_VOL_UP": -0.16219345463338397,
+            "LOW_VOL_DOWN": 0,
+            "LOW_VOL_UP": 0
+          },
+          "quote_coverage_complete": false,
+          "limitation": "Synthetic spread/slippage/fee/fill scenarios; not measured executable costs. Drawdown is realized exits plus separately reported adverse marks."
+        },
+        "stress_15min": {
+          "mode": "ASSUMPTION_ONLY",
+          "execution": {
+            "capital": 600,
+            "notional": 25,
+            "total_cap": 100,
+            "daily_loss": 12,
+            "max_positions": 2,
+            "stop": 0.02,
+            "target": 0.03,
+            "spread": 0.002,
+            "slippage_per_leg": 0.001,
+            "fee_per_leg": 0.0001,
+            "participation": 0.001,
+            "reject_fraction": 0.05,
+            "partial_fraction": 0.1,
+            "probability_floor": 0.55,
+            "net_margin": 0.0005
+          },
+          "holding_bars": 3,
+          "trade_count": 0,
+          "net_pnl": 0,
+          "net_return": 0.0,
+          "daily_mean_net_pnl_ci_98_75": [
+            0.0,
+            0.0
+          ],
+          "realized_exit_max_drawdown": 0.0,
+          "max_single_trade_adverse_mark": 0.0,
+          "daily_sharpe": null,
+          "rejections": {
+            "PREDICTION_CONFIDENCE": 2369,
+            "EXPECTED_RETURN_AFTER_ASSUMED_COSTS": 48,
+            "SIMULATED_ORDER_REJECTION": 1
+          },
+          "regime_pnl": {
+            "HIGH_VOL_DOWN": 0,
+            "HIGH_VOL_UP": 0,
+            "LOW_VOL_DOWN": 0,
+            "LOW_VOL_UP": 0
+          },
+          "quote_coverage_complete": false,
+          "limitation": "Synthetic spread/slippage/fee/fill scenarios; not measured executable costs. Drawdown is realized exits plus separately reported adverse marks."
+        },
+        "stress_30min": {
+          "mode": "ASSUMPTION_ONLY",
+          "execution": {
+            "capital": 600,
+            "notional": 25,
+            "total_cap": 100,
+            "daily_loss": 12,
+            "max_positions": 2,
+            "stop": 0.02,
+            "target": 0.03,
+            "spread": 0.002,
+            "slippage_per_leg": 0.001,
+            "fee_per_leg": 0.0001,
+            "participation": 0.001,
+            "reject_fraction": 0.05,
+            "partial_fraction": 0.1,
+            "probability_floor": 0.55,
+            "net_margin": 0.0005
+          },
+          "holding_bars": 6,
+          "trade_count": 0,
+          "net_pnl": 0,
+          "net_return": 0.0,
+          "daily_mean_net_pnl_ci_98_75": [
+            0.0,
+            0.0
+          ],
+          "realized_exit_max_drawdown": 0.0,
+          "max_single_trade_adverse_mark": 0.0,
+          "daily_sharpe": null,
+          "rejections": {
+            "PREDICTION_CONFIDENCE": 2369,
+            "EXPECTED_RETURN_AFTER_ASSUMED_COSTS": 48,
+            "SIMULATED_ORDER_REJECTION": 1
+          },
+          "regime_pnl": {
+            "HIGH_VOL_DOWN": 0,
+            "HIGH_VOL_UP": 0,
+            "LOW_VOL_DOWN": 0,
+            "LOW_VOL_UP": 0
+          },
+          "quote_coverage_complete": false,
+          "limitation": "Synthetic spread/slippage/fee/fill scenarios; not measured executable costs. Drawdown is realized exits plus separately reported adverse marks."
+        },
+        "severe_15min": {
+          "mode": "ASSUMPTION_ONLY",
+          "execution": {
+            "capital": 600,
+            "notional": 25,
+            "total_cap": 100,
+            "daily_loss": 12,
+            "max_positions": 2,
+            "stop": 0.02,
+            "target": 0.03,
+            "spread": 0.004,
+            "slippage_per_leg": 0.002,
+            "fee_per_leg": 0.0001,
+            "participation": 0.001,
+            "reject_fraction": 0.05,
+            "partial_fraction": 0.1,
+            "probability_floor": 0.55,
+            "net_margin": 0.0005
+          },
+          "holding_bars": 3,
+          "trade_count": 0,
+          "net_pnl": 0,
+          "net_return": 0.0,
+          "daily_mean_net_pnl_ci_98_75": [
+            0.0,
+            0.0
+          ],
+          "realized_exit_max_drawdown": 0.0,
+          "max_single_trade_adverse_mark": 0.0,
+          "daily_sharpe": null,
+          "rejections": {
+            "PREDICTION_CONFIDENCE": 2369,
+            "EXPECTED_RETURN_AFTER_ASSUMED_COSTS": 48,
+            "SIMULATED_ORDER_REJECTION": 1
+          },
+          "regime_pnl": {
+            "HIGH_VOL_DOWN": 0,
+            "HIGH_VOL_UP": 0,
+            "LOW_VOL_DOWN": 0,
+            "LOW_VOL_UP": 0
+          },
+          "quote_coverage_complete": false,
+          "limitation": "Synthetic spread/slippage/fee/fill scenarios; not measured executable costs. Drawdown is realized exits plus separately reported adverse marks."
+        },
+        "severe_30min": {
+          "mode": "ASSUMPTION_ONLY",
+          "execution": {
+            "capital": 600,
+            "notional": 25,
+            "total_cap": 100,
+            "daily_loss": 12,
+            "max_positions": 2,
+            "stop": 0.02,
+            "target": 0.03,
+            "spread": 0.004,
+            "slippage_per_leg": 0.002,
+            "fee_per_leg": 0.0001,
+            "participation": 0.001,
+            "reject_fraction": 0.05,
+            "partial_fraction": 0.1,
+            "probability_floor": 0.55,
+            "net_margin": 0.0005
+          },
+          "holding_bars": 6,
+          "trade_count": 0,
+          "net_pnl": 0,
+          "net_return": 0.0,
+          "daily_mean_net_pnl_ci_98_75": [
+            0.0,
+            0.0
+          ],
+          "realized_exit_max_drawdown": 0.0,
+          "max_single_trade_adverse_mark": 0.0,
+          "daily_sharpe": null,
+          "rejections": {
+            "PREDICTION_CONFIDENCE": 2369,
+            "EXPECTED_RETURN_AFTER_ASSUMED_COSTS": 48,
+            "SIMULATED_ORDER_REJECTION": 1
+          },
+          "regime_pnl": {
+            "HIGH_VOL_DOWN": 0,
+            "HIGH_VOL_UP": 0,
+            "LOW_VOL_DOWN": 0,
+            "LOW_VOL_UP": 0
+          },
+          "quote_coverage_complete": false,
+          "limitation": "Synthetic spread/slippage/fee/fill scenarios; not measured executable costs. Drawdown is realized exits plus separately reported adverse marks."
+        }
+      },
+      "strict_quote_audit": {
+        "mode": "STRICT_QUOTES",
+        "execution": {
+          "capital": 600,
+          "notional": 25,
+          "total_cap": 100,
+          "daily_loss": 12,
+          "max_positions": 2,
+          "stop": 0.02,
+          "target": 0.03,
+          "spread": 0.001,
+          "slippage_per_leg": 0.0005,
+          "fee_per_leg": 0.0001,
+          "participation": 0.001,
+          "reject_fraction": 0.05,
+          "partial_fraction": 0.1,
+          "probability_floor": 0.55,
+          "net_margin": 0.0005
+        },
+        "holding_bars": 6,
+        "trade_count": 0,
+        "net_pnl": 0,
+        "net_return": 0.0,
+        "daily_mean_net_pnl_ci_98_75": [
+          0.0,
+          0.0
+        ],
+        "realized_exit_max_drawdown": 0.0,
+        "max_single_trade_adverse_mark": 0.0,
+        "daily_sharpe": null,
+        "rejections": {
+          "PREDICTION_CONFIDENCE": 2369,
+          "EXPECTED_RETURN_AFTER_ASSUMED_COSTS": 46,
+          "EXECUTABLE_ENTRY_QUOTE_UNAVAILABLE": 3
+        },
+        "regime_pnl": {
+          "HIGH_VOL_DOWN": 0,
+          "HIGH_VOL_UP": 0,
+          "LOW_VOL_DOWN": 0,
+          "LOW_VOL_UP": 0
+        },
+        "quote_coverage_complete": false,
+        "limitation": "Exit-quote screening uses future quote availability; unresolved real exposures need a tick ledger. Strict mode is a coverage audit, not executable P/L."
+      },
+      "model_id": "489febeeb527ea1a52dad7ae835a703937a1e4bb2fdf23d74b8b576cd078a2da"
+    }
+  },
+  "benchmarks": {
+    "cash": {
+      "net_pnl": 0,
+      "trade_count": 0
+    },
+    "always_long": {
+      "mode": "ASSUMPTION_ONLY",
+      "execution": {
+        "capital": 600,
+        "notional": 25,
+        "total_cap": 100,
+        "daily_loss": 12,
+        "max_positions": 2,
+        "stop": 0.02,
+        "target": 0.03,
+        "spread": 0.001,
+        "slippage_per_leg": 0.0005,
+        "fee_per_leg": 0.0001,
+        "participation": 0.001,
+        "reject_fraction": 0.05,
+        "partial_fraction": 0.1,
+        "probability_floor": 0.55,
+        "net_margin": 0.0005
+      },
+      "holding_bars": 6,
+      "trade_count": 806,
+      "net_pnl": -38.905261906781675,
+      "net_return": -0.06484210317796946,
+      "daily_mean_net_pnl_ci_98_75": [
+        -0.22522963064494284,
+        -0.15839520500002183
+      ],
+      "realized_exit_max_drawdown": 38.905261906781675,
+      "max_single_trade_adverse_mark": 0.7767948254000623,
+      "daily_sharpe": -13.429416906649232,
+      "rejections": {
+        "CAPITAL_OR_POSITION_LIMIT": 1171,
+        "NO_REENTRY": 414,
+        "SIMULATED_ORDER_REJECTION": 27
+      },
+      "regime_pnl": {
+        "HIGH_VOL_DOWN": -2.0033688471977116,
+        "HIGH_VOL_UP": -0.5439514801838019,
+        "LOW_VOL_DOWN": -18.592621466386333,
+        "LOW_VOL_UP": -17.765320113013228
+      },
+      "quote_coverage_complete": false,
+      "limitation": "Synthetic spread/slippage/fee/fill scenarios; not measured executable costs. Drawdown is realized exits plus separately reported adverse marks."
+    }
+  },
+  "winner_minus_always_long_daily_pnl_ci_98_75": [
+    0.15839520500002185,
+    0.22522963064494292
+  ],
+  "acceptance": {
+    "independent_confirmation": false,
+    "measured_cost_history": false,
+    "complete_executable_quotes": false,
+    "deployable": false
+  },
+  "trial_accounting": {
+    "models": 8,
+    "holding_variants": 2,
+    "cost_scenarios": 3,
+    "no_post_audit_refitting": true
+  },
+  "prospective": {
+    "status": "PENDING_FRESH_SESSIONS",
+    "observations": 0,
+    "minimum_dates": 126
+  },
+  "limitations": [
+    "Fixed survivor cohort; split-only revised prices",
+    "Synthetic quote/fill/liquidity scenarios cannot establish attainable net alpha",
+    "Base stop and target remain 2%/3%; software exits use next-bar prices",
+    "Cost/fill rejection rates are assumptions, not broker estimates",
+    "Daily mark drawdown and adverse intratrade marks are separate; no real-money or new paper policy"
+  ]
+}

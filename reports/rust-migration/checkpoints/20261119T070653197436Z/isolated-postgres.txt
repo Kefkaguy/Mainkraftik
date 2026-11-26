@@ -1,0 +1,126 @@
+
+running 1 test
+UNKNOWN_PARTIAL_RESTART_DUPLICATE=PASS
+KNOWN_REJECTION=PASS
+ACCOUNT_ISOLATION=PASS
+IMMUTABLE_EVIDENCE=PASS
+DURABLE_CYCLE_AND_SHARED_PYTHON_LEASE=PASS
+DB_FAILURE_AFTER_FILL_RECOVERY=PASS
+PAUSE_BEFORE_INTENT=PASS
+DASHBOARD_STATUS_AND_SCHEMA_PRESERVATION=PASS
+test full_durable_order_lifecycle_against_isolated_postgres ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.75s
+
+
+   Compiling mainkraft v0.1.0 (C:\Users\erosi\OneDrive\Desktop\allprojects\keftrade-intelligence\apps\backend-rust)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 2.14s
+     Running tests\lifecycle.rs (apps\backend-rust\target\debug\deps\lifecycle-49e6e45309a86bc5.exe)
+
+RUST_PYTHON_DASHBOARD_STATUS_PARITY=PASS
+
+running 1 test
+AUTOMATIC_TWO_ACCOUNT_BUY_FILL_AND_RESTART_DEDUP=PASS
+POSITION_MONITORING_CLOSE_BEFORE_SHORT_WITHOUT_FUTURE_LEARNING=PASS
+MATURED_ONLY_RESIDUAL_UPDATE_FIXED_CONTROL_UNCHANGED=PASS
+FORECAST_RETURN_NOT_EXECUTION_PNL=PASS
+OPERATOR_PAUSE_AND_CLOSED_MARKET=PASS
+BROKER_RESTRICTION_AND_ACCOUNT_FAILURE_ISOLATION=PASS
+test two_account_monitor_allocate_fill_exit_restart_and_prequential_learning ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.83s
+
+
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 0.29s
+     Running tests\engine_lifecycle.rs (apps\backend-rust\target\debug\deps\engine_lifecycle-2ae99452eed72b40.exe)
+
+
+running 1 test
+NATIVE_DATA_FEATURE_MODEL_QUOTE_SOURCE_PARITY_AND_CACHE=PASS
+NO_UNAVAILABLE_CURRENT_CANDLE_OR_STALE_QUOTE=PASS
+test daily_ingestion_frozen_inference_quote_and_source_identity_match_python ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.38s
+
+
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 0.25s
+     Running tests\market_parity.rs (apps\backend-rust\target\debug\deps\market_parity-050303931306a266.exe)
+
+
+running 1 test
+SHARED_DAILY_MONTHLY_BUDGET_AND_RESTART=PASS
+FAILED_REQUEST_CONSUMES_RESERVATION_NO_RETRY=PASS
+IMMUTABLE_RESERVATIONS_NO_PROVIDER_ERROR_LEAK=PASS
+test shared_budget_survives_concurrency_failure_and_restart_without_retry ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.42s
+
+
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 0.28s
+     Running tests\ranking_lifecycle.rs (apps\backend-rust\target\debug\deps\ranking_lifecycle-ea688eacbe153e8e.exe)
+
+
+running 1 test
+CATALOG_AND_ORIGINAL_PYTHON_NEWS_SOURCE_ID_PARITY=PASS
+FUTURE_INVALID_AND_OMITTED_SOURCE_FIELDS_EXCLUDED=PASS
+UPDATED_NEWS_INPUT_ORDER_REPLAY_IMMUTABILITY=PASS
+BOUNDED_PAGINATION_WITH_EXPLICIT_TRUNCATION=PASS
+test acquired_news_matches_python_and_keeps_truncation_and_provenance_explicit ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.14s
+
+
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 0.26s
+     Running tests\discovery_lifecycle.rs (apps\backend-rust\target\debug\deps\discovery_lifecycle-fed90f9819ebab22.exe)
+
+
+running 1 test
+FULL_PYTHON_RESEARCH_SOURCE_EVENT_SELECTION_ID_PARITY=PASS
+FROZEN_RESTART_NO_BACKDATING_PREVIEW_SEPARATION=PASS
+MISSED_CUTOFF_RETAINED_NOT_FROZEN=PASS
+BENCHMARK_FAILURE_ATOMIC_ROLLBACK_NO_ORDER_AUTHORITY=PASS
+RESEARCH_FAILURE_RETRY_SPACING_AND_CLOSED_CHANNEL_SHUTDOWN=PASS
+test full_premarket_research_freezes_only_timely_covered_selections_and_matches_python ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.59s
+
+
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 0.25s
+     Running tests\research_lifecycle.rs (apps\backend-rust\target\debug\deps\research_lifecycle-8145d8bf54ea5e8a.exe)
+
+
+running 1 test
+PYTHON_ARGON2_SESSION_COOKIE_CSRF_LOGOUT=PASS
+EXISTING_PYTHON_SESSION=PASS
+FAILED_ATTEMPTS_PERSIST_GLOBAL_THROTTLE=PASS
+IDEMPOTENT_SCHEMA_PRESERVES_SESSION=PASS
+test authentication_preserves_python_password_sessions_csrf_and_throttle ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 1.13s
+
+
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 0.25s
+     Running tests\api_contract.rs (apps\backend-rust\target\debug\deps\api_contract-5d2658c8c88f58fb.exe)
+
+Captured 26 original research API responses against isolated seeded PostgreSQL
+
+C:\Users\erosi\OneDrive\Desktop\allprojects\keftrade-intelligence\.venv\Lib\site-packages\fastapi\testclient.py:1: StarletteDeprecationWarning: Using `httpx` with `starlette.testclient` is deprecated; install `httpx2` instead.
+  from starlette.testclient import TestClient as TestClient  # noqa
+
+ORIGINAL_RESEARCH_API_ORACLE_SHA256=c74f99a23655a4817ed6901c6e6f6a1d2cc5cbf61c479dab605af94e8385a1a9
+
+running 1 test
+TEN_RESEARCH_API_ROUTE_FAMILIES_ORIGINAL_PYTHON_HTTP_PARITY=PASS
+AUTHENTICATION_VALIDATION_HISTORICAL_LABELS_AND_LATEST_OUTCOMES=PASS
+AVAILABILITY_AND_OBSERVED_ACQUISITION_CUTS_REMAIN_DISTINCT=PASS
+{"responses_checked":26}
+test existing_company_workspace_forecast_research_and_monitoring_contracts_match_python ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.39s
+
+
+   Compiling mainkraft v0.1.0 (C:\Users\erosi\OneDrive\Desktop\allprojects\keftrade-intelligence\apps\backend-rust)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 2.01s
+     Running tests\research_api.rs (apps\backend-rust\target\debug\deps\research_api-a8f43729a954a3ae.exe)
+
+

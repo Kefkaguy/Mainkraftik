@@ -1,0 +1,13 @@
+
+running 1 test
+SHARED_DAILY_MONTHLY_BUDGET_AND_RESTART=PASS
+FAILED_REQUEST_CONSUMES_RESERVATION_NO_RETRY=PASS
+IMMUTABLE_RESERVATIONS_NO_PROVIDER_ERROR_LEAK=PASS
+test shared_budget_survives_concurrency_failure_and_restart_without_retry ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.13s
+
+
+   Compiling mainkraft v0.1.0 (/mnt/c/Users/erosi/OneDrive/Desktop/allprojects/keftrade-intelligence/apps/backend-rust)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 1.06s
+     Running tests/ranking_lifecycle.rs (/home/erosimcity/.local/share/mainkraft-rust-validation/target/debug/deps/ranking_lifecycle-00f561ef72327674)

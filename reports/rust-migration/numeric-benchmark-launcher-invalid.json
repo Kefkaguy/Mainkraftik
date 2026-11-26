@@ -1,0 +1,119 @@
+{
+  "scope": "LOCAL WINDOWS NUMERIC COMPONENT ONLY; not paper-engine, API, ingestion, research or VPS performance",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "fixture_sha256": "9f2945ad5f3089b34223d8e7b87aa296038f1e915291d37970446f2394b5702b",
+  "rust_binary_sha256": "57d65459362670a707c7a4dfd5005984f7c5a1d1373d3fe27ef3221e91056270",
+  "iterations": 30,
+  "repetitions": 3,
+  "threads": 1,
+  "runs": [
+    {
+      "implementation": "python",
+      "scope": "single-row numeric inference only; not full trading service",
+      "iterations": 30,
+      "predictions": 19680,
+      "compute_wall_seconds": 0.8568803000380285,
+      "predictions_per_second": 22967.035184642005,
+      "checksum": 13144.317144886798,
+      "process_wall_seconds": 3.303523499984294,
+      "process_cpu_seconds": 0.0,
+      "sampled_peak_working_set_bytes": 5320704,
+      "sampling_interval_ms": 5,
+      "pid": 10780
+    },
+    {
+      "checksum": 13144.317144886798,
+      "compute_wall_seconds": 0.0038068,
+      "implementation": "rust",
+      "iterations": 30,
+      "predictions": 19680,
+      "predictions_per_second": 5169696.332878008,
+      "scope": "single-row numeric inference only; not full trading service",
+      "process_wall_seconds": 0.13719000003766268,
+      "process_cpu_seconds": 0.015625,
+      "sampled_peak_working_set_bytes": 6615040,
+      "sampling_interval_ms": 5,
+      "pid": 6184
+    },
+    {
+      "implementation": "python",
+      "scope": "single-row numeric inference only; not full trading service",
+      "iterations": 30,
+      "predictions": 19680,
+      "compute_wall_seconds": 0.8464478999958374,
+      "predictions_per_second": 23250.10198512724,
+      "checksum": 13144.317144886798,
+      "process_wall_seconds": 3.343875400023535,
+      "process_cpu_seconds": 0.0,
+      "sampled_peak_working_set_bytes": 5316608,
+      "sampling_interval_ms": 5,
+      "pid": 31812
+    },
+    {
+      "checksum": 13144.317144886798,
+      "compute_wall_seconds": 0.0037722,
+      "implementation": "rust",
+      "iterations": 30,
+      "predictions": 19680,
+      "predictions_per_second": 5217114.68108796,
+      "scope": "single-row numeric inference only; not full trading service",
+      "process_wall_seconds": 0.025599999993573874,
+      "process_cpu_seconds": 0.015625,
+      "sampled_peak_working_set_bytes": 6057984,
+      "sampling_interval_ms": 5,
+      "pid": 30000
+    },
+    {
+      "implementation": "python",
+      "scope": "single-row numeric inference only; not full trading service",
+      "iterations": 30,
+      "predictions": 19680,
+      "compute_wall_seconds": 0.8438961000065319,
+      "predictions_per_second": 23320.4063863403,
+      "checksum": 13144.317144886798,
+      "process_wall_seconds": 3.2885084000299685,
+      "process_cpu_seconds": 0.03125,
+      "sampled_peak_working_set_bytes": 5324800,
+      "sampling_interval_ms": 5,
+      "pid": 43536
+    },
+    {
+      "checksum": 13144.317144886798,
+      "compute_wall_seconds": 0.0042385,
+      "implementation": "rust",
+      "iterations": 30,
+      "predictions": 19680,
+      "predictions_per_second": 4643152.058511266,
+      "scope": "single-row numeric inference only; not full trading service",
+      "process_wall_seconds": 0.030616799951530993,
+      "process_cpu_seconds": 0.0,
+      "sampled_peak_working_set_bytes": 6115328,
+      "sampling_interval_ms": 5,
+      "pid": 4356
+    }
+  ],
+  "median": {
+    "python": {
+      "compute_wall_seconds": 0.8464478999958374,
+      "predictions_per_second": 23250.10198512724,
+      "process_wall_seconds": 3.303523499984294,
+      "process_cpu_seconds": 0.0,
+      "sampled_peak_working_set_bytes": 5320704
+    },
+    "rust": {
+      "compute_wall_seconds": 0.0038068,
+      "predictions_per_second": 5169696.332878008,
+      "process_wall_seconds": 0.030616799951530993,
+      "process_cpu_seconds": 0.015625,
+      "sampled_peak_working_set_bytes": 6115328
+    }
+  },
+  "limitations": [
+    "Startup-inclusive process CPU/RAM, separately timed warmed inference loop",
+    "RAM is sampled Windows peak working set; not Linux RSS",
+    "No broker network, DB, sentiment or full-service workloads included",
+    "No system-wide speed claim supported by this component benchmark"
+  ],
+  "valid_for_cpu_ram_comparison": false,
+  "invalid_reason": "Measured Windows venv launcher PID rather than real Python interpreter; superseded by corrected direct-interpreter run"
+}

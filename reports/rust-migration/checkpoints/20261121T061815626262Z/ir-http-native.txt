@@ -1,0 +1,11 @@
+
+running 1 test
+NATIVE_REAL_TLS_RESPONSE_BYTES_AND_PER_WORKFLOW_COOKIE_SESSIONS=PASS
+test official_ir::tests::loopback_tls_http_cookies_compression_and_limits_match_python ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 14 filtered out; finished in 0.18s
+
+
+   Compiling mainkraft v0.1.0 (C:\Users\erosi\OneDrive\Desktop\allprojects\keftrade-intelligence\apps\backend-rust)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 7.19s
+     Running unittests src\lib.rs (apps\backend-rust\target\debug\deps\mainkraft-0ae551b333f65b48.exe)

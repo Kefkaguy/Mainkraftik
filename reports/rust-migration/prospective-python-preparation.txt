@@ -1,0 +1,56 @@
+success captured
+repeat captured
+before-issuance captured
+before-entry captured
+entry-deadline captured
+not-enrolled captured
+not-started captured
+code-mismatch captured
+artifact-mismatch captured
+missing-origin captured
+late-origin captured
+future-correction captured
+no-paired-reference captured
+zero-origin-volume captured
+news-unavailable captured
+market-unavailable captured
+sec-unavailable captured
+all-available captured
+ir-missing captured
+context-gap captured
+missing-training-metadata captured
+database-failure captured
+worker-success captured
+worker-repeat captured
+worker-code-mismatch captured
+worker-metadata-failure captured
+worker-database-failure captured
+worker-resource-denied captured
+concurrent captured
+worker-terminal-recovery captured
+short-history captured
+zero-prior-volume captured
+missing-code-hash captured
+missing-feature-group captured
+{"scenarios": 34, "direct": 26, "actual_worker": 7, "runtime_python": false}
+
+Research job 0fd29f94-fd0c-5eae-ae23-b594272a3071 failed
+Traceback (most recent call last):
+  File "/mnt/c/Users/erosi/OneDrive/Desktop/allprojects/keftrade-intelligence/apps/api/intelligence/jobs.py", line 152, in run_once
+    result = dispatch(job["kind"], job["payload"])
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/c/Users/erosi/OneDrive/Desktop/allprojects/keftrade-intelligence/apps/api/intelligence/jobs.py", line 50, in dispatch
+    resource_check()
+  File "/usr/lib/python3.12/unittest/mock.py", line 1134, in __call__
+    return self._mock_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/unittest/mock.py", line 1138, in _mock_call
+    return self._execute_mock_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/unittest/mock.py", line 1199, in _execute_mock_call
+    result = effect(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/c/Users/erosi/OneDrive/Desktop/allprojects/keftrade-intelligence/scripts/prepare-rust-prospective.py", line 125, in gate
+    if name=='worker-resource-denied':raise ValueError('Fixture resource exhausted')
+                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: Fixture resource exhausted

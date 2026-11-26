@@ -1,0 +1,10 @@
+{
+  "fixture_sha256": "a513edd01aaaffbbb5d9322cf2d7f45965f423614fc7b654b5119c58dc3a14bf",
+  "original_interruption": {
+    "bytes": "{\"kind\":\"fixture\",\"payload\":{\"messa",
+    "partial_final_record": true,
+    "retry_kind": "ValueError",
+    "retry_message": "Immutable chart evidence differs"
+  },
+  "windows_pointer_failure_sha256": "1acdfab253c17c91c7fa0f351f9df5a7ce1d5e81297199f7229ad6f8771ffc02"
+}

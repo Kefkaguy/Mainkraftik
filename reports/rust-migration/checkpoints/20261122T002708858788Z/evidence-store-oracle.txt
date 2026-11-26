@@ -1,0 +1,2 @@
+{"encoding_cases": 139, "store_cases": 24, "journal_rows": 2, "original_interruption": {"partial_final_record": true, "bytes": "{\"kind\":\"fixture\",\"payload\":{\"messa", "retry_kind": "ValueError", "retry_message": "Immutable chart evidence differs"}}
+

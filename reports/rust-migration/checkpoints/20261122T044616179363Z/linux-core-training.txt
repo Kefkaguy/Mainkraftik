@@ -1,0 +1,2 @@
+{"cases": 10, "single_class_refusals": 3, "training_rows": 2166, "market_data_used": false, "model_promoted": false}
+

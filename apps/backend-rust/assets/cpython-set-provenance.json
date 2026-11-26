@@ -1,0 +1,18 @@
+{
+  "Objects/setobject.c": {
+    "url": "https://raw.githubusercontent.com/python/cpython/v3.12.3/Objects/setobject.c",
+    "sha256": "e633e7ae4e427ecead8879965910e27427d34ae0fc5b956142bc337f741a367c"
+  },
+  "Python/pyhash.c": {
+    "url": "https://raw.githubusercontent.com/python/cpython/v3.12.3/Python/pyhash.c",
+    "sha256": "7f18429290df0726669cbd6d8b5a8b48b843efff648fe8863d48da5db4745628"
+  },
+  "Python/bootstrap_hash.c": {
+    "url": "https://raw.githubusercontent.com/python/cpython/v3.12.3/Python/bootstrap_hash.c",
+    "sha256": "55b5cacbe432a46ff2c1f71985a263ae886f5f57584bf35676d7d38e9f611663"
+  },
+  "LICENSE": {
+    "url": "https://raw.githubusercontent.com/python/cpython/v3.12.3/LICENSE",
+    "sha256": "3b2f81fe21d181c499c59a256c8e1968455d6689d269aa85373bfb6af41da3bf"
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "at": "2026-11-22T00:16:58.100981+00:00",
+  "passed": true,
+  "tests_passed": 2,
+  "exit_code": 0,
+  "command": [
+    "wsl",
+    "-d",
+    "Ubuntu",
+    "--",
+    "/home/erosimcity/.local/share/mainkraft-rust-validation/sentiment-reference/bin/python",
+    "/mnt/c/Users/erosi/OneDrive/Desktop/allprojects/keftrade-intelligence/scripts/test-rust-sentiment.py",
+    "--reference-platform",
+    "linux"
+  ],
+  "references": {
+    "sentiment-inference-parity-linux.json": "b4610d87803078fbf32f9b8a6408355c5ae97645a409f3cf8719e5c7aa3427f3",
+    "sentiment-http-validation-linux.json": "3278d603e0d8b4fb8f5e6686e612d8ca674d6c26fecdb66d631ef2dadb98e512"
+  },
+  "model_retrained": false,
+  "broker_requests": 0,
+  "deployment_allowed": false,
+  "full_linux_validation_complete": false,
+  "outputs": {
+    "native.txt": "2a4aae6751c3ab3f571da2ffcb44c3cd4e779a134ab588f0980b1bc8cb002e2e",
+    "python-packages.txt": "f7681632ab425b961bb99dc83b727c563736a205e02d64bb75ea588736f819cd",
+    "sentiment-http-validation-linux.json": "3278d603e0d8b4fb8f5e6686e612d8ca674d6c26fecdb66d631ef2dadb98e512",
+    "sentiment-inference-parity-linux.json": "b4610d87803078fbf32f9b8a6408355c5ae97645a409f3cf8719e5c7aa3427f3"
+  }
+}

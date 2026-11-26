@@ -1,0 +1,65 @@
+{
+  "verified_at": "2026-11-18T22:32:01.021097+00:00",
+  "tests": {
+    "tests": 222,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "final_focused_tests": {
+    "tests": 14,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "phase7_files_unchanged": 40,
+  "existing_prospective_rows_unchanged": 8,
+  "no_exposed_audit_labels_used": true,
+  "forecast_export_parity": "PASSED",
+  "shared_capital_accounting": "PASSED",
+  "nominated_horizons": {
+    "five_sessions": null,
+    "one_day": null,
+    "one_hour": null,
+    "three_sessions": null,
+    "two_sessions": null
+  },
+  "research_acceptance": "NO_PROFITABLE_TRADING_ADVANTAGE_VALIDATED",
+  "independent_confirmation": "PENDING_FUTURE_DATA",
+  "deployment_authorized": false,
+  "source_sha256": {
+    "apps\\api\\chart_intelligence\\phase8.py": "702c052ac9f141e1d1e88bc6b4a53b7ec2059607e754fc1e8d8f0201f92b7975",
+    "apps\\api\\chart_intelligence\\phase8_accounting.py": "ffbc881d3c64a6b124d45a8a47e5fbf5281f9b7f9b17c44d3eaca29bb13de0b5",
+    "apps\\api\\chart_intelligence\\phase8_evidence.py": "d98f993c80fc84ffc4ac4455a5a70d3504c293ff54dba8bd4e30ec16a83c1e47",
+    "apps\\api\\chart_intelligence\\phase8_execution.py": "6e04eef0ffa66a06864ef583c22822f75ac0e38a03a6ad893d4caf236b07ce33",
+    "apps\\api\\chart_intelligence\\horizon_forward.py": "998dad6d05aa55cf26855540e0139aecd2cc397d1e90598e53a7e07720bcdd3f",
+    "scripts\\audit-phase8-evidence.py": "86b81bf82aedddcd4ce2b49bcc089a4167f33ef7fb877edc5c40e92622a32913",
+    "scripts\\freeze-phase8-boundary.py": "2b4acbdbea7fba0a3154c03c25b668368173f6300e91b666d41fa2d22de0addb",
+    "scripts\\phase8-quote-audit.py": "6dd243738fe3f4bdf263dac64d3498485f675d559a723b4c3551989de5653fac",
+    "scripts\\report-phase8.py": "b55ac04c97da064f6a379a97d246c4bb60f9ca2e6e082f32c19ccf45303b158c",
+    "scripts\\run-phase8-research.py": "91d003f62555ca7b05d2f6c9216e4edfe4761ae4c83ecf73483129c0d8a74da1",
+    "scripts\\watch-phase8.py": "7cf55646fd1f316d4582c5582930a35548ff6a0d8d02fe609ef5a04fe3c32600",
+    "apps\\api\\tests\\test_phase8.py": "ff75d91e9674f21a21774235593fa036c65ca9afeaeb2cb1aa986941a80b64b1",
+    "apps\\api\\tests\\test_horizon_forward.py": "96f376dd76711d55771b20413059bf93fb697de8b8b9ecffa177ccb511bd2036"
+  },
+  "artifact_sha256": {
+    "final-focused-tests.xml": "e6e19922e3d764e4c8b5ddeb282ebf2f288ad324dd8b7c2725cc4acf6081b063",
+    "forward-run-20261118T221712Z.json": "f541bbbb2e48fa6a07514d7d6ee6a4c1e0902026865fa9f4c83472440e544be6",
+    "forward-tests.xml": "5be06f582ddfbebb54569d813097f5e4e48b39dfe5833a077ee766e2ada87ac7",
+    "full-tests.txt": "ad5ab6c841e3b419644d00e51d9e71446e22a039ffea8dde655b3d742d8001bb",
+    "full-tests.xml": "7d3f7f70177d2a97a52ef4f76b447ee793cba496f6ec3b5ce2d31483545cec3a",
+    "live-forward-check.txt": "1db69508e5373849e2d385a07a3104fe153db9af4776afde7840106dacd18af8",
+    "paper-observation.json": "3226ac7a297b7bbcc4146053aea8a8f0b6e09f6d0d1fb3ff071138769af9b33f",
+    "partial-fill-accounting.json": "48db1864933a4304c9d34bfdccf77f7bbecb67b1f5e2a891a6f73696de31c04f",
+    "passive-context.json": "533b8e7e317f7115bfb952a23e957cf505141d6719376146e4e6dd1f7e8bd5e6",
+    "phase7-freeze.json": "858a12a6b835fa4476067ad8e72f4dce6e3d3dd13751e858ed1b9a44107dae95",
+    "preregistration.json": "cd4cf197500c5328e16929c8457de6ace58d8dfbde66ddb66740c3be1a8fa79f",
+    "prospective-status.json": "640b75bafa2d05dadaf3d02c1ff9d9a38c0cdd361a89d98238dd1a45cce4d1be",
+    "quote-coverage.json": "9f0f0105f10dc51f4d710686bc3e0b5a2849ff8e28895946f27e978b9892e2b8",
+    "README.md": "ee9caadbdd5359059bef3b2d8c64a0423b70ba6ebdd6da34ea3eb3e5515322e2",
+    "report-generation.txt": "137b632d41bca634919e3f258cb215797cfced57a96dccc652196de798359aa5",
+    "research-results.json": "cc21e4775a70605f0e360c2fbeddf6ab265555b4a3b39fade466a238b22ef7b3",
+    "research-run.txt": "6446fc3cfba24568d7ac1896637ca62058356323cdb605b8b5d5d83d8bddde10",
+    "research-tests.xml": "91fd21d5021f7636604778ba417ae46c60ece3870699f252d02dac20a495a1cc"
+  }
+}

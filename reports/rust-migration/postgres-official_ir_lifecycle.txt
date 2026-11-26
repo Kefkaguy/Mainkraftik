@@ -1,0 +1,13 @@
+
+running 1 test
+ORIGINAL_OFFICIAL_IR_HTTP_ROBOTS_LISTING_ARTICLE_AND_ENRICHMENT_PARITY=PASS
+IMMUTABLE_PUBLICATION_IDENTITIES_AVAILABILITY_SOURCE_HASHES_AND_PRIVACY=PASS
+INFORMATION_REFRESH_BACKFILL_MARKET_CONTEXT_AND_WHOLE_LISTING_ROLLBACK=PASS
+test official_pages_and_enrichment_match_original_without_backdating_or_rewriting ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 1.54s
+
+
+   Compiling mainkraft v0.1.0 (/mnt/c/Users/erosi/OneDrive/Desktop/allprojects/keftrade-intelligence/apps/backend-rust)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 1.14s
+     Running tests/official_ir_lifecycle.rs (/home/erosimcity/.local/share/mainkraft-rust-validation/target/debug/deps/official_ir_lifecycle-b218616269ef7e46)

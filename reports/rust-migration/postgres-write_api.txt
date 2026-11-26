@@ -1,0 +1,13 @@
+
+running 1 test
+ORIGINAL_WATCHLIST_JOB_WRITE_HTTP_VALIDATION_AND_PAYLOAD_PARITY=PASS
+AUTH_CSRF_IMMUTABLE_WATCHLIST_AND_DURABLE_QUEUED_EVENTS=PASS
+TWELVE_CONCURRENT_CLIENT_SUBMISSIONS_FIVE_ACCEPTED_SEVEN_REJECTED=PASS
+test watchlist_and_job_http_contracts_csrf_and_atomic_queue_admission ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.31s
+
+
+   Compiling mainkraft v0.1.0 (/mnt/c/Users/erosi/OneDrive/Desktop/allprojects/keftrade-intelligence/apps/backend-rust)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 1.33s
+     Running tests/write_api.rs (/home/erosimcity/.local/share/mainkraft-rust-validation/target/debug/deps/write_api-31037469e62b2003)

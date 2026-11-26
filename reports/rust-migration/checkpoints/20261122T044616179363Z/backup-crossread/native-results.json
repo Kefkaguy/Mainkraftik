@@ -1,0 +1,277 @@
+{
+  "verified": [
+    {
+      "application": "keftrade-intelligence",
+      "kind": "research",
+      "restore_verified": true,
+      "restored_database": "intelligence_restore_52deed6eb5ea4cd7b938927cb2ce20d4",
+      "row_counts": {
+        "calculated_metrics": 0,
+        "candidate_results": 0,
+        "chart_detections": 0,
+        "corporate_actions": 0,
+        "daily_bars": 1,
+        "dataset_manifests": 0,
+        "detection_outcomes": 0,
+        "evaluation_access_log": 0,
+        "evaluation_reports": 0,
+        "feature_snapshots": 0,
+        "filing_events": 0,
+        "financial_facts": 0,
+        "forecast_outcomes": 0,
+        "forecast_runs": 0,
+        "forecasts": 0,
+        "information_fetches": 0,
+        "information_versions": 0,
+        "ingest_runs": 0,
+        "job_events": 0,
+        "jobs": 0,
+        "login_attempts": 0,
+        "model_versions": 2,
+        "research_audits": 0,
+        "research_candidates": 0,
+        "research_experiments": 0,
+        "research_plans": 0,
+        "research_predictions": 0,
+        "scheduler_marks": 0,
+        "schema_migrations": 6,
+        "securities": 5,
+        "sessions": 0,
+        "shadow_artifacts": 0,
+        "shadow_events": 0,
+        "shadow_protocols": 0,
+        "shadow_verdicts": 0,
+        "source_documents": 1,
+        "training_universe_versions": 1,
+        "tuning_events": 0,
+        "tuning_plans": 0,
+        "tuning_trials": 0,
+        "vision_models": 2,
+        "watchlist_versions": 1,
+        "worker_status": 0
+      },
+      "sha256": "2819aa3e0d7d5db418fe520f6c29499ed14983efff4e5651525e4f3c587e9a9f",
+      "bytes": 10477,
+      "sequence_repairs": []
+    },
+    {
+      "application": "keftrade-intelligence",
+      "kind": "paper",
+      "restore_verified": true,
+      "restored_database": "intelligence_paper_test_bak_08ca4df6fc79441094d71129a25e3487",
+      "row_counts": {
+        "learning_accounts": 2,
+        "learning_controls": 1,
+        "learning_intents": 3,
+        "learning_records": 2,
+        "pilot_asset_versions": 0,
+        "pilot_benchmarks": 0,
+        "pilot_connection": 0,
+        "pilot_daily_reports": 0,
+        "pilot_decisions": 0,
+        "pilot_events": 1,
+        "pilot_forecast_outcomes": 0,
+        "pilot_groq_calls": 0,
+        "pilot_intents": 0,
+        "pilot_order_versions": 0,
+        "pilot_quotes": 0,
+        "pilot_readiness": 0,
+        "pilot_research_runs": 0,
+        "pilot_selections": 0,
+        "pilot_settings": 1,
+        "pilot_shadow_sessions": 0,
+        "pilot_snapshots": 0,
+        "pilot_sources": 0,
+        "pilot_strategy_outcomes": 0,
+        "pilot_strategy_sessions": 0,
+        "pilot_strategy_signals": 0,
+        "pilot_strategy_verdicts": 0,
+        "pilot_virtual_outcomes": 0
+      },
+      "sha256": "39f18bc5a7016d8281ed112a8e0fc4177b77f0f0f8246564981652868eb0ae2b",
+      "bytes": 6617,
+      "sequence_repairs": []
+    }
+  ],
+  "receipts": [
+    {
+      "kind": "research",
+      "export": {
+        "application": "keftrade-intelligence",
+        "kind": "research",
+        "sha256": "2819aa3e0d7d5db418fe520f6c29499ed14983efff4e5651525e4f3c587e9a9f",
+        "bytes": 10477,
+        "created_at": "2026-11-22T04:54:57.014115+00:00",
+        "rows": 19
+      },
+      "restore": {
+        "application": "keftrade-intelligence",
+        "kind": "research",
+        "restore_verified": true,
+        "restored_database": "intelligence_restore_a9ad38ef335b_13",
+        "row_counts": {
+          "calculated_metrics": 0,
+          "candidate_results": 0,
+          "chart_detections": 0,
+          "corporate_actions": 0,
+          "daily_bars": 1,
+          "dataset_manifests": 0,
+          "detection_outcomes": 0,
+          "evaluation_access_log": 0,
+          "evaluation_reports": 0,
+          "feature_snapshots": 0,
+          "filing_events": 0,
+          "financial_facts": 0,
+          "forecast_outcomes": 0,
+          "forecast_runs": 0,
+          "forecasts": 0,
+          "information_fetches": 0,
+          "information_versions": 0,
+          "ingest_runs": 0,
+          "job_events": 0,
+          "jobs": 0,
+          "login_attempts": 0,
+          "model_versions": 2,
+          "research_audits": 0,
+          "research_candidates": 0,
+          "research_experiments": 0,
+          "research_plans": 0,
+          "research_predictions": 0,
+          "scheduler_marks": 0,
+          "schema_migrations": 6,
+          "securities": 5,
+          "sessions": 0,
+          "shadow_artifacts": 0,
+          "shadow_events": 0,
+          "shadow_protocols": 0,
+          "shadow_verdicts": 0,
+          "source_documents": 1,
+          "training_universe_versions": 1,
+          "tuning_events": 0,
+          "tuning_plans": 0,
+          "tuning_trials": 0,
+          "vision_models": 2,
+          "watchlist_versions": 1,
+          "worker_status": 0
+        },
+        "sha256": "4fe5f7fb65b610a43e28bf0ded5b55752dc4a1042f24aa78bcc09fa8e104bc14",
+        "bytes": 8121,
+        "sequence_repairs": []
+      }
+    },
+    {
+      "kind": "paper",
+      "export": {
+        "application": "keftrade-intelligence",
+        "kind": "paper",
+        "sha256": "39f18bc5a7016d8281ed112a8e0fc4177b77f0f0f8246564981652868eb0ae2b",
+        "bytes": 6617,
+        "created_at": "2026-11-22T04:54:58.688607+00:00",
+        "rows": 10
+      },
+      "restore": {
+        "application": "keftrade-intelligence",
+        "kind": "paper",
+        "restore_verified": true,
+        "restored_database": "intelligence_paper_test_a9ad38ef335b_14",
+        "row_counts": {
+          "learning_accounts": 2,
+          "learning_controls": 1,
+          "learning_intents": 3,
+          "learning_records": 2,
+          "pilot_asset_versions": 0,
+          "pilot_benchmarks": 0,
+          "pilot_connection": 0,
+          "pilot_daily_reports": 0,
+          "pilot_decisions": 0,
+          "pilot_events": 1,
+          "pilot_forecast_outcomes": 0,
+          "pilot_groq_calls": 0,
+          "pilot_intents": 0,
+          "pilot_order_versions": 0,
+          "pilot_quotes": 0,
+          "pilot_readiness": 0,
+          "pilot_research_runs": 0,
+          "pilot_selections": 0,
+          "pilot_settings": 1,
+          "pilot_shadow_sessions": 0,
+          "pilot_snapshots": 0,
+          "pilot_sources": 0,
+          "pilot_strategy_outcomes": 0,
+          "pilot_strategy_sessions": 0,
+          "pilot_strategy_signals": 0,
+          "pilot_strategy_verdicts": 0,
+          "pilot_virtual_outcomes": 0
+        },
+        "sha256": "843684496b8416b52a2d0eb62fa19d839335a0593c7c0c0d2f3d02b3e723bd58",
+        "bytes": 5014,
+        "sequence_repairs": []
+      }
+    }
+  ],
+  "failures": [
+    {
+      "case": "wrong-kind",
+      "rejected": true,
+      "target_tables": 0
+    },
+    {
+      "case": "wrong-major",
+      "rejected": true,
+      "target_tables": 0
+    },
+    {
+      "case": "wrong-count",
+      "rejected": true,
+      "target_tables": 0
+    },
+    {
+      "case": "bad-copy",
+      "rejected": true,
+      "target_tables": 0
+    },
+    {
+      "case": "missing-member",
+      "rejected": true,
+      "target_tables": 0
+    },
+    {
+      "case": "extra-member",
+      "rejected": true,
+      "target_tables": 0
+    },
+    {
+      "case": "wrong-hash",
+      "rejected": true,
+      "target_tables": 0
+    },
+    {
+      "case": "schema-mismatch",
+      "rejected": true,
+      "target_tables": 0
+    },
+    {
+      "case": "wrong-crc",
+      "rejected": true,
+      "target_tables": 0
+    },
+    {
+      "case": "duplicate-member",
+      "rejected": true,
+      "target_tables": 0
+    },
+    {
+      "case": "wrong-migrations",
+      "rejected": true,
+      "target_tables": 0
+    }
+  ],
+  "overwrite_prevented": true,
+  "concurrent_publication": true,
+  "request_cancellation_retains_worker": true,
+  "sequence_continuity": true,
+  "immutable_records_preserved": true,
+  "failed_verifier_database_cleaned": true,
+  "resource_boundary": true,
+  "broker_requests": 0
+}

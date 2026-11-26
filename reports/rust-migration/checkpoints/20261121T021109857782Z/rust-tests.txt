@@ -1,0 +1,279 @@
+
+running 9 tests
+test official_ir::tests::loopback_tls_http_cookies_compression_and_limits_match_python ... ignored, requires scripts/test-rust-ir-http.py loopback TLS oracle
+test sentiment_worker::tests::native_http_contract_and_cancellation_keep_single_inference_job ... ignored, requires scripts/test-rust-sentiment.py pinned artifacts/runtime
+test api::validation_tests::control_wire_validation_matches_fastapi ... ok
+test canonical::tests::python_exponents_and_unicode ... ok
+test research_providers::tests::research_transport_rejects_non_provider_targets ... ok
+test sentiment_worker::tests::python_http_validation_contract ... ok
+test broker::tests::incomplete_migration_cannot_submit_or_cancel ... ok
+test sentiment_worker::tests::frozen_manifest_identity_and_external_paths_are_enforced ... ok
+test official_ir::tests::cancelled_callers_retain_two_parser_slots_until_blocking_work_finishes ... ok
+
+test result: ok. 7 passed; 0 failed; 2 ignored; 0 measured; 0 filtered out; finished in 0.04s
+
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+
+running 1 test
+test authentication_preserves_python_password_sessions_csrf_and_throttle ... ignored, requires isolated research DB from scripts/test-rust-postgres.py
+
+test result: ok. 0 passed; 0 failed; 1 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+
+running 2 tests
+test original_chart_pixels_png_and_archived_manifest_identities_match ... ok
+test archived_detection_annotation_font_pixels_and_png_match_original_route ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 1.69s
+
+
+running 1 test
+test acquired_news_matches_python_and_keeps_truncation_and_provenance_explicit ... ignored, requires scripts/test-rust-postgres.py isolated paper DB
+
+test result: ok. 0 passed; 0 failed; 1 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+
+running 1 test
+test two_account_monitor_allocate_fill_exit_restart_and_prequential_learning ... ignored, requires scripts/test-rust-postgres.py isolated paper DB
+
+test result: ok. 0 passed; 0 failed; 1 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+
+running 1 test
+test gaap_metrics_select_original_versions_periods_and_sources ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.15s
+
+
+running 1 test
+test original_baseline_and_decimal_outcome_arithmetic ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.01s
+
+
+running 1 test
+test original_forecast_issuance_and_resolution_are_atomic_causal_and_restart_safe ... ignored, requires original Python isolated workflow oracle
+
+test result: ok. 0 passed; 0 failed; 1 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+
+running 1 test
+test private_news_filings_and_information_identities_match_python ... ignored, requires original Python information oracle in isolated DB schemas
+
+test result: ok. 0 passed; 0 failed; 1 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+
+running 1 test
+test original_private_news_metadata_and_unicode_flag_semantics ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.06s
+
+
+running 2 tests
+test overflowing_publication_metadata_keeps_original_uncaught_error ... ok
+test original_python_information_timestamp_acceptance_precision_and_errors ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.07s
+
+
+running 1 test
+test original_ingestion_storage_transactions_and_restart_recovery ... ignored, requires isolated original Python ingestion oracle
+
+test result: ok. 0 passed; 0 failed; 1 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+
+running 1 test
+test legacy_html_text_entities_attributes_and_robots_match_python ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.01s
+
+
+running 1 test
+test durable_jobs_preserve_completion_priority_ownership_recovery_and_scheduler_marks ... ignored, requires scripts/test-rust-postgres.py isolated research DB
+
+test result: ok. 0 passed; 0 failed; 1 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+
+running 1 test
+test existing_research_progress_does_not_promote_or_finalize ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.01s
+
+
+running 1 test
+test full_durable_order_lifecycle_against_isolated_postgres ... ignored, requires scripts/test-rust-postgres.py and the isolated local PostgreSQL fixture
+
+test result: ok. 0 passed; 0 failed; 1 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+
+running 1 test
+test daily_ingestion_frozen_inference_quote_and_source_identity_match_python ... ignored, requires scripts/test-rust-postgres.py isolated paper DB
+
+test result: ok. 0 passed; 0 failed; 1 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+
+running 1 test
+test descriptive_risk_reliability_calibration_and_issuance_match_python ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.07s
+
+
+running 2 tests
+test strict_schema_citations_and_duplicate_rejections_match_python ... ok
+test sourced_context_budget_and_input_order_match_python ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.19s
+
+
+running 1 test
+test official_pages_and_enrichment_match_original_without_backdating_or_rewriting ... ignored, requires isolated Python official IR workflow oracle
+
+test result: ok. 0 passed; 0 failed; 1 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+
+running 4 tests
+test portfolio_policy_including_seeded_exploration_matches_python ... ok
+test decimal_shares_and_close_before_reversal_match_python ... ok
+test exchange_targets_match_through_holidays_early_close_and_dst ... ok
+test causal_daily_features_match_numpy ... ok
+
+test result: ok. 4 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.07s
+
+
+running 4 tests
+test frozen_network_forward_does_not_substitute_a_model ... ok
+test frozen_and_synthetic_numeric_models_match_python ... ok
+test residual_ridge_matches_numpy_solve ... ok
+test historical_bundle_and_record_identities_match_python ... ok
+
+test result: ok. 4 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.08s
+
+
+running 1 test
+test shared_budget_survives_concurrency_failure_and_restart_without_retry ... ignored, requires scripts/test-rust-postgres.py isolated paper DB
+
+test result: ok. 0 passed; 0 failed; 1 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+
+running 1 test
+test request_hash_prompt_order_and_response_validation_match_python ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+
+running 1 test
+test original_immutable_research_and_sqlite_status_contracts_match_without_writes ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.52s
+
+
+running 1 test
+test existing_company_workspace_forecast_research_and_monitoring_contracts_match_python ... ignored, requires scripts/test-rust-postgres.py original seeded Python API oracle
+
+test result: ok. 0 passed; 0 failed; 1 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+
+running 1 test
+test native_jobs_use_actual_services_match_python_and_recover_committed_refresh ... ignored, requires original Python durable dispatch oracle in disposable local schemas
+
+test result: ok. 0 passed; 0 failed; 1 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+
+running 1 test
+test full_premarket_research_freezes_only_timely_covered_selections_and_matches_python ... ignored, requires scripts/test-rust-postgres.py isolated paper DB
+
+test result: ok. 0 passed; 0 failed; 1 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+
+running 3 tests
+test research_requests_remain_bounded_and_cancelled_requests_release_capacity ... ok
+test research_provider_request_pagination_retry_and_no_substitution_match_python ... ok
+test research_decimal_validation_and_sec_filing_identities_match_python ... ok
+
+test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.07s
+
+
+running 1 test
+test pcg64_and_ziggurat_preserve_existing_exploration ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.01s
+
+
+running 1 test
+test native_frozen_worker_matches_original_python_tokens_logits_and_scores ... ignored, requires scripts/test-rust-sentiment.py pinned frozen artifacts/runtime
+
+test result: ok. 0 passed; 0 failed; 1 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+
+running 1 test
+test sourced_text_hashes_and_sentiment_aggregation_match_python ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+
+running 1 test
+test watchlist_and_job_http_contracts_csrf_and_atomic_queue_admission ... ignored, requires scripts/test-rust-postgres.py isolated research DB
+
+test result: ok. 0 passed; 0 failed; 1 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+
+running 2 tests
+test tests::invalid_buffers_never_reach_ffi ... ok
+test tests::repeated_compression_has_no_global_stream_state ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+
+   Compiling mainkraft v0.1.0 (C:\Users\erosi\OneDrive\Desktop\allprojects\keftrade-intelligence\apps\backend-rust)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 30.36s
+     Running unittests src\lib.rs (apps\backend-rust\target\debug\deps\mainkraft-319a1add533ee206.exe)
+     Running unittests src\main.rs (apps\backend-rust\target\debug\deps\mainkraft-04f95fce14638ac1.exe)
+     Running tests\api_contract.rs (apps\backend-rust\target\debug\deps\api_contract-49403b7a8aaa02e9.exe)
+     Running tests\chart_parity.rs (apps\backend-rust\target\debug\deps\chart_parity-ffa41dbae92e63f6.exe)
+     Running tests\discovery_lifecycle.rs (apps\backend-rust\target\debug\deps\discovery_lifecycle-bac7033caf58004d.exe)
+     Running tests\engine_lifecycle.rs (apps\backend-rust\target\debug\deps\engine_lifecycle-be48df985cf3c810.exe)
+     Running tests\financial_parity.rs (apps\backend-rust\target\debug\deps\financial_parity-927d41fcdaf404ab.exe)
+     Running tests\forecast_statistics.rs (apps\backend-rust\target\debug\deps\forecast_statistics-f924c4a73ac7aad9.exe)
+     Running tests\forecasting_lifecycle.rs (apps\backend-rust\target\debug\deps\forecasting_lifecycle-491450a6e8397d28.exe)
+     Running tests\information_lifecycle.rs (apps\backend-rust\target\debug\deps\information_lifecycle-5193023f51982091.exe)
+     Running tests\information_metadata.rs (apps\backend-rust\target\debug\deps\information_metadata-4ebf9563347c4f64.exe)
+     Running tests\information_time.rs (apps\backend-rust\target\debug\deps\information_time-5b4812c6a5631fb6.exe)
+     Running tests\ingestion_lifecycle.rs (apps\backend-rust\target\debug\deps\ingestion_lifecycle-1c8b7753c799e311.exe)
+     Running tests\ir_parity.rs (apps\backend-rust\target\debug\deps\ir_parity-15f5356927f9bb0f.exe)
+     Running tests\jobs_lifecycle.rs (apps\backend-rust\target\debug\deps\jobs_lifecycle-00cc9c77977f30a6.exe)
+     Running tests\legacy_progress.rs (apps\backend-rust\target\debug\deps\legacy_progress-498ec222d97c4e59.exe)
+     Running tests\lifecycle.rs (apps\backend-rust\target\debug\deps\lifecycle-19a5aeb912861680.exe)
+     Running tests\market_parity.rs (apps\backend-rust\target\debug\deps\market_parity-fdc2b67245de6b4c.exe)
+     Running tests\monitoring_parity.rs (apps\backend-rust\target\debug\deps\monitoring_parity-0b3b289328303f2e.exe)
+     Running tests\news_parity.rs (apps\backend-rust\target\debug\deps\news_parity-66aa4cf6411a4cc5.exe)
+     Running tests\official_ir_lifecycle.rs (apps\backend-rust\target\debug\deps\official_ir_lifecycle-226071ffd4908963.exe)
+     Running tests\policy_parity.rs (apps\backend-rust\target\debug\deps\policy_parity-3cc552b3c24bcd8c.exe)
+     Running tests\python_parity.rs (apps\backend-rust\target\debug\deps\python_parity-dffb52fd028fa441.exe)
+     Running tests\ranking_lifecycle.rs (apps\backend-rust\target\debug\deps\ranking_lifecycle-74911793d05a35cf.exe)
+     Running tests\ranking_parity.rs (apps\backend-rust\target\debug\deps\ranking_parity-eab89afaad5d4762.exe)
+     Running tests\report_parity.rs (apps\backend-rust\target\debug\deps\report_parity-ac39b788d6491f60.exe)
+     Running tests\research_api.rs (apps\backend-rust\target\debug\deps\research_api-b432f20982ec2a62.exe)
+     Running tests\research_dispatch.rs (apps\backend-rust\target\debug\deps\research_dispatch-4dd145d8710e87f0.exe)
+     Running tests\research_lifecycle.rs (apps\backend-rust\target\debug\deps\research_lifecycle-1ff3eee4152688fc.exe)
+     Running tests\research_providers.rs (apps\backend-rust\target\debug\deps\research_providers-1977b0efbf57b1a3.exe)
+     Running tests\rng_parity.rs (apps\backend-rust\target\debug\deps\rng_parity-cca01814a6b6476c.exe)
+     Running tests\sentiment_inference.rs (apps\backend-rust\target\debug\deps\sentiment_inference-3377365f3961db73.exe)
+     Running tests\sentiment_parity.rs (apps\backend-rust\target\debug\deps\sentiment_parity-d8761f029ab13b8e.exe)
+     Running tests\write_api.rs (apps\backend-rust\target\debug\deps\write_api-48750de412b2a4f4.exe)
+     Running unittests src\lib.rs (apps\backend-rust\target\debug\deps\mainkraft_png_codec-b8afb89f2ad11f2e.exe)
+   Doc-tests mainkraft
+   Doc-tests mainkraft_png_codec

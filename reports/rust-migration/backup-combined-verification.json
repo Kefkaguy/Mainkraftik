@@ -1,0 +1,80 @@
+{
+  "at": "2026-11-21T22:38:00.135258+00:00",
+  "checkpoint": "reports/rust-migration/checkpoints/20261121T221924459300Z/manifest.json",
+  "checkpoint_sha256": "1c83b013fbb5c479001550c60b20f7d65ebf564b7e834215a8fa5bb29a61e0f8",
+  "passed": true,
+  "source_files_and_zip_members": 196,
+  "output_files": 80,
+  "test_counts": {
+    "rust-tests": 51,
+    "isolated-postgres": 18,
+    "native-backup-crossread": 1,
+    "linux-core-native": 51,
+    "native-sentiment": 2,
+    "native-ir-http": 1,
+    "native-evidence": 2
+  },
+  "preservation": [
+    {
+      "name": "phase7-frozen",
+      "files": 40,
+      "differences": []
+    },
+    {
+      "name": "phase7-phase8-research",
+      "files": 38,
+      "differences": []
+    },
+    {
+      "name": "phase8-compressed-frozen",
+      "files": 27,
+      "differences": []
+    },
+    {
+      "name": "original-python",
+      "files": 106,
+      "differences": []
+    },
+    {
+      "name": "tested-source-identity",
+      "files": 196,
+      "differences": []
+    }
+  ],
+  "binary_copy_payloads_crosschecked": 70,
+  "windows_backup_crossread_passed": true,
+  "linux_database_suite_status": "17 passed; research_api chart bytes differ; see linux-chart-first-difference.json",
+  "full_migration_complete": false,
+  "deployment_allowed": false,
+  "independent_preservation": {
+    "phase7": {
+      "files": 40,
+      "differences": []
+    },
+    "research": {
+      "files": 38,
+      "differences": []
+    },
+    "phase8_compressed": {
+      "files": 27,
+      "differences": []
+    },
+    "original_python": {
+      "files": 106,
+      "differences": []
+    }
+  },
+  "verified_existing_records": {
+    "phase7-records": 16,
+    "chart-records": 18,
+    "phase8-compressed-records": 27,
+    "lab-records": 7266
+  },
+  "linux_database_failure_manifest": "reports/rust-migration/linux-database-first-run/manifest.json",
+  "linux_database_failure_manifest_sha256": "7796a774d7dfaf2bcc412ad6df557ea47d1025ef583c8e1fee475bb1837e80af",
+  "linux_backup_crossread": {
+    "passed": true,
+    "manifest": "reports/rust-migration/linux-backup-crossread/manifest.json",
+    "sha256": "1767e91fd56396f4741159efac3d40f25bc60ffc06463acd8b4915d6989f1bb9"
+  }
+}

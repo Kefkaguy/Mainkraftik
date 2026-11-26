@@ -1,0 +1,11 @@
+[Unit]
+Description=Weekly HTTPS renewal check for KefTrade Intelligence
+
+[Timer]
+OnCalendar=Sun *-*-* 04:10:00 UTC
+RandomizedDelaySec=1800
+Persistent=true
+Unit=keftrade-intelligence-tls.service
+
+[Install]
+WantedBy=timers.target

@@ -1,0 +1,93 @@
+Captured 19 original durable jobs and 11 persisted evidence families; actual workflows, fake HTTP only
+
+Research job 6b3f2ca2-3128-5fa4-a713-3546b49339f6 failed
+Traceback (most recent call last):
+  File "/mnt/c/Users/erosi/OneDrive/Desktop/allprojects/keftrade-intelligence/apps/api/intelligence/jobs.py", line 152, in run_once
+    result = dispatch(job["kind"], job["payload"])
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/c/Users/erosi/OneDrive/Desktop/allprojects/keftrade-intelligence/apps/api/intelligence/jobs.py", line 56, in dispatch
+    raise ValueError("Refresh symbols must belong to the verified securities registry")
+ValueError: Refresh symbols must belong to the verified securities registry
+Research job c838abb9-20f8-5c70-9f60-0ac461d64f49 failed
+Traceback (most recent call last):
+  File "/mnt/c/Users/erosi/OneDrive/Desktop/allprojects/keftrade-intelligence/apps/api/intelligence/jobs.py", line 152, in run_once
+    result = dispatch(job["kind"], job["payload"])
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/c/Users/erosi/OneDrive/Desktop/allprojects/keftrade-intelligence/apps/api/intelligence/jobs.py", line 56, in dispatch
+    raise ValueError("Refresh symbols must belong to the verified securities registry")
+ValueError: Refresh symbols must belong to the verified securities registry
+Research job fd644abc-535e-51c7-ab92-f79f95f595d8 failed
+Traceback (most recent call last):
+  File "/mnt/c/Users/erosi/OneDrive/Desktop/allprojects/keftrade-intelligence/apps/api/intelligence/jobs.py", line 152, in run_once
+    result = dispatch(job["kind"], job["payload"])
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/c/Users/erosi/OneDrive/Desktop/allprojects/keftrade-intelligence/apps/api/intelligence/jobs.py", line 56, in dispatch
+    raise ValueError("Refresh symbols must belong to the verified securities registry")
+ValueError: Refresh symbols must belong to the verified securities registry
+Research job 77835a27-d0b4-585c-bccc-c2ba03a521cb failed
+Traceback (most recent call last):
+  File "/mnt/c/Users/erosi/OneDrive/Desktop/allprojects/keftrade-intelligence/apps/api/intelligence/jobs.py", line 152, in run_once
+    result = dispatch(job["kind"], job["payload"])
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/c/Users/erosi/OneDrive/Desktop/allprojects/keftrade-intelligence/apps/api/intelligence/jobs.py", line 55, in dispatch
+    if not set(symbols) <= known or len(symbols) > 26:
+           ^^^^^^^^^^^^
+TypeError: unhashable type: 'list'
+Research job b7c66afc-d925-517b-9a8a-e4deb1f694ff failed
+Traceback (most recent call last):
+  File "/mnt/c/Users/erosi/OneDrive/Desktop/allprojects/keftrade-intelligence/apps/api/intelligence/jobs.py", line 152, in run_once
+    result = dispatch(job["kind"], job["payload"])
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/c/Users/erosi/OneDrive/Desktop/allprojects/keftrade-intelligence/apps/api/intelligence/jobs.py", line 56, in dispatch
+    raise ValueError("Refresh symbols must belong to the verified securities registry")
+ValueError: Refresh symbols must belong to the verified securities registry
+Research job 331dc524-d33d-5e00-8139-8d945cc9cd27 failed
+Traceback (most recent call last):
+  File "/mnt/c/Users/erosi/OneDrive/Desktop/allprojects/keftrade-intelligence/apps/api/intelligence/jobs.py", line 152, in run_once
+    result = dispatch(job["kind"], job["payload"])
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/c/Users/erosi/OneDrive/Desktop/allprojects/keftrade-intelligence/apps/api/intelligence/jobs.py", line 55, in dispatch
+    if not set(symbols) <= known or len(symbols) > 26:
+           ^^^^^^^^^^^^
+TypeError: 'int' object is not iterable
+Research job 86fc466f-22eb-5583-bc25-b6ebcbc18569 failed
+Traceback (most recent call last):
+  File "/mnt/c/Users/erosi/OneDrive/Desktop/allprojects/keftrade-intelligence/apps/api/intelligence/jobs.py", line 152, in run_once
+    result = dispatch(job["kind"], job["payload"])
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/c/Users/erosi/OneDrive/Desktop/allprojects/keftrade-intelligence/apps/api/intelligence/jobs.py", line 50, in dispatch
+    resource_check()
+  File "/usr/lib/python3.12/unittest/mock.py", line 1134, in __call__
+    return self._mock_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/unittest/mock.py", line 1138, in _mock_call
+    return self._execute_mock_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/unittest/mock.py", line 1199, in _execute_mock_call
+    result = effect(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/c/Users/erosi/OneDrive/Desktop/allprojects/keftrade-intelligence/scripts/prepare-rust-dispatch.py", line 58, in gate
+    if state.get('phase')=='resource-denied':raise providers.ProviderError('Fixture resource exhausted')
+                                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+intelligence.providers.ProviderError: Fixture resource exhausted
+Research job d61bc4f2-02d8-5b4b-a8b9-cadf5ea0846d failed
+Traceback (most recent call last):
+  File "/mnt/c/Users/erosi/OneDrive/Desktop/allprojects/keftrade-intelligence/apps/api/intelligence/jobs.py", line 152, in run_once
+    result = dispatch(job["kind"], job["payload"])
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/c/Users/erosi/OneDrive/Desktop/allprojects/keftrade-intelligence/apps/api/intelligence/jobs.py", line 104, in dispatch
+    result = refresh_information()
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/c/Users/erosi/OneDrive/Desktop/allprojects/keftrade-intelligence/apps/api/intelligence/information.py", line 390, in refresh_information
+    news = ingest_news(start=None if backfill else now() - timedelta(days=45))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/c/Users/erosi/OneDrive/Desktop/allprojects/keftrade-intelligence/apps/api/intelligence/information.py", line 127, in ingest_news
+    metadata = [news_metadata(row) for row in payload.get("news", [])]
+                ^^^^^^^^^^^^^^^^^^
+  File "/mnt/c/Users/erosi/OneDrive/Desktop/allprojects/keftrade-intelligence/apps/api/intelligence/information.py", line 52, in news_metadata
+    created, updated = stamp(row["created_at"]), stamp(row["updated_at"])
+                       ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/c/Users/erosi/OneDrive/Desktop/allprojects/keftrade-intelligence/apps/api/intelligence/information.py", line 30, in stamp
+    return result.astimezone(UTC)
+           ^^^^^^^^^^^^^^^^^^^^^^
+OverflowError: date value out of range

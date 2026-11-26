@@ -1,0 +1,11 @@
+.git
+.env
+.venv
+.local
+**/node_modules*
+**/.next
+**/__pycache__
+**/*.pyc
+**/.pytest_cache
+artifacts/private
+tools/lean-audit

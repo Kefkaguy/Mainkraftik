@@ -1,0 +1,11 @@
+{
+  "zlib_runtime": "1.3",
+  "same_filtered_rows": true,
+  "exact_classic_zlib_compressed_stream": true,
+  "row_bytes": 1921,
+  "height": 640,
+  "compressed_sha256": "feede25b6821b4c359af78e1d5523fd49ad2cc90c2acdb1ed79b8c0b0dad7fe4",
+  "expected_compressed_sha256": "feede25b6821b4c359af78e1d5523fd49ad2cc90c2acdb1ed79b8c0b0dad7fe4",
+  "source_oracle_sha256": "f4844d5628a05722a8caff335803d7a3d81cf3e6e5de4a9d3de7b5832e55a5c8",
+  "production_changes": false
+}

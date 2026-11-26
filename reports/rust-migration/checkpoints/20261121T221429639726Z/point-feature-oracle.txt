@@ -1,0 +1,3 @@
+{"information_cases": 14, "contexts": 9, "build_cases": 18, "rows": 135}
+{"boundary_contexts": 5, "build_cases": 10, "rows": 136}
+

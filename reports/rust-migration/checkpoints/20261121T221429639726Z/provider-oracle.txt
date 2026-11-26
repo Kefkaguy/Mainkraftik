@@ -1,0 +1,3 @@
+Saved 12 decimal/bar, 11 filing-time, 3 GAAP normalization, 18 provider request/failure oracles
+Saved negative-zero decimal/JSON canonical identity edge cases
+

@@ -1,0 +1,12 @@
+{
+  "at": "2026-11-21T22:56:39.399694+00:00",
+  "original_windows_linux_tokenization_exact": true,
+  "original_max_logit_difference": 0.0,
+  "original_max_score_difference": 0.0,
+  "original_http_contract_equal": true,
+  "linux_reference_directory": ".local/rust-migration/sentiment-linux/20261121T225601896458Z",
+  "linux_reference_result_sha256": "cfd8aaea75d4b93d0589dd595d62643e005bdd8b7e66ccda040168d6f24953f6",
+  "rust_linux_parity_verified": false,
+  "model_retrained": false,
+  "broker_requests": 0
+}

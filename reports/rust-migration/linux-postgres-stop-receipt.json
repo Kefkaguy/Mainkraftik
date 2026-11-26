@@ -1,0 +1,12 @@
+{
+  "at": "2026-11-21T22:40:46.563117+00:00",
+  "stopped_owned_test_cluster": true,
+  "remaining_databases": [
+    "postgres",
+    "template0",
+    "template1"
+  ],
+  "data_preserved": true,
+  "system_service_installed": false,
+  "output": "waiting for server to shut down.... done\nserver stopped\n"
+}

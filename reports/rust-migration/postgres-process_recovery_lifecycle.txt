@@ -1,0 +1,9 @@
+
+running 1 test
+test engine_process_death_recovery ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 1 filtered out; finished in 0.58s
+
+
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 0.35s
+     Running tests/process_recovery_lifecycle.rs (/home/erosimcity/.local/share/mainkraft-rust-validation/target/debug/deps/process_recovery_lifecycle-47801b60fe000a3b)

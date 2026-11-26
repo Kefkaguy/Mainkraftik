@@ -1,0 +1,844 @@
+{
+  "captured_at": "2026-11-18T22:18:25.311222+00:00",
+  "evidence_type": "ALPACA_PAPER_APPLICATION_LEDGER",
+  "broker_history_directly_verified": false,
+  "data": {
+    "observed_at": "2026-11-18T22:18:26.082073+00:00",
+    "signals": 72,
+    "intents": 1,
+    "order_versions": 6,
+    "latest_snapshot": {
+      "observed_at": "2026-11-18T22:17:25.995439+00:00",
+      "positions": [
+        {
+          "qty": "17.37597741",
+          "side": "long",
+          "symbol": "UBS",
+          "asset_id": "136c5a67-9124-4e3c-9e6c-06381181cd5e",
+          "exchange": "NYSE",
+          "cost_basis": "799.99",
+          "asset_class": "us_equity",
+          "change_today": "-0.01954",
+          "market_value": "793.213369",
+          "current_price": "45.65",
+          "lastday_price": "46.56",
+          "qty_available": "17.37597741",
+          "unrealized_pl": "-6.776631",
+          "avg_entry_price": "46.04",
+          "unrealized_plpc": "-0.00847",
+          "asset_marginable": true,
+          "unrealized_intraday_pl": "-6.776631",
+          "unrealized_intraday_plpc": "-0.00847"
+        }
+      ],
+      "realized_pnl": 0.0,
+      "unrealized_pnl": -6.776631,
+      "cash_consistent": true
+    },
+    "today_signals": [
+      {
+        "session_date": "2026-11-18",
+        "symbol": "AAPL",
+        "strategy": "day",
+        "role": "challenger",
+        "action": "HOLD",
+        "reasons": [
+          "Below strategy probability threshold",
+          "Sourced news assessment is not bullish"
+        ]
+      },
+      {
+        "session_date": "2026-11-18",
+        "symbol": "AAPL",
+        "strategy": "day",
+        "role": "paper",
+        "action": "HOLD",
+        "reasons": [
+          "Below strategy probability threshold",
+          "Expected net return below minimum margin",
+          "Sourced news assessment is not bullish"
+        ]
+      },
+      {
+        "session_date": "2026-11-18",
+        "symbol": "AAPL",
+        "strategy": "swing",
+        "role": "challenger",
+        "action": "HOLD",
+        "reasons": [
+          "Below strategy probability threshold",
+          "Expected net return below minimum margin",
+          "Sourced news assessment is not bullish"
+        ]
+      },
+      {
+        "session_date": "2026-11-18",
+        "symbol": "AAPL",
+        "strategy": "swing",
+        "role": "paper",
+        "action": "HOLD",
+        "reasons": [
+          "Below strategy probability threshold",
+          "Expected net return below minimum margin",
+          "Sourced news assessment is not bullish"
+        ]
+      },
+      {
+        "session_date": "2026-11-18",
+        "symbol": "ALM",
+        "strategy": "day",
+        "role": "challenger",
+        "action": "HOLD",
+        "reasons": [
+          "Below strategy probability threshold"
+        ]
+      },
+      {
+        "session_date": "2026-11-18",
+        "symbol": "ALM",
+        "strategy": "day",
+        "role": "paper",
+        "action": "HOLD",
+        "reasons": [
+          "Below strategy probability threshold",
+          "Expected net return below minimum margin"
+        ]
+      },
+      {
+        "session_date": "2026-11-18",
+        "symbol": "ALM",
+        "strategy": "swing",
+        "role": "challenger",
+        "action": "HOLD",
+        "reasons": [
+          "Below strategy probability threshold",
+          "Expected net return below minimum margin"
+        ]
+      },
+      {
+        "session_date": "2026-11-18",
+        "symbol": "ALM",
+        "strategy": "swing",
+        "role": "paper",
+        "action": "BUY",
+        "reasons": [
+          "$800 Swing expectancy trial \u00b7 signal gates passed"
+        ]
+      },
+      {
+        "session_date": "2026-11-18",
+        "symbol": "AMZN",
+        "strategy": "day",
+        "role": "challenger",
+        "action": "HOLD",
+        "reasons": [
+          "Below strategy probability threshold",
+          "Sourced news assessment is not bullish"
+        ]
+      },
+      {
+        "session_date": "2026-11-18",
+        "symbol": "AMZN",
+        "strategy": "day",
+        "role": "paper",
+        "action": "HOLD",
+        "reasons": [
+          "Below strategy probability threshold",
+          "Expected net return below minimum margin",
+          "Sourced news assessment is not bullish"
+        ]
+      },
+      {
+        "session_date": "2026-11-18",
+        "symbol": "AMZN",
+        "strategy": "swing",
+        "role": "challenger",
+        "action": "HOLD",
+        "reasons": [
+          "Below strategy probability threshold",
+          "Sourced news assessment is not bullish"
+        ]
+      },
+      {
+        "session_date": "2026-11-18",
+        "symbol": "AMZN",
+        "strategy": "swing",
+        "role": "paper",
+        "action": "HOLD",
+        "reasons": [
+          "Below strategy probability threshold",
+          "Sourced news assessment is not bullish"
+        ]
+      },
+      {
+        "session_date": "2026-11-18",
+        "symbol": "AS",
+        "strategy": "day",
+        "role": "challenger",
+        "action": "HOLD",
+        "reasons": [
+          "Below strategy probability threshold",
+          "Expected net return below minimum margin"
+        ]
+      },
+      {
+        "session_date": "2026-11-18",
+        "symbol": "AS",
+        "strategy": "day",
+        "role": "paper",
+        "action": "HOLD",
+        "reasons": [
+          "Below strategy probability threshold",
+          "Expected net return below minimum margin"
+        ]
+      },
+      {
+        "session_date": "2026-11-18",
+        "symbol": "AS",
+        "strategy": "swing",
+        "role": "challenger",
+        "action": "HOLD",
+        "reasons": [
+          "Below strategy probability threshold"
+        ]
+      },
+      {
+        "session_date": "2026-11-18",
+        "symbol": "AS",
+        "strategy": "swing",
+        "role": "paper",
+        "action": "BUY",
+        "reasons": [
+          "$800 Swing expectancy trial \u00b7 signal gates passed"
+        ]
+      },
+      {
+        "session_date": "2026-11-18",
+        "symbol": "CSCO",
+        "strategy": "day",
+        "role": "challenger",
+        "action": "HOLD",
+        "reasons": [
+          "Below strategy probability threshold",
+          "Expected net return below minimum margin",
+          "Sourced news assessment is not bullish"
+        ]
+      },
+      {
+        "session_date": "2026-11-18",
+        "symbol": "CSCO",
+        "strategy": "day",
+        "role": "paper",
+        "action": "HOLD",
+        "reasons": [
+          "Below strategy probability threshold",
+          "Expected net return below minimum margin",
+          "Sourced news assessment is not bullish"
+        ]
+      },
+      {
+        "session_date": "2026-11-18",
+        "symbol": "CSCO",
+        "strategy": "swing",
+        "role": "challenger",
+        "action": "HOLD",
+        "reasons": [
+          "Below strategy probability threshold",
+          "Expected net return below minimum margin",
+          "Sourced news assessment is not bullish"
+        ]
+      },
+      {
+        "session_date": "2026-11-18",
+        "symbol": "CSCO",
+        "strategy": "swing",
+        "role": "paper",
+        "action": "HOLD",
+        "reasons": [
+          "Below strategy probability threshold",
+          "Sourced news assessment is not bullish"
+        ]
+      },
+      {
+        "session_date": "2026-11-18",
+        "symbol": "DELL",
+        "strategy": "day",
+        "role": "challenger",
+        "action": "HOLD",
+        "reasons": [
+          "Below strategy probability threshold",
+          "Volatility exceeds pilot limit",
+          "Sourced news assessment is not bullish"
+        ]
+      },
+      {
+        "session_date": "2026-11-18",
+        "symbol": "DELL",
+        "strategy": "day",
+        "role": "paper",
+        "action": "HOLD",
+        "reasons": [
+          "Below strategy probability threshold",
+          "Expected net return below minimum margin",
+          "Volatility exceeds pilot limit",
+          "Sourced news assessment is not bullish"
+        ]
+      },
+      {
+        "session_date": "2026-11-18",
+        "symbol": "DELL",
+        "strategy": "swing",
+        "role": "challenger",
+        "action": "HOLD",
+        "reasons": [
+          "Below strategy probability threshold",
+          "Expected net return below minimum margin",
+          "Volatility exceeds pilot limit",
+          "Sourced news assessment is not bullish"
+        ]
+      },
+      {
+        "session_date": "2026-11-18",
+        "symbol": "DELL",
+        "strategy": "swing",
+        "role": "paper",
+        "action": "HOLD",
+        "reasons": [
+          "Below strategy probability threshold",
+          "Volatility exceeds pilot limit",
+          "Sourced news assessment is not bullish"
+        ]
+      },
+      {
+        "session_date": "2026-11-18",
+        "symbol": "DIS",
+        "strategy": "day",
+        "role": "challenger",
+        "action": "HOLD",
+        "reasons": [
+          "Below strategy probability threshold",
+          "Sourced news assessment is not bullish"
+        ]
+      },
+      {
+        "session_date": "2026-11-18",
+        "symbol": "DIS",
+        "strategy": "day",
+        "role": "paper",
+        "action": "HOLD",
+        "reasons": [
+          "Below strategy probability threshold",
+          "Expected net return below minimum margin",
+          "Sourced news assessment is not bullish"
+        ]
+      },
+      {
+        "session_date": "2026-11-18",
+        "symbol": "DIS",
+        "strategy": "swing",
+        "role": "challenger",
+        "action": "HOLD",
+        "reasons": [
+          "Below strategy probability threshold",
+          "Expected net return below minimum margin",
+          "Sourced news assessment is not bullish"
+        ]
+      },
+      {
+        "session_date": "2026-11-18",
+        "symbol": "DIS",
+        "strategy": "swing",
+        "role": "paper",
+        "action": "HOLD",
+        "reasons": [
+          "Below strategy probability threshold",
+          "Sourced news assessment is not bullish"
+        ]
+      },
+      {
+        "session_date": "2026-11-18",
+        "symbol": "DUK",
+        "strategy": "day",
+        "role": "challenger",
+        "action": "HOLD",
+        "reasons": [
+          "Below strategy probability threshold",
+          "Sourced news assessment is not bullish"
+        ]
+      },
+      {
+        "session_date": "2026-11-18",
+        "symbol": "DUK",
+        "strategy": "day",
+        "role": "paper",
+        "action": "HOLD",
+        "reasons": [
+          "Below strategy probability threshold",
+          "Expected net return below minimum margin",
+          "Sourced news assessment is not bullish"
+        ]
+      },
+      {
+        "session_date": "2026-11-18",
+        "symbol": "DUK",
+        "strategy": "swing",
+        "role": "challenger",
+        "action": "HOLD",
+        "reasons": [
+          "Below strategy probability threshold",
+          "Expected net return below minimum margin",
+          "Sourced news assessment is not bullish"
+        ]
+      },
+      {
+        "session_date": "2026-11-18",
+        "symbol": "DUK",
+        "strategy": "swing",
+        "role": "paper",
+        "action": "HOLD",
+        "reasons": [
+          "Below strategy probability threshold",
+          "Expected net return below minimum margin",
+          "Sourced news assessment is not bullish"
+        ]
+      },
+      {
+        "session_date": "2026-11-18",
+        "symbol": "G",
+        "strategy": "day",
+        "role": "challenger",
+        "action": "HOLD",
+        "reasons": [
+          "Below strategy probability threshold"
+        ]
+      },
+      {
+        "session_date": "2026-11-18",
+        "symbol": "G",
+        "strategy": "day",
+        "role": "paper",
+        "action": "HOLD",
+        "reasons": [
+          "Below strategy probability threshold",
+          "Expected net return below minimum margin"
+        ]
+      },
+      {
+        "session_date": "2026-11-18",
+        "symbol": "G",
+        "strategy": "swing",
+        "role": "challenger",
+        "action": "HOLD",
+        "reasons": [
+          "Below strategy probability threshold",
+          "Expected net return below minimum margin"
+        ]
+      },
+      {
+        "session_date": "2026-11-18",
+        "symbol": "G",
+        "strategy": "swing",
+        "role": "paper",
+        "action": "HOLD",
+        "reasons": [
+          "Below strategy probability threshold",
+          "Expected net return below minimum margin"
+        ]
+      },
+      {
+        "session_date": "2026-11-18",
+        "symbol": "GRND",
+        "strategy": "day",
+        "role": "challenger",
+        "action": "HOLD",
+        "reasons": [
+          "Below strategy probability threshold"
+        ]
+      },
+      {
+        "session_date": "2026-11-18",
+        "symbol": "GRND",
+        "strategy": "day",
+        "role": "paper",
+        "action": "HOLD",
+        "reasons": [
+          "Below strategy probability threshold",
+          "Expected net return below minimum margin"
+        ]
+      },
+      {
+        "session_date": "2026-11-18",
+        "symbol": "GRND",
+        "strategy": "swing",
+        "role": "challenger",
+        "action": "HOLD",
+        "reasons": [
+          "Below strategy probability threshold",
+          "Expected net return below minimum margin"
+        ]
+      },
+      {
+        "session_date": "2026-11-18",
+        "symbol": "GRND",
+        "strategy": "swing",
+        "role": "paper",
+        "action": "HOLD",
+        "reasons": [
+          "Below strategy probability threshold",
+          "Expected net return below minimum margin"
+        ]
+      },
+      {
+        "session_date": "2026-11-18",
+        "symbol": "LAZ",
+        "strategy": "day",
+        "role": "challenger",
+        "action": "HOLD",
+        "reasons": [
+          "Below strategy probability threshold"
+        ]
+      },
+      {
+        "session_date": "2026-11-18",
+        "symbol": "LAZ",
+        "strategy": "day",
+        "role": "paper",
+        "action": "HOLD",
+        "reasons": [
+          "Below strategy probability threshold",
+          "Expected net return below minimum margin"
+        ]
+      },
+      {
+        "session_date": "2026-11-18",
+        "symbol": "LAZ",
+        "strategy": "swing",
+        "role": "challenger",
+        "action": "HOLD",
+        "reasons": [
+          "Below strategy probability threshold",
+          "Expected net return below minimum margin"
+        ]
+      },
+      {
+        "session_date": "2026-11-18",
+        "symbol": "LAZ",
+        "strategy": "swing",
+        "role": "paper",
+        "action": "HOLD",
+        "reasons": [
+          "Below strategy probability threshold",
+          "Expected net return below minimum margin"
+        ]
+      },
+      {
+        "session_date": "2026-11-18",
+        "symbol": "META",
+        "strategy": "day",
+        "role": "challenger",
+        "action": "HOLD",
+        "reasons": [
+          "Below strategy probability threshold",
+          "Sourced news assessment is not bullish"
+        ]
+      },
+      {
+        "session_date": "2026-11-18",
+        "symbol": "META",
+        "strategy": "day",
+        "role": "paper",
+        "action": "HOLD",
+        "reasons": [
+          "Below strategy probability threshold",
+          "Expected net return below minimum margin",
+          "Sourced news assessment is not bullish"
+        ]
+      },
+      {
+        "session_date": "2026-11-18",
+        "symbol": "META",
+        "strategy": "swing",
+        "role": "challenger",
+        "action": "HOLD",
+        "reasons": [
+          "Below strategy probability threshold",
+          "Expected net return below minimum margin",
+          "Sourced news assessment is not bullish"
+        ]
+      },
+      {
+        "session_date": "2026-11-18",
+        "symbol": "META",
+        "strategy": "swing",
+        "role": "paper",
+        "action": "HOLD",
+        "reasons": [
+          "Below strategy probability threshold",
+          "Sourced news assessment is not bullish"
+        ]
+      },
+      {
+        "session_date": "2026-11-18",
+        "symbol": "NVDA",
+        "strategy": "day",
+        "role": "challenger",
+        "action": "HOLD",
+        "reasons": [
+          "Below strategy probability threshold"
+        ]
+      },
+      {
+        "session_date": "2026-11-18",
+        "symbol": "NVDA",
+        "strategy": "day",
+        "role": "paper",
+        "action": "HOLD",
+        "reasons": [
+          "Below strategy probability threshold",
+          "Expected net return below minimum margin"
+        ]
+      },
+      {
+        "session_date": "2026-11-18",
+        "symbol": "NVDA",
+        "strategy": "swing",
+        "role": "challenger",
+        "action": "HOLD",
+        "reasons": [
+          "Below strategy probability threshold"
+        ]
+      },
+      {
+        "session_date": "2026-11-18",
+        "symbol": "NVDA",
+        "strategy": "swing",
+        "role": "paper",
+        "action": "BUY",
+        "reasons": [
+          "$800 Swing expectancy trial \u00b7 signal gates passed"
+        ]
+      },
+      {
+        "session_date": "2026-11-18",
+        "symbol": "SPCX",
+        "strategy": "day",
+        "role": "challenger",
+        "action": "HOLD",
+        "reasons": [
+          "Below strategy probability threshold",
+          "Sourced news assessment is not bullish"
+        ]
+      },
+      {
+        "session_date": "2026-11-18",
+        "symbol": "SPCX",
+        "strategy": "day",
+        "role": "paper",
+        "action": "HOLD",
+        "reasons": [
+          "Below strategy probability threshold",
+          "Expected net return below minimum margin",
+          "Sourced news assessment is not bullish"
+        ]
+      },
+      {
+        "session_date": "2026-11-18",
+        "symbol": "SPCX",
+        "strategy": "swing",
+        "role": "challenger",
+        "action": "HOLD",
+        "reasons": [
+          "Below strategy probability threshold",
+          "Expected net return below minimum margin",
+          "Sourced news assessment is not bullish"
+        ]
+      },
+      {
+        "session_date": "2026-11-18",
+        "symbol": "SPCX",
+        "strategy": "swing",
+        "role": "paper",
+        "action": "HOLD",
+        "reasons": [
+          "Below strategy probability threshold",
+          "Sourced news assessment is not bullish"
+        ]
+      },
+      {
+        "session_date": "2026-11-18",
+        "symbol": "TSLA",
+        "strategy": "day",
+        "role": "challenger",
+        "action": "HOLD",
+        "reasons": [
+          "Below strategy probability threshold",
+          "Sourced news assessment is not bullish"
+        ]
+      },
+      {
+        "session_date": "2026-11-18",
+        "symbol": "TSLA",
+        "strategy": "day",
+        "role": "paper",
+        "action": "HOLD",
+        "reasons": [
+          "Below strategy probability threshold",
+          "Expected net return below minimum margin",
+          "Sourced news assessment is not bullish"
+        ]
+      },
+      {
+        "session_date": "2026-11-18",
+        "symbol": "TSLA",
+        "strategy": "swing",
+        "role": "challenger",
+        "action": "HOLD",
+        "reasons": [
+          "Below strategy probability threshold",
+          "Expected net return below minimum margin",
+          "Sourced news assessment is not bullish"
+        ]
+      },
+      {
+        "session_date": "2026-11-18",
+        "symbol": "TSLA",
+        "strategy": "swing",
+        "role": "paper",
+        "action": "HOLD",
+        "reasons": [
+          "Below strategy probability threshold",
+          "Expected net return below minimum margin",
+          "Sourced news assessment is not bullish"
+        ]
+      },
+      {
+        "session_date": "2026-11-18",
+        "symbol": "UBS",
+        "strategy": "day",
+        "role": "challenger",
+        "action": "HOLD",
+        "reasons": [
+          "Below strategy probability threshold"
+        ]
+      },
+      {
+        "session_date": "2026-11-18",
+        "symbol": "UBS",
+        "strategy": "day",
+        "role": "paper",
+        "action": "HOLD",
+        "reasons": [
+          "Below strategy probability threshold",
+          "Expected net return below minimum margin"
+        ]
+      },
+      {
+        "session_date": "2026-11-18",
+        "symbol": "UBS",
+        "strategy": "swing",
+        "role": "challenger",
+        "action": "HOLD",
+        "reasons": [
+          "Below strategy probability threshold"
+        ]
+      },
+      {
+        "session_date": "2026-11-18",
+        "symbol": "UBS",
+        "strategy": "swing",
+        "role": "paper",
+        "action": "BUY",
+        "reasons": [
+          "$800 Swing expectancy trial \u00b7 signal gates passed"
+        ]
+      },
+      {
+        "session_date": "2026-11-18",
+        "symbol": "V",
+        "strategy": "day",
+        "role": "challenger",
+        "action": "HOLD",
+        "reasons": [
+          "Below strategy probability threshold"
+        ]
+      },
+      {
+        "session_date": "2026-11-18",
+        "symbol": "V",
+        "strategy": "day",
+        "role": "paper",
+        "action": "HOLD",
+        "reasons": [
+          "Below strategy probability threshold",
+          "Expected net return below minimum margin"
+        ]
+      },
+      {
+        "session_date": "2026-11-18",
+        "symbol": "V",
+        "strategy": "swing",
+        "role": "challenger",
+        "action": "HOLD",
+        "reasons": [
+          "Below strategy probability threshold",
+          "Expected net return below minimum margin"
+        ]
+      },
+      {
+        "session_date": "2026-11-18",
+        "symbol": "V",
+        "strategy": "swing",
+        "role": "paper",
+        "action": "HOLD",
+        "reasons": [
+          "Below strategy probability threshold",
+          "Expected net return below minimum margin"
+        ]
+      },
+      {
+        "session_date": "2026-11-18",
+        "symbol": "WFC",
+        "strategy": "day",
+        "role": "challenger",
+        "action": "HOLD",
+        "reasons": [
+          "Below strategy probability threshold",
+          "Expected net return below minimum margin"
+        ]
+      },
+      {
+        "session_date": "2026-11-18",
+        "symbol": "WFC",
+        "strategy": "day",
+        "role": "paper",
+        "action": "HOLD",
+        "reasons": [
+          "Below strategy probability threshold",
+          "Expected net return below minimum margin"
+        ]
+      },
+      {
+        "session_date": "2026-11-18",
+        "symbol": "WFC",
+        "strategy": "swing",
+        "role": "challenger",
+        "action": "HOLD",
+        "reasons": [
+          "Below strategy probability threshold",
+          "Expected net return below minimum margin"
+        ]
+      },
+      {
+        "session_date": "2026-11-18",
+        "symbol": "WFC",
+        "strategy": "swing",
+        "role": "paper",
+        "action": "HOLD",
+        "reasons": [
+          "Below strategy probability threshold",
+          "Expected net return below minimum margin"
+        ]
+      }
+    ]
+  }
+}

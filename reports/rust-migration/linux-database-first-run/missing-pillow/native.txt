@@ -1,0 +1,194 @@
+
+running 1 test
+UNKNOWN_PARTIAL_RESTART_DUPLICATE=PASS
+KNOWN_REJECTION=PASS
+ACCOUNT_ISOLATION=PASS
+IMMUTABLE_EVIDENCE=PASS
+DURABLE_CYCLE_AND_SHARED_PYTHON_LEASE=PASS
+DB_FAILURE_AFTER_FILL_RECOVERY=PASS
+PAUSE_BEFORE_INTENT=PASS
+DASHBOARD_STATUS_AND_SCHEMA_PRESERVATION=PASS
+test full_durable_order_lifecycle_against_isolated_postgres ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.15s
+
+
+    Updating crates.io index
+ Downloading crates ...
+  Downloaded zeroize_derive v1.5.0
+  Downloaded constant_time_eq v0.6.1
+  Downloaded typed-path v0.13.0
+  Downloaded zip v9.8.1
+   Compiling syn v2.0.119
+   Compiling crossbeam-utils v0.8.23
+   Compiling crossbeam-queue v0.3.14
+   Compiling either v1.19.0
+   Compiling constant_time_eq v0.6.1
+   Compiling matrixmultiply v0.3.11
+   Compiling typed-path v0.13.0
+   Compiling zeroize_derive v1.5.0
+   Compiling tracing-attributes v0.1.31
+   Compiling zeroize v1.9.2
+   Compiling rustls-pki-types v1.16.0
+   Compiling tracing v0.1.44
+   Compiling rustls-webpki v0.103.17
+   Compiling webpki-roots v1.0.12
+   Compiling webpki-roots v0.26.11
+   Compiling tower v0.5.3
+   Compiling rustls v0.23.46
+   Compiling hyper-util v0.1.21
+   Compiling tower-http v0.6.11
+   Compiling axum-core v0.5.6
+   Compiling sqlx-core v0.8.6
+   Compiling tokio-rustls v0.26.6
+   Compiling hyper-rustls v0.27.10
+   Compiling nalgebra-macros v0.3.0
+   Compiling sqlx-postgres v0.8.6
+   Compiling sqlx-sqlite v0.8.6
+   Compiling sqlx v0.8.6
+   Compiling nalgebra v0.34.2
+   Compiling reqwest v0.12.28
+   Compiling axum v0.8.9
+   Compiling tracing-subscriber v0.3.23
+   Compiling zip v9.8.1
+   Compiling mainkraft v0.1.0 (/mnt/c/Users/erosi/OneDrive/Desktop/allprojects/keftrade-intelligence/apps/backend-rust)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 41.44s
+     Running tests/lifecycle.rs (/home/erosimcity/.local/share/mainkraft-rust-validation/target/debug/deps/lifecycle-c4fff83942152931)
+
+RUST_PYTHON_DASHBOARD_STATUS_PARITY=PASS
+
+running 1 test
+AUTOMATIC_TWO_ACCOUNT_BUY_FILL_AND_RESTART_DEDUP=PASS
+POSITION_MONITORING_CLOSE_BEFORE_SHORT_WITHOUT_FUTURE_LEARNING=PASS
+MATURED_ONLY_RESIDUAL_UPDATE_FIXED_CONTROL_UNCHANGED=PASS
+FORECAST_RETURN_NOT_EXECUTION_PNL=PASS
+OPERATOR_PAUSE_AND_CLOSED_MARKET=PASS
+BROKER_RESTRICTION_AND_ACCOUNT_FAILURE_ISOLATION=PASS
+test two_account_monitor_allocate_fill_exit_restart_and_prequential_learning ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.44s
+
+
+   Compiling mainkraft v0.1.0 (/mnt/c/Users/erosi/OneDrive/Desktop/allprojects/keftrade-intelligence/apps/backend-rust)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 2.07s
+     Running tests/engine_lifecycle.rs (/home/erosimcity/.local/share/mainkraft-rust-validation/target/debug/deps/engine_lifecycle-fc9cc4e723578006)
+
+
+running 1 test
+NATIVE_DATA_FEATURE_MODEL_QUOTE_SOURCE_PARITY_AND_CACHE=PASS
+NO_UNAVAILABLE_CURRENT_CANDLE_OR_STALE_QUOTE=PASS
+test daily_ingestion_frozen_inference_quote_and_source_identity_match_python ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.26s
+
+
+   Compiling mainkraft v0.1.0 (/mnt/c/Users/erosi/OneDrive/Desktop/allprojects/keftrade-intelligence/apps/backend-rust)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 1.33s
+     Running tests/market_parity.rs (/home/erosimcity/.local/share/mainkraft-rust-validation/target/debug/deps/market_parity-0932ae09a4f8f0e9)
+
+
+running 1 test
+SHARED_DAILY_MONTHLY_BUDGET_AND_RESTART=PASS
+FAILED_REQUEST_CONSUMES_RESERVATION_NO_RETRY=PASS
+IMMUTABLE_RESERVATIONS_NO_PROVIDER_ERROR_LEAK=PASS
+test shared_budget_survives_concurrency_failure_and_restart_without_retry ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.13s
+
+
+    Blocking waiting for file lock on artifact directory
+   Compiling mainkraft v0.1.0 (/mnt/c/Users/erosi/OneDrive/Desktop/allprojects/keftrade-intelligence/apps/backend-rust)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 1m 06s
+     Running tests/ranking_lifecycle.rs (/home/erosimcity/.local/share/mainkraft-rust-validation/target/debug/deps/ranking_lifecycle-f80d2a66375e4a0a)
+
+
+running 1 test
+CATALOG_AND_ORIGINAL_PYTHON_NEWS_SOURCE_ID_PARITY=PASS
+FUTURE_INVALID_AND_OMITTED_SOURCE_FIELDS_EXCLUDED=PASS
+UPDATED_NEWS_INPUT_ORDER_REPLAY_IMMUTABILITY=PASS
+BOUNDED_PAGINATION_WITH_EXPLICIT_TRUNCATION=PASS
+test acquired_news_matches_python_and_keeps_truncation_and_provenance_explicit ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.05s
+
+
+   Compiling mainkraft v0.1.0 (/mnt/c/Users/erosi/OneDrive/Desktop/allprojects/keftrade-intelligence/apps/backend-rust)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 1.11s
+     Running tests/discovery_lifecycle.rs (/home/erosimcity/.local/share/mainkraft-rust-validation/target/debug/deps/discovery_lifecycle-5ab700e1f5bcb6d0)
+
+
+running 1 test
+FULL_PYTHON_RESEARCH_SOURCE_EVENT_SELECTION_ID_PARITY=PASS
+FROZEN_RESTART_NO_BACKDATING_PREVIEW_SEPARATION=PASS
+MISSED_CUTOFF_RETAINED_NOT_FROZEN=PASS
+BENCHMARK_FAILURE_ATOMIC_ROLLBACK_NO_ORDER_AUTHORITY=PASS
+RESEARCH_FAILURE_RETRY_SPACING_AND_CLOSED_CHANNEL_SHUTDOWN=PASS
+test full_premarket_research_freezes_only_timely_covered_selections_and_matches_python ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 1.28s
+
+
+   Compiling mainkraft v0.1.0 (/mnt/c/Users/erosi/OneDrive/Desktop/allprojects/keftrade-intelligence/apps/backend-rust)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 1.56s
+     Running tests/research_lifecycle.rs (/home/erosimcity/.local/share/mainkraft-rust-validation/target/debug/deps/research_lifecycle-0499e057e7ae770e)
+
+
+running 1 test
+PYTHON_ARGON2_SESSION_COOKIE_CSRF_LOGOUT=PASS
+EXISTING_PYTHON_SESSION=PASS
+FAILED_ATTEMPTS_PERSIST_GLOBAL_THROTTLE=PASS
+IDEMPOTENT_SCHEMA_PRESERVES_SESSION=PASS
+test authentication_preserves_python_password_sessions_csrf_and_throttle ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 7.85s
+
+
+   Compiling mainkraft v0.1.0 (/mnt/c/Users/erosi/OneDrive/Desktop/allprojects/keftrade-intelligence/apps/backend-rust)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 1.48s
+     Running tests/api_contract.rs (/home/erosimcity/.local/share/mainkraft-rust-validation/target/debug/deps/api_contract-fed34b2143d68ed5)
+
+
+running 1 test
+ORIGINAL_WATCHLIST_JOB_WRITE_HTTP_VALIDATION_AND_PAYLOAD_PARITY=PASS
+AUTH_CSRF_IMMUTABLE_WATCHLIST_AND_DURABLE_QUEUED_EVENTS=PASS
+TWELVE_CONCURRENT_CLIENT_SUBMISSIONS_FIVE_ACCEPTED_SEVEN_REJECTED=PASS
+test watchlist_and_job_http_contracts_csrf_and_atomic_queue_admission ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.45s
+
+
+   Compiling mainkraft v0.1.0 (/mnt/c/Users/erosi/OneDrive/Desktop/allprojects/keftrade-intelligence/apps/backend-rust)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 1.85s
+     Running tests/write_api.rs (/home/erosimcity/.local/share/mainkraft-rust-validation/target/debug/deps/write_api-8942c73916ec46e4)
+
+
+running 1 test
+ORIGINAL_COMPLETION_FAILURE_EVENT_AND_PRIORITY_PARITY=PASS
+CANCELLED_CALLER_RETAINS_ACTIVE_WORKER_LEASE=PASS
+EXITED_WORKER_AND_POST_SIDE_EFFECT_DB_FAILURE_RECOVERY=PASS
+SCHEDULER_RESTART_DEDUP_AND_PENDING_REFRESH_BACKPRESSURE=PASS
+GRACEFUL_DRAIN_AND_CLOSED_SUPERVISOR_SHUTDOWN=PASS
+test durable_jobs_preserve_completion_priority_ownership_recovery_and_scheduler_marks ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.79s
+
+
+   Compiling mainkraft v0.1.0 (/mnt/c/Users/erosi/OneDrive/Desktop/allprojects/keftrade-intelligence/apps/backend-rust)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 2.38s
+     Running tests/jobs_lifecycle.rs (/home/erosimcity/.local/share/mainkraft-rust-validation/target/debug/deps/jobs_lifecycle-df59599ad2e84ded)
+
+
+Traceback (most recent call last):
+  File "/mnt/c/Users/erosi/OneDrive/Desktop/allprojects/keftrade-intelligence/scripts/prepare-rust-dispatch.py", line 10, in <module>
+    from intelligence import db,jobs,ingestion,information,ir_metadata,providers,forecasting,vision
+  File "/mnt/c/Users/erosi/OneDrive/Desktop/allprojects/keftrade-intelligence/apps/api/intelligence/jobs.py", line 12, in <module>
+    from intelligence.vision import resolve_detection_outcomes
+  File "/mnt/c/Users/erosi/OneDrive/Desktop/allprojects/keftrade-intelligence/apps/api/intelligence/vision.py", line 8, in <module>
+    from PIL import Image, ImageDraw
+ModuleNotFoundError: No module named 'PIL'
+
+Traceback (most recent call last):
+  File "/mnt/c/Users/erosi/OneDrive/Desktop/allprojects/keftrade-intelligence/scripts/test-rust-postgres.py", line 86, in <module>
+    if prepared.returncode:raise RuntimeError('Original isolated dispatcher oracle failed')
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: Original isolated dispatcher oracle failed

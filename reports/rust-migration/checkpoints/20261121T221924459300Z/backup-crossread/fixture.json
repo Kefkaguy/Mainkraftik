@@ -1,0 +1,69 @@
+{
+  "directory": "C:\\Users\\erosi\\OneDrive\\Desktop\\allprojects\\keftrade-intelligence\\.local\\rust-migration\\backup-runs\\42aaff92ee73",
+  "sources": {
+    "research": "intelligence_restore_42aaff92ee73_0",
+    "paper": "intelligence_paper_test_42aaff92ee73_1"
+  },
+  "targets": {
+    "research": "intelligence_restore_42aaff92ee73_13",
+    "paper": "intelligence_paper_test_42aaff92ee73_14"
+  },
+  "legacy_target": "intelligence_restore_42aaff92ee73_15",
+  "failures": [
+    {
+      "name": "wrong-kind",
+      "archive": "wrong-kind.zip",
+      "target": "intelligence_restore_42aaff92ee73_2"
+    },
+    {
+      "name": "wrong-major",
+      "archive": "wrong-major.zip",
+      "target": "intelligence_restore_42aaff92ee73_3"
+    },
+    {
+      "name": "wrong-count",
+      "archive": "wrong-count.zip",
+      "target": "intelligence_restore_42aaff92ee73_4"
+    },
+    {
+      "name": "bad-copy",
+      "archive": "bad-copy.zip",
+      "target": "intelligence_restore_42aaff92ee73_5"
+    },
+    {
+      "name": "missing-member",
+      "archive": "missing-member.zip",
+      "target": "intelligence_restore_42aaff92ee73_6"
+    },
+    {
+      "name": "extra-member",
+      "archive": "extra-member.zip",
+      "target": "intelligence_restore_42aaff92ee73_7"
+    },
+    {
+      "name": "wrong-hash",
+      "archive": "wrong-hash.zip",
+      "target": "intelligence_restore_42aaff92ee73_8"
+    },
+    {
+      "name": "schema-mismatch",
+      "archive": "schema-mismatch.zip",
+      "target": "intelligence_restore_42aaff92ee73_9"
+    },
+    {
+      "name": "wrong-crc",
+      "archive": "wrong-crc.zip",
+      "target": "intelligence_restore_42aaff92ee73_10"
+    },
+    {
+      "name": "duplicate-member",
+      "archive": "duplicate-member.zip",
+      "target": "intelligence_restore_42aaff92ee73_11"
+    },
+    {
+      "name": "wrong-migrations",
+      "archive": "wrong-migrations.zip",
+      "target": "intelligence_restore_42aaff92ee73_12"
+    }
+  ]
+}

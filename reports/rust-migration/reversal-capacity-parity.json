@@ -1,0 +1,22 @@
+{
+  "source": "unmodified Python paperpilot.experiment.quantity_change and deployed broker-capacity formula",
+  "initial_buy": {
+    "side": "buy",
+    "qty": "19.998000199",
+    "phase": "increase"
+  },
+  "reversal_close": {
+    "side": "sell",
+    "qty": "19.998000199",
+    "phase": "reduce"
+  },
+  "same_cycle_short": {
+    "side": "sell",
+    "qty": "20.000000000",
+    "phase": "increase"
+  },
+  "same_cycle_short_gross": "1999.80000000000",
+  "fresh_broker_power": 1999.2000799920397,
+  "same_cycle_increase_permitted": false,
+  "expected_behavior": "close now; wait for fresh-capacity reallocation next five-minute cycle"
+}

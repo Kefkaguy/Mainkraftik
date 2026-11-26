@@ -1,0 +1,364 @@
+{
+  "version": 1,
+  "status": "DEVELOPMENT_ONLY_CONFIRMATION_REQUIRED",
+  "paired_coverage": 1.0,
+  "expected_quote_points": 2310,
+  "observed_quote_points": 2310,
+  "paired_quote_points": 2310,
+  "signal_count": 194,
+  "matured_quote_backed_labels": 181,
+  "unresolved_signal_outcomes": 13,
+  "regime_counts": {
+    "Bearish": 403,
+    "Bullish": 240,
+    "Sideways": 1487
+  },
+  "training": [
+    {
+      "calibration": 30,
+      "reason": "invalid input: Insufficient bounded quote-backed strategy labels",
+      "status": "not_fitted",
+      "test_day": "2025-03-26",
+      "train": 83
+    },
+    {
+      "calibration": 30,
+      "status": "fitted",
+      "test_day": "2025-03-27",
+      "train": 120
+    },
+    {
+      "calibration": 30,
+      "status": "fitted",
+      "test_day": "2025-03-28",
+      "train": 134
+    }
+  ],
+  "per_strategy": [
+    {
+      "label_sessions": 2,
+      "ml_filtered": {
+        "closed_trades": 0,
+        "daily_pnl": {
+          "2025-03-26": 0.0,
+          "2025-03-27": 0.0,
+          "2025-03-28": 0.0
+        },
+        "execution_costs": 0.0,
+        "maximum_drawdown": 0.0,
+        "missing_quote_events": 0,
+        "net_pnl": 0.0,
+        "net_weekly_average": null,
+        "open_positions": 0,
+        "partial_fills": 0,
+        "profit_factor": null,
+        "realized_pnl": 0.0,
+        "rejected_signals": 0,
+        "sharpe": null,
+        "turnover": 0.0,
+        "unrealized_pnl": -0.0,
+        "win_rate": null
+      },
+      "quote_backed_labels": 56,
+      "rule_only": {
+        "closed_trades": 0,
+        "daily_pnl": {
+          "2025-03-26": 0.0,
+          "2025-03-27": 0.0,
+          "2025-03-28": 0.0
+        },
+        "execution_costs": 0.0,
+        "maximum_drawdown": 0.0,
+        "missing_quote_events": 0,
+        "net_pnl": 0.0,
+        "net_weekly_average": null,
+        "open_positions": 0,
+        "partial_fills": 0,
+        "profit_factor": null,
+        "realized_pnl": 0.0,
+        "rejected_signals": 0,
+        "sharpe": null,
+        "turnover": 0.0,
+        "unrealized_pnl": -0.0,
+        "win_rate": null
+      },
+      "strategy": "trend_following",
+      "success_brier": null,
+      "success_calibration": [],
+      "test_scored_outcomes": 0,
+      "validated": false
+    },
+    {
+      "label_sessions": 2,
+      "ml_filtered": {
+        "closed_trades": 0,
+        "daily_pnl": {
+          "2025-03-26": 0.0,
+          "2025-03-27": 0.0,
+          "2025-03-28": 0.0
+        },
+        "execution_costs": 0.0,
+        "maximum_drawdown": 0.0,
+        "missing_quote_events": 0,
+        "net_pnl": 0.0,
+        "net_weekly_average": null,
+        "open_positions": 0,
+        "partial_fills": 0,
+        "profit_factor": null,
+        "realized_pnl": 0.0,
+        "rejected_signals": 0,
+        "sharpe": null,
+        "turnover": 0.0,
+        "unrealized_pnl": -0.0,
+        "win_rate": null
+      },
+      "quote_backed_labels": 21,
+      "rule_only": {
+        "closed_trades": 0,
+        "daily_pnl": {
+          "2025-03-26": 0.0,
+          "2025-03-27": 0.0,
+          "2025-03-28": 0.0
+        },
+        "execution_costs": 0.0,
+        "maximum_drawdown": 0.0,
+        "missing_quote_events": 0,
+        "net_pnl": 0.0,
+        "net_weekly_average": null,
+        "open_positions": 0,
+        "partial_fills": 0,
+        "profit_factor": null,
+        "realized_pnl": 0.0,
+        "rejected_signals": 0,
+        "sharpe": null,
+        "turnover": 0.0,
+        "unrealized_pnl": -0.0,
+        "win_rate": null
+      },
+      "strategy": "breakout",
+      "success_brier": null,
+      "success_calibration": [],
+      "test_scored_outcomes": 0,
+      "validated": false
+    },
+    {
+      "label_sessions": 5,
+      "ml_filtered": {
+        "closed_trades": 0,
+        "daily_pnl": {
+          "2025-03-26": 0.0,
+          "2025-03-27": 0.0,
+          "2025-03-28": 0.0
+        },
+        "execution_costs": 0.0,
+        "maximum_drawdown": 0.0,
+        "missing_quote_events": 0,
+        "net_pnl": 0.0,
+        "net_weekly_average": null,
+        "open_positions": 0,
+        "partial_fills": 0,
+        "profit_factor": null,
+        "realized_pnl": 0.0,
+        "rejected_signals": 30,
+        "sharpe": null,
+        "turnover": 0.0,
+        "unrealized_pnl": -0.0,
+        "win_rate": null
+      },
+      "quote_backed_labels": 37,
+      "rule_only": {
+        "closed_trades": 22,
+        "daily_pnl": {
+          "2025-03-26": -5.212522063290712,
+          "2025-03-27": 0.0068020467740907975,
+          "2025-03-28": -0.4547282035664466
+        },
+        "execution_costs": 3.0940306094738523,
+        "maximum_drawdown": -0.006055160152174064,
+        "missing_quote_events": 0,
+        "net_pnl": -5.660448220083068,
+        "net_weekly_average": null,
+        "open_positions": 0,
+        "partial_fills": 21,
+        "profit_factor": 0.1680441861586015,
+        "realized_pnl": -5.660448220083068,
+        "rejected_signals": 4,
+        "sharpe": null,
+        "turnover": 6.1295968708450355,
+        "unrealized_pnl": -0.0,
+        "win_rate": 0.18181818181818182
+      },
+      "strategy": "mean_reversion",
+      "success_brier": null,
+      "success_calibration": [],
+      "test_scored_outcomes": 0,
+      "validated": false
+    },
+    {
+      "label_sessions": 4,
+      "ml_filtered": {
+        "closed_trades": 0,
+        "daily_pnl": {
+          "2025-03-26": 0.0,
+          "2025-03-27": 0.0,
+          "2025-03-28": 0.0
+        },
+        "execution_costs": 0.0,
+        "maximum_drawdown": 0.0,
+        "missing_quote_events": 0,
+        "net_pnl": 0.0,
+        "net_weekly_average": null,
+        "open_positions": 0,
+        "partial_fills": 0,
+        "profit_factor": null,
+        "realized_pnl": 0.0,
+        "rejected_signals": 8,
+        "sharpe": null,
+        "turnover": 0.0,
+        "unrealized_pnl": -0.0,
+        "win_rate": null
+      },
+      "quote_backed_labels": 45,
+      "rule_only": {
+        "closed_trades": 3,
+        "daily_pnl": {
+          "2025-03-26": -0.5564030656342062,
+          "2025-03-27": -0.584388636582157,
+          "2025-03-28": 0.0
+        },
+        "execution_costs": 0.5638981276015378,
+        "maximum_drawdown": -0.0011407917022163631,
+        "missing_quote_events": 0,
+        "net_pnl": -1.1407917022163632,
+        "net_weekly_average": null,
+        "open_positions": 0,
+        "partial_fills": 2,
+        "profit_factor": 0.24728096554749512,
+        "realized_pnl": -1.1407917022163632,
+        "rejected_signals": 1,
+        "sharpe": null,
+        "turnover": 1.1979312248833511,
+        "unrealized_pnl": -0.0,
+        "win_rate": 0.3333333333333333
+      },
+      "strategy": "pullback",
+      "success_brier": 0.12360505620679055,
+      "success_calibration": [
+        {
+          "count": 7,
+          "observed_success": 0.14285714285714285,
+          "predicted_success": 0.09555837443691655
+        }
+      ],
+      "test_scored_outcomes": 7,
+      "validated": false
+    },
+    {
+      "label_sessions": 4,
+      "ml_filtered": {
+        "closed_trades": 0,
+        "daily_pnl": {
+          "2025-03-26": 0.0,
+          "2025-03-27": 0.0,
+          "2025-03-28": 0.0
+        },
+        "execution_costs": 0.0,
+        "maximum_drawdown": 0.0,
+        "missing_quote_events": 0,
+        "net_pnl": 0.0,
+        "net_weekly_average": null,
+        "open_positions": 0,
+        "partial_fills": 0,
+        "profit_factor": null,
+        "realized_pnl": 0.0,
+        "rejected_signals": 14,
+        "sharpe": null,
+        "turnover": 0.0,
+        "unrealized_pnl": -0.0,
+        "win_rate": null
+      },
+      "quote_backed_labels": 22,
+      "rule_only": {
+        "closed_trades": 9,
+        "daily_pnl": {
+          "2025-03-26": 0.0,
+          "2025-03-27": -1.1842942043973606,
+          "2025-03-28": -0.3950043011154942
+        },
+        "execution_costs": 1.083048803576059,
+        "maximum_drawdown": -0.002192278129006643,
+        "missing_quote_events": 0,
+        "net_pnl": -1.5792985055128548,
+        "net_weekly_average": null,
+        "open_positions": 0,
+        "partial_fills": 9,
+        "profit_factor": 0.22923121251255582,
+        "realized_pnl": -1.5792985055128548,
+        "rejected_signals": 1,
+        "sharpe": null,
+        "turnover": 2.0259860091507593,
+        "unrealized_pnl": -0.0,
+        "win_rate": 0.2222222222222222
+      },
+      "strategy": "momentum",
+      "success_brier": null,
+      "success_calibration": [],
+      "test_scored_outcomes": 0,
+      "validated": false
+    }
+  ],
+  "independent_confirmation": false,
+  "profitable_advantage_validated": false,
+  "strategy_activated": false,
+  "actual_alpaca_paper_fills": 0,
+  "comparison_first_day": "2025-03-26",
+  "ml_score_rejection_reasons": {
+    "invalid input: Strategy selector not qualified for signal": 25
+  },
+  "combined": {
+    "combined_rules": {
+      "initial_capital": 1000.0,
+      "net_pnl": -7.700192744465205,
+      "realized_pnl": -7.700192744465205,
+      "unrealized_pnl": 0.0,
+      "execution_costs": 4.527170900635483,
+      "closed_trades": 32,
+      "win_rate": 0.21875,
+      "maximum_drawdown": -0.008094183196876183,
+      "open_positions": 0,
+      "fills": 74,
+      "turnover": 8.951919412170511,
+      "net_weekly_profit_estimate": null,
+      "validated": false
+    },
+    "combined_ml": {
+      "initial_capital": 1000.0,
+      "net_pnl": 0.0,
+      "realized_pnl": 0.0,
+      "unrealized_pnl": 0.0,
+      "execution_costs": 0.0,
+      "closed_trades": 0,
+      "win_rate": null,
+      "maximum_drawdown": 0.0,
+      "open_positions": 0,
+      "fills": 0,
+      "turnover": 0.0,
+      "net_weekly_profit_estimate": null,
+      "validated": false
+    }
+  },
+  "measurement": {
+    "report": "C:\\Users\\erosi\\OneDrive\\Desktop\\allprojects\\keftrade-intelligence\\.local\\multistrategy-final-evaluation\\20261122T103339568334Z\\report-fbbba7223a1ba905e555c378e8d9281615c2772a88b4c160ace899eb42b83297.json",
+    "status": "DEVELOPMENT_ONLY_CONFIRMATION_REQUIRED",
+    "signals": 194,
+    "labels": 181,
+    "quote_coverage": 1.0,
+    "profitable_advantage_validated": false,
+    "strategy_activated": false,
+    "process_wall_seconds": 11.077485599998909,
+    "process_cpu_seconds": 10.6875,
+    "sampled_peak_working_set_bytes": 158105600,
+    "sampling_interval_ms": 5,
+    "pid": 37920
+  }
+}

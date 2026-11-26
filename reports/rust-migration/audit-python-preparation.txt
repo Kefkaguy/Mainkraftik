@@ -1,0 +1,3 @@
+Captured original fresh, repeat, sealed and missing-report evaluation behavior; synthetic data only
+Captured original saved-head reconstruction twice; sealed synthetic history, no new candidate fitting
+

@@ -1,0 +1,15 @@
+{
+  "post_deploy_backup": ".local\\off-host\\20261119T034834Z-paper-learning-after",
+  "restore_verified": true,
+  "learning_table_rows": {
+    "learning_accounts": 2,
+    "learning_controls": 1,
+    "learning_intents": 0,
+    "learning_records": 4
+  },
+  "paper_health": "{\"Status\":\"healthy\",\"FailingStreak\":0,\"Log\":[{\"Start\":\"2026-11-19T03:46:47.015866774Z\",\"End\":\"2026-11-19T03:46:47.465452575Z\",\"ExitCode\":0,\"Output\":\"\"},{\"Start\":\"2026-11-19T03:47:17.466503606Z\",\"End\":\"2026-11-19T03:47:17.87792538Z\",\"ExitCode\":0,\"Output\":\"\"},{\"Start\":\"2026-11-19T03:47:47.878610218Z\",\"End\":\"2026-11-19T03:47:48.313337117Z\",\"ExitCode\":0,\"Output\":\"\"},{\"Start\":\"2026-11-19T03:48:18.314411806Z\",\"End\":\"2026-11-19T03:48:18.73459056Z\",\"ExitCode\":0,\"Output\":\"\"},{\"Start\":\"2026-11-19T03:48:48.736443979Z\",\"End\":\"2026-11-19T03:48:49.162055895Z\",\"ExitCode\":0,\"Output\":\"\"}]} 0\n",
+  "containers": "keftrade-intelligence-paper-1 keftrade-intelligence-api:paper-learning-v1 Up 3 minutes (healthy)\nkeftrade-intelligence-web-1 keftrade-intelligence-web:paper-learning-v1 Up 3 minutes\nkeftrade-intelligence-api-1 keftrade-intelligence-api:mainkraft-v1 Up 28 hours (healthy)\nkeftrade-intelligence-challenger-1 keftrade-intelligence-api:mainkraft-v1 Up 23 hours (healthy)\nkeftrade-intelligence-sentiment-1 keftrade-intelligence-sentiment:sentiment-v1 Up 3 days (healthy)\nkeftrade-intelligence-worker-1 keftrade-intelligence-api:phase5-research Up 4 days\nkeftrade-intelligence-paper-postgres-1 postgres:18-alpine Up 5 days (healthy)\nkeftrade-intelligence-postgres-1 postgres:18-alpine Up 5 days (healthy)\n",
+  "paper_recent_logs": "INFO:     Started server process [1]\nINFO:     Waiting for application startup.\nINFO:     Application startup complete.\nINFO:     Uvicorn running on http://0.0.0.0:8200 (Press CTRL+C to quit)\nINFO:     127.0.0.1:34284 - \"GET /health HTTP/1.1\" 200 OK\nINFO:     127.0.0.1:34286 - \"GET /status HTTP/1.1\" 200 OK\nINFO:     127.0.0.1:34292 - \"GET /status HTTP/1.1\" 403 Forbidden\nINFO:     127.0.0.1:34306 - \"POST /control HTTP/1.1\" 200 OK\nINFO:     127.0.0.1:34310 - \"GET /status HTTP/1.1\" 200 OK\nINFO:     127.0.0.1:59806 - \"GET /status HTTP/1.1\" 200 OK\nINFO:     127.0.0.1:59812 - \"GET /status HTTP/1.1\" 200 OK\nINFO:     127.0.0.1:45210 - \"GET /health HTTP/1.1\" 200 OK\nINFO:     127.0.0.1:34474 - \"GET /health HTTP/1.1\" 200 OK\nINFO:     127.0.0.1:34140 - \"GET /health HTTP/1.1\" 200 OK\nINFO:     127.0.0.1:33146 - \"GET /health HTTP/1.1\" 200 OK\nINFO:     127.0.0.1:41864 - \"GET /health HTTP/1.1\" 200 OK\nINFO:     127.0.0.1:54172 - \"GET /health HTTP/1.1\" 200 OK\n",
+  "public_web_learning_bundle_verified": true,
+  "unauthenticated_status": 401
+}

@@ -1,0 +1,60 @@
+{
+  "verified_at": "2026-11-18T06:31:14.708974+00:00",
+  "tests": {
+    "full-tests.xml": {
+      "tests": 209,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "final-focused-tests.xml": {
+      "tests": 23,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    }
+  },
+  "frontend_build": "PASSED",
+  "frozen_report_id": "56fb30dabc11e4d01186a51950d0a806e1ea4fbb1c0b5b566146aeb835762e3c",
+  "no_exposed_evaluation_rows": true,
+  "model_export_parity": "PASSED",
+  "research_acceptance": "FAILED_NO_CREDIBLE_COST_ADJUSTED_ADVANTAGE",
+  "deployment_authorized": false,
+  "source_sha256": {
+    "apps\\api\\chart_intelligence\\api.py": "4f4abd18c84e200200b9095d697078916bb73eab1b2b9dabeed5415cf4c9ce0b",
+    "apps\\api\\chart_intelligence\\controller.py": "aca4a036754d339980cc9128a69a06b000fe5b1a88419eb673b38fcced5e07e0",
+    "apps\\api\\chart_intelligence\\core.py": "35958a99d485621a1abe7615b50daf4b5b5447936b6b62928cc46561e323abd2",
+    "apps\\api\\chart_intelligence\\phase7.py": "87cf629ff4239a6742ba0d6185f32c18e8e5a4c1379b1dc054f4ebbd497466a5",
+    "apps\\api\\chart_intelligence\\phase7_accounting.py": "966ffa24ccdd20247db5002afd4386ad1882870d13bb8165f4ccc8375a3eccb9",
+    "apps\\api\\chart_intelligence\\phase7_execution.py": "f7e37652a32482fde0a4836933972cae638b3413a6604e5e99b9c16dc28a9500",
+    "apps\\api\\chart_intelligence\\store.py": "421a137897fc21a0ecc4bd284ede813e2d25a84a051c0332fb78abfd18d5f9a4",
+    "apps\\api\\chart_intelligence\\__init__.py": "3bdafa92fe6ef11b79fb39c08cce7d1fc22452077518e675344312ff2de3bae9",
+    "scripts\\run-phase7-research.py": "cc91dee16299e84223c1d38f126ed016d2d172a5688ca6bee59a92d122f61437",
+    "scripts\\enroll-phase7-prospective.py": "8f202aa9f3a93e211b280b544875993c83dbb8b09862372e9f29c105b8cfe7ba",
+    "scripts\\report-phase7.py": "758065b122b59b6f6a46304170dee00948dc1d9ae1c41a9fa2a16f7026f223d4",
+    "scripts\\observe-phase7-paper.py": "9bf92c308c01f184f00f1f0146c0ad6a90543a858f3fe27ab0308dc5fdce797c",
+    "apps\\web\\components\\Phase7Research.tsx": "c57188344556def99da9b198f293673bde1aeab5b9653b209b7df89e3f83e7c1",
+    "apps\\web\\components\\PaperDashboard.tsx": "6745dba071b3fa63bc66c3fb999f45c334ae19f0bc17ea9b490ac68d86bae5b1"
+  },
+  "artifacts_sha256": {
+    "accounting-addendum.json": "3d51c137046bc1b171f19fbbb5732439d8834494b12434d0685d1a2fe9d364bd",
+    "final-focused-tests.txt": "764e2676cf60c9286c2923733884871e79e7c1b429ed5ce70c39786f7a0fd8fb",
+    "final-focused-tests.xml": "95509e5a7a7941207ee750355c12c752c714daab2ee94768a92a84662e95eda8",
+    "final-paper-observation.txt": "f94599d8dba6482d5010e44510e0571145ebe4417585a20a25e63edaf32fdb20",
+    "fresh-controller-delayed-sip.txt": "32ca41b19f732651af3c47bab1431a558152d908672d4d214d77c17f72a1def9",
+    "fresh-controller-run.txt": "deef5b3e7a05f1e917bde82ff7a2f54a2059335818f43e292878d98a70b0495f",
+    "full-tests.txt": "73601f50cdd3582d133fa90f9c3713d08cb45093f887e0d8f21c9bbf1d750c5e",
+    "full-tests.xml": "11baa6a581a658426c23895e0d48c19f04dc11f591ab72029cfc9459d6df52e7",
+    "paper-observation-20261118T060814Z.json": "9eac61d12cc4fe1bd5ce432fa8b3f356915253b47ede3439384be5d3897891e7",
+    "paper-observation-20261118T062833Z.json": "de8e5cfd40e001e04ecf37b98207efe6d65d6da4cd20fb829fe5c000a350adf0",
+    "prospective-enrollment.json": "15e8a4fdf53c7c62ddf99ba3b1260356441fa17980a1cd887e61937340567e8f",
+    "prospective-status.json": "1f1032a06e834bbe956ba59ed8bb676a543aec2287d1a5d17ab75fe26efe0167",
+    "README.md": "7485dd570c7f608ad89150e693e7568b2282861877cb2e82959271b82f205a65",
+    "research-results.json": "34917cf8a4dc8e780287f21e973d563cced02323c8ec7701f6b3769a6355be22",
+    "research-run.txt": "fd8dd701f2cd4c986d26ee5c656773ef3d5aef92332ae633cbc55e0f449708cc",
+    "research-tests.xml": "af21dfd14288dee861c537d3f6922fc50210c57bc0498ac6ab9f348200280806",
+    "tests.xml": "1f436f4e52ec570f82fafd164681232f33149dbf3f556e25e13cecc35065df7c",
+    "web-build.txt": "9787a81f7bfff37b22495f01e0081bc6047b8b72e7e7a9e75929aab115eda908"
+  },
+  "dependency_lock_sha256": "2bc107606f56dfaecdacbf104e5ce94dab8b83ce3518169ce32d4d01d9de6cbc"
+}

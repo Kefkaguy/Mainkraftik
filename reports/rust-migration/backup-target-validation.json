@@ -1,0 +1,16 @@
+{
+  "driver": "sqlx-postgres-0.8.6",
+  "driver_source_sha256": "8f1dce51ed9086a2ff6e57b2c4f5eae555d26c4882713b870fc978c7b0bb7a48",
+  "driver_target_overrides": [
+    "host",
+    "hostaddr",
+    "port",
+    "dbname"
+  ],
+  "native_boundary": "backup::validate_uri rejects target override query keys, including percent-encoded keys, before any database connection",
+  "tests": "backup::tests::restore_authority_is_limited_to_explicit_local_disposable_databases",
+  "aborted_checkpoint": "reports/rust-migration/checkpoints/20261121T221429639726Z/aborted.json",
+  "aborted_checkpoint_postgres_test_databases_remaining": 0,
+  "approved_checkpoint": "reports/rust-migration/checkpoints/20261121T221924459300Z/manifest.json",
+  "approved_checkpoint_sha256": "1c83b013fbb5c479001550c60b20f7d65ebf564b7e834215a8fa5bb29a61e0f8"
+}

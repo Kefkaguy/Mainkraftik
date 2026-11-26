@@ -1,0 +1,11 @@
+{
+  "passed": true,
+  "inputs_and_lineage_identical": true,
+  "direct_information_numeric_differences": 3,
+  "feature_numeric_differences_by_column": {
+    "23": 8,
+    "22": 8
+  },
+  "changed_original_snapshot_ids": 16,
+  "reason": "Independent original NumPy platform difference in news-count log1p; neither corpus nor original source is rewritten. Native comparisons remain exact on each platform."
+}

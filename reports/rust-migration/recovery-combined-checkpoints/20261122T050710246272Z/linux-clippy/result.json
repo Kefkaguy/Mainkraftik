@@ -1,0 +1,30 @@
+{
+  "at": "2026-11-22T05:03:47.791885+00:00",
+  "passed": true,
+  "command": [
+    "wsl",
+    "-d",
+    "Ubuntu",
+    "--",
+    "env",
+    "CARGO_HOME=/home/erosimcity/.local/share/mainkraft-rust-validation/cargo",
+    "RUSTUP_HOME=/home/erosimcity/.local/share/mainkraft-rust-validation/rustup",
+    "CARGO_TARGET_DIR=/home/erosimcity/.local/share/mainkraft-rust-validation/target",
+    "CARGO_BUILD_JOBS=2",
+    "/home/erosimcity/.local/share/mainkraft-rust-validation/cargo/bin/cargo",
+    "+1.93.0",
+    "clippy",
+    "--locked",
+    "--manifest-path",
+    "/mnt/c/Users/erosi/OneDrive/Desktop/allprojects/keftrade-intelligence/apps/backend-rust/Cargo.toml",
+    "--workspace",
+    "--all-features",
+    "--all-targets",
+    "--",
+    "-D",
+    "warnings"
+  ],
+  "exit_code": 0,
+  "log_sha256": "f13fb62be92670067a607abedb42ba98dad0cf597a1cd3ff6c37b8721a0bb9a1",
+  "deployment_allowed": false
+}

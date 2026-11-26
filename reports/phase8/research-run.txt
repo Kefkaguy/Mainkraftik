@@ -1,0 +1,39 @@
+Preregistered b8c4b483e2f9f9d8555614abad57bdde84bec7b084c281993309bf26ee396fc5
+Rows {'one_hour': 7199, 'one_day': 3629, 'two_sessions': 3622, 'three_sessions': 3615, 'five_sessions': 3601} rejected 114
+one_hour historical_mean trades 0 pnl 0.0 screen False
+one_hour zero_return trades 0 pnl 0.0 screen False
+one_hour mainkraft_linear trades 0 pnl 0.0 screen False
+one_hour mainkraft_histboost trades 0 pnl 0.0 screen False
+one_hour sequence_adam400 trades 13 pnl -0.959 screen False
+one_day historical_mean trades 0 pnl 0.0 screen False
+one_day zero_return trades 0 pnl 0.0 screen False
+one_day mainkraft_linear trades 0 pnl 0.0 screen False
+one_day mainkraft_histboost trades 0 pnl 0.0 screen False
+one_day sequence_adam400 trades 0 pnl 0.0 screen False
+two_sessions historical_mean trades 0 pnl 0.0 screen False
+two_sessions zero_return trades 0 pnl 0.0 screen False
+two_sessions mainkraft_linear trades 99 pnl -4.026 screen False
+two_sessions mainkraft_histboost trades 65 pnl -1.23 screen False
+two_sessions sequence_adam400 trades 1 pnl -0.501 screen False
+three_sessions historical_mean trades 0 pnl 0.0 screen False
+three_sessions zero_return trades 0 pnl 0.0 screen False
+three_sessions mainkraft_linear trades 114 pnl -5.416 screen False
+three_sessions mainkraft_histboost trades 77 pnl -0.924 screen False
+three_sessions sequence_adam400 trades 55 pnl -4.376 screen False
+five_sessions historical_mean trades 0 pnl 0.0 screen False
+five_sessions zero_return trades 0 pnl 0.0 screen False
+five_sessions mainkraft_linear trades 106 pnl -7.566 screen False
+five_sessions mainkraft_histboost trades 63 pnl -0.248 screen False
+five_sessions sequence_adam400 trades 47 pnl -1.233 screen False
+{
+  "report_id": "feb3eff13e1b04dd9727be18ca1f2d2c4156153947f74d48d60991b26f7883ee",
+  "declaration_id": "b8c4b483e2f9f9d8555614abad57bdde84bec7b084c281993309bf26ee396fc5",
+  "dataset_id": "89cf3453f9bfa754b54002178637b66531e96f4b118a907de1bf8c2de4390da0",
+  "nominations": {
+    "one_hour": null,
+    "one_day": null,
+    "two_sessions": null,
+    "three_sessions": null,
+    "five_sessions": null
+  }
+}

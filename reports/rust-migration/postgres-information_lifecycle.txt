@@ -1,0 +1,13 @@
+
+running 1 test
+PRIVATE_NEWS_REQUEST_STATUS_PAGINATION_HASH_AND_PERSISTENCE_PARITY=PASS
+FILING_REVISIONS_OFFICIAL_METADATA_IDENTITIES_PRIVACY_AND_ROLLBACK=PASS
+CANCELLED_PAGE_FETCH_CANNOT_CLAIM_COMPLETE_COVERAGE_AND_RESTART_DEDUPLICATES=PASS
+test private_news_filings_and_information_identities_match_python ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 3.05s
+
+
+   Compiling mainkraft v0.1.0 (/mnt/c/Users/erosi/OneDrive/Desktop/allprojects/keftrade-intelligence/apps/backend-rust)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 1.23s
+     Running tests/information_lifecycle.rs (/home/erosimcity/.local/share/mainkraft-rust-validation/target/debug/deps/information_lifecycle-1c3853d268b79976)

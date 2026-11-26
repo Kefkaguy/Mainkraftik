@@ -1,0 +1,38 @@
+{
+  "at": "2026-11-22T04:56:08.792769+00:00",
+  "passed": true,
+  "platforms": [
+    "Windows",
+    "Linux"
+  ],
+  "scope": "Original Python -> Rust -> Python worker/database handoff and bidirectional lease exclusion with the same two in-memory broker books",
+  "partial_fill_shares": 0.25,
+  "duplicate_orders": 0,
+  "sources": {
+    "scripts/test-rust-paper-handoff.py": "e4e6a6619f79d0c7635b391387629a67626c34ad86b387e5391300c844936dae",
+    "scripts/test-rust-linux-paper-handoff.py": "433a38aa69ec56b7218984ad9cdc079f23fa25825f19fd2f0897a6a80a35df2c"
+  },
+  "outputs": {
+    "harness-source.zip": "c6bc9048ef12e8cacd8a98c6792c5d58778a37e626eeb79f3dcc6fee25ccd52c",
+    "linux/cluster-start.txt": "66afd0411ccc09366e99fdd99b85f21899c8d2d064f5835126859618802153ad",
+    "linux/cluster-stop.txt": "ca19178a35ab4153b75b494963b66ce8243e1b94c173107c87b44d09db23652d",
+    "linux/handoff.txt": "c7b311ec73c7a4eca555039991de0d604e6a699ed0bb325f943deca05dc3e78c",
+    "linux/launcher.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "linux/result.json": "e3a7a61f7a98f053afe16d5bec7e2c460067da2694bb05e45c3c7514d71663e8",
+    "windows/build.txt": "2a630581d34dc13359b5dfc02b491976f138e6612c3917824e43c5fc8c4cf330",
+    "windows/python-excluded-by-rust-lease.txt": "4faba653e6e098268fc5410ddca77c143b5695f214f96d1b7ec68f7268af1fbd",
+    "windows/result.json": "2feb720b113179d6d1c2acc1f7538c8e43655ffe1c5b95569e7abec327c5c332",
+    "windows/rust-excluded-by-python-lease.txt": "9379a3e92fba4abca020f5b7e7ed92b7c890b35b74c35f1619234bd8e82c39f6",
+    "windows/rust-full-reconcile.txt": "8cf6c5a27da2407e55b8b4cf19d6ad57a890853427b7bf46cf19e1a7ad30728a",
+    "windows/rust-partial-reconcile.txt": "e067097c0d2bc74616d181056b8cd5e3b0e0f8e0b8facb5229a6763dfd017463",
+    "linux/evidence/build.txt": "5dbe19ea860bc5cf2c8316dce2ba94d1a58df8a87966d3b2b5ad9523c2d95d7b",
+    "linux/evidence/python-excluded-by-rust-lease.txt": "1fc81910b4f470075d9aa38074cb74c1a6894f07d0d28dbb95fa661090923bf1",
+    "linux/evidence/result.json": "5161fdff7c6ca234297cccd600a13243905a26722c36040a6b33913426116f38",
+    "linux/evidence/rust-excluded-by-python-lease.txt": "a3e173d1892287609e0a9a8712fb0d32402a6a88c2204f7d910d90180f12f3c5",
+    "linux/evidence/rust-full-reconcile.txt": "1a9b908d0a6e0b29101b88663e8806943dbfc7eaf4cbd594e8acf04039d28ff8",
+    "linux/evidence/rust-partial-reconcile.txt": "1a9b908d0a6e0b29101b88663e8806943dbfc7eaf4cbd594e8acf04039d28ff8"
+  },
+  "complete_service_rollback": false,
+  "full_migration_complete": false,
+  "deployment_allowed": false
+}

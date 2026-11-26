@@ -1,0 +1,14 @@
+{
+  "passed": true,
+  "manifest": "reports/rust-migration/paper-handoff-checkpoints/20261122T045608773727Z/manifest.json",
+  "manifest_sha256": "46c08ae1b5abd8ac5af33aaeedc9467edb8652510e04edd8e91be9799cc5717d",
+  "platforms": [
+    "Windows",
+    "Linux"
+  ],
+  "partial_fill_shares": 0.25,
+  "duplicate_orders": 0,
+  "complete_service_rollback": false,
+  "full_migration_complete": false,
+  "deployment_allowed": false
+}

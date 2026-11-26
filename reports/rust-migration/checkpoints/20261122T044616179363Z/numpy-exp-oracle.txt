@@ -1,0 +1,2 @@
+{"inputs": 22092, "sha256": "eb882abd38a5ce4208a5491dcbbc1dcae2e4dab95530ff38d8e7fb83d5e3cd59", "output": "apps/backend-rust/tests/fixtures/numpy-exp-parity.json", "market_data_used": false}
+

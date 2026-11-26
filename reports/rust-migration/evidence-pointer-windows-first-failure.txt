@@ -1,0 +1,55 @@
+
+running 1 test
+test evidence::tests::concurrent_publication_never_exposes_partial_records_or_pointers_and_corruption_is_not_repaired ... FAILED
+
+failures:
+
+failures:
+    evidence::tests::concurrent_publication_never_exposes_partial_records_or_pointers_and_corruption_is_not_repaired
+
+test result: FAILED. 0 passed; 1 failed; 0 ignored; 0 measured; 11 filtered out; finished in 0.10s
+
+
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 12.93s
+     Running unittests src\lib.rs (apps\backend-rust\target\debug\deps\mainkraft-0ae551b333f65b48.exe)
+
+thread '<unnamed>' (6056) panicked at src\evidence.rs:559:50:
+concurrent publish: Io(Os { code: 5, kind: PermissionDenied, message: "Access is denied." })
+note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+
+thread '<unnamed>' (12688) panicked at src\evidence.rs:559:50:
+concurrent publish: Io(Os { code: 5, kind: PermissionDenied, message: "Access is denied." })
+
+thread '<unnamed>' (22376) panicked at src\evidence.rs:559:50:
+concurrent publish: Io(Os { code: 5, kind: PermissionDenied, message: "Access is denied." })
+
+thread '<unnamed>' (36664) panicked at src\evidence.rs:559:50:
+concurrent publish: Io(Os { code: 5, kind: PermissionDenied, message: "Access is denied." })
+
+thread '<unnamed>' (37612) panicked at src\evidence.rs:559:50:
+concurrent publish: Io(Os { code: 5, kind: PermissionDenied, message: "Access is denied." })
+
+thread '<unnamed>' (37312) panicked at src\evidence.rs:559:50:
+concurrent publish: Io(Os { code: 5, kind: PermissionDenied, message: "Access is denied." })
+
+thread '<unnamed>' (10392) panicked at src\evidence.rs:559:50:
+concurrent publish: Io(Os { code: 5, kind: PermissionDenied, message: "Access is denied." })
+
+thread '<unnamed>' (29836) panicked at src\evidence.rs:559:50:
+concurrent publish: Io(Os { code: 5, kind: PermissionDenied, message: "Access is denied." })
+
+thread '<unnamed>' (25072) panicked at src\evidence.rs:559:50:
+concurrent publish: Io(Os { code: 5, kind: PermissionDenied, message: "Access is denied." })
+
+thread '<unnamed>' (6288) panicked at src\evidence.rs:559:50:
+concurrent publish: Io(Os { code: 5, kind: PermissionDenied, message: "Access is denied." })
+
+thread '<unnamed>' (8052) panicked at src\evidence.rs:559:50:
+concurrent publish: Io(Os { code: 5, kind: PermissionDenied, message: "Access is denied." })
+
+thread '<unnamed>' (4064) panicked at src\evidence.rs:559:50:
+concurrent publish: Io(Os { code: 5, kind: PermissionDenied, message: "Access is denied." })
+
+thread 'evidence::tests::concurrent_publication_never_exposes_partial_records_or_pointers_and_corruption_is_not_repaired' (5884) panicked at src\evidence.rs:553:9:
+a scoped thread panicked
+error: test failed, to rerun pass `--lib`

@@ -1,0 +1,7 @@
+{
+  "receipt": "reports/rust-migration/runtime-observations/20261122T050619842892Z-deployed-synthetic-reference/receipt.json",
+  "sha256": "8fc9783d171870c6b8dbc6469b1d58ecc9b2797f0c9f22739e4e328f55660797",
+  "passed": true,
+  "broker_requests": 0,
+  "service_changes": false
+}

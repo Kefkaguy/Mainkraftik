@@ -1,0 +1,8 @@
+oracle PASS
+charts PASS
+annotations PASS
+training PASS
+evaluation PASS
+native PASS
+{"passed": true, "ordinary_tests": 58, "directory": ".local/rust-migration/linux-core/20261122T003717990254Z"}
+

@@ -1,0 +1,18 @@
+[
+  {
+    "url": "https://raw.githubusercontent.com/python-pillow/Pillow/12.3.0/src/libImaging/ZipEncode.c",
+    "sha256": "812ea250bfd997af5b154b10fb56160a4bb77102bc47596b38846f45bdcba5f5"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/python-pillow/Pillow/12.3.0/src/libImaging/Draw.c",
+    "sha256": "c3b3f68ccb894d9eab5806f19dc9162cbf95d57f740c991129622b1ed13a3824"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/python-pillow/Pillow/12.3.0/LICENSE",
+    "sha256": "15181e7363dca9aed78b79bebebc7fde7f1814b8bd311ea3b87ae8ccadfc185b"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/python-pillow/Pillow/12.3.0/src/_imagingft.c",
+    "sha256": "ac833fac38fb87d53b82e49327395ee0952134e09869df2ae206b74dd90d0a20"
+  }
+]

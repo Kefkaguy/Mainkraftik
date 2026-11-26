@@ -1,0 +1,68 @@
+[package]
+name = "mainkraft"
+version = "0.1.0"
+edition = "2024"
+rust-version = "1.93"
+publish = false
+
+[workspace]
+members = ["png-codec"]
+default-members = ["."]
+resolver = "3"
+
+[features]
+sentiment-inference = ["dep:ort", "dep:tokenizers"]
+
+[dependencies]
+anyhow = "1"
+argon2 = "0.5"
+async-trait = "0.1"
+axum = "0.8.9"
+base64 = "0.22"
+bigdecimal = { version = "0.4.9", features = ["serde"] }
+chrono = { version = "0.4", features = ["serde"] }
+chrono-tz = "0.10"
+clap = { version = "4", features = ["derive"] }
+cookie_store = { version = "0.22.1", default-features = false, features = ["preserve_order"] }
+futures = "0.3"
+flate2 = "1"
+fs2 = "0.4"
+encoding_rs = "0.8"
+hex = "0.4"
+html5gum = "=0.9.1"
+percent-encoding = "2"
+crc32fast = "1"
+mainkraft-png-codec = { path = "png-codec" }
+nalgebra = "0.34"
+ort = { version = "=2.0.0-rc.12", optional = true, default-features = false, features = ["std", "load-dynamic", "api-24"] }
+rand = "0.8"
+regex = "1"
+reqwest = { version = "0.12", default-features = false, features = ["json", "rustls-tls", "stream", "gzip", "deflate", "cookies"] }
+ryu = "1"
+serde = { version = "1", features = ["derive"] }
+serde_json = { version = "1", features = ["float_roundtrip", "preserve_order"] }
+sha2 = "0.10"
+siphasher = "=1.0.4"
+sqlx = { version = "0.8.6", default-features = false, features = ["runtime-tokio", "tls-rustls-ring", "postgres", "sqlite", "json", "chrono", "uuid", "bigdecimal"] }
+subtle = "2"
+thiserror = "2"
+tempfile = "3"
+tokio = { version = "1", features = ["rt-multi-thread", "macros", "net", "signal", "time", "sync", "fs"] }
+tokenizers = { version = "=0.23.2", optional = true, default-features = false, features = ["onig"] }
+tower-http = { version = "0.6", features = ["trace", "limit"] }
+tracing = "0.1"
+tracing-subscriber = { version = "0.3", features = ["json", "env-filter"] }
+url = "2"
+uuid = { version = "1", features = ["serde", "v4"] }
+zip = { version = "=9.8.1", default-features = false, features = ["deflate-flate2"] }
+
+[dev-dependencies]
+tower = { version = "0.5", features = ["util"] }
+http-body-util = "0.1"
+
+[lints.rust]
+unsafe_code = "forbid"
+
+[profile.release]
+lto = "thin"
+strip = true

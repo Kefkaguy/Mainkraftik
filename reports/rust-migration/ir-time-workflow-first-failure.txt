@@ -1,0 +1,25 @@
+Captured full original IR ingestion/publication enrichment, redirects, limits, robots and encoding cases
+
+
+
+running 1 test
+test official_pages_and_enrichment_match_original_without_backdating_or_rewriting ... FAILED
+
+failures:
+
+failures:
+    official_pages_and_enrichment_match_original_without_backdating_or_rewriting
+
+test result: FAILED. 0 passed; 1 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.40s
+
+
+   Compiling mainkraft v0.1.0 (C:\Users\erosi\OneDrive\Desktop\allprojects\keftrade-intelligence\apps\backend-rust)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 2.88s
+     Running tests\official_ir_lifecycle.rs (apps\backend-rust\target\debug\deps\official_ir_lifecycle-e781ce24d431b9df.exe)
+
+thread 'official_pages_and_enrichment_match_original_without_backdating_or_rewriting' (34308) panicked at tests\official_ir_lifecycle.rs:192:24:
+"ingest" "overflow": expected uncaught reference error {"kind":"OverflowError","message":"date value out of range"}, got Ok(Array [Object {"symbol": String("AXON"), "status": String("unavailable"), "reason": String("Official IR access or robots restriction; no substitute feed")}, Object {"symbol": String("MSI"), "status": String("complete"), "announcements": Number(2), "historical_eligible": Bool(false)}])
+note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+error: test failed, to rerun pass `--test official_ir_lifecycle`
+
+

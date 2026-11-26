@@ -1,0 +1,11 @@
+{
+  "cpython_version": "3.14.2",
+  "datetime_source_url": "https://raw.githubusercontent.com/python/cpython/v3.14.2/Modules/_datetimemodule.c",
+  "datetime_source_sha256": "b220d2766e04cb95b05e00231759622e3f8df3b77391f6542cedebbeb6ccb897",
+  "python_helper_sha256": "bd2a89087577ad4b1fa6d1d4c6ea8e824ac0ff2038f0cb7dd704c18e5c3ee0e1",
+  "unicode_version": "16.0.0",
+  "nonprinting_ranges": 737,
+  "nonprinting_table_sha256": "ef08ca45b92d127a57e47527b48042107991f7ef2a2a686d7c1f815d9d471442",
+  "reference_fixture_sha256": "1cf9c23f623e881df5ec574bd2d4dcb27d0c565fde7c2999869759e029a4dff1",
+  "boundary_fixture_sha256": "48e1a28185ca8659741011737462c29d4b87a1b318e701dfd29d7a507e298605"
+}

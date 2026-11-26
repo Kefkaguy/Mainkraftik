@@ -1,0 +1,34 @@
+{
+  "at": "2026-11-22T00:09:05.329289+00:00",
+  "failure_source": ".local/rust-migration/linux-core/20261121T235900743574Z",
+  "observation": "Existing writer test exceeded unchanged ten-second staged-writer barrier in one parallel run; isolated and complete reruns pass; root cause unestablished",
+  "production_code_changed": false,
+  "timeout_or_assertions_changed": false,
+  "isolated_command": [
+    "wsl",
+    "-d",
+    "Ubuntu",
+    "--",
+    "env",
+    "CARGO_HOME=/home/erosimcity/.local/share/mainkraft-rust-validation/cargo",
+    "RUSTUP_HOME=/home/erosimcity/.local/share/mainkraft-rust-validation/rustup",
+    "CARGO_TARGET_DIR=/home/erosimcity/.local/share/mainkraft-rust-validation/target",
+    "/home/erosimcity/.local/share/mainkraft-rust-validation/cargo/bin/cargo",
+    "+1.93.0",
+    "test",
+    "--locked",
+    "--manifest-path",
+    "/mnt/c/Users/erosi/OneDrive/Desktop/allprojects/keftrade-intelligence/apps/backend-rust/Cargo.toml",
+    "--all-features",
+    "--lib",
+    "evidence::tests::cancelled_async_writers_keep_both_slots_until_blocking_commits_finish",
+    "--",
+    "--nocapture"
+  ],
+  "isolated_exit_code": 0,
+  "outputs": {
+    "isolated-all-features.txt": "9df02914b07d588901c228d7cd5c3d8de3d887c0149d039c1bbad6ebe7c607ae",
+    "native.txt": "9492a860c00c0482c3fa84e2c4adac0ee937a0a32eecaf1c17488bdaf05bf3ae",
+    "result.json": "bcb995cf9dd569ee007ea1f50e578704eb9264cdb7730a2af4057974d7292e22"
+  }
+}

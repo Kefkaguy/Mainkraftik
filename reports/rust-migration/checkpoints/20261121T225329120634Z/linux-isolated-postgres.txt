@@ -1,0 +1,2 @@
+{"passed": true, "postgres_suites": 18, "backup_suites": 1, "directory": ".local/rust-migration/linux-postgres/20261121T230402925233Z"}
+

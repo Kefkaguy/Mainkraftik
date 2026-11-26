@@ -1,0 +1,10 @@
+[Unit]
+Description=Save paper experiment report after the New York session
+
+[Timer]
+OnCalendar=Mon..Fri *-*-* 20:45:00 America/New_York
+Persistent=true
+Unit=keftrade-intelligence-report.service
+
+[Install]
+WantedBy=timers.target

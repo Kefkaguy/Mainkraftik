@@ -1,0 +1,18 @@
+{
+  "build": "PASSED",
+  "desktop_browser_fixture": {
+    "viewport": 1440,
+    "grid_columns": 4,
+    "base_font_px": 14,
+    "horizontal_overflow": false
+  },
+  "mobile_browser_fixture": {
+    "viewport": 390,
+    "grid_columns": 2,
+    "horizontal_overflow": false,
+    "account_equity": 1000000
+  },
+  "extension_error_source": "User-provided image-editor extension source uses chrome.storage, chrome.i18n and chrome.runtime.id; null TUI editor download button is unrelated to Mainkraft DOM",
+  "containers": "keftrade-intelligence-web-1 keftrade-intelligence-web:paper-learning-webfix-v2 Up About a minute\nkeftrade-intelligence-paper-1 keftrade-intelligence-api:paper-learning-v1 Up 32 minutes (healthy)\n",
+  "trading_worker_unchanged": true
+}

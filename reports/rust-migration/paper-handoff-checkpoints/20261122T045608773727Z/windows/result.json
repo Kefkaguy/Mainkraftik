@@ -1,0 +1,41 @@
+{
+  "at": "2026-11-22T04:50:28.500090+00:00",
+  "synthetic_only": true,
+  "production_changes": false,
+  "alpaca_requests": 0,
+  "new_accounts": 0,
+  "deployment_allowed": false,
+  "passed": true,
+  "python_to_rust_to_python": true,
+  "partial_shares": 0.25,
+  "physical_submissions_per_fixture_account": [
+    1,
+    1
+  ],
+  "duplicate_submissions": 0,
+  "immutable_records_preserved": true,
+  "python_excludes_rust": true,
+  "rust_excludes_python": true,
+  "shared_durable_cycles": 2,
+  "forecasts": 2,
+  "native_binary_sha256": "75a34447e4edcde27a9e00ca4e34ad79f6d6cbc7c5abb0877011a9cb59653720",
+  "source_files": {
+    "scripts/test-rust-paper-handoff.py": "e4e6a6619f79d0c7635b391387629a67626c34ad86b387e5391300c844936dae",
+    "apps/api/paperpilot/experiment.py": "836eced768d9bcab3507833f85454ebefb4d22ec573efda84cffc218d862d1ac",
+    "apps/backend-rust/tests/process_recovery_lifecycle.rs": "61e123a6712b86bc63afc4167b5f6fe701018fa7f08da9e94a0da9a0179d1186",
+    "apps/backend-rust/src/engine.rs": "6b7e0eebb9020ddb117dfd04ae0b69cd88ac7b97de5ccceb7ca34f68e9775169",
+    "apps/backend-rust/src/db.rs": "7782770bd3adb0c8abaa65b827045783a5c263be4c1ec969fa4e7f9ef4385418"
+  },
+  "limitations": [
+    "Synthetic broker books and market observations",
+    "No container/image/configuration rollback or production cutover tested"
+  ],
+  "owned_database_removed": true,
+  "outputs": {
+    "build.txt": "2a630581d34dc13359b5dfc02b491976f138e6612c3917824e43c5fc8c4cf330",
+    "python-excluded-by-rust-lease.txt": "4faba653e6e098268fc5410ddca77c143b5695f214f96d1b7ec68f7268af1fbd",
+    "rust-excluded-by-python-lease.txt": "9379a3e92fba4abca020f5b7e7ed92b7c890b35b74c35f1619234bd8e82c39f6",
+    "rust-full-reconcile.txt": "8cf6c5a27da2407e55b8b4cf19d6ad57a890853427b7bf46cf19e1a7ad30728a",
+    "rust-partial-reconcile.txt": "e067097c0d2bc74616d181056b8cd5e3b0e0f8e0b8facb5229a6763dfd017463"
+  }
+}

@@ -1,0 +1,9 @@
+[Unit]
+Description=Save the isolated paper pilot's daily evidence and performance report
+After=docker.service network-online.target
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/python3 /opt/keftrade-intelligence-ops/save-paper-report.py
+TimeoutStartSec=150
+NoNewPrivileges=true

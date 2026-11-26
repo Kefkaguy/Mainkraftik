@@ -1,0 +1,115 @@
+
+running 3 tests
+test canonical::tests::python_exponents_and_unicode ... ok
+test api::validation_tests::control_wire_validation_matches_fastapi ... ok
+test broker::tests::incomplete_migration_cannot_submit_or_cancel ... ok
+
+test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+
+running 1 test
+test authentication_preserves_python_password_sessions_csrf_and_throttle ... ignored, requires isolated research DB from scripts/test-rust-postgres.py
+
+test result: ok. 0 passed; 0 failed; 1 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+
+running 1 test
+test acquired_news_matches_python_and_keeps_truncation_and_provenance_explicit ... ignored, requires scripts/test-rust-postgres.py isolated paper DB
+
+test result: ok. 0 passed; 0 failed; 1 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+
+running 1 test
+test two_account_monitor_allocate_fill_exit_restart_and_prequential_learning ... ignored, requires scripts/test-rust-postgres.py isolated paper DB
+
+test result: ok. 0 passed; 0 failed; 1 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+
+running 1 test
+test full_durable_order_lifecycle_against_isolated_postgres ... ignored, requires scripts/test-rust-postgres.py and the isolated local PostgreSQL fixture
+
+test result: ok. 0 passed; 0 failed; 1 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+
+running 1 test
+test daily_ingestion_frozen_inference_quote_and_source_identity_match_python ... ignored, requires scripts/test-rust-postgres.py isolated paper DB
+
+test result: ok. 0 passed; 0 failed; 1 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+
+running 2 tests
+test strict_schema_citations_and_duplicate_rejections_match_python ... ok
+test sourced_context_budget_and_input_order_match_python ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.17s
+
+
+running 4 tests
+test portfolio_policy_including_seeded_exploration_matches_python ... ok
+test decimal_shares_and_close_before_reversal_match_python ... ok
+test exchange_targets_match_through_holidays_early_close_and_dst ... ok
+test causal_daily_features_match_numpy ... ok
+
+test result: ok. 4 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.06s
+
+
+running 4 tests
+test frozen_network_forward_does_not_substitute_a_model ... ok
+test residual_ridge_matches_numpy_solve ... ok
+test frozen_and_synthetic_numeric_models_match_python ... ok
+test historical_bundle_and_record_identities_match_python ... ok
+
+test result: ok. 4 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.06s
+
+
+running 1 test
+test shared_budget_survives_concurrency_failure_and_restart_without_retry ... ignored, requires scripts/test-rust-postgres.py isolated paper DB
+
+test result: ok. 0 passed; 0 failed; 1 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+
+running 1 test
+test request_hash_prompt_order_and_response_validation_match_python ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+
+running 1 test
+test pcg64_and_ziggurat_preserve_existing_exploration ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.01s
+
+
+running 1 test
+test sourced_text_hashes_and_sentiment_aggregation_match_python ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+
+   Compiling mainkraft v0.1.0 (C:\Users\erosi\OneDrive\Desktop\allprojects\keftrade-intelligence\apps\backend-rust)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 5.30s
+     Running unittests src\lib.rs (apps\backend-rust\target\debug\deps\mainkraft-9fde3659abfde0fd.exe)
+     Running unittests src\main.rs (apps\backend-rust\target\debug\deps\mainkraft-19d3aa82b71ef83c.exe)
+     Running tests\api_contract.rs (apps\backend-rust\target\debug\deps\api_contract-357f8b882789818d.exe)
+     Running tests\discovery_lifecycle.rs (apps\backend-rust\target\debug\deps\discovery_lifecycle-f1793b596deaefa7.exe)
+     Running tests\engine_lifecycle.rs (apps\backend-rust\target\debug\deps\engine_lifecycle-a8f62acfe0f18899.exe)
+     Running tests\lifecycle.rs (apps\backend-rust\target\debug\deps\lifecycle-183d14f7f08f6ac8.exe)
+     Running tests\market_parity.rs (apps\backend-rust\target\debug\deps\market_parity-39f7125bd1ae4447.exe)
+     Running tests\news_parity.rs (apps\backend-rust\target\debug\deps\news_parity-9b7eda1a1fc0e3fa.exe)
+     Running tests\policy_parity.rs (apps\backend-rust\target\debug\deps\policy_parity-594cc2c6b3fb3383.exe)
+     Running tests\python_parity.rs (apps\backend-rust\target\debug\deps\python_parity-31514769deb0090a.exe)
+     Running tests\ranking_lifecycle.rs (apps\backend-rust\target\debug\deps\ranking_lifecycle-78ee4a2748410722.exe)
+     Running tests\ranking_parity.rs (apps\backend-rust\target\debug\deps\ranking_parity-4e8d2b263499f07b.exe)
+     Running tests\rng_parity.rs (apps\backend-rust\target\debug\deps\rng_parity-197d766749bea7c1.exe)
+     Running tests\sentiment_parity.rs (apps\backend-rust\target\debug\deps\sentiment_parity-6a44e0e4a96933b4.exe)
+   Doc-tests mainkraft

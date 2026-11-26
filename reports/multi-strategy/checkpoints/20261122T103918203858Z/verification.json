@@ -1,0 +1,14 @@
+{
+  "passed": true,
+  "differences": [],
+  "source_files": 243,
+  "evidence_files": 4684,
+  "preservation_counts": {
+    "phase7": 40,
+    "research": 38,
+    "compressed_phase8": 27,
+    "original_python": 106
+  },
+  "deployment_allowed": false,
+  "profitable_advantage_validated": false
+}

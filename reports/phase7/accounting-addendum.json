@@ -1,0 +1,328 @@
+{
+  "source_report_id": "56fb30dabc11e4d01186a51950d0a806e1ea4fbb1c0b5b566146aeb835762e3c",
+  "accounting": {
+    "historical_mean": {
+      "base_15min": {
+        "max_drawdown_dollars": 0.0,
+        "max_drawdown_fraction_of_initial": 0.0,
+        "final_cash": 600.0,
+        "basis": "Conservative joint OHLC envelope; true intrabar order and executable exit prices unknown"
+      },
+      "base_30min": {
+        "max_drawdown_dollars": 0.0,
+        "max_drawdown_fraction_of_initial": 0.0,
+        "final_cash": 600.0,
+        "basis": "Conservative joint OHLC envelope; true intrabar order and executable exit prices unknown"
+      },
+      "severe_15min": {
+        "max_drawdown_dollars": 0.0,
+        "max_drawdown_fraction_of_initial": 0.0,
+        "final_cash": 600.0,
+        "basis": "Conservative joint OHLC envelope; true intrabar order and executable exit prices unknown"
+      },
+      "severe_30min": {
+        "max_drawdown_dollars": 0.0,
+        "max_drawdown_fraction_of_initial": 0.0,
+        "final_cash": 600.0,
+        "basis": "Conservative joint OHLC envelope; true intrabar order and executable exit prices unknown"
+      },
+      "stress_15min": {
+        "max_drawdown_dollars": 0.0,
+        "max_drawdown_fraction_of_initial": 0.0,
+        "final_cash": 600.0,
+        "basis": "Conservative joint OHLC envelope; true intrabar order and executable exit prices unknown"
+      },
+      "stress_30min": {
+        "max_drawdown_dollars": 0.0,
+        "max_drawdown_fraction_of_initial": 0.0,
+        "final_cash": 600.0,
+        "basis": "Conservative joint OHLC envelope; true intrabar order and executable exit prices unknown"
+      }
+    },
+    "mainkraft_histboost": {
+      "base_15min": {
+        "max_drawdown_dollars": 0.0,
+        "max_drawdown_fraction_of_initial": 0.0,
+        "final_cash": 600.0,
+        "basis": "Conservative joint OHLC envelope; true intrabar order and executable exit prices unknown"
+      },
+      "base_30min": {
+        "max_drawdown_dollars": 0.0,
+        "max_drawdown_fraction_of_initial": 0.0,
+        "final_cash": 600.0,
+        "basis": "Conservative joint OHLC envelope; true intrabar order and executable exit prices unknown"
+      },
+      "severe_15min": {
+        "max_drawdown_dollars": 0.0,
+        "max_drawdown_fraction_of_initial": 0.0,
+        "final_cash": 600.0,
+        "basis": "Conservative joint OHLC envelope; true intrabar order and executable exit prices unknown"
+      },
+      "severe_30min": {
+        "max_drawdown_dollars": 0.0,
+        "max_drawdown_fraction_of_initial": 0.0,
+        "final_cash": 600.0,
+        "basis": "Conservative joint OHLC envelope; true intrabar order and executable exit prices unknown"
+      },
+      "stress_15min": {
+        "max_drawdown_dollars": 0.0,
+        "max_drawdown_fraction_of_initial": 0.0,
+        "final_cash": 600.0,
+        "basis": "Conservative joint OHLC envelope; true intrabar order and executable exit prices unknown"
+      },
+      "stress_30min": {
+        "max_drawdown_dollars": 0.0,
+        "max_drawdown_fraction_of_initial": 0.0,
+        "final_cash": 600.0,
+        "basis": "Conservative joint OHLC envelope; true intrabar order and executable exit prices unknown"
+      }
+    },
+    "mainkraft_linear": {
+      "base_15min": {
+        "max_drawdown_dollars": 0.0,
+        "max_drawdown_fraction_of_initial": 0.0,
+        "final_cash": 600.0,
+        "basis": "Conservative joint OHLC envelope; true intrabar order and executable exit prices unknown"
+      },
+      "base_30min": {
+        "max_drawdown_dollars": 0.0,
+        "max_drawdown_fraction_of_initial": 0.0,
+        "final_cash": 600.0,
+        "basis": "Conservative joint OHLC envelope; true intrabar order and executable exit prices unknown"
+      },
+      "severe_15min": {
+        "max_drawdown_dollars": 0.0,
+        "max_drawdown_fraction_of_initial": 0.0,
+        "final_cash": 600.0,
+        "basis": "Conservative joint OHLC envelope; true intrabar order and executable exit prices unknown"
+      },
+      "severe_30min": {
+        "max_drawdown_dollars": 0.0,
+        "max_drawdown_fraction_of_initial": 0.0,
+        "final_cash": 600.0,
+        "basis": "Conservative joint OHLC envelope; true intrabar order and executable exit prices unknown"
+      },
+      "stress_15min": {
+        "max_drawdown_dollars": 0.0,
+        "max_drawdown_fraction_of_initial": 0.0,
+        "final_cash": 600.0,
+        "basis": "Conservative joint OHLC envelope; true intrabar order and executable exit prices unknown"
+      },
+      "stress_30min": {
+        "max_drawdown_dollars": 0.0,
+        "max_drawdown_fraction_of_initial": 0.0,
+        "final_cash": 600.0,
+        "basis": "Conservative joint OHLC envelope; true intrabar order and executable exit prices unknown"
+      }
+    },
+    "sequence_adam400": {
+      "base_15min": {
+        "max_drawdown_dollars": 0.0,
+        "max_drawdown_fraction_of_initial": 0.0,
+        "final_cash": 600.0,
+        "basis": "Conservative joint OHLC envelope; true intrabar order and executable exit prices unknown"
+      },
+      "base_30min": {
+        "max_drawdown_dollars": 0.0,
+        "max_drawdown_fraction_of_initial": 0.0,
+        "final_cash": 600.0,
+        "basis": "Conservative joint OHLC envelope; true intrabar order and executable exit prices unknown"
+      },
+      "severe_15min": {
+        "max_drawdown_dollars": 0.0,
+        "max_drawdown_fraction_of_initial": 0.0,
+        "final_cash": 600.0,
+        "basis": "Conservative joint OHLC envelope; true intrabar order and executable exit prices unknown"
+      },
+      "severe_30min": {
+        "max_drawdown_dollars": 0.0,
+        "max_drawdown_fraction_of_initial": 0.0,
+        "final_cash": 600.0,
+        "basis": "Conservative joint OHLC envelope; true intrabar order and executable exit prices unknown"
+      },
+      "stress_15min": {
+        "max_drawdown_dollars": 0.0,
+        "max_drawdown_fraction_of_initial": 0.0,
+        "final_cash": 600.0,
+        "basis": "Conservative joint OHLC envelope; true intrabar order and executable exit prices unknown"
+      },
+      "stress_30min": {
+        "max_drawdown_dollars": 0.0,
+        "max_drawdown_fraction_of_initial": 0.0,
+        "final_cash": 600.0,
+        "basis": "Conservative joint OHLC envelope; true intrabar order and executable exit prices unknown"
+      }
+    },
+    "sequence_lbfgs250": {
+      "base_15min": {
+        "max_drawdown_dollars": 0.14765291644516765,
+        "max_drawdown_fraction_of_initial": 0.00024608819407527944,
+        "final_cash": 599.8879869950938,
+        "basis": "Conservative joint OHLC envelope; true intrabar order and executable exit prices unknown"
+      },
+      "base_30min": {
+        "max_drawdown_dollars": 0.1621934546334387,
+        "max_drawdown_fraction_of_initial": 0.0002703224243890645,
+        "final_cash": 599.8378065453666,
+        "basis": "Conservative joint OHLC envelope; true intrabar order and executable exit prices unknown"
+      },
+      "severe_15min": {
+        "max_drawdown_dollars": 0.0,
+        "max_drawdown_fraction_of_initial": 0.0,
+        "final_cash": 600.0,
+        "basis": "Conservative joint OHLC envelope; true intrabar order and executable exit prices unknown"
+      },
+      "severe_30min": {
+        "max_drawdown_dollars": 0.0,
+        "max_drawdown_fraction_of_initial": 0.0,
+        "final_cash": 600.0,
+        "basis": "Conservative joint OHLC envelope; true intrabar order and executable exit prices unknown"
+      },
+      "stress_15min": {
+        "max_drawdown_dollars": 0.0,
+        "max_drawdown_fraction_of_initial": 0.0,
+        "final_cash": 600.0,
+        "basis": "Conservative joint OHLC envelope; true intrabar order and executable exit prices unknown"
+      },
+      "stress_30min": {
+        "max_drawdown_dollars": 0.0,
+        "max_drawdown_fraction_of_initial": 0.0,
+        "final_cash": 600.0,
+        "basis": "Conservative joint OHLC envelope; true intrabar order and executable exit prices unknown"
+      }
+    },
+    "sequence_original150": {
+      "base_15min": {
+        "max_drawdown_dollars": 0.746681729705756,
+        "max_drawdown_fraction_of_initial": 0.0012444695495095932,
+        "final_cash": 599.5073751745108,
+        "basis": "Conservative joint OHLC envelope; true intrabar order and executable exit prices unknown"
+      },
+      "base_30min": {
+        "max_drawdown_dollars": 1.1633212470590024,
+        "max_drawdown_fraction_of_initial": 0.0019388687450983373,
+        "final_cash": 599.0692526411885,
+        "basis": "Conservative joint OHLC envelope; true intrabar order and executable exit prices unknown"
+      },
+      "severe_15min": {
+        "max_drawdown_dollars": 0.0,
+        "max_drawdown_fraction_of_initial": 0.0,
+        "final_cash": 600.0,
+        "basis": "Conservative joint OHLC envelope; true intrabar order and executable exit prices unknown"
+      },
+      "severe_30min": {
+        "max_drawdown_dollars": 0.0,
+        "max_drawdown_fraction_of_initial": 0.0,
+        "final_cash": 600.0,
+        "basis": "Conservative joint OHLC envelope; true intrabar order and executable exit prices unknown"
+      },
+      "stress_15min": {
+        "max_drawdown_dollars": 0.6753595283109917,
+        "max_drawdown_fraction_of_initial": 0.0011255992138516529,
+        "final_cash": 599.48782171853,
+        "basis": "Conservative joint OHLC envelope; true intrabar order and executable exit prices unknown"
+      },
+      "stress_30min": {
+        "max_drawdown_dollars": 0.7319086927175249,
+        "max_drawdown_fraction_of_initial": 0.0012198478211958748,
+        "final_cash": 599.4205400819887,
+        "basis": "Conservative joint OHLC envelope; true intrabar order and executable exit prices unknown"
+      }
+    },
+    "sequence_ridge": {
+      "base_15min": {
+        "max_drawdown_dollars": 0.0,
+        "max_drawdown_fraction_of_initial": 0.0,
+        "final_cash": 600.0,
+        "basis": "Conservative joint OHLC envelope; true intrabar order and executable exit prices unknown"
+      },
+      "base_30min": {
+        "max_drawdown_dollars": 0.0,
+        "max_drawdown_fraction_of_initial": 0.0,
+        "final_cash": 600.0,
+        "basis": "Conservative joint OHLC envelope; true intrabar order and executable exit prices unknown"
+      },
+      "severe_15min": {
+        "max_drawdown_dollars": 0.0,
+        "max_drawdown_fraction_of_initial": 0.0,
+        "final_cash": 600.0,
+        "basis": "Conservative joint OHLC envelope; true intrabar order and executable exit prices unknown"
+      },
+      "severe_30min": {
+        "max_drawdown_dollars": 0.0,
+        "max_drawdown_fraction_of_initial": 0.0,
+        "final_cash": 600.0,
+        "basis": "Conservative joint OHLC envelope; true intrabar order and executable exit prices unknown"
+      },
+      "stress_15min": {
+        "max_drawdown_dollars": 0.0,
+        "max_drawdown_fraction_of_initial": 0.0,
+        "final_cash": 600.0,
+        "basis": "Conservative joint OHLC envelope; true intrabar order and executable exit prices unknown"
+      },
+      "stress_30min": {
+        "max_drawdown_dollars": 0.0,
+        "max_drawdown_fraction_of_initial": 0.0,
+        "final_cash": 600.0,
+        "basis": "Conservative joint OHLC envelope; true intrabar order and executable exit prices unknown"
+      }
+    },
+    "zero_return": {
+      "base_15min": {
+        "max_drawdown_dollars": 0.0,
+        "max_drawdown_fraction_of_initial": 0.0,
+        "final_cash": 600.0,
+        "basis": "Conservative joint OHLC envelope; true intrabar order and executable exit prices unknown"
+      },
+      "base_30min": {
+        "max_drawdown_dollars": 0.0,
+        "max_drawdown_fraction_of_initial": 0.0,
+        "final_cash": 600.0,
+        "basis": "Conservative joint OHLC envelope; true intrabar order and executable exit prices unknown"
+      },
+      "severe_15min": {
+        "max_drawdown_dollars": 0.0,
+        "max_drawdown_fraction_of_initial": 0.0,
+        "final_cash": 600.0,
+        "basis": "Conservative joint OHLC envelope; true intrabar order and executable exit prices unknown"
+      },
+      "severe_30min": {
+        "max_drawdown_dollars": 0.0,
+        "max_drawdown_fraction_of_initial": 0.0,
+        "final_cash": 600.0,
+        "basis": "Conservative joint OHLC envelope; true intrabar order and executable exit prices unknown"
+      },
+      "stress_15min": {
+        "max_drawdown_dollars": 0.0,
+        "max_drawdown_fraction_of_initial": 0.0,
+        "final_cash": 600.0,
+        "basis": "Conservative joint OHLC envelope; true intrabar order and executable exit prices unknown"
+      },
+      "stress_30min": {
+        "max_drawdown_dollars": 0.0,
+        "max_drawdown_fraction_of_initial": 0.0,
+        "final_cash": 600.0,
+        "basis": "Conservative joint OHLC envelope; true intrabar order and executable exit prices unknown"
+      }
+    },
+    "always_long": {
+      "max_drawdown_dollars": 39.390912924484496,
+      "max_drawdown_fraction_of_initial": 0.0656515215408075,
+      "final_cash": 561.0947380931789,
+      "basis": "Conservative joint OHLC envelope; true intrabar order and executable exit prices unknown"
+    }
+  },
+  "method": "Frozen trade ledger re-mark only; no model fit or parameter changes",
+  "coverage_status": {
+    "historical_mean": "NOT_EVALUATED_NO_ELIGIBLE_OPPORTUNITIES",
+    "mainkraft_histboost": "NOT_EVALUATED_NO_ELIGIBLE_OPPORTUNITIES",
+    "mainkraft_linear": "NOT_EVALUATED_NO_ELIGIBLE_OPPORTUNITIES",
+    "sequence_adam400": "NOT_EVALUATED_NO_ELIGIBLE_OPPORTUNITIES",
+    "sequence_lbfgs250": "UNAVAILABLE",
+    "sequence_original150": "UNAVAILABLE",
+    "sequence_ridge": "NOT_EVALUATED_NO_ELIGIBLE_OPPORTUNITIES",
+    "zero_return": "NOT_EVALUATED_NO_ELIGIBLE_OPPORTUNITIES"
+  },
+  "coverage_note": "The original frozen report's coverage boolean is vacuous for zero-opportunity candidates. No complete executable history was established. This addendum clarifies that field without rewriting original evidence.",
+  "record_id": "83968d896242c87d1ed1feae184305c59d39c7f604cf7046ad4afeb38ab6c128"
+}

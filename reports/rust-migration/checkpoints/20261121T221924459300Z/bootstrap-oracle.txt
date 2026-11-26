@@ -1,0 +1,2 @@
+{"integer_streams": 12, "mixed_operations": 9, "bootstrap_cases": 12}
+

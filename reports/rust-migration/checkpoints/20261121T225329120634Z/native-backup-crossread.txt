@@ -1,0 +1,12 @@
+
+running 1 test
+test python_native_archives_restore_atomically_and_preserve_order_state ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 26.97s
+
+    Compiling mainkraft v0.1.0 (C:\Users\erosi\OneDrive\Desktop\allprojects\keftrade-intelligence\apps\backend-rust)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 3.89s
+     Running tests\backup_lifecycle.rs (apps\backend-rust\target\debug\deps\backup_lifecycle-f957d4f8e95dd947.exe)
+
+Backup evidence: .local/rust-migration/backup-runs/6825643b8312
+

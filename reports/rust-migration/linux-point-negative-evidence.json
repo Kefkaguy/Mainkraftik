@@ -1,0 +1,10 @@
+{
+  "initial_case_discrepancies": 11,
+  "cause": "Original NumPy 2.5.4 Linux vs Windows log1p(2) differs by one ULP. Rust matches the original Linux result. Separate original Linux fixtures generated; no production numerical code or Windows expected values changed.",
+  "files": {
+    "reports/rust-migration/linux-core-first.txt": "ba1e63dbd365737e9dca1f2382d385cb6be436aca14394d8d906092c85628741",
+    "reports/rust-migration/linux-point-first-failures.json": "8adf21b9d11f78e8f101a242e1075527fd982e693c5ad5200af9248d61541482",
+    "reports/rust-migration/linux-point-python-generation.txt": "17090a37af65a432a7b6d8db40923336bbd3de8b723ef0a40cce1afab502a764",
+    "apps/backend-rust/tests/fixtures/point-features-linux-runtime.json": "7c502deb3455f9c94d4741508ccb986a4061bccec3595b9bf965b10b86935bcb"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "passed": true,
+  "initial": {
+    "file": ".local/rust-migration/prospective-oracles/intelligence_test_rust_b83483b2417a.json",
+    "sha256": "042249ce7f8fd41aad26a0bc113b5c96b3c989f5aaf1a8dd166f6d7b60868f66",
+    "scenarios": 30,
+    "native_comparison_passed": true,
+    "note": "Initial synthetic reference retained; final checkpoint adds four scenarios and reuses the calendar during setup."
+  },
+  "expanded": {
+    "file": ".local/rust-migration/prospective-oracles/intelligence_test_rust_2288214f44ed.json",
+    "sha256": "6ea32e5390be5c347f4a4db10468bf3938bbe755b937af5fb6dc168d954bfa85"
+  },
+  "identical_existing_scenarios": 30,
+  "additional_scenarios": 4,
+  "optimization": "Reuse the original exchange calendar in synthetic input setup; unchanged original workflow functions, expected results and table snapshots."
+}

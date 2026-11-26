@@ -1,0 +1,29 @@
+{
+  "at": "2026-11-21T05:18:41.350071+00:00",
+  "checkpoint": "reports/rust-migration/checkpoints/20261121T050630243216Z/manifest.json",
+  "manifest_sha256": "b93a636079a59601d292be1a13e6c2b795b4febeb79d44d31e9a00d04202b741",
+  "passed": true,
+  "source_and_zip_members": 176,
+  "output_hashes": 44,
+  "test_counts": {
+    "ordinary": 46,
+    "postgres": 16,
+    "native_sentiment": 2,
+    "native_ir_http": 1,
+    "native_evidence_crossread": 2
+  },
+  "records": {
+    "phase7": 16,
+    "chart": 18,
+    "phase8-compressed": 27,
+    "lab": 7266
+  },
+  "preservation_counts": {
+    "phase7-frozen": 40,
+    "phase7-phase8-research": 38,
+    "phase8-compressed-frozen": 27,
+    "original-python": 106
+  },
+  "full_migration_complete": false,
+  "deployment_allowed": false
+}

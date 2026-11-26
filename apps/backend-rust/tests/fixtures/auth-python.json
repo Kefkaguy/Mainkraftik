@@ -1,0 +1,1 @@
+{"password":"migration-fixture-password","password_hash":"$argon2id$v=19$m=8192,t=1,p=1$MDEyMzQ1Njc4OWFiY2RlZg$vRTpquL/wAKLD1rREuoVPNJy6DJ4tqOiFjGEEZXhHoE","existing_token":"existing-python-fixture-token","existing_token_hash":"39a9147d9a5bc67f1941af03b6ed64559d39a4f82400397ee3b3db5c8e620a7c","purpose":"Deterministic test-only credentials, never deployed"}

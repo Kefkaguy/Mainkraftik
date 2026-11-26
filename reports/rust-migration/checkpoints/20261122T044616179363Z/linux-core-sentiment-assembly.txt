@@ -1,0 +1,2 @@
+{"sentiment_batches": 1, "model_retrained": false, "source_functions_modified": false, "broker_requests": 0, "private_content_not_exposed": true, "output": "/mnt/c/Users/erosi/OneDrive/Desktop/allprojects/keftrade-intelligence/apps/backend-rust/tests/fixtures/research-sentiment-parity-linux.json", "sha256": "015b0be702a0d49045a67db3b4b076f7e0f4146d92c365e42db4d22d066da81f"}
+

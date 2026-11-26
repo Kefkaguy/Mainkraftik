@@ -1,0 +1,57 @@
+
+running 1 test
+not-enrolled native database TimeZone=UTC; original="America/Los_Angeles"
+not-enrolled evaluated
+empty native database TimeZone=UTC; original="America/Los_Angeles"
+empty evaluated
+short125 native database TimeZone=UTC; original="America/Los_Angeles"
+short125 evaluated
+unresolved native database TimeZone=UTC; original="America/Los_Angeles"
+unresolved evaluated
+missing-baseline-truth native database TimeZone=UTC; original="America/Los_Angeles"
+missing-baseline-truth evaluated
+unpaired native database TimeZone=UTC; original="America/Los_Angeles"
+unpaired evaluated
+ready-readonly native database TimeZone=UTC; original="America/Los_Angeles"
+ready-readonly evaluated
+passing native database TimeZone=UTC; original="America/Los_Angeles"
+passing evaluated
+failing native database TimeZone=UTC; original="America/Los_Angeles"
+failing evaluated
+no-edge native database TimeZone=UTC; original="America/Los_Angeles"
+no-edge evaluated
+integrity-failure native database TimeZone=UTC; original="America/Los_Angeles"
+integrity-failure evaluated
+integrity-tolerance native database TimeZone=UTC; original="America/Los_Angeles"
+integrity-tolerance evaluated
+first126-only native database TimeZone=UTC; original="America/Los_Angeles"
+first126-only evaluated
+latest-correction native database TimeZone=UTC; original="America/Los_Angeles"
+latest-correction evaluated
+near-zero native database TimeZone=UTC; original="America/Los_Angeles"
+near-zero evaluated
+stored-verdict native database TimeZone=UTC; original="America/Los_Angeles"
+stored-verdict evaluated
+verdict-failure native database TimeZone=UTC; original="America/Los_Angeles"
+verdict-failure evaluated
+concurrent native database TimeZone=UTC; original="America/Los_Angeles"
+concurrent evaluated
+worker-fresh native database TimeZone=UTC; original="America/Los_Angeles"
+worker-fresh evaluated
+worker-stale native database TimeZone=UTC; original="America/Los_Angeles"
+worker-stale evaluated
+worker-future native database TimeZone=UTC; original="America/Los_Angeles"
+worker-future evaluated
+worker-resource-denied native database TimeZone=UTC; original="America/Los_Angeles"
+worker-resource-denied evaluated
+worker-terminal-recovery native database TimeZone=UTC; original="America/Los_Angeles"
+worker-terminal-recovery evaluated
+23 original monitor/verdict scenarios, exact final bootstrap reports, original maturity/integrity rules, immutable data, once-only verdict, eight concurrent callers and terminal recovery passed
+test original_monitor_and_once_only_verdict_preserve_maturity_integrity_bootstrap_and_recovery ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 3.30s
+
+
+   Compiling mainkraft v0.1.0 (/mnt/c/Users/erosi/OneDrive/Desktop/allprojects/keftrade-intelligence/apps/backend-rust)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 1.24s
+     Running tests/verdict_lifecycle.rs (/home/erosimcity/.local/share/mainkraft-rust-validation/target/debug/deps/verdict_lifecycle-7d8b69a8d7dc455a)

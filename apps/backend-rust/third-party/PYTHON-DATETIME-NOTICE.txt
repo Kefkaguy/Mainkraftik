@@ -1,0 +1,14 @@
+The information timestamp adapter follows CPython 3.14.2 datetime parsing and
+validation behavior, including its documented source order and return codes.
+CPython is Copyright (c) 2001 Python Software Foundation. All rights reserved.
+The applicable PSF license/history notices are retained in PYTHON-LICENSE.txt.
+
+Reference source URL/hash, Python helper hash, Unicode version and generated
+table/fixture hashes are pinned in python-time-provenance.json. The Unicode
+nonprinting ranges were generated from the original Python str.isprintable
+behavior to preserve error representations without changing accepted data.
+
+The adapter preserves the reference's zero-whole-second timezone behavior,
+24:00 rollover, and offset normalization solely for language-migration parity.
+This does not change any archived metadata or assert that those conventions
+are desirable for a future, separately versioned data-availability policy.

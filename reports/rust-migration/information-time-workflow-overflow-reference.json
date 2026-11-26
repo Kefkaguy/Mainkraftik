@@ -1,0 +1,13 @@
+[
+  {
+    "operation": "news-overflow",
+    "kind": "OverflowError",
+    "message": "date value out of range",
+    "database_calls": 0
+  },
+  {
+    "operation": "publication-overflow",
+    "kind": "OverflowError",
+    "message": "date value out of range"
+  }
+]

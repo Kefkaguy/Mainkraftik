@@ -1,0 +1,27 @@
+{
+  "at": "2026-11-22T05:06:23.968820+00:00",
+  "passed": true,
+  "synthetic_only": true,
+  "source_files_modified": false,
+  "service_changes": false,
+  "broker_requests": 0,
+  "training": false,
+  "market_data_used": false,
+  "python": "3.12.16",
+  "numpy": "2.5.4",
+  "counter_seeds": 5,
+  "counter_cases": 95,
+  "large_set_cases": 25,
+  "exp_bit_patterns": 22092,
+  "source_files": {
+    "scripts/verify-rust-deployed-references.py": "ce9d9d0caedaf3a7713d4aeec8d299b69f64f0da776bd870c629f373f47efff8",
+    "scripts/generate-rust-python-set-fixtures.py": "af5260f88230dff807503a3833148c5434179fec7e3d7c5bd8e80926fe2e1f27",
+    "apps/backend-rust/tests/fixtures/python-set-extended-linux.json": "15042457381853bfe86502ba43d2553345c44865ae889796e2e68967af8f40ea",
+    "apps/backend-rust/tests/fixtures/numpy-exp-parity-linux.json": "ad9bb62246c8ecc6512399828a52b66fa0d1578d1dfbc014084f9c2bb112351c"
+  },
+  "outputs": {
+    "observed.json": "aea781ab9e3caa70e6873e562f99dc90d713e796dd39c739bf73e7ebebf8c792",
+    "remote-command.json": "b8a3dbd5497052a69b5ec99e0296ca56351ab61df9bb8b595cc1cac098f45ffd"
+  },
+  "deployment_allowed": false
+}

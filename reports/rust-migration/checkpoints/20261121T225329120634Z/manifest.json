@@ -1,0 +1,715 @@
+{
+  "at": "2026-11-21T22:53:29.120634+00:00",
+  "checkpoint_passed": true,
+  "full_migration_complete": false,
+  "deployment_allowed": false,
+  "scope": "Local component parity; no deployed services or broker endpoints accessed. No profitability conclusion.",
+  "checks": [
+    {
+      "name": "ranking-oracle",
+      "command": [
+        "C:\\Users\\erosi\\OneDrive\\Desktop\\allprojects\\keftrade-intelligence\\.venv\\Scripts\\python.exe",
+        "scripts/generate-rust-ranking-fixture.py"
+      ],
+      "exit_code": 0
+    },
+    {
+      "name": "discovery-oracle",
+      "command": [
+        "C:\\Users\\erosi\\OneDrive\\Desktop\\allprojects\\keftrade-intelligence\\.venv\\Scripts\\python.exe",
+        "scripts/generate-rust-discovery-fixture.py"
+      ],
+      "exit_code": 0
+    },
+    {
+      "name": "research-oracle",
+      "command": [
+        "C:\\Users\\erosi\\OneDrive\\Desktop\\allprojects\\keftrade-intelligence\\.venv\\Scripts\\python.exe",
+        "scripts/generate-rust-research-fixture.py"
+      ],
+      "exit_code": 0
+    },
+    {
+      "name": "report-oracle",
+      "command": [
+        "C:\\Users\\erosi\\OneDrive\\Desktop\\allprojects\\keftrade-intelligence\\.venv\\Scripts\\python.exe",
+        "scripts/generate-rust-report-fixture.py"
+      ],
+      "exit_code": 0
+    },
+    {
+      "name": "financial-oracle",
+      "command": [
+        "C:\\Users\\erosi\\OneDrive\\Desktop\\allprojects\\keftrade-intelligence\\.venv\\Scripts\\python.exe",
+        "scripts/generate-rust-financial-fixture.py"
+      ],
+      "exit_code": 0
+    },
+    {
+      "name": "forecast-statistics-oracle",
+      "command": [
+        "C:\\Users\\erosi\\OneDrive\\Desktop\\allprojects\\keftrade-intelligence\\.venv\\Scripts\\python.exe",
+        "scripts/generate-rust-forecast-fixtures.py"
+      ],
+      "exit_code": 0
+    },
+    {
+      "name": "information-metadata-oracle",
+      "command": [
+        "C:\\Users\\erosi\\OneDrive\\Desktop\\allprojects\\keftrade-intelligence\\.venv\\Scripts\\python.exe",
+        "scripts/generate-rust-information-fixtures.py"
+      ],
+      "exit_code": 0
+    },
+    {
+      "name": "information-time-oracle",
+      "command": [
+        "C:\\Users\\erosi\\OneDrive\\Desktop\\allprojects\\keftrade-intelligence\\.venv\\Scripts\\python.exe",
+        "scripts/generate-rust-information-time-fixtures.py"
+      ],
+      "exit_code": 0
+    },
+    {
+      "name": "evidence-store-oracle",
+      "command": [
+        "C:\\Users\\erosi\\OneDrive\\Desktop\\allprojects\\keftrade-intelligence\\.venv\\Scripts\\python.exe",
+        "scripts/generate-rust-evidence-fixtures.py"
+      ],
+      "exit_code": 0
+    },
+    {
+      "name": "point-feature-oracle",
+      "command": [
+        "C:\\Users\\erosi\\OneDrive\\Desktop\\allprojects\\keftrade-intelligence\\.venv\\Scripts\\python.exe",
+        "scripts/generate-rust-point-fixtures.py"
+      ],
+      "exit_code": 0
+    },
+    {
+      "name": "prospective-legacy-identity",
+      "command": [
+        "C:\\Users\\erosi\\OneDrive\\Desktop\\allprojects\\keftrade-intelligence\\.venv\\Scripts\\python.exe",
+        "scripts/generate-rust-prospective-identity.py"
+      ],
+      "exit_code": 0
+    },
+    {
+      "name": "bootstrap-oracle",
+      "command": [
+        "C:\\Users\\erosi\\OneDrive\\Desktop\\allprojects\\keftrade-intelligence\\.venv\\Scripts\\python.exe",
+        "scripts/generate-rust-bootstrap-fixtures.py"
+      ],
+      "exit_code": 0
+    },
+    {
+      "name": "ir-html-robots-oracle",
+      "command": [
+        "C:\\Users\\erosi\\OneDrive\\Desktop\\allprojects\\keftrade-intelligence\\.venv\\Scripts\\python.exe",
+        "scripts/generate-rust-ir-fixtures.py"
+      ],
+      "exit_code": 0
+    },
+    {
+      "name": "provider-oracle",
+      "command": [
+        "C:\\Users\\erosi\\OneDrive\\Desktop\\allprojects\\keftrade-intelligence\\.venv\\Scripts\\python.exe",
+        "scripts/generate-rust-provider-fixtures.py"
+      ],
+      "exit_code": 0
+    },
+    {
+      "name": "monitoring-oracle",
+      "command": [
+        "C:\\Users\\erosi\\OneDrive\\Desktop\\allprojects\\keftrade-intelligence\\.venv\\Scripts\\python.exe",
+        "scripts/generate-rust-monitoring-fixture.py"
+      ],
+      "exit_code": 0
+    },
+    {
+      "name": "legacy-ledger-oracle",
+      "command": [
+        "C:\\Users\\erosi\\OneDrive\\Desktop\\allprojects\\keftrade-intelligence\\.venv\\Scripts\\python.exe",
+        "scripts/generate-rust-ledger-fixture.py"
+      ],
+      "exit_code": 0
+    },
+    {
+      "name": "write-api-oracle",
+      "command": [
+        "C:\\Users\\erosi\\OneDrive\\Desktop\\allprojects\\keftrade-intelligence\\.venv\\Scripts\\python.exe",
+        "scripts/generate-rust-write-api-fixtures.py"
+      ],
+      "exit_code": 0
+    },
+    {
+      "name": "job-oracle",
+      "command": [
+        "C:\\Users\\erosi\\OneDrive\\Desktop\\allprojects\\keftrade-intelligence\\.venv\\Scripts\\python.exe",
+        "scripts/generate-rust-job-fixtures.py"
+      ],
+      "exit_code": 0
+    },
+    {
+      "name": "chart-oracle",
+      "command": [
+        "C:\\Users\\erosi\\OneDrive\\Desktop\\allprojects\\keftrade-intelligence\\.venv\\Scripts\\python.exe",
+        "scripts/generate-rust-chart-fixtures.py"
+      ],
+      "exit_code": 0
+    },
+    {
+      "name": "font-oracle",
+      "command": [
+        "C:\\Users\\erosi\\OneDrive\\Desktop\\allprojects\\keftrade-intelligence\\.venv\\Scripts\\python.exe",
+        "scripts/generate-rust-font-atlas.py"
+      ],
+      "exit_code": 0
+    },
+    {
+      "name": "annotation-oracle",
+      "command": [
+        "C:\\Users\\erosi\\OneDrive\\Desktop\\allprojects\\keftrade-intelligence\\.venv\\Scripts\\python.exe",
+        "scripts/generate-rust-annotation-fixture.py"
+      ],
+      "exit_code": 0
+    },
+    {
+      "name": "rust-format",
+      "command": [
+        "cargo",
+        "fmt",
+        "--manifest-path",
+        "apps/backend-rust/Cargo.toml",
+        "--all",
+        "--",
+        "--check"
+      ],
+      "exit_code": 0
+    },
+    {
+      "name": "rust-tests",
+      "command": [
+        "cargo",
+        "test",
+        "--manifest-path",
+        "apps/backend-rust/Cargo.toml",
+        "--workspace",
+        "--all-features"
+      ],
+      "exit_code": 0
+    },
+    {
+      "name": "rust-clippy",
+      "command": [
+        "cargo",
+        "clippy",
+        "--manifest-path",
+        "apps/backend-rust/Cargo.toml",
+        "--workspace",
+        "--all-features",
+        "--all-targets",
+        "--",
+        "-D",
+        "warnings"
+      ],
+      "exit_code": 0
+    },
+    {
+      "name": "isolated-postgres",
+      "command": [
+        "C:\\Users\\erosi\\OneDrive\\Desktop\\allprojects\\keftrade-intelligence\\.venv\\Scripts\\python.exe",
+        "scripts/test-rust-postgres.py"
+      ],
+      "exit_code": 0
+    },
+    {
+      "name": "native-backup-crossread",
+      "command": [
+        "C:\\Users\\erosi\\OneDrive\\Desktop\\allprojects\\keftrade-intelligence\\.venv\\Scripts\\python.exe",
+        "scripts/test-rust-backup.py"
+      ],
+      "exit_code": 0
+    },
+    {
+      "name": "native-sentiment",
+      "command": [
+        "C:\\Users\\erosi\\OneDrive\\Desktop\\allprojects\\keftrade-intelligence\\.venv\\Scripts\\python.exe",
+        "scripts/test-rust-sentiment.py"
+      ],
+      "exit_code": 0
+    },
+    {
+      "name": "native-ir-http",
+      "command": [
+        "C:\\Users\\erosi\\OneDrive\\Desktop\\allprojects\\keftrade-intelligence\\.venv\\Scripts\\python.exe",
+        "scripts/test-rust-ir-http.py"
+      ],
+      "exit_code": 0
+    },
+    {
+      "name": "native-evidence",
+      "command": [
+        "C:\\Users\\erosi\\OneDrive\\Desktop\\allprojects\\keftrade-intelligence\\.venv\\Scripts\\python.exe",
+        "scripts/test-rust-evidence.py"
+      ],
+      "exit_code": 0
+    },
+    {
+      "name": "linux-native-core",
+      "command": [
+        "C:\\Users\\erosi\\OneDrive\\Desktop\\allprojects\\keftrade-intelligence\\.venv\\Scripts\\python.exe",
+        "scripts/test-rust-linux.py"
+      ],
+      "exit_code": 0
+    },
+    {
+      "name": "linux-isolated-postgres",
+      "command": [
+        "C:\\Users\\erosi\\OneDrive\\Desktop\\allprojects\\keftrade-intelligence\\.venv\\Scripts\\python.exe",
+        "scripts/test-rust-linux-postgres.py"
+      ],
+      "exit_code": 0
+    },
+    {
+      "name": "phase7-records",
+      "command": [
+        "cargo",
+        "run",
+        "--quiet",
+        "--manifest-path",
+        "apps/backend-rust/Cargo.toml",
+        "--",
+        "verify-evidence",
+        "--root",
+        ".local/phase7"
+      ],
+      "exit_code": 0
+    },
+    {
+      "name": "chart-records",
+      "command": [
+        "cargo",
+        "run",
+        "--quiet",
+        "--manifest-path",
+        "apps/backend-rust/Cargo.toml",
+        "--",
+        "verify-evidence",
+        "--root",
+        ".local/chart-intelligence"
+      ],
+      "exit_code": 0
+    },
+    {
+      "name": "phase8-compressed-records",
+      "command": [
+        "cargo",
+        "run",
+        "--quiet",
+        "--manifest-path",
+        "apps/backend-rust/Cargo.toml",
+        "--",
+        "verify-evidence",
+        "--root",
+        ".local/phase8",
+        "--compressed"
+      ],
+      "exit_code": 0
+    },
+    {
+      "name": "lab-records",
+      "command": [
+        "cargo",
+        "run",
+        "--quiet",
+        "--manifest-path",
+        "apps/backend-rust/Cargo.toml",
+        "--",
+        "verify-evidence",
+        "--root",
+        ".local/strategy-lab"
+      ],
+      "exit_code": 0
+    }
+  ],
+  "preservation": [
+    {
+      "name": "phase7-frozen",
+      "files": 40,
+      "differences": []
+    },
+    {
+      "name": "phase7-phase8-research",
+      "files": 38,
+      "differences": []
+    },
+    {
+      "name": "phase8-compressed-frozen",
+      "files": 27,
+      "differences": []
+    },
+    {
+      "name": "original-python",
+      "files": 106,
+      "differences": []
+    },
+    {
+      "name": "tested-source-identity",
+      "files": 217,
+      "differences": []
+    }
+  ],
+  "files": {
+    "apps/backend-rust/assets/exchange-sessions.json": "6fea10209f76e3392b08f6ecf5582a2faa30ff9543c4c28f8b46f1b2f35c0870",
+    "apps/backend-rust/assets/financial-tags.json": "a6139712d93f9d6ff46fc0d69f99228ab92739ed951b2ef7a87fc414aaae8384",
+    "apps/backend-rust/assets/legacy-html-entities.json": "94db1e33facde9c2e09e444358890c91af13f4ccfb608626475f39071b8d7c54",
+    "apps/backend-rust/assets/legacy-information-implementation.sha256": "a68b9978d216f85ba0f97b883fd33b1914949b3628db325acb3354d81da6f8cb",
+    "apps/backend-rust/assets/news-ranking-schema.json": "bbafc82911cb109beabed49cda10e7abb0b4c4b15e75f6b7b9bb72d72a71567f",
+    "apps/backend-rust/assets/news-system-prompt.txt": "9b59fefc65ef3d2e9404334ccd5d71328df81b37eb43d1e717c80000ed9b916b",
+    "apps/backend-rust/assets/pillow-default-font-10.json": "e7db724a29c00f98ca5f91ae4e65b4876babc2f55636e5540a6501770564f743",
+    "apps/backend-rust/assets/python-nonprinting.json": "ef08ca45b92d127a57e47527b48042107991f7ef2a2a686d7c1f815d9d471442",
+    "apps/backend-rust/Cargo.lock": "e41723e676e4f3d659e33e4e79cb9274ce171d811a3609c661e0c3409d16b9bf",
+    "apps/backend-rust/Cargo.toml": "db579afe2c3627d36a453e17e233a82c1c327ebf370059c56ff79ef06c5849ad",
+    "apps/backend-rust/migrations/paper/learning.sql": "5b262ce1e66003c0f83c1bf604553dc78cad5ee01fafbc91181ea76c1d5d28dd",
+    "apps/backend-rust/migrations/paper/legacy.sql": "2fa76566cac47706eaa2f18c49ec4332b8162bd2256b8efa767c3c9ad7e08f66",
+    "apps/backend-rust/migrations/research/001_foundation.sql": "14d5cfbf4713a485c7fa311575ae8287f827dfb1eb4062c217d7aac66542e086",
+    "apps/backend-rust/migrations/research/002_scheduler.sql": "9320060ecb393f86ed9c937c75dfde9394cbdefb15ba0be6ad0d0623db908a76",
+    "apps/backend-rust/migrations/research/003_evaluation_identity.sql": "7e29ac1dca88795c503dc387f9b40dd4b2a12d2eda5eb9311083c96d60c79149",
+    "apps/backend-rust/migrations/research/004_research_ledger.sql": "81715832a939650ad1abe2f1a695fc5f8b6dfb83258eb109b2785299dfa0e8eb",
+    "apps/backend-rust/migrations/research/005_price_snapshot_semantics.sql": "9fef1d5a6ff0bc5f5dd20a3ef69623645236b3692c9bd79e81001bd14b725484",
+    "apps/backend-rust/migrations/research/006_phase3.sql": "e80b76f49083eb684898440897befbbcf2ac3faefdb54907f4979c0660ca8401",
+    "apps/backend-rust/png-codec/build.rs": "aa8d25648d86c7197ad86ffcb04af7daf931ebd4d365c10932f144956bf326a5",
+    "apps/backend-rust/png-codec/Cargo.toml": "7d6f845bfa07ce0d0bf08f6ffec4c2ce9bed0100b86b771a5c1a0249f1193ff1",
+    "apps/backend-rust/png-codec/src/classic.c": "fd5bcb770d3580b7a1d83e77b9ca5843cae8a4554fcfbe6f9b40dead10c03aa2",
+    "apps/backend-rust/png-codec/src/lib.rs": "271a6b96fafbee4cdf7f281ee65258847d1f04f7f69194b501d5f2a4acf977df",
+    "apps/backend-rust/png-codec/vendor/zlib-1.3/adler32.c": "9cd1443a24ff2a3053961695bd432035c58347386a420d3388232376ebabe211",
+    "apps/backend-rust/png-codec/vendor/zlib-1.3/crc32.c": "8fd16f0a7714d51c89c2eb37eb98ec15e8a4dc57ba343e7b7398b19144039fda",
+    "apps/backend-rust/png-codec/vendor/zlib-1.3/crc32.h": "9a2223575183ac2ee8a247f20bf3ac066e8bd0140369556bdbdffc777435749e",
+    "apps/backend-rust/png-codec/vendor/zlib-1.3/deflate.c": "45a600ccf05e0fc45398295daae9852a355f6f738723df8c1b0702a429f9915b",
+    "apps/backend-rust/png-codec/vendor/zlib-1.3/deflate.h": "9bb51bbb95c4b6ff2c8c1a4425d44d880699b8a481a84d60a3047cd96d174904",
+    "apps/backend-rust/png-codec/vendor/zlib-1.3/LICENSE": "845efc77857d485d91fb3e0b884aaa929368c717ae8186b66fe1ed2495753243",
+    "apps/backend-rust/png-codec/vendor/zlib-1.3/PROVENANCE.json": "f423594247e97ff7551d0e3fd27c7a9f1fe17abe5b1d2edf3d7f68284a09feba",
+    "apps/backend-rust/png-codec/vendor/zlib-1.3/README": "b9b5cb6c619ae9553f87336c8bb0760662d55db66b21b08a62b360a72e6a0abe",
+    "apps/backend-rust/png-codec/vendor/zlib-1.3/trees.c": "27f69f26e124549b3c0bd6d56d86614cac71113a79c3c06716390e12d235ad96",
+    "apps/backend-rust/png-codec/vendor/zlib-1.3/trees.h": "bb0a9d3ca88ee00c81adb7c636e73b97085f6ef1b52d6d58edbe2b6dc3adeb4d",
+    "apps/backend-rust/png-codec/vendor/zlib-1.3/zconf.h": "8f1ea03be4e70354187aafec635ad7c72af33fe8be44f6a82c0c8dfa3aac9108",
+    "apps/backend-rust/png-codec/vendor/zlib-1.3/zlib.h": "6f1c7ebe0ac0f0794852b770c20efae041a451f833c91f60f837b599ea81679e",
+    "apps/backend-rust/png-codec/vendor/zlib-1.3/zutil.c": "8ced40d8c88588811edd2bdb35b7439983d5e1f8e9e32b8a3b244731f3c317b7",
+    "apps/backend-rust/png-codec/vendor/zlib-1.3/zutil.h": "4944ba7e9a7387ca28092a17afcc5ed9921e253bbd4d898a3f2bc9792e453a61",
+    "apps/backend-rust/src/allocation.rs": "6ceeb2ab094a960f68743e2a153d3064fd1893a7f4dc9ec66f3f2f669f170651",
+    "apps/backend-rust/src/api.rs": "143c92aecc150b788b63b62613fbf9e7fe164a22d6f93d183df41a2374ba9579",
+    "apps/backend-rust/src/backup.rs": "86f09730a4fe8cf79c65f64ad12e01f07eb35742a2597991d08318039b3124ae",
+    "apps/backend-rust/src/broker.rs": "3de4e8cfdbbfbc1e45a77b5a1ee459ba00aca768e39fa326126e466695fcf8c5",
+    "apps/backend-rust/src/calendar.rs": "0740e265d61bdabfa13fc79e476cb255c998284e20e3ac673e7ba49f77818c80",
+    "apps/backend-rust/src/canonical.rs": "b406b260aebc5567badcc231ae3623008a40faaa9fe8cf4418ae0885160fd484",
+    "apps/backend-rust/src/chart_font.rs": "1644bda68ed86bc3378d35d5c74802da89cdbc10b6385800582b80db99056d17",
+    "apps/backend-rust/src/charts.rs": "28bc4262c6b989b0617d22b2e72d65f2ef37628ceaf938aa2c65863b679a42df",
+    "apps/backend-rust/src/db.rs": "7782770bd3adb0c8abaa65b827045783a5c263be4c1ec969fa4e7f9ef4385418",
+    "apps/backend-rust/src/discovery.rs": "0bd6951f2e946c2c1cb82c07a98133671a3c2ef0b53ee660c6639009c5accffc",
+    "apps/backend-rust/src/engine.rs": "aa2af2f780f60df303ebf0ac80dfbc87344371be01ddbcb787ab04651bd4d391",
+    "apps/backend-rust/src/evidence.rs": "3d6588eb7283be5b8b57f7a824cdd22c7d24eb6a7344ba3eff20fd521cb62648",
+    "apps/backend-rust/src/features.rs": "3454cbd6f12ce9d3e9dc51d458a2eebd1907fbc6f3da8ac3eb264d0b11194105",
+    "apps/backend-rust/src/financials.rs": "108bc4b3839012f75aa81d4bb1f7f55021c9174c8b035e42418965989c102407",
+    "apps/backend-rust/src/forecasting.rs": "40f5291236294bba7b6caa7b73fc61588e40f400eba194a89f0fb70aa50784d7",
+    "apps/backend-rust/src/information.rs": "c1f9636be06a7f710e62f0a27798d967e0151da89b5c46a2bff71e211f584e20",
+    "apps/backend-rust/src/ingestion.rs": "78764132e2172454cf84c955b3935ecc3d58a067e35b34dccd65cf8b17518022",
+    "apps/backend-rust/src/ir_cookies.rs": "924d20b57f3ac7714e2c94854ffcf715747a2f51a14491f7de35b697ea7ec901",
+    "apps/backend-rust/src/ir_html.rs": "67d9f911883bc4c77c37097cf0f233551b558eff745b9a51b412a4a9be2038c9",
+    "apps/backend-rust/src/ir_robots.rs": "82dcde515c1158802293f9833d2e97bdb93cbdf26987087517ee7ae90277aaa0",
+    "apps/backend-rust/src/jobs.rs": "c1efd1d9d11f6abb2fbbfd7a25b4a8049ceb7c87a6ac3338725b65b7cbbc9f15",
+    "apps/backend-rust/src/learning.rs": "c853eb03e39fcc5bc3b98cd8bd938601c3f8e89b72bdbd2ee1b95960f7ced403",
+    "apps/backend-rust/src/lib.rs": "f6144162414485f8dcd300b3ee583402f7cc570aa95e83b0172465881b23910a",
+    "apps/backend-rust/src/main.rs": "35e92272c5ec9a6e881f5b31253246b4a7e9680c666b1a78b0560a937d66100a",
+    "apps/backend-rust/src/market.rs": "06e0642efa161b96527a1743c19f9afa3101efd0887134ba84d6536d0def7b66",
+    "apps/backend-rust/src/models.rs": "81f850ace5a7b9e17b80d5c00b833a9a06db768a8fe219696aa3d443afca2335",
+    "apps/backend-rust/src/monitoring.rs": "f77066f507959675f2f21744a742aba067e7eaa932a4f0a4c0972bacde5b1f77",
+    "apps/backend-rust/src/news.rs": "eae1bac9bccbdbd97f1278bafa20c579bd12dde7106e01e9496958507a9ad405",
+    "apps/backend-rust/src/numpy_rng.rs": "97dad217961d29f980d06af1197c34f2be2da7e8d04d3aff4ba2cf96a54ff7c5",
+    "apps/backend-rust/src/official_ir.rs": "eb34fcc35f43ea1d771d623e40ad40d515bd805bd32c40eb5e3115734c460873",
+    "apps/backend-rust/src/paper_api.rs": "dec7711fbc5ec0d18fe022032718e22722fde05a31f58cdd25dd158efcafa0e2",
+    "apps/backend-rust/src/point_features.rs": "0bcdcb240de15d42a21d8c8214036a9ec1dff59fd2fb7d50dd4446d1fd0e9b8e",
+    "apps/backend-rust/src/prospective.rs": "137ece55947128e1410f0f5d07ac4131decd6a8fc4f94c004baf699628b49a69",
+    "apps/backend-rust/src/python_time.rs": "b91ece271ef7eb6bdf4603bb912aa8bf0d1570e9057b40694c39ae7a306722a9",
+    "apps/backend-rust/src/ranking.rs": "86837a187f8efae45a337d22f136eea3364fe921d0bfcec64692b36d839e8fea",
+    "apps/backend-rust/src/report_api.rs": "488022016d42e98f975c2905723f99bea626bfa89d876e898593fd6b4e28f698",
+    "apps/backend-rust/src/research_api.rs": "92567194aad37cb245544c8dfaa08484b0665b95c5dd4d725b297e254175b5ee",
+    "apps/backend-rust/src/research_dispatch.rs": "d6eed8b98d0487da419f3925eb6b71e7b50c27684cb279a6690681dad3e95a15",
+    "apps/backend-rust/src/research_providers.rs": "aa9282929da8d56aea4d92969bd7fb8f93fabc4fb95c874819f46e0963a306c5",
+    "apps/backend-rust/src/sentiment.rs": "4eb3ce3438beb4566ece719d99dabc30dc7e43a39f9abe59f126037472727287",
+    "apps/backend-rust/src/sentiment_worker.rs": "03ed67d418e6bceac29441914d8475591ae175fb1560ece68570b03f8ff218c0",
+    "apps/backend-rust/src/statistics.rs": "6da09b0fe52b9914f5d30e34560479ba95624d736970a419fb9911434aa0dcec",
+    "apps/backend-rust/src/write_api.rs": "9ab88da6644ef2e14028111dbbd37f3886b17e835f747a31023cdbb96715fd2e",
+    "apps/backend-rust/src/ziggurat.rs": "7ac07975d97ac0ae5afdc52555b49920027b5b8990cff0814790f315f0095c07",
+    "apps/backend-rust/tests/api_contract.rs": "a36fcaaed9d127c712d60c1b3fc461c0842da48054cfeceece263fe38ecdf4aa",
+    "apps/backend-rust/tests/backup_lifecycle.rs": "0a0fb7bf5e7639341a5ba60e85b501f1b846e82869d660d2178172f459a05ebf",
+    "apps/backend-rust/tests/bootstrap_parity.rs": "74e01596e1100a1038220d8bcb053b1df522ca79da460df61662f05f391ae295",
+    "apps/backend-rust/tests/chart_classic_parity.rs": "b05d067867c6156ed59725e12ce5c57c1b4a68dbdf1e203aea08ad903cf5877d",
+    "apps/backend-rust/tests/chart_parity.rs": "45278b47e32c163d11405d388a97c11324a84f87e4e38190980ae04f2a651793",
+    "apps/backend-rust/tests/common/mod.rs": "57a936f7306edebf247ab94b6f78c8b49e47cbd577852ecc1ff2046d01176277",
+    "apps/backend-rust/tests/discovery_lifecycle.rs": "a70c939657644f3b1f90f18c8df05cb684d3c585e12d33ca661f45a953989646",
+    "apps/backend-rust/tests/engine_lifecycle.rs": "4e02bdb80ca658be577efa018eea70cc8d478427f3c9d68eb715a49cf3efb2cb",
+    "apps/backend-rust/tests/evidence_storage.rs": "3022aa924e49de37bf283c05fa248fc8db292ebf7dd04614f8a652021ac2a3f8",
+    "apps/backend-rust/tests/financial_parity.rs": "52a0c7b5ff0fea6e1397062e35aa42bdf299dd8b7ed6369bc22f906553e01645",
+    "apps/backend-rust/tests/fixtures/annotation-edge-parity-linux.json": "2132814d05ff4d377c11dc25e2b2b6317d8e68937067642d2d8a15050a2d7dda",
+    "apps/backend-rust/tests/fixtures/annotation-edge-parity.json": "9c84a0922f7bbebbd7eb15e6edf16bb411a9beec8cc465485a8536803572a368",
+    "apps/backend-rust/tests/fixtures/annotation-parity-linux.json": "ca755f0bb42faee95b2745380e5b7b7da1860d0dabe29797c6ded45fabac577c",
+    "apps/backend-rust/tests/fixtures/annotation-parity.json": "9b25aabc62fe98a3da4b7cb7379ff9231a81cf251163278db4ace17959c7b568",
+    "apps/backend-rust/tests/fixtures/auth-python.json": "0f7e0dba7953f9d4ba8de2851dd330b3ad93ff70a81a55b2ba97833e07f11996",
+    "apps/backend-rust/tests/fixtures/bootstrap-parity.json": "48e72ed46b9e034012a9a87487570e4dafef596f7443ba90adbfb6f98d29182a",
+    "apps/backend-rust/tests/fixtures/chart-parity-linux.json": "0f9bc16f236581732b4d7a30383f334b47c2b328ae75d36bf32908f1f4f019d4",
+    "apps/backend-rust/tests/fixtures/chart-parity.json": "5e593424a53f3e2bb93b09cb1cfdccac9e6b356d343b9369dd70691b3162341c",
+    "apps/backend-rust/tests/fixtures/control-http-validation.json": "3bd236684733f9fb9ab4dee4831579b4d376d5f4cbc0133881be6b173a4326f0",
+    "apps/backend-rust/tests/fixtures/control-validation.json": "845a1fe1a82470265f5090085c6550bafb231ee51a78f5ccfbe6e403c8517bc8",
+    "apps/backend-rust/tests/fixtures/discovery-parity.json": "c9e0b0d33c4aed5e5bec2bd4dd2cc240a3ea6d897c44c8c81041f7a15681a8ae",
+    "apps/backend-rust/tests/fixtures/evidence-storage.json": "a513edd01aaaffbbb5d9322cf2d7f45965f423614fc7b654b5119c58dc3a14bf",
+    "apps/backend-rust/tests/fixtures/financial-parity.json": "ee8d8c946539170c9da75bf8dc4e67208b673cff38e288d088bf7b42c9b06985",
+    "apps/backend-rust/tests/fixtures/forecast-statistics.json": "70f61f35a8ae3f1c67c6cd4b9b7b3f3cae58a3ceeb544dd93bb9639e9c96d1ea",
+    "apps/backend-rust/tests/fixtures/information-metadata.json": "6794604e9b1b52a891885c0da1c041ff331153915d6415e2b34f8093aab6f36a",
+    "apps/backend-rust/tests/fixtures/information-time-boundaries.json": "48e1a28185ca8659741011737462c29d4b87a1b318e701dfd29d7a507e298605",
+    "apps/backend-rust/tests/fixtures/information-time.json": "1cf9c23f623e881df5ec574bd2d4dcb27d0c565fde7c2999869759e029a4dff1",
+    "apps/backend-rust/tests/fixtures/ir-boundaries.json": "dac31a14213c3f02fe694ef6a0a2a85576c32b1baea8f0f67cf50ac7e8bd349e",
+    "apps/backend-rust/tests/fixtures/ir-edges.json": "a3f4ce75013ab16bb446a81a0ed933102fe2fb2a82028ca73f1824fc18b3ac86",
+    "apps/backend-rust/tests/fixtures/ir-html-robots.json": "5fc5b4493765fd2058f7e286c6867c651a0ca334f6a90a12955ebdc9b1056f47",
+    "apps/backend-rust/tests/fixtures/job-parity.json": "2e9da6f093f5c42dfa2416dd054af164f456b206fb6512949b5562151a491fe4",
+    "apps/backend-rust/tests/fixtures/legacy-progress-parity.json": "ca3196dc60f798741bed2d90348e806e6af4303dd9d1c8f65d075a73eb769787",
+    "apps/backend-rust/tests/fixtures/market-parity.json": "9de5bc66c1e1c04a973fc7e59e9d7f5077037c05a36d54416547ab31eeff0b60",
+    "apps/backend-rust/tests/fixtures/monitoring-parity.json": "3131e282bf5d1bfd7fffdd6f7b74d0686c7f5c5f3f6f1147f2619ffa04efbb6e",
+    "apps/backend-rust/tests/fixtures/news-parity.json": "fbcec254a9cbf2bf08ba09523ec681a6eebcfcb9940ae7e04a7138748721a731",
+    "apps/backend-rust/tests/fixtures/numpy-rng.json": "0016bc4df3879ab9656632d7c9ef1b64d30b9ffae02c22e11e11191adf87d12f",
+    "apps/backend-rust/tests/fixtures/point-feature-boundaries-linux.json": "07fb8082dd06ebacfb35f75cecf9e83c936e8de3ef295f61008e75663ba845ad",
+    "apps/backend-rust/tests/fixtures/point-feature-boundaries.json": "b69a91308ef88d62ebfb23f7d50be40e7db2bf9c1ee71a587ffcca0546563779",
+    "apps/backend-rust/tests/fixtures/point-features-linux-runtime.json": "7c502deb3455f9c94d4741508ccb986a4061bccec3595b9bf965b10b86935bcb",
+    "apps/backend-rust/tests/fixtures/point-features-linux.json": "e9e88c6035941e8e026720eecce85c28c0f32b3ad4d148fec54f544820b2d3f3",
+    "apps/backend-rust/tests/fixtures/point-features.json": "f0094d887a8408156e4bdc8de1b8288f8a4fb355ee4f1f8ae50c75f5080a15d4",
+    "apps/backend-rust/tests/fixtures/policy-parity.json": "44f63dfe4ecd77b883383f38127976a7f700a246fd49ac5e6b19c97044bdcf99",
+    "apps/backend-rust/tests/fixtures/python-parity.json": "9f2945ad5f3089b34223d8e7b87aa296038f1e915291d37970446f2394b5702b",
+    "apps/backend-rust/tests/fixtures/ranking-parity.json": "af8184a9bf09371549571f2ec0558d707bef2cb777c848a2c248bd9f33588e66",
+    "apps/backend-rust/tests/fixtures/report-api-parity.json": "1dede320739cd7a7e6021281f53c244d32cc18484960f388552bbd1c8739d102",
+    "apps/backend-rust/tests/fixtures/research-parity.json": "6611b2a972092f03026636430c888bd7a849893b33947db1c3beb325707a24b3",
+    "apps/backend-rust/tests/fixtures/research-provider-decimal-edges.json": "0cf56354a8e66d5cfa4757bf45395a3303c31ece0baba6163852de73a8a878e1",
+    "apps/backend-rust/tests/fixtures/research-providers.json": "df03b5b2a03fee2c08c9e199f18b727c15f069379e1377266c17bb4ebca2ed7c",
+    "apps/backend-rust/tests/fixtures/sentiment-http-validation.json": "3278d603e0d8b4fb8f5e6686e612d8ca674d6c26fecdb66d631ef2dadb98e512",
+    "apps/backend-rust/tests/fixtures/sentiment-inference-parity.json": "1b6e67b488d1ea8e57ccb70cdee50c20906ba764a2bbc10ef206df2586dde40d",
+    "apps/backend-rust/tests/fixtures/sentiment-parity.json": "f30c477c536c141b37c70d75d97e28295ac991ad06798e3dac9605629d624d7d",
+    "apps/backend-rust/tests/fixtures/write-api-validation.json": "3151f29e6a11060a9e3d5ef8c00cb6a8b22949b568ffba8b6bbbb9e5fdeb5608",
+    "apps/backend-rust/tests/forecast_statistics.rs": "b8100ddbd61a1c4053af1a41261b27c026fdf84c20fdd4d0480d1cefa22cac78",
+    "apps/backend-rust/tests/forecasting_lifecycle.rs": "095f38ebbe0c97f9fec9abb6635e248fe767a8fdf8caf3c0560282172195403e",
+    "apps/backend-rust/tests/information_lifecycle.rs": "71d53192447c6f27550c23748a22d7d0cbb7e3035221d593db370923c517e17f",
+    "apps/backend-rust/tests/information_metadata.rs": "2821d296df2ff4f520bae74489174afb8f16a4ef32691a37f1c716924b54c884",
+    "apps/backend-rust/tests/information_time.rs": "788f8bc539348c59d3aa82e0d0a71c0bc81080e2fa3edfeade643d5428a1564e",
+    "apps/backend-rust/tests/ingestion_lifecycle.rs": "90450e332f88f18b7adc7571c09e2b565d749215df0fc65822c224d568c0d416",
+    "apps/backend-rust/tests/ir_parity.rs": "5506dc698052e8f44058fef7b10aadf46ee4eb0e9a2cc2e43ae54829e0791e2c",
+    "apps/backend-rust/tests/jobs_lifecycle.rs": "9b80bdec4cb19fb2efdece0dd724926774d3ad4f56c48a39c025bf9dc191c4f3",
+    "apps/backend-rust/tests/legacy_progress.rs": "65d2d88d919f180a6b642f2011766b4453a4e65c74217111f493d76a8c1e3d9f",
+    "apps/backend-rust/tests/lifecycle.rs": "58c4fd62dd7a4c3467c0714fa18c3542f149d1dbeed14dd76e106401ca6f6616",
+    "apps/backend-rust/tests/market_parity.rs": "44f6d183ba7f70452349448358a048dcf9d9f033516d74d6322bc7ddf3349956",
+    "apps/backend-rust/tests/monitoring_parity.rs": "9d78f08ce6d1473aec8979bfebaecc27c32bc96f7fda27f98774608023875122",
+    "apps/backend-rust/tests/news_parity.rs": "85cf55859f2c68dded9c540a5013d1e4e591c6a77bbc07b8bda0dcd1ebac041c",
+    "apps/backend-rust/tests/official_ir_lifecycle.rs": "ff7fa1b6b930cceffbe0cc532fab2ca9937c419783936ca5818b92bf84429dde",
+    "apps/backend-rust/tests/point_features.rs": "58747da516e8afed9e69c76a439d5957ff20eb446ec0b6bf1e147c7cc7aa220e",
+    "apps/backend-rust/tests/point_features_lifecycle.rs": "3efe6e0586acce30dfc2f3667ccf7783ba0cae7bf225d164b4b713d5c634b6e8",
+    "apps/backend-rust/tests/policy_parity.rs": "a02470788a48abf0ca714efcf601c85ff643e2939b890a974394eb4d80b913ac",
+    "apps/backend-rust/tests/prospective_lifecycle.rs": "ab7b855386e06aa76126404929637df201f76922aa6051e8e0801ac89cf71b57",
+    "apps/backend-rust/tests/python_parity.rs": "31f092bf9aa8f7000372be2d6ddd712f0ab09b4539f45b4f82037880846a122b",
+    "apps/backend-rust/tests/ranking_lifecycle.rs": "a4ddb08ae0fe7056e88c14bfaaebff23361ee3931951ebf2a7d942c78af8b97f",
+    "apps/backend-rust/tests/ranking_parity.rs": "06e632a8e80eac8228ee7e9650667a385bd5644cdbe66eec8c39de5458a5a320",
+    "apps/backend-rust/tests/report_parity.rs": "688ad56a2761019b6b9f18c2a99d7bf7e8c72bc69e5bbdf1227ff5b9b0414565",
+    "apps/backend-rust/tests/research_api.rs": "96d00ccb71812612849ec2ad24e6646dc30419b69364040fe23a4cca404ef600",
+    "apps/backend-rust/tests/research_dispatch.rs": "3f3e94e3fe468c63575eedbaa01879abb02e2f4f88508a4f81b4e2dfd4394124",
+    "apps/backend-rust/tests/research_lifecycle.rs": "363b11f72bdd5a2c6ca6999d9a3506f6248f04d0fd205a905b35ea54254839aa",
+    "apps/backend-rust/tests/research_providers.rs": "38a5db86fe92e6aefe985497117bc8da9cca3da6ebb1ab93d918925697596f79",
+    "apps/backend-rust/tests/rng_parity.rs": "d3c5dcc46081ed597032f17db17c1e20f7d07ce365ed2cc0d071820478a28907",
+    "apps/backend-rust/tests/sentiment_inference.rs": "98d3eac1727f7df282eb43180f95975c3cb4d1a391f5e98d624690326e063b80",
+    "apps/backend-rust/tests/sentiment_parity.rs": "ab3f3daeac50911f7ba7c500f4e51cf974bbcf765b07204df0a6f0f1fb51d9a0",
+    "apps/backend-rust/tests/verdict_lifecycle.rs": "1e8eef5655f769dca5db309b8f01701aee4b9faebeb369d0d98a1c3ede1bddf0",
+    "apps/backend-rust/tests/write_api.rs": "73ef74200b5828c9a839b8974f9456f0e6cb008e536bd96f1234946d82d1c8a3",
+    "apps/backend-rust/third-party/AILERON-DEFAULT-FONT-NOTICE.txt": "7cc1bb17a89223e3c1fb643118177105406243abf4f45b72e8297d5d242517a3",
+    "apps/backend-rust/third-party/BEAUTIFULSOUP-LICENSE.txt": "55b4d8d4b1e5bc86d10efac91b74c87bcb77526b0f5b9edaf8b9cd2adc7397b2",
+    "apps/backend-rust/third-party/HTML5GUM-LICENSE.txt": "d8c0537cc294880316b3a28a7fd4eeccf1254fa955851582cac46fd048f9e8db",
+    "apps/backend-rust/third-party/LEGACY-IR-NOTICE.txt": "bf90d33c95d4eba3cb607512e0adf1cad4ac21927502a2f54d5a6cab364f020e",
+    "apps/backend-rust/third-party/legacy-ir-provenance.json": "37e2ee347f00122d1cf263d7ca579364c6fb8f23c7cb68740134bef614a3d457",
+    "apps/backend-rust/third-party/NUMPY-LICENSE.txt": "5b76d36901cc7891bae1ee728c777745e9e0e5d7cb61a13bf2d0596a06c7cf6d",
+    "apps/backend-rust/third-party/PCG-SEEDSEQUENCE-LICENSE.txt": "5adc4506ac75097927c1552ed3fa02d215b95554af00dd2c5913ca3a835cf423",
+    "apps/backend-rust/third-party/PILLOW-LICENSE.txt": "15181e7363dca9aed78b79bebebc7fde7f1814b8bd311ea3b87ae8ccadfc185b",
+    "apps/backend-rust/third-party/pillow-source-provenance.json": "e357e0aaf597fa7488ed6f71a4e780ea1c62f73fafd324a73829b9a5a7308823",
+    "apps/backend-rust/third-party/PYTHON-DATETIME-NOTICE.txt": "a14d01c79899091df1fd4b79ba8113e7b5f13d647c2de8fa69ff6a25475b91aa",
+    "apps/backend-rust/third-party/PYTHON-LICENSE.txt": "935cf13e19f8c31b497d20b05d73623431a226b230c3599bc30fa3348979bc68",
+    "apps/backend-rust/third-party/python-time-provenance.json": "d386bf500e9825d28fb1ee15dc5a6a33dbfc920e0fbf576184fd23fcefb08b43",
+    "apps/backend-rust/third-party/ZLIB-NG-LICENSE.md": "6c9f0d975b41afaa34d22f55bb8986ce69e5cb7ad327cb2b28820cd425edf5ee",
+    "scripts/checkpoint-rust-migration.py": "e463b0771f153bf679dfba099e707fa927f95a00df4b1d9782817e784c9e0bce",
+    "scripts/generate-rust-annotation-fixture.py": "d94f85ecef5a0206e9e9b38c147b2be32ce1239c6a6483998ea47387fe0141c7",
+    "scripts/generate-rust-chart-fixtures.py": "c765e837593173778a3cb80fbf702d3b21d7e6d390a35362a6e4e52920cadfc7",
+    "scripts/generate-rust-discovery-fixture.py": "ccccd5eb19ef38ea12a5ce896808883f91e003a18627f702f87012b655de8599",
+    "scripts/generate-rust-financial-fixture.py": "c41eee80090ba4136054b1d57c34141f42786fd797a1fb56e15d448be8d0858b",
+    "scripts/generate-rust-font-atlas.py": "aa414fdca7c63513bcc057b2d56972847c4c3dbffbf01110da3294ae301c8d6e",
+    "scripts/generate-rust-forecast-fixtures.py": "4399bebca2df25b664ec65d5e5a334863d78f6b7916809a5a3d19d89c44a6432",
+    "scripts/generate-rust-information-fixtures.py": "4f9913542ce47cb95ea4b05e25fe22d2dc810cee3fc62cdc4452b323072b170e",
+    "scripts/generate-rust-ir-fixtures.py": "bd29769cb2c0f32b8a34a97eb7dd25bfd9fe3da9ccb4a982687e13aed1c01504",
+    "scripts/generate-rust-job-fixtures.py": "532b1185b6a60e5da6f8b107c2297590609c4d37851dd75bab103123aa9c172c",
+    "scripts/generate-rust-ledger-fixture.py": "2cc1d523a3436928137c4230d5a8918133d05ff3a4f03581d8965d776165eb9d",
+    "scripts/generate-rust-monitoring-fixture.py": "ced2f08dc063a618fa1f4ae46d87084a0dea60ca3b8a4d39ac0a732c28b5a526",
+    "scripts/generate-rust-provider-fixtures.py": "09a6467792d5ad640c5c393b231dc1c15463489db5deecfa37a6826c5ad568ea",
+    "scripts/generate-rust-ranking-fixture.py": "de6fdb059774f65eca92b1ccf4ab72b4e43a6f08c14b5ccb5a99535f2a9de125",
+    "scripts/generate-rust-report-fixture.py": "e9cc8119c2313a26d91dca9b292bc33418154cdf2f030fe388405967534d235e",
+    "scripts/generate-rust-research-fixture.py": "8c0fc936236008be1ba3f686925f9b46b8b719df7fb73ef53ba830f0d1891fbc",
+    "scripts/generate-rust-sentiment-inference-fixture.py": "a6e5a10f0229cb1d933068a4464298497eb1ef0012f33480387dd204ea754144",
+    "scripts/generate-rust-write-api-fixtures.py": "a3150f55b289cff24d469b15a938c2dd7d1bb0c0ea7b742a96467b0ed3e87795",
+    "scripts/prepare-rust-forecasting.py": "bb271c9b9ca5f391587bbbfc895ac3340b98d69d0e8a575421936aa4a892db6f",
+    "scripts/prepare-rust-information.py": "65d0287edcdfa428c9b3a5d78f1f71a625a6d3ee677bd1d2fcfd7e46026e0c8c",
+    "scripts/prepare-rust-ingestion.py": "9ffa67c74d4ddc0521ff4f9e55502f2321c7d942fa1f39c668b5e36fc409e584",
+    "scripts/prepare-rust-official-ir.py": "3bf053482d777b7e7c20786fa68f0d6f27039a2b17bcfc033cb8ebd4373dfeaa",
+    "scripts/prepare-rust-research-api.py": "c621fe1d724f4e006fa5ec2b3c8dcf652c88ce7f22fec44c2f097bc75235b4b0",
+    "scripts/test-rust-postgres.py": "99e216a518a574ad1023959891b698cb2bb1dc9754096efa5472fd5b9f3f1f53",
+    "scripts/test-rust-sentiment.py": "df897fa40818f993a7e6fe342dc33eaaf9fc271998c9418fc89e33a0cb501b86",
+    "scripts/test-rust-ir-http.py": "87eb219d17cab1329f3dbf91c8c52443a61491bc773cc300572ee1631b08ff9b",
+    "scripts/generate-rust-information-time-fixtures.py": "bb677bbd02ab9c7f11d79266aa70d3f7583e30765cc65d38872b2430181dffe7",
+    "scripts/prepare-rust-dispatch.py": "98858b547b1fee74a4436f4093652c59a81a1e50e917d147707b135bef6ef281",
+    "scripts/generate-rust-evidence-fixtures.py": "85880b4290237e4df686e90ddd12b6265a881863aeae02a82fe6f0c70afd8756",
+    "scripts/test-rust-evidence.py": "15b15267fb14b042946ceda8d7da4b933dd56da2d71facab9515436f19f7ed3b",
+    "scripts/generate-rust-point-fixtures.py": "c4d78e9e0aa8b26e6c74384db1b2a4005bd8fdbabfde046b7cc720f491cedd0b",
+    "scripts/prepare-rust-point-features.py": "421ac10038b89595fd83c11289a0fc8b249d6ec6fed1714c965cc23a3c578c46",
+    "scripts/generate-rust-prospective-identity.py": "2ac06104a774f346fb9a7152b3c93db30d42f3c0f3276ed84fd56450a74ac8bc",
+    "scripts/prepare-rust-prospective.py": "85e1f908d0db3130cbabddb35349264557224294fb8c2b43c76c84ecb270ed73",
+    "scripts/setup-rust-linux-validation.sh": "a0a57cd10ae6b7d88707ae5fc6f829f30cd606ddd3a09763f7e0b1a91ec50f05",
+    "scripts/test-rust-linux.sh": "9f53d20915b699847d66c899292e1ecb96ecdc463b5e2d17dacfac2e50d78766",
+    "scripts/test-rust-linux.py": "e7561c7ce9addf189019a18f8b31468cfdcdfb96b36b7f3b141c714e4466681f",
+    "scripts/generate-rust-bootstrap-fixtures.py": "c11380bfcfbeb9fb0936094cd501be7583a06c41b13be58505b015f24d1aa53d",
+    "scripts/prepare-rust-verdict.py": "4c7896125af8603980762cbc339ef9797466cfd033542cc9abc7c92ba3997d1c",
+    "scripts/test-rust-backup.py": "3bf6ebf552c744429c4476e9b1f7949f5688066d3d61e14d8c1f5047263441fd",
+    "scripts/test-rust-linux-postgres.py": "75085713b8f553fab232622ac69531c2babc8d34c8c71246b2f0982120097945"
+  },
+  "outputs": {
+    "annotation-oracle.txt": "f947ab50bd50c1ff0f727369e098b778bfde66e2ca239c9e385305390025211e",
+    "bootstrap-oracle.txt": "82132552d00ff355b719b10d82361249c3be5daacde9dba3cd630e52a2173925",
+    "chart-oracle.txt": "1412bb940b3401ab431dd3020e0bb27730a5bf93d8200b76e6c9af55e910187f",
+    "chart-records.txt": "0e7446f12ed647a020864a472d70db65544328d654461e0cc23e7a578319ba6e",
+    "discovery-oracle.txt": "c073ab2b64685f2a905201eee97ece40327687e76fbaa991ed13b49633f5ae61",
+    "evidence-crossread-native.txt": "7472cb13aa205dd13b86045544531d4305ef0c18380a26a0e1b290253b52fec6",
+    "evidence-crossread-result.json": "7bbfc1b1aca17d8b79c9000f70770819b99e5545c9688aa5bc3f38feee410cf0",
+    "evidence-store-oracle.txt": "19bf0e9e58dd495b34f3cc879fc258a173234700f24a2de3427a375d87962add",
+    "financial-oracle.txt": "3564acbae58b48686115648344457d425b5ba080f8fc10ea0be433a5354b95db",
+    "font-oracle.txt": "0366b766d2d169dc86d572a53d251aed3a735c7e3fe40891f419006aef7a6d20",
+    "forecast-statistics-oracle.txt": "0ecd5623034c51378f1e8c9d5bfe59fcf1b0a3aec6c961a58805ab28def12947",
+    "information-metadata-oracle.txt": "860f37110253863f28a00e259401098b5fc6b1bce12034ba35696f200f917a16",
+    "information-time-oracle.txt": "57cf5e63560de765b4d71852be2d7605881864f1294cfdb58351422e6c8befd9",
+    "ir-html-robots-oracle.txt": "6056d48db1c528f4f61af634e22dd1a56ba9daeb27b8194c4a4757b3f5892452",
+    "ir-http-ca.pem": "f0f3223155ccc9d8c18353ebedaeb1fd8ae648ca3da094ec1e0d3a31b4c70241",
+    "ir-http-native.txt": "fd9b019323f48d5c60d08cb51f00ce6417029be9c810f47b3580c98bb2e87171",
+    "ir-http-oracle.json": "255118e1ae376f91ed2258ee74b1cb2d95c38f4a2f2274d95518147cb767122b",
+    "ir-http-result.json": "ab746f5c86fb596ac5b6b2617b043065c5e8e1ad7e056e220b89829ca2a41fd7",
+    "isolated-postgres.txt": "7c0bd41a66d88e071c24c7bb3f3f8a2fbb35a6fbcffad42835326b80dc67db7e",
+    "job-oracle.txt": "251b944de2ccd9ff076acf94215dc9d71e0fb0878492abb7bc37c322be77aba9",
+    "lab-records.txt": "544602cd7dc92be67bb33eb2753896a5ed777be09e7941e6d05d4dd52a9dffdd",
+    "legacy-ledger-oracle.txt": "f23ba00360930381afa97e887f5d02dc3d3760061621750b184bff736edb7657",
+    "linux-core-native.txt": "36ae5d5eec617fde5c9f2fb750a6b7386a55e3694e1a9485f2c560acbfe2cfb9",
+    "linux-core-oracle.txt": "ffb13a7ede3556e217e84d14356a6bee563dd49f2caa71533de1c5e8290e97b8",
+    "linux-core-result.json": "59e0c5f9176a762a6b70a3077a4343b1c7e37a3b6c79a69a65a26fd4d5b1a010",
+    "linux-isolated-postgres.txt": "c4e6f94ef40d96fcfc24330dc4db9fbcc431ee7f5426497c391cfaf3d4729701",
+    "linux-native-core.txt": "f6898cfbe62363220b21c19504adf2111b574fbc056f2d80d17850357e977095",
+    "monitoring-oracle.txt": "d263c96a125215bb17243a9e05b3c85d56fea323c4708dac764baf36efc18e6d",
+    "native-backup-crossread.txt": "87e70afac623140881b6d09686dd25ddd78244ef3b6c11162f4f0a6030bb0e67",
+    "native-evidence.txt": "4a9faa73b46dd81d379eda0352efbcecc0de59a5db57367f407f6d9a5aa4bcda",
+    "native-ir-http.txt": "ba4a6c8b302a9a6b4203ddf9b0aea231adb02c82958ff94603a70057eaf6b387",
+    "native-sentiment.txt": "ebdefc9d78a74708f4e64c105400fe79c450de7b3d40261ea980c69834cd5537",
+    "original-dispatch-oracle.json": "798d90f15690a6e8cfb07f46eca2ebbb143e7e11a1ea49a82fa432fc0de06d3c",
+    "original-forecast-oracle.json": "f24c4c5169f4f9960bc8a0ab6b055245a154e0f1b01a01d0ae5bc057eaeb5b55",
+    "original-information-oracle.json": "34cbf8b36c3c3414ec3ec9e366e1bf12b8403527b18adea54710fbdabf30f5ef",
+    "original-ingestion-oracle.json": "3b18c392a63297798edd60224bc68bb4e4fedc1f570bb71dff49835cf26adfed",
+    "original-ir-oracle.json": "a05449d926af2c7f0390528d51d6e077b7d122cf31de15899b1daf92904e533b",
+    "original-point-oracle.json": "6309202913197871ece7245ec3aa3d3b1df1c2c67da76134ba010fa1687815c1",
+    "original-prospective-oracle.json": "6ea32e5390be5c347f4a4db10468bf3938bbe755b937af5fb6dc168d954bfa85",
+    "original-research-api-oracle.json": "6d9b4669f07821236194138129a0e33f738ffa9ea314d3fa2ec101d36ad815a1",
+    "original-verdict-oracle.json": "92199f30c0acad58e9e825ff466818948fc5afada18374cea619a367b9c068ee",
+    "phase7-records.txt": "c64bf2883ab1b3bc089ea301b1603d219f2c686e9845cd5e9884e005ff5752ed",
+    "phase8-compressed-records.txt": "6afd4908ed6e88459cb3c058aa2da55369093d251669987b805453cbe212feaf",
+    "point-feature-oracle.txt": "f0568df5fa6cd192875c99803fd5d581190a63c80bab5529f1e7a2caa2c5f466",
+    "prospective-legacy-identity.txt": "b78397a0a22c96b854305c5b31e0ee342f70edc190583647fd5d68d21e24b636",
+    "provider-oracle.txt": "ab4dad05a02fbbf904e6503deb9d6b3636ad7d0d3944b560927f5727198e5ce8",
+    "ranking-oracle.txt": "154e236b069fc5bc2784d5a9affcea62f96238d24ae87c4ab5a40768000f113a",
+    "report-oracle.txt": "3ae2d6757e3e563527d357d1af19d7ba08cb7f3a128aae4317d53f5792de5c82",
+    "research-oracle.txt": "7f4126515d545616c2cd508366c3c02ad67a6185f3c0959f1cc3df90160c2a7d",
+    "rust-clippy.txt": "af7cfae72da480222f9cfb38a74fb83918d1f6c6f899471ac5e6dee1526baacb",
+    "rust-format.txt": "7eb70257593da06f682a3ddda54a9d260d4fc514f645237f5ca74b08f8da61a6",
+    "rust-tests.txt": "d10a2062c1c68d76c60c6dd0d97a980569cc826098d34f118f905c153b0a598b",
+    "tested-source.zip": "e8cf777ea032eb1430af95c5186d68074f2b3448b3a5210ea8464d9a6c6e074c",
+    "write-api-oracle.txt": "0224e08e277013a7c87f1555aba658a50de3c04460454711670f2e5c3493b0d3",
+    "backup-crossread/bad-copy.zip": "f55dadce9b82f56312b5e6d6233f861a7cecec06e0df9c9b7e5e260da75387d8",
+    "backup-crossread/cancelled-request.zip": "954929a72d715b2aed54da7c7b48fed7931d382c3ee1835a63be059d6714ccd6",
+    "backup-crossread/cli-export.txt": "ce582a214a9ecee0dc023e685032c8c244f19745e03dde3d2331e300e3748198",
+    "backup-crossread/cli-inspect.txt": "e048622c8aad940deff8c2bc3052077c37e8b8878c43bc80019dcfab81e6d80a",
+    "backup-crossread/cli-restore-new.txt": "2e8b23c520bc88b70fc6d38f68c1dae7dfd0cdc6825f2090ae5158ff27a2d088",
+    "backup-crossread/cli-verify-local.txt": "11675190617fe3ef227990e47f6372512f64973f7ede0a5098fb2617885d33ed",
+    "backup-crossread/concurrent.zip": "cc1027219c8e3cb81ddd822975e7df24af8ed60bf5491d2807bb6b9441b0b47d",
+    "backup-crossread/duplicate-member.zip": "9ebfb603c23f831342b97b7475b080763330034fc55001b662437dee4f1a2a6f",
+    "backup-crossread/extra-member.zip": "8752517fbd7249299dbf0781c17889415cee106c162c90b3df022bd7f622548d",
+    "backup-crossread/fixture.json": "006e0596384a3264103313026095f92f658fd56cc97bb46cd829e0f4b4204ece",
+    "backup-crossread/missing-member.zip": "7d6e443b552992c26a5447f9e97c7fece88675a2dc653298dec1274602aa31b5",
+    "backup-crossread/native-results.json": "623f974af4a65455a8b0d7661144d9ce277d6f31f5aa25b3cbd18d67f3c76894",
+    "backup-crossread/native-test.txt": "f3a768cff1f1c7b97f39fa960d93f85f83c625520cc2f74bf536f1dad929f71e",
+    "backup-crossread/paper-native.zip": "560bf551b5fe0ef52987f48c6cefce5dced1c83dcd97c71b604738d23d05baa7",
+    "backup-crossread/paper-python-v2.zip": "4816b8c9fab8e0f4a0c2072902f3a39df29f9b6c8196d740b542f0037a02b73b",
+    "backup-crossread/report.json": "2caed256cbae54b0088b1622e4a245b95bde0c66df968baff4ddfc0a96fa8cc4",
+    "backup-crossread/research-cli.zip": "56acc98f86b5884d81610d07f45c17960b88a52087f893a8ca13acfb20b18a8c",
+    "backup-crossread/research-native.zip": "5a8b57174b0a9a16cafb8fd492f79e72707e56115d6607e9e01c9f4fe01004f5",
+    "backup-crossread/research-python-v1.zip": "14bdb22146b8a725e63e20f139fd80e7eb28475a44e4cdc2952546cda259c3ac",
+    "backup-crossread/research-python-v2.zip": "6a9c0354a3d31d52453893b9d7a89d101d83a17b5524f336e832ade040b2b8ce",
+    "backup-crossread/schema-mismatch.zip": "ade3c3e54366cd912e6a26a0bc42a5bb9ca8fbdbc7eaee0d46aa8e7d4e5679d2",
+    "backup-crossread/wrong-count.zip": "471814cc53b864c5a912001bfb12376a774babbb9b38b2880f6e6ab7d7d30c2a",
+    "backup-crossread/wrong-crc.zip": "97a34c7283c7e624f920655d8dc77b497c6204b600ee2e84a142e634b6231202",
+    "backup-crossread/wrong-hash.zip": "b9333cb8b2058d49695cf017f32ed739a273e007f13a1848abd9fb107dea0d7d",
+    "backup-crossread/wrong-kind.zip": "82d5406f57153edfc0810b2327652019f6be37ddbca506a61626f994b80b95cf",
+    "backup-crossread/wrong-major.zip": "73a11c13e1da81c31bd2cddc0e76136d52d61729490ef448da027e69fcee1db9",
+    "backup-crossread/wrong-migrations.zip": "b8bcf8fc34611df51df530c9a1215f52cd412f333a1d3ec02734374440963cdb",
+    "linux-postgres/backup.txt": "41a3981ed2e1e4eaad5b41945dcafbab565fd1177d5fb214c94d1981286eed18",
+    "linux-postgres/cluster-start.txt": "66afd0411ccc09366e99fdd99b85f21899c8d2d064f5835126859618802153ad",
+    "linux-postgres/cluster-stop.txt": "ca19178a35ab4153b75b494963b66ce8243e1b94c173107c87b44d09db23652d",
+    "linux-postgres/launcher.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "linux-postgres/original-dispatch-oracle.json": "798d90f15690a6e8cfb07f46eca2ebbb143e7e11a1ea49a82fa432fc0de06d3c",
+    "linux-postgres/original-forecast-oracle.json": "f24c4c5169f4f9960bc8a0ab6b055245a154e0f1b01a01d0ae5bc057eaeb5b55",
+    "linux-postgres/original-information-oracle.json": "34cbf8b36c3c3414ec3ec9e366e1bf12b8403527b18adea54710fbdabf30f5ef",
+    "linux-postgres/original-ingestion-oracle.json": "3b18c392a63297798edd60224bc68bb4e4fedc1f570bb71dff49835cf26adfed",
+    "linux-postgres/original-ir-oracle.json": "a05449d926af2c7f0390528d51d6e077b7d122cf31de15899b1daf92904e533b",
+    "linux-postgres/original-point-oracle.json": "f8a3ba9172fc2de9c7dce4c978ed71bd3b2a4d1fa06c8b5720e25ffc35f06ef5",
+    "linux-postgres/original-prospective-oracle.json": "6ea32e5390be5c347f4a4db10468bf3938bbe755b937af5fb6dc168d954bfa85",
+    "linux-postgres/original-research-api-oracle.json": "6a1eb4c08073443dbeeab407cb7d7d02cbff2e4a66fec8f33a1f1c2b3d389847",
+    "linux-postgres/original-verdict-oracle.json": "92199f30c0acad58e9e825ff466818948fc5afada18374cea619a367b9c068ee",
+    "linux-postgres/postgres.txt": "dd10a23d48e8a5fd0bef475432ec5d7dc297d22b8af6700a8fed916ba7990263",
+    "linux-postgres/python-packages.txt": "12611cb3f26625793c0acd0dd5023a111e8e04f9aabcbd7a41bfc5a7c1ff27be",
+    "linux-postgres/result.json": "2ba8c3cdd935674450d28e7758651c9e46b00c0da9dcff3f84c93cc3cc23e96b",
+    "linux-postgres/backup-crossread/bad-copy.zip": "0a78e6e13a918ffda07fbca6c02ba64b51960958a3181aa664abcc2b2f1374f5",
+    "linux-postgres/backup-crossread/cancelled-request.zip": "05224768eb39afc10e29c869c13ec4e7f1f832adc794a388702bc43170e45e81",
+    "linux-postgres/backup-crossread/cli-export.txt": "08f9f46776e147a7e6148e3319c9a9f1cb1e074af56c83870ccd3c2a1f94f820",
+    "linux-postgres/backup-crossread/cli-inspect.txt": "f51457f82df7af2fb2f0fb870ebab398615799763268d7af1e46058267424393",
+    "linux-postgres/backup-crossread/cli-restore-new.txt": "a0740f481a8906c8fb570635e7f53475354ba5bf2d6b50852f3e4177151863ac",
+    "linux-postgres/backup-crossread/cli-verify-local.txt": "111a4206759ac0a8bfe585eff049eb44e01ecea24f77cbfc1e5ff846fc68d72a",
+    "linux-postgres/backup-crossread/concurrent.zip": "542bf5a9388c10a6935f93c342045f6494b273d6e711ac0e2b4b2c4145f61f22",
+    "linux-postgres/backup-crossread/duplicate-member.zip": "f04aae7ef82edd18a96f8aca0f0b623a885ff510d739bd80a66932826e7f1932",
+    "linux-postgres/backup-crossread/extra-member.zip": "d09dfd69f668e5e92f2da99118e90420166c7d588cb089a39eb0e11bdde1cb1e",
+    "linux-postgres/backup-crossread/fixture.json": "63b34c52a29cefb8aae1abcc26e5f8d0836b1458cbd0a84566d00e6ab8355aeb",
+    "linux-postgres/backup-crossread/missing-member.zip": "332d5b2bb00d72f1084e78541298f2635b2f6f134848d5bcbb0733ee7db9fabd",
+    "linux-postgres/backup-crossread/native-results.json": "7f604b0b7ec90e081488c796659a1e4f9c2ba6b7024bcfc1e5ef8c6841133445",
+    "linux-postgres/backup-crossread/native-test.txt": "8244777d1fb4e12c1b146d290cbcaab7ec939c2692462815d2819df091799480",
+    "linux-postgres/backup-crossread/paper-native.zip": "3ec5cb7a0c85013c3cf70ddba5542743233ff233858541a008ae9d4d14062609",
+    "linux-postgres/backup-crossread/paper-python-v2.zip": "327acbc9cec75a669df56daf443f89fb7b35a037f16057441c062313db2d8285",
+    "linux-postgres/backup-crossread/report.json": "a974a331364563d8e1bc6d4c0c10712d6e22919ffa464d94d7c7521e08b7910a",
+    "linux-postgres/backup-crossread/research-cli.zip": "efeae0a16efe2b23a7776d6e02c4398b9ddb97afe7aa39e3fe4e1671d22612da",
+    "linux-postgres/backup-crossread/research-native.zip": "7170bd6a33c78d4b804d5e80ac85ec142398c3f34ae1aabb233b5ea51b05aaf1",
+    "linux-postgres/backup-crossread/research-python-v1.zip": "9beff253732bac5547fa255a313cb1c5dcd50ae2e0ebfe39cd3ab2c779e0dd51",
+    "linux-postgres/backup-crossread/research-python-v2.zip": "95d7d3430f02af0a896ffda89dc659e85abf7e291306b8313638e8bafe3cf241",
+    "linux-postgres/backup-crossread/schema-mismatch.zip": "ff2d536004fc328d39909dacc026bb9f56b8f352d7c9972a395d4bd2507c611f",
+    "linux-postgres/backup-crossread/wrong-count.zip": "67201621495e59314c0d89aa3322579c41012640571c47603c41631b340cb139",
+    "linux-postgres/backup-crossread/wrong-crc.zip": "de3cde2f59c4a751b8f60fb32d0c25037a8b56f6ecf37a6f7d90cf987101fb4a",
+    "linux-postgres/backup-crossread/wrong-hash.zip": "a3357a3e4f25793faa7a1e0c58b231d2811eac93772998b0f5ea6947de099c4a",
+    "linux-postgres/backup-crossread/wrong-kind.zip": "23d0880e4b94a52d0a76790b549b666013e759614274f93114f5a3c4e50ae207",
+    "linux-postgres/backup-crossread/wrong-major.zip": "dfd201ac54484c6024be51f9ddfc7f94fe257490285eb127969a307d6d86544d",
+    "linux-postgres/backup-crossread/wrong-migrations.zip": "e9bb2520b8f117d7534b74123d3689ec2d3804e7b816a7bcc36218f2d944c482"
+  },
+  "remaining": [
+    "discovery equal-frequency tie semantics and full sentiment-enabled assembly validation",
+    "remaining API wire/error contracts and research/training workflows",
+    "complete artifact backup/restore and service rollback rehearsal",
+    "full-service benchmarks and Linux verification including native sentiment",
+    "separate horizon/turnover investigations after parity",
+    "verified complete production cutover"
+  ]
+}

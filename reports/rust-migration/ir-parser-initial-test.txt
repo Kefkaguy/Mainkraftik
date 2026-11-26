@@ -1,0 +1,21 @@
+   Compiling mainkraft v0.1.0 (C:\Users\erosi\OneDrive\Desktop\allprojects\keftrade-intelligence\apps\backend-rust)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 12.99s
+     Running tests\ir_parity.rs (apps\backend-rust\target\debug\deps\ir_parity-485577bbcbaaa4d8.exe)
+
+running 1 test
+
+thread 'legacy_html_text_entities_attributes_and_robots_match_python' (19916) panicked at tests\ir_parity.rs:8:9:
+assertion `left == right` failed: HTML case 9
+  left: Array [Object {"name": String("h1"), "attrs": Object {}, "text": String("A inside text"), "raw_text": String("Ainsidetext")}]
+ right: Array [Object {"attrs": Object {}, "name": String("h1"), "raw_text": String("Ainside<b>text</b>"), "text": String("A inside <b>text</b>")}]
+note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+test legacy_html_text_entities_attributes_and_robots_match_python ... FAILED
+
+failures:
+
+failures:
+    legacy_html_text_entities_attributes_and_robots_match_python
+
+test result: FAILED. 0 passed; 1 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.01s
+
+error: test failed, to rerun pass `--test ir_parity`
