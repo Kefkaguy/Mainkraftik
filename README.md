@@ -1,23 +1,41 @@
 <div align="center">
 
+<img src="https://i.pinimg.com/236x/8b/2b/90/8b2b90a60d679ddd671b0d17b206ca44.jpg" width="132" height="132" alt="Mainkraft project avatar" />
+
 # Mainkraft
 
-**Quantitative Research · Machine Learning · Experimental Paper Trading**
+**Quantitative Research · Machine Learning · Systematic Strategy Research**
 
-An independent quantitative research platform for source-backed company analysis, reproducible forecasting, adaptive learning, and isolated PAPER-only trading experiments.
+A source-backed quantitative research platform for reproducible forecasting, rigorous model evaluation, and isolated paper-trading experiments.
+
+![Research status](https://img.shields.io/badge/Research-Retained-334155?style=for-the-badge)
+![Paper execution](https://img.shields.io/badge/Paper%20orders-Pause%20required-D97706?style=for-the-badge)
+![Live trading](https://img.shields.io/badge/Live%20trading-Not%20enabled-991B1B?style=for-the-badge)
+![Return edge](https://img.shields.io/badge/Return%20edge-Not%20validated-64748B?style=for-the-badge)
 
 ![Python 3.12+](https://img.shields.io/badge/Python-3.12%2B-3776AB?style=flat-square&logo=python&logoColor=white)
+![Rust](https://img.shields.io/badge/Rust-Research-CE422B?style=flat-square&logo=rust&logoColor=white)
 ![Node.js 22+](https://img.shields.io/badge/Node.js-22%2B-339933?style=flat-square&logo=node.js&logoColor=white)
 ![Next.js](https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=nextdotjs&logoColor=white)
 ![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white)
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-18-4169E1?style=flat-square&logo=postgresql&logoColor=white)
-![Paper only](https://img.shields.io/badge/Execution-PAPER%20ONLY-DAA520?style=flat-square)
-![Research](https://img.shields.io/badge/Research-Experimental-64748B?style=flat-square)
-![Rust](https://img.shields.io/badge/Rust-Research%20Strategies-CE422B?style=flat-square&logo=rust&logoColor=white)
 
-[Overview](#project-overview) · [Quantitative models](#quantitative-models) · [Rust research](#rust-strategy-research) · [Getting started](#getting-started)
+[Overview](#project-overview) · [Research findings](#research-at-a-glance) · [Mathematical audit](#mathematical-audit) · [Quantitative models](#quantitative-models) · [Rust research](#rust-strategy-research)
 
-[Forecasting research](#forecasting-research) · [Legacy PAPER strategies](#legacy-paper-strategies) · [Pilot history](#paper-trading-pilot) · [Operations](#deployment-and-operations) · [Documentation](#documentation)
+[Getting started](#getting-started) · [Forecasting research](#forecasting-research) · [Legacy strategies](#legacy-paper-strategies) · [Pilot history](#paper-trading-pilot) · [Operations](#deployment-and-operations) · [Documentation](#documentation)
+
+</div>
+
+---
+
+> [!IMPORTANT]
+> **Research disposition — November 26, 2026.** Mainkraft is being retained as an engineering and research platform. The project has not established a reproducible, economically viable return edge. New `paper-learning-v1` orders are to remain paused, and live trading is not to be launched. This is the intended operating policy, not confirmation that a running service has already been paused. Existing positions and broker-side orders require separate reconciliation; pausing new orders does not liquidate positions.
+
+<div align="center">
+
+| **5,406** | **75 / 75** | **576** | **0** |
+| :---: | :---: | :---: | :---: |
+| Intraday OOF forecasts | Non-positive net P/L scenarios | Capital-feasibility scenarios | Closed trades in the cited multi-strategy checkpoint |
 
 </div>
 
@@ -25,12 +43,14 @@ An independent quantitative research platform for source-backed company analysis
 
 ## Project overview
 
-Mainkraft combines **Next.js**, **FastAPI**, and **PostgreSQL** with a prospective, append-only forecast ledger and an isolated experimental PAPER-only execution environment.
+Mainkraft combines **Next.js**, **FastAPI**, **PostgreSQL**, Python and Rust with a prospective, append-only forecast ledger and an isolated experimental PAPER-only execution environment.
+
+Its value lies in the research infrastructure, not in a claim of profitability: point-in-time SEC EDGAR GAAP financial data, safeguards against look-ahead leakage, walk-forward evaluation, block-bootstrap uncertainty estimates, and reported bitwise Python ↔ Rust parity for the relevant migration checks. Negative results are retained as legitimate scientific findings rather than discarded or presented as successful strategies.
 
 | Component | Scope | Status |
 | :--- | :--- | :--- |
 | Company research | MSI, AXON | Frozen research |
-| Two-account experiment | Fixed reference vs. adaptive residual learning | Last observed enabled Nov 18, 2026; live status unverified |
+| Two-account experiment | Fixed reference vs. adaptive residual learning | Pause required; last observed enabled Nov 18, 2026; current state unverified |
 | Initial paper pilot | AMD, MSFT, GOOG, AMZN, TSM, META | Historical separate paper account |
 | Rust signal research | Trend, Breakout, Mean Reversion, Pullback, Momentum | Implemented; not broker-activated |
 | Benchmark | SPY | Reference |
@@ -50,17 +70,185 @@ The Day, Swing and Challenger policies and initial results are documented in [Ma
 | Phase 3 | 80 Optuna trials · 40 evaluated candidates | No corrected diagnostic interval demonstrated improvement |
 | Prospective shadow | First eligible origin: November 16, 2026 | Final comparison requires 126 paired dates and matured outcomes |
 | Paper pilot v4 | 40 screened candidates; cost-planning gate | Historical experimental path; numerical challenger disabled |
-| `paper-learning-v1` | Two-account comparison; one-trading-hour outcomes | Experimental; no validated return edge |
+| `paper-learning-v1` | Two-account comparison; one-trading-hour outcomes | Pause required; no validated return edge |
 
 > [!NOTE]
 > The project does not claim a validated return edge. Paper-trading probability estimates are not demonstrated accuracy, and no real-money execution is included.
+
+### Confirmed research findings — November 2026
+
+The following results are transcribed from the supplied repository audit. The linked reports are the primary references for the evaluation details, definitions, and limitations. They were not independently re-executed for this README revision.
+
+| Research program | Evaluation scope | Reported outcome |
+| :--- | :--- | :--- |
+| [Rust intraday migration](reports/rust-migration/intraday-implementation-results-20261121.md) | 42 SIP sessions; 5,406 out-of-fold (OOF) forecasts | All three model families and all 18 adaptive variants underperformed the zero-return MAE baseline. |
+| [Phase 8 — multi-horizon research](reports/phase8/README.md) | 25 candidates; 75 cost scenarios | All 75 combinations produced non-positive net P/L. |
+| [Mainkraft walk-forward](docs/mainkraft-walk-forward-results.md) | 36 stocks; 133 sessions | News-filtered gains were not robust to higher costs; adverse-move risk prediction improved on its baseline. |
+| [Capital feasibility](reports/mainkraft-capital-feasibility.md) | 576 scenarios; &#36;5,000 capital ceiling | The &#36;20/day objective was not supported. |
+| [Rust multi-strategy checkpoint](reports/multi-strategy/checkpoints/20261122T103918203858Z/results-summary.json) | Development-only evaluation | `validated: false`; zero closed trades. |
+| [News context v4](docs/news-context-v4.md) | 40/40 stocks; 73 sources | Improved information coverage, not demonstrated return-prediction improvement. |
+
+### Intraday model performance
+
+| Model | MAE (bps) | Excess MAE vs. zero baseline |
+| :--- | ---: | ---: |
+| **Zero-return baseline** | **41.73** | — |
+| Logistic | 42.11 | +0.38 |
+| HistBoost | 42.24 | +0.51 |
+| Ridge | 42.36 | +0.63 |
+| All 18 adaptive variants | ≥ 43.32 | ≥ +1.59 |
+
+The baseline Brier score was `0.25000`. Reported quote coverage was only `0.9025%`, against a `95%` requirement; fresh SIP access returned HTTP `403`. The `$35/week` objective was not validated. Lower MAE and Brier scores are better; the displayed comparisons do not establish statistical significance by themselves.
+
+<details>
+<summary><strong>Expand detailed findings: Phase 8, walk-forward, capital feasibility and multi-strategy research</strong></summary>
+
+#### Phase 8 — transaction-cost sensitivity
+
+- Five forecast horizons (`1h`, `1d`, `2d`, `3d`, `5d`) × five methods, including the neural network `sequence_adam400`.
+- Cost assumptions: `22 / 42 / 82 bps`.
+- All 75 candidate/cost combinations delivered net P/L of &#36;0 or less.
+- Best active candidate: `5d histboost`, **−&#36;0.25** across 63 trades; reported CI `[−&#36;0.1243, +&#36;0.1137]`. The supplied summary does not specify the CI's estimand, so it is not treated as an interval for total P/L.
+
+#### Mainkraft walk-forward — signal and risk performance
+
+| Strategy / test | Net P/L |
+| :--- | ---: |
+| Technical only | −&#36;62.15 |
+| News filtered | +&#36;5.09 |
+| News filtered at 50 bps | −&#36;13.30 |
+| News ranked | −&#36;46.14 |
+
+The only signal reported to improve on its reference was the 2% adverse-move risk model: Brier `0.2373` versus `0.2494`. This supports further risk-model investigation, not a demonstrated profitable return signal.
+
+#### Capital feasibility — robustness of the &#36;20/day objective
+
+| Configuration | Net P/L |
+| :--- | ---: |
+| Frozen rule | −&#36;491.28 |
+| Frozen rule + AI | −&#36;36.09 |
+| Best retrospective configuration at 25 bps | +&#36;392.81 |
+| Same retrospective configuration at 50 bps with delayed exit | −&#36;458.60 |
+
+The frozen rule + AI reported a `98.75%` CI of `[−&#36;2.48, +&#36;7.62]`, which includes zero. The supplied summary does not specify the CI's estimand. The positive retrospective configuration is not independent confirmation of an edge.
+
+#### Multi-strategy and information coverage
+
+The November 22 checkpoint records `DEVELOPMENT_ONLY_CONFIRMATION_REQUIRED`, `validated: false`, and zero closed trades in the evaluated strategies (including `trend_following`). Zero completed trades provide no basis for judging profitability.
+
+News context v4 expanded coverage to all 40 stocks using 73 sources. More source coverage is an engineering improvement, not evidence of better return forecasts.
+
+</details>
+
+---
+
+## Mathematical audit
+
+The following issues concern the existing `paper-learning-v1` implementation and the related historical strategies. The equations in [Quantitative models](#quantitative-models) document the original implementation; the audit does not imply that its source code has been corrected.
+
+### 01 · Zero-edge allocation bug
+
+The existing allocation assigns positive weights even when the forecast fails to clear transaction costs:
+
+$$
+ a_j=\exp(\min(|q_j|,10)+\epsilon_j),\qquad
+ |\mu_j|\le c_j\ \Longrightarrow\ q_j=0,\quad a_j=e^{\epsilon_j}>0.
+$$
+
+Normalizing these weights across eligible instruments makes the allocation budget fully committed in the formula rather than permitting an explicit cash allocation:
+
+$$
+ \sum_j \frac{a_j}{\sum_i a_i}=1.
+$$
+
+If all eligible forecasts have nonzero signs and no external constraints intervene, gross target exposure equals 100% of capacity $C$, even when every estimated cost-adjusted edge is zero. Actual positions may differ because of broker checks, zero forecasts, rounding and other execution constraints. The engine can therefore open positions based on forecast direction despite having no estimated economic edge. A true no-trade/cash alternative is missing from the allocation rule.
+
+### 02 · Daily-to-hourly forecast proxy mismatch
+
+For the documented coefficient snapshot, the daily intercept is approximately −24 bps and the return coefficient vector has Euclidean norm approximately 6.9 bps. The hourly proxy is
+
+$$
+ \mu_0=\frac{\widehat r_{\mathrm{net}}+0.0025}{6.5}.
+$$
+
+At zero standardized features, this yields approximately +0.16 bps. The coefficient-norm scale is approximately 1.1 bps per hour, compared with a planning cost of at least 10 bps. The supplied estimate of `+0.16 ± 1.1 bps` is a scale illustration, not an empirical confidence interval; interpreting the norm as a standard deviation requires assumptions about feature covariance.
+
+The audit indicates that the fixed proxy rarely clears its cost hurdle, although the actual frequency requires forecast data. Its 11 daily inputs do not change during the session and cannot represent newly arriving intraday information. This does not rule out predictive information from daily features, nor does it describe the additional intraday inputs of the adaptive account. Dividing by 6.5 is not a validated hour-ahead model.
+
+### 03 · Inverted probability calibration
+
+The fitted Platt calibration has a negative slope:
+
+$$
+ p=\sigma\left(-0.3602600243-0.1310675478\,\mathrm{logit}(\widetilde p_{\mathrm{raw}})\right),
+$$
+
+where the raw probability is clipped to the interval $[10^{-6},1-10^{-6}]$ as defined below. The calibrated probability decreases as the raw probability increases. Solving for the 50% threshold gives
+
+$$
+ p\ge 0.50\ \Longleftrightarrow\ p_{\mathrm{raw}}\lesssim 0.06016.
+$$
+
+The mapping reverses the raw classifier's ordering. This is consistent with an inversely oriented or poorly performing score, but the negative slope alone does not prove that the raw classifier's AUC is below 0.5. That requires direct ROC-AUC evaluation on the relevant data. The two-account engine does not use this probability as an entry threshold.
+
+### 04 · Noise-driven turnover and missing deadband
+
+The adaptive allocator introduces reproducible Gaussian perturbations every five minutes:
+
+$$
+ \epsilon_j\sim\mathcal{N}(0,0.1^2).
+$$
+
+Combined with order quantities specified to $10^{-9}$ shares and no explicit minimum-change deadband, this can generate turnover and dust-sized orders without new economically meaningful information. Actual turnover and execution-cost impact must be measured from order logs. Random allocation variation is not itself evidence of learning or an improved signal.
+
+### 05 · Overlapping outcomes in online Ridge regression
+
+One-hour outcomes issued every five minutes overlap for 55 of 60 minutes, or approximately 91.67%, between adjacent windows:
+
+$$
+ \frac{60-5}{60}=\frac{11}{12}\approx 0.9167.
+$$
+
+Up to 12 forecast windows overlap a given interior five-minute interval under regular sampling. With repeated daily inputs, this creates strong dependence and can overweight recent market regimes. Ridge regression can still be computed with dependent observations; the concern is effective sample size, uncertainty estimation, validation design and susceptibility to overfitting. The Rust research reported that all 18 adaptive variants worsened MAE relative to the frozen models, with MAE at least `43.32 bps`. That is evidence of underperformance, not proof that overlap was its sole cause.
+
+### 06 · Fixed stop-loss mismatch with multi-session horizons
+
+This issue concerns the legacy Day/Swing strategy and walk-forward evaluation, **not** a fixed stop in `paper-learning-v1`, which has no such control.
+
+| Horizon / rule | Reported value |
+| :--- | ---: |
+| Average movement amplitude over 3 sessions | 2.60% |
+| Average movement amplitude over 5 sessions | 3.41% |
+| Fixed stop-loss | −2.00% |
+| Fixed profit target | +3.00% |
+| Observed target-before-stop frequency | 29.85% |
+| Binary-outcome break-even win rate before costs | 40.00% |
+
+For trades that resolve only at these two barriers, ignoring costs, the break-even probability is
+
+$$
+ p_{\mathrm{BE}}=\frac{0.02}{0.02+0.03}=0.40.
+$$
+
+The observed target-before-stop rate falls below this simple threshold, and trading costs would raise it. The comparison suggests that the fixed barriers are poorly aligned with multi-session movement; amplitude alone does not establish how often a stop is hit. Time exits, gaps and realized fill prices also affect actual expectancy.
+
+### Research disposition
+
+- [x] Retain Mainkraft, historical evidence and reproducible engineering infrastructure.
+- [x] Document the limitations and negative results without claiming profitability.
+- [ ] Confirm the operational pause of new `paper-learning-v1` orders and reconcile any outstanding positions or orders.
+- [ ] Independently validate any revised model, cost gate, allocation or execution policy before resuming experiments.
+
+Real-money execution remains out of scope. No strategy has been promoted on the basis of the results above.
+
+---
 
 ## Quantitative models
 
 ### `paper-learning-v1` — two-account experiment
 
 > [!IMPORTANT]
-> **Deployment evidence:** the latest supplied saved service observation is November 18, 2026 (Pacific time). It reports `paper-learning-v1` enabled with two PAPER accounts. The live server state on November 26, 2026 is unverified. When `paper_experiment_enabled` is enabled, the two-account engine runs instead of the legacy `paperpilot.engine`. The coefficient snapshot below is a separately dated local model bundle; the November 18 observation alone does not establish which exact bundle was running then.
+> **Historical deployment evidence (not the current operating policy):** the latest supplied saved service observation is November 18, 2026 (Pacific time). It reports `paper-learning-v1` enabled with two PAPER accounts. The live server state on November 26, 2026 is unverified. The current project policy requires pausing new orders; this README does not implement or verify that pause. When `paper_experiment_enabled` is enabled, the two-account engine runs instead of the legacy `paperpilot.engine`. The coefficient snapshot below is a separately dated local model bundle; the November 18 observation alone does not establish which exact bundle was running then.
 
 | | Account 1 — fixed reference | Account 2 — adaptive experiment |
 | :--- | :--- | :--- |
@@ -70,6 +258,8 @@ The Day, Swing and Challenger policies and initial results are documented in [Ma
 | Allocation perturbation | None | Reproducible Gaussian noise |
 | Rebalance interval | 5 minutes | 5 minutes |
 | Execution | PAPER only | PAPER only |
+
+The diagram describes the historical execution path, not permission to submit new orders.
 
 ```mermaid
 flowchart TD
@@ -87,7 +277,11 @@ flowchart TD
     G --> J
     Q --> J
     J --> K["Broker eligibility and buying-power checks"]
-    K --> L["PAPER orders"]
+    K --> L["PAPER orders (historical path)"]
+    classDef model fill:#e0f2fe,stroke:#0369a1,color:#0c4a6e
+    classDef control fill:#fef3c7,stroke:#b45309,color:#78350f
+    class C,D,F,G,I model
+    class J,K,L control
 ```
 
 Sources: [service.py](apps/api/paperpilot/service.py#L169), [saved deployment status](reports/paper-learning/deployed-status.json), [experiment deployment notes](reports/paper-learning/README.md).
@@ -115,9 +309,9 @@ $$
 \begin{aligned}
 x_0 &= P_t/P_{t-1}-1, & x_1 &= P_t/P_{t-5}-1,\\
 x_2 &= P_t/P_{t-10}-1, & x_3 &= P_t/P_{t-20}-1,\\
-x_4 &= \operatorname{std}(r_{t-9},\ldots,r_t),\\
-x_5 &= \operatorname{std}(r_{t-19},\ldots,r_t),\\
-x_6 &= \frac{V_t}{\operatorname{mean}(V_{t-20},\ldots,V_{t-1})},\\
+x_4 &= \mathrm{std}(r_{t-9},\ldots,r_t),\\
+x_5 &= \mathrm{std}(r_{t-19},\ldots,r_t),\\
+x_6 &= \frac{V_t}{\mathrm{mean}(V_{t-20},\ldots,V_{t-1})},\\
 x_7 &= S_t/S_{t-5}-1, & x_8 &= S_t/S_{t-20}-1,\\
 x_9 &= (T_t/T_{t-5}-1)-x_7,\\
 x_{10} &= x_1-x_7.
@@ -170,10 +364,9 @@ $$
 \begin{aligned}
 \sigma(u)&=\frac{1}{1+e^{-u}},\\
 p_{\mathrm{raw}}&=\sigma\left(-0.3162812209+\sum_{i=0}^{10}v_i z_i\right),\\
+\widetilde p_{\mathrm{raw}}&=\min\left(1-10^{-6},\max(10^{-6},p_{\mathrm{raw}})\right),\\
 p&=\sigma\left(-0.3602600243-0.1310675478\,
-\operatorname{logit}\left(
-\operatorname{clip}(p_{\mathrm{raw}},10^{-6},1-10^{-6})
-\right)\right).
+\ln\left(\frac{\widetilde p_{\mathrm{raw}}}{1-\widetilde p_{\mathrm{raw}}}\right)\right).
 \end{aligned}
 $$
 
@@ -259,7 +452,7 @@ Source: [experiment.py](apps/api/paperpilot/experiment.py#L245).
 For each eligible instrument, compute its signed, cost-adjusted score and positive allocation weight:
 
 $$
-q_j=\frac{\operatorname{sign}(\mu_j)\max(0,|\mu_j|-c_j)}{u_j}
+q_j=\frac{\mathrm{sign}(\mu_j)\max(0,|\mu_j|-c_j)}{u_j}
 $$
 
 $$
@@ -281,7 +474,7 @@ $$
 The signed target position value is
 
 $$
-T_j=\operatorname{sign}(\mu_j)\,C\,\frac{a_j}{\sum_i a_i}.
+T_j=\mathrm{sign}(\mu_j)\,C\,\frac{a_j}{\sum_i a_i}.
 $$
 
 > [!WARNING]
@@ -290,8 +483,8 @@ $$
 For target quantity, the pricing side is ask for a long target and bid for a short target:
 
 $$
-Q_j^*=\frac{T_j}{\mathrm{price}_j},\qquad
-\Delta_j=Q_j^*-Q_j^{\mathrm{current}}.
+Q_{j}^{\ast}=\frac{T_j}{\mathrm{price}_{j}},\qquad
+\Delta_j=Q_{j}^{\ast}-Q_{j}^{\mathrm{current}}.
 $$
 
 Short quantities are rounded down in magnitude to whole shares; long quantities are whole shares if fractional trading is unsupported. Order size is $|\Delta_j|$, with precision to $10^{-9}$ shares. On a sign reversal, the target is first set to zero; closing precedes opening the opposite position.
@@ -645,7 +838,7 @@ Both show **“Model unavailable — licensing review required.”** No weights 
 
 The original Phase 4 deployment was recorded at **https://keftrade.duckdns.org/intelligence** with single-user password authentication, private backend/database ports, and independent research and paper workers on the VPS. A dedicated Alpaca paper account was verified and the scheduled pilot was enabled. Activation completed after the November 13 market close; the first eligible session was Monday, November 16, 2026. No orders were submitted during setup. Its \$600 allocation was distinct from the actual broker balance.
 
-A later saved observation on November 18, 2026 reports the two-account experiment enabled. See [Quantitative models](#quantitative-models) for its separate allocation rules and status caveats. The live deployment has not been independently checked for this README revision.
+A later saved observation on November 18, 2026 reports the two-account experiment enabled. See [Quantitative models](#quantitative-models) for its separate allocation rules and status caveats. The live deployment has not been independently checked for this README revision. The current project policy requires a pause on new orders; the saved observation does not verify that the pause has taken effect.
 
 The premarket pilot is separate from frozen MSI/AXON evening research. Read the [pilot protocol](docs/paper-pilot-v1.md), [operations guide](docs/phase4-operations.md), and [actual deployment report](docs/phase4-results.md). Local development and production use PostgreSQL 18. Both images were built locally and transferred. Live VPS exports were restored off-host. The supplied CI still tests PostgreSQL 16 compatibility and has not run on a hosted service.
 
@@ -680,6 +873,12 @@ Backups capture a repeatable-read PostgreSQL snapshot using binary COPY, verify 
 
 | Document | Description |
 | :--- | :--- |
+| [Intraday implementation results](reports/rust-migration/intraday-implementation-results-20261121.md) | SIP intraday models, adaptive variants and data coverage |
+| [Phase 8](reports/phase8/README.md) | Multi-horizon evaluation and transaction-cost scenarios |
+| [Walk-forward results](docs/mainkraft-walk-forward-results.md) | Strategy performance and adverse-move risk model |
+| [Capital feasibility](reports/mainkraft-capital-feasibility.md) | Capital scenarios and sensitivity to costs / delay |
+| [Multi-strategy checkpoint](reports/multi-strategy/checkpoints/20261122T103918203858Z/results-summary.json) | Development-only, unvalidated checkpoint |
+| [News context v4](docs/news-context-v4.md) | Source coverage improvements and limitations |
 | [Two-account deployment notes](reports/paper-learning/README.md) | Fixed and adaptive PAPER accounts |
 | [Saved service status](reports/paper-learning/deployed-status.json) | November 18, 2026 observation |
 | [Rust implementation report](reports/multi-strategy/implementation-20261122.md) | Inactive multi-strategy research |
@@ -702,6 +901,8 @@ Backups capture a repeatable-read PostgreSQL snapshot using binary COPY, verify 
 
 <div align="center">
 
-**Mainkraft** · Private research · PAPER-only execution
+**Mainkraft** · Private quantitative research · Evidence over assumptions
+
+No validated return edge · New PAPER orders require a confirmed pause · No real-money execution
 
 </div>
